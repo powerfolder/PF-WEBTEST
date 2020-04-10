@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Folder Share" time="171.867" tests="2" failures="1" errors="0">
+   <testsuite name="Folder Share" tests="2" failures="1" errors="0" time="171.867" timestamp="2020-04-10 22:39:45" hostname="mac - localhost" id="Test Suites/Folder Share">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/mac/Documents/PF-WEBTEST/Reports/20200410_223943/Folder Share/20200410_223943"/>
+         <property name="logFiles" value="/Users/mac/Documents/PF-WEBTEST/Reports/20200410_223943/Folder Share/20200410_223943/execution0.log"/>
+         <property name="attachments" value="/Users/mac/Documents/PF-WEBTEST/Reports/20200410_223943/Folder Share/20200410_223943/1586554955689.png, /Users/mac/Documents/PF-WEBTEST/Reports/20200410_223943/Folder Share/20200410_223943/1586554956295.png"/>
+         <property name="hostName" value="mac - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 80.0.3987.163"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="sessionId" value="fbd02eed0e409fb8dbab53386baa6e48"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Share/Share folder with Multiple emails comma separator" time="79.408" classname="Test Cases/Share/Share folder with Multiple emails comma separator" status="PASSED">
+         <system-out><![CDATA[2020-04-10 22:39:45 - [TEST_CASE][PASSED] - Test Cases/Share/Share folder with Multiple emails comma separator: Test Cases/Share/Share folder with Multiple emails comma separator
+
+2020-04-10 22:39:45 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-04-10 22:39:46 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-04-10 22:39:46 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-04-10 22:39:48 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-04-10 22:39:48 - [TEST_STEP][PASSED] - navigateToUrl("https://lab.powerfolder.net:8666/login"): Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-04-10 22:40:46 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-04-10 22:40:46 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Login - PowerFolder"): Current window's title is: 'Login - PowerFolder'
+
+2020-04-10 22:40:46 - [MESSAGE][PASSED] - Current window's title is: 'Login - PowerFolder'
+
+2020-04-10 22:40:46 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username"), "admin"): Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-04-10 22:40:47 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-04-10 22:40:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-04-10 22:40:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-04-10 22:40:47 - [TEST_STEP][PASSED] - isPresent = waitForElementVisible(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), 2): Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-04-10 22:40:48 - [MESSAGE][PASSED] - Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-04-10 22:40:48 - [TEST_STEP][PASSED] - assert isPresent: null
+
+2020-04-10 22:40:48 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), "8SQVv/p9jVScEs4/2CZsLw=="): Text ****** has been set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-04-10 22:40:48 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-04-10 22:40:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-04-10 22:40:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-04-10 22:40:51 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Dashboard - PowerFolder"): Current window's title is: 'Dashboard - PowerFolder'
+
+2020-04-10 22:40:51 - [MESSAGE][PASSED] - Current window's title is: 'Dashboard - PowerFolder'
+
+2020-04-10 22:40:51 - [TEST_STEP][PASSED] - navigateToUrl("https://lab.powerfolder.net:8666/folderstable"): Navigate to 'https://lab.powerfolder.net:8666/folderstable' successfully
+
+2020-04-10 22:40:53 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/folderstable' successfully
+
+2020-04-10 22:40:53 - [TEST_STEP][PASSED] - folderName = RandomStringUtils.random(9, true, true): null
+
+2020-04-10 22:40:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-04-10 22:40:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-04-10 22:40:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-04-10 22:40:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-04-10 22:40:54 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), folderName): Text 'EaDEjqgQi' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-04-10 22:40:55 - [MESSAGE][PASSED] - Text 'EaDEjqgQi' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-04-10 22:40:55 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-04-10 22:40:55 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-04-10 22:40:55 - [TEST_STEP][PASSED] - btn = findShareButton(folderName): null
+
+2020-04-10 22:40:55 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-04-10 22:40:55 - [TEST_STEP][PASSED] - return driver.findElement(org.openqa.selenium.By.xpath(//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(), $fileName)]/../../td[6]/a)): null
+
+2020-04-10 22:40:57 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(btn)): Execute JavaScript 'arguments[0].click()' successfully
+
+2020-04-10 22:40:57 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2020-04-10 22:40:57 - [TEST_STEP][PASSED] - mails = "a@a.com,b@b.com,c@c.com": null
+
+2020-04-10 22:40:57 - [TEST_STEP][PASSED] - membersCount = getMembersCount(): null
+
+2020-04-10 22:40:57 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-04-10 22:40:57 - [TEST_STEP][PASSED] - tbody = driver.findElement(By.xpath("//table[@id='share_table']/tbody")): null
+
+2020-04-10 22:40:59 - [TEST_STEP][PASSED] - assert tbody: null
+
+2020-04-10 22:40:59 - [TEST_STEP][PASSED] - rows_table = tbody.findElements(By.tagName("tr")): null
+
+2020-04-10 22:40:59 - [TEST_STEP][PASSED] - return rows_table.size(): null
+
+2020-04-10 22:40:59 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), mails): Text 'a@a.com,b@b.com,c@c.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-04-10 22:41:00 - [MESSAGE][PASSED] - Text 'a@a.com,b@b.com,c@c.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-04-10 22:41:00 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-04-10 22:41:00 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-04-10 22:41:00 - [TEST_STEP][PASSED] - assert membersCount + 3 == getMembersCount(): null
+
+2020-04-10 22:41:00 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-04-10 22:41:00 - [TEST_STEP][PASSED] - tbody = driver.findElement(By.xpath("//table[@id='share_table']/tbody")): null
+
+2020-04-10 22:41:04 - [TEST_STEP][PASSED] - assert tbody: null
+
+2020-04-10 22:41:04 - [TEST_STEP][PASSED] - rows_table = tbody.findElements(By.tagName("tr")): null
+
+2020-04-10 22:41:04 - [TEST_STEP][PASSED] - return rows_table.size(): null
+
+2020-04-10 22:41:04 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-04-10 22:41:04 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Share/Share Folder With one email adress" time="92.093" classname="Test Cases/Share/Share Folder With one email adress" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Share/Share Folder With one email adress FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$9.call(Unknown Source)
+	at Share Folder With one email adress.run(Share Folder With one email adress:72)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1586554783249.run(TempTestSuite1586554783249.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'a@a.com' and expected text 'user@mail.com' of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+"/>
+         <system-out><![CDATA[2020-04-10 22:41:04 - [TEST_CASE][FAILED] - Test Cases/Share/Share Folder With one email adress: Test Cases/Share/Share Folder With one email adress FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$9.call(Unknown Source)
+	at Share Folder With one email adress.run(Share Folder With one email adress:72)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1586554783249.run(TempTestSuite1586554783249.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'a@a.com' and expected text 'user@mail.com' of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+
+
+2020-04-10 22:41:04 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-04-10 22:41:04 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-04-10 22:41:06 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-04-10 22:41:06 - [TEST_STEP][PASSED] - navigateToUrl("https://lab.powerfolder.net:8666/login"): Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-04-10 22:42:09 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-04-10 22:42:09 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Login - PowerFolder"): Current window's title is: 'Login - PowerFolder'
+
+2020-04-10 22:42:09 - [MESSAGE][PASSED] - Current window's title is: 'Login - PowerFolder'
+
+2020-04-10 22:42:09 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username"), "admin"): Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-04-10 22:42:09 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-04-10 22:42:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-04-10 22:42:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-04-10 22:42:10 - [TEST_STEP][PASSED] - isPresent = waitForElementVisible(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), 2): Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-04-10 22:42:10 - [MESSAGE][PASSED] - Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-04-10 22:42:10 - [TEST_STEP][PASSED] - assert isPresent: null
+
+2020-04-10 22:42:10 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), "8SQVv/p9jVScEs4/2CZsLw=="): Text ****** has been set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-04-10 22:42:11 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-04-10 22:42:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-04-10 22:42:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-04-10 22:42:17 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Dashboard - PowerFolder"): Current window's title is: 'Dashboard - PowerFolder'
+
+2020-04-10 22:42:17 - [MESSAGE][PASSED] - Current window's title is: 'Dashboard - PowerFolder'
+
+2020-04-10 22:42:17 - [TEST_STEP][PASSED] - navigateToUrl("https://lab.powerfolder.net:8666/folderstable"): Navigate to 'https://lab.powerfolder.net:8666/folderstable' successfully
+
+2020-04-10 22:42:23 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/folderstable' successfully
+
+2020-04-10 22:42:23 - [TEST_STEP][PASSED] - folderName = RandomStringUtils.random(9, true, true): null
+
+2020-04-10 22:42:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-04-10 22:42:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-04-10 22:42:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-04-10 22:42:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-04-10 22:42:26 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), folderName): Text 'WJaoYQrLG' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-04-10 22:42:27 - [MESSAGE][PASSED] - Text 'WJaoYQrLG' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-04-10 22:42:27 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-04-10 22:42:27 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-04-10 22:42:27 - [TEST_STEP][PASSED] - btn = findShareButton(folderName): null
+
+2020-04-10 22:42:27 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-04-10 22:42:27 - [TEST_STEP][PASSED] - return driver.findElement(org.openqa.selenium.By.xpath(//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(), $fileName)]/../../td[6]/a)): null
+
+2020-04-10 22:42:30 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(btn)): Execute JavaScript 'arguments[0].click()' successfully
+
+2020-04-10 22:42:30 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2020-04-10 22:42:30 - [TEST_STEP][PASSED] - mail = "user@mail.com": null
+
+2020-04-10 22:42:30 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), mail): Text 'user@mail.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-04-10 22:42:32 - [MESSAGE][PASSED] - Text 'user@mail.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-04-10 22:42:32 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-04-10 22:42:32 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-04-10 22:42:32 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Invitation sent to usermailcom"), "Invitation sent to " + mail): Actual text and expected text of test object 'Object Repository/Share/Page_Folders - PowerFolder/span_Invitation sent to usermailcom' are matched.
+
+2020-04-10 22:42:35 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Share/Page_Folders - PowerFolder/span_Invitation sent to usermailcom' are matched.
+
+2020-04-10 22:42:35 - [TEST_STEP][FAILED] - verifyElementText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom"), mail): Verify element text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$9.call(Unknown Source)
+	at Share Folder With one email adress.run(Share Folder With one email adress:72)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1586554783249.run(TempTestSuite1586554783249.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'a@a.com' and expected text 'user@mail.com' of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+)
+
+2020-04-10 22:42:36 - [MESSAGE][FAILED] - Actual text 'a@a.com' and expected text 'user@mail.com' of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' are NOT matched. (Root cause: com.kms.katalon.core.exception.StepFailedException: Actual text 'a@a.com' and expected text 'user@mail.com' of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$9.call(Unknown Source)
+	at Share Folder With one email adress.run(Share Folder With one email adress:72)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1586554783249.run(TempTestSuite1586554783249.groovy:36)
+)
+[[ATTACHMENT|/Users/mac/Documents/PF-WEBTEST/Reports/20200410_223943/Folder Share/20200410_223943/1586554955689.png]]
+
+2020-04-10 22:42:36 - [MESSAGE][FAILED] - Verify element text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$9.call(Unknown Source)
+	at Share Folder With one email adress.run(Share Folder With one email adress:72)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1586554783249.run(TempTestSuite1586554783249.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'a@a.com' and expected text 'user@mail.com' of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+)
+[[ATTACHMENT|/Users/mac/Documents/PF-WEBTEST/Reports/20200410_223943/Folder Share/20200410_223943/1586554956295.png]]]]></system-out>
+         <system-err><![CDATA[2020-04-10 22:41:04 - [TEST_CASE][FAILED] - Test Cases/Share/Share Folder With one email adress: Test Cases/Share/Share Folder With one email adress FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$9.call(Unknown Source)
+	at Share Folder With one email adress.run(Share Folder With one email adress:72)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1586554783249.run(TempTestSuite1586554783249.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'a@a.com' and expected text 'user@mail.com' of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-04-10 22:39:45 - [TEST_SUITE][FAILED] - Folder Share: Test Cases/Share/Share Folder With one email adress FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$9.call(Unknown Source)
+	at Share Folder With one email adress.run(Share Folder With one email adress:72)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1586554783249.run(TempTestSuite1586554783249.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'a@a.com' and expected text 'user@mail.com' of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-out>
+      <system-err><![CDATA[2020-04-10 22:39:45 - [TEST_SUITE][FAILED] - Folder Share: Test Cases/Share/Share Folder With one email adress FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$9.call(Unknown Source)
+	at Share Folder With one email adress.run(Share Folder With one email adress:72)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1586554783249.run(TempTestSuite1586554783249.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'a@a.com' and expected text 'user@mail.com' of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+   </testsuite>
+</testsuites>
