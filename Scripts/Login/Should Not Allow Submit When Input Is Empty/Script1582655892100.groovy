@@ -18,16 +18,16 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://lab.powerfolder.net:8666/login')
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 assert WebUI.getWindowTitle().equals('Login - PowerFolder')
 
 WebUI.click(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login'))
 
+attribute = WebUI.getAttribute(findTestObject('Object Repository/Login/Page_Login - PowerFolder/form_Log in username container'), 
+    'class')
 
-attribute = WebUI.getAttribute(findTestObject('Object Repository/Login/Page_Login - PowerFolder/form_Log in username container'), 'class')
-
-assert attribute.contains("has-error")
+assert attribute.contains('has-error')
 
 WebUI.closeBrowser()
 

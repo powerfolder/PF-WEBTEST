@@ -18,21 +18,21 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://lab.powerfolder.net:8666/login')
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 assert WebUI.getWindowTitle().equals('Login - PowerFolder')
 
-WebUI.setText(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'), 'admin')
+WebUI.setText(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'), GlobalVariable.Username)
 
 WebUI.click(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login'))
 
-isPresent = WebUI.waitForElementVisible(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'),
-	2)
+isPresent = WebUI.waitForElementVisible(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'), 
+    2)
 
 assert isPresent
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'), 
-    '8SQVv/p9jVScEs4/2CZsLw==')
+WebUI.setText(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'), 
+    GlobalVariable.Password)
 
 WebUI.click(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login'))
 

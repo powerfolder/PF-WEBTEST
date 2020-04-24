@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalVariableEntities>
    <description></description>
-   <name>default</name>
+   <name>Dev Server</name>
    <tag></tag>
-   <defaultProfile>true</defaultProfile>
+   <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://lab.powerfolder.net:8666/login'</initValue>
+      <initValue>'https://lab.powerfolder.net:8443/'</initValue>
       <name>URL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'admin'</initValue>
+      <initValue>'development-admin@powerfolder.com'</initValue>
       <name>Username</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'password'</initValue>
+      <initValue>'$KILLcorona1'</initValue>
       <name>Password</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

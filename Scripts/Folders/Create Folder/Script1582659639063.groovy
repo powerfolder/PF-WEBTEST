@@ -20,29 +20,8 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Folders/Should Go to Folderstable'), [:], FailureHandling.OPTIONAL)
 
-WebUI.navigateToUrl('https://lab.powerfolder.net:8666/login')
-
-assert WebUI.getWindowTitle().equals('Login - PowerFolder')
-
-WebUI.setText(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'), 'katalon@yopmail.com')
-
-WebUI.click(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login'))
-
-isPresent = WebUI.waitForElementVisible(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'), 
-    2)
-
-assert isPresent
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'), 
-    'MHSUC33hkPl3yWe8G8QdXQ==')
-
-WebUI.click(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login'))
-
-assert WebUI.getWindowTitle().equals('Dashboard - PowerFolder')
-
-WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 
 originfolderCount = getFoldersCount()
 
@@ -56,22 +35,14 @@ WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder
 
 WebUI.setText(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/input_Create a new Folder_pencil'), folderName)
 
-WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/button_Ok'))
+WebUI.sendKeys(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/input_Create a new Folder_pencil'), Keys.chord(
+	Keys.ENTER))
+
 
 assert getFoldersCount() > originfolderCount
 
 assert true == tableContainsFolder(folderName)
 
-
-//WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/div_Folder created'))
-//
-//WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/span_Folder created'))
-//
-//WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/td_test (katalon katalon)'))
-//
-//WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Delete'))
-//
-//WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/button_Yes'))
 
 WebUI.closeBrowser()
 
