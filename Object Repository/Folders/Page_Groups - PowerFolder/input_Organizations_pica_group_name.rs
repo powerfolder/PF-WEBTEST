@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Invite users and groups or create a l_797df6</name>
+   <name>input_Organizations_pica_group_name</name>
    <tag></tag>
-   <elementGuidId>3e9dc09d-c919-40fe-aad1-4b2ff039e586</elementGuidId>
+   <elementGuidId>7262cfca-9fdd-4bba-bc2d-1d4492d49bc4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@type='email']</value>
+         <value>//input[@id='pica_group_name']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,66 +20,66 @@
       <value>input</value>
    </webElementProperties>
    <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>pica_group_name</value>
+   </webElementProperties>
+   <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>pica-taginput-input form-control</value>
+      <value>form-control</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>email</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>should-validate</name>
-      <type>Main</type>
-      <value>true</value>
+      <value>text</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-placeholder</name>
       <type>Main</type>
-      <value>placeholder_invite_by_name_or_email</value>
+      <value>placeholder_name</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>placeholder</name>
       <type>Main</type>
-      <value>Invite by name , e-mail or List in form mail1,name,mail2...,mailn</value>
+      <value>Name</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;share_taginput&quot;)/div[@class=&quot;pica-taginput-div form-control&quot;]/input[@class=&quot;pica-taginput-input form-control&quot;]</value>
+      <value>id(&quot;pica_group_name&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@type='email']</value>
+      <value>//input[@id='pica_group_name']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='share_taginput']/div/input</value>
+      <value>//div[@id='pica_group_dialog']/div/div/div[2]/div/div/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[4]/div/div/div[2]/div/div/input</value>
+      <value>//div[3]/div/div/div[2]/div/div/input</value>
    </webElementXpaths>
 </WebElementEntity>

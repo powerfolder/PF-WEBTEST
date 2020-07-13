@@ -3,7 +3,7 @@
    <description></description>
    <name>lang_Folders</name>
    <tag></tag>
-   <elementGuidId>de0daa06-2ab5-4900-9737-a5bfa3523135</elementGuidId>
+   <elementGuidId>a83638ca-b848-4c8a-9c09-73b499f6cabe</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

@@ -38,14 +38,14 @@ WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-String  mails = "a@a.com,b@b.com,c@c.com"
+String  mails = "${-> folderName+'a'} <${-> folderName+'a'}@outlook.com>;${-> folderName+'b'} <${-> folderName+'b'}@outlook.com>;${-> folderName+'c'} <${-> folderName+'c'}@outlook.com>"
 
 int membersCount = getMembersCount()
 
 WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'), mails)
 
-WebUI.sendKeys(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'), 
-    Keys.chord(Keys.ENTER))
+WebUI.click(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe'))
+
 
 assert membersCount+3 == getMembersCount()
 

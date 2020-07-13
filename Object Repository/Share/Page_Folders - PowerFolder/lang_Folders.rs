@@ -3,7 +3,7 @@
    <description></description>
    <name>lang_Folders</name>
    <tag></tag>
-   <elementGuidId>de0daa06-2ab5-4900-9737-a5bfa3523135</elementGuidId>
+   <elementGuidId>5867ff1b-2230-4e8e-aca1-1f0a01f5ffa8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -74,13 +74,6 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Dashboard'])[1]/following::lang[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='OK I understand'])[1]/following::lang[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

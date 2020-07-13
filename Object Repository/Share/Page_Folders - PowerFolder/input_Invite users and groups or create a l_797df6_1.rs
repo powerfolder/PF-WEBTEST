@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Invite users and groups or create a l_797df6</name>
+   <name>input_Invite users and groups or create a l_797df6_1</name>
    <tag></tag>
-   <elementGuidId>3e9dc09d-c919-40fe-aad1-4b2ff039e586</elementGuidId>
+   <elementGuidId>9a1fcd15-7117-4d75-97d3-8bdb2284957b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -27,7 +27,7 @@
       <value>pica-taginput-input form-control</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
@@ -48,7 +48,7 @@
       <value>placeholder_invite_by_name_or_email</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>placeholder</name>
       <type>Main</type>
@@ -62,7 +62,7 @@
       <value>id(&quot;share_taginput&quot;)/div[@class=&quot;pica-taginput-div form-control&quot;]/input[@class=&quot;pica-taginput-input form-control&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
