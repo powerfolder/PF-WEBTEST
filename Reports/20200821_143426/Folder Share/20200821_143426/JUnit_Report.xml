@@ -1,0 +1,2299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Folder Share" time="403.702" tests="18" failures="4" errors="0">
+   <testsuite name="Folder Share" tests="18" failures="4" errors="0" time="403.702" timestamp="2020-08-21 14:34:28" hostname="mac - localhost" id="Test Suites/Folder Share">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/mac/Documents/PF-WEBTEST/Reports/20200821_143426/Folder Share/20200821_143426"/>
+         <property name="logFiles" value="/Users/mac/Documents/PF-WEBTEST/Reports/20200821_143426/Folder Share/20200821_143426/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="mac - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Firefox 79.0"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="sessionId" value="d5e09490-d830-644d-9521-d35cf08595a4"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Share/Share Using plus button/Share Folder With one email adress" time="21.183" classname="Test Cases/Share/Share Using plus button/Share Folder With one email adress" status="PASSED">
+         <system-out><![CDATA[2020-08-21 14:34:28 - [TEST_CASE][PASSED] - Test Cases/Share/Share Using plus button/Share Folder With one email adress: Test Cases/Share/Share Using plus button/Share Folder With one email adress
+
+2020-08-21 14:34:29 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Folders/Should Go to Folderstable"), [:], OPTIONAL): Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:34:29 - [TEST_CASE][PASSED] - Test Cases/Folders/Should Go to Folderstable: Test Cases/Folders/Should Go to Folderstable
+
+2020-08-21 14:34:29 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-08-21 14:34:29 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-08-21 14:34:29 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-08-21 14:34:33 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-08-21 14:34:33 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:34:36 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:34:36 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Login - PowerFolder"): Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:34:36 - [MESSAGE][PASSED] - Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:34:36 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username"), Username): Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:34:36 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:34:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:34:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:34:37 - [TEST_STEP][PASSED] - isPresent = waitForElementVisible(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), 2): Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:34:38 - [MESSAGE][PASSED] - Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:34:38 - [TEST_STEP][PASSED] - assert isPresent: null
+
+2020-08-21 14:34:38 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), Password): Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:34:38 - [MESSAGE][PASSED] - Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:34:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:34:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:34:41 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Dashboard - PowerFolder"): Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:34:41 - [MESSAGE][PASSED] - Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:34:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders")): Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:34:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:34:42 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Folders - PowerFolder"): Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:34:42 - [MESSAGE][PASSED] - Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:34:42 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:34:42 - [TEST_STEP][PASSED] - folderName = RandomStringUtils.random(9, true, true): null
+
+2020-08-21 14:34:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:34:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:34:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:34:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:34:44 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), folderName): Text 'fVC0Pscts' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:34:45 - [MESSAGE][PASSED] - Text 'fVC0Pscts' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:34:45 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:34:45 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:34:45 - [TEST_STEP][PASSED] - btn = findShareButton(folderName): null
+
+2020-08-21 14:34:45 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-08-21 14:34:45 - [TEST_STEP][PASSED] - return driver.findElement(org.openqa.selenium.By.xpath(//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a)): null
+
+2020-08-21 14:34:46 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(btn)): Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:34:46 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:34:46 - [TEST_STEP][PASSED] - mail = "user@mail.com": null
+
+2020-08-21 14:34:46 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), mail): Text 'user@mail.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:34:47 - [MESSAGE][PASSED] - Text 'user@mail.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:34:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe' is clicked on
+
+2020-08-21 14:34:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe' is clicked on
+
+2020-08-21 14:34:47 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom"), mail): Actual text and expected text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' are matched.
+
+2020-08-21 14:34:48 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' are matched.
+
+2020-08-21 14:34:48 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-08-21 14:34:49 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Share/Share Using plus button/Share folder with Multiple emails semi colon" time="19.86" classname="Test Cases/Share/Share Using plus button/Share folder with Multiple emails semi colon" status="PASSED">
+         <system-out><![CDATA[2020-08-21 14:34:49 - [TEST_CASE][PASSED] - Test Cases/Share/Share Using plus button/Share folder with Multiple emails semi colon: Test Cases/Share/Share Using plus button/Share folder with Multiple emails semi colon
+
+2020-08-21 14:34:50 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Folders/Should Go to Folderstable"), [:], OPTIONAL): Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:34:50 - [TEST_CASE][PASSED] - Test Cases/Folders/Should Go to Folderstable: Test Cases/Folders/Should Go to Folderstable
+
+2020-08-21 14:34:50 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-08-21 14:34:50 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-08-21 14:34:53 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-08-21 14:34:53 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:34:57 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:34:57 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Login - PowerFolder"): Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:34:57 - [MESSAGE][PASSED] - Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:34:57 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username"), Username): Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:34:57 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:34:57 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:34:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:34:58 - [TEST_STEP][PASSED] - isPresent = waitForElementVisible(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), 2): Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:34:59 - [MESSAGE][PASSED] - Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:34:59 - [TEST_STEP][PASSED] - assert isPresent: null
+
+2020-08-21 14:34:59 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), Password): Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:34:59 - [MESSAGE][PASSED] - Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:34:59 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:35:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:35:00 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Dashboard - PowerFolder"): Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:35:00 - [MESSAGE][PASSED] - Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:35:00 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders")): Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:35:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:35:01 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Folders - PowerFolder"): Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:35:01 - [MESSAGE][PASSED] - Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:35:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:35:01 - [TEST_STEP][PASSED] - folderName = RandomStringUtils.random(9, true, true): null
+
+2020-08-21 14:35:01 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:35:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:35:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:35:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:35:03 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), folderName): Text 'xObkGhefF' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:35:04 - [MESSAGE][PASSED] - Text 'xObkGhefF' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:35:04 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:35:04 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:35:04 - [TEST_STEP][PASSED] - btn = findShareButton(folderName): null
+
+2020-08-21 14:35:04 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-08-21 14:35:04 - [TEST_STEP][PASSED] - return driver.findElement(org.openqa.selenium.By.xpath(//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a)): null
+
+2020-08-21 14:35:05 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(btn)): Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:35:06 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:35:06 - [TEST_STEP][PASSED] - mails = "a@a.com;b@b.com;c@c.com": null
+
+2020-08-21 14:35:06 - [TEST_STEP][PASSED] - membersCount = share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:35:06 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:35:06 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), mails): Text 'a@a.com;b@b.com;c@c.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:35:07 - [MESSAGE][PASSED] - Text 'a@a.com;b@b.com;c@c.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:35:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe' is clicked on
+
+2020-08-21 14:35:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe' is clicked on
+
+2020-08-21 14:35:07 - [TEST_STEP][PASSED] - assert membersCount + 3 == share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:35:08 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:35:08 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-08-21 14:35:09 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Share/Share Using plus button/Share folder with one email outlook format" time="19.224" classname="Test Cases/Share/Share Using plus button/Share folder with one email outlook format" status="PASSED">
+         <system-out><![CDATA[2020-08-21 14:35:09 - [TEST_CASE][PASSED] - Test Cases/Share/Share Using plus button/Share folder with one email outlook format: Test Cases/Share/Share Using plus button/Share folder with one email outlook format
+
+2020-08-21 14:35:10 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Folders/Should Go to Folderstable"), [:], OPTIONAL): Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:35:10 - [TEST_CASE][PASSED] - Test Cases/Folders/Should Go to Folderstable: Test Cases/Folders/Should Go to Folderstable
+
+2020-08-21 14:35:10 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-08-21 14:35:10 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-08-21 14:35:13 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-08-21 14:35:13 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:35:17 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:35:17 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Login - PowerFolder"): Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:35:17 - [MESSAGE][PASSED] - Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:35:17 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username"), Username): Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:35:17 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:35:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:35:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:35:18 - [TEST_STEP][PASSED] - isPresent = waitForElementVisible(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), 2): Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:35:18 - [MESSAGE][PASSED] - Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:35:18 - [TEST_STEP][PASSED] - assert isPresent: null
+
+2020-08-21 14:35:18 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), Password): Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:35:19 - [MESSAGE][PASSED] - Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:35:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:35:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:35:20 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Dashboard - PowerFolder"): Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:35:20 - [MESSAGE][PASSED] - Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:35:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders")): Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:35:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:35:21 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Folders - PowerFolder"): Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:35:21 - [MESSAGE][PASSED] - Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:35:21 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:35:21 - [TEST_STEP][PASSED] - folderName = RandomStringUtils.random(9, true, true): null
+
+2020-08-21 14:35:21 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:35:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:35:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:35:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:35:23 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), folderName): Text 'SCjvftxlz' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:35:24 - [MESSAGE][PASSED] - Text 'SCjvftxlz' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:35:24 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:35:24 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:35:24 - [TEST_STEP][PASSED] - btn = findShareButton(folderName): null
+
+2020-08-21 14:35:24 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-08-21 14:35:24 - [TEST_STEP][PASSED] - return driver.findElement(org.openqa.selenium.By.xpath(//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a)): null
+
+2020-08-21 14:35:25 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(btn)): Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:35:25 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:35:25 - [TEST_STEP][PASSED] - mail = ${ -> ... } <${ -> ... }@outlook.com>: null
+
+2020-08-21 14:35:25 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), mail): Text 'SCjvftxlz <SCjvftxlz@outlook.com>' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:35:26 - [MESSAGE][PASSED] - Text 'SCjvftxlz <SCjvftxlz@outlook.com>' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:35:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe' is clicked on
+
+2020-08-21 14:35:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe' is clicked on
+
+2020-08-21 14:35:27 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom"), folderName): Actual text and expected text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' are matched.
+
+2020-08-21 14:35:27 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' are matched.
+
+2020-08-21 14:35:27 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-08-21 14:35:29 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Share/Share Using plus button/Share folder with Multiple emails tabulation separator" time="18.476" classname="Test Cases/Share/Share Using plus button/Share folder with Multiple emails tabulation separator" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Share/Share Using plus button/Share folder with Multiple emails tabulation separator FAILED.
+Reason:
+Assertion failed: 
+
+assert membersCount+3 == CustomKeywords.'share.ShareHelper.getMembersCount'()
+       |           |  |                 |
+       0           3  false             0
+
+	at Share folder with Multiple emails tabulation separator.run(Share folder with Multiple emails tabulation separator:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1598016866808.run(TempTestSuite1598016866808.groovy:36)
+"/>
+         <system-out><![CDATA[2020-08-21 14:35:29 - [TEST_CASE][FAILED] - Test Cases/Share/Share Using plus button/Share folder with Multiple emails tabulation separator: Test Cases/Share/Share Using plus button/Share folder with Multiple emails tabulation separator FAILED.
+Reason:
+Assertion failed: 
+
+assert membersCount+3 == CustomKeywords.'share.ShareHelper.getMembersCount'()
+       |           |  |                 |
+       0           3  false             0
+
+	at Share folder with Multiple emails tabulation separator.run(Share folder with Multiple emails tabulation separator:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1598016866808.run(TempTestSuite1598016866808.groovy:36)
+
+
+2020-08-21 14:35:29 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Folders/Should Go to Folderstable"), [:], OPTIONAL): Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:35:29 - [TEST_CASE][PASSED] - Test Cases/Folders/Should Go to Folderstable: Test Cases/Folders/Should Go to Folderstable
+
+2020-08-21 14:35:29 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-08-21 14:35:29 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-08-21 14:35:32 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-08-21 14:35:32 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:35:36 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:35:36 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Login - PowerFolder"): Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:35:36 - [MESSAGE][PASSED] - Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:35:36 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username"), Username): Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:35:36 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:35:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:35:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:35:37 - [TEST_STEP][PASSED] - isPresent = waitForElementVisible(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), 2): Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:35:37 - [MESSAGE][PASSED] - Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:35:37 - [TEST_STEP][PASSED] - assert isPresent: null
+
+2020-08-21 14:35:37 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), Password): Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:35:38 - [MESSAGE][PASSED] - Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:35:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:35:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:35:39 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Dashboard - PowerFolder"): Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:35:39 - [MESSAGE][PASSED] - Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:35:39 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders")): Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:35:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:35:40 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Folders - PowerFolder"): Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:35:40 - [MESSAGE][PASSED] - Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:35:40 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:35:40 - [TEST_STEP][PASSED] - folderName = RandomStringUtils.random(9, true, true): null
+
+2020-08-21 14:35:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:35:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:35:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:35:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:35:42 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), folderName): Text 'aspvXZWvc' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:35:43 - [MESSAGE][PASSED] - Text 'aspvXZWvc' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:35:43 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:35:43 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:35:43 - [TEST_STEP][PASSED] - btn = findShareButton(folderName): null
+
+2020-08-21 14:35:43 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-08-21 14:35:43 - [TEST_STEP][PASSED] - return driver.findElement(org.openqa.selenium.By.xpath(//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a)): null
+
+2020-08-21 14:35:45 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(btn)): Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:35:45 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:35:45 - [TEST_STEP][PASSED] - mails = a_${ -> ... }@a.com	b_${ -> ... }@b.com	c_${ -> ... }@c.com: null
+
+2020-08-21 14:35:45 - [TEST_STEP][PASSED] - membersCount = share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:35:45 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:35:45 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), mails): Text 'a_aspvXZWvc@a.com	b_aspvXZWvc@b.com	c_aspvXZWvc@c.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:35:46 - [MESSAGE][PASSED] - Text 'a_aspvXZWvc@a.com	b_aspvXZWvc@b.com	c_aspvXZWvc@c.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:35:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe' is clicked on
+
+2020-08-21 14:35:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe' is clicked on
+
+2020-08-21 14:35:46 - [TEST_STEP][PASSED] - assert membersCount + 3 == share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:35:47 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED]]></system-out>
+         <system-err><![CDATA[2020-08-21 14:35:29 - [TEST_CASE][FAILED] - Test Cases/Share/Share Using plus button/Share folder with Multiple emails tabulation separator: Test Cases/Share/Share Using plus button/Share folder with Multiple emails tabulation separator FAILED.
+Reason:
+Assertion failed: 
+
+assert membersCount+3 == CustomKeywords.'share.ShareHelper.getMembersCount'()
+       |           |  |                 |
+       0           3  false             0
+
+	at Share folder with Multiple emails tabulation separator.run(Share folder with Multiple emails tabulation separator:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1598016866808.run(TempTestSuite1598016866808.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Share/Share Using plus button/Share Folder With Group" time="27.944" classname="Test Cases/Share/Share Using plus button/Share Folder With Group" status="PASSED">
+         <system-out><![CDATA[2020-08-21 14:35:47 - [TEST_CASE][PASSED] - Test Cases/Share/Share Using plus button/Share Folder With Group: Test Cases/Share/Share Using plus button/Share Folder With Group
+
+2020-08-21 14:35:47 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Folders/Should Go to Folderstable"), [:], OPTIONAL): Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:35:47 - [TEST_CASE][PASSED] - Test Cases/Folders/Should Go to Folderstable: Test Cases/Folders/Should Go to Folderstable
+
+2020-08-21 14:35:47 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-08-21 14:35:47 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-08-21 14:35:49 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-08-21 14:35:51 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-08-21 14:35:51 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:35:56 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:35:56 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Login - PowerFolder"): Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:35:56 - [MESSAGE][PASSED] - Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:35:56 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username"), Username): Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:35:56 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:35:56 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:35:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:35:57 - [TEST_STEP][PASSED] - isPresent = waitForElementVisible(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), 2): Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:35:57 - [MESSAGE][PASSED] - Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:35:57 - [TEST_STEP][PASSED] - assert isPresent: null
+
+2020-08-21 14:35:57 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), Password): Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:35:57 - [MESSAGE][PASSED] - Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:35:57 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:35:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:35:59 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Dashboard - PowerFolder"): Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:35:59 - [MESSAGE][PASSED] - Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:35:59 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders")): Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:36:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:36:00 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Folders - PowerFolder"): Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:36:00 - [MESSAGE][PASSED] - Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:36:00 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:36:00 - [TEST_STEP][PASSED] - folderName = RandomStringUtils.random(9, true, true): null
+
+2020-08-21 14:36:00 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:36:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:36:02 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:36:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:36:02 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), folderName): Text 'rLyW7CV0Z' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:36:03 - [MESSAGE][PASSED] - Text 'rLyW7CV0Z' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:36:03 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:36:03 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:36:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Dashboard - PowerFolder/lang_Groups")): Object: 'Object Repository/Folders/Page_Dashboard - PowerFolder/lang_Groups' is clicked on
+
+2020-08-21 14:36:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Dashboard - PowerFolder/lang_Groups' is clicked on
+
+2020-08-21 14:36:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Groups - PowerFolder/span_Log out_pica-icon pica-glyph glyphicon_0824b5")): Object: 'Object Repository/Share/Page_Groups - PowerFolder/span_Log out_pica-icon pica-glyph glyphicon_0824b5' is clicked on
+
+2020-08-21 14:36:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Groups - PowerFolder/span_Log out_pica-icon pica-glyph glyphicon_0824b5' is clicked on
+
+2020-08-21 14:36:05 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Groups - PowerFolder/input_Organizations_pica_group_name"), Group_${ -> ... }): Text 'Group_rLyW7CV0Z' is set on object 'Object Repository/Share/Page_Groups - PowerFolder/input_Organizations_pica_group_name'
+
+2020-08-21 14:36:06 - [MESSAGE][PASSED] - Text 'Group_rLyW7CV0Z' is set on object 'Object Repository/Share/Page_Groups - PowerFolder/input_Organizations_pica_group_name'
+
+2020-08-21 14:36:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Groups - PowerFolder/lang_Save")): Object: 'Object Repository/Share/Page_Groups - PowerFolder/lang_Save' is clicked on
+
+2020-08-21 14:36:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Groups - PowerFolder/lang_Save' is clicked on
+
+2020-08-21 14:36:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders")): Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:36:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:36:09 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Folders - PowerFolder"): Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:36:09 - [MESSAGE][PASSED] - Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:36:09 - [TEST_STEP][PASSED] - btn = findShareButton(folderName): null
+
+2020-08-21 14:36:09 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-08-21 14:36:09 - [TEST_STEP][PASSED] - return driver.findElement(org.openqa.selenium.By.xpath(//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a)): null
+
+2020-08-21 14:36:11 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(btn)): Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:36:11 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:36:11 - [TEST_STEP][PASSED] - Group = Group_${ -> ... }: null
+
+2020-08-21 14:36:11 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), Group): Text 'Group_rLyW7CV0Z' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:36:11 - [MESSAGE][PASSED] - Text 'Group_rLyW7CV0Z' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:36:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/tag")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/tag' is clicked on
+
+2020-08-21 14:36:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/tag' is clicked on
+
+2020-08-21 14:36:13 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe' is clicked on
+
+2020-08-21 14:36:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe' is clicked on
+
+2020-08-21 14:36:13 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/td_Group"), Group): Actual text and expected text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_Group' are matched.
+
+2020-08-21 14:36:14 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_Group' are matched.
+
+2020-08-21 14:36:14 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-08-21 14:36:15 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Share/Share Using plus button/Share folder with Multiple outlook emails" time="19.713" classname="Test Cases/Share/Share Using plus button/Share folder with Multiple outlook emails" status="PASSED">
+         <system-out><![CDATA[2020-08-21 14:36:15 - [TEST_CASE][PASSED] - Test Cases/Share/Share Using plus button/Share folder with Multiple outlook emails: Test Cases/Share/Share Using plus button/Share folder with Multiple outlook emails
+
+2020-08-21 14:36:15 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Folders/Should Go to Folderstable"), [:], OPTIONAL): Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:36:15 - [TEST_CASE][PASSED] - Test Cases/Folders/Should Go to Folderstable: Test Cases/Folders/Should Go to Folderstable
+
+2020-08-21 14:36:15 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-08-21 14:36:15 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-08-21 14:36:18 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-08-21 14:36:18 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:36:22 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:36:22 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Login - PowerFolder"): Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:36:22 - [MESSAGE][PASSED] - Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:36:22 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username"), Username): Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:36:23 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:36:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:36:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:36:23 - [TEST_STEP][PASSED] - isPresent = waitForElementVisible(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), 2): Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:36:24 - [MESSAGE][PASSED] - Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:36:24 - [TEST_STEP][PASSED] - assert isPresent: null
+
+2020-08-21 14:36:24 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), Password): Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:36:24 - [MESSAGE][PASSED] - Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:36:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:36:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:36:25 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Dashboard - PowerFolder"): Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:36:25 - [MESSAGE][PASSED] - Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:36:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders")): Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:36:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:36:27 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Folders - PowerFolder"): Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:36:27 - [MESSAGE][PASSED] - Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:36:27 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:36:27 - [TEST_STEP][PASSED] - folderName = RandomStringUtils.random(9, true, true): null
+
+2020-08-21 14:36:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:36:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:36:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:36:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:36:29 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), folderName): Text 'rcmEES0c9' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:36:29 - [MESSAGE][PASSED] - Text 'rcmEES0c9' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:36:29 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:36:29 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:36:29 - [TEST_STEP][PASSED] - btn = findShareButton(folderName): null
+
+2020-08-21 14:36:29 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-08-21 14:36:29 - [TEST_STEP][PASSED] - return driver.findElement(org.openqa.selenium.By.xpath(//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a)): null
+
+2020-08-21 14:36:31 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(btn)): Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:36:31 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:36:31 - [TEST_STEP][PASSED] - mails = ${ -> ... } <${ -> ... }@outlook.com>;${ -> ... } <${ -> ... }@outlook.com>;${ -> ... } <${ -> ... }@outlook.com>: null
+
+2020-08-21 14:36:31 - [TEST_STEP][PASSED] - membersCount = share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:36:32 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:36:32 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), mails): Text 'rcmEES0c9a <rcmEES0c9a@outlook.com>;rcmEES0c9b <rcmEES0c9b@outlook.com>;rcmEES0c9c <rcmEES0c9c@outlook.com>' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:36:32 - [MESSAGE][PASSED] - Text 'rcmEES0c9a <rcmEES0c9a@outlook.com>;rcmEES0c9b <rcmEES0c9b@outlook.com>;rcmEES0c9c <rcmEES0c9c@outlook.com>' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:36:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe' is clicked on
+
+2020-08-21 14:36:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe' is clicked on
+
+2020-08-21 14:36:32 - [TEST_STEP][PASSED] - assert membersCount + 3 == share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:36:33 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:36:33 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-08-21 14:36:35 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Share/Share Using plus button/Share folder with Multiple emails colon separator" time="20.205" classname="Test Cases/Share/Share Using plus button/Share folder with Multiple emails colon separator" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Share/Share Using plus button/Share folder with Multiple emails colon separator FAILED.
+Reason:
+Assertion failed: 
+
+assert membersCount+3 == CustomKeywords.'share.ShareHelper.getMembersCount'()
+       |           |  |                 |
+       0           3  false             0
+
+	at Share folder with Multiple emails colon separator.run(Share folder with Multiple emails colon separator:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1598016866808.run(TempTestSuite1598016866808.groovy:36)
+"/>
+         <system-out><![CDATA[2020-08-21 14:36:35 - [TEST_CASE][FAILED] - Test Cases/Share/Share Using plus button/Share folder with Multiple emails colon separator: Test Cases/Share/Share Using plus button/Share folder with Multiple emails colon separator FAILED.
+Reason:
+Assertion failed: 
+
+assert membersCount+3 == CustomKeywords.'share.ShareHelper.getMembersCount'()
+       |           |  |                 |
+       0           3  false             0
+
+	at Share folder with Multiple emails colon separator.run(Share folder with Multiple emails colon separator:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1598016866808.run(TempTestSuite1598016866808.groovy:36)
+
+
+2020-08-21 14:36:35 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Folders/Should Go to Folderstable"), [:], OPTIONAL): Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:36:35 - [TEST_CASE][PASSED] - Test Cases/Folders/Should Go to Folderstable: Test Cases/Folders/Should Go to Folderstable
+
+2020-08-21 14:36:35 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-08-21 14:36:35 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-08-21 14:36:38 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-08-21 14:36:38 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:36:42 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:36:42 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Login - PowerFolder"): Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:36:42 - [MESSAGE][PASSED] - Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:36:42 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username"), Username): Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:36:42 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:36:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:36:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:36:43 - [TEST_STEP][PASSED] - isPresent = waitForElementVisible(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), 2): Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:36:43 - [MESSAGE][PASSED] - Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:36:43 - [TEST_STEP][PASSED] - assert isPresent: null
+
+2020-08-21 14:36:43 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), Password): Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:36:44 - [MESSAGE][PASSED] - Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:36:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:36:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:36:45 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Dashboard - PowerFolder"): Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:36:45 - [MESSAGE][PASSED] - Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:36:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders")): Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:36:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:36:48 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Folders - PowerFolder"): Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:36:48 - [MESSAGE][PASSED] - Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:36:48 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:36:48 - [TEST_STEP][PASSED] - folderName = RandomStringUtils.random(9, true, true): null
+
+2020-08-21 14:36:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:36:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:36:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:36:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:36:50 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), folderName): Text 'kLDX1qXR0' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:36:51 - [MESSAGE][PASSED] - Text 'kLDX1qXR0' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:36:51 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:36:51 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:36:51 - [TEST_STEP][PASSED] - btn = findShareButton(folderName): null
+
+2020-08-21 14:36:51 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-08-21 14:36:51 - [TEST_STEP][PASSED] - return driver.findElement(org.openqa.selenium.By.xpath(//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a)): null
+
+2020-08-21 14:36:52 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(btn)): Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:36:52 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:36:52 - [TEST_STEP][PASSED] - mails = a_${ -> ... }@a.com:b_${ -> ... }@b.com:c_${ -> ... }@c.com: null
+
+2020-08-21 14:36:52 - [TEST_STEP][PASSED] - membersCount = share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:36:53 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:36:53 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), mails): Text 'a_kLDX1qXR0@a.com:b_kLDX1qXR0@b.com:c_kLDX1qXR0@c.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:36:54 - [MESSAGE][PASSED] - Text 'a_kLDX1qXR0@a.com:b_kLDX1qXR0@b.com:c_kLDX1qXR0@c.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:36:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe' is clicked on
+
+2020-08-21 14:36:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe' is clicked on
+
+2020-08-21 14:36:54 - [TEST_STEP][PASSED] - assert membersCount + 3 == share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:36:55 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED]]></system-out>
+         <system-err><![CDATA[2020-08-21 14:36:35 - [TEST_CASE][FAILED] - Test Cases/Share/Share Using plus button/Share folder with Multiple emails colon separator: Test Cases/Share/Share Using plus button/Share folder with Multiple emails colon separator FAILED.
+Reason:
+Assertion failed: 
+
+assert membersCount+3 == CustomKeywords.'share.ShareHelper.getMembersCount'()
+       |           |  |                 |
+       0           3  false             0
+
+	at Share folder with Multiple emails colon separator.run(Share folder with Multiple emails colon separator:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1598016866808.run(TempTestSuite1598016866808.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Share/Share Using plus button/Share folder with Multiple emails comma separator" time="20.278" classname="Test Cases/Share/Share Using plus button/Share folder with Multiple emails comma separator" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Share/Share Using plus button/Share folder with Multiple emails comma separator FAILED.
+Reason:
+Assertion failed: 
+
+assert membersCount+3 == CustomKeywords.'share.ShareHelper.getMembersCount'()
+       |           |  |                 |
+       0           3  false             0
+
+	at Share folder with Multiple emails comma separator.run(Share folder with Multiple emails comma separator:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1598016866808.run(TempTestSuite1598016866808.groovy:36)
+"/>
+         <system-out><![CDATA[2020-08-21 14:36:55 - [TEST_CASE][FAILED] - Test Cases/Share/Share Using plus button/Share folder with Multiple emails comma separator: Test Cases/Share/Share Using plus button/Share folder with Multiple emails comma separator FAILED.
+Reason:
+Assertion failed: 
+
+assert membersCount+3 == CustomKeywords.'share.ShareHelper.getMembersCount'()
+       |           |  |                 |
+       0           3  false             0
+
+	at Share folder with Multiple emails comma separator.run(Share folder with Multiple emails comma separator:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1598016866808.run(TempTestSuite1598016866808.groovy:36)
+
+
+2020-08-21 14:36:55 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Folders/Should Go to Folderstable"), [:], OPTIONAL): Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:36:55 - [TEST_CASE][PASSED] - Test Cases/Folders/Should Go to Folderstable: Test Cases/Folders/Should Go to Folderstable
+
+2020-08-21 14:36:55 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-08-21 14:36:55 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-08-21 14:36:57 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-08-21 14:36:59 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-08-21 14:36:59 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:37:05 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:37:05 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Login - PowerFolder"): Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:37:05 - [MESSAGE][PASSED] - Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:37:05 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username"), Username): Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:37:05 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:37:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:37:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:37:05 - [TEST_STEP][PASSED] - isPresent = waitForElementVisible(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), 2): Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:37:06 - [MESSAGE][PASSED] - Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:37:06 - [TEST_STEP][PASSED] - assert isPresent: null
+
+2020-08-21 14:37:06 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), Password): Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:37:06 - [MESSAGE][PASSED] - Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:37:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:37:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:37:07 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Dashboard - PowerFolder"): Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:37:07 - [MESSAGE][PASSED] - Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:37:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders")): Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:37:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:37:09 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Folders - PowerFolder"): Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:37:09 - [MESSAGE][PASSED] - Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:37:09 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:37:09 - [TEST_STEP][PASSED] - folderName = RandomStringUtils.random(9, true, true): null
+
+2020-08-21 14:37:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:37:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:37:10 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:37:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:37:11 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), folderName): Text 'i5kiKkIOI' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:37:11 - [MESSAGE][PASSED] - Text 'i5kiKkIOI' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:37:11 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:37:11 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:37:11 - [TEST_STEP][PASSED] - btn = findShareButton(folderName): null
+
+2020-08-21 14:37:11 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-08-21 14:37:11 - [TEST_STEP][PASSED] - return driver.findElement(org.openqa.selenium.By.xpath(//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a)): null
+
+2020-08-21 14:37:13 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(btn)): Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:37:13 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:37:13 - [TEST_STEP][PASSED] - mails = a_${ -> ... }@a.com,b_${ -> ... }@b.com,c_${ -> ... }@c.com: null
+
+2020-08-21 14:37:13 - [TEST_STEP][PASSED] - membersCount = share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:37:14 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:37:14 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), mails): Text 'a_i5kiKkIOI@a.com,b_i5kiKkIOI@b.com,c_i5kiKkIOI@c.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:37:14 - [MESSAGE][PASSED] - Text 'a_i5kiKkIOI@a.com,b_i5kiKkIOI@b.com,c_i5kiKkIOI@c.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:37:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe' is clicked on
+
+2020-08-21 14:37:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe' is clicked on
+
+2020-08-21 14:37:14 - [TEST_STEP][PASSED] - assert membersCount + 3 == share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:37:15 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED]]></system-out>
+         <system-err><![CDATA[2020-08-21 14:36:55 - [TEST_CASE][FAILED] - Test Cases/Share/Share Using plus button/Share folder with Multiple emails comma separator: Test Cases/Share/Share Using plus button/Share folder with Multiple emails comma separator FAILED.
+Reason:
+Assertion failed: 
+
+assert membersCount+3 == CustomKeywords.'share.ShareHelper.getMembersCount'()
+       |           |  |                 |
+       0           3  false             0
+
+	at Share folder with Multiple emails comma separator.run(Share folder with Multiple emails comma separator:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1598016866808.run(TempTestSuite1598016866808.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Share/Share Using plus button/Share folder with Multiple emails multiple separators" time="20.998" classname="Test Cases/Share/Share Using plus button/Share folder with Multiple emails multiple separators" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Share/Share Using plus button/Share folder with Multiple emails multiple separators FAILED.
+Reason:
+Assertion failed: 
+
+assert membersCount+4 == CustomKeywords.'share.ShareHelper.getMembersCount'()
+       |           |  |                 |
+       0           4  false             0
+
+	at Share folder with Multiple emails multiple separators.run(Share folder with Multiple emails multiple separators:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1598016866808.run(TempTestSuite1598016866808.groovy:36)
+"/>
+         <system-out><![CDATA[2020-08-21 14:37:15 - [TEST_CASE][FAILED] - Test Cases/Share/Share Using plus button/Share folder with Multiple emails multiple separators: Test Cases/Share/Share Using plus button/Share folder with Multiple emails multiple separators FAILED.
+Reason:
+Assertion failed: 
+
+assert membersCount+4 == CustomKeywords.'share.ShareHelper.getMembersCount'()
+       |           |  |                 |
+       0           4  false             0
+
+	at Share folder with Multiple emails multiple separators.run(Share folder with Multiple emails multiple separators:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1598016866808.run(TempTestSuite1598016866808.groovy:36)
+
+
+2020-08-21 14:37:15 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Folders/Should Go to Folderstable"), [:], OPTIONAL): Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:37:15 - [TEST_CASE][PASSED] - Test Cases/Folders/Should Go to Folderstable: Test Cases/Folders/Should Go to Folderstable
+
+2020-08-21 14:37:15 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-08-21 14:37:15 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-08-21 14:37:18 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-08-21 14:37:20 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-08-21 14:37:20 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:37:25 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:37:25 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Login - PowerFolder"): Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:37:25 - [MESSAGE][PASSED] - Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:37:25 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username"), Username): Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:37:25 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:37:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:37:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:37:26 - [TEST_STEP][PASSED] - isPresent = waitForElementVisible(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), 2): Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:37:26 - [MESSAGE][PASSED] - Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:37:26 - [TEST_STEP][PASSED] - assert isPresent: null
+
+2020-08-21 14:37:26 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), Password): Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:37:27 - [MESSAGE][PASSED] - Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:37:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:37:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:37:28 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Dashboard - PowerFolder"): Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:37:28 - [MESSAGE][PASSED] - Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:37:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders")): Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:37:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:37:29 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Folders - PowerFolder"): Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:37:29 - [MESSAGE][PASSED] - Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:37:29 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:37:29 - [TEST_STEP][PASSED] - folderName = RandomStringUtils.random(9, true, true): null
+
+2020-08-21 14:37:29 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:37:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:37:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:37:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:37:31 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), folderName): Text 'YCAjem11l' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:37:32 - [MESSAGE][PASSED] - Text 'YCAjem11l' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:37:32 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:37:32 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:37:32 - [TEST_STEP][PASSED] - btn = findShareButton(folderName): null
+
+2020-08-21 14:37:32 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-08-21 14:37:32 - [TEST_STEP][PASSED] - return driver.findElement(org.openqa.selenium.By.xpath(//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a)): null
+
+2020-08-21 14:37:34 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(btn)): Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:37:34 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:37:34 - [TEST_STEP][PASSED] - mails = a_${ -> ... }@a.com;b_${ -> ... }@b.com:c_${ -> ... }@c.com,d_${ -> ... }@d.com: null
+
+2020-08-21 14:37:34 - [TEST_STEP][PASSED] - membersCount = share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:37:35 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:37:35 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), mails): Text 'a_YCAjem11l@a.com;b_YCAjem11l@b.com:c_YCAjem11l@c.com,d_YCAjem11l@d.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:37:35 - [MESSAGE][PASSED] - Text 'a_YCAjem11l@a.com;b_YCAjem11l@b.com:c_YCAjem11l@c.com,d_YCAjem11l@d.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:37:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe' is clicked on
+
+2020-08-21 14:37:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe' is clicked on
+
+2020-08-21 14:37:35 - [TEST_STEP][PASSED] - assert membersCount + 4 == share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:37:36 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED]]></system-out>
+         <system-err><![CDATA[2020-08-21 14:37:15 - [TEST_CASE][FAILED] - Test Cases/Share/Share Using plus button/Share folder with Multiple emails multiple separators: Test Cases/Share/Share Using plus button/Share folder with Multiple emails multiple separators FAILED.
+Reason:
+Assertion failed: 
+
+assert membersCount+4 == CustomKeywords.'share.ShareHelper.getMembersCount'()
+       |           |  |                 |
+       0           4  false             0
+
+	at Share folder with Multiple emails multiple separators.run(Share folder with Multiple emails multiple separators:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1598016866808.run(TempTestSuite1598016866808.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Share/Share Using enter/Share Folder With one email adress" time="19.442" classname="Test Cases/Share/Share Using enter/Share Folder With one email adress" status="PASSED">
+         <system-out><![CDATA[2020-08-21 14:37:36 - [TEST_CASE][PASSED] - Test Cases/Share/Share Using enter/Share Folder With one email adress: Test Cases/Share/Share Using enter/Share Folder With one email adress
+
+2020-08-21 14:37:36 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Folders/Should Go to Folderstable"), [:], OPTIONAL): Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:37:36 - [TEST_CASE][PASSED] - Test Cases/Folders/Should Go to Folderstable: Test Cases/Folders/Should Go to Folderstable
+
+2020-08-21 14:37:36 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-08-21 14:37:36 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-08-21 14:37:38 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-08-21 14:37:40 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-08-21 14:37:40 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:37:44 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:37:44 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Login - PowerFolder"): Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:37:44 - [MESSAGE][PASSED] - Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:37:44 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username"), Username): Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:37:45 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:37:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:37:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:37:45 - [TEST_STEP][PASSED] - isPresent = waitForElementVisible(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), 2): Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:37:46 - [MESSAGE][PASSED] - Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:37:46 - [TEST_STEP][PASSED] - assert isPresent: null
+
+2020-08-21 14:37:46 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), Password): Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:37:46 - [MESSAGE][PASSED] - Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:37:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:37:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:37:47 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Dashboard - PowerFolder"): Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:37:47 - [MESSAGE][PASSED] - Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:37:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders")): Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:37:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:37:49 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Folders - PowerFolder"): Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:37:49 - [MESSAGE][PASSED] - Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:37:49 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:37:49 - [TEST_STEP][PASSED] - folderName = RandomStringUtils.random(9, true, true): null
+
+2020-08-21 14:37:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:37:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:37:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:37:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:37:51 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), folderName): Text 'wbzZJiego' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:37:51 - [MESSAGE][PASSED] - Text 'wbzZJiego' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:37:51 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:37:51 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:37:51 - [TEST_STEP][PASSED] - btn = findShareButton(folderName): null
+
+2020-08-21 14:37:51 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-08-21 14:37:51 - [TEST_STEP][PASSED] - return driver.findElement(org.openqa.selenium.By.xpath(//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a)): null
+
+2020-08-21 14:37:53 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(btn)): Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:37:53 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:37:53 - [TEST_STEP][PASSED] - mail = "user@mail.com": null
+
+2020-08-21 14:37:53 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), mail): Text 'user@mail.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:37:53 - [MESSAGE][PASSED] - Text 'user@mail.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:37:53 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:37:54 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:37:54 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom"), mail): Actual text and expected text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' are matched.
+
+2020-08-21 14:37:54 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' are matched.
+
+2020-08-21 14:37:54 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-08-21 14:37:56 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Share/Share Using enter/Share folder with Multiple emails semi colon" time="19.729" classname="Test Cases/Share/Share Using enter/Share folder with Multiple emails semi colon" status="PASSED">
+         <system-out><![CDATA[2020-08-21 14:37:56 - [TEST_CASE][PASSED] - Test Cases/Share/Share Using enter/Share folder with Multiple emails semi colon: Test Cases/Share/Share Using enter/Share folder with Multiple emails semi colon
+
+2020-08-21 14:37:56 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Folders/Should Go to Folderstable"), [:], OPTIONAL): Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:37:56 - [TEST_CASE][PASSED] - Test Cases/Folders/Should Go to Folderstable: Test Cases/Folders/Should Go to Folderstable
+
+2020-08-21 14:37:56 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-08-21 14:37:56 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-08-21 14:37:58 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-08-21 14:37:58 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:38:03 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:38:03 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Login - PowerFolder"): Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:38:03 - [MESSAGE][PASSED] - Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:38:03 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username"), Username): Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:38:03 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:38:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:38:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:38:04 - [TEST_STEP][PASSED] - isPresent = waitForElementVisible(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), 2): Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:38:04 - [MESSAGE][PASSED] - Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:38:04 - [TEST_STEP][PASSED] - assert isPresent: null
+
+2020-08-21 14:38:04 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), Password): Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:38:04 - [MESSAGE][PASSED] - Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:38:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:38:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:38:06 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Dashboard - PowerFolder"): Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:38:06 - [MESSAGE][PASSED] - Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:38:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders")): Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:38:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:38:07 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Folders - PowerFolder"): Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:38:07 - [MESSAGE][PASSED] - Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:38:07 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:38:07 - [TEST_STEP][PASSED] - folderName = RandomStringUtils.random(9, true, true): null
+
+2020-08-21 14:38:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:38:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:38:08 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:38:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:38:09 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), folderName): Text '9ujtbGgcS' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:38:09 - [MESSAGE][PASSED] - Text '9ujtbGgcS' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:38:09 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:38:10 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:38:10 - [TEST_STEP][PASSED] - btn = findShareButton(folderName): null
+
+2020-08-21 14:38:10 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-08-21 14:38:10 - [TEST_STEP][PASSED] - return driver.findElement(org.openqa.selenium.By.xpath(//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a)): null
+
+2020-08-21 14:38:11 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(btn)): Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:38:11 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:38:11 - [TEST_STEP][PASSED] - mails = "a@a.com;b@b.com;c@c.com": null
+
+2020-08-21 14:38:11 - [TEST_STEP][PASSED] - membersCount = share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:38:12 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:38:12 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), mails): Text 'a@a.com;b@b.com;c@c.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:38:12 - [MESSAGE][PASSED] - Text 'a@a.com;b@b.com;c@c.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:38:12 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:38:13 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:38:13 - [TEST_STEP][PASSED] - assert membersCount + 3 == share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:38:14 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:38:14 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-08-21 14:38:15 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Share/Share Using enter/Share folder with one email outlook format" time="18.2" classname="Test Cases/Share/Share Using enter/Share folder with one email outlook format" status="PASSED">
+         <system-out><![CDATA[2020-08-21 14:38:15 - [TEST_CASE][PASSED] - Test Cases/Share/Share Using enter/Share folder with one email outlook format: Test Cases/Share/Share Using enter/Share folder with one email outlook format
+
+2020-08-21 14:38:16 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Folders/Should Go to Folderstable"), [:], OPTIONAL): Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:38:16 - [TEST_CASE][PASSED] - Test Cases/Folders/Should Go to Folderstable: Test Cases/Folders/Should Go to Folderstable
+
+2020-08-21 14:38:16 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-08-21 14:38:16 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-08-21 14:38:18 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-08-21 14:38:18 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:38:22 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:38:22 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Login - PowerFolder"): Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:38:22 - [MESSAGE][PASSED] - Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:38:22 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username"), Username): Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:38:23 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:38:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:38:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:38:23 - [TEST_STEP][PASSED] - isPresent = waitForElementVisible(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), 2): Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:38:24 - [MESSAGE][PASSED] - Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:38:24 - [TEST_STEP][PASSED] - assert isPresent: null
+
+2020-08-21 14:38:24 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), Password): Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:38:24 - [MESSAGE][PASSED] - Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:38:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:38:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:38:25 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Dashboard - PowerFolder"): Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:38:25 - [MESSAGE][PASSED] - Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:38:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders")): Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:38:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:38:26 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Folders - PowerFolder"): Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:38:26 - [MESSAGE][PASSED] - Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:38:26 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:38:26 - [TEST_STEP][PASSED] - folderName = RandomStringUtils.random(9, true, true): null
+
+2020-08-21 14:38:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:38:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:38:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:38:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:38:28 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), folderName): Text 'ol6Xx4zLh' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:38:29 - [MESSAGE][PASSED] - Text 'ol6Xx4zLh' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:38:29 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:38:29 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:38:29 - [TEST_STEP][PASSED] - btn = findShareButton(folderName): null
+
+2020-08-21 14:38:29 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-08-21 14:38:29 - [TEST_STEP][PASSED] - return driver.findElement(org.openqa.selenium.By.xpath(//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a)): null
+
+2020-08-21 14:38:31 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(btn)): Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:38:31 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:38:31 - [TEST_STEP][PASSED] - mail = ${ -> ... } <${ -> ... }@outlook.com>: null
+
+2020-08-21 14:38:31 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), mail): Text 'ol6Xx4zLh <ol6Xx4zLh@outlook.com>' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:38:31 - [MESSAGE][PASSED] - Text 'ol6Xx4zLh <ol6Xx4zLh@outlook.com>' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:38:31 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:38:32 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:38:32 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom"), folderName): Actual text and expected text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' are matched.
+
+2020-08-21 14:38:32 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom' are matched.
+
+2020-08-21 14:38:32 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-08-21 14:38:34 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Share/Share Using enter/Share folder with Multiple emails tabulation separator" time="23.756" classname="Test Cases/Share/Share Using enter/Share folder with Multiple emails tabulation separator" status="PASSED">
+         <system-out><![CDATA[2020-08-21 14:38:34 - [TEST_CASE][PASSED] - Test Cases/Share/Share Using enter/Share folder with Multiple emails tabulation separator: Test Cases/Share/Share Using enter/Share folder with Multiple emails tabulation separator
+
+2020-08-21 14:38:34 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Folders/Should Go to Folderstable"), [:], OPTIONAL): Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:38:34 - [TEST_CASE][PASSED] - Test Cases/Folders/Should Go to Folderstable: Test Cases/Folders/Should Go to Folderstable
+
+2020-08-21 14:38:34 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-08-21 14:38:34 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-08-21 14:38:36 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-08-21 14:38:36 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:38:41 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:38:41 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Login - PowerFolder"): Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:38:41 - [MESSAGE][PASSED] - Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:38:41 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username"), Username): Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:38:41 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:38:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:38:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:38:42 - [TEST_STEP][PASSED] - isPresent = waitForElementVisible(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), 2): Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:38:42 - [MESSAGE][PASSED] - Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:38:42 - [TEST_STEP][PASSED] - assert isPresent: null
+
+2020-08-21 14:38:42 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), Password): Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:38:42 - [MESSAGE][PASSED] - Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:38:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:38:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:38:44 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Dashboard - PowerFolder"): Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:38:44 - [MESSAGE][PASSED] - Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:38:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders")): Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:38:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:38:45 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Folders - PowerFolder"): Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:38:45 - [MESSAGE][PASSED] - Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:38:45 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:38:45 - [TEST_STEP][PASSED] - folderName = RandomStringUtils.random(9, true, true): null
+
+2020-08-21 14:38:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:38:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:38:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:38:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:38:47 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), folderName): Text 'ntR24ZiI1' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:38:48 - [MESSAGE][PASSED] - Text 'ntR24ZiI1' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:38:48 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:38:48 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:38:48 - [TEST_STEP][PASSED] - btn = findShareButton(folderName): null
+
+2020-08-21 14:38:48 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-08-21 14:38:48 - [TEST_STEP][PASSED] - return driver.findElement(org.openqa.selenium.By.xpath(//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a)): null
+
+2020-08-21 14:38:50 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(btn)): Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:38:50 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:38:50 - [TEST_STEP][PASSED] - mails = a_${ -> ... }@a.com	b_${ -> ... }@b.com	c_${ -> ... }@c.com: null
+
+2020-08-21 14:38:50 - [TEST_STEP][PASSED] - membersCount = share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:38:53 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:38:53 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), mails): Text 'a_ntR24ZiI1@a.com	b_ntR24ZiI1@b.com	c_ntR24ZiI1@c.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:38:53 - [MESSAGE][PASSED] - Text 'a_ntR24ZiI1@a.com	b_ntR24ZiI1@b.com	c_ntR24ZiI1@c.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:38:53 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:38:53 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:38:53 - [TEST_STEP][PASSED] - assert membersCount + 3 == share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:38:55 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:38:55 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-08-21 14:38:57 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Share/Share Using enter/Share Folder With Group" time="37.751" classname="Test Cases/Share/Share Using enter/Share Folder With Group" status="PASSED">
+         <system-out><![CDATA[2020-08-21 14:38:57 - [TEST_CASE][PASSED] - Test Cases/Share/Share Using enter/Share Folder With Group: Test Cases/Share/Share Using enter/Share Folder With Group
+
+2020-08-21 14:38:57 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Folders/Should Go to Folderstable"), [:], OPTIONAL): Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:38:58 - [TEST_CASE][PASSED] - Test Cases/Folders/Should Go to Folderstable: Test Cases/Folders/Should Go to Folderstable
+
+2020-08-21 14:38:58 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-08-21 14:38:58 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-08-21 14:39:00 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-08-21 14:39:00 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:39:07 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:39:07 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Login - PowerFolder"): Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:39:07 - [MESSAGE][PASSED] - Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:39:07 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username"), Username): Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:39:08 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:39:08 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:39:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:39:09 - [TEST_STEP][PASSED] - isPresent = waitForElementVisible(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), 2): Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:39:09 - [MESSAGE][PASSED] - Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:39:09 - [TEST_STEP][PASSED] - assert isPresent: null
+
+2020-08-21 14:39:09 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), Password): Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:39:10 - [MESSAGE][PASSED] - Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:39:10 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:39:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:39:14 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Dashboard - PowerFolder"): Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:39:14 - [MESSAGE][PASSED] - Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:39:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders")): Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:39:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:39:17 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Folders - PowerFolder"): Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:39:17 - [MESSAGE][PASSED] - Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:39:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:39:17 - [TEST_STEP][PASSED] - folderName = RandomStringUtils.random(9, true, true): null
+
+2020-08-21 14:39:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:39:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:39:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:39:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:39:19 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), folderName): Text 'jZoujJCVc' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:39:19 - [MESSAGE][PASSED] - Text 'jZoujJCVc' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:39:19 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:39:20 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:39:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Dashboard - PowerFolder/lang_Groups")): Object: 'Object Repository/Folders/Page_Dashboard - PowerFolder/lang_Groups' is clicked on
+
+2020-08-21 14:39:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Dashboard - PowerFolder/lang_Groups' is clicked on
+
+2020-08-21 14:39:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Groups - PowerFolder/span_Log out_pica-icon pica-glyph glyphicon_0824b5")): Object: 'Object Repository/Share/Page_Groups - PowerFolder/span_Log out_pica-icon pica-glyph glyphicon_0824b5' is clicked on
+
+2020-08-21 14:39:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Groups - PowerFolder/span_Log out_pica-icon pica-glyph glyphicon_0824b5' is clicked on
+
+2020-08-21 14:39:23 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Groups - PowerFolder/input_Organizations_pica_group_name"), Group_${ -> ... }): Text 'Group_jZoujJCVc' is set on object 'Object Repository/Share/Page_Groups - PowerFolder/input_Organizations_pica_group_name'
+
+2020-08-21 14:39:24 - [MESSAGE][PASSED] - Text 'Group_jZoujJCVc' is set on object 'Object Repository/Share/Page_Groups - PowerFolder/input_Organizations_pica_group_name'
+
+2020-08-21 14:39:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Groups - PowerFolder/lang_Save")): Object: 'Object Repository/Share/Page_Groups - PowerFolder/lang_Save' is clicked on
+
+2020-08-21 14:39:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Groups - PowerFolder/lang_Save' is clicked on
+
+2020-08-21 14:39:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders")): Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:39:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:39:29 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Folders - PowerFolder"): Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:39:29 - [MESSAGE][PASSED] - Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:39:29 - [TEST_STEP][PASSED] - btn = findShareButton(folderName): null
+
+2020-08-21 14:39:29 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-08-21 14:39:29 - [TEST_STEP][PASSED] - return driver.findElement(org.openqa.selenium.By.xpath(//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a)): null
+
+2020-08-21 14:39:31 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(btn)): Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:39:31 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:39:31 - [TEST_STEP][PASSED] - Group = Group_${ -> ... }: null
+
+2020-08-21 14:39:31 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), Group): Text 'Group_jZoujJCVc' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:39:32 - [MESSAGE][PASSED] - Text 'Group_jZoujJCVc' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:39:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/tag")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/tag' is clicked on
+
+2020-08-21 14:39:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/tag' is clicked on
+
+2020-08-21 14:39:33 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:39:33 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:39:33 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/td_Group"), Group): Actual text and expected text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_Group' are matched.
+
+2020-08-21 14:39:34 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Share/Page_Folders - PowerFolder/td_Group' are matched.
+
+2020-08-21 14:39:34 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-08-21 14:39:35 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Share/Share Using enter/Share folder with Multiple outlook emails" time="25.455" classname="Test Cases/Share/Share Using enter/Share folder with Multiple outlook emails" status="PASSED">
+         <system-out><![CDATA[2020-08-21 14:39:35 - [TEST_CASE][PASSED] - Test Cases/Share/Share Using enter/Share folder with Multiple outlook emails: Test Cases/Share/Share Using enter/Share folder with Multiple outlook emails
+
+2020-08-21 14:39:35 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Folders/Should Go to Folderstable"), [:], OPTIONAL): Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:39:35 - [TEST_CASE][PASSED] - Test Cases/Folders/Should Go to Folderstable: Test Cases/Folders/Should Go to Folderstable
+
+2020-08-21 14:39:35 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-08-21 14:39:35 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-08-21 14:39:38 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-08-21 14:39:38 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:39:46 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:39:46 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Login - PowerFolder"): Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:39:46 - [MESSAGE][PASSED] - Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:39:46 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username"), Username): Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:39:46 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:39:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:39:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:39:47 - [TEST_STEP][PASSED] - isPresent = waitForElementVisible(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), 2): Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:39:48 - [MESSAGE][PASSED] - Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:39:48 - [TEST_STEP][PASSED] - assert isPresent: null
+
+2020-08-21 14:39:48 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), Password): Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:39:48 - [MESSAGE][PASSED] - Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:39:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:39:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:39:50 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Dashboard - PowerFolder"): Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:39:50 - [MESSAGE][PASSED] - Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:39:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders")): Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:39:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:39:52 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Folders - PowerFolder"): Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:39:52 - [MESSAGE][PASSED] - Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:39:52 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:39:52 - [TEST_STEP][PASSED] - folderName = RandomStringUtils.random(9, true, true): null
+
+2020-08-21 14:39:52 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:39:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:39:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:39:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:39:55 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), folderName): Text 'ZSyCnkckn' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:39:55 - [MESSAGE][PASSED] - Text 'ZSyCnkckn' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:39:55 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:39:55 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:39:55 - [TEST_STEP][PASSED] - btn = findShareButton(folderName): null
+
+2020-08-21 14:39:55 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-08-21 14:39:55 - [TEST_STEP][PASSED] - return driver.findElement(org.openqa.selenium.By.xpath(//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a)): null
+
+2020-08-21 14:39:57 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(btn)): Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:39:57 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:39:57 - [TEST_STEP][PASSED] - mails = ${ -> ... } <${ -> ... }@outlook.com>;${ -> ... } <${ -> ... }@outlook.com>;${ -> ... } <${ -> ... }@outlook.com>: null
+
+2020-08-21 14:39:57 - [TEST_STEP][PASSED] - membersCount = share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:39:58 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:39:58 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), mails): Text 'ZSyCnkckna <ZSyCnkckna@outlook.com>;ZSyCnkcknb <ZSyCnkcknb@outlook.com>;ZSyCnkcknc <ZSyCnkcknc@outlook.com>' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:39:58 - [MESSAGE][PASSED] - Text 'ZSyCnkckna <ZSyCnkckna@outlook.com>;ZSyCnkcknb <ZSyCnkcknb@outlook.com>;ZSyCnkcknc <ZSyCnkcknc@outlook.com>' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:39:58 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:39:59 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:39:59 - [TEST_STEP][PASSED] - assert membersCount + 3 == share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:40:00 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:40:00 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-08-21 14:40:01 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Share/Share Using enter/Share folder with Multiple emails colon separator" time="27.024" classname="Test Cases/Share/Share Using enter/Share folder with Multiple emails colon separator" status="PASSED">
+         <system-out><![CDATA[2020-08-21 14:40:01 - [TEST_CASE][PASSED] - Test Cases/Share/Share Using enter/Share folder with Multiple emails colon separator: Test Cases/Share/Share Using enter/Share folder with Multiple emails colon separator
+
+2020-08-21 14:40:01 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Folders/Should Go to Folderstable"), [:], OPTIONAL): Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:40:01 - [TEST_CASE][PASSED] - Test Cases/Folders/Should Go to Folderstable: Test Cases/Folders/Should Go to Folderstable
+
+2020-08-21 14:40:01 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-08-21 14:40:01 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-08-21 14:40:03 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-08-21 14:40:03 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:40:10 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:40:10 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Login - PowerFolder"): Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:40:10 - [MESSAGE][PASSED] - Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:40:10 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username"), Username): Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:40:11 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:40:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:40:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:40:12 - [TEST_STEP][PASSED] - isPresent = waitForElementVisible(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), 2): Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:40:12 - [MESSAGE][PASSED] - Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:40:12 - [TEST_STEP][PASSED] - assert isPresent: null
+
+2020-08-21 14:40:12 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), Password): Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:40:13 - [MESSAGE][PASSED] - Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:40:13 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:40:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:40:14 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Dashboard - PowerFolder"): Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:40:14 - [MESSAGE][PASSED] - Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:40:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders")): Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:40:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:40:17 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Folders - PowerFolder"): Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:40:17 - [MESSAGE][PASSED] - Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:40:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:40:17 - [TEST_STEP][PASSED] - folderName = RandomStringUtils.random(9, true, true): null
+
+2020-08-21 14:40:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:40:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:40:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:40:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:40:19 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), folderName): Text '7zSdVdj2h' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:40:19 - [MESSAGE][PASSED] - Text '7zSdVdj2h' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:40:19 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:40:20 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:40:20 - [TEST_STEP][PASSED] - btn = findShareButton(folderName): null
+
+2020-08-21 14:40:20 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-08-21 14:40:20 - [TEST_STEP][PASSED] - return driver.findElement(org.openqa.selenium.By.xpath(//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a)): null
+
+2020-08-21 14:40:21 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(btn)): Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:40:21 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:40:21 - [TEST_STEP][PASSED] - mails = a_${ -> ... }@a.com:b_${ -> ... }@b.com:c_${ -> ... }@c.com: null
+
+2020-08-21 14:40:21 - [TEST_STEP][PASSED] - membersCount = share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:40:23 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:40:23 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), mails): Text 'a_7zSdVdj2h@a.com:b_7zSdVdj2h@b.com:c_7zSdVdj2h@c.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:40:24 - [MESSAGE][PASSED] - Text 'a_7zSdVdj2h@a.com:b_7zSdVdj2h@b.com:c_7zSdVdj2h@c.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:40:24 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:40:24 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:40:24 - [TEST_STEP][PASSED] - assert membersCount + 3 == share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:40:25 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:40:25 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-08-21 14:40:28 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Share/Share Using enter/Share folder with Multiple emails comma separator" time="22.86" classname="Test Cases/Share/Share Using enter/Share folder with Multiple emails comma separator" status="PASSED">
+         <system-out><![CDATA[2020-08-21 14:40:28 - [TEST_CASE][PASSED] - Test Cases/Share/Share Using enter/Share folder with Multiple emails comma separator: Test Cases/Share/Share Using enter/Share folder with Multiple emails comma separator
+
+2020-08-21 14:40:28 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Folders/Should Go to Folderstable"), [:], OPTIONAL): Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:40:28 - [TEST_CASE][PASSED] - Test Cases/Folders/Should Go to Folderstable: Test Cases/Folders/Should Go to Folderstable
+
+2020-08-21 14:40:28 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-08-21 14:40:28 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-08-21 14:40:30 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-08-21 14:40:30 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:40:37 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:40:37 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Login - PowerFolder"): Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:40:37 - [MESSAGE][PASSED] - Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:40:37 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username"), Username): Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:40:37 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:40:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:40:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:40:38 - [TEST_STEP][PASSED] - isPresent = waitForElementVisible(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), 2): Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:40:38 - [MESSAGE][PASSED] - Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:40:38 - [TEST_STEP][PASSED] - assert isPresent: null
+
+2020-08-21 14:40:38 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), Password): Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:40:39 - [MESSAGE][PASSED] - Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:40:39 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:40:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:40:41 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Dashboard - PowerFolder"): Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:40:41 - [MESSAGE][PASSED] - Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:40:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders")): Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:40:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:40:42 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Folders - PowerFolder"): Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:40:42 - [MESSAGE][PASSED] - Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:40:42 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:40:42 - [TEST_STEP][PASSED] - folderName = RandomStringUtils.random(9, true, true): null
+
+2020-08-21 14:40:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:40:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:40:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:40:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:40:44 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), folderName): Text 'UK246o4yo' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:40:44 - [MESSAGE][PASSED] - Text 'UK246o4yo' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:40:44 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:40:45 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:40:45 - [TEST_STEP][PASSED] - btn = findShareButton(folderName): null
+
+2020-08-21 14:40:45 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-08-21 14:40:45 - [TEST_STEP][PASSED] - return driver.findElement(org.openqa.selenium.By.xpath(//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a)): null
+
+2020-08-21 14:40:46 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(btn)): Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:40:46 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:40:46 - [TEST_STEP][PASSED] - mails = a_${ -> ... }@a.com,b_${ -> ... }@b.com,c_${ -> ... }@c.com: null
+
+2020-08-21 14:40:46 - [TEST_STEP][PASSED] - membersCount = share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:40:47 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:40:47 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), mails): Text 'a_UK246o4yo@a.com,b_UK246o4yo@b.com,c_UK246o4yo@c.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:40:48 - [MESSAGE][PASSED] - Text 'a_UK246o4yo@a.com,b_UK246o4yo@b.com,c_UK246o4yo@c.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:40:48 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:40:48 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:40:48 - [TEST_STEP][PASSED] - assert membersCount + 3 == share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:40:49 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:40:49 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-08-21 14:40:50 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Share/Share Using enter/Share folder with Multiple emails multiple separators" time="21.367" classname="Test Cases/Share/Share Using enter/Share folder with Multiple emails multiple separators" status="PASSED">
+         <system-out><![CDATA[2020-08-21 14:40:50 - [TEST_CASE][PASSED] - Test Cases/Share/Share Using enter/Share folder with Multiple emails multiple separators: Test Cases/Share/Share Using enter/Share folder with Multiple emails multiple separators
+
+2020-08-21 14:40:51 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Folders/Should Go to Folderstable"), [:], OPTIONAL): Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:40:51 - [TEST_CASE][PASSED] - Test Cases/Folders/Should Go to Folderstable: Test Cases/Folders/Should Go to Folderstable
+
+2020-08-21 14:40:51 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-08-21 14:40:51 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-08-21 14:40:53 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-08-21 14:40:53 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:40:58 - [MESSAGE][PASSED] - Navigate to 'https://lab.powerfolder.net:8666/login' successfully
+
+2020-08-21 14:40:58 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Login - PowerFolder"): Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:40:58 - [MESSAGE][PASSED] - Current window's title is: 'Login - PowerFolder'
+
+2020-08-21 14:40:58 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username"), Username): Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:40:58 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'
+
+2020-08-21 14:40:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:40:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:40:59 - [TEST_STEP][PASSED] - isPresent = waitForElementVisible(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), 2): Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:40:59 - [MESSAGE][PASSED] - Object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password' is visible
+
+2020-08-21 14:40:59 - [TEST_STEP][PASSED] - assert isPresent: null
+
+2020-08-21 14:40:59 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password"), Password): Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:40:59 - [MESSAGE][PASSED] - Text 'password' is set on object 'Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'
+
+2020-08-21 14:40:59 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login")): Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:41:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login' is clicked on
+
+2020-08-21 14:41:01 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Dashboard - PowerFolder"): Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:41:01 - [MESSAGE][PASSED] - Current window's title is: 'Dashboard - PowerFolder'
+
+2020-08-21 14:41:01 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders")): Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:41:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders' is clicked on
+
+2020-08-21 14:41:03 - [TEST_STEP][PASSED] - assert getWindowTitle().equals("Folders - PowerFolder"): Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:41:03 - [MESSAGE][PASSED] - Current window's title is: 'Folders - PowerFolder'
+
+2020-08-21 14:41:03 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Folders/Should Go to Folderstable' successfully
+
+2020-08-21 14:41:03 - [TEST_STEP][PASSED] - folderName = RandomStringUtils.random(9, true, true): null
+
+2020-08-21 14:41:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:41:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0' is clicked on
+
+2020-08-21 14:41:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b")): Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:41:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b' is clicked on
+
+2020-08-21 14:41:05 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), folderName): Text 'YfTcABX2q' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:41:06 - [MESSAGE][PASSED] - Text 'YfTcABX2q' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:41:06 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:41:06 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'
+
+2020-08-21 14:41:06 - [TEST_STEP][PASSED] - btn = findShareButton(folderName): null
+
+2020-08-21 14:41:06 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2020-08-21 14:41:06 - [TEST_STEP][PASSED] - return driver.findElement(org.openqa.selenium.By.xpath(//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a)): null
+
+2020-08-21 14:41:08 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(btn)): Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:41:08 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2020-08-21 14:41:08 - [TEST_STEP][PASSED] - mails = a_${ -> ... }@a.com;b_${ -> ... }@b.com:c_${ -> ... }@c.com,d_${ -> ... }@d.com: null
+
+2020-08-21 14:41:08 - [TEST_STEP][PASSED] - membersCount = share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:41:08 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:41:08 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), mails): Text 'a_YfTcABX2q@a.com;b_YfTcABX2q@b.com:c_YfTcABX2q@c.com,d_YfTcABX2q@d.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:41:09 - [MESSAGE][PASSED] - Text 'a_YfTcABX2q@a.com;b_YfTcABX2q@b.com:c_YfTcABX2q@c.com,d_YfTcABX2q@d.com' is set on object 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:41:09 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:41:09 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'
+
+2020-08-21 14:41:09 - [TEST_STEP][PASSED] - assert membersCount + 4 == share.ShareHelper.getMembersCount(): share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:41:10 - [MESSAGE][PASSED] - share.ShareHelper.getMembersCount is PASSED
+
+2020-08-21 14:41:10 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-08-21 14:41:12 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-08-21 14:34:28 - [TEST_SUITE][FAILED] - Folder Share: Test Cases/Share/Share Using plus button/Share folder with Multiple emails tabulation separator FAILED.
+Reason:
+Assertion failed: 
+
+assert membersCount+3 == CustomKeywords.'share.ShareHelper.getMembersCount'()
+       |           |  |                 |
+       0           3  false             0
+
+	at Share folder with Multiple emails tabulation separator.run(Share folder with Multiple emails tabulation separator:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1598016866808.run(TempTestSuite1598016866808.groovy:36)]]></system-out>
+      <system-err><![CDATA[2020-08-21 14:34:28 - [TEST_SUITE][FAILED] - Folder Share: Test Cases/Share/Share Using plus button/Share folder with Multiple emails tabulation separator FAILED.
+Reason:
+Assertion failed: 
+
+assert membersCount+3 == CustomKeywords.'share.ShareHelper.getMembersCount'()
+       |           |  |                 |
+       0           3  false             0
+
+	at Share folder with Multiple emails tabulation separator.run(Share folder with Multiple emails tabulation separator:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1598016866808.run(TempTestSuite1598016866808.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

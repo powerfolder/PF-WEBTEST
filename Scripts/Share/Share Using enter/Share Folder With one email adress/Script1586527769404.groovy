@@ -33,11 +33,11 @@ WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder
 WebUI.sendKeys(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'), Keys.chord(
         Keys.ENTER))
 
-WebElement btn = findShareButton(folderName)
+WebElement btn = CustomKeywords.'share.ShareHelper.findShareButton'(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-String mail = 'user@mail.com'
+String mail = "${-> folderName}@mail.com"
 
 WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'), 
     mail)
@@ -51,9 +51,5 @@ WebUI.verifyElementText(findTestObject('Object Repository/Share/Page_Folders - P
 
 WebUI.closeBrowser()
 
-WebElement findShareButton(String fileName) {
-    WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
-}
 

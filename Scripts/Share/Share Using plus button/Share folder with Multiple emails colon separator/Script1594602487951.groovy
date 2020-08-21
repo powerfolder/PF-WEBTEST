@@ -34,35 +34,26 @@ WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder
 WebUI.sendKeys(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'), Keys.chord(
         Keys.ENTER))
 
-WebElement btn = findShareButton(folderName)
+WebElement btn = CustomKeywords.'share.ShareHelper.findShareButton'(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-String  mails = "a_${-> folderName}@a.com:b_${-> folderName}@b.com:c_${-> folderName}@c.com"
+String  mails = "${-> folderName}@a.com:${-> folderName}@b.com:${-> folderName}@c.com"
 
-int membersCount = getMembersCount()
+int membersCount = CustomKeywords.'share.ShareHelper.getMembersCount'()
 
 WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'), mails)
 
 WebUI.click(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe'))
 
 
-assert membersCount+3 == getMembersCount()
+assert membersCount+3 == CustomKeywords.'share.ShareHelper.getMembersCount'()
 
 
 
 WebUI.closeBrowser()
 
-WebElement findShareButton(String fileName) {
-    WebDriver driver = DriverFactory.getWebDriver()
-    return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
-}
 
-int getMembersCount(){
-	WebDriver driver = DriverFactory.getWebDriver()
-	WebElement tbody = driver.findElement(By.xpath("//table[@id='share_table']/tbody"))
-	assert tbody
-	List<WebElement> rows_table = tbody.findElements(By.tagName('tr'))
-	return rows_table.size()
-}
+
+
 
