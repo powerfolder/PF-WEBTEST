@@ -1,0 +1,14 @@
+{
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_Accounts - PowerFolder/span_admin_glyphicons glyphicons-user pica-glyph",
+      "brokenLocator": "//tr[@id\u003d\u0027Object_200488436\u0027]/td/span",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//tr[2]/td/span",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_Accounts - PowerFolder/span_admin_glyphicons glyphicons-user pica-glyph_position.png"
+    }
+  ]
+}
