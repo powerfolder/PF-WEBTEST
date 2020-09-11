@@ -9,6 +9,16 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_Accounts - PowerFolder/span_admin_glyphicons glyphicons-user pica-glyph_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_Groups - PowerFolder/span_Organisation_glyphicons glyphicons-gro_5b74f3_1",
+      "brokenLocator": "//tr[@id\u003d\u0027Object_74004107\u0027]/td/span",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//td/span",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_Groups - PowerFolder/span_Organisation_glyphicons glyphicons-gro_5b74f3_1_position.png"
     }
   ]
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Create Folder</name>
+   <name>Test</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>d4fb2525-bae1-4c62-b52e-c280a864847b</testCaseGuid>
+   <testCaseGuid>06b85a45-230c-4570-a70c-1b659611e1fb</testCaseGuid>
 </TestCaseEntity>

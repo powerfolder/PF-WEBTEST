@@ -22,46 +22,46 @@ import org.openqa.selenium.WebElement as WebElement
 
 WebUI.callTestCase(findTestCase('Folders/Should Go to Folderstable'), [:], FailureHandling.OPTIONAL)
 
-
 originfolderCount = getFoldersCount()
 
 String folderName = org.apache.commons.lang.RandomStringUtils.random(9, true, true)
-
-
 
 WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0'))
 
 WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Create Folder'))
 
-WebUI.setText(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/input_Create a new Folder_pencil'), folderName)
+WebUI.setText(findTestObject('Folders/Page_Folders - PowerFolder/input_Create a new Folder_pencil'), folderName)
 
-WebUI.sendKeys(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/input_Create a new Folder_pencil'), Keys.chord(
-	Keys.ENTER))
-
+WebUI.sendKeys(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/input_Create a new Folder_pencil'), 
+    Keys.chord(Keys.ENTER))
 
 assert getFoldersCount() > originfolderCount
 
 assert true == tableContainsFolder(folderName)
 
-
 WebUI.closeBrowser()
 
+int getFoldersCount() {
+    WebDriver driver = DriverFactory.getWebDriver()
 
- int getFoldersCount(){
-	WebDriver driver = DriverFactory.getWebDriver()
-	WebElement tbody = driver.findElement(By.xpath("//table[@id='files_files_table']/tbody"))
-	assert tbody
-	List<WebElement> rows_table = tbody.findElements(By.tagName('tr'))
-	return rows_table.size()
+    WebElement tbody = driver.findElement(By.xpath('//table[@id=\'files_files_table\']/tbody'))
+
+    assert tbody
+
+    List<WebElement> rows_table = tbody.findElements(By.tagName('tr'))
+
+    return rows_table.size()
 }
- 
- boolean tableContainsFolder(String fileName){
-	 WebDriver driver = DriverFactory.getWebDriver()
-	 WebElement tbody = driver.findElement(By.xpath("//table[@id='files_files_table']/tbody"))
-	 List<WebElement> rows_table = tbody.findElements(By.tagName('tr'))
-	 return rows_table.any{item -> item.getText().contains(fileName)}
-	
- }
- 
 
-   
+boolean tableContainsFolder(String fileName) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    WebElement tbody = driver.findElement(By.xpath('//table[@id=\'files_files_table\']/tbody'))
+
+    List<WebElement> rows_table = tbody.findElements(By.tagName('tr'))
+
+    return rows_table.any({ def item ->
+            item.getText().contains(fileName)
+        })
+}
+
