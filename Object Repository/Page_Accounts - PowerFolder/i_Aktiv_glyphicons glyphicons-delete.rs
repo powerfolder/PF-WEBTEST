@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_admin_glyphicons glyphicons-user pica-glyph</name>
+   <name>i_Aktiv_glyphicons glyphicons-delete</name>
    <tag></tag>
-   <elementGuidId>7850062f-9a4f-4d2b-8888-f6ddfcc308c9</elementGuidId>
+   <elementGuidId>ae6e91eb-8bd6-4502-8d12-5b7523a4103c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#Object_1527912519 > td.text-center.pica-icon-column > span.glyphicons.glyphicons-user.pica-glyph</value>
+         <value>span.pica-datepicker-reset.input-group-addon > i.glyphicons.glyphicons-delete</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//tr[@id='Object_1527912519']/td/span</value>
+         <value>//div[@id='pica_account_dialog']/div/div/div[2]/div/div[4]/div[3]/div/span[2]/i</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,34 +21,34 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
+      <value>i</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>glyphicons glyphicons-user pica-glyph</value>
+      <value>glyphicons glyphicons-delete</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;Object_1527912519&quot;)/td[@class=&quot;text-center pica-icon-column&quot;]/span[@class=&quot;glyphicons glyphicons-user pica-glyph&quot;]</value>
+      <value>id(&quot;pica_account_dialog&quot;)/div[@class=&quot;modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-body&quot;]/div[@class=&quot;pica-nav-tab&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;form-group col-xs-6 pica-block-on-small&quot;]/div[@class=&quot;input-group&quot;]/span[@class=&quot;pica-datepicker-reset input-group-addon&quot;]/i[@class=&quot;glyphicons glyphicons-delete&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='Object_1527912519']/td/span</value>
+      <value>//div[@id='pica_account_dialog']/div/div/div[2]/div/div[4]/div[3]/div/span[2]/i</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[2]/td/span</value>
+      <value>//div[3]/div/span[2]/i</value>
    </webElementXpaths>
 </WebElementEntity>

@@ -19,6 +19,16 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_Groups - PowerFolder/span_Organisation_glyphicons glyphicons-gro_5b74f3_1_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_Accounts - PowerFolder/a_Max End User",
+      "brokenLocator": "//tr[@id\u003d\u0027Object_1527912519\u0027]/td[2]/a",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027admin\u0027])[3]/following::a[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_Accounts - PowerFolder/a_Max End User_neighbor.png"
     }
   ]
 }

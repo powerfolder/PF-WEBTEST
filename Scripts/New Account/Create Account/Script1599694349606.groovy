@@ -40,7 +40,55 @@ WebUI.setText(findTestObject('Object Repository/Page_Accounts - PowerFolder/inpu
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_Accounts - PowerFolder/input_Notizen_pica_account_password'), 
     'PpFy9OM6JMVjJ8cBivBeSg==')
 
+WebUI.setText(findTestObject('Object Repository/Page_Accounts - PowerFolder/input_Notizen_pica_account_first_name'), 'Happy')
+
+WebUI.setText(findTestObject('Object Repository/Page_Accounts - PowerFolder/input_Notizen_pica_account_last_name'), 'End User')
+
+WebUI.setText(findTestObject('Object Repository/Page_Accounts - PowerFolder/input_Notizen_pica_account_phone'), '12345')
+
 WebUI.setText(findTestObject('Object Repository/Page_Accounts - PowerFolder/input_Notizen_pica_account_quota'), '1')
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Accounts - PowerFolder/select_English                             _781106'), 
+    'en', true)
+
+WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/input_Aktiv_pica_account_valid_till'))
+
+WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/td_15'))
+
+WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/i_Aktiv_glyphicons glyphicons-delete'))
+
+WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/a_E-Mails'))
+
+WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Ordner'))
+
+WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Organisationen'))
+
+WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Notizen'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Accounts - PowerFolder/textarea_Nichts anzuzeigen_pica_account_notes'), 
+    'Hello World!')
+
+WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Konto'))
+
+WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Speichern'))
+
+WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Speichern'))
+
+WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/a_Max End User'))
+
+WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Avatar'))
+
+WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_E-Mails'))
+
+WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Ordner'))
+
+WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Gruppen'))
+
+WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Organisationen'))
+
+WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Notizen'))
+
+WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Konto'))
 
 WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Speichern'))
 
@@ -48,9 +96,9 @@ WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/span_a
 
 WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Lschen'))
 
-WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/button_Ja'))
+WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Ja'))
 
-WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/a_Konto erstellt_dropdown-toggle'))
+WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/span_Konto existiert bereits_caret'))
 
 WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Ausloggen'))
 
