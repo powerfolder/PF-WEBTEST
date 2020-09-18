@@ -18,7 +18,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://lab.powerfolder.net:8666/login')
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.setText(findTestObject('Object Repository/Page_Login - PowerFolder/input_neues Konto erstellen_Username'), 'admin')
 
@@ -69,8 +69,6 @@ WebUI.setText(findTestObject('Object Repository/Page_Accounts - PowerFolder/text
     'Hello World!')
 
 WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Konto'))
-
-WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Speichern'))
 
 WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Speichern'))
 

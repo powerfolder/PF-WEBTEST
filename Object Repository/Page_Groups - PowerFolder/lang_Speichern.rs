@@ -63,14 +63,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nichts anzuzeigen'])[3]/following::lang[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nichts anzuzeigen'])[2]/following::lang[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Entfernen'])[3]/following::lang[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Entfernen'])[4]/following::lang[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

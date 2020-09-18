@@ -63,7 +63,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Möchten Sie wirklich 4 Elemente löschen?'])[1]/following::lang[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Möchten Sie wirklich Group löschen?'])[1]/following::lang[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

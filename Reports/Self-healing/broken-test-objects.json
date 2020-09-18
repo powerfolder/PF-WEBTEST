@@ -29,6 +29,36 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_Accounts - PowerFolder/a_Max End User_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_Groups - PowerFolder/input_Organisationen_pica_group_name",
+      "brokenLocator": "",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//input[@id\u003d\u0027pica_group_name\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_Groups - PowerFolder/input_Organisationen_pica_group_name_attributes.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_Groups - PowerFolder/span_Organisation_glyphicons glyphicons-gro_5b74f3",
+      "brokenLocator": "//tr[@id\u003d\u0027Object_838106547\u0027]/td/span",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//td/span",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_Groups - PowerFolder/span_Organisation_glyphicons glyphicons-gro_5b74f3_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_Groups - PowerFolder/a_Group",
+      "brokenLocator": "//tr[@id\u003d\u0027Object_838106547\u0027]/td[2]/a",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//a[contains(text(),\u0027Group\u0027)]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_Groups - PowerFolder/a_Group_link.png"
     }
   ]
 }

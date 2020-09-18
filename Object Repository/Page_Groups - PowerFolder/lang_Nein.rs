@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lang_Ausloggen</name>
+   <name>lang_Nein</name>
    <tag></tag>
-   <elementGuidId>975440ff-63b8-4bcd-a60c-377d3e40edf7</elementGuidId>
+   <elementGuidId>cb8eb3d0-85a6-464f-948e-8836c35a9478</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>lang[name=&quot;button_no&quot;]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//lang[@name='action_log_out'])[2]</value>
+         <value>//lang[@name='button_no']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,69 +28,76 @@
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>action_log_out</value>
+      <value>button_no</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Ausloggen</value>
+      <value>Nein</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pica_action_normal&quot;)/div[@class=&quot;pica-inline dropdown open&quot;]/ul[@class=&quot;pica-arrow-right dropdown-menu dropdown-menu-right&quot;]/li[3]/a[1]/lang[1]</value>
+      <value>id(&quot;pica_confirmation_dialog&quot;)/div[@class=&quot;modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-footer&quot;]/button[@class=&quot;btn btn-default&quot;]/lang[1]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//lang[@name='action_log_out'])[2]</value>
+      <value>//lang[@name='button_no']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pica_action_normal']/div[2]/ul/li[3]/a/lang</value>
+      <value>//div[@id='pica_confirmation_dialog']/div/div/div[3]/button[2]/lang</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mein Konto'])[2]/following::lang[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ja'])[1]/following::lang[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='admin'])[2]/following::lang[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Möchten Sie wirklich Group löschen?'])[1]/following::lang[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Group'])[1]/preceding::lang[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Impressum'])[1]/preceding::lang[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Abwählen'])[1]/preceding::lang[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Datenschutzrichtlinie'])[1]/preceding::lang[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Nein']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/ul/li[3]/a/lang</value>
+      <value>//div[6]/div/div/div[3]/button[2]/lang</value>
    </webElementXpaths>
 </WebElementEntity>

@@ -3,7 +3,7 @@
    <description></description>
    <name>lang_Ausloggen</name>
    <tag></tag>
-   <elementGuidId>975440ff-63b8-4bcd-a60c-377d3e40edf7</elementGuidId>
+   <elementGuidId>82886aff-8a16-4e68-9b72-d7f46891ac6b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -77,14 +77,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Group'])[1]/preceding::lang[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Übersicht'])[1]/preceding::lang[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Abwählen'])[1]/preceding::lang[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Organisationen'])[2]/preceding::lang[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

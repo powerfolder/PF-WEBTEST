@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lang_Ausloggen</name>
+   <name>h5_server_maintenance</name>
    <tag></tag>
-   <elementGuidId>975440ff-63b8-4bcd-a60c-377d3e40edf7</elementGuidId>
+   <elementGuidId>f86587d7-5ce9-49b8-9312-79042142e497</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>h5.media-heading.text-primary</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//lang[@name='action_log_out'])[2]</value>
+         <value>//div[@id='pica_group_folders']/div/div/ul/li/a/div/div[2]/h5</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,76 +21,76 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>lang</value>
+      <value>h5</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>name</name>
+      <name>class</name>
       <type>Main</type>
-      <value>action_log_out</value>
+      <value>media-heading text-primary</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Ausloggen</value>
+      <value>server_maintenance</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pica_action_normal&quot;)/div[@class=&quot;pica-inline dropdown open&quot;]/ul[@class=&quot;pica-arrow-right dropdown-menu dropdown-menu-right&quot;]/li[3]/a[1]/lang[1]</value>
+      <value>id(&quot;pica_group_folders&quot;)/div[@class=&quot;pica-inputlist-taginput pica-taginput form-group input-group&quot;]/div[@class=&quot;pica-taginput-div form-control open&quot;]/ul[@class=&quot;pica-taginput-dropdown dropdown-menu&quot;]/li[1]/a[1]/div[@class=&quot;media&quot;]/div[@class=&quot;media-body&quot;]/h5[@class=&quot;media-heading text-primary&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>(//lang[@name='action_log_out'])[2]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pica_action_normal']/div[2]/ul/li[3]/a/lang</value>
+      <value>//div[@id='pica_group_folders']/div/div/ul/li/a/div/div[2]/h5</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mein Konto'])[2]/following::lang[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Löschen'])[1]/following::h5[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='admin'])[2]/following::lang[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ändern'])[1]/following::h5[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Group'])[1]/preceding::lang[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Neu erstellen'])[1]/preceding::h5[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Abwählen'])[1]/preceding::lang[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Entfernen'])[1]/preceding::h5[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='server_maintenance']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/ul/li[3]/a/lang</value>
+      <value>//a/div/div[2]/h5</value>
    </webElementXpaths>
 </WebElementEntity>

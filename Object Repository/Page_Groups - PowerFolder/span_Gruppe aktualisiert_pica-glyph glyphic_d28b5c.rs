@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Organisation_glyphicons glyphicons-gro_5b74f3_1</name>
+   <name>span_Gruppe aktualisiert_pica-glyph glyphic_d28b5c</name>
    <tag></tag>
-   <elementGuidId>a1a4a44f-b28f-4c46-bbac-65e715370836</elementGuidId>
+   <elementGuidId>92e473d0-8df4-40c8-a8e8-becfb09cebc0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>td.text-center.pica-icon-column > span.glyphicons.glyphicons-group.pica-glyph</value>
+         <value>a.dropdown-toggle > span.pica-glyph.glyphicons.glyphicons-user</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//tr[@id='Object_2136767937']/td/span</value>
+         <value>//div[@id='pica_action_normal']/div[2]/a/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,27 +28,27 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>glyphicons glyphicons-group pica-glyph</value>
+      <value>pica-glyph glyphicons glyphicons-user</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;Object_2136767937&quot;)/td[@class=&quot;text-center pica-icon-column&quot;]/span[@class=&quot;glyphicons glyphicons-group pica-glyph&quot;]</value>
+      <value>id(&quot;pica_action_normal&quot;)/div[@class=&quot;pica-inline dropdown&quot;]/a[@class=&quot;dropdown-toggle&quot;]/span[@class=&quot;pica-glyph glyphicons glyphicons-user&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='Object_2136767937']/td/span</value>
+      <value>//div[@id='pica_action_normal']/div[2]/a/span</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td/span</value>
+      <value>//div[2]/a/span</value>
    </webElementXpaths>
 </WebElementEntity>

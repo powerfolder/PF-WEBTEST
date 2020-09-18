@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lang_Ausloggen</name>
+   <name>button_Nichts anzuzeigen_pica-taginput-butt_ccf578</name>
    <tag></tag>
-   <elementGuidId>975440ff-63b8-4bcd-a60c-377d3e40edf7</elementGuidId>
+   <elementGuidId>c15ab2bb-e6f3-4d9d-bec3-7eb42ff62022</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>#pica_group_accounts > div.pica-inputlist-taginput.pica-taginput.form-group.input-group > div.input-group-btn > button.pica-taginput-button.btn.btn-default</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//lang[@name='action_log_out'])[2]</value>
+         <value>//div[@id='pica_group_accounts']/div/div[2]/button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,76 +21,62 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>lang</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>action_log_out</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>Ausloggen</value>
+      <value>button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-taginput-button btn btn-default</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pica_action_normal&quot;)/div[@class=&quot;pica-inline dropdown open&quot;]/ul[@class=&quot;pica-arrow-right dropdown-menu dropdown-menu-right&quot;]/li[3]/a[1]/lang[1]</value>
+      <value>id(&quot;pica_group_accounts&quot;)/div[@class=&quot;pica-inputlist-taginput pica-taginput form-group input-group&quot;]/div[@class=&quot;input-group-btn&quot;]/button[@class=&quot;pica-taginput-button btn btn-default&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>(//lang[@name='action_log_out'])[2]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pica_action_normal']/div[2]/ul/li[3]/a/lang</value>
+      <value>//div[@id='pica_group_accounts']/div/div[2]/button</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mein Konto'])[2]/following::lang[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nichts anzuzeigen'])[2]/following::button[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='admin'])[2]/following::lang[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Entfernen'])[1]/following::button[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Group'])[1]/preceding::lang[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Entfernen'])[2]/preceding::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Abwählen'])[1]/preceding::lang[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='admin'])[3]/preceding::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/ul/li[3]/a/lang</value>
+      <value>//div[4]/div/div[2]/button</value>
    </webElementXpaths>
 </WebElementEntity>

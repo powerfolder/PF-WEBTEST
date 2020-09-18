@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Organisation_glyphicons glyphicons-gro_5b74f3_1</name>
+   <name>i_Neu erstellen_glyphicons glyphicons-plus</name>
    <tag></tag>
-   <elementGuidId>a1a4a44f-b28f-4c46-bbac-65e715370836</elementGuidId>
+   <elementGuidId>fd6db0b9-9b30-4bbc-a4d6-d530af2de365</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>td.text-center.pica-icon-column > span.glyphicons.glyphicons-group.pica-glyph</value>
+         <value>i.glyphicons.glyphicons-plus</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//tr[@id='Object_2136767937']/td/span</value>
+         <value>//div[@id='pica_group_folders']/div/div[2]/button/i</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,34 +21,34 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
+      <value>i</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>glyphicons glyphicons-group pica-glyph</value>
+      <value>glyphicons glyphicons-plus</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;Object_2136767937&quot;)/td[@class=&quot;text-center pica-icon-column&quot;]/span[@class=&quot;glyphicons glyphicons-group pica-glyph&quot;]</value>
+      <value>id(&quot;pica_group_folders&quot;)/div[@class=&quot;pica-inputlist-taginput pica-taginput form-group input-group&quot;]/div[@class=&quot;input-group-btn&quot;]/button[@class=&quot;pica-taginput-button btn btn-default&quot;]/i[@class=&quot;glyphicons glyphicons-plus&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='Object_2136767937']/td/span</value>
+      <value>//div[@id='pica_group_folders']/div/div[2]/button/i</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td/span</value>
+      <value>//button/i</value>
    </webElementXpaths>
 </WebElementEntity>

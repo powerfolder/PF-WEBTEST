@@ -70,7 +70,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nichts anzuzeigen'])[2]/following::lang[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nichts anzuzeigen'])[1]/following::lang[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
