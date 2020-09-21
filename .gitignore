@@ -36,3 +36,5 @@ bin/lib/
 Libs/
 /settings/external/com.katalon.katalon-studio-smart-xpath.properties
 /settings/internal/com.kms.katalon.composer.testcase.properties
+
+Reports/
