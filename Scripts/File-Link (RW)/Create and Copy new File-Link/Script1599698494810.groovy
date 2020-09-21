@@ -16,17 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://lab.powerfolder.net:8666/login')
-
-WebUI.setText(findTestObject('Page_Login - PowerFolder/input_neues Konto erstellen_Username'), 'admin')
-
-WebUI.click(findTestObject('Page_Login - PowerFolder/input_neues Konto erstellen_Login'))
-
-WebUI.setEncryptedText(findTestObject('Page_Login - PowerFolder/input_Passwort wiederherstellen_Password'), '8SQVv/p9jVScEs4/2CZsLw==')
-
-WebUI.click(findTestObject('Page_Login - PowerFolder/input_neues Konto erstellen_Login'))
+WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Dashboard - PowerFolder/lang_Ordner'))
 
