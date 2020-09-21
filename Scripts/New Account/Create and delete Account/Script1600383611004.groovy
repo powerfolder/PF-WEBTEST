@@ -18,7 +18,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Page_Dashboard - PowerFolder/lang_Konten'))
+WebUI.click(findTestObject('Dashboard/lang_Accounts'))
 
 WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/span_Lschen_pica-glyph glyphicons glyphicon_aee676'))
 
@@ -61,7 +61,7 @@ WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_K
 
 WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Speichern'))
 
-WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/a_Max End User'))
+WebUI.click(findTestObject('Page_Accounts - PowerFolder/a_Max End User'))
 
 WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Avatar'))
 
@@ -75,21 +75,15 @@ WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_O
 
 WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Notizen'))
 
-WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Konto'))
-
 WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Speichern'))
 
-WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/span_admin_glyphicons glyphicons-user pica-glyph'))
+WebUI.click(findTestObject('Page_Accounts - PowerFolder/span_admin_glyphicons glyphicons-user pica-glyph'))
 
 WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Lschen'))
 
 WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Ja'))
 
 WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/span_Konto existiert bereits_caret'))
-
-WebUI.click(findTestObject('Object Repository/Page_Accounts - PowerFolder/lang_Ausloggen'))
-
-WebUI.navigateToUrl('https://lab.powerfolder.net:8666/login')
 
 WebUI.closeBrowser()
 

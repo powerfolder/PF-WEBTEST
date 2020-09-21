@@ -18,7 +18,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Page_Dashboard - PowerFolder/lang_Ordner'))
+WebUI.click(findTestObject('Dashboard/lang_Folders'))
 
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/span_Keine Mitglieder_pica-glyph glyphicons_e847e5'))
 

@@ -6,12 +6,12 @@
    <elementGuidId>7850062f-9a4f-4d2b-8888-f6ddfcc308c9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#Object_1527912519 > td.text-center.pica-icon-column > span.glyphicons.glyphicons-user.pica-glyph</value>
+         <key>XPATH</key>
+         <value>//tr[2]/td/span</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='Object_1527912519']/td/span</value>
+         <key>CSS</key>
+         <value>#Object_1527912519 > td.text-center.pica-icon-column > span.glyphicons.glyphicons-user.pica-glyph</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -42,7 +42,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='Object_1527912519']/td/span</value>
+      <value>//tr[2]/td/span</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

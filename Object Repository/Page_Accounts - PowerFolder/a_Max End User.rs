@@ -6,12 +6,12 @@
    <elementGuidId>ef5300f5-b2c0-4510-adf0-38d305cc33a3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#Object_1527912519 > td.pica-overflow.pica-serial > a.pica-name</value>
+         <key>XPATH</key>
+         <value>//tr/td[2]/a[contains(text(),'Happy End User')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='Object_1527912519']/td[2]/a</value>
+         <key>CSS</key>
+         <value>#Object_1527912519 > td.pica-overflow.pica-serial > a.pica-name</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -70,14 +70,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='Object_1527912519']/td[2]/a</value>
+      <value>//tr/td[2]/a[contains(text(),'Happy End User')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
       <type>Main</type>
-      <value>//a[contains(text(),'Max End User')]</value>
+      <value>//a[contains(text(),'Happy End User')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
