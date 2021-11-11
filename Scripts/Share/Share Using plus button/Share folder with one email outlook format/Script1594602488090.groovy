@@ -46,7 +46,7 @@ WebUI.click(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/b
 
 
 
-WebUI.verifyElementText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom'), folderName)
+WebUI.verifyElementText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom'), folderName.toLowerCase())
 
 WebUI.closeBrowser()
 

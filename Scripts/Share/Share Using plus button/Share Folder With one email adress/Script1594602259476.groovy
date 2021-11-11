@@ -37,7 +37,7 @@ WebElement btn = CustomKeywords.'share.ShareHelper.findShareButton'(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-String mail = "${-> folderName}@mail.com"
+String mail = "${-> folderName}@mail.com".toLowerCase();
 
 WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'), 
     mail)

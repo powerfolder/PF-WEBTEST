@@ -22,6 +22,7 @@ import org.openqa.selenium.WebElement as WebElement
 
 WebUI.callTestCase(findTestCase('Folders/Should Go to Folderstable'), [:], FailureHandling.OPTIONAL)
 
+
 String folderName = org.apache.commons.lang.RandomStringUtils.random(9, true, true)
 
 WebUI.click(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0'))
@@ -37,19 +38,21 @@ WebElement btn = CustomKeywords.'share.ShareHelper.findShareButton'(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-String mail = "${-> folderName}@mail.com".toLowerCase();
+String  mails = "  ${-> folderName}@a.com,${-> folderName}@b.com,,,,   ,   ,   ,,,,,,     ,,,, ${-> folderName}@c.com  "
 
-WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'), 
-    mail)
+int membersCount = CustomKeywords.'share.ShareHelper.getMembersCount'()
 
-WebUI.sendKeys(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'), 
-    Keys.chord(Keys.ENTER))
+WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6'), mails)
+
+WebUI.click(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/button_Can administrate_pica-taginput-butto_3eb2fe'))
 
 
+assert membersCount+3 == CustomKeywords.'share.ShareHelper.getMembersCount'()
 
-WebUI.verifyElementText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom'), mail)
+
 
 WebUI.closeBrowser()
+
 
 
 

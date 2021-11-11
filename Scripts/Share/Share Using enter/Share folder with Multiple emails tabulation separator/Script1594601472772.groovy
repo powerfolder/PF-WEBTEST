@@ -38,7 +38,7 @@ WebElement btn = CustomKeywords.'share.ShareHelper.findShareButton'(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-String  mails = "a_${-> folderName}@a.com	b_${-> folderName}@b.com	c_${-> folderName}@c.com"
+String  mails = "a_${-> folderName}@a.com   b_${-> folderName}@b.com   c_${-> folderName}@c.com"
 
 int membersCount = CustomKeywords.'share.ShareHelper.getMembersCount'()
 

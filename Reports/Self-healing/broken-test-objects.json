@@ -59,6 +59,16 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_Groups - PowerFolder/a_Group_link.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6",
+      "brokenLocator": "//input[@type\u003d\u0027email\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[@id\u003d\u0027share_taginput\u0027]/div/input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Share/Page_Folders - PowerFolder/input_Invite users and groups or create a l_797df6_idRelative.png"
     }
   ]
 }

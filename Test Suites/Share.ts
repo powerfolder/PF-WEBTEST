@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
-   <description>This test Suit Goal is To test The sharing functionality</description>
-   <name>Folder Share</name>
+   <description></description>
+   <name>Share</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
-   <numberOfRerun>0</numberOfRerun>
+   <numberOfRerun>3</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>3957d861-a681-47ae-913e-5153213066b8</testSuiteGuid>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>82bfe178-1121-4a0d-92bf-dc87fb1ab47c</testSuiteGuid>
    <testCaseLink>
-      <guid>6cf07a79-b0c8-4796-9b76-1a44ad273d51</guid>
+      <guid>b35d4793-6ed1-484c-a304-7c88770abf76</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/Share Folder With one email adress</testCaseId>
@@ -24,55 +24,67 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>9658b2ed-c1f3-4d18-8a5a-8d33d9dc3144</guid>
+      <guid>310704f1-8cae-49aa-af90-c2a20114e8a5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/Share folder with Multiple emails semi colon</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>a8ddea69-ca66-4f72-bf86-1a07e4be1636</guid>
+      <guid>aa01a524-6c9e-4c36-8ca4-438ec591353f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/Share folder with one email outlook format</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>5d54157d-5467-4b50-ace8-5347fbaa2250</guid>
+      <guid>c49ec22a-aeb3-46bc-9e49-59b0da39bb60</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/Share folder with Multiple emails tabulation separator</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>a706991c-5596-4a7c-9627-e74427c91910</guid>
+      <guid>8ea59a44-96d4-4c31-b149-e76735eca3ae</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/Share Folder With Group</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d3ea9b65-2b18-473c-9db5-b957231ec6dc</guid>
+      <guid>6bbaff87-e377-4e27-8d23-347fa386a221</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Share/Share Using plus button/Share folder multiple emails with white space in inpit</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6d6037a5-13b0-4c3c-82f7-802d8a909448</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/Share folder with Multiple outlook emails</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>b6190d8b-6ace-49bc-a2eb-f9c1e3877ee6</guid>
+      <guid>b0035b04-c933-4b88-b5ae-815876b4d12b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/Share folder with Multiple emails colon separator</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>00694699-e668-4115-b198-cac53d32c75d</guid>
+      <guid>369edf49-4394-40d8-862d-5e382cfbeb79</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/Share folder with Multiple emails comma separator</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>b6955d3c-b619-458b-a9fe-9147eabec8c4</guid>
+      <guid>67fe0abc-7404-489c-b939-f72f62033205</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/Share folder with Multiple emails multiple separators</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d06ada1b-68c8-4fbd-9ced-c55771333463</guid>
+      <guid>619bbf1e-80b0-47db-9090-ea5ab3685d82</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Share/Share Using plus button/Share folder multiple emails with white space in inpit multiple separators</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>870e6773-e771-43ec-a629-bf92935c98f2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/Share Folder With one email adress</testCaseId>
@@ -84,49 +96,61 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>dd9f6feb-f2fb-420d-ac6f-49d188c01ee0</guid>
+      <guid>da5c2ed3-9269-4c25-90ac-b3d863f92408</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/Share folder with Multiple emails semi colon</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>48fb055c-0ef7-484d-b34e-8587202dccb4</guid>
+      <guid>ba13cea4-632e-485b-86ea-b34c84d82ddd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/Share folder with one email outlook format</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d7661664-3b92-457e-8815-9e32171414ce</guid>
+      <guid>573801ce-adef-4bc0-b155-6ed86a470617</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/Share folder with Multiple emails tabulation separator</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>e7d570b9-ea04-409b-a2e8-e1ef6ca8c059</guid>
+      <guid>6b57b3f3-4f3f-4bef-993c-e8fefbb32f5b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/Share Folder With Group</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>03acd010-b80c-4f45-8a59-e84b637bbebd</guid>
+      <guid>1f871cb0-48e3-4d22-8df8-bc78f311a522</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Share/Share Using enter/Share folder multiple emails with white spaces in iput</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>373180d7-4716-449c-9104-5e8be2d54269</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/Share folder with Multiple outlook emails</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d61d3ba4-8c40-4455-bd61-8d95f568d07c</guid>
+      <guid>ce5f7519-035e-497b-a34c-16cc6a53c51a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/Share folder with Multiple emails colon separator</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>55a70050-b4cd-4f30-95a0-60f487141e27</guid>
+      <guid>7db300f1-4abc-434f-af1a-27e7b44403f1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Share/Share Using enter/Share folder multiple emails with white spaces in iput with multiple separators</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>99864207-891f-4c90-b561-7d635400265d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/Share folder with Multiple emails comma separator</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>61e6c3d0-48a2-4ebb-872a-eeb77a9c5397</guid>
+      <guid>66fab6d9-14a4-4145-8b33-7111af4cc824</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/Share folder with Multiple emails multiple separators</testCaseId>
