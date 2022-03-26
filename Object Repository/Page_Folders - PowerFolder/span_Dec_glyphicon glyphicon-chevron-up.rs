@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Dec_glyphicon glyphicon-chevron-up</name>
+   <tag></tag>
+   <elementGuidId>bb6a4c23-33b1-4d51-a11e-bfa244805d92</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_link_dialog']/div/div/div[2]/div/div/ul/li[3]/div/div/table/tr/td[3]/a/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>glyphicon glyphicon-chevron-up</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_link_dialog&quot;)/div[@class=&quot;pica-dialog-small modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-body&quot;]/div[@class=&quot;form-group input-group&quot;]/div[@class=&quot;bootstrap-datetimepicker-widget dropdown-menu bottom&quot;]/ul[@class=&quot;list-unstyled&quot;]/li[@class=&quot;collapse in&quot;]/div[@class=&quot;timepicker&quot;]/div[@class=&quot;timepicker-picker&quot;]/table[@class=&quot;table-condensed&quot;]/tr[1]/td[3]/a[@class=&quot;btn&quot;]/span[@class=&quot;glyphicon glyphicon-chevron-up&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_link_dialog']/div/div/div[2]/div/div/ul/li[3]/div/div/table/tr/td[3]/a/span</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//table/tr/td[3]/a/span</value>
+   </webElementXpaths>
+</WebElementEntity>

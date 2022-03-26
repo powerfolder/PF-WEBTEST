@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>icon-copy</name>
+   <tag></tag>
+   <elementGuidId>cce84e90-49d5-43f9-a7d8-fcd3f8fabac4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>i.glyphicons.glyphicons-copy</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;share_Object_1568114743&quot;)/td[@class=&quot;text-right&quot;]/div[@class=&quot;media&quot;]/div[@class=&quot;media-body&quot;]/div[@class=&quot;pica-media-footer&quot;]/div[@class=&quot;input-group&quot;]/div[@class=&quot;input-group-btn&quot;]/button[@class=&quot;btn btn-default&quot;]/i[@class=&quot;glyphicons glyphicons-copy&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='share_Object_1568114743']/td[2]/div/div/div[2]/div/div/button/i</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>glyphicons glyphicons-copy</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;share_Object_1568114743&quot;)/td[@class=&quot;text-right&quot;]/div[@class=&quot;media&quot;]/div[@class=&quot;media-body&quot;]/div[@class=&quot;pica-media-footer&quot;]/div[@class=&quot;input-group&quot;]/div[@class=&quot;input-group-btn&quot;]/button[@class=&quot;btn btn-default&quot;]/i[@class=&quot;glyphicons glyphicons-copy&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='share_Object_1568114743']/td[2]/div/div/div[2]/div/div/button/i</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/div/div/div[2]/div/div/button/i</value>
+   </webElementXpaths>
+</WebElementEntity>

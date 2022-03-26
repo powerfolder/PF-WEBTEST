@@ -24,7 +24,7 @@ WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/span_Ke
 
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/lang_Link erstellen'))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/i_Entfernen_glyphicons glyphicons-copy'))
+WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
 
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Schlieen'))
 
