@@ -3,6 +3,8 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import static org.apache.commons.lang.StringUtils.isNotBlank
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -82,7 +84,7 @@ assert WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Link -
 
 
 
-assert "Expired".equals(WebUI.getText(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Expired')))
+assert isNotBlank(WebUI.getText(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Expired')))
 
 WebUI.closeBrowser()
 

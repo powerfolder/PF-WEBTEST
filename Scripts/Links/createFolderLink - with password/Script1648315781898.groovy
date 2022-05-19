@@ -3,6 +3,8 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import static org.apache.commons.lang.StringUtils.isNotBlank
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -66,7 +68,7 @@ assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
 assert WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Link - PowerFolder/div_Password required'),2)
 
-assert "Password required".equals(WebUI.getText(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Password required')))
+assert isNotBlank(WebUI.getText(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Password required')))
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_Link - PowerFolder/input_This link is password protected_password'),
 	'4nvbrPglk7k=')
@@ -75,7 +77,7 @@ WebUI.click(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Ok'))
 
 assert WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Link - PowerFolder/div_Password required'),2)
 
-assert "Password required".equals(WebUI.getText(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Password required')))
+assert isNotBlank(WebUI.getText(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Password required')))
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_Link - PowerFolder/input_This link is password protected_password'),
 	'tzH6RvlfSTg=')
