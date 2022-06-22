@@ -59,6 +59,7 @@ WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_
 WebUI.closeWindowIndex(1)
 WebUI.delay(1)
 WebUI.switchToWindowIndex(0)
+WebUI.refresh()
 WebElement btn = CustomKeywords.'share.ShareHelper.findShareButton'(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
