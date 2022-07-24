@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>table</name>
+   <tag></tag>
+   <elementGuidId>211afff1-c651-49d1-ad31-e1b7c9dbcab6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#upload_table > tbody > tr.pica-table-empty.warning > td.text-center</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='filelink_table']/tbody/tr[1]/td[2]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>f850c779-78ac-4162-ab64-dde38e13aa78</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-center</value>
+      <webElementGuid>e3388fcc-995b-4a08-baac-a0d0876ae985</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>colspan</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>b4bab4dc-7557-4f80-afda-0a5705e46516</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Nothing to show</value>
+      <webElementGuid>0ac6d1e3-af8d-4c97-b4df-d4fedc269d7e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;upload_table&quot;)/tbody[1]/tr[@class=&quot;pica-table-empty warning&quot;]/td[@class=&quot;text-center&quot;]</value>
+      <webElementGuid>03878923-bc9d-43c2-ac62-d31e467308b3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='upload_table']/tbody/tr/td</value>
+      <webElementGuid>e8c1f90e-d08f-4518-aa1f-ed67f7af4094</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select files for upload to link'])[1]/following::td[1]</value>
+      <webElementGuid>173ea3dc-db56-43b6-a7e1-6b2f6cfa95e3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Upload'])[2]/following::td[1]</value>
+      <webElementGuid>ab01345e-ac91-4787-9fcb-427cdab97050</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add file'])[1]/preceding::td[1]</value>
+      <webElementGuid>08f99b41-1f22-4d83-8b4e-34be68232181</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/table/tbody/tr/td</value>
+      <webElementGuid>6a50a7ba-8fa9-466c-bd3a-3f214e00f82b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Nothing to show' or . = 'Nothing to show')]</value>
+      <webElementGuid>91153259-2a63-436e-96a2-8d500fa9e124</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

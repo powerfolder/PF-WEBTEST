@@ -18,6 +18,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
+      <webElementGuid>b85f5038-2104-4742-b3ad-9daea85db538</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -25,6 +26,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-glyph glyphicons glyphicons-plus-sign</value>
+      <webElementGuid>533ba3c6-662b-40fa-9865-c14b84f30177</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -32,6 +34,31 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica-files-create-dropdown&quot;)/a[@class=&quot;dropdown-toggle&quot;]/span[@class=&quot;pica-glyph glyphicons glyphicons-plus-sign&quot;]</value>
+      <webElementGuid>1622c848-c6d1-4781-a597-8d9a766ca1ec</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>a53b758a-360f-4338-8155-a0ebfd66109d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-glyph glyphicons glyphicons-plus-sign</value>
+      <webElementGuid>cb15a032-7adb-4e74-bcc3-ff2ea8745bfa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica-files-create-dropdown&quot;)/a[@class=&quot;dropdown-toggle&quot;]/span[@class=&quot;pica-glyph glyphicons glyphicons-plus-sign&quot;]</value>
+      <webElementGuid>d608fb97-4da6-4cab-b2c8-79f2777e1b34</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -39,6 +66,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica-files-create-dropdown']/a/span</value>
+      <webElementGuid>d465509d-2b73-4fd2-8313-2e2776c34f5f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -46,5 +74,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//thead[3]/tr/th/div/a/span</value>
+      <webElementGuid>31ba5ef0-77f9-4cfd-b9c6-051481717c29</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

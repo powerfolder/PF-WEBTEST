@@ -6,7 +6,8 @@
       "keywordMethods": [
         {
           "name": "getMembersCount",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "findShareButton",
@@ -24,10 +25,11 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }
