@@ -20,35 +20,32 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl(GlobalVariable.URL)
-
-assert WebUI.getWindowTitle().equals('Login - PowerFolder')
-
-WebUI.setText(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'), GlobalVariable.Username)
-
-WebUI.click(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login'))
-
-isPresent = WebUI.waitForElementVisible(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'), 
-    2)
-
-assert isPresent
-
-WebUI.setText(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'), GlobalVariable.Password)
-
-WebUI.click(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login'))
-
-assert WebUI.getWindowTitle().equals('Dashboard - PowerFolder')
+WebUI.callTestCase(findTestCase('Folders/Should Go to Folderstable'), [:], FailureHandling.OPTIONAL)
 
 
-boolean isElementPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/button_OK I understand'), 10)
-if(isElementPresent) {
-	WebUI.click(findTestObject('Object Repository/button_OK I understand'))
-}
+String folderName = org.apache.commons.lang.RandomStringUtils.random(9, true, true)
+
+WebUI.click(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0'))
+
+WebUI.click(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b'))
+
+WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'), folderName)
+
+WebUI.sendKeys(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'), Keys.chord(
+		Keys.ENTER))
+
+WebElement btn = CustomKeywords.'share.ShareHelper.findShareButton'(folderName)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 
-WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+boolean isElementPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/div_Invite users and groups or create a lin_ba0936'), 10)
 
+assert isElementPresent
+
+boolean isVisible = WebUI.verifyElementVisible(findTestObject('Object Repository/div_Invite users and groups or create a lin_ba0936'))
+
+assert isVisible
+
+WebUI.closeBrowser()
