@@ -41,13 +41,6 @@ WebUI.click(findTestObject('Object Repository/Login/Page_Login - PowerFolder/inp
 
 assert WebUI.getWindowTitle().equals('Dashboard - PowerFolder')
 
-
-boolean isElementPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/button_OK I understand'), 10)
-if(isElementPresent) {
-	WebUI.click(findTestObject('Object Repository/button_OK I understand'))
-}
-
-
 WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
