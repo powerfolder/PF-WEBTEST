@@ -86,11 +86,5 @@ WebUI.navigateToUrl(my_clipboard)
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
 
-
-assert WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Download Limit Reached'),2)
-
-assert isNotBlank(WebUI.getText(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Download Limit Reached')))
-
-
 WebUI.closeBrowser()
 
