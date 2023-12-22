@@ -59,6 +59,7 @@ WebUI.sendKeys(findTestObject('Object Repository/Share/Page_Folders - PowerFolde
 WebElement btn = CustomKeywords.'share.ShareHelper.findShareButton'(folderName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 WebUI.click(findTestObject('Page_Folders - PowerFolder/button_Create link'))
+WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Save (1)'))
 
 
 

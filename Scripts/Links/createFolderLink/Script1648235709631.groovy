@@ -45,6 +45,9 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 WebUI.click(findTestObject('Page_Folders - PowerFolder/button_Create link'))
 
+WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Save (1)'))
+
+
 
 
 WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))

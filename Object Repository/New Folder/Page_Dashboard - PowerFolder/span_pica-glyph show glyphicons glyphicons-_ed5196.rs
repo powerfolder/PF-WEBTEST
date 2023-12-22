@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_pica-glyph show glyphicons glyphicons-_ed5196</name>
+   <tag></tag>
+   <elementGuidId>29f5140c-e582-4c1f-8e92-4b460933957a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.pica-glyph.show.glyphicons.glyphicons-folder-open</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_menu']/table/tbody/tr[3]/td/a/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>6abca26e-0500-4a4d-9974-eba297d36964</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-glyph show glyphicons glyphicons-folder-open</value>
+      <webElementGuid>4544d0f6-4a83-4f47-b26c-49435c5bf111</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_menu&quot;)/table[1]/tbody[1]/tr[3]/td[@class=&quot;text-center&quot;]/a[1]/span[@class=&quot;pica-glyph show glyphicons glyphicons-folder-open&quot;]</value>
+      <webElementGuid>6768623b-6323-4218-b67b-039bbb177313</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_menu']/table/tbody/tr[3]/td/a/span</value>
+      <webElementGuid>c497b89b-0917-4977-9804-94f7211d0b2a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[3]/td/a/span</value>
+      <webElementGuid>15e0e085-266d-4b4c-b8b8-d080a036ca32</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Create link (1)</name>
+   <tag></tag>
+   <elementGuidId>0c4fe262-b135-4ba4-bd20-dade6bd14c0b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#share_create_link</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='share_create_link']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>845cc272-9338-42a8-96c5-5ff8c0664b1a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>share_create_link</value>
+      <webElementGuid>ab7e1b84-2059-49db-8ef9-9e5498c47d44</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>515cd84b-7175-482b-bc55-9f5dd65579ff</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-default pull-left</value>
+      <webElementGuid>f6332601-fba1-4451-abdb-b50a1abaf309</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                    Create link
+                </value>
+      <webElementGuid>4987944d-ef07-44d7-9748-237550f6ed2a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;share_create_link&quot;)</value>
+      <webElementGuid>57d07c73-f452-4d9b-bf0c-6eba91a337c5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@id='share_create_link']</value>
+      <webElementGuid>a9558c6d-7145-4ee1-935c-19d1bb1632be</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_share_dialog']/div/div/div[3]/button</value>
+      <webElementGuid>be925dad-b337-441d-9c22-5fc25a2f60b3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nothing to show'])[1]/following::button[1]</value>
+      <webElementGuid>6cb7e3de-6377-42a4-b615-5d319dc94b46</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[1]/following::button[1]</value>
+      <webElementGuid>6c35b33e-0242-4960-875d-550bca31390d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Create upload form'])[1]/preceding::button[1]</value>
+      <webElementGuid>a1059c9b-3891-435f-a58b-d6ffa0267a28</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/div/div[3]/button</value>
+      <webElementGuid>1da15a93-5253-4fde-9af6-ddd762e069be</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@id = 'share_create_link' and @type = 'button' and (text() = '
+                    Create link
+                ' or . = '
+                    Create link
+                ')]</value>
+      <webElementGuid>c8d1734b-00ac-4f41-b1ce-b4025169406a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
