@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TS14_Share Folder With one email adress</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5467b6f1-4d9b-4898-a1f1-d5e976157602</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0662f577-6ab2-4c5a-9735-0022e9b9e31e</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0662f577-6ab2-4c5a-9735-0022e9b9e31e</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>

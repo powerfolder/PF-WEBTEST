@@ -15,7 +15,8 @@
       <guid>6cf07a79-b0c8-4796-9b76-1a44ad273d51</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/Share Using plus button/Share Folder With one email adress</testCaseId>
+      <testCaseId>Test Cases/Share/Share Using plus button/TS14_Share Folder With one email adress</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -27,55 +28,64 @@
       <guid>9658b2ed-c1f3-4d18-8a5a-8d33d9dc3144</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/Share Using plus button/Share folder with Multiple emails semi colon</testCaseId>
+      <testCaseId>Test Cases/Share/Share Using plus button/TS16_Share folder with Multiple emails semi colon</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>a8ddea69-ca66-4f72-bf86-1a07e4be1636</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/Share Using plus button/Share folder with one email outlook format</testCaseId>
+      <testCaseId>Test Cases/Share/Share Using plus button/TS13_Share folder with one email outlook format</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>5d54157d-5467-4b50-ace8-5347fbaa2250</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/Share Using plus button/Share folder with Multiple emails tabulation separator</testCaseId>
+      <testCaseId>Test Cases/Share/Share Using plus button/TS19_Share folder with Multiple emails tabulation separator</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>a706991c-5596-4a7c-9627-e74427c91910</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/Share Using plus button/Share Folder With Group</testCaseId>
+      <testCaseId>Test Cases/Share/Share Using plus button/TS17_Share Folder With Group</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>d3ea9b65-2b18-473c-9db5-b957231ec6dc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/Share Using plus button/Share folder with Multiple outlook emails</testCaseId>
+      <testCaseId>Test Cases/Share/Share Using plus button/TS15_Share folder with Multiple outlook emails</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>b6190d8b-6ace-49bc-a2eb-f9c1e3877ee6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/Share Using plus button/Share folder with Multiple emails colon separator</testCaseId>
+      <testCaseId>Test Cases/Share/Share Using plus button/TS21_Share folder with Multiple emails colon separator</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>00694699-e668-4115-b198-cac53d32c75d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/Share Using plus button/Share folder with Multiple emails comma separator</testCaseId>
+      <testCaseId>Test Cases/Share/Share Using plus button/TS20_Share folder with Multiple emails comma separator</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>b6955d3c-b619-458b-a9fe-9147eabec8c4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/Share Using plus button/Share folder with Multiple emails multiple separators</testCaseId>
+      <testCaseId>Test Cases/Share/Share Using plus button/TS18_Share folder with Multiple emails multiple separators</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>d06ada1b-68c8-4fbd-9ced-c55771333463</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/Share Using enter/Share Folder With one email adress</testCaseId>
+      <testCaseId>Test Cases/Share/Share Using enter/TS3_Share Folder With one email adress</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -87,48 +97,56 @@
       <guid>dd9f6feb-f2fb-420d-ac6f-49d188c01ee0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/Share Using enter/Share folder with Multiple emails semi colon</testCaseId>
+      <testCaseId>Test Cases/Share/Share Using enter/TS6_Share folder with Multiple emails semi colon</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>48fb055c-0ef7-484d-b34e-8587202dccb4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/Share Using enter/Share folder with one email outlook format</testCaseId>
+      <testCaseId>Test Cases/Share/Share Using enter/TS2_Share folder with one email outlook format</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>d7661664-3b92-457e-8815-9e32171414ce</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/Share Using enter/Share folder with Multiple emails tabulation separator</testCaseId>
+      <testCaseId>Test Cases/Share/Share Using enter/TS5_Share folder with Multiple emails tabulation separator</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>e7d570b9-ea04-409b-a2e8-e1ef6ca8c059</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/Share Using enter/Share Folder With Group</testCaseId>
+      <testCaseId>Test Cases/Share/Share Using enter/TS8_Share Folder With Group</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>03acd010-b80c-4f45-8a59-e84b637bbebd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/Share Using enter/Share folder with Multiple outlook emails</testCaseId>
+      <testCaseId>Test Cases/Share/Share Using enter/TS4_Share folder with Multiple outlook emails</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>d61d3ba4-8c40-4455-bd61-8d95f568d07c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/Share Using enter/Share folder with Multiple emails colon separator</testCaseId>
+      <testCaseId>Test Cases/Share/Share Using enter/TS9_Share folder with Multiple emails colon separator</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>55a70050-b4cd-4f30-95a0-60f487141e27</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/Share Using enter/Share folder with Multiple emails comma separator</testCaseId>
+      <testCaseId>Test Cases/Share/Share Using enter/TS7_Share folder with Multiple emails comma separator</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>61e6c3d0-48a2-4ebb-872a-eeb77a9c5397</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/Share Using enter/Share folder with Multiple emails multiple separators</testCaseId>
+      <testCaseId>Test Cases/Share/Share Using enter/TS10_Share folder with Multiple emails multiple separators</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>inputEmail_Share</name>
+   <tag></tag>
+   <elementGuidId>3e9dc09d-c919-40fe-aad1-4b2ff039e586</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@class='pica-taginput-input form-control']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>fb48f366-be2a-41cd-b653-999037ca676b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-taginput-input form-control</value>
+      <webElementGuid>0063352e-9221-4481-b02d-635a98bb6ee7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>email</value>
+      <webElementGuid>37bcdc2e-7005-4011-a369-901c7dc1b7b7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>should-validate</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>1e745e88-b40c-4b67-adfa-18dee4bc3d0f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-placeholder</name>
+      <type>Main</type>
+      <value>placeholder_invite_by_name_or_email</value>
+      <webElementGuid>221040f3-13e1-4f51-8a6a-9d75824f5c44</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Invite by name , e-mail or List in form mail1,name,mail2...,mailn</value>
+      <webElementGuid>9e825e31-f077-443f-96ed-39230c3575c3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;share_taginput&quot;)/div[@class=&quot;pica-taginput-div form-control&quot;]/input[@class=&quot;pica-taginput-input form-control&quot;]</value>
+      <webElementGuid>3c00d3a4-3223-4b07-be08-a232d466c4b0</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

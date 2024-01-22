@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>share folder to an imported outlook email 
+ex “Younes EL-Haiti  &lt;yelhaiti@Powerfolder.net>”</description>
+   <name>TS13_Share folder with one email outlook format</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3b524533-0b0e-412e-b145-22287f9811a4</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>i_Remove_glyphicons glyphicons-copy</name>
+   <tag></tag>
+   <elementGuidId>919720db-9f1b-4b80-8e33-4027a06882ff</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>i.glyphicons.glyphicons-copy</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='share_Object_2069673798']/td[2]/div/div/div[2]/div/div/button/i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>bc7ec34d-eed8-4c66-9d42-444effc8b8ed</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>glyphicons glyphicons-copy</value>
+      <webElementGuid>35722aad-22f0-46fb-8a94-6f34264f34f9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;share_Object_2069673798&quot;)/td[@class=&quot;text-right&quot;]/div[@class=&quot;media&quot;]/div[@class=&quot;media-body&quot;]/div[@class=&quot;pica-media-footer&quot;]/div[@class=&quot;input-group&quot;]/div[@class=&quot;input-group-btn&quot;]/button[@class=&quot;btn btn-default&quot;]/i[@class=&quot;glyphicons glyphicons-copy&quot;]</value>
+      <webElementGuid>5ce68a39-b285-4cfb-8d65-6ade7befb7e8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='share_Object_2069673798']/td[2]/div/div/div[2]/div/div/button/i</value>
+      <webElementGuid>9318fb99-d2db-4efb-b4df-65bb1b8296e6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/div/div/div[2]/div/div/button/i</value>
+      <webElementGuid>1a864fc6-8392-42e9-9165-5375f3b32885</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
