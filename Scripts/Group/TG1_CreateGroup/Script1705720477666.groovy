@@ -33,8 +33,6 @@ WebUI.waitForElementClickable(findTestObject('LeftNavigationIcons/groups'), 30, 
 
 WebUI.click(findTestObject('LeftNavigationIcons/groups'))
 
-
-
 WebUI.click(findTestObject('Groups/createGroup'))
 
 String groupName =getRandomGroupName()

@@ -9,6 +9,7 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -16,15 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.navigateToUrl(GlobalVariable.URL)
+WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Login/profileIcon'))
+
+WebUI.click(findTestObject('/Login/logout'))
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Login - PowerFolder')
-WebUI.verifyEqual(WebUI.getAttribute(findTestObject('Login/poweredBy'), 'href'), 'https://www.powerfolder.com/')
-WebUI.verifyEqual(WebUI.getAttribute(findTestObject('Login/documentationLink'), 'href'), 'https://wiki.powerfolder.com/')
-WebUI.verifyElementClickable(findTestObject('Login/registerNewAccountLink'))
-WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.Username)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Password)
-WebUI.click(findTestObject('Login/loginSubmit'))
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
+
 WebUI.closeBrowser()

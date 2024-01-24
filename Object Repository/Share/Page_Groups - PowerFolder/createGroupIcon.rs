@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Log out_pica-icon pica-glyph glyphicon_0824b5</name>
+   <name>createGroupIcon</name>
    <tag></tag>
    <elementGuidId>76ffa4be-a17b-49fb-a014-800c4f158e5a</elementGuidId>
    <selectorCollection>
@@ -18,6 +18,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
+      <webElementGuid>3c699190-23eb-4f07-93a5-5e98f8f32674</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -25,6 +26,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-icon pica-glyph glyphicons glyphicons-plus-sign</value>
+      <webElementGuid>b0d236f5-70cc-499d-8fd8-c1d48be75d49</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -32,6 +34,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;groups_create&quot;)/span[@class=&quot;pica-icon pica-glyph glyphicons glyphicons-plus-sign&quot;]</value>
+      <webElementGuid>fc081641-f8cf-423e-a54e-66558c9157af</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -39,6 +42,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//a[@id='groups_create']/span</value>
+      <webElementGuid>16129841-cefd-48f0-9c15-4b99edf81408</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -46,5 +50,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//th/a/span</value>
+      <webElementGuid>50f40a88-1357-4e34-89a5-90c621e14914</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

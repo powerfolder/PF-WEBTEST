@@ -34,15 +34,15 @@ WebUI.setText(findTestObject('Folders/inputFolderName'),folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
 
-WebUI.click(findTestObject('Object Repository/Folders/Page_Dashboard - PowerFolder/lang_Groups'))
+WebUI.click(findTestObject('LeftNavigationIcons/groups'))
 
-WebUI.click(findTestObject('Object Repository/Share/Page_Groups - PowerFolder/span_Log out_pica-icon pica-glyph glyphicon_0824b5'))
+WebUI.click(findTestObject('Groups/createGroup'))
 
-WebUI.setText(findTestObject('Object Repository/Share/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), "Group_${ -> folderName }")
+WebUI.setText(findTestObject('Groups/inputGroupName'), "Group_${ -> folderName }")
 
-WebUI.click(findTestObject('Object Repository/Share/Page_Groups - PowerFolder/lang_Save'))
+WebUI.click(findTestObject('Groups/buttonSave'))
 
-WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
+WebUI.click(findTestObject('LeftNavigationIcons/folders'))
 
 Thread.sleep(5000)
 

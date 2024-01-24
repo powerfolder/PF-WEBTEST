@@ -33,7 +33,7 @@ WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebUI.click(findTestObject('Object Repository/Folders/Page_Dashboard - PowerFolder/lang_Groups'))
 
-WebUI.click(findTestObject('Object Repository/Share/Page_Groups - PowerFolder/span_Log out_pica-icon pica-glyph glyphicon_0824b5'))
+WebUI.click(findTestObject('Object Repository/Share/Page_Groups - PowerFolder/createGroupIcon'))
 
 WebUI.setText(findTestObject('Object Repository/Share/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), "Group_${ -> folderName }")
 

@@ -28,7 +28,6 @@ WebUI.verifyEqual(WebUI.getAttribute(findTestObject('Login/poweredBy'), 'href'),
 WebUI.verifyEqual(WebUI.getAttribute(findTestObject('Login/documentationLink'), 'href'), 'https://wiki.powerfolder.com/')
 WebUI.verifyElementClickable(findTestObject('Login/registerNewAccountLink'))
 WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.Username)
-WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Password)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')

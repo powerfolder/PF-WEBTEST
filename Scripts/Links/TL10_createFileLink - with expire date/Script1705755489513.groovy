@@ -48,13 +48,13 @@ WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
 
 
-WebUI.click(findTestObject('Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0'))
+WebUI.click(findTestObject('Folders/createFolderIcon'))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/lang_Create Document'))
+WebUI.click(findTestObject('Folders/createDocument'))
 
-WebUI.setText(findTestObject('Page_Folders - PowerFolder/input_Create a new Folder_pencil'), folderName)
+WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Ok'))
+WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebUI.closeWindowIndex(1)
 WebUI.delay(1)
@@ -66,10 +66,10 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 WebUI.click(findTestObject('Folders/createLink'))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Save (1)'))
+WebUI.click(findTestObject('Folders/button_SaveSettings'))
 
 
-WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
+WebUI.click(findTestObject('Folders/buttonCopyToClipboard'))
 
 
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Can read'))
@@ -77,7 +77,7 @@ WebElement settings =  driver.findElement(By.xpath("//tr[contains(@id,'share_Obj
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(settings))
 
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/input_Link versioning settings_pica_link_va_762f42'))
+WebUI.click(findTestObject('SettingsPopUp/inputValidTill'))
 
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/span_Dec_glyphicon glyphicon-time'))
 
@@ -97,10 +97,11 @@ assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 Thread.sleep(5000)
 
 WebUI.back()
+
 assert WebUI.waitForElementVisible(findTestObject('Folders/expireTabTitle'),2)
 assert  isNotBlank(WebUI.getText(findTestObject('Folders/expireTabTitle')))
 
-//WebUI.closeBrowser()
+WebUI.closeBrowser()
 
 
 def String getRandomGroupName() {

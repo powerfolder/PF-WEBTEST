@@ -48,14 +48,13 @@ WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
 
 
-WebUI.click(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0'))
+WebUI.click(findTestObject('Folders/createFolderIcon'))
 
-WebUI.click(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b'))
+WebUI.click(findTestObject('Folders/createDirectoryIcon'))
 
-WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'), folderName)
+WebUI.setText(findTestObject('Folders/inputFolderName'),folderName)
 
-WebUI.sendKeys(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'), Keys.chord(
-		Keys.ENTER))
+WebUI.sendKeys(findTestObject('Folders/inputFolderName'), Keys.chord(Keys.ENTER))
 
 
 WebElement btn = CustomKeywords.'share.ShareHelper.findShareButton'(folderName)
@@ -78,31 +77,4 @@ List list = driver.findElements(By.className("pica-crumb"));
 
 assert list.get(list.size()-1).getText().equals(folderName)
 WebUI.closeBrowser()
-
-
-//WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/a_0001 (admin)'))
-//
-//WebUI.click(findTestObject('Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0'))
-//
-//WebUI.click(findTestObject('Page_Folders - PowerFolder/a_Create Folder_852e7b'))
-//
-//WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/lang_Cancel'))
-//
-//WebUI.click(findTestObject('Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0'))
-//
-//WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/lang_Create Document'))
-//
-//WebUI.setText(findTestObject('Page_Folders - PowerFolder/input_Create a new Folder_pencil'), 'test')
-//
-//WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Ok'))
-//
-//WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/span_Just now_pica-glyph glyphicons glyphic_98b869'))
-//
-//WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/lang_Create link'))
-//
-//WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Remove_btn btn-default'))
-//
-//WebUI.click(findTestObject('Object Repository/Page_Link - PowerFolder/button_OK'))
-//
-//WebUI.closeBrowser()
 

@@ -64,12 +64,12 @@ WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebUI.setText(findTestObject('Folders/inputSearch'), folderName)
 //WebUI.mouseOver(findTestObject('Folders/firstFolder'), FailureHandling.STOP_ON_FAILURE)
-WebUI.mouseOverOffset(findTestObject('Folders/firstFolder'), 20, 30)
+//WebUI.mouseOverOffset(findTestObject('Folders/firstFolder'), 20, 30)
 
 WebDriver driver = DriverFactory.getWebDriver()
 WebElement folderNameElement =  driver.findElement(By.xpath("//td/a[text()='$folderName']/ancestor::tr/td[1]/span"))
 folderNameElement.click()
-//td/a[text()='Folder21_Jan_2024_10_05_00']/ancestor::tr/td[1]/span
+
 
 WebUI.click(findTestObject('Folders/buttonDelete'))
 

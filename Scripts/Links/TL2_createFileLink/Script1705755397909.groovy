@@ -47,13 +47,13 @@ WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
 
 
-WebUI.click(findTestObject('Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0'))
+WebUI.click(findTestObject('Folders/createFolderIcon'))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/lang_Create Document'))
+WebUI.click(findTestObject('Folders/createDocument'))
 
-WebUI.setText(findTestObject('Page_Folders - PowerFolder/input_Create a new Folder_pencil'), folderName)
+WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Ok'))
+WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebUI.closeWindowIndex(1)
 WebUI.delay(1)
@@ -66,7 +66,7 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 WebUI.click(findTestObject('Folders/shareLink'))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Save (1)'))
+WebUI.click(findTestObject('Folders/button_SaveSettings'))
 
 
 

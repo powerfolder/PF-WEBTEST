@@ -50,14 +50,13 @@ WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
 
 
-WebUI.click(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0'))
+WebUI.click(findTestObject('Folders/createFolderIcon'))
 
-WebUI.click(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b'))
+WebUI.click(findTestObject('Folders/createDocument'))
 
-WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'), "dir1")
+WebUI.setText(findTestObject('Folders/inputFolderName'), "dir1")
 
-WebUI.sendKeys(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'), Keys.chord(
-		Keys.ENTER))
+WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebElement dir1 =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'dir1')]"))
 

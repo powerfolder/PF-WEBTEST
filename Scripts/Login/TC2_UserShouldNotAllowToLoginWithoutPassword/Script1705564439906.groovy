@@ -25,13 +25,5 @@ assert WebUI.getWindowTitle().equals('Login - PowerFolder')
 WebUI.click(findTestObject('Login/loginSubmit'))
 
 
-//WebUI.verifyElementPresent(findTestObject('notifications_toastmessage'), 30, FailureHandling.OPTIONAL)
-
-/*
- * notificationMessage =
- * WebUI.getText(findTestObject('notifications_toastmessage'))
- * println(notificationMessage)
- */
-
 WebUI.closeBrowser()
 

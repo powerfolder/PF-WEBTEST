@@ -55,8 +55,6 @@ WebUI.sendKeys(findTestObject('Object Repository/Share/Page_Folders - PowerFolde
 
 assert membersCount+3 == CustomKeywords.'share.ShareHelper.getMembersCount'()
 
-
-
 WebUI.closeBrowser()
 
 

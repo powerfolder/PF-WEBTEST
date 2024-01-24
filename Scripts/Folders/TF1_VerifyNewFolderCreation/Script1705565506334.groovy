@@ -28,6 +28,8 @@ WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandli
 WebUI.setText(findTestObject('Folders/inputFolderName'), getRandomFolderName())
 WebUI.click(findTestObject('Folders/buttonOK'))
 
+WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getFolderCreationNotification')), 'Folder created')
+
 WebUI.closeBrowser()
 
 def String getRandomFolderName() { 
