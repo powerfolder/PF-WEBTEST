@@ -16,11 +16,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
-import org.openqa.selenium.WebDriver as WebDriver
-import org.openqa.selenium.WebElement as WebElement
-import java.awt.Toolkit
-import java.awt.datatransfer.DataFlavor
 import org.openqa.selenium.By as By
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -64,16 +59,8 @@ WebDriver driver = DriverFactory.getWebDriver()
 WebElement folderNameElement =  driver.findElement(By.xpath("//td/a[text()='$folderName']/ancestor::tr/td[1]/span"))
 folderNameElement.click()
 
-WebUI.click(findTestObject('Folders/rename'))
+WebUI.click(findTestObject('ManagePopup/button_Manage'))
 
-WebUI.setText(findTestObject('Folders/inputFolderName'), folderName+'_RENAME')
-WebUI.click(findTestObject('Folders/buttonOK'))
-
-String notification = WebUI.getText(findTestObject('Folders/getFolderCreationNotification'))
-
-WebUI.verifyEqual(notification, "Renamed "+folderName+" to "+folderName+"_RENAME")
-
-//WebUI.closeBrowser()
 
 def String getRandomFolderName() {
 	String folderName = 'Folder'+getTimestamp();
