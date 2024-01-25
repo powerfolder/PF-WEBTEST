@@ -86,12 +86,11 @@ class helper {
 		String folderName = 'Group_'+getTimestamp();
 		return folderName;
 	}
-	
+
 	@Keyword
 	def String getRandomFolderName() {
 		String folderName = 'Folder'+getTimestamp();
 		return folderName;
-		
 	}
 	@Keyword
 	def String getTimestamp() {
