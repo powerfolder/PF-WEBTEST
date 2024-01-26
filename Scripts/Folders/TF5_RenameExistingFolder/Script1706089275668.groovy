@@ -73,7 +73,7 @@ String notification = WebUI.getText(findTestObject('Folders/getFolderCreationNot
 
 WebUI.verifyEqual(notification, "Renamed "+folderName+" to "+folderName+"_RENAME")
 
-//WebUI.closeBrowser()
+WebUI.closeBrowser()
 
 def String getRandomFolderName() {
 	String folderName = 'Folder'+getTimestamp();

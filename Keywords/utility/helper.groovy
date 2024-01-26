@@ -83,13 +83,13 @@ class helper {
 
 	@Keyword
 	def String getRandomGroupName() {
-		String folderName = 'Group_'+getTimestamp();
+		String folderName = 'GP_'+getTimestamp();
 		return folderName;
 	}
 
 	@Keyword
 	def String getRandomFolderName() {
-		String folderName = 'Folder'+getTimestamp();
+		String folderName = 'FD'+getTimestamp();
 		return folderName;
 	}
 	@Keyword

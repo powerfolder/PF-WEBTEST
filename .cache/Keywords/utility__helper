@@ -1,13 +1,12 @@
 {
-  "keywordFileContentHash": "685D286D092E252F951702274AAF80B1",
+  "keywordFileContentHash": "546651092499E90352C65E6882F4BD80",
   "keywordClasses": [
     {
       "name": "utility.helper",
       "keywordMethods": [
         {
           "name": "refreshBrowser",
-          "parameters": [],
-          "javadoc": "/**\n\t * Refresh browser\n\t */"
+          "parameters": []
         },
         {
           "name": "clickElement",
@@ -25,8 +24,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Click element\n\t * @param to Katalon test object\n\t */"
+          ]
         },
         {
           "name": "getHtmlTableRows",
@@ -57,26 +55,22 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Get all rows of HTML table\n\t * @param table Katalon test object represent for HTML table\n\t * @param outerTagName outer tag name of TR tag, usually is TBODY\n\t * @return All rows inside HTML table\n\t */"
+          ]
         },
         {
           "name": "getRandomGroupName",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getRandomFolderName",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getTimestamp",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
