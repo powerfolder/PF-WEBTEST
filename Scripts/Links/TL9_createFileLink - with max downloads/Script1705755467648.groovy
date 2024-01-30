@@ -27,9 +27,7 @@ import java.awt.datatransfer.DataFlavor
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
-
 String folderName = CustomKeywords.'utility.helper.getRandomFolderName'()
-
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 

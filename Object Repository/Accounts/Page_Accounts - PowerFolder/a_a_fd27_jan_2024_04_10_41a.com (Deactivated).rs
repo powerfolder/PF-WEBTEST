@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_a_fd27_jan_2024_04_10_41a.com (Deactivated)</name>
+   <tag></tag>
+   <elementGuidId>4091a90d-c3b1-464c-b2a7-c0596f16cf9a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#Object_2087842381 > td.pica-overflow.pica-serial > a.pica-name</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='Object_2087842381']/td[2]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>9793c602-3783-4382-b46c-4df5b43404a3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-name</value>
+      <webElementGuid>99c936bc-dc5d-4d20-9d02-7ce97f0a800f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-placement</name>
+      <type>Main</type>
+      <value>bottom</value>
+      <webElementGuid>6fdba0dd-4b3e-4f01-9290-79f06afa8203</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-original-title</name>
+      <type>Main</type>
+      <value>a_fd27_jan_2024_04_10_41@a.com</value>
+      <webElementGuid>86216dbb-695a-48c5-8ace-0435fe2d0f24</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-describedby</name>
+      <type>Main</type>
+      <value>tooltip325619</value>
+      <webElementGuid>2da017da-727f-4d51-a93a-418ef44b1138</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>a_fd27_jan_2024_04_10_41@a.com (Deactivated)</value>
+      <webElementGuid>50dcd972-86ec-4c75-996c-3dc3de503b87</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;Object_2087842381&quot;)/td[@class=&quot;pica-overflow pica-serial&quot;]/a[@class=&quot;pica-name&quot;]</value>
+      <webElementGuid>317c3291-91f6-457b-9c6e-6dca1ddafbfb</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='Object_2087842381']/td[2]/a</value>
+      <webElementGuid>58352ee6-5a50-4ba3-9816-fc3d8ff22eb5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'a_fd27_jan_2024_04_10_41@a.com (Deactivated)')]</value>
+      <webElementGuid>7c8e2802-5887-492c-9978-f86e600e7c74</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td[2]/a</value>
+      <webElementGuid>67f49af1-25f9-46ee-b973-c68f2d6f9215</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[(text() = 'a_fd27_jan_2024_04_10_41@a.com (Deactivated)' or . = 'a_fd27_jan_2024_04_10_41@a.com (Deactivated)')]</value>
+      <webElementGuid>e5d64fb3-0c66-428d-ac2c-d7697c7a8917</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

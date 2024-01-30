@@ -26,6 +26,7 @@ originfolderCount = getFoldersCount()
 
 String folderName =  getRandomFolderName()
 WebUI.click(findTestObject('Folders/createFolderIcon'))
+
 WebUI.click(findTestObject('Folders/createFolder'))
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 //WebUI.click(findTestObject('Folders/buttonOK'))

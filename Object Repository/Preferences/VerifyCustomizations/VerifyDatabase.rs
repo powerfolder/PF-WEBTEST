@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>VerifyDatabase</name>
+   <tag></tag>
+   <elementGuidId>99120e9d-83e1-4d30-bc91-bdb1ea7c3dfa</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_content']/div/div[2]/div/p</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>0efb2108-a796-4cdc-971f-8c5f8c105e33</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-card-text</value>
+      <webElementGuid>e32b05db-0144-4b32-ab84-a707f46bb3ed</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Database, LDAP, SAML ...</value>
+      <webElementGuid>e20ca754-852d-4b73-9eec-be27c16d3f3d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_content&quot;)/div[@class=&quot;pica-flex pica-content-scroll&quot;]/div[@class=&quot;pica-card card&quot;]/div[@class=&quot;pica-card-body&quot;]/p[@class=&quot;pica-card-text&quot;]</value>
+      <webElementGuid>654f04f8-f82c-4b22-af95-2c98a87f09bc</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_content']/div/div[2]/div/p</value>
+      <webElementGuid>e797232b-0cf1-4209-9622-6002bedfec8a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Authentication'])[1]/following::p[1]</value>
+      <webElementGuid>5aaa7c92-99fb-4b8d-943b-bda4893ba100</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Configure'])[1]/following::p[1]</value>
+      <webElementGuid>94996756-9623-4184-959a-98ff3221d138</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Configure'])[2]/preceding::p[1]</value>
+      <webElementGuid>cfad7896-9161-408e-8056-452cf31b1803</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Storage'])[2]/preceding::p[1]</value>
+      <webElementGuid>e39a6411-96cc-431b-9639-825202930dcc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Database, LDAP, SAML ...']/parent::*</value>
+      <webElementGuid>213d4b22-1a72-424d-8679-44f2c4a0e9b4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/p</value>
+      <webElementGuid>3c24e0f7-cfdb-40d7-83d6-baf809c9adde</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Database, LDAP, SAML ...' or . = 'Database, LDAP, SAML ...')]</value>
+      <webElementGuid>3bcfe0f1-a351-4eaf-a358-195fceff4d00</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

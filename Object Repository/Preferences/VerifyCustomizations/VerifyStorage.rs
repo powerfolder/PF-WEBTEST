@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>VerifyStorage</name>
+   <tag></tag>
+   <elementGuidId>c7cc4bda-40fd-426a-b6fe-b95b0dec5aef</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_content']/div/div[3]/div/h5</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h5</value>
+      <webElementGuid>a7cd0ed3-30e2-4a1a-ab9b-2822ed03e8cf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-card-title</value>
+      <webElementGuid>01181ab7-ff9c-4e1c-99e4-8d676ac5387d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Storage</value>
+      <webElementGuid>d0120dcb-6b35-4b46-bee4-e98d7d035f94</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_content&quot;)/div[@class=&quot;pica-flex pica-content-scroll&quot;]/div[@class=&quot;pica-card card&quot;]/div[@class=&quot;pica-card-body&quot;]/h5[@class=&quot;pica-card-title&quot;]</value>
+      <webElementGuid>25f73b08-8469-4cf1-a086-6ee8fdd5bc62</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_content']/div/div[3]/div/h5</value>
+      <webElementGuid>b6581489-afe4-44ea-ac4a-623b977feba2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Configure'])[2]/following::h5[1]</value>
+      <webElementGuid>afa6afaf-6010-4483-93f4-84304797c7f4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Authentication'])[1]/following::h5[1]</value>
+      <webElementGuid>e73bee7b-a131-47f9-8e07-59bacb3a5d21</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Configure'])[3]/preceding::h5[1]</value>
+      <webElementGuid>8e9314ea-606d-4a38-989e-307c7291c91b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Customizations'])[1]/preceding::h5[1]</value>
+      <webElementGuid>07b32a9a-b63b-465c-83b8-7a43934d9380</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/h5</value>
+      <webElementGuid>c8397b4f-3c7e-42eb-b9a0-0e64afc60105</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h5[(text() = 'Storage' or . = 'Storage')]</value>
+      <webElementGuid>0471d987-64b6-4e4d-a8a7-f1ef79d2ffdd</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lang_My account</name>
+   <tag></tag>
+   <elementGuidId>558cd4bc-b7f6-488a-9604-b3288d8a1e2e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>ul.pica-arrow-right.dropdown-menu.dropdown-menu-right > li > div.media > div.media-body > a > lang[name=&quot;label_my_account&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//lang[@name='label_my_account'])[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>lang</value>
+      <webElementGuid>72583ddf-fb25-4d48-b6da-4b1519b87458</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>label_my_account</value>
+      <webElementGuid>11d2bd72-d371-4cc7-ad4d-46f38db3580a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>My account</value>
+      <webElementGuid>c7d419b7-473d-4732-b295-a2f89d03f78f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_action_normal&quot;)/div[@class=&quot;pica-inline dropdown open&quot;]/ul[@class=&quot;pica-arrow-right dropdown-menu dropdown-menu-right&quot;]/li[1]/div[@class=&quot;media&quot;]/div[@class=&quot;media-body&quot;]/a[1]/lang[1]</value>
+      <webElementGuid>4f842794-ce91-4ce0-8b63-bfefa36798cd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//lang[@name='label_my_account'])[2]</value>
+      <webElementGuid>d427e54d-6fb5-4384-9548-e46c84131bff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_action_normal']/div[2]/ul/li/div/div[2]/a/lang</value>
+      <webElementGuid>753c7203-a242-4a1f-ac0a-4557f6395575</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/ul/li/div/div[2]/a/lang</value>
+      <webElementGuid>d0869d99-1a10-4269-a874-66b5dbfee7b6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//lang[@name = 'label_my_account' and (text() = 'My account' or . = 'My account')]</value>
+      <webElementGuid>9f308123-d78b-4cfb-a8f4-858a06a354ca</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

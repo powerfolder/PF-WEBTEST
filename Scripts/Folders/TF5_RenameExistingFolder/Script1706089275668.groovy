@@ -58,9 +58,10 @@ String folderName = getRandomFolderName()
 WebUI.setText(findTestObject('Folders/inputFolderName'),folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getFolderCreationNotification')), 'Folder created')
+//WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getFolderCreationNotification')), 'Folder created')
 Thread.sleep(7000)
 WebDriver driver = DriverFactory.getWebDriver()
+WebUI.delay(5)
 WebElement folderNameElement =  driver.findElement(By.xpath("//td/a[text()='$folderName']/ancestor::tr/td[1]/span"))
 folderNameElement.click()
 

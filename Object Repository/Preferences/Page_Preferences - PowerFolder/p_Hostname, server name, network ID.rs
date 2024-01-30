@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_Hostname, server name, network ID</name>
+   <tag></tag>
+   <elementGuidId>22fd34c8-0ffc-4f79-98b5-7fb76881547a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_content']/div/div[5]/div/p</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>cb86c45e-606c-4f12-b218-e3730cbf6fc0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-card-text</value>
+      <webElementGuid>c2b78153-6b56-4bb8-b461-4f88bb6f8e2e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Hostname, server name, network ID ...</value>
+      <webElementGuid>3c94bde9-25c0-4cc4-a8bf-25e48f7ccb18</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_content&quot;)/div[@class=&quot;pica-flex pica-content-scroll&quot;]/div[@class=&quot;pica-card card&quot;]/div[@class=&quot;pica-card-body&quot;]/p[@class=&quot;pica-card-text&quot;]</value>
+      <webElementGuid>e5b6ee7c-143c-4b4a-8c52-bd84ca77c27c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_content']/div/div[5]/div/p</value>
+      <webElementGuid>c04360b8-a7d9-4e91-becf-73401bd4dc28</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div/p</value>
+      <webElementGuid>42eaad7d-b171-45d4-9016-7cdef8776f5d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Hostname, server name, network ID ...' or . = 'Hostname, server name, network ID ...')]</value>
+      <webElementGuid>69f4750a-42a2-4bc1-b131-cca8619eaf58</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

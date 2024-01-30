@@ -12,140 +12,140 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>ea5f2274-03a5-4494-8334-0a86fa3508de</testSuiteGuid>
    <testCaseLink>
-      <guid>876676bb-7c06-49ec-a0e5-d5261d72a0d7</guid>
+      <guid>f3b00fda-69b6-43c6-8121-9788ddba173a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA1_VerifyAccountCreation</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>fe92d521-7e1a-4dcb-9b1d-ed2bd3de91bc</guid>
+      <guid>78219c13-615f-4784-9e69-37114a058645</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/PreTest_GoToShareable</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>426439a4-7650-487a-8eb7-38999cf54187</guid>
+      <guid>5b75012f-5331-48d5-8a07-14f8bd76b5f7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF1_VerifyNewFolderCreation</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>84024ce3-e9a0-407b-a082-ec67f8afb035</guid>
+      <guid>738abb7a-7c8f-4157-8525-dddbea84e9c2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF2_ValidateFolderCreationUsingKeyboardSubmit</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e1b45d2b-3ef7-426c-8f74-e4f4d081823b</guid>
+      <guid>652e60de-7b7f-44d8-89ac-5b56ea30b172</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF3_VerifyDeleteFolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d923acaf-fb70-4e01-82d2-b8cb419b18a2</guid>
+      <guid>8fa99a04-43c0-47f5-b5bc-cf6dbfb2f0c4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF5_RenameExistingFolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3bb2f051-4bb0-4452-b864-bd6164668ec6</guid>
+      <guid>b4928063-f61f-43bc-b48e-f985169c01e7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF6_ExistingFolderManage</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ab958a62-77b8-4c98-b94d-f037fbc4d404</guid>
+      <guid>0322a2f5-3965-47a5-a30c-12969790d8a0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Group/TG1_CreateGroup</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d7f17777-0ee4-4b5b-b689-9c3d91654b7a</guid>
+      <guid>6ef18011-4b47-491a-a247-c6d6dde7ecb5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Help/TH1_verifyHelpPage</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b4a7999d-82ca-4a96-8b17-5682bcdcf36a</guid>
+      <guid>ceb24d9e-a19b-422c-bed7-e3bfccd8430f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL10_createFileLink - with expire date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>251aa853-b253-4184-9299-3e3e70057e79</guid>
+      <guid>191cd205-f3d8-41ca-8ca1-da40c8828c6e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL1_createDirLink</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6df99fe8-4713-484e-b8a7-431358800ca9</guid>
+      <guid>24355016-8ee1-4663-9c11-8346cb3615d0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL2_createFileLink</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>35167685-e64d-49bd-bd07-e81ae71df427</guid>
+      <guid>4c291725-81d0-4490-b688-e917c3357ddb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL3_createFolderLink with expirary date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>522412d7-384d-418e-b670-ae0cd796e939</guid>
+      <guid>a345ce20-57c8-4b72-a18d-21576bc53406</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL4_createFolderLink - with password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>fefe2ff0-256d-400e-ba9a-077d5d22387c</guid>
+      <guid>a293de71-a37c-4501-a7d3-1725638c4e16</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL5_createFolderLink - with max downloads</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7b6344a2-713e-4bb7-a5e2-29ca178cf138</guid>
+      <guid>95db52bf-ad8d-4807-8b7e-83af3413d964</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL6_uploadIntoSubDirsUsingLinks</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>96aa10c7-75fe-4795-b32a-148fb5f37d54</guid>
+      <guid>391cfa11-69e9-451a-89f1-05528c9a35ae</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL7_createFolderLink</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>491c3f42-34ab-4c33-9d19-9d14d037c18e</guid>
+      <guid>8d6396a3-fe2b-4f09-adba-823de7fa2548</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL8_createFileLink - with password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>dd5bf1bc-4d70-4195-81f7-49b1ab77e203</guid>
+      <guid>fe2bbf51-41e2-4627-997c-337ee9e4fa9b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL9_createFileLink - with max downloads</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0e67cf9d-855b-47fe-9b07-d22eb2479ccf</guid>
+      <guid>13394b78-a2d5-4ebe-aea2-957cb0d645f4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login/Pretest - Admin Login</testCaseId>
@@ -158,7 +158,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>db329bba-c3e7-40f6-9cc4-0ede859c053f</guid>
+      <guid>c46087ec-d531-4e15-9eef-7c382317f4d8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login/TC1_VerifyAdminLoginWithValidCredentails</testCaseId>
@@ -171,133 +171,133 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>4200c2d7-b62a-43ad-8654-03d4b098e726</guid>
+      <guid>69d86557-e976-47ed-8b46-9df91eed70e2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login/TC2_UserShouldNotAllowToLoginWithoutPassword</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>abd11006-12e3-4a1c-8b08-85dd686db5c1</guid>
+      <guid>0aea3cdc-c477-4011-adc5-b2b14a7ec6df</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login/TC3_verifyLoginWithWrongCredentials</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4321fa92-11b6-4a6c-a1e0-ae29a0da705b</guid>
+      <guid>eaa517a5-03f7-49cc-ba3c-c4ae1671e4f4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login/TC4_verifylogout</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7137e256-5219-417c-8a82-cb4fadee47a9</guid>
+      <guid>8add11a1-9891-4afa-aa87-60f11cb993e6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Organization/TO1_CreateNewOrganization</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c044bc76-d894-45e4-9231-eccdf3a1e9c0</guid>
+      <guid>6c96e90f-f3a0-403e-96ca-e3662911b94c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Organization/TO2_EditOrganization</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a567f874-564c-4b4e-bb78-1b0c26ab950f</guid>
+      <guid>9c026b5b-fe04-4bd0-9431-bd4c32319b74</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Organization/TO3_EditOrganizationBranding</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a73e0943-870a-4e41-87a2-482e7360bf43</guid>
+      <guid>0954c4cc-69e1-4460-b974-2ff9f945f564</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Organization/TO4_EditOrganizationDomain</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e1844cfd-57ec-4118-89ce-609d0711d2cd</guid>
+      <guid>484506d0-72eb-48c0-bd03-f156d639478f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Organization/TO5_EditOrganizationAddingMembers</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>788f9836-6034-40ce-b60b-654afc78a13b</guid>
+      <guid>4efb2240-5dd9-42a3-9359-1a6f9357f9a7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Organization/TO6_EditOrganizationAddingGroups</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3d55e7ff-fb9c-4836-8128-0734e9bd6b16</guid>
+      <guid>61479516-1355-4747-8eb3-3611dc6c0538</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Organization/TO7_EditOrganizationAddingManage</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>dedffe60-3eae-4d38-9d91-805d5af1d6a1</guid>
+      <guid>de30550a-3fe5-4797-8d0c-3b00e6e6f3cb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/invites/TA1_can see invite input for a folder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b47a8793-c7a4-4efe-86d7-90c01bb39c3c</guid>
+      <guid>4f18a6b2-615f-4c9a-92de-243acfb9de6f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/invites/TA2_should not see invite input on files</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>16112b26-50ee-4c05-98d2-296ee886a665</guid>
+      <guid>b6c701bd-c59a-4ccd-a033-10abfa1dc2b5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/invites/TA3_should see invite input when going inside folder and coming back</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>475d83e9-ac95-4461-960f-8d2e1ebefc2b</guid>
+      <guid>bd8ca7a3-d28a-4f26-a5c3-9002392bae9b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/invites/TA4_should not see invite input on sub folder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>16ad2106-af2c-4642-b124-d63ac5c0440c</guid>
+      <guid>50f47bbd-15fa-49b4-9453-79dcdddc8567</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS10_Share folder with Multiple emails multiple separators</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5553804f-2018-48a6-b6e3-de113bef319f</guid>
+      <guid>4b87a79e-f169-4cf5-b3eb-a348cf5aa0b7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS11_Share folder multiple emails with white spaces in iput with multiple separators</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8d920928-9411-4988-a42f-183c443db2dc</guid>
+      <guid>f10bcb53-2625-4c34-ae35-8addc70a642e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS1_Share folder multiple emails with white spaces in iput</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>75729350-d9a7-4f8c-9271-32f55e080c0b</guid>
+      <guid>607c1c00-920c-48f5-8d10-4e647a39d168</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS2_Share folder with one email outlook format</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ee1a249b-4009-4646-9729-df39cca86133</guid>
+      <guid>6450f73b-be20-4a02-ba0d-46ad16348338</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS3_Share Folder With one email adress</testCaseId>
@@ -310,63 +310,63 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>0e50c00e-fd78-4a00-895d-a7bc5a4495fa</guid>
+      <guid>ecc7762f-37da-48f1-9b0e-d702426b25e1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS4_Share folder with Multiple outlook emails</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>78c249c7-2b43-4d31-b111-b7b69a037682</guid>
+      <guid>bbae59de-b1bf-474a-8da5-3076bdf1666d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS5_Share folder with Multiple emails tabulation separator</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d494cf5f-e5ef-4e94-9543-eb4142e36da7</guid>
+      <guid>5a80d4b1-1b77-4d10-875c-f1bb74c19624</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS6_Share folder with Multiple emails semi colon</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ec732e25-a4c6-42b1-9fec-7294c02fc77d</guid>
+      <guid>b738933d-52ac-4c48-906e-46cc1eb813cd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS7_Share folder with Multiple emails comma separator</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6389aca3-523b-4a3d-a8b7-0bed8e44bc02</guid>
+      <guid>6830de6e-0a28-459b-ab1b-10b8fa19d51d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS8_Share Folder With Group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5b6a166a-99fe-4868-ae57-cd0e841723c7</guid>
+      <guid>b8b77aed-c5e6-4119-b7ff-857e869f7fe5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS9_Share folder with Multiple emails colon separator</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d6d6afc0-4fc1-4701-a065-ac958a521eb0</guid>
+      <guid>63fc97bf-b81e-408f-949f-cbfe2a88a256</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS12_Share folder multiple emails with white space in inpit</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d361a2f7-34fa-4e0e-8014-334b30365ee6</guid>
+      <guid>1da6c127-f9d5-4289-b29c-cf2d9e0b297d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS13_Share folder with one email outlook format</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>9844e5b0-45f3-4477-a308-4b29d2965fca</guid>
+      <guid>ff2b4307-b6a8-4288-8151-a37660d6b07d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS14_Share Folder With one email adress</testCaseId>
@@ -379,56 +379,56 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>2ae85f62-b582-4073-96fa-846a39e03feb</guid>
+      <guid>fc71319d-1da1-4610-adc6-7dbc8c4ea693</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS15_Share folder with Multiple outlook emails</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>bac44084-f682-424d-888c-ee456907224d</guid>
+      <guid>403fe466-9d8f-489f-8567-201fa8665a29</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS16_Share folder with Multiple emails semi colon</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>eb968f5f-bd93-49e8-846a-74a8be54f23d</guid>
+      <guid>5f6e7b72-4e6e-4fa8-a899-95ea6a0b2b78</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS17_Share Folder With Group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>bcaa0ccf-b5f4-478d-b25d-e2e1ecfa00e6</guid>
+      <guid>e469e260-39e5-40dd-aec6-46ed887c200a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS18_Share folder with Multiple emails multiple separators</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e43b7a50-9249-4f91-8603-080e995e7d51</guid>
+      <guid>9a61226d-b958-476c-b155-e58faed62be1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS19_Share folder with Multiple emails tabulation separator</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>64cc70e6-6ffd-469f-8757-d8ca4fba86ed</guid>
+      <guid>25b425ae-f868-4b68-a42e-72627facc882</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS20_Share folder with Multiple emails comma separator</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7e78daa6-d8f4-44eb-879c-f7cc23fe4770</guid>
+      <guid>cdf4c0a3-c07d-4986-b778-d46312a6a0e5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS21_Share folder with Multiple emails colon separator</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>98171120-aede-4433-af24-fd0f9e77f235</guid>
+      <guid>e164eb3d-e064-40a5-a0e3-2be2b10123cf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS22_Share folder multiple emails with white space in inpit multiple separators</testCaseId>

@@ -27,12 +27,9 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 import java.util.concurrent.TimeUnit as TimeUnit
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
-
 String folderName = CustomKeywords.'utility.helper.getRandomFolderName'()
-
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
-
 WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getCreateText')), 'Create', FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getFolderNameLabelText')), 'Create a new Folder',  FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
@@ -52,14 +49,12 @@ WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_
 
 WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
 
-
-
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Can read'))
 WebDriver driver = DriverFactory.getWebDriver() //
 WebElement settings =  driver.findElement(By.xpath("//tr[contains(@id,'share_Object')]/td[2]/div/div/div/span"))
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(settings))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/input_Link versioning settings_pica_link_va_762f42'))
+WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
 
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/span_Dec_glyphicon glyphicon-time'))
 

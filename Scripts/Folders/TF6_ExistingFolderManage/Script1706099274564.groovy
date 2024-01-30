@@ -61,6 +61,7 @@ folderNameElement.click()
 
 WebUI.click(findTestObject('ManagePopup/button_Manage'))
 
+WebUI.closeBrowser()
 
 def String getRandomFolderName() {
 	String folderName = 'Folder'+getTimestamp();

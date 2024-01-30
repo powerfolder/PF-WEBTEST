@@ -27,6 +27,7 @@ WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getFolderNameLabelText')
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.setText(findTestObject('Folders/inputFolderName'), getRandomFolderName())
 WebUI.click(findTestObject('Folders/buttonOK'))
+WebUI.delay(3)
 
 WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getFolderCreationNotification')), 'Folder created')
 

@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//li[@id='organization_manage_tab'])[1]/a</value>
+         <value>//li[@id='organization_manage_tab']/a/lang[text()='Manage']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

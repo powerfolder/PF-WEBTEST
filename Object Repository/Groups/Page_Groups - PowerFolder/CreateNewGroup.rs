@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CreateNewGroup</name>
+   <tag></tag>
+   <elementGuidId>08425dca-15d4-4126-bcf8-09e8ead0d0ad</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_group_folders']/div/div/ul/li/a/div/div[2]/h5</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h5.media-heading.text-primary</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h5</value>
+      <webElementGuid>95b218da-919d-4738-b3c9-e0546aba4ed9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>media-heading text-primary</value>
+      <webElementGuid>6cc3aee8-8323-4d12-a533-b63d11ba9562</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Create new</value>
+      <webElementGuid>a3573d5c-7dae-49c8-8ad7-e7cffc935d70</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_group_folders&quot;)/div[@class=&quot;pica-inputlist-taginput pica-taginput form-group input-group&quot;]/div[@class=&quot;pica-taginput-div form-control open&quot;]/ul[@class=&quot;pica-taginput-dropdown dropdown-menu&quot;]/li[@class=&quot;pica-taginput-dropdown-fixed&quot;]/a[1]/div[@class=&quot;media&quot;]/div[@class=&quot;media-body&quot;]/h5[@class=&quot;media-heading text-primary&quot;]</value>
+      <webElementGuid>30047cc8-258c-4618-9c0a-4ecae423431e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_group_folders']/div/div/ul/li/a/div/div[2]/h5</value>
+      <webElementGuid>19449800-0a37-44fe-aae1-d12e8bf52442</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a/div/div[2]/h5</value>
+      <webElementGuid>25a09ace-8c8f-439e-92a6-2fcccfafa1ed</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h5[(text() = 'Create new' or . = 'Create new')]</value>
+      <webElementGuid>e7e68465-4d99-4406-a1f9-1d6d799036e3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

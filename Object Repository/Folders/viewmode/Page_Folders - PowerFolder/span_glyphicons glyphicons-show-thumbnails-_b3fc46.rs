@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_glyphicons glyphicons-show-thumbnails-_b3fc46</name>
+   <tag></tag>
+   <elementGuidId>8b4c2d71-4446-454c-9df5-c273b79dd6fc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='files_files_table']/thead[3]/tr/th[6]/div/a/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.glyphicons.glyphicons-show-thumbnails-with-lines.pica-vmtable-toggle-list.pica-glyph</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>ecbe7267-a0db-4691-831b-41919058dfcd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>glyphicons glyphicons-show-thumbnails-with-lines pica-vmtable-toggle-list pica-glyph</value>
+      <webElementGuid>76aa5df4-e87f-4dba-b7d0-724b358284f7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;files_files_table&quot;)/thead[3]/tr[1]/th[@class=&quot;pica-icon-column&quot;]/div[@class=&quot;pica-vmtable-toggle pica-inline pica-table-selection-hide dropdown&quot;]/a[@class=&quot;dropdown-toggle&quot;]/span[@class=&quot;glyphicons glyphicons-show-thumbnails-with-lines pica-vmtable-toggle-list pica-glyph&quot;]</value>
+      <webElementGuid>b5740e0f-a5f5-4469-9f12-1bb4466bd91f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='files_files_table']/thead[3]/tr/th[6]/div/a/span</value>
+      <webElementGuid>a847d1a5-7861-459b-abb8-ca3ebcfb366d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//th[6]/div/a/span</value>
+      <webElementGuid>322b29f1-ecbe-42e4-87e8-107ad897466f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

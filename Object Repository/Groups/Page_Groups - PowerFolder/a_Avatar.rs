@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Avatar</name>
+   <tag></tag>
+   <elementGuidId>a15ed9e8-2205-4a05-82e4-8c2301f78c3c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//ul[@id='pica_group_nav']/li[2]/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>li.pica-hide-on-create.hidden-xs > a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>20170c37-472c-4dd4-b5e0-cec12193b92b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Avatar</value>
+      <webElementGuid>b2f79ae2-cd7b-4bc2-8057-14e10aa7f355</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_group_nav&quot;)/li[@class=&quot;pica-hide-on-create hidden-xs&quot;]/a[1]</value>
+      <webElementGuid>f52054b3-c19f-4265-bc0e-436578ca27e9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//ul[@id='pica_group_nav']/li[2]/a</value>
+      <webElementGuid>4ee07def-42e6-4308-9ef6-565cc9631e8e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[2]/a</value>
+      <webElementGuid>cb82a2fa-0516-4a6d-9289-2ece698d042b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[(text() = 'Avatar' or . = 'Avatar')]</value>
+      <webElementGuid>24ebd8ea-a0f7-4eca-b6c3-5d1807964731</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
