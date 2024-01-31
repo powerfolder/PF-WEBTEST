@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>share folder with a list of users 
-ex a@a.co,b@b.com,c@c.com</description>
-   <name>Share folder with Multiple emails tabulation separator</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>7b2a6453-ea09-4945-837d-a5178213aca1</testCaseGuid>
-</TestCaseEntity>

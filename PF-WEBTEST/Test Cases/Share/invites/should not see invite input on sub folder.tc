@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>should not see invite input on sub folder</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>7ef25263-f0b7-4abd-adc4-10243fb1135f</testCaseGuid>
-</TestCaseEntity>
