@@ -26,8 +26,8 @@ import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
 import java.util.concurrent.TimeUnit as TimeUnit
 
+String folderName = getRandomFolderName()
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
-String folderName = CustomKeywords.'utility.helper.getRandomFolderName'()
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getCreateText')), 'Create', FailureHandling.CONTINUE_ON_FAILURE)
@@ -79,3 +79,14 @@ WebUI.verifyElementVisible(findTestObject('getLInk/qrCodeImage'))
 WebUI.click(findTestObject('closeModel'))
 WebUI.closeBrowser()
 
+
+def String getRandomFolderName() {
+	String folderName = 'FD'+getTimestamp();
+	return folderName;
+}
+
+def String getTimestamp() {
+	Date todaysDate = new Date();
+	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	return formattedDate;
+}

@@ -44,7 +44,7 @@ import java.awt.datatransfer.DataFlavor
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
-String folderName = CustomKeywords.'utility.helper.getRandomFolderName'()
+String folderName =getRandomGroupName()
 
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
@@ -96,3 +96,16 @@ assert isElementPresent
 assert isVisible
 
 WebUI.closeBrowser()
+
+
+def String getRandomGroupName() {
+	String folderName = 'Group_'+getTimestamp();
+	return folderName;
+	
+}
+
+def String getTimestamp() {
+	Date todaysDate = new Date();
+	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	return formattedDate;
+}

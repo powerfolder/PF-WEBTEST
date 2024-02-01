@@ -22,9 +22,7 @@ import org.openqa.selenium.WebElement as WebElement
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
-
-String folderName = CustomKeywords.'utility.helper.getRandomFolderName'()
-
+String folderName =getRandomFolderName()
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
@@ -32,26 +30,48 @@ WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandli
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-WebElement btn = CustomKeywords.'share.ShareHelper.findShareButton'(folderName)
+WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 String  mails = "${-> folderName+'a'} <${-> folderName+'a'}@outlook.com>;${-> folderName+'b'} <${-> folderName+'b'}@outlook.com>;${-> folderName+'c'} <${-> folderName+'c'}@outlook.com>"
 
-int membersCount = CustomKeywords.'share.ShareHelper.getMembersCount'()
+int membersCount = getMembersCount()
 
 WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/inputEmail_Share'), mails)
 
 WebUI.click(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/buttonAddEmail'))
 
-
-assert membersCount+3 == CustomKeywords.'share.ShareHelper.getMembersCount'()
+assert membersCount+3 == getMembersCount()
 
 
 
 WebUI.closeBrowser()
 
 
+def String getRandomFolderName() {
+	String folderName = 'FD'+getTimestamp();
+	return folderName;
+}
+
+def String getTimestamp() {
+	Date todaysDate = new Date();
+	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	return formattedDate;
+}
 
 
+def int getMembersCount(){
+	WebDriver driver = DriverFactory.getWebDriver()
+	WebElement tbody = driver.findElement(By.xpath("//table[@id='share_table']/tbody"))
+	assert tbody
+	List<WebElement> rows_table = tbody.findElements(By.className("pica-highlight"))
+	return rows_table.size()
+}
+
+
+def WebElement findShareButton(String fileName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
+}
 

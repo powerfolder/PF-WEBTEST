@@ -19,7 +19,6 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 WebUI.click(findTestObject('LeftNavigationIcons/Help'))
-
 WebUI.switchToWindowIndex(1)
 Thread.sleep(5000)
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Spaces - Confluence')

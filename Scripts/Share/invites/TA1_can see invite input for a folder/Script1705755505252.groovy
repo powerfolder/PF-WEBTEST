@@ -22,9 +22,7 @@ import org.openqa.selenium.WebElement as WebElement
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
-
-
-String folderName = CustomKeywords.'utility.helper.getRandomFolderName'()
+String folderName =  getRandomGroupName()
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
@@ -40,7 +38,6 @@ WebElement btn = CustomKeywords.'share.ShareHelper.findShareButton'(folderName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 
-
 boolean isElementPresent = WebUI.verifyElementPresent(findTestObject('getLInk/buttonCreateLink'), 10)
 
 assert isElementPresent
@@ -50,3 +47,17 @@ boolean isVisible = WebUI.verifyElementVisible(findTestObject('getLInk/buttonCre
 assert isVisible
 
 WebUI.closeBrowser()
+
+
+
+def String getRandomGroupName() {
+	String folderName = 'Group_'+getTimestamp();
+	return folderName;
+	
+}
+
+def String getTimestamp() {
+	Date todaysDate = new Date();
+	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	return formattedDate;
+}

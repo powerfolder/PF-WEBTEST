@@ -25,8 +25,7 @@ import java.awt.datatransfer.DataFlavor
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
-String folderName = org.apache.commons.lang.RandomStringUtils.random(9, true, true)
-
+String folderName =  getRandomFolderName()
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
@@ -60,3 +59,14 @@ assert isVisible
 
 
 WebUI.closeBrowser()
+
+def String getRandomFolderName() {
+		String folderName = 'FD'+getTimestamp();
+		return folderName;
+	}
+	@Keyword
+	def String getTimestamp() {
+		Date todaysDate = new Date();
+		String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+		return formattedDate;
+	}

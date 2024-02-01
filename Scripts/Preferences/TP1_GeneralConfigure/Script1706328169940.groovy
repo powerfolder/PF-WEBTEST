@@ -19,17 +19,17 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://lab.powerfolder.net:8666/login?originalURI=admin/dashboard')
+WebUI.navigateToUrl(GlobalVariable.URL)
 
-WebUI.setText(findTestObject('Object Repository/Preferences/Page_Login - PowerFolder/input_Username'), 'admin')
+WebUI.setText(findTestObject('Preferences/Page_Login - PowerFolder/input_Username'), 'admin')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Preferences/Page_Login - PowerFolder/input_Password'), '8SQVv/p9jVScEs4/2CZsLw==')
+WebUI.setEncryptedText(findTestObject('Preferences/Page_Login - PowerFolder/input_Password'), '8SQVv/p9jVScEs4/2CZsLw==')
 
-WebUI.click(findTestObject('Object Repository/Preferences/Page_Login - PowerFolder/input_KeepLoggedIn'))
+WebUI.click(findTestObject('Preferences/Page_Login - PowerFolder/input_KeepLoggedIn'))
 
-WebUI.click(findTestObject('Object Repository/Preferences/Page_Login - PowerFolder/input_Login'))
+WebUI.click(findTestObject('Preferences/Page_Login - PowerFolder/input_Login'))
 
-WebUI.click(findTestObject('Object Repository/Preferences/Page_Dashboard - PowerFolder/lang_Preferences'))
+WebUI.click(findTestObject('Preferences/Page_Dashboard - PowerFolder/lang_Preferences'))
 
-WebUI.click(findTestObject('Object Repository/Preferences/VerifyCustomizations/a_Configure'))
+WebUI.click(findTestObject('Preferences/VerifyCustomizations/a_Configure'))
 

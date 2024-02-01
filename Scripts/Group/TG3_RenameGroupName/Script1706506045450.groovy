@@ -15,6 +15,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.By
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.JavascriptExecutor;
+
 
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
@@ -28,8 +39,6 @@ WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Password)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
-
-
 
 WebUI.callTestCase(findTestCase('Folders/TF1_VerifyNewFolderCreation'), [:], FailureHandling.OPTIONAL)
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
@@ -63,32 +72,17 @@ WebElement grpName = driver.findElement(By.xpath("//a[@class='pica-name'  and te
 WebUI.verifyEqual(grpName.isDisplayed(), true)
 
 WebUI.closeBrowser()
-	def String getRandomGroupName() {
-		String folderName = 'Group_'+getTimestamp();
-		return folderName;
-		
-	}
+
+
+
+def String getRandomGroupName() {
+	String folderName = 'Group_'+getTimestamp();
+	return folderName;
 	
-	def String getTimestamp() {
-		Date todaysDate = new Date();
-		String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
-		return formattedDate;
-	}
-//WebUI.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
+}
 
-WebUI.Click(findTestObject('Groups/SelectGroup'))
-
-WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Group_27_Jan_2024_03_45_55'))
-
-WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/i_glyphicons glyphicons-group'))
-
-WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/inputpica_group_name'), 'Automation TestEngineer')
-
-WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/textareapica_group_notes'), 'I have changing name for testing Purpose')
-
-WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
-
-WebUI.openBrowser('')
-
-WebUI.closeBrowser()
-
+def String getTimestamp() {
+	Date todaysDate = new Date();
+	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	return formattedDate;
+}

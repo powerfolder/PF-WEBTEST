@@ -52,7 +52,8 @@ import java.nio.file.Path;
 import java.nio.file.Files;
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
-String folderName = CustomKeywords.'utility.helper.getRandomFolderName'()
+String folderName = getRandomFolderName()
+
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 
@@ -80,3 +81,16 @@ WebUI.verifyEqual(deleteAlertText, expectedText)
 WebUI.click(findTestObject('Folders/yesButton_Delete'))
 
 WebUI.closeBrowser()
+
+
+def String getRandomFolderName() {
+	String folderName = 'Folder'+getTimestamp();
+	return folderName;
+	
+}
+
+def String getTimestamp() {
+	Date todaysDate = new Date();
+	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	return formattedDate;
+}

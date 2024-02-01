@@ -15,6 +15,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.text.SimpleDateFormat
+import java.util.Calendar
+import java.util.Date
 import org.openqa.selenium.By as By
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
@@ -41,8 +44,17 @@ WebUI.delay(3)
 WebUI.setText(findTestObject('Organization/InputName'), "AutomationTest")
 WebUI.setText(findTestObject('Organization/InputMaxNumber'), "10")
 WebUI.setText(findTestObject('Organization/InputQuota'), "2")
-WebUI.setText(findTestObject('Organization/InputValidFrom'), "01/17/2024 12:01 PM")
-WebUI.setText(findTestObject('Organization/InputValidtill'), "01/26/2024 11:02 AM")
+def currentDate = new Date()
+// Format the date and time as per your requirement
+def dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm a")
+def formattedDate = dateFormat.format(currentDate)
+WebUI.click(findTestObject('Organization/InputValidFrom'))
+def calendar = Calendar.getInstance()
+calendar.setTime(currentDate)
+calendar.add(Calendar.DAY_OF_MONTH, 3)
+def futureDate = calendar.getTime()
+// Set the date and time with the timestamp plus 3 days
+WebUI.setText(findTestObject('Organization/InputValidtill'), dateFormat.format(futureDate))
 WebUI.setText(findTestObject('Organization/EnterNotes'), "AutomationNotes")
 WebUI.delay(3)
 WebUI.click(findTestObject('Organization/SaveButton'))

@@ -28,7 +28,7 @@ import java.util.concurrent.TimeUnit as TimeUnit
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
-String folderName = CustomKeywords.'utility.helper.getRandomFolderName'()
+String folderName =  getRandomGroupName()
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
