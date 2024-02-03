@@ -1,35 +1,10 @@
 {
-  "keywordFileContentHash": "D78AE00C8172180999C7A8FEC38D9B5D",
+  "keywordFileContentHash": "F52243C0C8C98A53022D330F688AEABF",
   "keywordClasses": [
     {
       "name": "share.ShareHelper",
-      "keywordMethods": [
-        {
-          "name": "getMembersCount",
-          "parameters": [],
-          "javadoc": ""
-        },
-        {
-          "name": "findShareButton",
-          "parameters": [
-            {
-              "name": "fileName",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
-          "javadoc": ""
-        }
-      ]
+      "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>getFolderCreationNotification</name>
+   <name>BlockNowButton</name>
    <tag></tag>
-   <elementGuidId>d152205f-a472-4528-99c9-ead5a39f7861</elementGuidId>
+   <elementGuidId>991d3aef-5f07-485e-87fe-0455d926764d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//button[@id='pica_accounts_block'])[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@class='pica-notification']//div[@class='pica-notification-box alert alert-info']/span)[2]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -27,7 +27,7 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 import java.util.concurrent.TimeUnit as TimeUnit
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
-String folderName = CustomKeywords.'utility.helper.getRandomFolderName'()
+String folderName = getRandomFolderName()
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getCreateText')), 'Create', FailureHandling.CONTINUE_ON_FAILURE)
@@ -35,18 +35,11 @@ WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getFolderNameLabelText')
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.setText(findTestObject('Folders/inputFolderName'),folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
-
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
-
-WebElement btn = CustomKeywords.'share.ShareHelper.findShareButton'(folderName)
-
+WebElement btn =findShareButton(folderName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
 WebUI.click(findTestObject('Folders/createLink'))
-
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Save (1)'))
-
-
 WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
 
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Can read'))
@@ -78,4 +71,23 @@ WebUI.verifyElementVisible(findTestObject('getLInk/qrCodeImage'))
 
 WebUI.click(findTestObject('closeModel'))
 WebUI.closeBrowser()
+
+
+def String getRandomFolderName() {
+	String folderName = 'Folder'+getTimestamp();
+	return folderName;
+	
+}
+def WebElement findShareButton(String fileName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
+}
+
+
+
+def String getTimestamp() {
+	Date todaysDate = new Date();
+	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	return formattedDate;
+}
 

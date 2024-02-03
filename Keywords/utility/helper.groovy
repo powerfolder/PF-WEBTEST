@@ -42,7 +42,7 @@ class helper {
 	/**
 	 * Refresh browser
 	 */
-	@Keyword
+
 	def refreshBrowser() {
 		KeywordUtil.logInfo("Refreshing")
 		WebDriver webDriver = DriverFactory.getWebDriver()
@@ -54,7 +54,7 @@ class helper {
 	 * Click element
 	 * @param to Katalon test object
 	 */
-	@Keyword
+
 	def clickElement(TestObject to) {
 		try {
 			WebElement element = WebUiBuiltInKeywords.findWebElement(to);
@@ -74,20 +74,20 @@ class helper {
 	 * @param outerTagName outer tag name of TR tag, usually is TBODY
 	 * @return All rows inside HTML table
 	 */
-	@Keyword
+
 	def List<WebElement> getHtmlTableRows(TestObject table, String outerTagName) {
 		WebElement mailList = WebUiBuiltInKeywords.findWebElement(table)
 		List<WebElement> selectedRows = mailList.findElements(By.xpath("./" + outerTagName + "/tr"))
 		return selectedRows
 	}
 
-	@Keyword
+
 	def String getRandomGroupName() {
 		String folderName = 'GP_'+getTimestamp();
 		return folderName;
 	}
 
-	@Keyword
+
 	def String getRandomFolderName() {
 		String folderName = 'FD'+getTimestamp();
 		return folderName;

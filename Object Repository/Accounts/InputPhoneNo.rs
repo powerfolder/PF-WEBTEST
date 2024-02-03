@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>getFolderCreationNotification</name>
+   <name>InputPhoneNo</name>
    <tag></tag>
-   <elementGuidId>d152205f-a472-4528-99c9-ead5a39f7861</elementGuidId>
+   <elementGuidId>aaf38920-fed8-4a3a-85f2-6af1157bf02f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//input[@id='pica_account_phone'])[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@class='pica-notification']//div[@class='pica-notification-box alert alert-info']/span)[2]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

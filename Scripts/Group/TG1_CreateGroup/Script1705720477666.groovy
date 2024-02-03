@@ -48,25 +48,22 @@ String xpath ="(//ul[@class='pica-taginput-dropdown dropdown-menu']//a)["+i+"]"
 println(xpath)
 Thread.sleep(3000)
 WebElement folder =  driver.findElement(By.xpath(xpath))
-
 JavascriptExecutor executor = (JavascriptExecutor)driver;
 executor.executeScript("arguments[0].click();", folder);
 	//folder.click()
 }
 WebUI.click(findTestObject('Groups/buttonSave'))
-
 WebElement grpName = driver.findElement(By.xpath("//a[@class='pica-name'  and text () ='$groupName']"))
 WebUI.verifyEqual(grpName.isDisplayed(), true)
-
 WebUI.closeBrowser()
-	def String getRandomGroupName() { 
+
+def String getRandomGroupName() { 
 		String folderName = 'Group_'+getTimestamp();
-		return folderName;
-		
-	}
+		return folderName;	
+}
 	
-	def String getTimestamp() {
+def String getTimestamp() {
 		Date todaysDate = new Date();
-		String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+		String formattedDate = todaysDate.format("ddMMMyyyyhhmmss");
 		return formattedDate;
 	}

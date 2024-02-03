@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>getFolderCreationNotification</name>
+   <name>VerifyCreateAccountPage</name>
    <tag></tag>
-   <elementGuidId>d152205f-a472-4528-99c9-ead5a39f7861</elementGuidId>
+   <elementGuidId>97ffce08-2555-4769-b91d-8cbce1b2c02a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//h5[normalize-space()='Create a new Account'])[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@class='pica-notification']//div[@class='pica-notification-box alert alert-info']/span)[2]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

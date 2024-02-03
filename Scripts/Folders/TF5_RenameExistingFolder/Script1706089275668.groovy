@@ -66,24 +66,24 @@ WebElement folderNameElement =  driver.findElement(By.xpath("//td/a[text()='$fol
 folderNameElement.click()
 
 WebUI.click(findTestObject('Folders/rename'))
-
-WebUI.setText(findTestObject('Folders/inputFolderName'), folderName+'_RENAME')
+String newFolderName =folderName+'_RENAME'
+WebUI.setText(findTestObject('Folders/inputFolderName'),newFolderName )
 WebUI.click(findTestObject('Folders/buttonOK'))
-
-String notification = WebUI.getText(findTestObject('Folders/getFolderCreationNotification'))
-
-WebUI.verifyEqual(notification, "Renamed "+folderName+" to "+folderName+"_RENAME")
-
+WebUI.setText(findTestObject('Folders/inputSearch'),newFolderName )
+WebElement grpName = driver.findElement(By.xpath("//a[@class='pica-name'  and text () ='$newFolderName']"))
+WebUI.verifyEqual(grpName.isDisplayed(), true)
+//String notification = grpName.getText()
+//WebUI.verifyEqual(notification, "Renamed "+folderName+" to "+folderName+"_RENAME")
 WebUI.closeBrowser()
 
 def String getRandomFolderName() {
-	String folderName = 'Folder'+getTimestamp();
+	String folderName = 'FD'+getTimestamp();
 	return folderName;
 	
 }
 
 def String getTimestamp() {
 	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	String formattedDate = todaysDate.format("ddMMMyyyyhhmm_ss");
 	return formattedDate;
 }

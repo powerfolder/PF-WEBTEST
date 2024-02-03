@@ -67,7 +67,9 @@ WebUI.setText(findTestObject('Folders/inputSearch'), folderName)
 //WebUI.mouseOverOffset(findTestObject('Folders/firstFolder'), 20, 30)
 
 WebDriver driver = DriverFactory.getWebDriver()
+println("//td/a[text()='$folderName']/ancestor::tr/td[1]/span")
 WebElement folderNameElement =  driver.findElement(By.xpath("//td/a[text()='$folderName']/ancestor::tr/td[1]/span"))
+WebUI.delay(5)
 folderNameElement.click()
 
 

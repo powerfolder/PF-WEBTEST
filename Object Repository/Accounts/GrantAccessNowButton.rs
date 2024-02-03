@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>getFolderCreationNotification</name>
+   <name>GrantAccessNowButton</name>
    <tag></tag>
-   <elementGuidId>d152205f-a472-4528-99c9-ead5a39f7861</elementGuidId>
+   <elementGuidId>91ff6d3d-9fe6-4897-b7dc-2dca14379ba7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//button[@id='pica_accounts_unblock'])[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@class='pica-notification']//div[@class='pica-notification-box alert alert-info']/span)[2]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -28,7 +28,7 @@ import java.util.concurrent.TimeUnit as TimeUnit
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
-String folderName = CustomKeywords.'utility.helper.getRandomFolderName'()
+String folderName = getRandomFolderName()
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
@@ -104,8 +104,8 @@ assert  isNotBlank(WebUI.getText(findTestObject('Folders/expireTabTitle')))
 WebUI.closeBrowser()
 
 
-def String getRandomGroupName() {
-	String folderName = 'Group_'+getTimestamp();
+def String getRandomFolderName() {
+	String folderName = 'Folder'+getTimestamp();
 	return folderName;
 	
 }
@@ -114,4 +114,9 @@ def String getTimestamp() {
 	Date todaysDate = new Date();
 	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
 	return formattedDate;
+}
+def String getRandomGroupName() {
+	String folderName = 'Group_'+getTimestamp();
+	return folderName;
+	
 }

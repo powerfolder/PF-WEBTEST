@@ -16,6 +16,37 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.text.SimpleDateFormat
+import java.util.Calendar
+import java.util.Date
+
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 WebUI.click(findTestObject('LeftNavigationIcons/account'))
+WebUI.click(findTestObject('Accounts/CreateButton'))
+WebUI.click(findTestObject('Accounts/ClickCreateAccount'))
+WebUI.setText(findTestObject('Accounts/InputUserOrEmail'), getRandomUserName())
+WebUI.setText(findTestObject('Accounts/InputPassword'),"Alexa@131190")
+WebUI.setText(findTestObject('Accounts/InputFirstName'),"FirstName")
+WebUI.setText(findTestObject('Accounts/InputLastName'),"LastName")
+WebUI.setText(findTestObject('Accounts/InputPhoneNo'),"1258585858")
+WebUI.setText(findTestObject('Accounts/InputQuota'),"5")
+def currentDate = new Date()
+def dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm a")
+def formattedDate = dateFormat.format(currentDate)
+WebUI.setText(findTestObject('Accounts/InputTIllDate'), formattedDate)
+WebUI.sendKeys(findTestObject('Accounts/InputTIllDate'),Keys.chord(Keys.ENTER))
+WebUI.click(findTestObject('Accounts/SaveButton'))
+
+
+def String getRandomUserName() {
+	String folderName = 'username'+getTimestamp();
+	return folderName;
+	
+}
+
+def String getTimestamp() {
+	Date todaysDate = new Date();
+	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	return formattedDate;
+}

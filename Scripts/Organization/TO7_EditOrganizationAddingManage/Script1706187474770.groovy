@@ -36,12 +36,11 @@ WebUI.delay(3)
 WebUI.setText(findTestObject('Organization/InputName'), folderName)
 WebUI.setText(findTestObject('Organization/InputMaxNumber'), "10")
 WebUI.setText(findTestObject('Organization/InputQuota'), "2")
+
 def currentDate = new Date()
-// Format the date and time as per your requirement
 def dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm a")
 def formattedDate = dateFormat.format(currentDate)
-WebUI.click(findTestObject('Organization/InputValidFrom'))
-// Add 3 days to the current date
+WebUI.setText(findTestObject('Organization/InputValidFrom'), formattedDate)
 def calendar = Calendar.getInstance()
 calendar.setTime(currentDate)
 calendar.add(Calendar.DAY_OF_MONTH, 3)

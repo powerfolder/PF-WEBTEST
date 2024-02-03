@@ -43,7 +43,7 @@ import static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElem
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
-String folderName = CustomKeywords.'utility.helper.getRandomFolderName'()
+String folderName = getRandomFolderName()
 
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
@@ -72,7 +72,7 @@ WebUI.click(findTestObject('Folders/buttonOK'))
 //WebUI.switchToWindowIndex(0)
 WebUI.refresh()
 
-WebElement btn = CustomKeywords.'share.ShareHelper.findShareButton'(folderName)
+WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
@@ -87,4 +87,20 @@ assert isVisible
 
 WebUI.closeBrowser()
 
+
+def String getRandomFolderName() {
+	String folderName = 'Folder'+getTimestamp();
+	return folderName;
+	
+}
+def WebElement findShareButton(String fileName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
+}
+
+def String getTimestamp() {
+	Date todaysDate = new Date();
+	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	return formattedDate;
+}
 

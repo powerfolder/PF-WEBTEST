@@ -22,7 +22,7 @@ import org.openqa.selenium.WebElement as WebElement
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
-String folderName = CustomKeywords.'utility.helper.getRandomFolderName'()
+String folderName = getRandomFolderName()
 
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
@@ -32,11 +32,12 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
 
-WebElement btn = CustomKeywords.'share.ShareHelper.findShareButton'(folderName)
+WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-String mail = "${-> folderName}@mail.com".toLowerCase();
+String mail = "${-> folderName}@mail.com"
+mail = mail.toLowerCase()
 
 WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/inputEmail_Share'), 
     mail)
@@ -51,4 +52,27 @@ WebUI.verifyElementText(findTestObject('Object Repository/Share/Page_Folders - P
 WebUI.closeBrowser()
 
 
+def int getMembersCount(){
+	WebDriver driver = DriverFactory.getWebDriver()
+	WebElement tbody = driver.findElement(By.xpath("//table[@id='share_table']/tbody"))
+	assert tbody
+	List<WebElement> rows_table = tbody.findElements(By.className("pica-highlight"))
+	return rows_table.size()
+}
 
+
+def String getRandomFolderName() {
+	String folderName = 'Folder'+getTimestamp();
+	return folderName;
+	
+}
+def WebElement findShareButton(String fileName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
+}
+
+def String getTimestamp() {
+	Date todaysDate = new Date();
+	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	return formattedDate;
+}

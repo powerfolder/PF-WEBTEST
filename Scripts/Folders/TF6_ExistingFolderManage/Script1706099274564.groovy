@@ -52,10 +52,12 @@ WebUI.click(findTestObject('Folders/createFolder'))
 String folderName = getRandomFolderName()
 WebUI.setText(findTestObject('Folders/inputFolderName'),folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
-
-WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getFolderCreationNotification')), 'Folder created')
-Thread.sleep(7000)
+WebUI.setText(findTestObject('Folders/inputSearch'), folderName)
 WebDriver driver = DriverFactory.getWebDriver()
+WebElement folder =  driver.findElement(By.xpath("//td/a[contains(text(),'$folderName')]"))
+boolean isfolderCreated = folder.isDisplayed()
+WebUI.verifyEqual(isfolderCreated, true)
+//WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getFolderCreationNotification')), 'Folder created')
 WebElement folderNameElement =  driver.findElement(By.xpath("//td/a[text()='$folderName']/ancestor::tr/td[1]/span"))
 folderNameElement.click()
 
@@ -64,13 +66,13 @@ WebUI.click(findTestObject('ManagePopup/button_Manage'))
 WebUI.closeBrowser()
 
 def String getRandomFolderName() {
-	String folderName = 'Folder'+getTimestamp();
+	String folderName = 'FD'+getTimestamp();
 	return folderName;
 	
 }
 
 def String getTimestamp() {
 	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	String formattedDate = todaysDate.format("ddMMMyyyyhhmmss");
 	return formattedDate;
 }
