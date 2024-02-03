@@ -113,10 +113,13 @@ def String getRandomFolderName() {
 	return folderName;
 	
 }
+<<<<<<< HEAD
 def WebElement findShareButton(String fileName) {
 	WebDriver driver = DriverFactory.getWebDriver()
 	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
 }
+=======
+>>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
 
 def String getTimestamp() {
 	Date todaysDate = new Date();

@@ -12,13 +12,6 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>ea5f2274-03a5-4494-8334-0a86fa3508de</testSuiteGuid>
    <testCaseLink>
-      <guid>f3b00fda-69b6-43c6-8121-9788ddba173a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA1_VerifyAccountCreation</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>78219c13-615f-4784-9e69-37114a058645</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

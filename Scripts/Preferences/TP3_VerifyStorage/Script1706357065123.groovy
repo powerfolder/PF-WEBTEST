@@ -17,16 +17,27 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
-WebUI.click(findTestObject('LeftNavigationIcons/Help'))
-WebUI.switchToWindowIndex(1)
-Thread.sleep(5000)
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Spaces - Confluence')
+WebUI.openBrowser('')
 
-WebUI.click(findTestObject('Help/powerFolder'))
-WebUI.delay(10)
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'PowerFolder - Confluence')
+WebUI.navigateToUrl(GlobalVariable.URL)
 
-WebUI.verifyEqual(WebUI.getText(findTestObject('Help/getTitleText')), 'PowerFolder Documentation and Support')
+WebUI.setText(findTestObject('Object Repository/Preferences/Page_Login - PowerFolder/input_Username'), 'admin')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Preferences/Page_Login - PowerFolder/input_Password'), '8SQVv/p9jVScEs4/2CZsLw==')
+
+WebUI.click(findTestObject('Object Repository/Preferences/Page_Login - PowerFolder/input_neues Konto erstellen_Login'))
+
+WebUI.click(findTestObject('Object Repository/Preferences/Page_Dashboard - PowerFolder/td_Preferences'))
+
+WebUI.click(findTestObject('Object Repository/Preferences/Page_Dashboard - PowerFolder/lang_Preferences'))
+
+WebUI.click(findTestObject('Object Repository/Preferences/VerifyCustomizations/VerifyConfigureButton'))
+
+WebUI.click(findTestObject('Object Repository/Preferences/VerifyCustomizations/VerifyStorage'))
+
+WebUI.click(findTestObject('Object Repository/Preferences/VerifyCustomizations/VerifyStorageButton'))
+
+WebUI.click(findTestObject('Object Repository/Preferences/VerifyCustomizations/a_Configure'))
 
 WebUI.closeBrowser()
+

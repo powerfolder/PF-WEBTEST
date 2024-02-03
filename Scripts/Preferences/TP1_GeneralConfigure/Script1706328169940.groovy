@@ -17,16 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
-WebUI.click(findTestObject('LeftNavigationIcons/Help'))
-WebUI.switchToWindowIndex(1)
-Thread.sleep(5000)
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Spaces - Confluence')
+WebUI.openBrowser('')
 
-WebUI.click(findTestObject('Help/powerFolder'))
-WebUI.delay(10)
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'PowerFolder - Confluence')
+WebUI.navigateToUrl(GlobalVariable.URL)
 
-WebUI.verifyEqual(WebUI.getText(findTestObject('Help/getTitleText')), 'PowerFolder Documentation and Support')
+WebUI.setText(findTestObject('Preferences/Page_Login - PowerFolder/input_Username'), 'admin')
 
-WebUI.closeBrowser()
+WebUI.setEncryptedText(findTestObject('Preferences/Page_Login - PowerFolder/input_Password'), '8SQVv/p9jVScEs4/2CZsLw==')
+
+WebUI.click(findTestObject('Preferences/Page_Login - PowerFolder/input_KeepLoggedIn'))
+
+WebUI.click(findTestObject('Preferences/Page_Login - PowerFolder/input_Login'))
+
+WebUI.click(findTestObject('Preferences/Page_Dashboard - PowerFolder/lang_Preferences'))
+
+WebUI.click(findTestObject('Preferences/VerifyCustomizations/a_Configure'))
+

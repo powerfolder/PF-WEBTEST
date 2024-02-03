@@ -87,4 +87,41 @@ def String getTimestamp() {
 
 
 
+def String getRandomFolderName() {
+	String folderName = 'FD'+getTimestamp();
+	return folderName;
+}
+
+def String getTimestamp() {
+	Date todaysDate = new Date();
+	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	return formattedDate;
+}
+
+
+def WebElement findShareButton(String fileName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
+}
+
+def int getMembersCount(){
+	WebDriver driver = DriverFactory.getWebDriver()
+	WebElement tbody = driver.findElement(By.xpath("//table[@id='share_table']/tbody"))
+	assert tbody
+	List<WebElement> rows_table = tbody.findElements(By.className("pica-highlight"))
+	return rows_table.size()
+}
+
+
+def String getRandomFolderName() {
+	String folderName = 'FD'+getTimestamp();
+	return folderName;
+}
+
+def String getTimestamp() {
+	Date todaysDate = new Date();
+	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	return formattedDate;
+}
+
 

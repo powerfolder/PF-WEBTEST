@@ -28,7 +28,11 @@ import java.util.concurrent.TimeUnit as TimeUnit
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
+<<<<<<< HEAD
 String folderName = getRandomFolderName()
+=======
+String folderName =  getRandomGroupName()
+>>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))

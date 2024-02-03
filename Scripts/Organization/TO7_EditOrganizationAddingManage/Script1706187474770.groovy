@@ -26,7 +26,7 @@ import java.util.Date
 import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
-String folderName = CustomKeywords.'utility.helper.getRandomFolderName'()
+String folderName =getRandomFolderName()
 
 WebUI.click(findTestObject('Organization/SelectOrganization'))
 WebUI.click(findTestObject('Organization/DropDownToggle'))
@@ -90,4 +90,17 @@ c.add(Calendar.DATE, n); // Adding 5 days
 String output = sdf.format(c.getTime());
 System.out.println(output);
 return output
+}
+
+
+def String getRandomFolderName() {
+	String folderName = 'Folder'+getTimestamp();
+	return folderName;
+	
+}
+
+def String getTimestamp() {
+	Date todaysDate = new Date();
+	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	return formattedDate;
 }

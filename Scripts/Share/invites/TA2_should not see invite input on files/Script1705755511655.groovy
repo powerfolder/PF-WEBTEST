@@ -43,7 +43,11 @@ import static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElem
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
+<<<<<<< HEAD
 String folderName = getRandomFolderName()
+=======
+String folderName =getRandomGroupName()
+>>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
 
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
@@ -88,6 +92,7 @@ assert isVisible
 WebUI.closeBrowser()
 
 
+<<<<<<< HEAD
 def String getRandomFolderName() {
 	String folderName = 'Folder'+getTimestamp();
 	return folderName;
@@ -102,5 +107,24 @@ def String getTimestamp() {
 	Date todaysDate = new Date();
 	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
 	return formattedDate;
+=======
+
+def String getRandomGroupName() {
+	String folderName = 'Group_'+getTimestamp();
+	return folderName;
+	
+}
+
+def String getTimestamp() {
+	Date todaysDate = new Date();
+	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	return formattedDate;
+}
+
+
+def WebElement findShareButton(String fileName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
+>>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
 }
 

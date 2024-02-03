@@ -21,21 +21,67 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
+<<<<<<< HEAD
 String folderName = getRandomFolderName()
+=======
+
+
+String folderName = getRandomFolderName()
+
+>>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
+<<<<<<< HEAD
 WebElement btn =findShareButton(folderName)
+=======
+
+
+WebElement btn = findShareButton(folderName)
+
+>>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 String  mails = "${-> folderName}@a.com;${-> folderName}@b.com;${-> folderName}@c.com"
+<<<<<<< HEAD
 int membersCount = getMembersCount()
+=======
+
+int membersCount = getMembersCount()
+
+>>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
 WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/inputEmail_Share'), mails)
 WebUI.click(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/buttonAddEmail'))
+<<<<<<< HEAD
 assert membersCount+3 == getMembersCount()
+=======
+
+assert membersCount+3 == getMembersCount()
+
+>>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
 WebUI.closeBrowser()
 
+
+<<<<<<< HEAD
+def int getMembersCount(){
+	WebDriver driver = DriverFactory.getWebDriver()
+	WebElement tbody = driver.findElement(By.xpath("//table[@id='share_table']/tbody"))
+	assert tbody
+	List<WebElement> rows_table = tbody.findElements(By.className("pica-highlight"))
+	return rows_table.size()
+}
+=======
+def String getRandomFolderName() {
+	String folderName = 'FD'+getTimestamp();
+	return folderName;
+}
+
+def String getTimestamp() {
+	Date todaysDate = new Date();
+	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	return formattedDate;
+}
 
 def int getMembersCount(){
 	WebDriver driver = DriverFactory.getWebDriver()
@@ -44,6 +90,15 @@ def int getMembersCount(){
 	List<WebElement> rows_table = tbody.findElements(By.className("pica-highlight"))
 	return rows_table.size()
 }
+
+
+def WebElement findShareButton(String fileName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
+}
+
+
+>>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
 
 
 def String getRandomFolderName() {

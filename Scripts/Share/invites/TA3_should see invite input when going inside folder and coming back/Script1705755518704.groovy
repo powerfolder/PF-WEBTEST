@@ -44,7 +44,12 @@ import java.awt.datatransfer.DataFlavor
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
+<<<<<<< HEAD
 String folderName = getRandomFolderName()
+=======
+String folderName =getRandomGroupName()
+
+>>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
@@ -95,6 +100,7 @@ assert isVisible
 WebUI.closeBrowser()
 
 
+<<<<<<< HEAD
 def String getRandomFolderName() {
 	String folderName = 'Folder'+getTimestamp();
 	return folderName;
@@ -110,3 +116,16 @@ def String getTimestamp() {
 	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
 	return formattedDate;
 }
+=======
+def String getRandomGroupName() {
+	String folderName = 'Group_'+getTimestamp();
+	return folderName;
+	
+}
+
+def String getTimestamp() {
+	Date todaysDate = new Date();
+	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	return formattedDate;
+}
+>>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git

@@ -26,7 +26,11 @@ import java.awt.datatransfer.DataFlavor
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
 
+<<<<<<< HEAD
 String folderName = getRandomFolderName()
+=======
+String folderName =getRandomFolderName()
+>>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
@@ -82,6 +86,7 @@ def String getRandomFolderName() {
 	return folderName;
 	
 }
+<<<<<<< HEAD
 def WebElement findShareButton(String fileName) {
 	WebDriver driver = DriverFactory.getWebDriver()
 	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
@@ -96,3 +101,11 @@ def String getTimestamp() {
 
 
 
+=======
+
+def String getTimestamp() {
+	Date todaysDate = new Date();
+	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	return formattedDate;
+}
+>>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
