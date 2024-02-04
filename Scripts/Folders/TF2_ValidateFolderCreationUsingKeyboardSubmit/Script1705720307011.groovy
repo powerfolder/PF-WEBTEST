@@ -60,13 +60,13 @@ boolean tableContainsFolder(String fileName) {
 }
 
 def String getRandomFolderName() {
-	String folderName = 'Folder'+getTimestamp();
+	String folderName = 'F'+getTimestamp();
 	return folderName;
 	
 }
 
 def String getTimestamp() {
 	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	String formattedDate = todaysDate.format("ddMMMyyyyhhmmss");
 	return formattedDate;
 }

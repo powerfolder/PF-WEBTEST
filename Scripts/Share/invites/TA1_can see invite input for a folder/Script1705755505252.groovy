@@ -21,13 +21,7 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
-
-<<<<<<< HEAD
-String folderName = getRandomFolderName()
-=======
 String folderName =  getRandomGroupName()
->>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
-
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 
@@ -41,10 +35,6 @@ WebElement btn =findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
 boolean isElementPresent = WebUI.verifyElementPresent(findTestObject('getLInk/buttonCreateLink'), 10)
 
 assert isElementPresent
@@ -55,27 +45,19 @@ assert isVisible
 
 WebUI.closeBrowser()
 
-<<<<<<< HEAD
-def String getRandomFolderName() {
-	String folderName = 'Folder'+getTimestamp();
-	return folderName;
-	
-}
 def WebElement findShareButton(String fileName) {
 	WebDriver driver = DriverFactory.getWebDriver()
 	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
-=======
-
+}
 
 def String getRandomGroupName() {
 	String folderName = 'Group_'+getTimestamp();
 	return folderName;
 	
->>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
 }
 
 def String getTimestamp() {
 	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	String formattedDate = todaysDate.format("ddMMMyyyyhhmmss");
 	return formattedDate;
 }

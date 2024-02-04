@@ -26,12 +26,8 @@ import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
 import java.util.concurrent.TimeUnit as TimeUnit
 
-String folderName = getRandomFolderName()
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
-<<<<<<< HEAD
 String folderName = getRandomFolderName()
-=======
->>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getCreateText')), 'Create', FailureHandling.CONTINUE_ON_FAILURE)
@@ -78,32 +74,16 @@ WebUI.closeBrowser()
 
 
 def String getRandomFolderName() {
-<<<<<<< HEAD
 	String folderName = 'Folder'+getTimestamp();
 	return folderName;
-	
 }
 def WebElement findShareButton(String fileName) {
 	WebDriver driver = DriverFactory.getWebDriver()
 	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
 }
 
-
-
 def String getTimestamp() {
 	Date todaysDate = new Date();
 	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
 	return formattedDate;
 }
-
-=======
-	String folderName = 'FD'+getTimestamp();
-	return folderName;
-}
-
-def String getTimestamp() {
-	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
-	return formattedDate;
-}
->>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git

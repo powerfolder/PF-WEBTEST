@@ -23,10 +23,7 @@ import org.openqa.selenium.WebElement as WebElement
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
 String folderName = getRandomFolderName()
-<<<<<<< HEAD
 
-=======
->>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
@@ -35,19 +32,11 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
 
-<<<<<<< HEAD
-WebElement btn = findShareButton(folderName)
-=======
 WebElement btn =findShareButton(folderName)
->>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-<<<<<<< HEAD
-String mail = "${-> folderName}@mail.com"
-=======
 String mail = "${-> folderName}@mail.com";
->>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
 mail = mail.toLowerCase()
 
 WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/inputEmail_Share'), 
@@ -63,14 +52,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Share/Page_Folders - P
 WebUI.closeBrowser()
 
 
-<<<<<<< HEAD
-def int getMembersCount(){
-	WebDriver driver = DriverFactory.getWebDriver()
-	WebElement tbody = driver.findElement(By.xpath("//table[@id='share_table']/tbody"))
-	assert tbody
-	List<WebElement> rows_table = tbody.findElements(By.className("pica-highlight"))
-	return rows_table.size()
-=======
+
 def String getRandomFolderName() {
 	String folderName = 'FD'+getTimestamp();
 	return folderName;
@@ -85,22 +67,4 @@ def String getTimestamp() {
 def WebElement findShareButton(String fileName) {
 	WebDriver driver = DriverFactory.getWebDriver()
 	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
->>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
-}
-
-
-def String getRandomFolderName() {
-	String folderName = 'Folder'+getTimestamp();
-	return folderName;
-	
-}
-def WebElement findShareButton(String fileName) {
-	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
-}
-
-def String getTimestamp() {
-	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
-	return formattedDate;
 }

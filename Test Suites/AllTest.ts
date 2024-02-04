@@ -43,14 +43,14 @@
       <guid>8fa99a04-43c0-47f5-b5bc-cf6dbfb2f0c4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Folders/TF5_RenameExistingFolder</testCaseId>
+      <testCaseId>Test Cases/Folders/TF5_VerifyFolderRenamebyAdminUser</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>b4928063-f61f-43bc-b48e-f985169c01e7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Folders/TF6_ExistingFolderManage</testCaseId>
+      <testCaseId>Test Cases/Folders/TF6_VerifyExistingFolderManage</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -425,6 +425,13 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS22_Share folder multiple emails with white space in inpit multiple separators</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>aef606f2-923f-4f62-bb1a-7d3bdd76cee7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Accounts/TA1_VerifyAccountCreation</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

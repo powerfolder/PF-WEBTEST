@@ -28,12 +28,8 @@ import java.nio.file.Files;
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
-<<<<<<< HEAD
-String folderName =getRandomFolderName()
-=======
 
 String folderName = getRandomFolderName()
->>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
@@ -107,12 +103,9 @@ WebElement input =  driver.findElement(By.xpath("//input[@id='upload_input_files
 	Path file = Files.createTempFile("younes", ".txt");
 	Files.write(file, "Hello".getBytes());
 
-<<<<<<< HEAD
 WebUI.uploadFile(findTestObject('Page_Link - PowerFolder/span_Add file'), file.toAbsolutePath().toString())
-=======
 WebUI.uploadFile(findTestObject('Object Repository/Page_Link - PowerFolder/span_Add file'), file.toAbsolutePath().toString())
 
->>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
 
 WebUI.click(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Upload_1'))
 
@@ -125,7 +118,6 @@ WebUI.verifyElementText(findTestObject('Object Repository/Page_Link - PowerFolde
 WebUI.closeBrowser()
 
 
-<<<<<<< HEAD
 
 def String getRandomFolderName() {
 	String folderName = 'Folder'+getTimestamp();
@@ -142,16 +134,3 @@ def String getTimestamp() {
 	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
 	return formattedDate;
 }
-=======
-def String getRandomFolderName() {
-	String folderName = 'Folder'+getTimestamp();
-	return folderName;
-	
-}
-
-def String getTimestamp() {
-	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
-	return formattedDate;
-}
->>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git

@@ -21,15 +21,7 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
-
-<<<<<<< HEAD
-
-String folderName = getRandomFolderName()
-
-=======
 String folderName =getRandomFolderName()
->>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
-
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
@@ -39,7 +31,6 @@ WebUI.click(findTestObject('Folders/buttonOK'))
 WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
 String  mails = "${-> folderName+'a'} <${-> folderName+'a'}@outlook.com>;${-> folderName+'b'} <${-> folderName+'b'}@outlook.com>;${-> folderName+'c'} <${-> folderName+'c'}@outlook.com>"
 
 int membersCount = getMembersCount()
@@ -48,57 +39,27 @@ WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder
 
 WebUI.click(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/buttonAddEmail'))
 
-<<<<<<< HEAD
-
-assert membersCount+3 == getMembersCount()
-=======
 assert membersCount+3 == getMembersCount()
 
-
-
->>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
 WebUI.closeBrowser()
 
-
-<<<<<<< HEAD
-def int getMembersCount(){
-	WebDriver driver = DriverFactory.getWebDriver()
-	WebElement tbody = driver.findElement(By.xpath("//table[@id='share_table']/tbody"))
-	assert tbody
-	List<WebElement> rows_table = tbody.findElements(By.className("pica-highlight"))
-	return rows_table.size()
-=======
 def String getRandomFolderName() {
-	String folderName = 'FD'+getTimestamp();
+	String folderName = 'FD'+getTimestamp()
 	return folderName;
 }
 
 def String getTimestamp() {
 	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	String formattedDate = todaysDate.format("ddMMMyyyyhhmmss");
 	return formattedDate;
->>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
+
 }
 
-
-<<<<<<< HEAD
-def String getRandomFolderName() {
-	String folderName = 'Folder'+getTimestamp();
-	return folderName;
-	
-}
 def WebElement findShareButton(String fileName) {
 	WebDriver driver = DriverFactory.getWebDriver()
 	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
 }
 
-def String getTimestamp() {
-	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
-	return formattedDate;
-}
-
-=======
 def int getMembersCount(){
 	WebDriver driver = DriverFactory.getWebDriver()
 	WebElement tbody = driver.findElement(By.xpath("//table[@id='share_table']/tbody"))
@@ -106,11 +67,3 @@ def int getMembersCount(){
 	List<WebElement> rows_table = tbody.findElements(By.className("pica-highlight"))
 	return rows_table.size()
 }
-
-
-def WebElement findShareButton(String fileName) {
-	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
-}
->>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
-

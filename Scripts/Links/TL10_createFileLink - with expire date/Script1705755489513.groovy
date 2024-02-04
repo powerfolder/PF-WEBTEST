@@ -28,11 +28,7 @@ import java.util.concurrent.TimeUnit as TimeUnit
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
-<<<<<<< HEAD
-String folderName = getRandomFolderName()
-=======
-String folderName =  getRandomGroupName()
->>>>>>> branch 'new-tests' of https://github.com/powerfolder/PF-WEBTEST.git
+String folderName = getRandomGroupName()
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
@@ -111,7 +107,6 @@ WebUI.closeBrowser()
 def String getRandomFolderName() {
 	String folderName = 'Folder'+getTimestamp();
 	return folderName;
-	
 }
 
 def String getTimestamp() {
@@ -120,7 +115,7 @@ def String getTimestamp() {
 	return formattedDate;
 }
 def String getRandomGroupName() {
-	String folderName = 'Group_'+getTimestamp();
+	String folderName = 'G_'+getTimestamp();
 	return folderName;
 	
 }

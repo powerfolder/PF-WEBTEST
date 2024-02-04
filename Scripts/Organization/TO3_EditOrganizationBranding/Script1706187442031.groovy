@@ -34,7 +34,6 @@ WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.Username)
 WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Password)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
-
 assert WebUI.getWindowTitle().equals('Dashboard - PowerFolder')
 WebUI.click(findTestObject('Organization/SelectOrganization'))
 WebUI.click(findTestObject('Organization/DropDownToggle'))
