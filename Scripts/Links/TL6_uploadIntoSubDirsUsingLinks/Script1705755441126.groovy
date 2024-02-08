@@ -60,7 +60,6 @@ WebElement dir1 =  driver.findElement(By.xpath("//table[@id='files_files_table']
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(dir1))
 
-
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Folders/createDirectoryIcon'))
@@ -68,7 +67,7 @@ WebUI.click(findTestObject('Folders/createDirectoryIcon'))
 WebUI.setText(findTestObject('Folders/inputFolderName'), "dir2")
 
 WebUI.sendKeys(findTestObject('Folders/inputFolderName'), Keys.chord(Keys.ENTER))
-         
+		 
 WebElement btn = findShareButton("dir2")
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 WebUI.click(findTestObject('Folders/shareLink'))
@@ -79,10 +78,13 @@ WebUI.click(findTestObject('Share/buttonSave'))
 
 WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Can read'))
-WebElement rights =  driver.findElement(By.xpath("//tr[contains(@id,'share_Object')]/td[2]/div/div/div/div[2]/ul/li[2]/a"))
+WebUI.click(findTestObject('Page_Link - PowerFolder/buttonSettings'))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(rights))
+WebUI.click(findTestObject('Share/button_allowUpload'))
+WebUI.click(findTestObject('Share/buttonSave'))
+//WebElement rights =  driver.findElement(By.xpath("//tr[contains(@id,'share_Object')]/td[2]/div/div/div/div[2]/ul/li[2]/a"))
+
+//WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(rights))
 
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor);
 

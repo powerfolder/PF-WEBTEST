@@ -45,18 +45,20 @@ WebElement btn =findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-WebUI.click(findTestObject('Folders/shareLink'))
-
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Save (1)'))
+WebUI.click(findTestObject('getLInk/buttonCreateLink'))
 
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Can read'))
-WebDriver driver = DriverFactory.getWebDriver() //
-WebElement settings =  driver.findElement(By.xpath("//tr[contains(@id,'share_Object')]/td[2]/div/div/div/span"))
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(settings))
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_Link versioning settings_pica_link_password'),
-	'tzH6RvlfSTg=')
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Save'))
+WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
 
+WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
+
+
+WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_Link versioning settings_pica_link_ma_ffd855'),	'3')
+WebUI.setText(findTestObject('Page_Link - PowerFolder/lang_Password required'), 'Alexa@131190')
+
+WebUI.delay(10)
+
+WebUI.click(findTestObject('SettingsPopUp/buttonSave'))
 
 WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
 
@@ -64,30 +66,18 @@ String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getConten
 
 WebUI.navigateToUrl(my_clipboard)
 
+WebUI.setText(findTestObject('Page_Link - PowerFolder/inputPassword'), 'Alexa@131190')
+
+WebUI.click(findTestObject('Page_Link - PowerFolder/buttonOK'))
+
+WebUI.click(findTestObject('Page_Link - PowerFolder/settings'))
+
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
+assert WebUI.waitForElementVisible(findTestObject('Page_Link - PowerFolder/div_Password required'),2)
 
-assert WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Link - PowerFolder/div_Password required'),2)
+WebUI.click(findTestObject('Page_Link - PowerFolder/buttonSave'))
 
-assert isNotBlank(WebUI.getText(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Password required')))
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Link - PowerFolder/input_This link is password protected_password'),
-	'4nvbrPglk7k=')
-
-WebUI.click(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Ok'))
-
-assert WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Link - PowerFolder/div_Password required'),2)
-
-assert isNotBlank(WebUI.getText(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Password required')))
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Link - PowerFolder/input_This link is password protected_password'),
-	'tzH6RvlfSTg=')
-
-WebUI.click(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Ok'))
-
-List list = driver.findElements(By.className("pica-crumb"));
-
-assert list.get(list.size()-1).getText().equals(folderName)
 WebUI.closeBrowser()
 
 

@@ -6,12 +6,12 @@
    <elementGuidId>213328ed-839b-48bb-a824-6571da223f60</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.modal-header</value>
+         <key>XPATH</key>
+         <value>//input[@id='pica_link_password']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='pica_password_dialog']/div/div/form/div</value>
+         <key>CSS</key>
+         <value>div.modal-header</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
+      <webElementGuid>cc692508-32f5-4f79-8cff-a16c8e1c504a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,6 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>modal-header</value>
+      <webElementGuid>1d01781d-01ef-467d-96f3-b7423ad862c4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -41,6 +43,7 @@
                         Password required
                     
                 </value>
+      <webElementGuid>2fdc8f98-641e-45ee-acc1-58a7dd42655d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -48,36 +51,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_password_dialog&quot;)/div[@class=&quot;pica-dialog-small modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/form[1]/div[@class=&quot;modal-header&quot;]</value>
+      <webElementGuid>ffca0ffa-35df-4ccf-bd42-72902a58923d</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='pica_password_dialog']/div/div/form/div</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//form/div</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//div[(text() = '
-                    ×
-                    
-                        Password required
-                    
-                ' or . = '
-                    ×
-                    
-                        Password required
-                    
-                ')]</value>
-   </webElementXpaths>
 </WebElementEntity>

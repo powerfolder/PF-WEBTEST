@@ -12,66 +12,73 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>47e5f5d8-0151-4a6d-9ea0-f99e7a84e8ee</testSuiteGuid>
    <testCaseLink>
-      <guid>70214f91-f178-405b-88d7-234c2297a716</guid>
+      <guid>4beae19b-5942-4641-b758-8d2f0c8dbd46</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL3_createFolderLink with expirary date</testCaseId>
+      <testCaseId>Test Cases/Links/TL1_createDirLink</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7b7cba63-479c-42e2-a423-085610af536a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL9_createFileLink - with max downloads</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>ccfb0555-963c-4e6d-9c71-e1adbb60f73f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL4_createFolderLink - with password</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5245317b-b031-484e-8299-914bf77d041f</guid>
+      <guid>4e217508-05c2-4e2f-8359-4e5bfa3f43f1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL2_createFileLink</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d355182f-b879-4b5d-b9e6-4cf9c88d7e21</guid>
+      <guid>e7d7710c-a89b-47bf-9655-49a856b49464</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL7_createFolderLink</testCaseId>
+      <testCaseId>Test Cases/Links/TL3_createFolderLink with expirary date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1a553969-0277-4b8c-9ff8-a277d567ec0b</guid>
+      <guid>577b06b3-3e34-48ba-b4c3-32fc004413f3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL10_createFileLink - with expire date</testCaseId>
+      <testCaseId>Test Cases/Links/TL4_createFolderLink - with password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>656c8d00-c3a4-4cd0-a0eb-4f8b51509634</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL8_createFileLink - with password</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>6a61c604-e5b6-4f07-84a0-497fe18ef23c</guid>
+      <guid>d7618061-239c-41b8-9e5d-a7ac3fe9d8d0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL5_createFolderLink - with max downloads</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3cd783ea-e835-46f9-9453-5d71bb3315ab</guid>
+      <guid>ea04cff1-f49d-411f-b08b-3697c9609133</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL1_createDirLink</testCaseId>
+      <testCaseId>Test Cases/Links/TL6_uploadIntoSubDirsUsingLinks</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>37a47fe4-c136-4466-bab2-569b8f9048fb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL7_createFolderLink</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>84410785-6190-4b78-b337-9a374c796773</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL8_createFileLink - with password</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2127c393-0679-46eb-9593-8f95bb9ed5e7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL9_createFileLink - with max downloads</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>457a6a27-00a6-485c-8267-f9be5d3a9da9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL10_createFileLink - with expire date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

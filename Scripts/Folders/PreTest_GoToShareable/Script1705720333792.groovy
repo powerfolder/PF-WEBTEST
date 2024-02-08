@@ -33,7 +33,7 @@ WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
 
 assert WebUI.getWindowTitle().equals('Dashboard - PowerFolder')
-
+WebUI.click(findTestObject('button_OK I understand'))
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))
 
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')

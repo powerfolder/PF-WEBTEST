@@ -40,22 +40,25 @@ WebElement btn =findShareButton(folderName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 WebUI.click(findTestObject('Folders/createLink'))
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Save (1)'))
-WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
+
+WebUI.click(findTestObject('getLInk/buttonCreateLink'))
 
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Can read'))
-WebDriver driver = DriverFactory.getWebDriver() //
-WebElement settings =  driver.findElement(By.xpath("//tr[contains(@id,'share_Object')]/td[2]/div/div/div/span"))
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(settings))
-
 WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/span_Dec_glyphicon glyphicon-time'))
+WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/span_Dec_glyphicon glyphicon-chevron-up'))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/span_Dec_glyphicon glyphicon-remove'))
+WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_Link versioning settings_pica_link_ma_ffd855'),
+	'0')
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Save'))
+
+WebUI.delay(10)
+
+WebUI.click(findTestObject('SettingsPopUp/buttonSave'))
+
+WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
+
 
 TimeUnit.MINUTES.sleep(2);
 
@@ -64,6 +67,8 @@ String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getConten
 WebUI.navigateToUrl(my_clipboard)
 
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+
+WebUI.click(findTestObject('Share/buttonCloseDownloadLimit'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('getLInk/qrcode'))
 

@@ -44,19 +44,21 @@ WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-WebUI.click(findTestObject('Folders/shareLink'))
-
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Save (1)'))
+WebUI.click(findTestObject('getLInk/buttonCreateLink'))
 
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Can read'))
-WebDriver driver = DriverFactory.getWebDriver() //
-WebElement settings =  driver.findElement(By.xpath("//tr[contains(@id,'share_Object')]/td[2]/div/div/div/span"))
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(settings))
+WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_Link versioning settings_pica_link_ma_ffd855'), '0')
+WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Save'))
 
+WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_Link versioning settings_pica_link_ma_ffd855'),
+	'0')
+
+
+WebUI.delay(10)
+
+WebUI.click(findTestObject('SettingsPopUp/buttonSave'))
 
 WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
 

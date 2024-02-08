@@ -34,7 +34,8 @@ WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.Username)
 WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Password)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
-String folderName = CustomKeywords.'utility.helper.getRandomFolderName'()
+WebUI.click(findTestObject('button_OK I understand'))
+String folderName = getRandomFolderName()
 assert WebUI.getWindowTitle().equals('Dashboard - PowerFolder')
 WebUI.click(findTestObject('Organization/SelectOrganization'))
 WebUI.click(findTestObject('Organization/DropDownToggle'))
@@ -66,7 +67,16 @@ WebUI.delay(3)
 //WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyToastMsg')), 'Organization deleted')
 WebUI.closeBrowser()
 
+def String getRandomFolderName() {
+	String folderName = 'Folder'+getTimestamp();
+	return folderName;
+}
 
+def String getTimestamp() {
+	Date todaysDate = new Date();
+	String formattedDate = todaysDate.format("dd_MMMyyyyhhmmss");
+	return formattedDate;
+}
 
 
 

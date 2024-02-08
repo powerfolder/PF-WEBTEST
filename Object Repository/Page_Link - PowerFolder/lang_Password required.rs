@@ -6,12 +6,12 @@
    <elementGuidId>bed52290-efdb-443a-9ad7-70454d2cfe30</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>lang[name=&quot;dialog_title_password&quot;]</value>
+         <key>XPATH</key>
+         <value>//input[@id='pica_link_password']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//lang[@name='dialog_title_password']</value>
+         <key>CSS</key>
+         <value>lang[name=&quot;dialog_title_password&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>lang</value>
+      <webElementGuid>1cea1a9e-c4f3-40fc-9844-68c759e97334</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,6 +30,7 @@
       <name>name</name>
       <type>Main</type>
       <value>dialog_title_password</value>
+      <webElementGuid>7196764a-d4ba-4c3b-9dad-2042bb41269d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -36,6 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Password required</value>
+      <webElementGuid>8e9e9c1a-895b-4f5d-9599-0b2134c07fbe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -43,61 +46,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_password_dialog&quot;)/div[@class=&quot;pica-dialog-small modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/form[1]/div[@class=&quot;modal-header&quot;]/h4[@class=&quot;pica-dialog-title modal-title&quot;]/lang[1]</value>
+      <webElementGuid>b71940d6-b02b-4875-adee-8790f208d41f</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//lang[@name='dialog_title_password']</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='pica_password_dialog']/div/div/form/div/h4/lang</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[1]/following::lang[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='This link is password protected'])[1]/preceding::lang[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ok'])[1]/preceding::lang[2]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Password required']/parent::*</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//lang</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//lang[@name = 'dialog_title_password' and (text() = 'Password required' or . = 'Password required')]</value>
-   </webElementXpaths>
 </WebElementEntity>

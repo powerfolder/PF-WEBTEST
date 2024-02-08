@@ -41,9 +41,21 @@ WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-WebUI.click(findTestObject('Folders/shareLink'))
+WebUI.click(findTestObject('getLInk/buttonCreateLink'))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Save (1)'))
+WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Can read'))
+WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
+
+WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
+
+
+WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_Link versioning settings_pica_link_ma_ffd855'),
+	'0')
+
+
+WebUI.delay(10)
+
+WebUI.click(findTestObject('SettingsPopUp/buttonSave'))
 WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
 
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor);

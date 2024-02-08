@@ -6,12 +6,11 @@
    <elementGuidId>60c181e2-5c44-4119-ade7-bae6fd8f8da0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@name='label_show_qr']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[@class='left icon glyphicons glyphicons-qrcode']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

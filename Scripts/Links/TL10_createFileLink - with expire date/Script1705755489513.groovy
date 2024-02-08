@@ -71,7 +71,7 @@ WebUI.click(findTestObject('Folders/button_SaveSettings'))
 
 WebUI.click(findTestObject('Folders/buttonCopyToClipboard'))
 
-
+WebUI.click(findTestObject('Folders/cogWheelSettings'))
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Can read'))
 WebElement settings =  driver.findElement(By.xpath("//tr[contains(@id,'share_Object')]/td[2]/div/div/div/span"))
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(settings))

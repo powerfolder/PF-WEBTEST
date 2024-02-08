@@ -6,12 +6,12 @@
    <elementGuidId>92afd069-3824-4145-b6e8-478a90287e46</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.pica-inline.dropdown.pull-right > button.btn.btn-default.dropdown-toggle</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//tr[@id='share_Object_337267295']/td[2]/div/div/div/div[2]/button</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#pica_link_read_only</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
@@ -22,6 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>b7cba20d-cc50-48f6-b727-025d1c2711ac</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,6 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-default dropdown-toggle</value>
+      <webElementGuid>d22b0be6-8747-41eb-a64c-ff30b4e585ed</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,6 +38,7 @@
       <name>data-toggle</name>
       <type>Main</type>
       <value>dropdown</value>
+      <webElementGuid>095538f6-9ffa-45c9-be31-a782cb343e56</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -43,6 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Can read</value>
+      <webElementGuid>4df87f79-7724-4f27-85cb-36856ebd92dd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,6 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;share_Object_337267295&quot;)/td[@class=&quot;text-right&quot;]/div[@class=&quot;media&quot;]/div[@class=&quot;media-body&quot;]/div[@class=&quot;pica-media-header media-heading clearfix&quot;]/div[@class=&quot;pica-inline dropdown pull-right&quot;]/button[@class=&quot;btn btn-default dropdown-toggle&quot;]</value>
+      <webElementGuid>fd117384-a94d-4984-ae88-b1ee2b9d3e4c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -57,6 +62,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='share_Object_337267295']/td[2]/div/div/div/div[2]/button</value>
+      <webElementGuid>87e4da57-f07d-4f5f-a8fb-0719d0797e71</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -64,6 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='until 25 March 2022 21:52'])[1]/following::button[1]</value>
+      <webElementGuid>ed96b24b-42e9-4017-a5af-f3823ac76b32</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,6 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Everybody with this link'])[1]/following::button[1]</value>
+      <webElementGuid>ea25b7fa-8324-4b52-b434-de98e181533a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,6 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Can read'])[3]/preceding::button[1]</value>
+      <webElementGuid>f2b5c27f-95f1-49f8-9e1e-f6ebf4543884</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Can read, write and upload'])[1]/preceding::button[1]</value>
+      <webElementGuid>81c677fd-3e3d-42fe-99cc-23104445e31d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,6 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[2]/div/div/div/div[2]/button</value>
+      <webElementGuid>72f48e66-687a-4097-9550-fbd1479c2a93</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -99,5 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[(text() = 'Can read' or . = 'Can read')]</value>
+      <webElementGuid>c3dcffd7-4cc6-484e-861e-14ad27eb0754</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

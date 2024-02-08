@@ -6,12 +6,11 @@
    <elementGuidId>ed6eb049-1d53-4f76-abc7-bd25105a4efc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@name='label_allow_uploads']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//input[@id='pica_link_read_write']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
