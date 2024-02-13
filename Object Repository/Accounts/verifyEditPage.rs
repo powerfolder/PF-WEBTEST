@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//h5[normalize-space()='Edit Account'])[1]</value>
+         <value>//div[@id='pica_account_dialog']//h5[@class='pica-dialog-description']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

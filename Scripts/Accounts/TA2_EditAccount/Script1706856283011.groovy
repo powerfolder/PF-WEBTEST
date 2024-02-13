@@ -99,7 +99,7 @@ WebUI.click(findTestObject('Accounts/SaveButton'))
 WebUI.delay(4)
 WebDriver driver = DriverFactory.getWebDriver()
 WebElement ClickOnAccount =  driver.findElement(By.xpath("(//a[normalize-space()='$firstName $lastName'])[1]/ancestor::td"))
-WebUI.delay(2)
+WebUI.delay(5)
 ClickOnAccount.click()
 WebUI.verifyEqual(WebUI.getText(findTestObject('Accounts/VerifyEditPage')), "Edit Account", FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Accounts/SaveButton'))
@@ -110,7 +110,7 @@ AccountName.click()
 WebUI.click(findTestObject('Accounts/DeleteButton'))
 WebUI.delay(4)
 String actualText = WebUI.getText(findTestObject('Accounts/VerifyDeleteMsg')).toLowerCase()
-String expectedText = "Do you really want to delete ${emailId}?".toLowerCase()
+String expectedText = "Do you really want to delete ${emailId}?"
 
 WebUI.verifyEqual(actualText, expectedText, FailureHandling.STOP_ON_FAILURE)
 WebUI.click(findTestObject('Accounts/YesButton'))
@@ -125,7 +125,7 @@ String generateRandomString(int length) {
 		randomString.append(characters.charAt(random.nextInt(characters.length())))
 	}
 
-	return randomString.toString()
+	return randomString.toString().toLowerCase()
 }
 
 String generateRandomEmail() {
