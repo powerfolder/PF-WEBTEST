@@ -19,4 +19,9 @@
       <initValue>'$KILLcorona1'</initValue>
       <name>Password</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ENG'</initValue>
+      <name>LANG</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
