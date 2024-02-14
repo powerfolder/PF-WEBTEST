@@ -6,12 +6,11 @@
    <elementGuidId>92178f6b-d0ed-4d03-91c6-e96a218d0764</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//h5[normalize-space()='Create a new Organization'])[1]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//h5[@class='pica-dialog-description'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -6,12 +6,11 @@
    <elementGuidId>23c305d8-1443-484b-8ec4-17dbd4bfc2f9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//lang[@name='label_avatar'][normalize-space()='Avatar'])[1]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//a/lang[@name='label_avatar'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

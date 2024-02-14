@@ -6,12 +6,11 @@
    <elementGuidId>6a5a6825-3268-4e94-892a-0de82a39e8fb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//h5[normalize-space()='Edit Organization'])[1]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//h5[@class='pica-dialog-description'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

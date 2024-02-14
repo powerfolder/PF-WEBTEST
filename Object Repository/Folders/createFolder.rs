@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[text()='Create Folder']</value>
+         <value>//li[@class='files-ui-create-dir']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

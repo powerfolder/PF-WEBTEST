@@ -25,8 +25,14 @@ WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHa
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 String folderName = getRandomFolderName()
+String lan = GlobalVariable.LANG
+if(!lan.equals('GERMAN')) {
 WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getCreateText')), 'Create', FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getFolderNameLabelText')), 'Create a new Folder',  FailureHandling.CONTINUE_ON_FAILURE)
+}else {
+	WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getCreateText')), 'Erstellen', FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getFolderNameLabelText')), 'Ordner neu erstellen',  FailureHandling.CONTINUE_ON_FAILURE)
+}
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.setText(findTestObject('Folders/inputFolderName'),folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))

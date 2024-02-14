@@ -6,12 +6,11 @@
    <elementGuidId>098f8446-d0f4-4094-ad39-01394e42c8c5</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//input[@placeholder='Add an account by name'])[1]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//input[@data-placeholder='placeholder_add_account_by_name']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -12,24 +12,24 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>8df3aff0-536f-4a85-b356-c07b0765171e</testSuiteGuid>
    <testCaseLink>
-      <guid>044a71d3-a950-4234-8cb1-e5a12224cda0</guid>
+      <guid>212d283b-718d-41fa-a6a0-3a8d49031c4f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Organization/TO7_EditOrganizationAddingManage</testCaseId>
+      <testCaseId>Test Cases/Help/TH1_verifyHelpPage</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f689bda4-ee47-41d2-b102-e96a4b429c87</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA11_AddFolderManageVerify</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>ebab9c37-44e5-4daa-a165-07a7eef39dfd</guid>
+      <guid>df59cadb-f50f-401e-86bc-9554a899a24b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA1_VerifyAccountCreation</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>11bab92a-daea-48ff-bbbe-f2a7bd2066ed</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Accounts/TA2_EditAccount</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

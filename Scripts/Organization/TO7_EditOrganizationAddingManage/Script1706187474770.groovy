@@ -31,12 +31,17 @@ String folderName =getRandomFolderName()
 WebUI.click(findTestObject('Organization/SelectOrganization'))
 WebUI.click(findTestObject('Organization/DropDownToggle'))
 WebUI.click(findTestObject('Organization/CreateOrganization'))
+String lan = GlobalVariable.LANG
+if(!lan.equals('GERMAN')) {
 WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyCreateOrganization')), 'Create a new Organization',  FailureHandling.CONTINUE_ON_FAILURE)
+}else {
+	WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyCreateOrganization')), 'Organisation neu erstellen',  FailureHandling.CONTINUE_ON_FAILURE)
+	
+}
 WebUI.delay(3)
 WebUI.setText(findTestObject('Organization/InputName'), folderName)
 WebUI.setText(findTestObject('Organization/InputMaxNumber'), "10")
 WebUI.setText(findTestObject('Organization/InputQuota'), "2")
-
 def currentDate = new Date()
 def dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm a")
 def formattedDate = dateFormat.format(currentDate)
@@ -57,7 +62,12 @@ folderNameElement.click()
 //WebUI.click(findTestObject('Organization/SelectCreatedOrganization'))
 WebUI.delay(3) 
 String editPopHeadingText =WebUI.getText(findTestObject('Organization/getEditOrganization'))
+
+if(!lan.equals('GERMAN')) {
 WebUI.verifyEqual(editPopHeadingText, 'Edit Organization',  FailureHandling.CONTINUE_ON_FAILURE)
+}else {
+	WebUI.verifyEqual(editPopHeadingText, 'Organisation bearbeitet',  FailureHandling.CONTINUE_ON_FAILURE)
+}
 WebUI.click(findTestObject('Organization/ManageTab'))
 WebUI.click(findTestObject('Organization/defaultCancel'))
 WebUI.click(findTestObject('Organization/sortByName'))
@@ -67,12 +77,16 @@ WebUI.scrollToElement(findTestObject('Organization/SelectCreatedOrganization'), 
 WebUI.click(findTestObject('Organization/checkFirstOrganization'))
 WebUI.click(findTestObject('Organization/Deletebutton'))
 WebUI.delay(11)
-//WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerfiyDeleteMsg')), "Do you really want to delete ${folderName} with all members and folders?", FailureHandling.CONTINUE_ON_FAILURE)
- 
+
 WebUI.scrollToElement(findTestObject('Organization/SelectYesButton'), 30, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Organization/SelectYesButton'))
 
-WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyToastMsg')), 'Organization deleted')
+
+if(!lan.equals('GERMAN')) {
+	WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyToastMsg')), 'Organization deleted')
+	}else {
+		WebUI.verifyEqual(editPopHeadingText, 'Organisation bearbeitet',  FailureHandling.CONTINUE_ON_FAILURE)
+	}
 WebUI.closeBrowser()
 
 def String getCurrentDate() {

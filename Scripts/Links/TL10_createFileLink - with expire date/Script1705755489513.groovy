@@ -60,7 +60,7 @@ WebUI.closeWindowIndex(1)
 WebUI.delay(1)
 WebUI.switchToWindowIndex(0)
 WebUI.refresh()
-WebElement btn = CustomKeywords.'share.ShareHelper.findShareButton'(folderName)
+WebElement btn =  findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
@@ -118,4 +118,8 @@ def String getRandomGroupName() {
 	String folderName = 'G_'+getTimestamp();
 	return folderName;
 	
+}
+def WebElement findShareButton(String fileName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
 }

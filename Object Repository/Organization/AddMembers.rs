@@ -6,12 +6,11 @@
    <elementGuidId>f1cb4cc9-28bd-4245-b304-1ab5c93479ed</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//li[@class='hidden-xs']//lang[@name='label_members'][normalize-space()='Members']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//a/lang[@name='label_members'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

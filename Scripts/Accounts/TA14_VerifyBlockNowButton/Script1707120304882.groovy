@@ -103,8 +103,8 @@ WebUI.waitForElementClickable(findTestObject('Accounts/firstRow'), 30, FailureHa
 WebUI.click(findTestObject('Accounts/firstRow'))
 WebUI.click(findTestObject('Accounts/DeleteButton'))
 WebUI.delay(4)
-String actualText = WebUI.getText(findTestObject('Accounts/VerifyDeleteMsg')).toLowerCase()
-String expectedText = "Do you really want to delete ${emailId}?".toLowerCase()
+String actualText = WebUI.getText(findTestObject('Accounts/VerifyDeleteMsg'))
+String expectedText = "Do you really want to delete ${emailId}?"
 
 WebUI.verifyEqual(actualText, expectedText, FailureHandling.STOP_ON_FAILURE)
 WebUI.click(findTestObject('Accounts/YesButton'))
@@ -119,7 +119,7 @@ String generateRandomString(int length) {
 		randomString.append(characters.charAt(random.nextInt(characters.length())))
 	}
 
-	return randomString.toString()
+	return randomString.toString().toLowerCase()
 }
 
 String generateRandomEmail() {

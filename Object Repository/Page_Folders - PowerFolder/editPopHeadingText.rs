@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>createFolderIcon</name>
+   <name>editPopHeadingText</name>
    <tag></tag>
-   <elementGuidId>b5ef646d-09ed-4a42-8ded-b194246c28c0</elementGuidId>
+   <elementGuidId>6c2ebda5-aea1-458f-8b50-fcaad4405783</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[@class='pica-glyph glyphicons glyphicons-plus-sign']</value>
+         <value>(//h5[@class='pica-dialog-description'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

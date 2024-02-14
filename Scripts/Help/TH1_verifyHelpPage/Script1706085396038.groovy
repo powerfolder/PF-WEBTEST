@@ -24,7 +24,7 @@ Thread.sleep(5000)
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Spaces - Confluence')
 
 WebUI.click(findTestObject('Help/powerFolder'))
-WebUI.delay(10)
+WebUI.delay(5)
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'PowerFolder - Confluence')
 
 WebUI.verifyEqual(WebUI.getText(findTestObject('Help/getTitleText')), 'PowerFolder Documentation and Support')

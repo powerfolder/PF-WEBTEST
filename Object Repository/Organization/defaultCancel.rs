@@ -6,12 +6,11 @@
    <elementGuidId>a8cfad5b-1543-4c31-9757-dda4435c5d5f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@class='btn btn-default']/lang[text()='Cancel'])[1]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//button[@class='btn btn-default']/lang[@name='button_cancel'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

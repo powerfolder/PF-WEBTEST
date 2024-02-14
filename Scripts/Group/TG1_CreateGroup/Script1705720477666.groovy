@@ -58,7 +58,7 @@ WebUI.verifyEqual(grpName.isDisplayed(), true)
 WebUI.closeBrowser()
 
 def String getRandomGroupName() { 
-		String folderName = 'Group_'+getTimestamp();
+		String folderName = 'G_'+getTimestamp();
 		return folderName;	
 }
 	

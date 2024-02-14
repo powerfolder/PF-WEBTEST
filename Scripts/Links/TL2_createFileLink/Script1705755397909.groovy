@@ -60,7 +60,7 @@ WebUI.delay(1)
 WebUI.switchToWindowIndex(0)
 WebUI.refresh()
 
-WebElement btn = CustomKeywords.'share.ShareHelper.findShareButton'(folderName)
+WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
@@ -92,4 +92,11 @@ def String getTimestamp() {
 	Date todaysDate = new Date();
 	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
 	return formattedDate;
+}
+
+
+
+def WebElement findShareButton(String fileName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
 }

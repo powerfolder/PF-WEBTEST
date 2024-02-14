@@ -34,13 +34,18 @@ WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.Username)
 WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Password)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
-WebUI.click(findTestObject('button_OK I understand'))
 String folderName = getRandomFolderName()
 assert WebUI.getWindowTitle().equals('Dashboard - PowerFolder')
 WebUI.click(findTestObject('Organization/SelectOrganization'))
 WebUI.click(findTestObject('Organization/DropDownToggle'))
 WebUI.click(findTestObject('Organization/CreateOrganization'))
+String lan = GlobalVariable.LANG
+if(!lan.equals('GERMAN')) {
 WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyCreateOrganization')), 'Create a new Organization',  FailureHandling.CONTINUE_ON_FAILURE)
+}else {
+	WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyCreateOrganization')), 'Organisation neu erstellen',  FailureHandling.CONTINUE_ON_FAILURE)
+	
+}
 WebUI.setText(findTestObject('Organization/InputName'), "AutomationTest")
 WebUI.setText(findTestObject('Organization/InputMaxNumber'), "10")
 WebUI.setText(findTestObject('Organization/InputQuota'), "2")
@@ -61,7 +66,12 @@ WebUI.click(findTestObject('Organization/SaveButton'))
 WebUI.delay(10)
 WebUI.click(findTestObject('Organization/SelectCreatedOrganization'))
 WebUI.click(findTestObject('Organization/Deletebutton'))
+if(!lan.equals('GERMAN')) {
 WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerfiyDeleteMsg')), 'Do you really want to delete AutomationTest with all members and folders?',  FailureHandling.CONTINUE_ON_FAILURE)
+}else {
+	WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerfiyDeleteMsg')), 'Möchten Sie wirklich AutomationTest mit allen Mitgliedern und Ordnern löschen?',  FailureHandling.CONTINUE_ON_FAILURE)
+	
+}
 WebUI.click(findTestObject('Organization/SelectYesButton'))
 WebUI.delay(3)
 //WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyToastMsg')), 'Organization deleted')

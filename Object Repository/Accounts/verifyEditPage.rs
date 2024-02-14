@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_account_dialog']//h5[@class='pica-dialog-description']</value>
+         <value>(//h5[@class='pica-dialog-description'])[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>

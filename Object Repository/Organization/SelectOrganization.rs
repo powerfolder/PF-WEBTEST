@@ -6,12 +6,11 @@
    <elementGuidId>57663071-f1e5-4cea-bb39-0cc489d808c7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//lang[@class='pica-hidden-on-small text-center'][normalize-space()='Organizations'])[1]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//lang[@class='pica-hidden-on-small text-center'][@name='label_organizations'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

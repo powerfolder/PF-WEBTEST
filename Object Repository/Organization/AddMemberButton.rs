@@ -6,12 +6,11 @@
    <elementGuidId>c0ff4e07-dacb-4c41-828a-9694d32ac865</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@class='pica-taginput-button btn btn-default'])[2]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//a/lang[@name='label_members'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

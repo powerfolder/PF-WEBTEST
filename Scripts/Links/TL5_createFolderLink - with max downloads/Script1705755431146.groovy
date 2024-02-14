@@ -28,44 +28,29 @@ import java.awt.datatransfer.DataFlavor
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
 String folderName = getRandomFolderName()
-
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
-
 WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getCreateText')), 'Create', FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getFolderNameLabelText')), 'Create a new Folder',  FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
-
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
-
 WebElement btn = findShareButton(folderName)
-
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
 WebUI.click(findTestObject('getLInk/buttonCreateLink'))
-
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Can read'))
 WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
-
 WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
-
 
 WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_Link versioning settings_pica_link_ma_ffd855'),
 	'0')
 
-
 WebUI.delay(10)
-
 WebUI.click(findTestObject('SettingsPopUp/buttonSave'))
-
 WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
-
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor);
-
 WebUI.navigateToUrl(my_clipboard)
-
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
 assert WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Download Limit Reached'),2)

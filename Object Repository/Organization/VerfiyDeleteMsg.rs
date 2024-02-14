@@ -6,12 +6,11 @@
    <elementGuidId>6c7c7834-1c10-4d7d-815c-3061fad827de</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@class='modal-body'])[5]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@id='pica_confirmation_dialog']//h5[@class='pica-dialog-description']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
