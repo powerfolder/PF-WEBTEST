@@ -22,6 +22,7 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit
 import java.awt.datatransfer.DataFlavor
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 String folderName =getRandomFolderName()
@@ -46,10 +47,10 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 WebUI.click(findTestObject('Links/buttonCreateLink'))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Can read'))
-WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
+WebUI.waitForElementClickable(findTestObject('Links/buttonCreateLink'), 30, FailureHandling.CONTINUE_ON_FAILURE)
+WebElement buttonCreateLink = 	WebUiCommonHelper.findWebElement(findTestObject('Links/buttonCreateLink'),30)
+WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(buttonCreateLink))
 
-WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
 
 
 WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'), '1')
@@ -74,7 +75,7 @@ WebUI.closeBrowser()
 
 
 def String getRandomFolderName() {
-	String folderName = 'Folder'+getTimestamp();
+	String folderName = 'FDTL1'+getTimestamp();
 	return folderName;
 	
 }
@@ -85,7 +86,7 @@ def WebElement findShareButton(String fileName) {
 
 def String getTimestamp() {
 	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	String formattedDate = todaysDate.format("ddMMMyyyyhhmmss");
 	return formattedDate;
 }
 

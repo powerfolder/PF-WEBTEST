@@ -90,11 +90,6 @@ WebUI.setText(findTestObject('Accounts/InputFirstName'),firstName)
 WebUI.setText(findTestObject('Accounts/InputLastName'),lastName)
 WebUI.setText(findTestObject('Accounts/InputPhoneNo'),phone)
 WebUI.setText(findTestObject('Accounts/InputQuota'),"5")
-def currentDate = new Date()
-def dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm a")
-def formattedDate = dateFormat.format(currentDate)
-WebUI.setText(findTestObject('Accounts/InputTIllDate'), formattedDate)
-WebUI.sendKeys(findTestObject('Accounts/InputTIllDate'), Keys.chord(Keys.TAB))
 WebUI.click(findTestObject('Accounts/ResetNotButton'))
 WebUI.click(findTestObject('Accounts/SaveButton'))
 WebUI.delay(4)
@@ -103,8 +98,8 @@ WebUI.waitForElementClickable(findTestObject('Accounts/firstRow'), 30, FailureHa
 WebUI.click(findTestObject('Accounts/firstRow'))
 WebUI.click(findTestObject('Accounts/DeleteButton'))
 WebUI.delay(4)
-String actualText = WebUI.getText(findTestObject('Accounts/VerifyDeleteMsg')).toLowerCase()
-String expectedText = "Do you really want to delete ${emailId}?".toLowerCase()
+String actualText = WebUI.getText(findTestObject('Accounts/VerifyDeleteMsg'))
+String expectedText = "Do you really want to delete ${emailId}?"
 
 WebUI.verifyEqual(actualText, expectedText, FailureHandling.STOP_ON_FAILURE)
 WebUI.click(findTestObject('Accounts/YesButton'))
@@ -119,7 +114,7 @@ String generateRandomString(int length) {
 		randomString.append(characters.charAt(random.nextInt(characters.length())))
 	}
 
-	return randomString.toString()
+	return randomString.toString().toLowerCase()
 }
 
 String generateRandomEmail() {

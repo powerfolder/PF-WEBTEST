@@ -44,12 +44,12 @@ WebUI.verifyEqual(isfolderCreated, true)
 WebUI.closeBrowser()
 
 def String getRandomFolderName() { 
-	String folderName = 'Folder'+getTimestamp();
+	String folderName = 'TF1'+getTimestamp();
 	return folderName;
 }
 
 def String getTimestamp() {
 	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("dd_MMMyyyyhhmmss");
+	String formattedDate = todaysDate.format("ddMMMyyyyhhmmss");
 	return formattedDate;
 }

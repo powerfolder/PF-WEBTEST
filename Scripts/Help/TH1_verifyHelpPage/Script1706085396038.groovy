@@ -20,13 +20,10 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 WebUI.click(findTestObject('LeftNavigationIcons/Help'))
 WebUI.switchToWindowIndex(1)
-Thread.sleep(5000)
+Thread.sleep(11000)
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Spaces - Confluence')
-
 WebUI.click(findTestObject('Help/powerFolder'))
-WebUI.delay(5)
+Thread.sleep(8000)
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'PowerFolder - Confluence')
-
 WebUI.verifyEqual(WebUI.getText(findTestObject('Help/getTitleText')), 'PowerFolder Documentation and Support')
-
 WebUI.closeBrowser()

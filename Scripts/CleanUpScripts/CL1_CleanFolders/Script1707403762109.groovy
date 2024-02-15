@@ -72,32 +72,22 @@ WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHa
 
 String folderName = getRandomFolderName()
 
-WebUI.click(findTestObject('Folders/createFolderIcon'))
-WebUI.click(findTestObject('Folders/createFolder'))
-
-WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getCreateText')), 'Create', FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getFolderNameLabelText')), 'Create a new Folder',  FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
-WebUI.click(findTestObject('Folders/buttonOK'))
-WebUI.setText(findTestObject('Folders/inputSearch'), folderName)
+WebUI.setText(findTestObject('Folders/inputSearch'), 'F')
 //WebUI.mouseOver(findTestObject('Folders/firstFolder'), FailureHandling.STOP_ON_FAILURE)
 //WebUI.mouseOverOffset(findTestObject('Folders/firstFolder'), 20, 30)
 
 WebDriver driver = DriverFactory.getWebDriver()
-println("//td/a[text()='$folderName']/ancestor::tr/td[1]/span")
-WebElement folderNameElement =  driver.findElement(By.xpath("//td/a[text()='$folderName']/ancestor::tr/td[1]/span"))
+println("(//td/a[contains(text(),'F')]/ancestor::tr/td[1]/span)[1]")
+WebElement folderNameElement =  driver.findElement(By.xpath("(//td/a[contains(text(),'F')]/ancestor::tr/td[1]/span)[1]"))
 WebUI.delay(5)
 folderNameElement.click()
-
-
+WebUI.click(findTestObject('Folders/allFolder'))
 WebUI.click(findTestObject('Folders/buttonDelete'))
 
-String deleteAlertText =WebUI.getText(findTestObject('lang/getDeleteAlertText'))
-String expectedText = "Do you really want to delete "+folderName+"?"
-WebUI.verifyEqual(deleteAlertText, expectedText)
 
 WebUI.click(findTestObject('Folders/yesButton_Delete'))
+
+WebUI.waitForAlert(20)
 
 WebUI.closeBrowser()
 

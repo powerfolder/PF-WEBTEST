@@ -48,9 +48,8 @@ WebElement buttonCreateLink = 	WebUiCommonHelper.findWebElement(findTestObject('
 WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(buttonCreateLink))
 
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Can read'))
-WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
-
-WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
+//WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
+//WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
 
 
 WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'),	'3')
@@ -78,7 +77,7 @@ assert WebUI.waitForElementVisible(findTestObject('Page_Link - PowerFolder/div_P
 
 WebUI.click(findTestObject('Page_Link - PowerFolder/buttonSave'))
 
-WebUI.closeBrowser()
+//WebUI.closeBrowser()
 
 
 def String getRandomFolderName() {

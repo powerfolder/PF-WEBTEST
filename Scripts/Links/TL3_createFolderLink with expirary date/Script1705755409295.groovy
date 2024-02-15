@@ -5,7 +5,6 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import static org.apache.commons.lang.StringUtils.isNotBlank
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
-
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -47,7 +46,7 @@ WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_
 WebUI.waitForElementClickable(findTestObject('Links/buttonCreateLink'), 30, FailureHandling.CONTINUE_ON_FAILURE)
 WebElement buttonCreateLink = 	WebUiCommonHelper.findWebElement(findTestObject('Links/buttonCreateLink'),30)
 WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(buttonCreateLink))
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Can read'))
+//WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Can read'))
 WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
 WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
 WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'), 	'1')
@@ -55,7 +54,7 @@ WebUI.delay(10)
 WebUI.click(findTestObject('SettingsPopUp/buttonSave'))
 
 WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
-TimeUnit.MINUTES.sleep(3);
+TimeUnit.MINUTES.sleep(2);
 WebUI.executeJavaScript('window.open();', [])
 WebUI.switchToWindowIndex(1)
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)

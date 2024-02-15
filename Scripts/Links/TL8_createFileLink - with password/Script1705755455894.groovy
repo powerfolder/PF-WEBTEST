@@ -66,11 +66,6 @@ WebUI.click(findTestObject('Links/buttonCreateLink'))
 WebUI.waitForElementClickable(findTestObject('Links/buttonCreateLink'), 30, FailureHandling.CONTINUE_ON_FAILURE)
 WebElement buttonCreateLink = 	WebUiCommonHelper.findWebElement(findTestObject('Links/buttonCreateLink'),30)
 WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(buttonCreateLink))
-
-WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
-
-WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
-
 WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'),	'3')
 WebUI.setText(findTestObject('Page_Link - PowerFolder/lang_Password required'), 'Alexa@131190')
 WebUI.delay(10)
@@ -90,7 +85,6 @@ WebUI.setText(findTestObject('Page_Link - PowerFolder/inputPassword'), 'Alexa@13
 
 WebUI.click(findTestObject('Page_Link - PowerFolder/buttonOK'))
 
-
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
 WebUI.closeBrowser()
@@ -105,14 +99,14 @@ def WebElement findShareButton(String fileName) {
 
 def String getTimestamp() {
 	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	String formattedDate = todaysDate.format("ddMMMyyyyhhmmss");
 	return formattedDate;
 }
 
 
 
 def String getRandomFolderName() {
-	String folderName = 'Folder'+getTimestamp();
+	String folderName = 'FD'+getTimestamp();
 	return folderName;
 	
 }

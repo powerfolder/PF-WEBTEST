@@ -76,15 +76,15 @@ WebUI.click(findTestObject('Organization/AddMembers'))
 WebUI.click(findTestObject('Organization/AddMemberButton'))
 WebUI.click(findTestObject('Organization/SaveButton'))
 //WebUI.click(findTestObject('Organization/CloseMemberButton'))
-WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyOrganizationName')), 'AutomationTest',  FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyOrganizationName')), 'TO5AutomationOrg',  FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.delay(10)
 WebUI.click(findTestObject('Organization/SelectCreatedOrganization'))
 WebUI.click(findTestObject('Organization/Deletebutton'))
 WebUI.delay(3)
 if(!lan.equals('GERMAN')) {
-WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerfiyDeleteMsg')), 'Do you really want to delete AutomationTest with all members and folders?',  FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerfiyDeleteMsg')), 'Do you really want to delete TO5AutomationOrg with all members and folders?',  FailureHandling.CONTINUE_ON_FAILURE)
 }else {
-	WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerfiyDeleteMsg')), 'Möchten Sie wirklich AutomationTest mit allen Mitgliedern und Ordnern löschen?',  FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerfiyDeleteMsg')), 'Möchten Sie wirklich TO5AutomationOrg mit allen Mitgliedern und Ordnern löschen?',  FailureHandling.CONTINUE_ON_FAILURE)
 	
 }
 WebUI.click(findTestObject('Organization/SelectYesButton'))
