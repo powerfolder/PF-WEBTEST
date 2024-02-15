@@ -24,8 +24,7 @@ import java.awt.Toolkit
 import java.awt.datatransfer.DataFlavor
 import java.nio.file.Path;
 import java.nio.file.Files;
-
-
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
 
@@ -34,8 +33,6 @@ String folderName = getRandomFolderName()
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 
-WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getCreateText')), 'Create', FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getFolderNameLabelText')), 'Create a new Folder',  FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.setText(findTestObject('Folders/inputFolderName'),folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
@@ -107,7 +104,6 @@ WebElement input =  driver.findElement(By.xpath("//input[@id='upload_input_files
 
 WebUI.uploadFile(findTestObject('Page_Link - PowerFolder/span_Add file'), file.toAbsolutePath().toString())
 WebUI.uploadFile(findTestObject('Object Repository/Page_Link - PowerFolder/span_Add file'), file.toAbsolutePath().toString())
-
 
 WebUI.click(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Upload_1'))
 

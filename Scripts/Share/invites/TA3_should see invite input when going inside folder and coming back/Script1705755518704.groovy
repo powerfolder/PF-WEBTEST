@@ -69,27 +69,27 @@ WebUI.click(findTestObject('Folders/buttonOK'))
 WebElement btn = findShareButton(folderName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-WebUI.click(findTestObject('getLInk/closeDialog'))
+WebUI.click(findTestObject('Links/closeDialog'))
 
 WebUI.back()
 btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-boolean isElementPresent = WebUI.verifyElementPresent(findTestObject('getLInk/buttonCreateLink'), 10)
+boolean isElementPresent = WebUI.verifyElementPresent(findTestObject('Links/buttonCreateLink'), 10)
 
 assert isElementPresent
 
-boolean isVisible = WebUI.verifyElementVisible(findTestObject('getLInk/buttonCreateLink'))
+boolean isVisible = WebUI.verifyElementVisible(findTestObject('Links/buttonCreateLink'))
 
 assert isVisible
 
 
- isElementPresent = WebUI.verifyElementPresent(findTestObject('getLInk/buttonCreateLink'), 10)
+ isElementPresent = WebUI.verifyElementPresent(findTestObject('Links/buttonCreateLink'), 10)
 
 assert isElementPresent
 
- isVisible = WebUI.verifyElementVisible(findTestObject('getLInk/buttonCreateLink'))
+ isVisible = WebUI.verifyElementVisible(findTestObject('Links/buttonCreateLink'))
 
 assert isVisible
 
