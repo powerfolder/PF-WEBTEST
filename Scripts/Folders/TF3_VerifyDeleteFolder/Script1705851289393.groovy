@@ -53,7 +53,6 @@ import java.nio.file.Files;
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
 String folderName = getRandomFolderName()
-
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 

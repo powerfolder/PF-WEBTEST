@@ -53,7 +53,7 @@ WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
 WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
 
 
-WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_Link versioning settings_pica_link_ma_ffd855'),	'3')
+WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'),	'3')
 WebUI.setText(findTestObject('Page_Link - PowerFolder/lang_Password required'), 'Alexa@131190')
 
 WebUI.delay(10)

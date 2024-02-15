@@ -4,6 +4,7 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import static org.apache.commons.lang.StringUtils.isNotBlank
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
@@ -25,6 +26,9 @@ import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
 import java.util.concurrent.TimeUnit as TimeUnit
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
+import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 String folderName = getRandomFolderName()
@@ -40,46 +44,33 @@ WebElement btn =findShareButton(folderName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 WebUI.click(findTestObject('Folders/createLink'))
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Save (1)'))
-
-WebUI.click(findTestObject('getLInk/buttonCreateLink'))
-
+WebUI.waitForElementClickable(findTestObject('getLInk/buttonCreateLink'), 30, FailureHandling.CONTINUE_ON_FAILURE)
+WebElement buttonCreateLink = 	WebUiCommonHelper.findWebElement(findTestObject('getLInk/buttonCreateLink'),30)
+WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(buttonCreateLink))
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Can read'))
 WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
-
 WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
-
-
-WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_Link versioning settings_pica_link_ma_ffd855'),
-	'0')
-
-
+WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'), 	'1')
 WebUI.delay(10)
-
 WebUI.click(findTestObject('SettingsPopUp/buttonSave'))
 
 WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
-
-
-TimeUnit.MINUTES.sleep(2);
-
+TimeUnit.MINUTES.sleep(3);
+WebUI.executeJavaScript('window.open();', [])
+WebUI.switchToWindowIndex(1)
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
 
 WebUI.navigateToUrl(my_clipboard)
 
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
-WebUI.click(findTestObject('Share/buttonCloseDownloadLimit'), FailureHandling.OPTIONAL)
-
-WebUI.click(findTestObject('getLInk/qrcode'))
-
-WebUI.verifyElementVisible(findTestObject('getLInk/qrCodeImage'))
-
-WebUI.click(findTestObject('closeModel'))
+WebUI.click(findTestObject('Page_Folders - PowerFolder/closeExpiredAlert'))
+WebUI.verifyElementPresent(findTestObject('lang/expiredlinkText'), 30)
 WebUI.closeBrowser()
 
 
 def String getRandomFolderName() {
-	String folderName = 'Folder'+getTimestamp();
+	String folderName = 'TL3FL'+getTimestamp();
 	return folderName;
 }
 def WebElement findShareButton(String fileName) {
@@ -89,6 +80,6 @@ def WebElement findShareButton(String fileName) {
 
 def String getTimestamp() {
 	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
+	String formattedDate = todaysDate.format("ddMMMyyyyhhmmss");
 	return formattedDate;
 }

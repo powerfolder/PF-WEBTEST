@@ -49,7 +49,7 @@ WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
 WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
 
 
-WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_Link versioning settings_pica_link_ma_ffd855'),
+WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'),
 	'0')
 
 

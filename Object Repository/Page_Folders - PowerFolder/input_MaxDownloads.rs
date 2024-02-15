@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Link versioning settings_pica_link_ma_ffd855</name>
+   <name>input_MaxDownloads</name>
    <tag></tag>
    <elementGuidId>1748173c-3c10-4343-bf96-ba1942bcf4ef</elementGuidId>
    <selectorCollection>
@@ -22,6 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
+      <webElementGuid>8d3376fa-197c-4763-b6ca-59555233529c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,6 +30,7 @@
       <name>id</name>
       <type>Main</type>
       <value>pica_link_max_downloads</value>
+      <webElementGuid>8aac701f-0dfb-45f5-b1a3-232c481db1c0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,6 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control</value>
+      <webElementGuid>bc14cf76-4d51-43e4-8e18-2b2ab7627b96</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -43,6 +46,7 @@
       <name>type</name>
       <type>Main</type>
       <value>number</value>
+      <webElementGuid>ff8d3bdd-854f-4f5b-8a75-0b58b08f0c46</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,6 +54,7 @@
       <name>min</name>
       <type>Main</type>
       <value>0</value>
+      <webElementGuid>4803ecb6-45b8-485a-ac2a-bb13caa85bb5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,6 +62,7 @@
       <name>data-placeholder</name>
       <type>Main</type>
       <value>placeholder_maximum_downloads</value>
+      <webElementGuid>837edbc0-6b57-4fb6-b2a5-35ea56021e85</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -64,6 +70,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Max allowed downloads</value>
+      <webElementGuid>60f48e78-d9a9-4934-ab40-e7255ec203d5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -71,6 +78,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_link_max_downloads&quot;)</value>
+      <webElementGuid>a998c647-6219-4a62-9196-77a25a9c6087</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,6 +86,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='pica_link_max_downloads']</value>
+      <webElementGuid>635969f7-fced-43fe-b170-01ca5fbef149</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +94,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_link_dialog']/div/div/div[2]/div[2]/input</value>
+      <webElementGuid>db0546f5-8520-444c-9a7e-198e7ff8b2ef</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,6 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/input</value>
+      <webElementGuid>1f181a93-4e9d-4953-a317-aa2bfa22fe5a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -99,5 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'pica_link_max_downloads' and @type = 'number' and @placeholder = 'Max allowed downloads']</value>
+      <webElementGuid>22b491b0-4187-44bf-a7cc-cf34e24b21e9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
