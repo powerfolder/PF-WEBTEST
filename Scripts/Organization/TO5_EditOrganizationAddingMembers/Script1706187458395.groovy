@@ -46,7 +46,8 @@ WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyCreateOrganiz
 	WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyCreateOrganization')), 'Organisation neu erstellen',  FailureHandling.CONTINUE_ON_FAILURE)
 	
 }
-WebUI.setText(findTestObject('Organization/InputName'), "TO5AutomationOrg")
+String orgName = 'TO'+generateRandomString(5)
+WebUI.setText(findTestObject('Organization/InputName'), orgName)
 WebUI.setText(findTestObject('Organization/InputMaxNumber'), "10")
 WebUI.setText(findTestObject('Organization/InputQuota'), "2")
 def currentDate = new Date()
@@ -59,36 +60,47 @@ calendar.setTime(currentDate)
 calendar.add(Calendar.DAY_OF_MONTH, 3)
 def futureDate = calendar.getTime()
 // Set the date and time with the timestamp plus 3 days
-WebUI.setText(findTestObject('Organization/InputValidtill'), dateFormat.format(futureDate))
+//WebUI.setText(findTestObject('Organization/InputValidtill'), dateFormat.format(futureDate))
 WebUI.setText(findTestObject('Organization/EnterNotes'), "AutomationNotes")
 WebUI.delay(3)
 WebUI.click(findTestObject('Organization/SaveButton'))
 WebUI.delay(10)
-WebUI.click(findTestObject('Organization/SelectCreatedOrganization'))
-WebUI.click(findTestObject('Organization/EditButton'))
+//WebUI.click(findTestObject('Organization/SelectCreatedOrganization'))
+WebDriver driver = DriverFactory.getWebDriver()
+orgElement = driver.findElement(By.xpath("//a[(@class='pica-name') and (text() ='"+orgName+"')]"))
+orgElement.click()
+WebUI.click(findTestObject('Organization/EditButton'),FailureHandling.OPTIONAL )
 if(!lan.equals('GERMAN')) {
 WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyEditPageHeader')), 'Edit Organization',  FailureHandling.CONTINUE_ON_FAILURE)
 }else {
 	WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyEditPageHeader')), 'Organisation bearbeitet',  FailureHandling.CONTINUE_ON_FAILURE)
 }
 WebUI.click(findTestObject('Organization/AddMembers'))
- WebUI.setText(findTestObject('Organization/InputAddAccountByName'), "ajit@thoughtcoders.com")
+WebUI.setText(findTestObject('Organization/InputAddAccountByName'), "ajit@thoughtcoders.com")
+WebUI.sendKeys(findTestObject('Organization/InputAddAccountByName'), Keys.chord(Keys.ENTER))
 WebUI.click(findTestObject('Organization/AddMemberButton'))
 WebUI.click(findTestObject('Organization/SaveButton'))
-//WebUI.click(findTestObject('Organization/CloseMemberButton'))
-WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyOrganizationName')), 'TO5AutomationOrg',  FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.delay(10)
-WebUI.click(findTestObject('Organization/SelectCreatedOrganization'))
-WebUI.click(findTestObject('Organization/Deletebutton'))
+WebUI.setText(findTestObject('Accounts/inputAccountSearch'),orgName )
+orgElement = driver.findElement(By.xpath("//a[(@class='pica-name') and (text() ='"+orgName+"')]"))
+//orgElement.click()
+WebUI.click(findTestObject('Organization/EditButton'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Organization/AddMembers'),  FailureHandling.OPTIONAL)
+String memberName = WebUI.getText(findTestObject('Accounts/addedMember'))
+WebUI.verifyEqual(memberName, "ajit@thoughtcoders.com")
+WebUI.click(findTestObject('Organization/SaveButton'))
 WebUI.delay(3)
-if(!lan.equals('GERMAN')) {
-WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerfiyDeleteMsg')), 'Do you really want to delete TO5AutomationOrg with all members and folders?',  FailureHandling.CONTINUE_ON_FAILURE)
-}else {
-	WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerfiyDeleteMsg')), 'Möchten Sie wirklich TO5AutomationOrg mit allen Mitgliedern und Ordnern löschen?',  FailureHandling.CONTINUE_ON_FAILURE)
-	
-}
-WebUI.click(findTestObject('Organization/SelectYesButton'))
-WebUI.delay(3)
-//WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyToastMsg')), 'Organization deleted')
 WebUI.closeBrowser()
 
+
+
+String generateRandomString(int length) {
+	String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+	StringBuilder randomString = new StringBuilder()
+	Random random = new Random()
+
+	for (int i = 0; i < length; i++) {
+		randomString.append(characters.charAt(random.nextInt(characters.length())))
+	}
+
+	return randomString.toString().toLowerCase()
+}

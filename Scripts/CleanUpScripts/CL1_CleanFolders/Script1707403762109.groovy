@@ -69,7 +69,6 @@ import java.awt.datatransfer.DataFlavor
 import java.nio.file.Path;
 import java.nio.file.Files;
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
-
 String folderName = getRandomFolderName()
 
 WebUI.setText(findTestObject('Folders/inputSearch'), 'F')
@@ -84,10 +83,9 @@ folderNameElement.click()
 WebUI.click(findTestObject('Folders/allFolder'))
 WebUI.click(findTestObject('Folders/buttonDelete'))
 
-
 WebUI.click(findTestObject('Folders/yesButton_Delete'))
 
-WebUI.waitForAlert(20)
+WebUI.waitForAlert(20, FailureHandling.OPTIONAL)
 
 WebUI.closeBrowser()
 

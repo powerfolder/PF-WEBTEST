@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>InputTillDate</name>
+   <name>loginSubmit</name>
    <tag></tag>
-   <elementGuidId>f446a4de-0b35-4a41-8f7e-8aaaccbea5bb</elementGuidId>
+   <elementGuidId>52b3f881-6f55-400e-8657-0a068f4534ad</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//input[@id='pica_account_valid_till'])[1]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//input[@id='login_submit']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

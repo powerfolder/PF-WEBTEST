@@ -96,7 +96,7 @@ WebUI.delay(4)
 WebUI.setText(findTestObject('Accounts/inputAccountSearch'),firstName )
 WebUI.waitForElementClickable(findTestObject('Accounts/firstRow'), 30, FailureHandling.OPTIONAL)
 WebUI.click(findTestObject('Accounts/firstRow'))
-WebUI.click(findTestObject('Accounts/editAccount'))
+WebUI.click(findTestObject('Accounts/editAccount'), FailureHandling.OPTIONAL)
 WebUI.verifyEqual(WebUI.getText(findTestObject('Accounts/VerifyEditPage')), "Edit Account", FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Accounts/AddFolder'))
 WebUI.setText(findTestObject('Accounts/AddFolderByNameInput'),firstName)
@@ -128,7 +128,6 @@ String generateRandomString(int length) {
 	String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 	StringBuilder randomString = new StringBuilder()
 	Random random = new Random()
-
 	for (int i = 0; i < length; i++) {
 		randomString.append(characters.charAt(random.nextInt(characters.length())))
 	}

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>InputTillDate</name>
+   <name>userProfileIcon</name>
    <tag></tag>
-   <elementGuidId>f446a4de-0b35-4a41-8f7e-8aaaccbea5bb</elementGuidId>
+   <elementGuidId>80098dd4-3769-4fba-8170-93e37c4d7666</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//input[@id='pica_account_valid_till'])[1]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//span[@class='glyphicons glyphicons-user pica-glyph']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

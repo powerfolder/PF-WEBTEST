@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>InputTillDate</name>
+   <name>documentationLink</name>
    <tag></tag>
-   <elementGuidId>f446a4de-0b35-4a41-8f7e-8aaaccbea5bb</elementGuidId>
+   <elementGuidId>db2c62cb-342a-4ff3-b0cf-dc40186c6a34</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//input[@id='pica_account_valid_till'])[1]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//*[@name='label_documentation']/ancestor::a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

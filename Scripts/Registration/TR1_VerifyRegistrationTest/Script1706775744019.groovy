@@ -32,7 +32,7 @@ WebUI.click(findTestObject('Registration/ClickOnRegisterNewAccount'))
 String emailId = generateRandomEmail()
 String firstName = generateRandomString(4)+'Test'
 String lastName = generateRandomString(4)+'Test'
-WebUI.setText(findTestObject('Registration/EnterEmail'), emailId)
+WebUI.setText(findTestObject('Registration/inputEmail'), emailId)
 WebUI.setText(findTestObject('Registration/EnterFirstName'), firstName)
 WebUI.setText(findTestObject('Registration/EnterLastName'), lastName)
 WebUI.setText(findTestObject('Registration/EnterPassword'), "Alexa@1311900")
