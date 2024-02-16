@@ -41,9 +41,10 @@ WebUI.setText(findTestObject('Groups/inputGroupName'), "Group_${ -> folderName }
 
 WebUI.click(findTestObject('Groups/buttonSave'))
 
-WebUI.click(findTestObject('LeftNavigationIcons/folders'))
+WebUI.refresh()
 
-Thread.sleep(5000)
+Thread.sleep(7000)
+WebUI.click(findTestObject('LeftNavigationIcons/folders'))
 
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 
