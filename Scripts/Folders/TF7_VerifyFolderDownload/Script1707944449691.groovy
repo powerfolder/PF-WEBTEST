@@ -50,8 +50,6 @@ WebUI.setText(findTestObject('Folders/inputSearch'), folderName)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-println("//td/a[text()='$folderName']/ancestor::tr/td[1]/span")
-
 WebElement folderNameElement = driver.findElement(By.xpath("//td/a[text()='$folderName']/ancestor::tr/td[1]/span"))
 
 WebUI.delay(5)
@@ -62,23 +60,23 @@ WebUI.click(findTestObject('Folders/downloadLink'))
 
 String parentWindow = driver.getWindowHandle()
 
-JavascriptExecutor jsExecutor = ((driver) as JavascriptExecutor)
+JavascriptExecutor jsExecutor = ((JavascriptExecutor) driver)
 
 jsExecutor.executeScript('window.open()')
 
 Set<String> allWinowHandles = driver.getWindowHandles()
 
 for (String winHandle : allWinowHandles) {
-    if (!(winHandle.equals(parentWindow))) {
-        driver.switchTo().window(winHandle)
-    }
+	if (!(winHandle.equals(parentWindow))) {
+		driver.switchTo().window(winHandle)
+	}
 }
 
 WebUI.delay(5)
 
 driver.get('chrome://downloads')
 
-JavascriptExecutor downloadWindowExecutor = ((driver) as JavascriptExecutor)
+JavascriptExecutor downloadWindowExecutor = ((JavascriptExecutor) driver)
 
 String fileName = ((downloadWindowExecutor.executeScript('return document.querySelector(\'downloads-manager\').shadowRoot.querySelector(\'#downloadsList downloads-item\').shadowRoot.querySelector(\'div#content #file-link\').text')) as String)
 
@@ -91,15 +89,15 @@ WebUI.verifyEqual(fileName, folderName+'.zip')
 WebUI.closeBrowser()
 
 String getRandomFolderName() {
-    String folderName = 'FDTF7' + getTimestamp()
+	String folderName = 'FDTF7' + getTimestamp()
 
-    return folderName
+	return folderName
 }
 
 String getTimestamp() {
-    Date todaysDate = new Date()
+	Date todaysDate = new Date()
 
-    String formattedDate = todaysDate.format('dd_MMM_yyyy_hh_mm_ss')
+	String formattedDate = todaysDate.format('dd_MMM_yyyy_hh_mm_ss')
 
-    return formattedDate
+	return formattedDate
 }
