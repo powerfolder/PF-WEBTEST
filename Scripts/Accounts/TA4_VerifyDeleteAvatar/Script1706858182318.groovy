@@ -102,7 +102,7 @@ ClickOnAccount.click()
 } catch(Exception e) {
 	
 	WebElement ClickOnAccount =  driver.findElement(By.xpath("//a[@class='pica-name' and @data-original-title ='$emailId']"))
-	JavascriptExecutor executor = ((driver) as JavascriptExecutor)
+	JavascriptExecutor executor = (JavascriptExecutor) driver;
     executor.executeScript('arguments[0].click()', ClickOnAccount)
 }
 WebUI.click(findTestObject('Accounts/editAccount'), FailureHandling.OPTIONAL)
