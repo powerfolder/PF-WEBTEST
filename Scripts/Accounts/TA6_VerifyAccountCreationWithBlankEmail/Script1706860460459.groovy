@@ -50,22 +50,6 @@ import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 String firstName = generateRandomString(8)
 String lastName = generateRandomString(8)
 String emailId = generateRandomEmail()

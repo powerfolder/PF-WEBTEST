@@ -21,7 +21,6 @@ WebUI.setText(findTestObject('Accounts/InputLastName'),lastName)
 WebUI.setText(findTestObject('Accounts/InputPhoneNo'),phone)
 WebUI.setText(findTestObject('Accounts/InputQuota'),"5")
 WebUI.selectOptionByLabel(findTestObject('Accounts/SelectLanguageDropDrown'), 'English', false)
-
 WebUI.click(findTestObject('Accounts/SaveButton'))
 WebUI.delay(10)
 WebUI.setText(findTestObject('Accounts/inputAccountSearch'),firstName )
