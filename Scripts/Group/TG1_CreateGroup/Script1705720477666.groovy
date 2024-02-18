@@ -56,7 +56,7 @@ for (int i = 1; i <= 1; i++) {
 
     WebElement folder = driver.findElement(By.xpath(xpath))
 
-    JavascriptExecutor executor = ((driver) as JavascriptExecutor)
+  JavascriptExecutor executor = (JavascriptExecutor) driver;
 
     executor.executeScript('arguments[0].click();', folder) //folder.click()
 }

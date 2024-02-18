@@ -43,8 +43,6 @@ WebUI.waitForElementClickable(findTestObject('Links/buttonCreateLink'), 30, Fail
 WebElement buttonCreateLink = 	WebUiCommonHelper.findWebElement(findTestObject('Links/buttonCreateLink'),30)
 WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(buttonCreateLink))
 
-
-
 WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'),'2')
 
 WebUI.delay(10)

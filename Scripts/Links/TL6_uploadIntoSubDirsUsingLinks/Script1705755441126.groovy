@@ -44,7 +44,6 @@ WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
 
-
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Folders/createDocument'))
