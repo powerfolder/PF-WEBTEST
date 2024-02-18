@@ -34,7 +34,7 @@ List<WebElement> groups = WebUI.findWebElements(group, 10)
 int size = groups.size()
 if(size>3) {
 	WebDriver driver = DriverFactory.getWebDriver()
-	WebElement firstRow = driver.findElement(By.xpath("(//table[@id='groups_table']//tr//span[@class='glyphicons glyphicons-group pica-glyph'])[1]"))
+	WebElement firstRow = driver.findElement(By.xpath("(//table[@id='groups_table']//tr//span[@class='glyphicons glyphicons-group pica-glyph']/ancestor::td)[1]"))
 	Actions action = new Actions(driver)
 	action.moveToElement(firstRow)
 	firstRow.click()
