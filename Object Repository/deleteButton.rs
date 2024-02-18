@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>DeleteButton</name>
+   <name>deleteButton</name>
    <tag></tag>
-   <elementGuidId>2567bba7-3c6d-4091-8233-1bf953743915</elementGuidId>
+   <elementGuidId>543defe9-18cb-4ac1-ab8d-8fcfeef7077a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='accounts_delete']/span</value>
+         <value>//a[@class='pica-table-selection-multi pica-glyph glyphicons glyphicons-bin']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

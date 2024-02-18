@@ -6,12 +6,11 @@
    <elementGuidId>599af27f-996a-4afa-b51c-4c389b8054f5</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='pica_confirmation_dialog']//*[text()='Yes']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//lang[@name='button_yes']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -12,122 +12,73 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>8df3aff0-536f-4a85-b356-c07b0765171e</testSuiteGuid>
    <testCaseLink>
-      <guid>427e14f8-0657-455c-aa9f-f89f15d4edc0</guid>
+      <guid>f37889cc-6799-434b-b4c3-078ada112ef8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA10_AddFolder</testCaseId>
+      <testCaseId>Test Cases/Links/TL10_createFileLink - with expire date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>34a75c1b-61f8-4c46-8bc1-ac6fbdfbbbaf</guid>
+      <guid>c9769eeb-3bdf-4984-8d09-f3efb5c13324</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA11_AddFolderManageVerify</testCaseId>
+      <testCaseId>Test Cases/Links/TL1_createDirLink</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c799b6a3-9774-4ddd-9adf-b6e71c864f39</guid>
+      <guid>d75f66bd-60df-4075-85a9-a31b58c4d673</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA12_VerifyGrantAccessNowButton</testCaseId>
+      <testCaseId>Test Cases/Links/TL2_createFileLink</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>bc533e77-8f65-4ffe-91c6-aadd25d10bcf</guid>
+      <guid>3eaf9db5-e9fd-41a0-ae95-6a71195ba952</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA13_VerifyResetNowButton</testCaseId>
+      <testCaseId>Test Cases/Links/TL3_createFolderLink with expirary date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b2889594-420f-445c-a6fc-c52b9a413636</guid>
+      <guid>9b64ff98-888d-4613-badd-e657be41298f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA14_VerifyBlockNowButton</testCaseId>
+      <testCaseId>Test Cases/Links/TL4_createFolderLink - with password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d7197816-c886-44fc-a9fc-2d1b27947cc0</guid>
+      <guid>493e6241-2d63-4dff-a8ae-3fae8a55d1b1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA15_SelectEnglishLanguage</testCaseId>
+      <testCaseId>Test Cases/Links/TL5_createFolderLink - with max downloads</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>be8f9c7b-6a23-455b-9781-af73320a7697</guid>
+      <guid>a4ac6094-c92e-4360-a4fd-b67efd776871</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA16_SelectGermanLanguage</testCaseId>
+      <testCaseId>Test Cases/Links/TL6_uploadIntoSubDirsUsingLinks</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>abe3c00e-aef6-4af3-b997-5c1f22783477</guid>
+      <guid>18b007af-af63-4df1-9a7d-db01f69abb20</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA17_VerifyDeactiveAccountButton</testCaseId>
+      <testCaseId>Test Cases/Links/TL7_createFolderLink</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a6973fe2-6345-4c8d-9773-b80e74d23981</guid>
+      <guid>00d99765-9f5a-40a7-a5e6-24fb222a308b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA1_VerifyAccountCreation</testCaseId>
+      <testCaseId>Test Cases/Links/TL8_createFileLink - with password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7e3c4ce4-61b6-4f49-a486-43ceff1b6c4c</guid>
+      <guid>6e9acdfd-9b2d-4233-b7de-ffd3f8601847</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA2_EditAccount</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d67d614a-b74d-4bac-954b-bb6314fd2b78</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA3_VerfiyAvtar</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>85b5f2ab-2e81-4451-8bd1-b292cabe585e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA4_VerifyDeleteAvatar</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>4295e8be-0202-41a5-b12d-3d02e115d8a7</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA5_VerfiyPasswordPolicies</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>59ef8ae1-a854-4876-8dc7-d9d5eb0102a3</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA6_VerifyAccountCreationWithBlankEmail</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b150570d-0c8f-4758-947a-fac2413d665b</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA7_VerfiyExportAccount</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>27f2b788-e44b-4ed4-989c-5bf6ee2c6bda</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA8_VerifyImportAccounts</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e51eb852-b0ea-4a53-93c0-1e6fd450b544</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA9_AddAdditionalEmails</testCaseId>
+      <testCaseId>Test Cases/Links/TL9_createFileLink - with max downloads</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

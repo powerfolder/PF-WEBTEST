@@ -73,6 +73,7 @@ import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Date
+import org.openqa.selenium.JavascriptExecutor;
 String firstName = generateRandomString(8)
 String lastName = generateRandomString(8)
 String emailId = generateRandomEmail()
@@ -94,8 +95,8 @@ WebUI.click(findTestObject('Accounts/ResetNotButton'))
 WebUI.click(findTestObject('Accounts/SaveButton'))
 WebUI.delay(4)
 WebUI.setText(findTestObject('Accounts/inputAccountSearch'),firstName )
-WebUI.waitForElementClickable(findTestObject('Accounts/firstRow'), 30, FailureHandling.OPTIONAL)
-WebUI.click(findTestObject('Accounts/firstRow'), FailureHandling.OPTIONAL)
+WebUI.waitForElementClickable(findTestObject('Accounts/checkAccount'), 30, FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Accounts/checkAccount'), FailureHandling.OPTIONAL)
 WebUI.click(findTestObject('Accounts/DeleteButton'))
 WebUI.delay(4)
 String actualText = WebUI.getText(findTestObject('Accounts/VerifyDeleteMsg'))

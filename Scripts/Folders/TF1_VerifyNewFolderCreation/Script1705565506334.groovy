@@ -16,40 +16,62 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.By as By
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
+
+WebUI.callTestCase(findTestCase('CleanUpScripts/CL1_CleanFolders'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
+
 WebUI.click(findTestObject('Folders/createFolderIcon'))
+
 WebUI.click(findTestObject('Folders/createFolder'))
+
 String folderName = getRandomFolderName()
+
 String lan = GlobalVariable.LANG
-if(!lan.equals('GERMAN')) {
-WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getCreateText')), 'Create', FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getFolderNameLabelText')), 'Create a new Folder',  FailureHandling.CONTINUE_ON_FAILURE)
-}else {
-	WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getCreateText')), 'Erstellen', FailureHandling.CONTINUE_ON_FAILURE)
-	WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getFolderNameLabelText')), 'Ordner neu erstellen',  FailureHandling.CONTINUE_ON_FAILURE)
+
+if (!(lan.equals('GERMAN'))) {
+    WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getCreateText')), 'Create', FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getFolderNameLabelText')), 'Create a new Folder', FailureHandling.CONTINUE_ON_FAILURE)
+} else {
+    WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getCreateText')), 'Erstellen', FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getFolderNameLabelText')), 'Ordner neu erstellen', FailureHandling.CONTINUE_ON_FAILURE)
 }
+
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.setText(findTestObject('Folders/inputFolderName'),folderName)
+
+WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
+
 WebUI.click(findTestObject('Folders/buttonOK'))
+
 WebUI.setText(findTestObject('Folders/inputSearch'), folderName)
+
 WebDriver driver = DriverFactory.getWebDriver()
-WebElement folder =  driver.findElement(By.xpath("//td/a[contains(text(),'$folderName')]"))
+
+WebElement folder = driver.findElement(By.xpath("//td/a[contains(text(),'$folderName')]"))
+
 boolean isfolderCreated = folder.isDisplayed()
+
 WebUI.verifyEqual(isfolderCreated, true)
+
 WebUI.closeBrowser()
 
-def String getRandomFolderName() { 
-	String folderName = 'TF1'+getTimestamp();
-	return folderName;
+String getRandomFolderName() {
+    String folderName = 'TF1' + getTimestamp()
+
+    return folderName
 }
 
-def String getTimestamp() {
-	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("ddMMMyyyyhhmmss");
-	return formattedDate;
+String getTimestamp() {
+    Date todaysDate = new Date()
+
+    String formattedDate = todaysDate.format('ddMMMyyyyhhmmss')
+
+    return formattedDate
 }
+

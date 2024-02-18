@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>DeleteButton</name>
+   <name>folderRows</name>
    <tag></tag>
-   <elementGuidId>2567bba7-3c6d-4091-8233-1bf953743915</elementGuidId>
+   <elementGuidId>1d197d46-fafb-4c9c-a521-412ea4c32a11</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='accounts_delete']/span</value>
+         <value>//table[@id='files_files_table']//tr</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

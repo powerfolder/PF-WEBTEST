@@ -74,6 +74,7 @@ import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Date
+import org.openqa.selenium.JavascriptExecutor;
 String firstName = generateRandomString(8)
 String lastName = generateRandomString(8)
 String emailId = generateRandomEmail()
@@ -93,10 +94,16 @@ WebUI.setText(findTestObject('Accounts/InputQuota'),"5")
 WebUI.click(findTestObject('Accounts/SaveButton'))
 WebUI.delay(4)
 WebDriver driver = DriverFactory.getWebDriver()
-WebElement ClickOnAccount =  driver.findElement(By.xpath("(//a[normalize-space()='$firstName $lastName'])[1]/ancestor::td"))
-WebUI.delay(5)
+try {
+WebElement ClickOnAccount =  driver.findElement(By.partialLinkText(firstName))
+WebUI.delay(2)
 ClickOnAccount.click()
-WebUI.click(findTestObject('Accounts/editAccount'), FailureHandling.OPTIONAL)
+} catch(Exception e) {
+	
+	WebElement ClickOnAccount =  driver.findElement(By.xpath("//a[@class='pica-name' and @data-original-title ='$emailId']"))
+	JavascriptExecutor executor = ((driver) as JavascriptExecutor)
+    executor.executeScript('arguments[0].click()', ClickOnAccount)
+}
 WebUI.verifyEqual(WebUI.getText(findTestObject('Accounts/VerifyEditPage')), "Edit Account", FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Accounts/ClickOnAvatar'))
 WebUI.click(findTestObject('Accounts/ChangeButton'))
@@ -108,9 +115,9 @@ WebUI.click(findTestObject('Accounts/CloseButton'))
 WebUI.click(findTestObject('Accounts/SaveButton'))
 WebUI.setText(findTestObject('Accounts/inputAccountSearch'),firstName )
 WebUI.delay(10)
-WebElement AccountName =  driver.findElement(By.xpath("(//a[normalize-space()='$firstName $lastName'])[1]/ancestor::tr/td[1]/img"))
-WebUI.delay(2)
-AccountName.click()
+WebUI.waitForElementClickable(findTestObject('Accounts/checkAccount'), 30, FailureHandling.OPTIONAL)
+WebUI.scrollToElement(findTestObject('Accounts/checkAccount'), 30, FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Accounts/checkAccount'))
 WebUI.click(findTestObject('Accounts/DeleteButton'))
 WebUI.delay(4)
 

@@ -21,21 +21,25 @@ import org.openqa.selenium.By as By
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
+
+
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 WebUI.click(findTestObject('LeftNavigationIcons/account'))
-WebUI.setText(findTestObject('Accounts/inputAccountSearch'), 'TA')
-WebDriver driver = DriverFactory.getWebDriver()
-println("(//td/a[contains(text(),'F')]/ancestor::tr/td[1]/span)[1]")
-WebElement accountHolder =  driver.findElement(By.xpath("(//td/a[contains(text(),'TA')]/ancestor::tr/td[1]/span)[1]"))
-WebUI.delay(5)
-Actions action = new Actions(driver)
-action.moveToElement(accountHolder)
-accountHolder.click()
-WebUI.click(findTestObject('Folders/allFolder'))
-WebUI.click(findTestObject('Accounts/accountDelete'))
-WebUI.click(findTestObject('Folders/yesButton_Delete'))
 
-WebUI.waitForAlert(20, FailureHandling.OPTIONAL)
-WebUI.delay(10)
+TestObject account = findTestObject('Accounts/acountsRows')
+List<WebElement> accounts= WebUI.findWebElements(account, 10)
+int size = accounts.size()
+if(size>3) {
+	WebDriver driver = DriverFactory.getWebDriver()
+	WebElement firstRow = driver.findElement(By.xpath("(//table[@id='accounts_table']//tr//span[@class='glyphicons glyphicons-user pica-glyph'])[1]"))
+	Actions action = new Actions(driver)
+	action.moveToElement(firstRow)
+	firstRow.click()
+	driver.findElement(By.xpath("//table[@id='accounts_table']//th//span[@class='glyphicons glyphicons-unchecked pica-glyph']")).click()
+	WebUI.click(findTestObject('Accounts/DeleteButton'))
 
+	WebUI.click(findTestObject('Folders/yesButton_Delete'))
+	WebUI.delay(30)
+	WebUI.waitForAlert(20, FailureHandling.OPTIONAL)
+}
 WebUI.closeBrowser()

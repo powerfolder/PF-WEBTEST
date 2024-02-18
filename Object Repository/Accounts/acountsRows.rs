@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>firstRow</name>
+   <name>acountsRows</name>
    <tag></tag>
-   <elementGuidId>428d23a6-eec1-447a-bd80-c33a4700cac7</elementGuidId>
+   <elementGuidId>2a9b1ad8-f505-4cb4-b828-a565d02b577a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//table[@id='accounts_table']//tbody/tr)[1]</value>
+         <value>//table[@id='accounts_table']//tr</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

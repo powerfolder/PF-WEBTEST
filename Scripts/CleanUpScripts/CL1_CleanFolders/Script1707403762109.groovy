@@ -68,36 +68,28 @@ import java.awt.Toolkit
 import java.awt.datatransfer.DataFlavor
 import java.nio.file.Path;
 import java.nio.file.Files;
+import org.openqa.selenium.interactions.Actions
+import org.openqa.selenium.By as By
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
-String folderName = getRandomFolderName()
 
-WebUI.setText(findTestObject('Folders/inputSearch'), 'F')
-//WebUI.mouseOver(findTestObject('Folders/firstFolder'), FailureHandling.STOP_ON_FAILURE)
-//WebUI.mouseOverOffset(findTestObject('Folders/firstFolder'), 20, 30)
 
-WebDriver driver = DriverFactory.getWebDriver()
-println("(//td/a[contains(text(),'F')]/ancestor::tr/td[1]/span)[1]")
-WebElement folderNameElement =  driver.findElement(By.xpath("(//td/a[contains(text(),'F')]/ancestor::tr/td[1]/span)[1]"))
-WebUI.delay(5)
-folderNameElement.click()
-WebUI.click(findTestObject('Folders/allFolder'))
-WebUI.click(findTestObject('Folders/buttonDelete'))
+TestObject folder = findTestObject('Folders/folderRows')
+List<WebElement> folders= WebUI.findWebElements(folder, 10)
+int size = folders.size()
+if(size>3) {
+	WebDriver driver = DriverFactory.getWebDriver()
+	WebElement firstRow = driver.findElement(By.xpath("(//table[@id='files_files_table']//tr/td/span[@class='glyphicons glyphicons-folder-open pica-glyph'])[1]"))
+	Actions action = new Actions(driver)
+	action.moveToElement(firstRow)
+	firstRow.click()
+	driver.findElement(By.xpath("//table[@id='files_files_table']//th//span[@class='glyphicons glyphicons-unchecked pica-glyph']")).click()
+	WebUI.click(findTestObject('Folders/deleteFolder'))
 
-WebUI.click(findTestObject('Folders/yesButton_Delete'))
-
-WebUI.waitForAlert(20, FailureHandling.OPTIONAL)
-
+	WebUI.click(findTestObject('Folders/yesButton_Delete'))
+	WebUI.delay(30)
+	WebUI.waitForAlert(20, FailureHandling.OPTIONAL)
+}
 WebUI.closeBrowser()
-
-
-def String getRandomFolderName() {
-	String folderName = 'Folder'+getTimestamp();
-	return folderName;
-	
-}
-
-def String getTimestamp() {
-	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
-	return formattedDate;
-}

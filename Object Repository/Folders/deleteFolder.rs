@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>DeleteButton</name>
+   <name>deleteFolder</name>
    <tag></tag>
-   <elementGuidId>2567bba7-3c6d-4091-8233-1bf953743915</elementGuidId>
+   <elementGuidId>7818ffc3-1169-4da4-b133-3187abaeb5d1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='accounts_delete']/span</value>
+         <value>//a[@class='pica-table-selection-multi files-ui-delete']/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
