@@ -46,13 +46,9 @@ WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebElement btn = findShareButton(folderName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
 boolean isElementPresent = WebUI.verifyElementPresent(findTestObject('Links/buttonCreateLink'), 10)
-
 assert isElementPresent
-
 boolean isVisible = WebUI.verifyElementVisible(findTestObject('Links/buttonCreateLink'))
-
 assert isVisible
 WebUI.closeBrowser()
 

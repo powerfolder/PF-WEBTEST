@@ -48,8 +48,7 @@ WebUI.delay(2)
 WebUI.click(findTestObject('Accounts/SelectCreateNew'))
 WebUI.delay(4)
 WebUI.click(findTestObject('Accounts/SelectFolder'))
-WebUI.click(findTestObject('Accounts/ManageSaveButton'))
-
+WebUI.click(findTestObject('Accounts/SaveButton'))
 WebUI.delay(2)
 String actualText = WebUI.getText(findTestObject('Accounts/VerifyAlertMsg'))
 String expectedText = "Account Updated"
@@ -57,7 +56,6 @@ WebUI.delay(10)
 WebUI.setText(findTestObject('Accounts/inputAccountSearch'),firstName )
 WebUI.waitForElementClickable(findTestObject('Accounts/checkAccount'), 30, FailureHandling.OPTIONAL)
 WebUI.click(findTestObject('Accounts/checkAccount'))
-
 WebUI.click(findTestObject('Accounts/DeleteButton'))
 WebUI.delay(4)
 String actualDeletedText = WebUI.getText(findTestObject('Accounts/VerifyDeleteMsg'))

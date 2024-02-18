@@ -45,45 +45,29 @@ import java.awt.datatransfer.DataFlavor
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
 String folderName =getRandomGroupName()
-
-
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
-
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
-
-
 WebDriver driver = DriverFactory.getWebDriver()
 WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$folderName')]"))
-
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
-
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createDirectoryIcon'))
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
-
 WebElement btn = findShareButton(folderName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
 WebUI.click(findTestObject('Links/closeDialog'))
-
 WebUI.back()
 btn = findShareButton(folderName)
-
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
 boolean isElementPresent = WebUI.verifyElementPresent(findTestObject('Links/buttonCreateLink'), 10)
-
 assert isElementPresent
-
 boolean isVisible = WebUI.verifyElementVisible(findTestObject('Links/buttonCreateLink'))
-
 assert isVisible
-
 
  isElementPresent = WebUI.verifyElementPresent(findTestObject('Links/buttonCreateLink'), 10)
 

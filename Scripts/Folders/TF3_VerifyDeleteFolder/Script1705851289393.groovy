@@ -71,8 +71,6 @@ println("//td/a[text()='$folderName']/ancestor::tr/td[1]/span")
 WebElement folderNameElement =  driver.findElement(By.xpath("//td/a[text()='$folderName']/ancestor::tr/td[1]/span"))
 WebUI.delay(5)
 folderNameElement.click()
-
-
 WebUI.click(findTestObject('Folders/buttonDelete'))
 
 String deleteAlertText =WebUI.getText(findTestObject('lang/getDeleteAlertText'))
