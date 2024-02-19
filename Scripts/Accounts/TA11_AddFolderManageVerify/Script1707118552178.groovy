@@ -1,9 +1,12 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
+
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -29,6 +32,7 @@ WebUI.setText(findTestObject('Accounts/InputQuota'),"5")
 WebUI.click(findTestObject('Accounts/SaveButton'))
 WebUI.delay(4)
 WebUI.setText(findTestObject('Accounts/inputAccountSearch'),firstName )
+WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
 WebDriver driver = DriverFactory.getWebDriver()
 try {
 WebElement ClickOnAccount =  driver.findElement(By.partialLinkText(firstName))
@@ -54,6 +58,7 @@ String actualText = WebUI.getText(findTestObject('Accounts/VerifyAlertMsg'))
 String expectedText = "Account Updated"
 WebUI.delay(10)
 WebUI.setText(findTestObject('Accounts/inputAccountSearch'),firstName )
+
 WebUI.waitForElementClickable(findTestObject('Accounts/checkAccount'), 30, FailureHandling.OPTIONAL)
 WebUI.click(findTestObject('Accounts/checkAccount'))
 WebUI.click(findTestObject('Accounts/DeleteButton'))

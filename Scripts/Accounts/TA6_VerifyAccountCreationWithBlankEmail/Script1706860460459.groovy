@@ -61,13 +61,11 @@ WebUI.click(findTestObject('LeftNavigationIcons/account'))
 WebUI.click(findTestObject('Accounts/CreateButton'))
 WebUI.click(findTestObject('Accounts/ClickCreateAccount'))
 WebUI.setText(findTestObject('Accounts/InputUserOrEmail'),"")
-
 WebUI.setText(findTestObject('Accounts/InputPassword'),"Alexa@131190")
 WebUI.setText(findTestObject('Accounts/InputFirstName'),firstName)
 WebUI.setText(findTestObject('Accounts/InputLastName'),lastName)
 WebUI.setText(findTestObject('Accounts/InputPhoneNo'),phone)
 WebUI.setText(findTestObject('Accounts/InputQuota'),"5")
-
 WebUI.click(findTestObject('Accounts/SaveButton'))
 WebUI.delay(4)
 String actualText = WebUI.getText(findTestObject('Accounts/VerifyAlertMsg'))

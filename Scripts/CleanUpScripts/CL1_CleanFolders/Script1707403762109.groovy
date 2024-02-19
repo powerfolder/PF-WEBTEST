@@ -81,7 +81,7 @@ List<WebElement> folders= WebUI.findWebElements(folder, 10)
 int size = folders.size()
 if(size>3) {
 	WebDriver driver = DriverFactory.getWebDriver()
-	WebElement firstRow = driver.findElement(By.xpath("(//table[@id='files_files_table']//tr/td/span[@class='glyphicons glyphicons-folder-open pica-glyph'])[1]"))
+	WebElement firstRow = driver.findElement(By.xpath("(//table[@id='files_files_table']//tr/td/span[@class='glyphicons glyphicons-folder-open pica-glyph']/ancestor::td)[1]"))
 	Actions action = new Actions(driver)
 	action.moveToElement(firstRow)
 	firstRow.click()

@@ -71,7 +71,6 @@ WebUI.setText(findTestObject('Organization/InputgroupName'), "automation")
 WebUI.delay(3)
 WebUI.click(findTestObject('Organization/SelectGroup'))
 WebUI.click(findTestObject('Organization/SaveButton'))
-
 WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyOrganizationName')), 'AutomationTest',  FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.delay(10)
 WebUI.click(findTestObject('Organization/SelectCreatedOrganization'))

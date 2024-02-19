@@ -1,12 +1,16 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static org.apache.commons.lang.StringUtils.isNotBlank
+
 import java.awt.Toolkit
 import java.awt.datatransfer.DataFlavor
 import java.util.concurrent.TimeUnit
+
 import org.openqa.selenium.By
+import org.openqa.selenium.Keys
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
+
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
@@ -25,17 +29,15 @@ WebUI.click(findTestObject('Folders/buttonOK'))
 
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 
+WebUI.setText(findTestObject('Accounts/inputAccountSearch'), folderName)
+WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
 
 WebDriver driver = DriverFactory.getWebDriver()
+
 WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$folderName')]"))
-
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
-
-
 WebUI.click(findTestObject('Folders/createFolderIcon'))
-
 WebUI.click(findTestObject('Folders/createDocument'))
-
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
@@ -53,8 +55,6 @@ WebElement buttonCreateLink = 	WebUiCommonHelper.findWebElement(findTestObject('
 WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(buttonCreateLink))
 
 WebUI.click(findTestObject('Folders/button_SaveSettings'))
-
-
 WebUI.click(findTestObject('Folders/buttonCopyToClipboard'))
 
 WebUI.click(findTestObject('Folders/cogWheelSettings'))
@@ -88,7 +88,7 @@ WebUI.back()
 assert WebUI.waitForElementVisible(findTestObject('Folders/expireTabTitle'),2)
 assert  isNotBlank(WebUI.getText(findTestObject('Folders/expireTabTitle')))
 
-WebUI.closeBrowser()
+//WebUI.closeBrowser()
 
 
 def String getRandomFolderName() {

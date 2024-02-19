@@ -18,7 +18,6 @@ WebUI.click(findTestObject('LeftNavigationIcons/account'))
 WebUI.click(findTestObject('Accounts/CreateButton'))
 WebUI.click(findTestObject('Accounts/ClickCreateAccount'))
 WebUI.setText(findTestObject('Accounts/InputUserOrEmail'),emailId)
-
 WebUI.setText(findTestObject('Accounts/InputPassword'),"Alexa@131190")
 WebUI.setText(findTestObject('Accounts/InputFirstName'),firstName)
 WebUI.setText(findTestObject('Accounts/InputLastName'),lastName)

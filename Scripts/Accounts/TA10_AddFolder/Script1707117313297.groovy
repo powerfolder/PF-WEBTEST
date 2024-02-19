@@ -3,6 +3,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 
@@ -29,6 +30,7 @@ WebUI.setText(findTestObject('Accounts/InputQuota'),"5")
 WebUI.click(findTestObject('Accounts/SaveButton'))
 WebUI.delay(10)
 WebUI.setText(findTestObject('Accounts/inputAccountSearch'),firstName )
+WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
 WebDriver driver = DriverFactory.getWebDriver()
 try {
 WebElement ClickOnAccount =  driver.findElement(By.partialLinkText(firstName))

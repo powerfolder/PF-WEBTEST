@@ -31,7 +31,7 @@ List<WebElement> accounts= WebUI.findWebElements(account, 10)
 int size = accounts.size()
 if(size>3) {
 	WebDriver driver = DriverFactory.getWebDriver()
-	WebElement firstRow = driver.findElement(By.xpath("(//table[@id='accounts_table']//tr//span[@class='glyphicons glyphicons-user pica-glyph'])[1]"))
+	WebElement firstRow = driver.findElement(By.xpath("(//table[@id='accounts_table']//tr//span[@class='glyphicons glyphicons-user pica-glyph']/ancestor::td)[1]"))
 	Actions action = new Actions(driver)
 	action.moveToElement(firstRow)
 	firstRow.click()

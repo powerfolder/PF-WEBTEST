@@ -93,6 +93,7 @@ WebUI.setText(findTestObject('Accounts/InputQuota'),"5")
 WebUI.click(findTestObject('Accounts/SaveButton'))
 WebUI.delay(4)
 WebUI.setText(findTestObject('Accounts/inputAccountSearch'),firstName )
+WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
 WebDriver driver = DriverFactory.getWebDriver()
 try {
 WebElement ClickOnAccount =  driver.findElement(By.partialLinkText(firstName))

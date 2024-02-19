@@ -27,7 +27,6 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
 String folderName =getRandomFolderName()
-
 WebUI.click(findTestObject('Organization/SelectOrganization'))
 WebUI.click(findTestObject('Organization/DropDownToggle'))
 WebUI.click(findTestObject('Organization/CreateOrganization'))
@@ -36,7 +35,6 @@ if(!lan.equals('GERMAN')) {
 WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyCreateOrganization')), 'Create a new Organization',  FailureHandling.CONTINUE_ON_FAILURE)
 }else {
 	WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyCreateOrganization')), 'Organisation neu erstellen',  FailureHandling.CONTINUE_ON_FAILURE)
-	
 }
 WebUI.delay(3)
 WebUI.setText(findTestObject('Organization/InputName'), folderName)

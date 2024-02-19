@@ -70,7 +70,6 @@ if(!lan.equals('GERMAN')) {
 WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerfiyDeleteMsg')), 'Do you really want to delete AutomationTest with all members and folders?',  FailureHandling.CONTINUE_ON_FAILURE)
 }else {
 	WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerfiyDeleteMsg')), 'Möchten Sie wirklich AutomationTest mit allen Mitgliedern und Ordnern löschen?',  FailureHandling.CONTINUE_ON_FAILURE)
-	
 }
 WebUI.click(findTestObject('Organization/SelectYesButton'))
 WebUI.delay(3)

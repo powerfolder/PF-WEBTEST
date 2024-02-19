@@ -91,8 +91,6 @@ WebUI.click(findTestObject('Organization/SaveButton'))
 WebUI.delay(3)
 WebUI.closeBrowser()
 
-
-
 String generateRandomString(int length) {
 	String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 	StringBuilder randomString = new StringBuilder()

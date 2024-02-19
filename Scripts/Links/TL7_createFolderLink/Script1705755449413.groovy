@@ -33,16 +33,14 @@ WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandli
 WebUI.setText(findTestObject('Folders/inputFolderName'),folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
+WebUI.setText(findTestObject('Accounts/inputAccountSearch'), folderName)
+WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
-
 WebElement btn = findShareButton(folderName)
-
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
 WebUI.waitForElementClickable(findTestObject('Links/buttonCreateLink'), 30, FailureHandling.CONTINUE_ON_FAILURE)
 WebElement buttonCreateLink = 	WebUiCommonHelper.findWebElement(findTestObject('Links/buttonCreateLink'),30)
 WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(buttonCreateLink))
-
 WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'),'2')
 
 WebUI.delay(10)

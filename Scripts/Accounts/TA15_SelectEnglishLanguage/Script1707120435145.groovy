@@ -1,5 +1,8 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+import org.openqa.selenium.Keys
+
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
@@ -14,7 +17,6 @@ WebUI.click(findTestObject('LeftNavigationIcons/account'))
 WebUI.click(findTestObject('Accounts/CreateButton'))
 WebUI.click(findTestObject('Accounts/ClickCreateAccount'))
 WebUI.setText(findTestObject('Accounts/InputUserOrEmail'),emailId)
-
 WebUI.setText(findTestObject('Accounts/InputPassword'),"Alexa@131190")
 WebUI.setText(findTestObject('Accounts/InputFirstName'),firstName)
 WebUI.setText(findTestObject('Accounts/InputLastName'),lastName)
@@ -24,6 +26,7 @@ WebUI.selectOptionByLabel(findTestObject('Accounts/SelectLanguageDropDrown'), 'E
 WebUI.click(findTestObject('Accounts/SaveButton'))
 WebUI.delay(10)
 WebUI.setText(findTestObject('Accounts/inputAccountSearch'),firstName )
+WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
 WebUI.waitForElementClickable(findTestObject('Accounts/checkAccount'), 30, FailureHandling.OPTIONAL)
 WebUI.click(findTestObject('Accounts/checkAccount'))
 WebUI.click(findTestObject('Accounts/DeleteButton'))

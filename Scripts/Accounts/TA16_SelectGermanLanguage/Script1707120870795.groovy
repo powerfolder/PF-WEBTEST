@@ -93,6 +93,7 @@ WebUI.selectOptionByLabel(findTestObject('Accounts/SelectLanguageDropDrown'), 'G
 WebUI.click(findTestObject('Accounts/SaveButton'))
 WebUI.delay(10)
 WebUI.setText(findTestObject('Accounts/inputAccountSearch'),firstName )
+WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
 WebUI.waitForElementClickable(findTestObject('Accounts/checkAccount'), 30, FailureHandling.OPTIONAL)
 WebUI.click(findTestObject('Accounts/checkAccount'))
 WebUI.click(findTestObject('Accounts/DeleteButton'))
