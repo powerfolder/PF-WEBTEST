@@ -20,7 +20,12 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
+<<<<<<< HEAD:Scripts/Folders/TF2_ValidateFolderCreationUsingKeyboardSubmit/Script1705720307011.groovy
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
+=======
+// Generate a random string of length 5
+String folderN = RandomStringUtils.randomAlphanumeric(5)
+>>>>>>> 5a66913 ( add serer test):Scripts/Folders/Create Folder modifed/Script1705435917209.groovy
 
 originfolderCount = getFoldersCount()
 String folderName =  getRandomFolderName()
@@ -42,6 +47,7 @@ int getFoldersCount() {
 
     WebElement tbody = driver.findElement(By.xpath("//table[@id='files_files_table']/tbody"))
 
+<<<<<<< HEAD:Scripts/Folders/TF2_ValidateFolderCreationUsingKeyboardSubmit/Script1705720307011.groovy
     assert tbody
 
     List<WebElement> rows_table = tbody.findElements(By.tagName('tr'))
@@ -68,3 +74,8 @@ def String getTimestamp() {
 	String formattedDate = todaysDate.format("ddMMMyyyyhhmmss");
 	return formattedDate;
 }
+=======
+WebElement folderElement = CustomKeywords.'folder.FolderHelper.findFolder'(GlobalVariable.folderN)
+
+assert folderElement != null
+>>>>>>> 5a66913 ( add serer test):Scripts/Folders/Create Folder modifed/Script1705435917209.groovy

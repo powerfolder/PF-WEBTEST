@@ -24,4 +24,9 @@
       <initValue>'ENG'</initValue>
       <name>LANG</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>GroupName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

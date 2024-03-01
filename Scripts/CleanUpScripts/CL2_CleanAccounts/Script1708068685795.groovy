@@ -22,6 +22,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
+<<<<<<< HEAD:Scripts/CleanUpScripts/CL2_CleanAccounts/Script1708068685795.groovy
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 WebUI.click(findTestObject('LeftNavigationIcons/account'))
@@ -37,6 +38,17 @@ if(size>3) {
 	firstRow.click()
 	driver.findElement(By.xpath("//table[@id='accounts_table']//th//span[@class='glyphicons glyphicons-unchecked pica-glyph']")).click()
 	WebUI.click(findTestObject('Accounts/DeleteButton'))
+=======
+WebElement btn = CustomKeywords.'folder.FolderHelper.findFolder'(folderName)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+
+WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/lang_Delete'))
+
+WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/lang_Yes'))
+
+WebUI.verifyElementVisible(findTestObject('Page_Folders - PowerFolder/span_Folder deleted'), FailureHandling.STOP_ON_FAILURE)
+>>>>>>> 5a66913 ( add serer test):Scripts/Folders/Delete Folder/Script1705597488766.groovy
 
 	WebUI.click(findTestObject('Folders/yesButton_Delete'))
 	WebUI.delay(30)

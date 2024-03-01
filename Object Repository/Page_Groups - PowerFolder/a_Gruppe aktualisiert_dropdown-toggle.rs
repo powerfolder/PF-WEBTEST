@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#pica_action_normal > div.pica-inline.dropdown > a.dropdown-toggle</value>
+         <value>a.pica-table-selection-multi.pica-glyph.glyphicons.glyphicons-bin</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_action_normal']/div[2]/a</value>
+         <value>//table[@id='groups_table']/thead/tr/th[3]/div/a[2]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,13 +22,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
+      <webElementGuid>b2e89c20-e365-4709-bca0-bf884500d885</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>dropdown-toggle</value>
+      <value>pica-table-selection-multi pica-glyph glyphicons glyphicons-bin</value>
+      <webElementGuid>6d12b3c9-ee45-415a-b707-e3978b1fac3a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,6 +38,7 @@
       <name>data-toggle</name>
       <type>Main</type>
       <value>dropdown</value>
+      <webElementGuid>e2267c54-31f8-4a44-b7ec-6ca5c365b627</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -43,20 +46,39 @@
       <name>aria-expanded</name>
       <type>Main</type>
       <value>false</value>
+      <webElementGuid>87ee2773-7a79-4475-bd1e-2e4c613019ab</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pica_action_normal&quot;)/div[@class=&quot;pica-inline dropdown&quot;]/a[@class=&quot;dropdown-toggle&quot;]</value>
+      <value>id(&quot;groups_table&quot;)/thead[1]/tr[1]/th[@class=&quot;text-right&quot;]/div[@class=&quot;pica-table-selection-context pica-inline text-right&quot;]/a[@class=&quot;pica-table-selection-multi groups_delete&quot;]/a[@class=&quot;pica-table-selection-multi pica-glyph glyphicons glyphicons-bin&quot;]</value>
+      <webElementGuid>d2b5cba7-2009-40b1-8570-d2748c7ed4a5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
+      <value>//table[@id='groups_table']/thead/tr/th[3]/div/a[2]/a</value>
+      <webElementGuid>94c731e4-4955-415a-b46c-9d35b99b6b96</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a[2]/a</value>
+      <webElementGuid>74e7a0c8-2d44-4348-8d69-4c1ee60147b9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
       <value>//div[@id='pica_action_normal']/div[2]/a</value>
+      <webElementGuid>1c37f9ce-3574-47f0-a9ca-c78b2f819128</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -64,6 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Gruppe aktualisiert'])[1]/following::a[1]</value>
+      <webElementGuid>de1d641f-890b-45d5-aa69-68d502561074</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,6 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Gruppe gelöscht'])[1]/following::a[1]</value>
+      <webElementGuid>2762c0ae-26c2-4d0d-ba09-f135b6cf7e34</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,6 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='admin'])[2]/preceding::a[1]</value>
+      <webElementGuid>44d9bc35-3d09-4d8a-999c-428330ad0ba5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Mein Konto'])[2]/preceding::a[1]</value>
+      <webElementGuid>24531cef-66dc-407c-b3da-70e9d136acf1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,5 +118,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div[2]/a</value>
+      <webElementGuid>d836a739-b987-4fe8-a5a4-b604249f89dd</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

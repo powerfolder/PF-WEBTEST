@@ -12,10 +12,17 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>190caa95-6415-4676-bd72-f6777d17a989</testSuiteGuid>
    <testCaseLink>
+<<<<<<< HEAD
       <guid>72390b57-c713-4ac8-a5fe-1c6866121fd1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Group/TG1_CreateGroup</testCaseId>
+=======
+      <guid>73b90503-8e51-4d14-b59e-73d7451cf2c0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/New Account/Create and delete Account</testCaseId>
+>>>>>>> 5a66913 ( add serer test)
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -330,6 +337,7 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+<<<<<<< HEAD
       <guid>20e1120e-f86b-457a-b0e1-f64acb94ce59</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -337,6 +345,8 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+=======
+>>>>>>> 5a66913 ( add serer test)
       <guid>9e34da6b-ee2b-485b-a81a-9f6ac62fed6a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

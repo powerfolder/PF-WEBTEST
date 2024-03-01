@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "1114450CCECA62308D9C45A6C591E16B",
+  "keywordClasses": [
+    {
+      "name": "group.GroupFinder",
+      "keywordMethods": [
+        {
+          "name": "findGroup",
+          "parameters": [
+            {
+              "name": "groupName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
