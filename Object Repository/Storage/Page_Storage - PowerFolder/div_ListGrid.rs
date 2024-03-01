@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_ListGrid</name>
+   <tag></tag>
+   <elementGuidId>5713ddd5-3905-4087-b45f-959ff3222963</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.pica-vmtable-toggle.pica-inline.pica-table-selection-hide.dropdown.open</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='storages_table']/thead[2]/tr/th[7]/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>c88c9156-81ba-44db-82d0-5c4ceb24e758</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-vmtable-toggle pica-inline pica-table-selection-hide dropdown open</value>
+      <webElementGuid>cbd4c9bd-d9dc-4597-a884-83b48f3b6c32</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>ListGrid</value>
+      <webElementGuid>97573a59-bd3d-42ff-b06c-ccdf95dc045b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;storages_table&quot;)/thead[2]/tr[1]/th[@class=&quot;pica-icon-column&quot;]/div[@class=&quot;pica-vmtable-toggle pica-inline pica-table-selection-hide dropdown open&quot;]</value>
+      <webElementGuid>c21732c1-e52d-420d-87a8-04edd34889f5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='storages_table']/thead[2]/tr/th[7]/div</value>
+      <webElementGuid>0e3e4f32-077e-4e67-b24b-d221129927dc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Notes'])[1]/following::div[1]</value>
+      <webElementGuid>131529cd-6b25-40bd-9329-813e8ceda715</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Folders'])[2]/following::div[1]</value>
+      <webElementGuid>f0b205a0-9682-4681-b57d-f07b5d0a83db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//th[7]/div</value>
+      <webElementGuid>6a1af0c6-04e6-4758-9dd3-59b6464a6777</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'ListGrid' or . = 'ListGrid')]</value>
+      <webElementGuid>70e5b4ac-9dec-43c0-a5fb-9b3635eb3f37</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

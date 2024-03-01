@@ -29,4 +29,9 @@
       <initValue>''</initValue>
       <name>GroupName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>StorageName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

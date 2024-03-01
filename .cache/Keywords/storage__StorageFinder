@@ -1,0 +1,29 @@
+{
+  "keywordFileContentHash": "721F7424D65574EE4FB9737BF6937EEF",
+  "keywordClasses": [
+    {
+      "name": "storage.GroupFinder",
+      "keywordMethods": [
+        {
+          "name": "findStorage",
+          "parameters": [
+            {
+              "name": "storageName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

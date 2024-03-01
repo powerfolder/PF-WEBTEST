@@ -17,23 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
+WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('LeftNavigationIcons/Help'))
+WebUI.click(findTestObject('Object Repository/Storage/Page_Servers - PowerFolder/lang_Storage'))
 
-WebUI.switchToWindowIndex(1)
+WebUI.click(findTestObject('Storage/Page_Storage - PowerFolder/Storage_menu'))
 
-Thread.sleep(11000)
+WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/a_List'))
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Spaces - Confluence')
-
-WebUI.click(findTestObject('Help/powerFolder'))
-
-Thread.sleep(8000)
-
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'PowerFolder - Confluence')
-
-WebUI.verifyEqual(WebUI.getText(findTestObject('Help/getTitleText')), 'PowerFolder Documentation and Support')
+WebUI.delay(2)
 
 WebUI.closeBrowser()
 

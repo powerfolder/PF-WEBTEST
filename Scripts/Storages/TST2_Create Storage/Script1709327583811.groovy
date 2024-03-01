@@ -16,24 +16,26 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 
-WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
+WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('LeftNavigationIcons/Help'))
+String storageName = 'Storage_' + RandomStringUtils.randomNumeric(4)
 
-WebUI.switchToWindowIndex(1)
+GlobalVariable.StorageName = storageName
 
-Thread.sleep(11000)
+WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/lang_Storage'))
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Spaces - Confluence')
+WebUI.click(findTestObject('Storage/Page_Storage - PowerFolder/a_Delete_pica-glyph-box'))
 
-WebUI.click(findTestObject('Help/powerFolder'))
+WebUI.setText(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/input_Create a new Storage_pencil'), 
+    GlobalVariable.StorageName)
 
-Thread.sleep(8000)
+WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/button_Ok'))
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'PowerFolder - Confluence')
+def btn = CustomKeywords.'storage.GroupFinder.findStorage'(storageName)
 
-WebUI.verifyEqual(WebUI.getText(findTestObject('Help/getTitleText')), 'PowerFolder Documentation and Support')
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-WebUI.closeBrowser()
+assert storageName != null
 

@@ -23,13 +23,13 @@ WebUI.click(findTestObject('Object Repository/servers/Page_Servers - PowerFolder
 
 WebUI.click(findTestObject('servers/Page_Servers - PowerFolder/td_tspfdd05'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/servers/Page_Servers - PowerFolder/span_tspfdd05'), 'tspfdd05')
+WebUI.verifyElementVisible(findTestObject('Object Repository/servers/Page_Servers - PowerFolder/span_tspfdd05'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/servers/Page_Servers - PowerFolder/span_Restart_pica-table-selection-multi pic_96fda4'))
 
 WebUI.click(findTestObject('Object Repository/servers/Page_Servers - PowerFolder/button_Yes'))
 
-WebUI.verifyElementPresent(findTestObject('servers/Page_Servers - PowerFolder/td_tspfdd05'), 1)
+WebUI.verifyElementVisible(findTestObject('servers/Page_Servers - PowerFolder/td_tspfdd05'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 

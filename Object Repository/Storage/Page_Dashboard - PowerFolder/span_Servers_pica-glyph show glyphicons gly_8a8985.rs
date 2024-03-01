@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Servers_pica-glyph show glyphicons gly_8a8985</name>
+   <tag></tag>
+   <elementGuidId>63488914-452e-4582-9263-c7dabc63aa0b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.pica-glyph.show.glyphicons.glyphicons-floppy-disk</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_menu']/table/tbody/tr[11]/td/a/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>b8e53569-157a-49e3-ac92-1c10ddb1599d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-glyph show glyphicons glyphicons-floppy-disk</value>
+      <webElementGuid>c3b65d4b-a7b8-42c9-bc4c-b270f1262d10</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_menu&quot;)/table[1]/tbody[1]/tr[11]/td[@class=&quot;text-center&quot;]/a[1]/span[@class=&quot;pica-glyph show glyphicons glyphicons-floppy-disk&quot;]</value>
+      <webElementGuid>d87ab12e-5655-4b9f-bb2f-1ee06905ad77</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_menu']/table/tbody/tr[11]/td/a/span</value>
+      <webElementGuid>b41c15d3-c082-4d53-9532-879fdd146e03</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[11]/td/a/span</value>
+      <webElementGuid>79013c73-6e90-4b60-943d-b67e61967a08</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

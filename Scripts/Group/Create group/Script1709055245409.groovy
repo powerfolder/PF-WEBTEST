@@ -18,6 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 
+
 WebUI.callTestCase(findTestCase('Group/Open group menu'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Groups - PowerFolder/CSS ng'))

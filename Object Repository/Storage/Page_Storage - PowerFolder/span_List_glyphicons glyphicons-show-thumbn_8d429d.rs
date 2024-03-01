@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_List_glyphicons glyphicons-show-thumbn_8d429d</name>
+   <tag></tag>
+   <elementGuidId>5191916c-d66e-4d3c-8b33-a82430c97eab</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>a.pica-vmtable-toggle-grid > span.glyphicons.glyphicons-show-thumbnails.pica-glyph</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='storages_table']/thead[2]/tr/th[7]/div/ul/li[3]/a/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>567464c7-1f87-463a-8797-0329b8786ea5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>glyphicons glyphicons-show-thumbnails pica-glyph</value>
+      <webElementGuid>8d40ada1-3f1a-4e7f-bb75-7db166eb398b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;storages_table&quot;)/thead[2]/tr[1]/th[@class=&quot;pica-icon-column&quot;]/div[@class=&quot;pica-vmtable-toggle pica-inline pica-table-selection-hide dropdown open&quot;]/ul[@class=&quot;pica-arrow-right dropdown-menu dropdown-menu-right&quot;]/li[3]/a[@class=&quot;pica-vmtable-toggle-grid&quot;]/span[@class=&quot;glyphicons glyphicons-show-thumbnails pica-glyph&quot;]</value>
+      <webElementGuid>f3150eb5-b8fe-4c02-8de4-6b8eea98f455</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='storages_table']/thead[2]/tr/th[7]/div/ul/li[3]/a/span</value>
+      <webElementGuid>01e0dfec-12f6-44ea-af05-b2eeb83e7ba5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//th[7]/div/ul/li[3]/a/span</value>
+      <webElementGuid>8b440c90-9b83-4279-aac0-218ce67a5c7a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
