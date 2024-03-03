@@ -19,18 +19,11 @@ import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import org.openqa.selenium.WebElement as WebElement
 
-
-WebUI.callTestCase(findTestCase('Group/Create group'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Group/TGR1_CreatGroup'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebElement btn = CustomKeywords.'group.GroupFinder.findGroup'(GlobalVariable.GroupName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-WebUI.click(findTestObject('Group_Objects/Page_Groups - PowerFolder/Delete'))
-
-WebUI.click(findTestObject('Group_Objects/Page_Groups - PowerFolder/lang_Yes'))
-
-WebUI.verifyElementVisible(findTestObject('Group_Objects/Page_Groups - PowerFolder/div_Group deleted'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Group_Objects/Page_Groups - PowerFolder/Edit group'))
 

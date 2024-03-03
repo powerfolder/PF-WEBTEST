@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Grid_text-center pica-icon-column</name>
+   <tag></tag>
+   <elementGuidId>afbfda46-75ff-48d2-a91f-6af793a04aaf</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='storage_59869090']/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.text-center.pica-icon-column</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>bdf515af-9b9a-4071-9904-558fc2cb3784</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-center pica-icon-column</value>
+      <webElementGuid>617dea32-f33e-4390-8881-fe5f6a9fe6f7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;storage_59869090&quot;)/td[@class=&quot;text-center pica-icon-column&quot;]</value>
+      <webElementGuid>5a7fdf9d-4c80-4b57-9d06-403c196b1d53</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='storage_59869090']/td</value>
+      <webElementGuid>3eb6e90a-01e4-4f21-bfa7-714c7a08c8e7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Grid'])[1]/following::td[1]</value>
+      <webElementGuid>d2147840-c8c6-4d0e-838e-0e4e880b3bdf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='List'])[1]/following::td[1]</value>
+      <webElementGuid>0fcb8124-bfcd-420f-9ce7-9ed91a7ed27a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='/home/adama/storage1'])[1]/preceding::td[1]</value>
+      <webElementGuid>5fc2f827-0611-4c87-a679-6ba057157096</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[2]/preceding::td[7]</value>
+      <webElementGuid>ecd84146-6ebb-4e18-bb4d-56a056546fbf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/table/tbody/tr/td</value>
+      <webElementGuid>702488d4-25dd-4c24-a278-7df99b122d6a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

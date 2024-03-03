@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Edit group</name>
+   <name>TGR3_DeleteGroup</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>92ec8c0e-2e31-4c93-b4ba-c3ef10f7ad6e</testCaseGuid>
+   <testCaseGuid>8a295a91-3def-4395-83ef-17d0e0824329</testCaseGuid>
 </TestCaseEntity>

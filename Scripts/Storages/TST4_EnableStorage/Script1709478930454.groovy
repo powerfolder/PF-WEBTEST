@@ -16,14 +16,14 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
-import org.openqa.selenium.WebElement as WebElement
 
-WebUI.callTestCase(findTestCase('Group/Create group'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Storages/TST2_CreateStorage'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebElement btn = CustomKeywords.'group.GroupFinder.findGroup'(GlobalVariable.GroupName)
+WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/a_Enable'))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/lang_Yes'))
 
-WebUI.click(findTestObject('Group_Objects/Page_Groups - PowerFolder/Edit group'))
+WebUI.verifyElementPresent(findTestObject('Storage/Page_Storage - PowerFolder/notification_Storage enabled'), 1)
+
+WebUI.closeBrowser()
 

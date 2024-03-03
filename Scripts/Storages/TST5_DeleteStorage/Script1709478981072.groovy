@@ -18,24 +18,15 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 
-WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Storages/TST2_CreateStorage'), [:], FailureHandling.STOP_ON_FAILURE)
 
-String storageName = 'Storage_' + RandomStringUtils.randomNumeric(4)
+WebUI.delay(3)
 
-GlobalVariable.StorageName = storageName
+WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/a_Delete'))
 
-WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/lang_Storage'))
+WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/button_Yes'))
 
-WebUI.click(findTestObject('Storage/Page_Storage - PowerFolder/a_Delete_pica-glyph-box'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/span_Storage deleted'))
 
-WebUI.setText(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/input_Create a new Storage_pencil'), 
-    GlobalVariable.StorageName)
-
-WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/button_Ok'))
-
-def btn = CustomKeywords.'storage.GroupFinder.findStorage'(storageName)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
-assert storageName != null
+WebUI.closeBrowser()
 

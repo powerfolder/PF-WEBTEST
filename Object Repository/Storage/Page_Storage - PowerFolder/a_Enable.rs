@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>td_Storage</name>
+   <name>a_Enable</name>
    <tag></tag>
-   <elementGuidId>f8c920a6-8206-49a2-a151-c0c71c732d9e</elementGuidId>
+   <elementGuidId>2019ef7f-8bd1-4564-8d66-33d128443a02</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_menu']/table/tbody/tr[11]/td</value>
+         <value>//thead[@id='storage_select_header']/tr/th[3]/div[2]/a</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>tr:nth-of-type(11) > td.text-center</value>
+         <value>a.pica-table-selection-single.storages_enable</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,16 +21,16 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>td</value>
-      <webElementGuid>5eef09cc-7ca0-4f71-97a8-058e6a60e91a</webElementGuid>
+      <value>a</value>
+      <webElementGuid>ae6c105b-2671-4836-89b9-7ff49bf34381</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>text-center</value>
-      <webElementGuid>7f43fa45-aed4-4b05-81c1-54748853983b</webElementGuid>
+      <value>pica-table-selection-single storages_enable</value>
+      <webElementGuid>8f4909d3-3cfb-48b1-8fad-e0466dba0e31</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,76 +39,70 @@
       <type>Main</type>
       <value>
                         
-                            
-                            Storage
-                        
+                        Enable
                     </value>
-      <webElementGuid>553af666-b079-4a2f-8648-113366d67ff1</webElementGuid>
+      <webElementGuid>824c1b49-4e7f-447c-8c3c-128943a27882</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pica_menu&quot;)/table[1]/tbody[1]/tr[11]/td[@class=&quot;text-center&quot;]</value>
-      <webElementGuid>5e5f38fc-fcf4-4b4c-8c1c-f3de383c6ed4</webElementGuid>
+      <value>id(&quot;storage_select_header&quot;)/tr[1]/th[@class=&quot;text-right&quot;]/div[@class=&quot;pica-table-selection-context pica-inline hidden-xs text-right&quot;]/a[@class=&quot;pica-table-selection-single storages_enable&quot;]</value>
+      <webElementGuid>3bc7d6f7-cd76-46a8-8f88-cde594c0ddfb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pica_menu']/table/tbody/tr[11]/td</value>
-      <webElementGuid>039ae46c-77f4-4c8a-860f-f1091bab89f1</webElementGuid>
+      <value>//thead[@id='storage_select_header']/tr/th[3]/div[2]/a</value>
+      <webElementGuid>594127d7-f9da-462b-90cc-58b7d6333235</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Servers'])[1]/following::td[1]</value>
-      <webElementGuid>e666ebe8-d615-4037-b098-ce524cba1f7e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[1]/following::a[1]</value>
+      <webElementGuid>a2df9824-7b21-4fd4-bd2c-70432177221c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Configurations'])[1]/following::td[2]</value>
-      <webElementGuid>d56b1ed3-73bd-4ac4-8b20-3463fcde6204</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Disable'])[1]/following::a[2]</value>
+      <webElementGuid>8716f8ee-38c8-4d9d-acd8-bed6a19d4903</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Logs'])[1]/preceding::td[1]</value>
-      <webElementGuid>84841960-fa98-4a32-a0f8-113cb780523c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Disable'])[2]/preceding::a[1]</value>
+      <webElementGuid>8393b22f-020b-414b-ae01-5fe541c3755e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[11]/td</value>
-      <webElementGuid>d86180fb-9614-495d-a415-7ce72df90fb3</webElementGuid>
+      <value>//th[3]/div[2]/a</value>
+      <webElementGuid>ff417d7d-b6ce-47e7-8846-a2d65892de10</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = '
+      <value>//a[(text() = '
                         
-                            
-                            Storage
-                        
+                        Enable
                     ' or . = '
                         
-                            
-                            Storage
-                        
+                        Enable
                     ')]</value>
-      <webElementGuid>ecbed31c-4233-4d7f-a511-ca1105f5b5f2</webElementGuid>
+      <webElementGuid>f7742dba-9ee0-4b85-af0c-2acb58f68c7d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

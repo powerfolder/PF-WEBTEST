@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>th_Log out_pica-icon-column pica-table-sele_d42ab8</name>
+   <tag></tag>
+   <elementGuidId>5364d39d-1203-4759-9e78-934a25997f8f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//thead[@id='storage_select_header']/tr/th</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>th.pica-icon-column.pica-table-selection-icon</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>th</value>
+      <webElementGuid>3122b7f1-e0aa-4e2d-b300-f9e89ac7e9dd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-icon-column pica-table-selection-icon</value>
+      <webElementGuid>b87bfb62-30f3-40ec-8769-1241eb904cc5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>colspan</name>
+      <type>Main</type>
+      <value>2</value>
+      <webElementGuid>1aa80afe-926b-4bf1-916d-18ee2d503a2e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;storage_select_header&quot;)/tr[1]/th[@class=&quot;pica-icon-column pica-table-selection-icon&quot;]</value>
+      <webElementGuid>8839dce3-cf10-42f0-8a81-5c6fe8c8f70c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//thead[@id='storage_select_header']/tr/th</value>
+      <webElementGuid>2ddeea67-d784-4c40-a460-96e1d61a26a0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Log out'])[2]/following::th[1]</value>
+      <webElementGuid>6d7a67ac-0d7f-4da6-a1a8-2751be69f9a3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='My account'])[2]/following::th[1]</value>
+      <webElementGuid>9937d89c-a055-4454-9345-288ae216bac5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Deselect'])[1]/preceding::th[1]</value>
+      <webElementGuid>910f41a2-483d-44e0-a87c-bfb3550cbe39</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Enable'])[1]/preceding::th[2]</value>
+      <webElementGuid>ff461f90-736f-4b2f-8390-63c6fe3e4f46</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//th</value>
+      <webElementGuid>3e6653a8-657e-4f47-aed5-9bfb2dc0f62b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

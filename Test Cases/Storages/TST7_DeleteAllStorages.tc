@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TST3_Desactivate storage</name>
+   <name>TST7_DeleteAllStorages</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>0309320b-5e53-49df-a826-976d5ca7d5a5</testCaseGuid>
+   <testCaseGuid>07930e79-8c36-43be-b33d-b6867034be9b</testCaseGuid>
 </TestCaseEntity>

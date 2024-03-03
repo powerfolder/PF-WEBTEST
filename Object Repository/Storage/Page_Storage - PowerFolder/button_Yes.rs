@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_</name>
+   <name>button_Yes</name>
    <tag></tag>
-   <elementGuidId>3f59fbe1-29bf-4a76-a439-005e8cbd6cab</elementGuidId>
+   <elementGuidId>a0ca75ab-c672-4197-989e-ae1e64447c33</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[6]</value>
+         <value>(//button[@type='button'])[7]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#pica_confirmation_dialog > div.modal-dialog > div.modal-content > div.modal-header > button.close</value>
+         <value>#pica_confirmation_dialog > div.modal-dialog > div.modal-content > div.modal-footer > button.btn.btn-primary</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>83f44b35-765d-4ab5-b125-7bb5680996ed</webElementGuid>
+      <webElementGuid>eb67f374-fb31-43c1-8e42-bc20f28ff456</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,15 +30,15 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>a390a3b0-7bdd-4b27-beda-c413fc0004d3</webElementGuid>
+      <webElementGuid>7d4bb36a-09f4-4448-935d-ce12b7067124</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>close</value>
-      <webElementGuid>48ebf6d7-61bc-41f4-bcbb-779738244144</webElementGuid>
+      <value>btn btn-primary</value>
+      <webElementGuid>069040b7-64a8-4429-a31f-2b68c681d0c3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,86 +46,84 @@
       <name>data-dismiss</name>
       <type>Main</type>
       <value>modal</value>
-      <webElementGuid>13f3bb9f-188f-45d8-afa1-71c64e37cfde</webElementGuid>
+      <webElementGuid>f35a2c9f-e015-4270-a283-1197d25de955</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>×</value>
-      <webElementGuid>e74bfccd-19b7-4403-91b1-5df302a2037d</webElementGuid>
+      <value>
+                    Yes
+                </value>
+      <webElementGuid>ca665413-02ac-4c14-b7e3-dec0ec8cf318</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pica_confirmation_dialog&quot;)/div[@class=&quot;modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-header&quot;]/button[@class=&quot;close&quot;]</value>
-      <webElementGuid>5d9b8269-3199-44b6-bfc3-601e92d19dc7</webElementGuid>
+      <value>id(&quot;pica_confirmation_dialog&quot;)/div[@class=&quot;modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-footer&quot;]/button[@class=&quot;btn btn-primary&quot;]</value>
+      <webElementGuid>e334284f-00b8-4656-affd-d905ca7cadca</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//button[@type='button'])[6]</value>
-      <webElementGuid>b8e683ed-483a-4b52-986f-5d4b1c963d36</webElementGuid>
+      <value>(//button[@type='button'])[7]</value>
+      <webElementGuid>a46ed266-4782-4184-91c0-60b9efdd23c8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pica_confirmation_dialog']/div/div/div/button</value>
-      <webElementGuid>1afc2601-1625-4177-8cbd-93fc28a2bd47</webElementGuid>
+      <value>//div[@id='pica_confirmation_dialog']/div/div/div[3]/button</value>
+      <webElementGuid>56a21cff-8de2-471e-93f7-ef844644e344</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::button[1]</value>
-      <webElementGuid>45862c87-72ab-43c9-99b8-4d34d3cd5b87</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Do you really want to delete 6 Elements?'])[1]/following::button[1]</value>
+      <webElementGuid>8f229af5-e158-4956-9bd8-d953e3aecee0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ok'])[1]/following::button[2]</value>
-      <webElementGuid>66e4147e-0f7c-4deb-b7d7-21b6bcd72881</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[3]/following::button[1]</value>
+      <webElementGuid>86b18b2a-a3cb-455c-8c3b-bd1a121a54cf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[3]/preceding::button[1]</value>
-      <webElementGuid>7c181c46-bd64-4d00-8dda-225d5e6ff876</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Do you really want to delete /home/adama/storage1?'])[1]/preceding::button[1]</value>
-      <webElementGuid>ae5559a6-a6e3-4735-9b6e-a52c5bad2534</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[1]/preceding::button[1]</value>
+      <webElementGuid>872f93ce-edee-4231-92ac-0d57ec66bcfd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[4]/div/div/div/button</value>
-      <webElementGuid>450f8bee-e485-474e-947e-bb2156828520</webElementGuid>
+      <value>//div[4]/div/div/div[3]/button</value>
+      <webElementGuid>588c4526-4f27-45c6-a86b-b628df4babf2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//button[@type = 'button' and (text() = '×' or . = '×')]</value>
-      <webElementGuid>578350b0-8c2d-44e4-8efb-5a2335c3c86b</webElementGuid>
+      <value>//button[@type = 'button' and (text() = '
+                    Yes
+                ' or . = '
+                    Yes
+                ')]</value>
+      <webElementGuid>d6836cc3-b6d3-4a68-841b-7c48f5f7ce34</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

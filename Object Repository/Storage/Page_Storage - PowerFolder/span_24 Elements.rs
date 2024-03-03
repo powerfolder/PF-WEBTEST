@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>td_homeadamastorage1</name>
+   <name>span_24 Elements</name>
    <tag></tag>
-   <elementGuidId>1e23e865-7e58-45db-a6e7-b76edd0d9b6c</elementGuidId>
+   <elementGuidId>655728dc-ff89-4461-916f-8853f7c3c938</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//tr[@id='storage_59869090']/td[2]</value>
+         <value>//thead[@id='storage_select_header']/tr/th[2]/span</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>td.pica-overflow</value>
+         <value>th.pica-table-selection-title.pica-vmtable-only-list > span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,95 +21,87 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>td</value>
-      <webElementGuid>6ac65ade-edc3-4754-8965-e2de6126badb</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>pica-overflow</value>
-      <webElementGuid>60dac6e9-cfea-4151-a53e-3cfe77b6e1a3</webElementGuid>
+      <value>span</value>
+      <webElementGuid>b7fcdf85-35da-4dd9-a3de-cb907c88f6e4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>/home/adama/storage1</value>
-      <webElementGuid>bd769037-45da-4d6d-a4d2-13caffdbd46e</webElementGuid>
+      <value>24 Elements</value>
+      <webElementGuid>be354afd-0d30-4321-bf16-cabe58d4e625</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;storage_59869090&quot;)/td[@class=&quot;pica-overflow&quot;]</value>
-      <webElementGuid>4e40ce0d-f6cc-461c-99bd-29a98b0fb5fe</webElementGuid>
+      <value>id(&quot;storage_select_header&quot;)/tr[1]/th[@class=&quot;pica-table-selection-title pica-vmtable-only-list&quot;]/span[1]</value>
+      <webElementGuid>cc7e866a-6c02-465c-84f2-93a2b87d60ce</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='storage_59869090']/td[2]</value>
-      <webElementGuid>3b16530e-c2d1-41ce-8bfa-1b52ca0530d3</webElementGuid>
+      <value>//thead[@id='storage_select_header']/tr/th[2]/span</value>
+      <webElementGuid>36bcb367-b4a3-4c5a-ad28-f866277d3f9f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Grid'])[1]/following::td[2]</value>
-      <webElementGuid>f7a99a74-e88f-44a4-aaf5-96dae63f621e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Log out'])[2]/following::span[2]</value>
+      <webElementGuid>6436a094-0ad2-4665-a1ff-c4dc87920bd4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='List'])[1]/following::td[2]</value>
-      <webElementGuid>e9f4be9c-8dd5-48c4-9ee9-2d4e4c99011d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='My account'])[2]/following::span[3]</value>
+      <webElementGuid>cffb6d7c-7782-40b9-b43d-7cb13e3f17c0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[2]/preceding::td[6]</value>
-      <webElementGuid>c7dc68c6-a571-4666-9da0-a8c012c85022</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Deselect'])[1]/preceding::span[1]</value>
+      <webElementGuid>9f68aa20-f316-45b6-855f-44d5a5c7ea63</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ok'])[1]/preceding::td[6]</value>
-      <webElementGuid>b4d822c0-0e7f-4dbd-9e68-fe77774dc699</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Enable'])[1]/preceding::span[4]</value>
+      <webElementGuid>3898b875-6cfb-4b03-a80a-3352be5e59f5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='/home/adama/storage1']/parent::*</value>
-      <webElementGuid>13ae969e-f167-4477-aa22-17b11723c03d</webElementGuid>
+      <value>//*/text()[normalize-space(.)='24 Elements']/parent::*</value>
+      <webElementGuid>edd7f0b7-5594-482a-9e7f-bb1645e89feb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td[2]</value>
-      <webElementGuid>36cca306-a4ce-4910-9c1f-8e07f6b1cc94</webElementGuid>
+      <value>//th[2]/span</value>
+      <webElementGuid>2d757e78-04fd-45da-b818-9ef81d32b43d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = '/home/adama/storage1' or . = '/home/adama/storage1')]</value>
-      <webElementGuid>86cc2c2c-0038-4f8b-9e7b-b87392eefa1d</webElementGuid>
+      <value>//span[(text() = '24 Elements' or . = '24 Elements')]</value>
+      <webElementGuid>6699f629-ab5f-4cf9-93d1-9dbf74292c1a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

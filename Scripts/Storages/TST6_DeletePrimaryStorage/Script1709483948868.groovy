@@ -16,22 +16,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
-import org.openqa.selenium.WebElement as WebElement
 
-WebUI.callTestCase(findTestCase('Group/Create group'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebElement btn = CustomKeywords.'group.GroupFinder.findGroup'(GlobalVariable.GroupName)
+WebUI.click(findTestObject('Object Repository/Storage/Page_Dashboard - PowerFolder/td_Storage'))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/td_Grid_text-center pica-icon-column'))
 
-WebUI.click(findTestObject('Group_Objects/Page_Groups - PowerFolder/Edit group'))
-// Generate a random name
-String groupNameModified = 'Group_Modified' + RandomStringUtils.randomNumeric(4)
+WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/a_Delete'))
 
-WebUI.setText(findTestObject('Page_Groups - PowerFolder/type the changed name'), groupNameModified)
+WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/button_Yes'))
 
-WebUI.setText(findTestObject('Group_Objects/Page_Groups - PowerFolder/Note of group'), 'the name of the group has been changed')
+WebUI.verifyElementText(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/span_Unable to remove primary storage'), 
+    'Unable to remove primary storage')
 
-WebUI.click(findTestObject('Group_Objects/Page_Groups - PowerFolder/button_Save'))
+WebUI.closeBrowser()
 

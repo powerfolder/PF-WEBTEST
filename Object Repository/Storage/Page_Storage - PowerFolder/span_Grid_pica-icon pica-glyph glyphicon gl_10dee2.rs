@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_List_glyphicons glyphicons-show-thumbn_8d429d</name>
+   <name>span_Grid_pica-icon pica-glyph glyphicon gl_10dee2</name>
    <tag></tag>
    <elementGuidId>5191916c-d66e-4d3c-8b33-a82430c97eab</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>a.pica-vmtable-toggle-grid > span.glyphicons.glyphicons-show-thumbnails.pica-glyph</value>
+         <key>XPATH</key>
+         <value>//tr[@id='storage_59869090']/td/span</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='storages_table']/thead[2]/tr/th[7]/div/ul/li[3]/a/span</value>
+         <key>CSS</key>
+         <value>span.pica-icon.pica-glyph.glyphicon.glyphicon-ok-circle</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,38 +22,38 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>567464c7-1f87-463a-8797-0329b8786ea5</webElementGuid>
+      <webElementGuid>96c43468-eaaf-469c-a754-31bc23fc5509</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>glyphicons glyphicons-show-thumbnails pica-glyph</value>
-      <webElementGuid>8d40ada1-3f1a-4e7f-bb75-7db166eb398b</webElementGuid>
+      <value>pica-icon pica-glyph glyphicon glyphicon-ok-circle</value>
+      <webElementGuid>026de517-f4a9-4864-9884-4ec9213d00ef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;storages_table&quot;)/thead[2]/tr[1]/th[@class=&quot;pica-icon-column&quot;]/div[@class=&quot;pica-vmtable-toggle pica-inline pica-table-selection-hide dropdown open&quot;]/ul[@class=&quot;pica-arrow-right dropdown-menu dropdown-menu-right&quot;]/li[3]/a[@class=&quot;pica-vmtable-toggle-grid&quot;]/span[@class=&quot;glyphicons glyphicons-show-thumbnails pica-glyph&quot;]</value>
-      <webElementGuid>f3150eb5-b8fe-4c02-8de4-6b8eea98f455</webElementGuid>
+      <value>id(&quot;storage_59869090&quot;)/td[@class=&quot;text-center pica-icon-column&quot;]/span[@class=&quot;pica-icon pica-glyph glyphicon glyphicon-ok-circle&quot;]</value>
+      <webElementGuid>0c48b589-abfe-4b5c-baa5-8e1ce9c93dd4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='storages_table']/thead[2]/tr/th[7]/div/ul/li[3]/a/span</value>
-      <webElementGuid>01e0dfec-12f6-44ea-af05-b2eeb83e7ba5</webElementGuid>
+      <value>//tr[@id='storage_59869090']/td/span</value>
+      <webElementGuid>55a5a248-5e7d-4dce-b1bd-f1855dec73f3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//th[7]/div/ul/li[3]/a/span</value>
-      <webElementGuid>8b440c90-9b83-4279-aac0-218ce67a5c7a</webElementGuid>
+      <value>//td/span</value>
+      <webElementGuid>ade23b2d-bc5c-48a2-8f70-b312cb226d40</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

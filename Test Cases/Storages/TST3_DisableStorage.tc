@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TST1_List Storages</name>
+   <name>TST3_DisableStorage</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>2af6d66c-ccfd-4dbb-9895-32c25894b38e</testCaseGuid>
+   <testCaseGuid>0309320b-5e53-49df-a826-976d5ca7d5a5</testCaseGuid>
 </TestCaseEntity>

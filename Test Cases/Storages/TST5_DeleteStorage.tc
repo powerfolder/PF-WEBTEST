@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>change avatar</name>
+   <name>TST5_DeleteStorage</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>aab90d7e-b00b-4afb-b950-c274419d8765</testCaseGuid>
+   <testCaseGuid>dc7d7d1b-adff-4de9-a02b-1bda759bbed2</testCaseGuid>
 </TestCaseEntity>

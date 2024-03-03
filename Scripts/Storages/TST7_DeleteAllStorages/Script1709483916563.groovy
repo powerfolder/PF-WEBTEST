@@ -16,6 +16,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebElement as WebElement
 
-WebUI.callTestCase(findTestCase('Storages/TST2_Create Storage'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Object Repository/Storage/Page_Dashboard - PowerFolder/td_Storage'))
+
+CustomKeywords.'storage.StorageFinder.findAllStorages'().each({ WebElement element ->
+        WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(element))
+    })
+
+WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/a_Delete'))
+
+WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/button_Yes'))
+
+WebUI.closeBrowser()
 

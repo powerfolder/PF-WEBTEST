@@ -1,11 +1,11 @@
 {
-  "keywordFileContentHash": "52F8B8F8A22ED43CDDA34FEB3767A880",
+  "keywordFileContentHash": "D01EACCAE73A60841693F8D4CA057AA0",
   "keywordClasses": [
     {
-      "name": "storage.StorageFinder",
+      "name": "storage.StorageNotPresent",
       "keywordMethods": [
         {
-          "name": "findStorage",
+          "name": "isStorageDeleted",
           "parameters": [
             {
               "name": "storageName",
@@ -21,11 +21,6 @@
               }
             }
           ],
-          "javadoc": ""
-        },
-        {
-          "name": "findAllStorages",
-          "parameters": [],
           "javadoc": ""
         }
       ]
