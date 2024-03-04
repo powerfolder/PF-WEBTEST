@@ -21,7 +21,7 @@ WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : 
 
 WebUI.click(findTestObject('Object Repository/Storage/Page_Dashboard - PowerFolder/td_Storage'))
 
-WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/td_Grid_text-center pica-icon-column'))
+WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/span_Grid_pica-icon pica-glyph glyphicon gl_10dee2'))
 
 WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/a_Delete'))
 

@@ -21,9 +21,9 @@ WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : 
 
 WebUI.click(findTestObject('Object Repository/servers/Page_Servers - PowerFolder/lang_Servers'))
 
-WebUI.click(findTestObject('Object Repository/servers/Page_Servers - PowerFolder/td_tspfdd05'))
+WebUI.click(findTestObject('Object Repository/servers/Page_Servers - PowerFolder/td_server'))
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/servers/Page_Servers - PowerFolder/span_tspfdd05'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Object Repository/servers/Page_Servers - PowerFolder/span_server'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/servers/Page_Servers - PowerFolder/a_Restart'))
 

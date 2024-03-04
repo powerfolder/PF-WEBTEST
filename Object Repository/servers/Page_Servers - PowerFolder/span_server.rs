@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>td_tspfdd05</name>
+   <name>span_server</name>
    <tag></tag>
-   <elementGuidId>db88d300-5d1f-4862-aba6-f7b9a6ecc77e</elementGuidId>
+   <elementGuidId>c00dabc3-54ca-442b-98b6-f8331cf93629</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//td[(text() = 'tspfdd05' or . = 'tspfdd05')]</value>
+         <key>CSS</key>
+         <value>th.pica-table-selection-title > span</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>td.pica-name</value>
+         <key>XPATH</key>
+         <value>//table[@id='table_servers']/thead/tr/th[2]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,16 +21,8 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>td</value>
-      <webElementGuid>3381a5a5-681c-4666-a944-ba437629bd49</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>pica-name</value>
-      <webElementGuid>28dee80c-fcbc-4820-add1-b8efe71650eb</webElementGuid>
+      <value>span</value>
+      <webElementGuid>769d8e11-8fe7-4084-a435-aa539e8214a4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,70 +30,78 @@
       <name>text</name>
       <type>Main</type>
       <value>tspfdd05</value>
-      <webElementGuid>feac5b43-1205-4539-8b18-84a7916d3062</webElementGuid>
+      <webElementGuid>7bad2b0d-c180-4f19-ab24-4a789b4e663c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;Object_839316137&quot;)/td[@class=&quot;pica-name&quot;]</value>
-      <webElementGuid>f6c93071-0efe-45bf-85be-dd6b7bc4cda1</webElementGuid>
+      <value>id(&quot;table_servers&quot;)/thead[1]/tr[1]/th[@class=&quot;pica-table-selection-title&quot;]/span[1]</value>
+      <webElementGuid>1176ef80-e792-4ddd-a405-eed1e1f5ee84</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='Object_839316137']/td[2]</value>
-      <webElementGuid>7d2dd8de-666f-44ce-bdad-fb258f2b94ea</webElementGuid>
+      <value>//table[@id='table_servers']/thead/tr/th[2]/span</value>
+      <webElementGuid>59a6a8ce-7688-4fe6-9a6d-4abd7964ba6f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Grid'])[1]/following::td[2]</value>
-      <webElementGuid>9bdccf35-aa6f-4ad3-9450-b3451cf80ac5</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Log out'])[2]/following::span[2]</value>
+      <webElementGuid>be6b9481-1ce3-4327-a2f6-ec6e038d634d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='List'])[1]/following::td[2]</value>
-      <webElementGuid>bebf73a3-b6c0-4765-a736-52dae5a43498</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='My account'])[2]/following::span[3]</value>
+      <webElementGuid>2c9bd630-9fba-48bf-8dea-9f1d755db427</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(29.3 GB)'])[1]/preceding::td[3]</value>
-      <webElementGuid>7521b0fb-9e1d-4cff-b5be-de5e591af3cb</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Deselect'])[1]/preceding::span[1]</value>
+      <webElementGuid>a8be3e97-79d0-41d2-bb1d-52056e8eb6aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Restart'])[2]/preceding::td[3]</value>
-      <webElementGuid>094ab0f2-44f4-4f1d-b395-fad42099ad4c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Restart'])[1]/preceding::span[2]</value>
+      <webElementGuid>0305a79a-6700-4265-93d1-3b075f7324c9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='tspfdd05']/parent::*</value>
+      <webElementGuid>62e34462-f71a-4f70-a560-4e07adcaa1f3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td[2]</value>
-      <webElementGuid>e5cc40d5-8423-47db-849f-2e84c94feeab</webElementGuid>
+      <value>//th[2]/span</value>
+      <webElementGuid>73107fe1-3458-4d0c-a375-16afdbe7032e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value></value>
-      <webElementGuid>1d9a5ec1-523c-4590-bdf9-3842f496ba0e</webElementGuid>
+      <value>//span[(text() = 'tspfdd05' or . = 'tspfdd05')]</value>
+      <webElementGuid>10d853a4-fc91-44df-aacd-b05ada883edc</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

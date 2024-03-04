@@ -6,12 +6,12 @@
    <elementGuidId>afbfda46-75ff-48d2-a91f-6af793a04aaf</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='storage_59869090']/td</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>td.text-center.pica-icon-column</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='storage_59869090']/td</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>bdf515af-9b9a-4071-9904-558fc2cb3784</webElementGuid>
+      <webElementGuid>18cafc10-485b-42bb-b0b1-6606b534d383</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-center pica-icon-column</value>
-      <webElementGuid>617dea32-f33e-4390-8881-fe5f6a9fe6f7</webElementGuid>
+      <webElementGuid>3664baa9-5499-4a48-b725-f6e68d87b4c7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;storage_59869090&quot;)/td[@class=&quot;text-center pica-icon-column&quot;]</value>
-      <webElementGuid>5a7fdf9d-4c80-4b57-9d06-403c196b1d53</webElementGuid>
+      <webElementGuid>75396882-ca7a-45b6-8f39-a5e8a4d93fae</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='storage_59869090']/td</value>
-      <webElementGuid>3eb6e90a-01e4-4f21-bfa7-714c7a08c8e7</webElementGuid>
+      <webElementGuid>9a13c542-b151-4512-9850-8afb79aae6c7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Grid'])[1]/following::td[1]</value>
-      <webElementGuid>d2147840-c8c6-4d0e-838e-0e4e880b3bdf</webElementGuid>
+      <webElementGuid>1db71dfc-a633-4113-af30-efaee6fc7d3e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='List'])[1]/following::td[1]</value>
-      <webElementGuid>0fcb8124-bfcd-420f-9ce7-9ed91a7ed27a</webElementGuid>
+      <webElementGuid>86201bb9-6d91-4144-9821-ce7987a1568d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='/home/adama/storage1'])[1]/preceding::td[1]</value>
-      <webElementGuid>5fc2f827-0611-4c87-a679-6ba057157096</webElementGuid>
+      <webElementGuid>27bbce7e-20f4-41f3-aa55-d46c96f8fdbd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[2]/preceding::td[7]</value>
-      <webElementGuid>ecd84146-6ebb-4e18-bb4d-56a056546fbf</webElementGuid>
+      <webElementGuid>904783fe-cb06-457c-b70e-56665004f0e3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,6 +86,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/table/tbody/tr/td</value>
-      <webElementGuid>702488d4-25dd-4c24-a278-7df99b122d6a</webElementGuid>
+      <webElementGuid>63c5e991-3e3f-460b-bd57-ebc1b779c03c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
