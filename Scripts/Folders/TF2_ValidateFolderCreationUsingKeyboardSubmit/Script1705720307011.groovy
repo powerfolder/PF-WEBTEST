@@ -1,3 +1,4 @@
+// Import statements
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -19,63 +20,67 @@ import org.openqa.selenium.By as By
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
+import org.apache.commons.lang3.RandomStringUtils
 
-<<<<<<< HEAD:Scripts/Folders/TF2_ValidateFolderCreationUsingKeyboardSubmit/Script1705720307011.groovy
+
+// Call test case to navigate to pre-test
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
-=======
+
 // Generate a random string of length 5
 String folderN = RandomStringUtils.randomAlphanumeric(5)
->>>>>>> 5a66913 ( add serer test):Scripts/Folders/Create Folder modifed/Script1705435917209.groovy
 
+// Store the original folder count
 originfolderCount = getFoldersCount()
-String folderName =  getRandomFolderName()
+
+// Generate a random folder name
+String folderName = getRandomFolderName()
+
+// Click on create folder icon
 WebUI.click(findTestObject('Folders/createFolderIcon'))
+
+// Click on create folder
 WebUI.click(findTestObject('Folders/createFolder'))
+
+// Set text in input folder name
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
-//WebUI.click(findTestObject('Folders/buttonOK'))
 
-WebUI.sendKeys(findTestObject('Folders/inputFolderName'),  Keys.chord(Keys.ENTER))
+// Send keys ENTER to submit folder creation
+WebUI.sendKeys(findTestObject('Folders/inputFolderName'), Keys.chord(Keys.ENTER))
 
+// Assert folder count has increased
 assert getFoldersCount() > originfolderCount
 
-assert true == tableContainsFolder(folderName)
+// Assert folder table contains folder name
+assert tableContainsFolder(folderName)
 
+// Close browser
 WebUI.closeBrowser()
 
+// Function to get folders count
 int getFoldersCount() {
     WebDriver driver = DriverFactory.getWebDriver()
-
     WebElement tbody = driver.findElement(By.xpath("//table[@id='files_files_table']/tbody"))
-
-<<<<<<< HEAD:Scripts/Folders/TF2_ValidateFolderCreationUsingKeyboardSubmit/Script1705720307011.groovy
     assert tbody
-
     List<WebElement> rows_table = tbody.findElements(By.tagName('tr'))
-
     return rows_table.size()
 }
 
+// Function to check if table contains folder
 boolean tableContainsFolder(String fileName) {
     WebDriver driver = DriverFactory.getWebDriver()
-
     WebElement tfolder = driver.findElement(By.xpath("//td/a[@class='pica-name' and text() ='"+fileName+"']"))
-
-   return tfolder.isDisplayed()
+    return tfolder.isDisplayed()
 }
 
+// Function to generate random folder name
 def String getRandomFolderName() {
-	String folderName = 'F'+getTimestamp();
-	return folderName;
-	
+    String folderName = 'F' + getTimestamp()
+    return folderName
 }
 
+// Function to get timestamp
 def String getTimestamp() {
-	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("ddMMMyyyyhhmmss");
-	return formattedDate;
+    Date todaysDate = new Date()
+    String formattedDate = todaysDate.format("ddMMMyyyyhhmmss")
+    return formattedDate
 }
-=======
-WebElement folderElement = CustomKeywords.'folder.FolderHelper.findFolder'(GlobalVariable.folderN)
-
-assert folderElement != null
->>>>>>> 5a66913 ( add serer test):Scripts/Folders/Create Folder modifed/Script1705435917209.groovy
