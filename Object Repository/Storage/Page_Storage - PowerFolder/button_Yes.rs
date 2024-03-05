@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>6e48fbc2-45a4-4cbc-88da-a14758c0355d</webElementGuid>
+      <webElementGuid>5c0d7eda-0fa6-4b0d-8c9d-64b878b973a9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>c4c7aad2-a07c-492a-8996-90907aa45e6f</webElementGuid>
+      <webElementGuid>391c216d-8523-4442-aa0e-3c55ceffacd6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-primary</value>
-      <webElementGuid>2d4051b8-024c-4d5b-874d-795a931d3451</webElementGuid>
+      <webElementGuid>28b8a6e8-b34c-4aff-a335-4b2559fea256</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>data-dismiss</name>
       <type>Main</type>
       <value>modal</value>
-      <webElementGuid>d80443bf-e67e-469d-89f8-9a2518b70a08</webElementGuid>
+      <webElementGuid>4938644d-ac0d-495e-a003-1f7b8c96c9e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -56,7 +56,7 @@
       <value>
                     Yes
                 </value>
-      <webElementGuid>bc100bae-4a01-49c5-85f7-54b3a44d236c</webElementGuid>
+      <webElementGuid>acad9f4d-e077-47bf-b9f2-2ec99f2b670b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -64,7 +64,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_confirmation_dialog&quot;)/div[@class=&quot;modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-footer&quot;]/button[@class=&quot;btn btn-primary&quot;]</value>
-      <webElementGuid>2918c5d0-8923-4166-8798-e3105ae86d98</webElementGuid>
+      <webElementGuid>9bdc503c-753c-4ce8-84df-fa487b195608</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -72,7 +72,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[7]</value>
-      <webElementGuid>decef486-647e-441f-9c2f-2d30a5513c90</webElementGuid>
+      <webElementGuid>4198a0d1-7922-4388-a004-7815abd62da2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -80,15 +80,15 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_confirmation_dialog']/div/div/div[3]/button</value>
-      <webElementGuid>0f07acd0-15d5-42a6-a3eb-429c82ea8280</webElementGuid>
+      <webElementGuid>695dfb80-9aeb-418f-93ea-b7a7d75dd3b9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Do you really want to delete 6 Elements?'])[1]/following::button[1]</value>
-      <webElementGuid>26c89201-ca2c-4559-b7ee-74cd81409066</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Do you really want to delete /home/adama/storage1?'])[1]/following::button[1]</value>
+      <webElementGuid>dc5c162e-b348-4b8a-b88f-f76a73d4e37d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -96,7 +96,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[3]/following::button[1]</value>
-      <webElementGuid>ae103f5d-9fec-49b6-9d88-b9ccb40af1a8</webElementGuid>
+      <webElementGuid>b485aeaa-1603-4e15-80cb-8aaa187a0621</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -104,7 +104,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[1]/preceding::button[1]</value>
-      <webElementGuid>8f659a76-d950-431d-b899-e02e32e3ba27</webElementGuid>
+      <webElementGuid>cc2f0e48-98ba-43c4-b53a-ec7b4a592d41</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -112,7 +112,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/div/div/div[3]/button</value>
-      <webElementGuid>14269ece-737e-4228-aa1a-28a4ab87be73</webElementGuid>
+      <webElementGuid>c59067ee-7901-48d3-adc1-8774be5da0f5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -124,6 +124,6 @@
                 ' or . = '
                     Yes
                 ')]</value>
-      <webElementGuid>93f54047-3044-4090-b8f4-6239675485d5</webElementGuid>
+      <webElementGuid>dde95a44-ef9b-4372-bb74-2bdf230ea52f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

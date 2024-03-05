@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>337cf81d-9358-4b6d-b556-aa3c1b3faa2c</webElementGuid>
+      <webElementGuid>76232d22-68b7-4cfe-8d79-5ecc58d6b823</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-table-selection-multi storages_delete</value>
-      <webElementGuid>5801ec67-f959-46bf-b2b3-3c17d902e285</webElementGuid>
+      <webElementGuid>d1709b92-b85e-4688-bdd6-b7bcfa8e18d5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -41,7 +41,7 @@
                         
                         Delete
                     </value>
-      <webElementGuid>b079b0c7-6531-4b3a-81d4-aa5bc167fc1a</webElementGuid>
+      <webElementGuid>bed095bc-05e0-44cc-b6e1-63f2f4069f9c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -49,7 +49,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;storage_select_header&quot;)/tr[1]/th[@class=&quot;text-right&quot;]/div[@class=&quot;pica-table-selection-context pica-inline hidden-xs text-right&quot;]/a[@class=&quot;pica-table-selection-multi storages_delete&quot;]</value>
-      <webElementGuid>482ed939-5650-4bcf-a0fd-dbf3ee6364a7</webElementGuid>
+      <webElementGuid>db98ae76-7e6c-400d-82df-da27a2f67360</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -57,7 +57,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//thead[@id='storage_select_header']/tr/th[3]/div[2]/a[3]</value>
-      <webElementGuid>1dddad2b-2717-4b3d-b398-516042a95cc4</webElementGuid>
+      <webElementGuid>b3dccc84-2909-4c28-a1fc-20b44d5aebd0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -65,7 +65,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Disable'])[2]/following::a[1]</value>
-      <webElementGuid>482f8a40-e2e0-4327-abda-e89ddfd1713b</webElementGuid>
+      <webElementGuid>4b01e243-e289-4cbd-b62a-67535af56397</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -73,7 +73,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Enable'])[2]/following::a[2]</value>
-      <webElementGuid>db951c68-795e-45e4-86eb-e3f374b5d461</webElementGuid>
+      <webElementGuid>a3b8dc2c-0cca-41b4-804a-f2b97d5b89d8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -81,7 +81,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Path'])[1]/preceding::a[2]</value>
-      <webElementGuid>9330f5e5-198c-4071-b0fd-5295388442fe</webElementGuid>
+      <webElementGuid>731d73af-0687-45a8-b10c-4cfd853671bd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,7 +89,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//a[3]</value>
-      <webElementGuid>e30d754a-d5eb-4f3e-958a-c6a58bb0f031</webElementGuid>
+      <webElementGuid>82c8bc32-ed56-4726-98aa-b8675bc64fae</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,6 +103,6 @@
                         
                         Delete
                     ')]</value>
-      <webElementGuid>ff4d2f6d-a68f-450f-a9fa-891d01d488ef</webElementGuid>
+      <webElementGuid>759184c2-0a92-4094-a6d2-8cc25136c268</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
