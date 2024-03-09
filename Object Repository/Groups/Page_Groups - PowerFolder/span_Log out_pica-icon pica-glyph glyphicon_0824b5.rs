@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Log out_pica-icon pica-glyph glyphicon_0824b5</name>
+   <tag></tag>
+   <elementGuidId>bba8b46d-7922-4b4b-b879-47dc338dd72d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='groups_create']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.pica-icon.pica-glyph.glyphicons.glyphicons-plus-sign</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>7a36f635-1cb8-47f3-8bf5-d270ac993066</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-icon pica-glyph glyphicons glyphicons-plus-sign</value>
+      <webElementGuid>b0a16ed1-31c9-4cb5-a140-ed336ec66977</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;groups_create&quot;)/span[@class=&quot;pica-icon pica-glyph glyphicons glyphicons-plus-sign&quot;]</value>
+      <webElementGuid>95f2f10a-8b96-4a0d-b9a5-02c23a3ada3b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//a[@id='groups_create']/span</value>
+      <webElementGuid>f7666b39-56fe-43e6-827b-a2b2c927cf4c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//th/a/span</value>
+      <webElementGuid>589645a3-b7a8-4fd3-a483-857f7c423fce</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
