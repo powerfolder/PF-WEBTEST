@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lang_Groups</name>
+   <name>a_Can read and write</name>
    <tag></tag>
-   <elementGuidId>1250db5c-12f0-45e1-8fb0-17e269d5ebf0</elementGuidId>
+   <elementGuidId>4089a634-517c-44fb-be5e-4e6cf3057622</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//lang[@name='label_groups']</value>
+         <value>//td[3]/div/ul/li[2]/a</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>lang[name=&quot;label_groups&quot;]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,119 +21,111 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>lang</value>
-      <webElementGuid>b9a3f4f1-a240-420c-b8bf-ce54c3952bca</webElementGuid>
+      <value>a</value>
+      <webElementGuid>6a4abbd3-d87e-4a8e-b940-fe31091f9ebb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>data-dropdown-type</name>
       <type>Main</type>
-      <value>pica-hidden-on-small text-center</value>
-      <webElementGuid>7c490d5c-e07a-4579-88e6-4c1bf823ed1b</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>label_groups</value>
-      <webElementGuid>01ac8014-39f1-4f26-9f92-21020aa59bff</webElementGuid>
+      <value>radio</value>
+      <webElementGuid>cd2e8017-1645-4df3-abf1-eed79d46e2ea</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-plural</name>
+      <name>data-dropdown-group</name>
       <type>Main</type>
-      <value>true</value>
-      <webElementGuid>954989a0-39c0-4f5e-aba4-7a653d864e82</webElementGuid>
+      <value>permission</value>
+      <webElementGuid>813f29a6-e45f-4812-a7b7-a8a8c6cf5518</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Groups</value>
-      <webElementGuid>3498ec81-f6b1-48ee-89f8-dff0fa22ca73</webElementGuid>
+      <value>Can read and write</value>
+      <webElementGuid>b265fd0c-81e9-4b1f-8910-310f5ea023e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pica_menu&quot;)/table[1]/tbody[1]/tr[6]/td[@class=&quot;text-center&quot;]/a[1]/lang[@class=&quot;pica-hidden-on-small text-center&quot;]</value>
-      <webElementGuid>4e068fb0-bae4-4871-bbac-0401f801d2e6</webElementGuid>
+      <value>id(&quot;item_926185364&quot;)/td[@class=&quot;hidden-xs&quot;]/div[@class=&quot;pica-inline dropdown pull-right open&quot;]/ul[@class=&quot;dropdown-menu&quot;]/li[2]/a[1]</value>
+      <webElementGuid>52cf257f-ecc6-4eb9-b318-f19f81a975d0</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//lang[@name='label_groups']</value>
-      <webElementGuid>2b074da9-8634-4a18-b48c-5408f5bf4d00</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pica_menu']/table/tbody/tr[6]/td/a/lang</value>
-      <webElementGuid>8060850d-c36a-4540-804f-b5520220ca5b</webElementGuid>
+      <value>//tr[@id='item_926185364']/td[3]/div/ul/li[2]/a</value>
+      <webElementGuid>93bf8523-39dd-40fd-af88-01dffac3cd01</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Can read and write')]</value>
+      <webElementGuid>c80c52ef-a473-4278-9569-709a0d5b78e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Accounts'])[1]/following::lang[1]</value>
-      <webElementGuid>42e21724-0782-471b-bb65-cf0b8779cf95</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Can read'])[2]/following::a[1]</value>
+      <webElementGuid>638ddd01-1c02-42a1-9a33-9fbdca386e29</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Links'])[1]/following::lang[2]</value>
-      <webElementGuid>69723e98-a604-469c-a6a4-58acb622cfaa</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Can read'])[1]/following::a[2]</value>
+      <webElementGuid>d27d2187-05a2-4b2a-b531-af4e7f2e74d5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Organizations'])[1]/preceding::lang[1]</value>
-      <webElementGuid>e91ccb9f-76be-43f3-9945-d4dc4f16abcf</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Can administrate'])[1]/preceding::a[1]</value>
+      <webElementGuid>bc577a15-3cd5-4416-917f-7202d25c058d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Devices'])[1]/preceding::lang[2]</value>
-      <webElementGuid>8e409b0c-6a77-494c-b10d-79f4336b912b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[2]/preceding::a[2]</value>
+      <webElementGuid>a62f148d-ab90-4433-8075-e03800a2ea1f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Groups']/parent::*</value>
-      <webElementGuid>dbda3267-2f2a-46eb-8453-d3a50ec64b8c</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Can read and write']/parent::*</value>
+      <webElementGuid>a2b20e84-c3e7-461b-ba11-339084115f7c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[6]/td/a/lang</value>
-      <webElementGuid>bbc32836-576c-468e-a191-fa5d28836807</webElementGuid>
+      <value>//td[3]/div/ul/li[2]/a</value>
+      <webElementGuid>85d961a4-6d2d-44ca-a30c-664c043d4896</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//lang[@name = 'label_groups' and (text() = 'Groups' or . = 'Groups')]</value>
-      <webElementGuid>415433da-b7fa-4b2e-8542-27f6961ac4bb</webElementGuid>
+      <value>//a[(text() = 'Can read and write' or . = 'Can read and write')]</value>
+      <webElementGuid>d53dec2f-ce03-440d-b886-bef2665a4985</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

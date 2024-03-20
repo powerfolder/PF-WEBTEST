@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[4]/div</value>
+         <value>//div[@id='notification_1807109126']/div</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>07081a9d-e70c-4927-93a4-dbc238bcab4e</webElementGuid>
+      <webElementGuid>b3b45dd8-2111-49f0-b5c4-da3bea88f0e5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-notification-box alert alert-info</value>
-      <webElementGuid>534be4c4-b49e-4198-9fdf-71c81a9d1edc</webElementGuid>
+      <webElementGuid>24ba1c9e-e0ef-45da-b985-08ac28f889da</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>role</name>
       <type>Main</type>
       <value>alert</value>
-      <webElementGuid>6d35131e-d6d6-4f34-a87b-4203a104aaad</webElementGuid>
+      <webElementGuid>94fdb7fc-ab82-45de-ba05-c0f8e2a2a077</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Group updated×</value>
-      <webElementGuid>4454a2de-48b7-4a38-8fee-4938cfe6f8ac</webElementGuid>
+      <webElementGuid>fc1d8190-7ca6-48ad-8517-f8d05a492595</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;notification_1807109126&quot;)/div[@class=&quot;pica-notification-box alert alert-info&quot;]</value>
-      <webElementGuid>3e175b3a-260b-41bb-a58e-63a0fb3335d5</webElementGuid>
+      <webElementGuid>493dc754-9d08-493f-896f-dc4b46990f81</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,23 +62,23 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='notification_1807109126']/div</value>
-      <webElementGuid>03dff12c-8e4c-4fff-b518-cdd5a3f510e3</webElementGuid>
+      <webElementGuid>c1ba12fb-a218-47cc-b0a1-288d59b13325</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='`'])[2]/following::div[3]</value>
-      <webElementGuid>5b52c411-5582-418e-83b3-1df06bbc41e2</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Privacy Policy'])[1]/following::div[4]</value>
+      <webElementGuid>2de78d61-9dfe-4df1-a466-ef3f705e4095</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[2]/following::div[3]</value>
-      <webElementGuid>d6638540-b4d5-41bc-823c-dc6be21ab6f6</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Imprint'])[1]/following::div[4]</value>
+      <webElementGuid>236b20d2-2a87-4d98-a985-3564263aa0f4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/div</value>
-      <webElementGuid>4f6d4ade-bc79-4438-bcb9-4216e297138e</webElementGuid>
+      <webElementGuid>aac55a63-074c-4ee3-9e73-fa9f6ee7afac</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +94,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Group updated×' or . = 'Group updated×')]</value>
-      <webElementGuid>8f15c3db-1d91-4fa3-bdd9-cb31bb8b7f33</webElementGuid>
+      <webElementGuid>8c30709d-f388-42da-a0ae-220d4460b1ea</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

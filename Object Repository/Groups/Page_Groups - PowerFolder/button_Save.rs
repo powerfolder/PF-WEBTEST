@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Yes</name>
+   <name>button_Save</name>
    <tag></tag>
-   <elementGuidId>0565a356-5850-459f-a34f-59b883c31408</elementGuidId>
+   <elementGuidId>8755f2b4-2287-4a89-a6bb-fe4777cc0a0c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[13]</value>
+         <value>//button[@id='pica-group-edit-save']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#pica_confirmation_dialog > div.modal-dialog > div.modal-content > div.modal-footer > button.btn.btn-primary</value>
+         <value>#pica-group-edit-save</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>64756305-eb6b-49f6-88db-296baadaea81</webElementGuid>
+      <webElementGuid>554e75ac-5ae8-4454-938e-3b983607b0bb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>pica-group-edit-save</value>
+      <webElementGuid>b3becffc-888d-4e91-affe-5d7751346f44</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +38,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>5c78a446-2a8f-4966-867e-8973a0b08352</webElementGuid>
+      <webElementGuid>ec1aebbe-13d5-471b-87b0-cada1e2389d6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +46,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-primary</value>
-      <webElementGuid>91d8a572-2d90-4e2e-a5cb-eaafbe9bd532</webElementGuid>
+      <webElementGuid>0d59ba3d-8856-4a1a-a38c-34e073a9eb36</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +54,7 @@
       <name>data-dismiss</name>
       <type>Main</type>
       <value>modal</value>
-      <webElementGuid>06b825ce-218e-4b82-b3fe-34284cd1e4e2</webElementGuid>
+      <webElementGuid>376e6b00-81ba-4802-a799-9592c88cc553</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,76 +62,76 @@
       <name>text</name>
       <type>Main</type>
       <value>
-                    Yes
+                    Save
                 </value>
-      <webElementGuid>55e89272-f4c1-451a-bfde-c5543bbdcd22</webElementGuid>
+      <webElementGuid>023658f6-82d4-4208-8818-c517e93ad094</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pica_confirmation_dialog&quot;)/div[@class=&quot;modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-footer&quot;]/button[@class=&quot;btn btn-primary&quot;]</value>
-      <webElementGuid>9f5ac489-0058-46be-8aac-3a47bc22df28</webElementGuid>
+      <value>id(&quot;pica-group-edit-save&quot;)</value>
+      <webElementGuid>de2f245e-c8fb-496b-998e-c77ae7948d0b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//button[@type='button'])[13]</value>
-      <webElementGuid>815be703-c417-4846-b739-16f9a5af21d9</webElementGuid>
+      <value>//button[@id='pica-group-edit-save']</value>
+      <webElementGuid>08a161d5-4e5c-4bb5-8980-513247500324</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pica_confirmation_dialog']/div/div/div[3]/button</value>
-      <webElementGuid>0423c02e-d1fc-4678-9572-6a8ca23768f3</webElementGuid>
+      <value>//div[@id='pica_group_dialog']/div/div/div[3]/button</value>
+      <webElementGuid>c13a26e2-0b6c-430e-9a5c-17e5ba67124c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Do you really want to remove folder_8681?'])[1]/following::button[1]</value>
-      <webElementGuid>71e499b4-a972-4e7c-bc00-838dc81440af</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nothing to show'])[1]/following::button[1]</value>
+      <webElementGuid>2537001a-f903-45dc-88ec-f6a21441ff80</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[6]/following::button[1]</value>
-      <webElementGuid>cc4b786d-84fb-47e9-9603-4073717b4586</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[5]/following::button[1]</value>
+      <webElementGuid>baaea00d-0a80-4eaa-bc22-31ed49b0f3ec</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[1]/preceding::button[1]</value>
-      <webElementGuid>0931ea34-49cb-4af4-8370-6750fa5fe632</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::button[1]</value>
+      <webElementGuid>c19e0833-2853-4830-8918-49a8ffc38155</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[6]/div/div/div[3]/button</value>
-      <webElementGuid>cdef90c1-c04e-4eb4-8497-ce0ce52dae76</webElementGuid>
+      <value>//div[3]/div/div/div[3]/button</value>
+      <webElementGuid>c114993c-d24b-40ff-bdab-fa7295f15f59</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//button[@type = 'button' and (text() = '
-                    Yes
+      <value>//button[@id = 'pica-group-edit-save' and @type = 'button' and (text() = '
+                    Save
                 ' or . = '
-                    Yes
+                    Save
                 ')]</value>
-      <webElementGuid>6ad1f6f4-ac80-4a23-a210-8f3e8b6ff54e</webElementGuid>
+      <webElementGuid>4cafa565-a0bd-464f-88a8-dffb3a4773fe</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

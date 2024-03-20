@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Organizations_pica_group_name</name>
+   <name>input_Keep Me Logged In_Login</name>
    <tag></tag>
-   <elementGuidId>5c44c675-3725-437c-a14b-7b0f67d73d1c</elementGuidId>
+   <elementGuidId>31062efb-8f45-4962-81fc-04f6255a0112</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#pica_group_name</value>
+         <value>#login_submit</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='pica_group_name']</value>
+         <value>//input[@id='login_submit']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,86 +22,86 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>8566deba-3e3c-4db2-8bcf-8867454ecd5d</webElementGuid>
+      <webElementGuid>c8dea5ee-cb30-4305-a704-4b3cfb98b76d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>pica_group_name</value>
-      <webElementGuid>287e4942-de43-4faa-a9d9-b04bc2c7d3fa</webElementGuid>
+      <value>login_submit</value>
+      <webElementGuid>4eab10dd-f0d2-4ad2-9e24-420678fa90ca</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-control</value>
-      <webElementGuid>b7db9d5c-2dc6-46b0-b923-ea933ab2faa8</webElementGuid>
+      <value>btn btn-primary</value>
+      <webElementGuid>4671fa7c-c447-4ef5-811e-8be83bfdbdb5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>text</value>
-      <webElementGuid>32fa2a2c-2192-4f8c-b15e-d1aa43c071b0</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>data-placeholder</name>
-      <type>Main</type>
-      <value>placeholder_name</value>
-      <webElementGuid>2810b60a-a6d3-4015-bea4-f49f23e0d611</webElementGuid>
+      <value>submit</value>
+      <webElementGuid>3fac2778-f64a-48a6-a015-6735a7b67a65</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
+      <name>name</name>
       <type>Main</type>
-      <value>Name</value>
-      <webElementGuid>319fc952-3935-41c6-814e-4b9e2d5129b8</webElementGuid>
+      <value>Login</value>
+      <webElementGuid>d4306d44-e87f-459e-83f8-eff63f4a4351</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>Log in</value>
+      <webElementGuid>76849490-4841-47a9-8177-09b2aed0242b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pica_group_name&quot;)</value>
-      <webElementGuid>d6b62dd7-0647-4f22-b640-368ed4ec8bfc</webElementGuid>
+      <value>id(&quot;login_submit&quot;)</value>
+      <webElementGuid>2ccf716e-aa61-44f5-b1d2-c7fa3a255a65</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='pica_group_name']</value>
-      <webElementGuid>544fba6b-3934-47dc-a708-4b641d6ce517</webElementGuid>
+      <value>//input[@id='login_submit']</value>
+      <webElementGuid>8f57c3ea-fbcf-4da4-9c34-df9e6214840f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pica_group_dialog']/div/div/div[2]/div/div/input</value>
-      <webElementGuid>5ad671ea-06a1-4ddb-8ba3-92293476ed22</webElementGuid>
+      <value>//form[@id='login_form']/div[4]/input</value>
+      <webElementGuid>352f9263-6a6d-4984-8f1b-79549d122514</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div/div[2]/div/div/input</value>
-      <webElementGuid>a32a9be2-1591-45a2-90b1-bcc9632a2b76</webElementGuid>
+      <value>//div[4]/input</value>
+      <webElementGuid>8ae90f73-0825-4b36-95c6-5701bc4c8dff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'pica_group_name' and @type = 'text' and @placeholder = 'Name']</value>
-      <webElementGuid>289a13af-7e3d-4eef-9577-eb92035403dc</webElementGuid>
+      <value>//input[@id = 'login_submit' and @type = 'submit' and @name = 'Login']</value>
+      <webElementGuid>0c6c39d4-e1fb-4c51-bc18-7e8bfdc0f89d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lang_Groups</name>
+   <name>lang_Folders</name>
    <tag></tag>
-   <elementGuidId>1250db5c-12f0-45e1-8fb0-17e269d5ebf0</elementGuidId>
+   <elementGuidId>0791a354-9c70-4d17-ae40-961fcff2cac7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//lang[@name='label_groups']</value>
+         <value>//lang[@name='label_folders']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>lang[name=&quot;label_groups&quot;]</value>
+         <value>lang[name=&quot;label_folders&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>lang</value>
-      <webElementGuid>b9a3f4f1-a240-420c-b8bf-ce54c3952bca</webElementGuid>
+      <webElementGuid>8d027779-4677-47fc-b80b-9bcf32308dd9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,15 +30,15 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-hidden-on-small text-center</value>
-      <webElementGuid>7c490d5c-e07a-4579-88e6-4c1bf823ed1b</webElementGuid>
+      <webElementGuid>baede9f9-96da-4a78-b8c4-2f328022d89e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>label_groups</value>
-      <webElementGuid>01ac8014-39f1-4f26-9f92-21020aa59bff</webElementGuid>
+      <value>label_folders</value>
+      <webElementGuid>bbebcfa2-8c70-43b6-b1e2-def364d29460</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,94 +46,94 @@
       <name>data-plural</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>954989a0-39c0-4f5e-aba4-7a653d864e82</webElementGuid>
+      <webElementGuid>1d4aed01-123c-4feb-b404-8f3c36672767</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Groups</value>
-      <webElementGuid>3498ec81-f6b1-48ee-89f8-dff0fa22ca73</webElementGuid>
+      <value>Folders</value>
+      <webElementGuid>e835aa29-0021-4806-a029-03493077c50b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pica_menu&quot;)/table[1]/tbody[1]/tr[6]/td[@class=&quot;text-center&quot;]/a[1]/lang[@class=&quot;pica-hidden-on-small text-center&quot;]</value>
-      <webElementGuid>4e068fb0-bae4-4871-bbac-0401f801d2e6</webElementGuid>
+      <value>id(&quot;pica_menu&quot;)/table[1]/tbody[1]/tr[2]/td[@class=&quot;text-center&quot;]/a[@class=&quot;active&quot;]/lang[@class=&quot;pica-hidden-on-small text-center&quot;]</value>
+      <webElementGuid>6e943726-80ba-45bc-a7aa-a16754389a18</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//lang[@name='label_groups']</value>
-      <webElementGuid>2b074da9-8634-4a18-b48c-5408f5bf4d00</webElementGuid>
+      <value>//lang[@name='label_folders']</value>
+      <webElementGuid>d7f34127-b5eb-47c0-8982-78d8de31e6e3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pica_menu']/table/tbody/tr[6]/td/a/lang</value>
-      <webElementGuid>8060850d-c36a-4540-804f-b5520220ca5b</webElementGuid>
+      <value>//div[@id='pica_menu']/table/tbody/tr[2]/td/a/lang</value>
+      <webElementGuid>ed4cb72f-6bf3-4b40-ae04-7dfc546a9f36</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Accounts'])[1]/following::lang[1]</value>
-      <webElementGuid>42e21724-0782-471b-bb65-cf0b8779cf95</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dashboard'])[1]/following::lang[1]</value>
+      <webElementGuid>d1898f65-922a-423d-89d5-d0097ce3af8e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Links'])[1]/following::lang[2]</value>
-      <webElementGuid>69723e98-a604-469c-a6a4-58acb622cfaa</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='OK I understand'])[1]/following::lang[2]</value>
+      <webElementGuid>32079ed0-d849-459b-841b-041c1d1d720b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Organizations'])[1]/preceding::lang[1]</value>
-      <webElementGuid>e91ccb9f-76be-43f3-9945-d4dc4f16abcf</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Recycle Bin'])[1]/preceding::lang[1]</value>
+      <webElementGuid>4fa86e1b-4fa1-46d9-af99-496d331b9691</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Devices'])[1]/preceding::lang[2]</value>
-      <webElementGuid>8e409b0c-6a77-494c-b10d-79f4336b912b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Links'])[1]/preceding::lang[2]</value>
+      <webElementGuid>47b3084f-ab54-42bf-b374-88502574e5d5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Groups']/parent::*</value>
-      <webElementGuid>dbda3267-2f2a-46eb-8453-d3a50ec64b8c</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Folders']/parent::*</value>
+      <webElementGuid>7ca67bb8-e23a-4cb7-b878-c3c900e43f7f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[6]/td/a/lang</value>
-      <webElementGuid>bbc32836-576c-468e-a191-fa5d28836807</webElementGuid>
+      <value>//tr[2]/td/a/lang</value>
+      <webElementGuid>84760448-78eb-4502-a021-a7f5e636605e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//lang[@name = 'label_groups' and (text() = 'Groups' or . = 'Groups')]</value>
-      <webElementGuid>415433da-b7fa-4b2e-8542-27f6961ac4bb</webElementGuid>
+      <value>//lang[@name = 'label_folders' and (text() = 'Folders' or . = 'Folders')]</value>
+      <webElementGuid>b5e286ae-5bf6-4375-a1ed-2975df15f7fb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

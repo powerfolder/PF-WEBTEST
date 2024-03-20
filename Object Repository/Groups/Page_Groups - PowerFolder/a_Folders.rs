@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Edit_m</name>
+   <name>a_Folders</name>
    <tag></tag>
-   <elementGuidId>9ae14cbe-6fee-4d64-aaa4-9fa3012bf4a2</elementGuidId>
+   <elementGuidId>a85c3cee-4281-4724-b9f9-ac515cbb422f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//th[3]/div/a</value>
+         <value>//a[(text() = 'Folders' or . = 'Folders')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>a.pica-table-selection-multi.groups_edit</value>
+         <value>li.hidden-xs.active > a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,78 +22,70 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>e78b1891-2884-4974-9ffa-71b05b276e6d</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>pica-table-selection-multi groups_edit</value>
-      <webElementGuid>5a7fdead-a257-4eed-8b6c-01276d702078</webElementGuid>
+      <webElementGuid>c4371df0-f902-4c9a-8ac6-bf864a93b1c0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Edit</value>
-      <webElementGuid>ca7cdf14-7b6b-4994-a21d-21f5937d7c5e</webElementGuid>
+      <value>Folders</value>
+      <webElementGuid>cd2ed1f0-4053-4e84-9c74-d5be0cc71870</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;groups_table&quot;)/thead[1]/tr[1]/th[@class=&quot;text-right&quot;]/div[@class=&quot;pica-table-selection-context pica-inline text-right&quot;]/a[@class=&quot;pica-table-selection-multi groups_edit&quot;]</value>
-      <webElementGuid>fe1a3a8b-4221-4fcd-a51a-328b91b7042b</webElementGuid>
+      <value>id(&quot;pica_group_nav&quot;)/li[@class=&quot;hidden-xs active&quot;]/a[1]</value>
+      <webElementGuid>a4ffe18e-2d74-4ab6-a452-f0d8ef95a3bb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='groups_table']/thead/tr/th[3]/div/a</value>
-      <webElementGuid>e291eebe-78ea-4b42-aabc-76bb9e9f3827</webElementGuid>
+      <value>//ul[@id='pica_group_nav']/li[3]/a</value>
+      <webElementGuid>945d2d0d-0955-492f-a994-7214887b768b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Deselect'])[1]/following::a[1]</value>
-      <webElementGuid>96683e9c-5584-4522-bfe8-50263383cfe3</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Avatar'])[1]/following::a[1]</value>
+      <webElementGuid>6d03ce91-1d51-48d3-9291-c5bdc6336a67</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Group_0096'])[1]/following::a[2]</value>
-      <webElementGuid>ebdee32a-98cf-4cc1-885c-5cd4b176c9ea</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Group'])[1]/following::a[2]</value>
+      <webElementGuid>4ac5c6f2-a115-41fe-b92c-3a7b022cb4f6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[1]/preceding::a[3]</value>
-      <webElementGuid>c6f50bdb-f29e-4b28-9eb4-4480eb97c499</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Members'])[2]/preceding::a[1]</value>
+      <webElementGuid>1e09fe9c-33d0-4ffc-ae9a-79cabeedbc9a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//th[3]/div/a</value>
-      <webElementGuid>2624601b-bfc2-4153-967f-97f7e03ef92a</webElementGuid>
+      <value>//div[3]/div/div/div[2]/ul/li[3]/a</value>
+      <webElementGuid>a51e953d-463f-40a4-b686-4765a39795c8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[(text() = 'Edit' or . = 'Edit')]</value>
-      <webElementGuid>691ce362-d3b1-4720-a56b-7e862afaadaa</webElementGuid>
+      <value>//a[(text() = 'Folders' or . = 'Folders')]</value>
+      <webElementGuid>565113af-bc0f-48ec-8095-d5a8e7ada7e9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

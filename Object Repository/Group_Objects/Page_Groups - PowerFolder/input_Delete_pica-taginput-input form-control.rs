@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Organizations_pica_group_name</name>
+   <name>input_Delete_pica-taginput-input form-control</name>
    <tag></tag>
-   <elementGuidId>5c44c675-3725-437c-a14b-7b0f67d73d1c</elementGuidId>
+   <elementGuidId>ac0ab5db-da20-4054-8525-8f90a91fe8bf</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#pica_group_name</value>
+         <value>input.pica-taginput-input.form-control</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='pica_group_name']</value>
+         <value>(//input[@type='text'])[3]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,23 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>8566deba-3e3c-4db2-8bcf-8867454ecd5d</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>pica_group_name</value>
-      <webElementGuid>287e4942-de43-4faa-a9d9-b04bc2c7d3fa</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>form-control</value>
-      <webElementGuid>b7db9d5c-2dc6-46b0-b923-ea933ab2faa8</webElementGuid>
+      <webElementGuid>4f457fe7-593d-4612-9267-8df1e3f515bf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,62 +30,70 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>32fa2a2c-2192-4f8c-b15e-d1aa43c071b0</webElementGuid>
+      <webElementGuid>bced6c63-073e-4bbb-ba49-3e1ff82ff58a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-taginput-input form-control</value>
+      <webElementGuid>d47e9de7-adcc-407c-969e-aa3daa541c48</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-placeholder</name>
       <type>Main</type>
-      <value>placeholder_name</value>
-      <webElementGuid>2810b60a-a6d3-4015-bea4-f49f23e0d611</webElementGuid>
+      <value>placeholder_add_folder_by_name</value>
+      <webElementGuid>2dcb29c4-9aa4-4b9e-9e74-66f3554e865d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>placeholder</name>
       <type>Main</type>
-      <value>Name</value>
-      <webElementGuid>319fc952-3935-41c6-814e-4b9e2d5129b8</webElementGuid>
+      <value>Add a folder by name</value>
+      <webElementGuid>5b6fe70d-6397-4b37-8ddc-01e65c577379</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pica_group_name&quot;)</value>
-      <webElementGuid>d6b62dd7-0647-4f22-b640-368ed4ec8bfc</webElementGuid>
+      <value>id(&quot;pica_group_folders&quot;)/div[@class=&quot;pica-inputlist-taginput pica-taginput form-group input-group&quot;]/div[@class=&quot;pica-taginput-div form-control&quot;]/input[@class=&quot;pica-taginput-input form-control&quot;]</value>
+      <webElementGuid>54534f40-4cdf-48eb-b003-5befeda03ab3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='pica_group_name']</value>
-      <webElementGuid>544fba6b-3934-47dc-a708-4b641d6ce517</webElementGuid>
+      <value>(//input[@type='text'])[3]</value>
+      <webElementGuid>962adad0-ea0b-4016-9522-d5b0e21b6663</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pica_group_dialog']/div/div/div[2]/div/div/input</value>
-      <webElementGuid>5ad671ea-06a1-4ddb-8ba3-92293476ed22</webElementGuid>
+      <value>//div[@id='pica_group_folders']/div/div/input</value>
+      <webElementGuid>845d5440-7445-41d4-a87d-4b1cab53e6e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div/div[2]/div/div/input</value>
-      <webElementGuid>a32a9be2-1591-45a2-90b1-bcc9632a2b76</webElementGuid>
+      <value>//div[3]/div/div/input</value>
+      <webElementGuid>64bdb7c7-19e3-415e-8a8b-2cf4b9c6ba3d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'pica_group_name' and @type = 'text' and @placeholder = 'Name']</value>
-      <webElementGuid>289a13af-7e3d-4eef-9577-eb92035403dc</webElementGuid>
+      <value>//input[@type = 'text' and @placeholder = 'Add a folder by name']</value>
+      <webElementGuid>d47f71f3-472a-45ea-992f-e13e4cb556e4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

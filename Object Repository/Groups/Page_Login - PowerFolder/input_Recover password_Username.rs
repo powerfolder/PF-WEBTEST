@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Organizations_pica_group_name</name>
+   <name>input_Recover password_Username</name>
    <tag></tag>
-   <elementGuidId>5c44c675-3725-437c-a14b-7b0f67d73d1c</elementGuidId>
+   <elementGuidId>b0f0ac92-14fa-4d15-8c1d-dd6004c94f9e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#pica_group_name</value>
+         <key>XPATH</key>
+         <value>//input[@id='login_username']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='pica_group_name']</value>
+         <key>CSS</key>
+         <value>#login_username</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,23 +22,23 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>8566deba-3e3c-4db2-8bcf-8867454ecd5d</webElementGuid>
+      <webElementGuid>8b6c8357-7d23-43ac-a146-576f0db2b769</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>pica_group_name</value>
-      <webElementGuid>287e4942-de43-4faa-a9d9-b04bc2c7d3fa</webElementGuid>
+      <value>login_username</value>
+      <webElementGuid>b6df07d4-ce6b-424d-a992-9b2a6b001645</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-control</value>
-      <webElementGuid>b7db9d5c-2dc6-46b0-b923-ea933ab2faa8</webElementGuid>
+      <value>form-control mfa</value>
+      <webElementGuid>ba00fbdb-7a8b-42e2-a8af-ba45870e744e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,62 +46,78 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>32fa2a2c-2192-4f8c-b15e-d1aa43c071b0</webElementGuid>
+      <webElementGuid>69cda5b5-caac-4f7c-bc1a-808188dc41ae</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>Username</value>
+      <webElementGuid>f08fb703-c81a-4749-acc6-c2f882f0a0ca</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-placeholder</name>
+      <name>maxlength</name>
       <type>Main</type>
-      <value>placeholder_name</value>
-      <webElementGuid>2810b60a-a6d3-4015-bea4-f49f23e0d611</webElementGuid>
+      <value>200</value>
+      <webElementGuid>46b22435-5ed1-4f97-97a7-03afc21b582e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>placeholder</name>
       <type>Main</type>
-      <value>Name</value>
-      <webElementGuid>319fc952-3935-41c6-814e-4b9e2d5129b8</webElementGuid>
+      <value>Email</value>
+      <webElementGuid>41e564c1-91bb-4418-a482-8a456fc93785</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-minlength</name>
+      <type>Main</type>
+      <value>1</value>
+      <webElementGuid>343674ee-8e7b-403d-9965-286b094a7e5a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pica_group_name&quot;)</value>
-      <webElementGuid>d6b62dd7-0647-4f22-b640-368ed4ec8bfc</webElementGuid>
+      <value>id(&quot;login_username&quot;)</value>
+      <webElementGuid>dd454130-8c1e-4591-80fc-0284a862d674</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='pica_group_name']</value>
-      <webElementGuid>544fba6b-3934-47dc-a708-4b641d6ce517</webElementGuid>
+      <value>//input[@id='login_username']</value>
+      <webElementGuid>3134f5cd-d54c-4eef-ae32-1dcf5f93c533</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pica_group_dialog']/div/div/div[2]/div/div/input</value>
-      <webElementGuid>5ad671ea-06a1-4ddb-8ba3-92293476ed22</webElementGuid>
+      <value>//form[@id='login_form']/div/input</value>
+      <webElementGuid>14a57bd0-68ff-4bd4-ae9d-1de1253abe23</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div/div[2]/div/div/input</value>
-      <webElementGuid>a32a9be2-1591-45a2-90b1-bcc9632a2b76</webElementGuid>
+      <value>//input</value>
+      <webElementGuid>e30af28a-c0f8-4258-8e46-a3d4d122d43f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'pica_group_name' and @type = 'text' and @placeholder = 'Name']</value>
-      <webElementGuid>289a13af-7e3d-4eef-9577-eb92035403dc</webElementGuid>
+      <value>//input[@id = 'login_username' and @type = 'text' and @name = 'Username' and @placeholder = 'Email']</value>
+      <webElementGuid>6af4f07b-603d-48df-8498-99e20efd4438</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Log out_pica-icon pica-glyph glyphicon_0824b5</name>
+   <name>span_Remove_glyphicons glyphicons-folder-pl_bbd778</name>
    <tag></tag>
-   <elementGuidId>bba8b46d-7922-4b4b-b879-47dc338dd72d</elementGuidId>
+   <elementGuidId>bacbceb7-c893-4767-901c-bab0bb0d0077</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>span.pica-icon.pica-glyph.glyphicons.glyphicons-plus-sign</value>
+         <value>span.glyphicons.glyphicons-folder-plus.pica-glyph</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='groups_create']/span</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,38 +22,38 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>71e07c60-8d69-411b-8429-32f844140166</webElementGuid>
+      <webElementGuid>01f88951-5d60-44dd-bba7-090bcee50e7b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>pica-icon pica-glyph glyphicons glyphicons-plus-sign</value>
-      <webElementGuid>7be3298d-4b6a-41ce-b3b7-7d9619656ac5</webElementGuid>
+      <value>glyphicons glyphicons-folder-plus pica-glyph</value>
+      <webElementGuid>100e96a6-7db0-4854-995f-33af9e7558bb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;groups_create&quot;)/span[@class=&quot;pica-icon pica-glyph glyphicons glyphicons-plus-sign&quot;]</value>
-      <webElementGuid>f9a2a4ce-a37c-481a-a94f-09bdb497ee8e</webElementGuid>
+      <value>id(&quot;item_1553490446&quot;)/td[@class=&quot;text-center pica-icon-column&quot;]/span[@class=&quot;glyphicons glyphicons-folder-plus pica-glyph&quot;]</value>
+      <webElementGuid>f5d08a0f-30fa-49cb-9014-1aa54c034e3b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//a[@id='groups_create']/span</value>
-      <webElementGuid>ec246632-3bb8-488c-9e59-b6ce6fb70f79</webElementGuid>
+      <value>//tr[@id='item_1553490446']/td/span</value>
+      <webElementGuid>9837dc22-9f27-4b7a-be2b-043ffa40285b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//th/a/span</value>
-      <webElementGuid>9aecc332-6a37-4344-bb51-917975c900bb</webElementGuid>
+      <value>//div[3]/div[2]/table/tbody/tr/td/span</value>
+      <webElementGuid>202dd25e-6510-4c83-97fa-46b2f85d6f90</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
