@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>71e07c60-8d69-411b-8429-32f844140166</webElementGuid>
+      <webElementGuid>051bde53-c8b4-4587-806a-db0047b81e56</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-icon pica-glyph glyphicons glyphicons-plus-sign</value>
-      <webElementGuid>7be3298d-4b6a-41ce-b3b7-7d9619656ac5</webElementGuid>
+      <webElementGuid>22133a4c-3261-4838-8342-cb1b1102708c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;groups_create&quot;)/span[@class=&quot;pica-icon pica-glyph glyphicons glyphicons-plus-sign&quot;]</value>
-      <webElementGuid>f9a2a4ce-a37c-481a-a94f-09bdb497ee8e</webElementGuid>
+      <webElementGuid>ea49b101-798d-43ea-b028-18490117dded</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//a[@id='groups_create']/span</value>
-      <webElementGuid>ec246632-3bb8-488c-9e59-b6ce6fb70f79</webElementGuid>
+      <webElementGuid>414f9327-5501-4c37-ab45-6213050d7474</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,6 +54,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//th/a/span</value>
-      <webElementGuid>9aecc332-6a37-4344-bb51-917975c900bb</webElementGuid>
+      <webElementGuid>cef3e976-2809-4022-b802-bad09181f603</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>8566deba-3e3c-4db2-8bcf-8867454ecd5d</webElementGuid>
+      <webElementGuid>247b8b29-eeb9-4e1c-88b1-4bbed2b07c3b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>id</name>
       <type>Main</type>
       <value>pica_group_name</value>
-      <webElementGuid>287e4942-de43-4faa-a9d9-b04bc2c7d3fa</webElementGuid>
+      <webElementGuid>f1269d94-7cd7-4613-a2dc-d10e1aa9c9b7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control</value>
-      <webElementGuid>b7db9d5c-2dc6-46b0-b923-ea933ab2faa8</webElementGuid>
+      <webElementGuid>84be46cf-11e1-4014-9836-9a48a503ecab</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>32fa2a2c-2192-4f8c-b15e-d1aa43c071b0</webElementGuid>
+      <webElementGuid>22cad43e-9242-4a78-a81c-8c03a25e3742</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>data-placeholder</name>
       <type>Main</type>
       <value>placeholder_name</value>
-      <webElementGuid>2810b60a-a6d3-4015-bea4-f49f23e0d611</webElementGuid>
+      <webElementGuid>83174e03-6e9a-4c8b-9941-b61b888eccab</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Name</value>
-      <webElementGuid>319fc952-3935-41c6-814e-4b9e2d5129b8</webElementGuid>
+      <webElementGuid>029dd6b8-7404-414a-aa72-034640501b3f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_group_name&quot;)</value>
-      <webElementGuid>d6b62dd7-0647-4f22-b640-368ed4ec8bfc</webElementGuid>
+      <webElementGuid>3a50de73-685a-4609-be4e-98e91bdd20e4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='pica_group_name']</value>
-      <webElementGuid>544fba6b-3934-47dc-a708-4b641d6ce517</webElementGuid>
+      <webElementGuid>c75a2a4a-d895-432d-975f-34db7496c5c5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_group_dialog']/div/div/div[2]/div/div/input</value>
-      <webElementGuid>5ad671ea-06a1-4ddb-8ba3-92293476ed22</webElementGuid>
+      <webElementGuid>04b10373-f85a-47af-a91f-92730f046b48</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div/div/div[2]/div/div/input</value>
-      <webElementGuid>a32a9be2-1591-45a2-90b1-bcc9632a2b76</webElementGuid>
+      <webElementGuid>0848a436-bef5-4795-b4bc-476ffdc9863c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +102,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'pica_group_name' and @type = 'text' and @placeholder = 'Name']</value>
-      <webElementGuid>289a13af-7e3d-4eef-9577-eb92035403dc</webElementGuid>
+      <webElementGuid>6b03e2fc-9ae6-419b-9940-559e56b8d393</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

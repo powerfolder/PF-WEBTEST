@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Is member</name>
+   <tag></tag>
+   <elementGuidId>d22eebb8-a18b-47dc-aa1f-dc2fb575d89e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//td[3]/div/button</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.btn.btn-default.dropdown-toggle</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>d67b97fa-d165-4e3e-9c67-d6360e3b2247</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-default dropdown-toggle</value>
+      <webElementGuid>b54c04b2-64a9-4944-a581-eb95762be2aa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-toggle</name>
+      <type>Main</type>
+      <value>dropdown</value>
+      <webElementGuid>9217d842-11dd-4803-8956-92a7260ed347</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Is member</value>
+      <webElementGuid>367f7436-653f-4724-b11f-613f80b95ced</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;item_31927942&quot;)/td[@class=&quot;hidden-xs&quot;]/div[@class=&quot;pica-inline dropdown pull-right&quot;]/button[@class=&quot;btn btn-default dropdown-toggle&quot;]</value>
+      <webElementGuid>94db0452-0cbe-4ce6-b1c6-437967f33b09</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='item_31927942']/td[3]/div/button</value>
+      <webElementGuid>d9992cef-cc9d-4608-986b-dbe3f54ecc09</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='user_3736@test.com'])[1]/following::button[1]</value>
+      <webElementGuid>456129f3-7830-4192-bc56-3ff692045a3a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[2]/following::button[1]</value>
+      <webElementGuid>b24fb5b1-2dcd-467f-a2a6-7fe96caa9f26</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Is member'])[2]/preceding::button[1]</value>
+      <webElementGuid>9576903c-0e3c-4c00-a8a8-ae2ca522ac4a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Is member and admin'])[1]/preceding::button[1]</value>
+      <webElementGuid>9b6fec8d-6b3e-4fa1-9d89-1c17c5de3935</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Is member']/parent::*</value>
+      <webElementGuid>82eca7eb-bb57-409f-ac5f-ff31278daa8b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[3]/div/button</value>
+      <webElementGuid>8189cbdd-8404-403b-b40c-2e0d49c83786</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'Is member' or . = 'Is member')]</value>
+      <webElementGuid>3829eac9-787d-4f30-8bb5-d38653996a26</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

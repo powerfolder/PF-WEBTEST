@@ -52,3 +52,5 @@ def btn = findGroup(groupName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 assert groupName != null
+
+

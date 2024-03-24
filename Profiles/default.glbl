@@ -39,4 +39,9 @@
       <initValue>''</initValue>
       <name>folderName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>userName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

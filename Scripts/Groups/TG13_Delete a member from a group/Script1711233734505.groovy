@@ -31,32 +31,28 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-println "Global Variable: " + GlobalVariable.folderName
+WebUI.callTestCase(findTestCase('Groups/TG11_Add member to group'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Groups/TG07_Add folder to group'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
-
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Folders'))
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
 
-WebElement folderElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='pica_group_folders']/div[2]/table/tbody/tr/td[2][contains(text(), '" + GlobalVariable.folderName + "')]")))
+WebElement userElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(('//*[@id=\'pica_group_accounts\']//div[2]/table/tbody/tr/td[2][contains(text(), \'' + 
+            GlobalVariable.userName) + '\')]')))
 
+userElement.click()
 
-folderElement.click()
+WebElement element = DriverFactory.getWebDriver().findElement(By.xpath('//*[@id="pica_group_accounts"]/div[2]/table/thead[1]/tr/th[3]/div/a'))
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Remove'))
+WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(element))
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Yes'))
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Yes'))
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
+WebUI.verifyElementPresent(findTestObject('Groups/Page_Groups - PowerFolder/div_Group updated'), 1)
 
-@Keyword
-WebElement findGroup(String groupName) {
-    WebDriver driver = DriverFactory.getWebDriver()
-
-    return driver.findElement(By.xpath(('//td/a[contains(text(), \'' + groupName) + '\')]'))
-}
+WebUI.closeBrowser()
 

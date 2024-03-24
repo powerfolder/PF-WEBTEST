@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='notification_1807109126']/div</value>
+         <value>//div[4]/div</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>b3b45dd8-2111-49f0-b5c4-da3bea88f0e5</webElementGuid>
+      <webElementGuid>9037e249-6b3b-4396-a5b4-ce625ac279fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-notification-box alert alert-info</value>
-      <webElementGuid>24ba1c9e-e0ef-45da-b985-08ac28f889da</webElementGuid>
+      <webElementGuid>f987ef56-271d-41d9-9928-9aba217d174e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>role</name>
       <type>Main</type>
       <value>alert</value>
-      <webElementGuid>94fdb7fc-ab82-45de-ba05-c0f8e2a2a077</webElementGuid>
+      <webElementGuid>c0593e99-eca4-43ea-9cd7-b81579ff67c7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Group updated×</value>
-      <webElementGuid>fc1d8190-7ca6-48ad-8517-f8d05a492595</webElementGuid>
+      <webElementGuid>8e97dcb8-956c-415c-afd8-6976aa932ea2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;notification_1807109126&quot;)/div[@class=&quot;pica-notification-box alert alert-info&quot;]</value>
-      <webElementGuid>493dc754-9d08-493f-896f-dc4b46990f81</webElementGuid>
+      <webElementGuid>e7fce7b9-1332-4ef0-a4b0-3de552eeafad</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,23 +62,23 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='notification_1807109126']/div</value>
-      <webElementGuid>c1ba12fb-a218-47cc-b0a1-288d59b13325</webElementGuid>
+      <webElementGuid>5772c33a-0263-4d91-983e-1f09e7446454</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Privacy Policy'])[1]/following::div[4]</value>
-      <webElementGuid>2de78d61-9dfe-4df1-a466-ef3f705e4095</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=concat('id(', '&quot;', 'groups_table', '&quot;', ')/tbody[1]')])[1]/following::div[2]</value>
+      <webElementGuid>59d8e842-cd8c-4762-9202-743af29a9b41</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Imprint'])[1]/following::div[4]</value>
-      <webElementGuid>236b20d2-2a87-4d98-a985-3564263aa0f4</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='`'])[2]/following::div[3]</value>
+      <webElementGuid>df5c9e28-97c1-49d5-bf99-b5403adad142</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/div</value>
-      <webElementGuid>aac55a63-074c-4ee3-9e73-fa9f6ee7afac</webElementGuid>
+      <webElementGuid>02c948e9-b03a-41a6-b41c-a4c10ec768ad</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +94,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Group updated×' or . = 'Group updated×')]</value>
-      <webElementGuid>8c30709d-f388-42da-a0ae-220d4460b1ea</webElementGuid>
+      <webElementGuid>afa2fb23-9a22-4600-9ebe-ae4c235e1603</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

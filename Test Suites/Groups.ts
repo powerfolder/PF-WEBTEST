@@ -78,7 +78,7 @@
       <guid>fef9dd29-6c9c-44b0-a3d8-51eacf617dbd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Groups/TG10_Change role</testCaseId>
+      <testCaseId>Test Cases/Groups/TG10_Change permition of the folder in the group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

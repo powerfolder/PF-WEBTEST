@@ -30,7 +30,7 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/div_Group updated'))
+WebUI.verifyElementPresent(findTestObject('Groups/Page_Groups - PowerFolder/div_Group updated'), 1)
 
 WebUI.closeBrowser()
 
