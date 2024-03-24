@@ -31,7 +31,7 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-println "Global Variable: " + GlobalVariable.folderName
+println('Global Variable: ' + GlobalVariable.folderName)
 
 WebUI.callTestCase(findTestCase('Groups/TG07_Add folder to group'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -41,17 +41,22 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups 
 
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
 
-WebElement folderElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='pica_group_folders']/div[2]/table/tbody/tr/td[2][contains(text(), '" + GlobalVariable.folderName + "')]")))
-
+WebElement folderElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(('//div[@id=\'pica_group_folders\']/div[2]/table/tbody/tr/td[2][contains(text(), \'' + 
+            GlobalVariable.folderName) + '\')]')))
 
 folderElement.click()
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Remove'))
+WebElement element = DriverFactory.getWebDriver().findElement(By.xpath('//*[@id="pica_group_folders"]/div[2]/table/thead[1]/tr/th[4]/div/a'))
+
+WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(element))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Yes'))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
+WebUI.verifyElementPresent(findTestObject('Groups/Page_Groups - PowerFolder/div_Group updated'), 1)
+
+WebUI.closeBrowser()
 
 @Keyword
 WebElement findGroup(String groupName) {
