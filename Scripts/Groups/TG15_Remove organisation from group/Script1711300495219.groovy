@@ -39,15 +39,17 @@ WebUI.click(findTestObject('Page_Groups - PowerFolder/a_Organisationen'))
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/td_Organisation'))
 
+WebUI.delay(1)
+
 WebElement element = DriverFactory.getWebDriver().findElement(By.xpath('//*[@id="pica_group_organizations"]/div[2]/table/thead[1]/tr/th[3]/div/a'))
- 
- WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(element))
- 
- WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Yes'))
- 
- WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
- 
- WebUI.verifyElementPresent(findTestObject('Groups/Page_Groups - PowerFolder/div_Group updated'), 1)
- 
- WebUI.closeBrowser()
+
+WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(element))
+
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Yes'))
+
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
+
+WebUI.verifyElementPresent(findTestObject('Groups/Page_Groups - PowerFolder/div_Group updated'), 1)
+
+WebUI.closeBrowser()
 
