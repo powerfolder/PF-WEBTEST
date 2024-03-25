@@ -24,34 +24,36 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import java.util.List as List
 
-String groupNameModifed = 'Group_modified_' + RandomStringUtils.randomNumeric(4)
+String groupNameModified = 'Group_modified_' + RandomStringUtils.randomNumeric(4)
 
 WebUI.callTestCase(findTestCase('Groups/TG02_Create group'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
-    groupNameModifed)
+    groupNameModified)
 
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/textarea_Organizations_pica_group_notes'), 
-    'the name has benn modified')
+    'the name has been modified')
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
-def btn = findGroupModified(groupNameModifed)
+WebUI.delay(1)
+
+def btn = findGroupModified(groupNameModified)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-assert groupNameModifed != null
+assert groupNameModified != null
 
 WebUI.delay(2)
 
 WebUI.closeBrowser()
 
 @Keyword
-WebElement findGroupModified(String groupNameModifed) {
+WebElement findGroupModified(String groupNameModified) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + groupNameModifed) + '\')]/td[1]/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + groupNameModified) + '\')]/td[1]/span'))
 }
 

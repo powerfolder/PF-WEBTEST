@@ -26,6 +26,8 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 // Remplacer l'appel à findTestObject par un XPath direct
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Can read'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Can read and write'))
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))

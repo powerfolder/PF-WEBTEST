@@ -30,30 +30,24 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-WebUI.callTestCase(findTestCase('Groups/TG11_Add member to group'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Groups/TG14_Add an organisition to group'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
-WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
+WebUI.click(findTestObject('Page_Groups - PowerFolder/a_Organisationen'))
 
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/td_Organisation'))
 
-WebElement userElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(('//*[@id=\'pica_group_accounts\']//div[2]/table/tbody/tr/td[2][contains(text(), \'' + 
-            GlobalVariable.userName) + '\')]')))
-
-userElement.click()
-
-WebElement element = DriverFactory.getWebDriver().findElement(By.xpath('//*[@id="pica_group_accounts"]/div[2]/table/thead[1]/tr/th[3]/div/a'))
-
-WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(element))
-
-WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Yes'))
-
-WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
-
-WebUI.verifyElementPresent(findTestObject('Groups/Page_Groups - PowerFolder/div_Group updated'), 1)
-
-WebUI.closeBrowser()
+WebElement element = DriverFactory.getWebDriver().findElement(By.xpath('//*[@id="pica_group_organizations"]/div[2]/table/thead[1]/tr/th[3]/div/a'))
+ 
+ WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(element))
+ 
+ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Yes'))
+ 
+ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
+ 
+ WebUI.verifyElementPresent(findTestObject('Groups/Page_Groups - PowerFolder/div_Group updated'), 1)
+ 
+ WebUI.closeBrowser()
 

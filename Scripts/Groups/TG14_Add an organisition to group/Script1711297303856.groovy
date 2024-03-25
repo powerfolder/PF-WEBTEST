@@ -31,34 +31,33 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-// Déclaration de la variable globale folderName
-GlobalVariable.folderName = ('folder_' + RandomStringUtils.randomNumeric(4))
+String organisationName = 'Organisation_' + RandomStringUtils.randomNumeric(4)
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
+WebUiBuiltInKeywords.click(findTestObject('Organization/SelectOrganization'))
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolderIcon'))
+WebUiBuiltInKeywords.click(findTestObject('Organization/DropDownToggle'))
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
+WebUiBuiltInKeywords.click(findTestObject('Organization/CreateOrganization'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), GlobalVariable.folderName)
+WebUiBuiltInKeywords.setText(findTestObject('Organization/InputName'), organisationName)
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
+WebUiBuiltInKeywords.setText(findTestObject('Organization/InputMaxNumber'), '10')
+
+WebUiBuiltInKeywords.setText(findTestObject('Organization/InputQuota'), '2')
+
+WebUiBuiltInKeywords.click(findTestObject('Organization/SaveButton'))
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement folder = driver.findElement(By.xpath(('//td/a[contains(text(),\'' + GlobalVariable.folderName) + '\')]'))
+WebElement organisation = driver.findElement(By.xpath(('//td/a[contains(text(), \'' + organisationName) + '\')]'))
 
-boolean isFolderCreated = folder.isDisplayed()
+boolean isOrganisationCreated = organisation.isDisplayed()
 
-WebUiBuiltInKeywords.verifyEqual(isFolderCreated, true)
+WebUiBuiltInKeywords.verifyEqual(isOrganisationCreated, true)
 
-// Générer un nom de groupe aléatoire
-String groupName = 'Group_' + RandomStringUtils.randomNumeric(4)
-
-// Assigner le nom de groupe aléatoire à la variable globale GroupName
-GlobalVariable.GroupName = groupName
+GlobalVariable.GroupName = ('Group_' + RandomStringUtils.randomNumeric(4))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 
@@ -72,30 +71,23 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Group
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
-WebUI.delay(1)
-
-// Rechercher le groupe avec le nom généré aléatoirement
 WebElement btn = findGroup(GlobalVariable.GroupName)
+
+WebUI.delay(1)
 
 WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 assert GlobalVariable.GroupName != null
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
+WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Folders'))
+WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Organizations'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Delete_pica-taginput-input form-control'), 
-    GlobalVariable.folderName)
+WebElement inputElement = driver.findElement(By.xpath('//*[@id=\'pica_group_organizations\']/div[1]/div[1]/input'))
 
-// Attendre que l'élément recherché apparaisse dans les résultats de la recherche
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+inputElement.sendKeys(organisationName)
 
-WebElement folderElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(('//div[3]/div/div[contains(.,\'' + 
-            GlobalVariable.folderName) + '\')]/ul//a')))
-
-// Cliquer sur l'élément trouvé dans les résultats de la recherche
-folderElement.click()
+WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/Organisation click'))
 
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
 
