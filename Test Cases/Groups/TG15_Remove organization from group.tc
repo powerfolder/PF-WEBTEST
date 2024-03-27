@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TG14_Add an organisition to group</name>
+   <name>TG15_Remove organization from group</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>b6dee4dd-0570-461b-bdd2-3c32ce1d5c8a</testCaseGuid>
+   <testCaseGuid>ccd0eb25-d510-487e-85e7-1bd7e45ba8e9</testCaseGuid>
 </TestCaseEntity>

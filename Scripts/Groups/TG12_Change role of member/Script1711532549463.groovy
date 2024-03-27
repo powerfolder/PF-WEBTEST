@@ -23,9 +23,13 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Is member'))
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Is member'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 

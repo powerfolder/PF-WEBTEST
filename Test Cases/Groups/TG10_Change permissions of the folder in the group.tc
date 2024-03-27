@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TG10_Change permition of the folder in the group</name>
+   <name>TG10_Change permissions of the folder in the group</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>3865d406-c803-4909-aff2-a66353367045</testCaseGuid>

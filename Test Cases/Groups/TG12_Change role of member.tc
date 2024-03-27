@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TG12_Change Role of member</name>
+   <name>TG12_Change role of member</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>7d673ec5-7390-47af-a7b7-2539315b3fff</testCaseGuid>

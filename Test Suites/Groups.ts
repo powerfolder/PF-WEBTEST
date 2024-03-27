@@ -78,7 +78,7 @@
       <guid>fef9dd29-6c9c-44b0-a3d8-51eacf617dbd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Groups/TG10_Change permition of the folder in the group</testCaseId>
+      <testCaseId>Test Cases/Groups/TG10_Change permissions of the folder in the group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -92,7 +92,7 @@
       <guid>3ace5ba5-d5c5-43ef-85c9-33a388317e2d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Groups/TG12_Change Role of member</testCaseId>
+      <testCaseId>Test Cases/Groups/TG12_Change role of member</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -106,14 +106,14 @@
       <guid>f62cf0ae-270c-42b4-98cc-5f5ff8cf9bf5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Groups/TG14_Add an organisition to group</testCaseId>
+      <testCaseId>Test Cases/Groups/TG14_Add an organization to group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>c467b199-c8f3-40e7-81f3-ad3fa4f9cf5c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Groups/TG15_Remove organisation from group</testCaseId>
+      <testCaseId>Test Cases/Groups/TG15_Remove organization from group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
