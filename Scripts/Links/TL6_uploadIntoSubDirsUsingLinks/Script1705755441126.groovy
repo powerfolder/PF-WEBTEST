@@ -38,8 +38,6 @@ WebUI.setText(findTestObject('Folders/inputFolderName'),folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
-WebUI.setText(findTestObject('Accounts/inputAccountSearch'), folderName)
-WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
 WebDriver driver = DriverFactory.getWebDriver()
 WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$folderName')]"))
 
@@ -47,7 +45,7 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 
-WebUI.click(findTestObject('Folders/createDocument'))
+WebUI.click(findTestObject('Folders/createDirectoryIcon'))
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), "dir1")
 
@@ -79,9 +77,7 @@ WebUI.click(findTestObject('Page_Link - PowerFolder/buttonSettings'))
 
 WebUI.click(findTestObject('Share/button_allowUpload'))
 WebUI.click(findTestObject('Share/buttonSave'))
-//WebElement rights =  driver.findElement(By.xpath("//tr[contains(@id,'share_Object')]/td[2]/div/div/div/div[2]/ul/li[2]/a"))
 
-//WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(rights))
 
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor);
 

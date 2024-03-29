@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lang_button_upload</name>
+   <tag></tag>
+   <elementGuidId>de7cf629-6d77-490c-b319-ad4ba65c78db</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica-files-create-dropdown']/ul/li[9]/a/lang</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>li.files-visible-only-other.files-ui-create-doc > a > lang[name=&quot;string_create&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>lang</value>
+      <webElementGuid>efc2591d-4982-4e62-9a0e-939a837d21f7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>string_create</value>
+      <webElementGuid>58f7ffde-d83e-4289-9bb2-03bf49e6656b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Create Document</value>
+      <webElementGuid>9a54a914-b32a-496a-962f-06185854a565</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica-files-create-dropdown&quot;)/ul[@class=&quot;pica-arrow-left dropdown-menu&quot;]/li[@class=&quot;files-visible-only-other files-ui-create-doc&quot;]/a[1]/lang[1]</value>
+      <webElementGuid>0354c604-a87c-46d5-9296-77ce4daeb8fd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica-files-create-dropdown']/ul/li[4]/a/lang</value>
+      <webElementGuid>07323667-3ee5-422b-a322-975ff0d4da7f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

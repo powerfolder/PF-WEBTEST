@@ -36,10 +36,13 @@ WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandli
 WebUI.setText(findTestObject('Folders/inputFolderName'),folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-WebUI.setText(findTestObject('Accounts/inputAccountSearch'), folderName)
-WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
-
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+/*
+ * WebUI.setText(findTestObject('Accounts/inputAccountSearch'), folderName)
+ * WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'),
+ * Keys.chord(Keys.ENTER))
+ * 
+ * assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+ */
 
 WebDriver driver = DriverFactory.getWebDriver()
 WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$folderName')]"))
@@ -67,8 +70,10 @@ WebUI.click(findTestObject('Links/buttonCreateLink'))
 WebUI.waitForElementClickable(findTestObject('Links/buttonCreateLink'), 30, FailureHandling.CONTINUE_ON_FAILURE)
 WebElement buttonCreateLink = 	WebUiCommonHelper.findWebElement(findTestObject('Links/buttonCreateLink'),30)
 WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(buttonCreateLink))
-WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'),	'3')
+
 WebUI.setText(findTestObject('Page_Link - PowerFolder/lang_Password required'), 'Alexa@131190')
+
+
 WebUI.delay(10)
 
 WebUI.click(findTestObject('SettingsPopUp/buttonSave'))

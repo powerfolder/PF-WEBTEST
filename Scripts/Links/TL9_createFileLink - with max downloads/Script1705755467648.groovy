@@ -25,7 +25,9 @@ import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit
 import java.awt.datatransfer.DataFlavor
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
-import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import java.nio.file.Path;
+import java.nio.file.Files;
+
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 String folderName = getRandomFolderName() 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
@@ -37,26 +39,38 @@ WebUI.click(findTestObject('Folders/buttonOK'))
 
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 
-WebUI.setText(findTestObject('Accounts/inputAccountSearch'), folderName)
-WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
+
 WebDriver driver = DriverFactory.getWebDriver()
 WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$folderName')]"))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
 WebUI.click(findTestObject('Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0'))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/lang_Create Document'))
+WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/lang_button_upload'))
 
-WebUI.setText(findTestObject('Page_Folders - PowerFolder/input_Create a new Folder_pencil'), folderName)
+WebElement upload =  driver.findElement(By.xpath("//span[@id='upload_file']"))
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(upload))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Ok'))
+WebElement input =  driver.findElement(By.xpath("//input[@id='upload_input_files']"))
 
-WebUI.closeWindowIndex(1)
-WebUI.delay(1)
-WebUI.switchToWindowIndex(0)
+	Path file = Files.createTempFile("younes", ".pdf");
+	Files.write(file, "Hello".getBytes());
+
+WebUI.uploadFile(findTestObject('Page_Link - PowerFolder/span_Add file'), file.toAbsolutePath().toString())
+WebUI.uploadFile(findTestObject('Object Repository/Page_Link - PowerFolder/span_Add file'), file.toAbsolutePath().toString())
+
+WebUI.click(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Upload_1'))
+
+WebUI.click(findTestObject('Object Repository/Page_Link - PowerFolder/button_Close'))
+
+
+
+
 WebUI.refresh()
 
-WebElement btn = findShareButton(folderName)
+println file.getFileName().toString();
+
+WebElement btn = findShareButton(file.getFileName().toString())
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
