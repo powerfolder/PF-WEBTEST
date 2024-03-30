@@ -15,6 +15,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as WindowsBuiltinKeywords
+import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
@@ -30,15 +31,17 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-String folderName = ('folder_' + RandomStringUtils.randomNumeric(4))
 
-WebUI.callTestCase(findTestCase('Groups/TG02_Create group'), [:], FailureHandling.STOP_ON_FAILURE)
+GlobalVariable.folderName = 'folder_' + RandomStringUtils.randomNumeric(4)
+
+WebUI.callTestCase(findTestCase('Groups/Pre_test/create_group'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Folders'))
 
-WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Delete_pica-taginput-input form-control'), folderName)
+WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Delete_pica-taginput-input form-control'), 
+    GlobalVariable.folderName)
 
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
 
@@ -50,4 +53,26 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/b
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/div_Group updated'), 1)
 
+WebElement btn1 = findGroup(GlobalVariable.GroupName)
+
+WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
+
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
+
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Folders'))
+
+WebUI.verifyElementText(findTestObject('Groups/Page_Groups - PowerFolder/Verifier_folder'), GlobalVariable.folderName)
+
+WebUI.click(findTestObject('Share/Page_Groups - PowerFolder/button_Cancel'))
+
 WebUI.closeBrowser()
+
+@Keyword
+WebElement findGroup(String groupName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+
+	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + GlobalVariable.GroupName) + '\')]/td[1]/span'))
+}
+
+
+

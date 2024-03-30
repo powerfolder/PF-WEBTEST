@@ -31,7 +31,7 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-String organisationName = 'Organisation_' + RandomStringUtils.randomNumeric(4)
+GlobalVariable.organisationName = ('Organisation_' + RandomStringUtils.randomNumeric(4))
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -41,7 +41,7 @@ WebUiBuiltInKeywords.click(findTestObject('Organization/DropDownToggle'))
 
 WebUiBuiltInKeywords.click(findTestObject('Organization/CreateOrganization'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Organization/InputName'), organisationName)
+WebUiBuiltInKeywords.setText(findTestObject('Organization/InputName'), GlobalVariable.organisationName)
 
 WebUiBuiltInKeywords.setText(findTestObject('Organization/InputMaxNumber'), '10')
 
@@ -51,7 +51,8 @@ WebUiBuiltInKeywords.click(findTestObject('Organization/SaveButton'))
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement organisation = driver.findElement(By.xpath(('//td/a[contains(text(), \'' + organisationName) + '\')]'))
+WebElement organisation = driver.findElement(By.xpath(('//td/a[contains(text(), \'' + GlobalVariable.organisationName) + 
+        '\')]'))
 
 boolean isOrganisationCreated = organisation.isDisplayed()
 
@@ -61,7 +62,7 @@ GlobalVariable.GroupName = ('Group_' + RandomStringUtils.randomNumeric(4))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/span_Log out_pica-icon pica-glyph glyphicon_0824b5'))
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
 
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
     GlobalVariable.GroupName)
@@ -85,7 +86,7 @@ WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Or
 
 WebElement inputElement = driver.findElement(By.xpath('//*[@id=\'pica_group_organizations\']/div[1]/div[1]/input'))
 
-inputElement.sendKeys(organisationName)
+inputElement.sendKeys(GlobalVariable.organisationName)
 
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/Organisation click'))
 
@@ -96,6 +97,16 @@ WebUI.delay(1)
 WebElement btn1 = findGroup(GlobalVariable.GroupName)
 
 WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
+
+WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Edit_m'))
+
+WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Organizations'))
+
+WebUI.verifyElementText(findTestObject('Groups/Page_Groups - PowerFolder/verify_organization'), GlobalVariable.organisationName)
+
+WebUI.click(findTestObject('Share/Page_Groups - PowerFolder/button_Cancel'))
+
+WebUI.closeBrowser()
 
 @Keyword
 WebElement findGroup(String groupName) {

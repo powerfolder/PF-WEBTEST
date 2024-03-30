@@ -31,7 +31,7 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-WebUI.callTestCase(findTestCase('Groups/TG14_Add an organization to group'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Groups/Pre_test/add organization'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
@@ -47,9 +47,44 @@ WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(element))
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Yes'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
 WebUI.verifyElementPresent(findTestObject('Groups/Page_Groups - PowerFolder/div_Group updated'), 1)
 
+WebElement btn1 = findGroup(GlobalVariable.GroupName)
+
+WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
+
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
+
+WebUI.click(findTestObject('Page_Groups - PowerFolder/a_Organisationen'))
+
+verifyNoElementWithorganizationNamePresent(('//*[@id="pica_group_organizations"]/div[2]//*[contains(text(), \'' + GlobalVariable.organisationName) + 
+    '\')]') 
+
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
+
 WebUI.closeBrowser()
+
+@Keyword
+WebElement findGroup(String groupName) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + groupName) + '\')]/td[1]/span'))
+}
+
+@Keyword
+void verifyNoElementWithorganizationNamePresent(String userNameXpath) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    List<WebElement> elements = driver.findElements(By.xpath(userNameXpath))
+
+    if (elements.size() == 0) {
+        println("No element containing folder name '$GlobalVariable.organisationName' found.")
+    } else {
+        println("Elements containing folder name '$GlobalVariable.organisationName' found. Verification failed.")
+    }
+}
 

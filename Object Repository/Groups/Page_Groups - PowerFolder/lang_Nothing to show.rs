@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lang_Nothing to show</name>
+   <tag></tag>
+   <elementGuidId>df5c3295-27ea-489b-8ef7-2a3b9ae1fa38</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//lang[@name='string_nothing_found']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>lang[name=&quot;string_nothing_found&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>lang</value>
+      <webElementGuid>642f4706-f4df-45ab-8268-675e9bf0c9f2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>string_nothing_found</value>
+      <webElementGuid>4285aeb4-a3e5-4502-b4b8-fac99c64c74b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Nothing to show</value>
+      <webElementGuid>385b2a10-ce98-4bba-97eb-d25ebad5b9fb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_group_folders&quot;)/div[@class=&quot;pica-inputlist-scroller&quot;]/table[@class=&quot;pica-inputlist-table table table-striped table-hover&quot;]/tbody[1]/tr[@class=&quot;pica-table-empty warning&quot;]/td[@class=&quot;text-center&quot;]/lang[1]</value>
+      <webElementGuid>0c546fb2-4e87-4991-ad7a-93438b571ce8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//lang[@name='string_nothing_found']</value>
+      <webElementGuid>386bad3f-23ed-4b85-814b-9ecb735c1b31</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_group_folders']/div[2]/table/tbody/tr/td/lang</value>
+      <webElementGuid>ca829138-8117-49ca-a722-51c99bf88877</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[1]/following::lang[1]</value>
+      <webElementGuid>af978eba-936d-4ca7-bcc4-a321dfc00486</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Create new'])[1]/following::lang[2]</value>
+      <webElementGuid>de310cc4-2bd5-4f8a-b236-f36ed533f59d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[2]/preceding::lang[1]</value>
+      <webElementGuid>51950e55-069a-439c-9078-0c5e36006351</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='admin'])[3]/preceding::lang[2]</value>
+      <webElementGuid>efbf4c90-fdbe-460b-b77c-cb005e8c6717</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Nothing to show']/parent::*</value>
+      <webElementGuid>19bc3517-8fd7-4cae-8473-93e2a99f7149</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/lang</value>
+      <webElementGuid>5bfe565f-20dc-4681-8117-4139d59dd29a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//lang[@name = 'string_nothing_found' and (text() = 'Nothing to show' or . = 'Nothing to show')]</value>
+      <webElementGuid>b85e7040-b3e8-4ddd-8b17-8bfc61ca878c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

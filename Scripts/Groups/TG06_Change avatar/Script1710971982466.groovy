@@ -36,7 +36,7 @@ import javax.swing.JFrame as JFrame
 downloadImageAndPlaceOnDesktop('https://cdn-icons-png.flaticon.com/512/2919/2919906.png', 'avatar.png')
 
 // Exécuter les étapes de test
-WebUI.callTestCase(findTestCase('Groups/TG02_Create group'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Groups/Pre_test/create_group'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
@@ -49,8 +49,8 @@ WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/span_Add file_m'))
 // Sélectionner l'image téléchargée pour continuer le test
 def desktopImagePath = Paths.get(System.getProperty('user.home'), 'Desktop', 'images', 'avatar.png')
 
-selectImageAutomatically(desktopImagePath.toString() // Fonction pour sélectionner automatiquement l'image dans l'explorateur de fichiers
-    )
+selectImageAutomatically(desktopImagePath.toString( // Fonction pour sélectionner automatiquement l'image dans l'explorateur de fichiers
+        ))
 
 // Créer une instance de Robot
 // Attente pour que l'explorateur de fichiers s'ouvre complètement

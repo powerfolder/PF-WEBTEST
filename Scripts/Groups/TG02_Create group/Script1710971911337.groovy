@@ -26,13 +26,11 @@ import java.util.List as List
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
-String groupName = 'Group_' + RandomStringUtils.randomNumeric(4)
-
-GlobalVariable.GroupName = groupName
+GlobalVariable.GroupName = 'Group_' + RandomStringUtils.randomNumeric(4)
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 
-WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/span_Log out_pica-icon pica-glyph glyphicon_0824b5'))
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
 
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
     GlobalVariable.GroupName)
@@ -44,11 +42,13 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/b
 
 WebUI.delay(1)
 
-def btn = findGroup(groupName)
+def btn = findGroup(GlobalVariable.GroupName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-assert groupName != null
+assert GlobalVariable.GroupName != null
+
+WebUI.closeBrowser()
 
 @Keyword
 WebElement findGroup(String groupName) {

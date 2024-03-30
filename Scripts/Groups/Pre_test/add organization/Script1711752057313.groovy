@@ -31,59 +31,76 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-println('Global Variable: ' + GlobalVariable.folderName)
+GlobalVariable.organisationName = 'Organisation_' + RandomStringUtils.randomNumeric(4)
 
-WebUI.callTestCase(findTestCase('Groups/Pre_test/add folder'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
+WebUiBuiltInKeywords.click(findTestObject('Organization/SelectOrganization'))
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Folders'))
+WebUiBuiltInKeywords.click(findTestObject('Organization/DropDownToggle'))
 
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+WebUiBuiltInKeywords.click(findTestObject('Organization/CreateOrganization'))
 
-WebElement folderElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(('//div[@id=\'pica_group_folders\']/div[2]/table/tbody/tr/td[2][contains(text(), \'' + 
-            GlobalVariable.folderName) + '\')]')))
+WebUiBuiltInKeywords.setText(findTestObject('Organization/InputName'), GlobalVariable.organisationName)
 
-folderElement.click()
+WebUiBuiltInKeywords.setText(findTestObject('Organization/InputMaxNumber'), '10')
 
-WebElement element = DriverFactory.getWebDriver().findElement(By.xpath('//*[@id="pica_group_folders"]/div[2]/table/thead[1]/tr/th[4]/div/a'))
+WebUiBuiltInKeywords.setText(findTestObject('Organization/InputQuota'), '2')
 
-WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(element))
+WebUiBuiltInKeywords.click(findTestObject('Organization/SaveButton'))
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Yes'))
+WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.delay(2)
+WebElement organisation = driver.findElement(By.xpath(('//td/a[contains(text(), \'' + GlobalVariable.organisationName) + '\')]'))
+
+boolean isOrganisationCreated = organisation.isDisplayed()
+
+WebUiBuiltInKeywords.verifyEqual(isOrganisationCreated, true)
+
+GlobalVariable.GroupName = ('Group_' + RandomStringUtils.randomNumeric(4))
+
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
+
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
+
+WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
+    GlobalVariable.GroupName)
+
+WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/textarea_Organizations_pica_group_notes'), 
+    'create group')
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
 WebElement btn = findGroup(GlobalVariable.GroupName)
 
+WebUI.delay(1)
+
 WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Folders'))
+assert GlobalVariable.GroupName != null
 
-verifyNoElementWithFolderNamePresent('//*[@id="pica_group_folders"]/div[2]//*[contains(text(), \'' + GlobalVariable.folderName + '\')]')
- 
-WebUI.closeBrowser()
+WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Edit_m'))
+
+WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Organizations'))
+
+WebElement inputElement = driver.findElement(By.xpath('//*[@id=\'pica_group_organizations\']/div[1]/div[1]/input'))
+
+inputElement.sendKeys(GlobalVariable.organisationName)
+
+WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/Organisation click'))
+
+WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
+
+WebUI.delay(1)
+
+WebElement btn1 = findGroup(GlobalVariable.GroupName)
+
+WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
 @Keyword
 WebElement findGroup(String groupName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//td/a[contains(text(), \'' + groupName) + '\')]'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + groupName) + '\')]/td[1]/span'))
 }
-
-@Keyword
-void verifyNoElementWithFolderNamePresent(String folderNameXpath) {
-	WebDriver driver = DriverFactory.getWebDriver()
-	List<WebElement> elements = driver.findElements(By.xpath(folderNameXpath))
-	
-	if (elements.size() == 0) {
-		println("No element containing folder name '${GlobalVariable.folderName}' found.")
-	} else {
-		println("Elements containing folder name '${GlobalVariable.folderName}' found. Verification failed.")
-		// Vous pouvez également lever une exception ou prendre d'autres mesures appropriées ici
-	}
-}
-
 

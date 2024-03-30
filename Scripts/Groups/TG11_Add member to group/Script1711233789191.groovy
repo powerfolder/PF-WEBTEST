@@ -31,80 +31,29 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-user = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
+GlobalVariable.userName = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
 
-GlobalVariable.userName = user
-
-WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
-
-WebUiBuiltInKeywords.click(findTestObject('LeftNavigationIcons/account'))
-
-WebUiBuiltInKeywords.click(findTestObject('Accounts/CreateButton'))
-
-WebUiBuiltInKeywords.click(findTestObject('Accounts/ClickCreateAccount'))
-
-WebUiBuiltInKeywords.setText(findTestObject('Accounts/InputUserOrEmail'), user)
-
-WebUiBuiltInKeywords.setText(findTestObject('Accounts/InputPassword'), 'Alexa@131190')
-
-WebUiBuiltInKeywords.setText(findTestObject('Accounts/InputQuota'), '5')
-
-WebUiBuiltInKeywords.click(findTestObject('Accounts/SaveButton'))
-
-WebDriver driver = DriverFactory.getWebDriver()
-
-WebElement userElement = driver.findElement(By.xpath(('//td/a[contains(text(),\'' + user) + '\')]'))
-
-boolean isUserCreated = userElement.isDisplayed()
-
-WebUiBuiltInKeywords.verifyEqual(isUserCreated, true)
-
-String groupName = 'Group_' + RandomStringUtils.randomNumeric(4)
-
-GlobalVariable.GroupName = groupName
-
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
-
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/span_Log out_pica-icon pica-glyph glyphicon_0824b5'))
-
-WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
-    GlobalVariable.GroupName)
-
-WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/textarea_Organizations_pica_group_notes'), 
-    'create group')
-
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
-
-WebUI.delay(1)
-
-def btn = findGroup(groupName)
-
-WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
-assert groupName != null
+WebUiBuiltInKeywords.callTestCase(findTestCase('Groups/Pre_test/add member'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members')) 
 
-WebElement inputElement = driver.findElement(By.xpath('//*[@id=\'pica_group_accounts\']/div[1]/div[1]/input'))
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
 
-inputElement.sendKeys(user)
+WebElement user = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(('//*[@id=\'pica_group_accounts\']//div[2]/table/tbody/tr/td[2][contains(text(), \'' + 
+            GlobalVariable.userName) + '\')]')))
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
+user.click()
 
-WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
+assert user != null : 'L\'élément utilisateur n\'a pas été trouvé.'
 
-WebUI.delay(1)
-
-WebElement btn1 = findGroup(GlobalVariable.GroupName)
-
-WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
+WebUI.closeBrowser()
 
 @Keyword
 WebElement findGroup(String groupName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + groupName) + '\')]/td[1]/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + GlobalVariable.GroupName) + '\')]/td[1]/span'))
 }
 

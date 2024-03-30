@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Log out_pica-icon pica-glyph glyphicon_0824b5</name>
+   <name>span_Can administrate</name>
    <tag></tag>
-   <elementGuidId>bba8b46d-7922-4b4b-b879-47dc338dd72d</elementGuidId>
+   <elementGuidId>92e473d0-8df4-40c8-a8e8-becfb09cebc0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>span.pica-icon.pica-glyph.glyphicons.glyphicons-plus-sign</value>
+         <value>span.glyphicons.glyphicons-check</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='groups_create']/span</value>
+         <value>//td[3]/div/ul/li[3]/a/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,38 +22,38 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>051bde53-c8b4-4587-806a-db0047b81e56</webElementGuid>
+      <webElementGuid>ccdf57dd-d5b0-49d0-8c78-40d96ae9ea34</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>pica-icon pica-glyph glyphicons glyphicons-plus-sign</value>
-      <webElementGuid>22133a4c-3261-4838-8342-cb1b1102708c</webElementGuid>
+      <value>glyphicons glyphicons-check</value>
+      <webElementGuid>4ef4bdf1-44b9-4b0c-865b-ff0474dcca4e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;groups_create&quot;)/span[@class=&quot;pica-icon pica-glyph glyphicons glyphicons-plus-sign&quot;]</value>
-      <webElementGuid>ea49b101-798d-43ea-b028-18490117dded</webElementGuid>
+      <value>id(&quot;item_1604547883&quot;)/td[@class=&quot;hidden-xs&quot;]/div[@class=&quot;pica-inline dropdown pull-right open&quot;]/ul[@class=&quot;dropdown-menu&quot;]/li[3]/a[1]/span[@class=&quot;glyphicons glyphicons-check&quot;]</value>
+      <webElementGuid>f7885d0d-83b1-46ac-99c6-08a1e0e214a3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//a[@id='groups_create']/span</value>
-      <webElementGuid>414f9327-5501-4c37-ab45-6213050d7474</webElementGuid>
+      <value>//tr[@id='item_1604547883']/td[3]/div/ul/li[3]/a/span</value>
+      <webElementGuid>eb0cf21b-8609-4c7c-b952-e111b1c56053</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//th/a/span</value>
-      <webElementGuid>cef3e976-2809-4022-b802-bad09181f603</webElementGuid>
+      <value>//td[3]/div/ul/li[3]/a/span</value>
+      <webElementGuid>4a048bf6-e5f6-4136-bd70-59ea06afb0f0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

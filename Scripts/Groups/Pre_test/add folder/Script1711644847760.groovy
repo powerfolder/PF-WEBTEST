@@ -54,18 +54,21 @@ boolean isFolderCreated = folder.isDisplayed()
 
 WebUiBuiltInKeywords.verifyEqual(isFolderCreated, true)
 
-// Assigner le nom de groupe aléatoire à la variable globale
-GlobalVariable.GroupName = ('Group_' + RandomStringUtils.randomNumeric(4))
+// Générer un nom de groupe aléatoire
+String groupName = 'Group_' + RandomStringUtils.randomNumeric(4)
+
+// Assigner le nom de groupe aléatoire à la variable globale GroupName
+GlobalVariable.GroupName = groupName
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
-    GlobalVariable.GroupName)
+WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'),
+	GlobalVariable.GroupName)
 
-WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/textarea_Organizations_pica_group_notes'), 
-    'create group')
+WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/textarea_Organizations_pica_group_notes'),
+	'create group')
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
@@ -82,14 +85,14 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups 
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Folders'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Delete_pica-taginput-input form-control'), 
-    GlobalVariable.folderName)
+WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Delete_pica-taginput-input form-control'),
+	GlobalVariable.folderName)
 
 // Attendre que l'élément recherché apparaisse dans les résultats de la recherche
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
 
-WebElement folderElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(('//div[3]/div/div[contains(.,\'' + 
-            GlobalVariable.folderName) + '\')]/ul//a')))
+WebElement folderElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(('//div[3]/div/div[contains(.,\'' +
+			GlobalVariable.folderName) + '\')]/ul//a')))
 
 // Cliquer sur l'élément trouvé dans les résultats de la recherche
 folderElement.click()
@@ -102,20 +105,10 @@ WebElement btn1 = findGroup(GlobalVariable.GroupName)
 
 WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
-
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Folders'))
-
-WebUI.verifyElementText(findTestObject('Groups/Page_Groups - PowerFolder/Verifier_folder'), GlobalVariable.folderName)
-
-WebUI.click(findTestObject('Share/Page_Groups - PowerFolder/button_Cancel'))
-
-WebUI.closeBrowser()
-
 @Keyword
 WebElement findGroup(String groupName) {
-    WebDriver driver = DriverFactory.getWebDriver()
+	WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + groupName) + '\')]/td[1]/span'))
+	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + groupName) + '\')]/td[1]/span'))
 }
 

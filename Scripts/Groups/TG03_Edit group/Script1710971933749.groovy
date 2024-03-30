@@ -26,7 +26,7 @@ import java.util.List as List
 
 String groupNameModified = 'Group_modified_' + RandomStringUtils.randomNumeric(4)
 
-WebUI.callTestCase(findTestCase('Groups/TG02_Create group'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Groups/Pre_test/create_group'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
@@ -45,8 +45,6 @@ def btn = findGroupModified(groupNameModified)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 assert groupNameModified != null
-
-WebUI.delay(2)
 
 WebUI.closeBrowser()
 

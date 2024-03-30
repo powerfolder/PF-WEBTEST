@@ -30,9 +30,8 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-WebUI.callTestCase(findTestCase('Groups/TG11_Add member to group'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Groups/Pre_test/add member'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
@@ -51,9 +50,44 @@ WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(element))
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Yes'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
 WebUI.verifyElementPresent(findTestObject('Groups/Page_Groups - PowerFolder/div_Group updated'), 1)
 
+WebElement btn1 = findGroup(GlobalVariable.GroupName)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
+
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
+
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
+
+verifyNoElementWithuserNamePresent(('//*[@id="pica_group_accounts"]/div[2]//*[contains(text(), \'' + GlobalVariable.userName) + 
+    '\')]')
+
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save')) // Vous pouvez également lever une exception ou prendre d'autres mesures appropriées ici
+
 WebUI.closeBrowser()
+
+@Keyword
+WebElement findGroup(String groupName) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + groupName) + '\')]/td[1]/span'))
+}
+
+@Keyword
+void verifyNoElementWithuserNamePresent(String userNameXpath) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    List<WebElement> elements = driver.findElements(By.xpath(userNameXpath))
+
+    if (elements.size() == 0) {
+        println("No element containing folder name '$GlobalVariable.userName' found.")
+    } else {
+        println("Elements containing folder name '$GlobalVariable.userName' found. Verification failed.")
+    }
+}
 
