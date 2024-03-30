@@ -71,9 +71,9 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Group
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
-WebElement btn = findGroup(GlobalVariable.GroupName)
-
 WebUI.delay(1)
+
+WebElement btn = findGroup(GlobalVariable.GroupName)
 
 WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
