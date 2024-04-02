@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Folders</name>
+   <tag></tag>
+   <elementGuidId>a85c3cee-4281-4724-b9f9-ac515cbb422f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[(text() = 'Folders' or . = 'Folders')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>li.hidden-xs.active > a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>c4371df0-f902-4c9a-8ac6-bf864a93b1c0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Folders</value>
+      <webElementGuid>cd2ed1f0-4053-4e84-9c74-d5be0cc71870</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_group_nav&quot;)/li[@class=&quot;hidden-xs active&quot;]/a[1]</value>
+      <webElementGuid>a4ffe18e-2d74-4ab6-a452-f0d8ef95a3bb</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//ul[@id='pica_group_nav']/li[3]/a</value>
+      <webElementGuid>945d2d0d-0955-492f-a994-7214887b768b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Avatar'])[1]/following::a[1]</value>
+      <webElementGuid>6d03ce91-1d51-48d3-9291-c5bdc6336a67</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Group'])[1]/following::a[2]</value>
+      <webElementGuid>4ac5c6f2-a115-41fe-b92c-3a7b022cb4f6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Members'])[2]/preceding::a[1]</value>
+      <webElementGuid>1e09fe9c-33d0-4ffc-ae9a-79cabeedbc9a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/div[2]/ul/li[3]/a</value>
+      <webElementGuid>a51e953d-463f-40a4-b686-4765a39795c8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[(text() = 'Folders' or . = 'Folders')]</value>
+      <webElementGuid>565113af-bc0f-48ec-8095-d5a8e7ada7e9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,530 @@
+diff --git a/.cache/Keywords/folder__FolderHelper b/.cache/Keywords/folder__FolderHelper
+index 4b876a0..713ce22 100644
+--- a/.cache/Keywords/folder__FolderHelper
++++ b/.cache/Keywords/folder__FolderHelper
+@@ -1,11 +1,11 @@
+ {
+-  "keywordFileContentHash": "0941F8B1F510F7D5BD6D589BF8E1D863",
++  "keywordFileContentHash": "9C44CD55D9765BA85FDC486C44EA7082",
+   "keywordClasses": [
+     {
+       "name": "folder.FolderHelper",
+       "keywordMethods": [
+         {
+-          "name": "findFolderRaw",
++          "name": "findFolder",
+           "parameters": [
+             {
+               "name": "fileName",
+@@ -22,6 +22,38 @@
+             }
+           ],
+           "javadoc": ""
++        },
++        {
++          "name": "isFileDownloaded",
++          "parameters": [
++            {
++              "name": "downloadPath",
++              "initialExpression": "",
++              "type": {
++                "fullClassName": "java.lang.String",
++                "unresolvedClassName": "String",
++                "isArray": false,
++                "isGnericsPlaceHolder": false,
++                "hasImmutableClassName": false,
++                "genericsTypes": [],
++                "errorOnParsing": false
++              }
++            },
++            {
++              "name": "fileName",
++              "initialExpression": "",
++              "type": {
++                "fullClassName": "java.lang.String",
++                "unresolvedClassName": "String",
++                "isArray": false,
++                "isGnericsPlaceHolder": false,
++                "hasImmutableClassName": false,
++                "genericsTypes": [],
++                "errorOnParsing": false
++              }
++            }
++          ],
++          "javadoc": ""
+         }
+       ]
+     }
+diff --git a/Keywords/folder/FolderHelper.groovy b/Keywords/folder/FolderHelper.groovy
+index 4f7a504..7b2acfd 100644
+--- a/Keywords/folder/FolderHelper.groovy
++++ b/Keywords/folder/FolderHelper.groovy
+@@ -1,6 +1,7 @@
+ package folder
+ 
+ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
++
+ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+@@ -24,13 +25,38 @@ import org.openqa.selenium.By as By
+ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+ import org.openqa.selenium.WebDriver as WebDriver
+ import org.openqa.selenium.WebElement as WebElement
++import org.openqa.selenium.support.ui.ExpectedConditions
++import org.openqa.selenium.support.ui.WebDriverWait
++
+ 
+ public class FolderHelper {
+-	
++
++
++	@Keyword
++	def WebElement findFolder(String fileName) {
++	    WebDriver driver = DriverFactory.getWebDriver()
++		return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr[contains(@data-search-keys,'$fileName')]/td/span"))
++	}
+ 
+ 	@Keyword
+-	def WebElement findFolderRaw(String fileName) {
+-		WebDriver driver = DriverFactory.getWebDriver()
+-		return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../.."))
++	def boolean isFileDownloaded(String downloadPath, String fileName) {
++		long timeout = 5 * 60 * 1000
++		long start = new Date().getTime()
++		boolean downloaded = false
++		File file = new File(downloadPath, fileName)
++		while (!downloaded) {
++			println("Checking file exists ${file.absolutePath}")
++			downloaded = file.exists()
++			if (downloaded) {
++				file.delete()
++			} else {
++				long now = new Date().getTime()
++				if (now - start > timeout) {
++					break
++				}
++				Thread.sleep(3000)
++			}
++		}
++		return downloaded
+ 	}
+ }
+diff --git a/Scripts/Folders/Create Folder modifed/Script1705435917209.groovy b/Scripts/Folders/Create Folder modifed/Script1705435917209.groovy
+index 327cd97..368584f 100644
+--- a/Scripts/Folders/Create Folder modifed/Script1705435917209.groovy	
++++ b/Scripts/Folders/Create Folder modifed/Script1705435917209.groovy	
+@@ -32,9 +32,7 @@ println('Folder Name: ' + folderN)
+ 
+ WebUI.callTestCase(findTestCase('Folders/Should Go to Folderstable'), [:], FailureHandling.OPTIONAL)
+ 
+-originfolderCount = getFoldersCount()
+ 
+-String folderName = org.apache.commons.lang.RandomStringUtils.random(9, true, true)
+ 
+ WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0'))
+ 
+@@ -45,31 +43,10 @@ WebUI.setText(findTestObject('Folders/Page_Folders - PowerFolder/input_Create a
+ WebUI.sendKeys(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/input_Create a new Folder_pencil'), 
+     Keys.chord(Keys.ENTER))
+ 
+-assert getFoldersCount() > originfolderCount
+ 
+-assert true == tableContainsFolder(folderN)
++WebElement folderElement = CustomKeywords.'folder.FolderHelper.findFolder'(folderN)
+ 
+-int getFoldersCount() {
+-    WebDriver driver = DriverFactory.getWebDriver()
++assert folderElement != null ;
+ 
+-    WebElement tbody = driver.findElement(By.xpath('//table[@id=\'files_files_table\']/tbody'))
+ 
+-    assert tbody
+-
+-    List<WebElement> rows_table = tbody.findElements(By.tagName('tr'))
+-
+-    return rows_table.size()
+-}
+-
+-boolean tableContainsFolder(String fileName) {
+-    WebDriver driver = DriverFactory.getWebDriver()
+-
+-    WebElement tbody = driver.findElement(By.xpath('//table[@id=\'files_files_table\']/tbody'))
+-
+-    List<WebElement> rows_table = tbody.findElements(By.tagName('tr'))
+-
+-    return rows_table.any({ def item ->
+-            item.getText().contains(fileName)
+-        })
+-}
+ 
+diff --git a/Scripts/Folders/Create Folder/Script1582659639063.groovy b/Scripts/Folders/Create Folder/Script1582659639063.groovy
+index aaa72f4..aa46101 100644
+--- a/Scripts/Folders/Create Folder/Script1582659639063.groovy	
++++ b/Scripts/Folders/Create Folder/Script1582659639063.groovy	
+@@ -22,8 +22,6 @@ import org.openqa.selenium.WebElement as WebElement
+ 
+ WebUI.callTestCase(findTestCase('Folders/Should Go to Folderstable'), [:], FailureHandling.OPTIONAL)
+ 
+-originfolderCount = getFoldersCount()
+-
+ String folderName = org.apache.commons.lang.RandomStringUtils.random(9, true, true)
+ 
+ WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0'))
+@@ -35,33 +33,11 @@ WebUI.setText(findTestObject('Folders/Page_Folders - PowerFolder/input_Create a
+ WebUI.sendKeys(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/input_Create a new Folder_pencil'), 
+     Keys.chord(Keys.ENTER))
+ 
+-assert getFoldersCount() > originfolderCount
++WebElement folderElement = CustomKeywords.'folder.FolderHelper.findFolder'(folderName)
+ 
+-assert true == tableContainsFolder(folderName)
++assert folderElement != null ;
+ 
+ WebUI.closeBrowser()
+ 
+-int getFoldersCount() {
+-    WebDriver driver = DriverFactory.getWebDriver()
+-
+-    WebElement tbody = driver.findElement(By.xpath('//table[@id=\'files_files_table\']/tbody'))
+-
+-    assert tbody
+-
+-    List<WebElement> rows_table = tbody.findElements(By.tagName('tr'))
+-
+-    return rows_table.size()
+-}
+-
+-boolean tableContainsFolder(String fileName) {
+-    WebDriver driver = DriverFactory.getWebDriver()
+-
+-    WebElement tbody = driver.findElement(By.xpath('//table[@id=\'files_files_table\']/tbody'))
+-
+-    List<WebElement> rows_table = tbody.findElements(By.tagName('tr'))
+ 
+-    return rows_table.any({ def item ->
+-            item.getText().contains(fileName)
+-        })
+-}
+ 
+diff --git a/Scripts/Folders/Delete Folder/Script1705597488766.groovy b/Scripts/Folders/Delete Folder/Script1705597488766.groovy
+index 9564e00..e221927 100644
+--- a/Scripts/Folders/Delete Folder/Script1705597488766.groovy	
++++ b/Scripts/Folders/Delete Folder/Script1705597488766.groovy	
+@@ -25,61 +25,23 @@ import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
+ 
+ WebUI.callTestCase(findTestCase('Folders/Create Folder modifed'), [:], FailureHandling.STOP_ON_FAILURE)
+ 
+-WebElement table = DriverFactory.getWebDriver().findElement(By.xpath('//table[@id=\'files_files_table\']'))
+-
+-List<WebElement> rows = table.findElements(By.tagName('tr'))
+-
+-// Initialize a variable to store the row number
+-int rowNum = -1
+-
+ String folderName = GlobalVariable.folderN
+ 
+-// GlobalVariable.folderN = folderName
+ println("Folder name : $folderName")
+ 
+-// Iterate through each row to find the desired text
+-for (int i = 0; i < rows.size(); i++) {
+-    WebElement row = rows.get(i)
+-
+-    String cellValue = table.findElement(By.xpath(('//table/tbody/tr[' + (i + 1).toString()) + ']/td[2]')).getText()
+-
+-    println("Cell value: $cellValue")
+-
+-    // Check each column in the row for the desired text
+-    if (cellValue.contains(folderName)) {
+-        rowNum = (i + 1 // Adding 1 since row numbers are usually 1-based
+-        )
+-
+-        break
+-    }
+-}
+-
+-GlobalVariable.rowNum = rowNum.toString()
+-
+-// Assuming yourTestObject is the existing Test Object that you want to modify
+-TestObject createdFolder = findTestObject('Object Repository/Page_Folders - PowerFolder/createdFolder')
+-
+-// Specify the new selector properties
+-String newLocatorStrategy = 'xpath'
+ 
+-String newLocatorValue = "//table/tbody/tr[$GlobalVariable.rowNum]/td[1]/span"
++WebElement btn = CustomKeywords.'folder.FolderHelper.findFolder'(folderName)
+ 
+-// Create a new TestObject with the updated properties
+-createdFolder = new TestObject().addProperty(newLocatorStrategy, ConditionType.EQUALS, newLocatorValue)
+ 
+-println("LOCATOR var: $newLocatorValue")
++WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+ 
+-// Now, you can use the modified Test Object in your test case
+-WebUI.click(createdFolder)
+ 
+-// WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/createdFolder'))
+ WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/lang_Delete'))
+ 
+ WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/lang_Yes'))
+ 
+ WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Folders - PowerFolder/span_Folder deleted'), FailureHandling.STOP_ON_FAILURE)
+ 
+-WebUI.delay(3)
+ 
+ WebUI.closeBrowser()
+ 
+diff --git a/Scripts/Folders/Download Folder/Script1705597479083.groovy b/Scripts/Folders/Download Folder/Script1705597479083.groovy
+index d1af4f0..9271004 100644
+--- a/Scripts/Folders/Download Folder/Script1705597479083.groovy	
++++ b/Scripts/Folders/Download Folder/Script1705597479083.groovy	
+@@ -22,61 +22,29 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
+ import com.kms.katalon.core.testobject.TestObjectProperty as TestObjectProperty
+ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+ import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
++import org.testng.Assert as Assert
++import org.openqa.selenium.By as By
++import org.openqa.selenium.WebDriver as WebDriver
++import org.testng.Assert as Assert
+ 
+-WebUI.callTestCase(findTestCase('Folders/Create Folder modifed'), [:], FailureHandling.STOP_ON_FAILURE)
+-
+-// WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_search_input'), GlobalVariable.folderN)
+-WebElement table = DriverFactory.getWebDriver().findElement(By.xpath('//table[@id=\'files_files_table\']'))
+ 
+-List<WebElement> rows = table.findElements(By.tagName('tr'))
++WebUI.callTestCase(findTestCase('Folders/Create Folder modifed'), [:], FailureHandling.STOP_ON_FAILURE)
+ 
+-// Initialize a variable to store the row number
+-int rowNum = -1
+ 
+ String folderName = GlobalVariable.folderN
+ 
+-// GlobalVariable.folderN = folderName
+-println("Folder name : $folderName")
+-
+-// Iterate through each row to find the desired text
+-for (int i = 0; i < rows.size(); i++) {
+-    WebElement row = rows.get(i)
+-
+-    String cellValue = table.findElement(By.xpath(('//table/tbody/tr[' + (i + 1).toString()) + ']/td[2]')).getText()
+-
+-    println("Cell value: $cellValue")
+-
+-    // Check each column in the row for the desired text
+-    if (cellValue.contains(folderName)) {
+-        rowNum = (i + 1 // Adding 1 since row numbers are usually 1-based
+-        )
++WebElement btn = CustomKeywords.'folder.FolderHelper.findFolder'(folderName)
+ 
+-        break
+-    }
+-}
+ 
+-GlobalVariable.rowNum = rowNum.toString()
++WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+ 
+-// Assuming yourTestObject is the existing Test Object that you want to modify
+-TestObject createdFolder = findTestObject('Folders/Page_Folders - PowerFolder/createdFolder')
+-
+-// Specify the new selector properties
+-String newLocatorStrategy = 'xpath'
+-
+-String newLocatorValue = "//table/tbody/tr[$GlobalVariable.rowNum]/td[1]/span"
+-
+-// Create a new TestObject with the updated properties
+-createdFolder = new TestObject().addProperty(newLocatorStrategy, ConditionType.EQUALS, newLocatorValue)
+-
+-println("LOCATOR var: $newLocatorValue")
+-
+-// Now, you can use the modified Test Object in your test case
+-WebUI.click(createdFolder)
+-
+-// WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/createdFolder'))
+ WebUI.click(findTestObject('folder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Download'))
+ 
+-WebUI.delay(5)
++
++String home = System.getProperty("user.home");
++String downloadPath = home+"/Downloads/";
++
++Assert.assertTrue(CustomKeywords.'folder.FolderHelper.isFileDownloaded'(downloadPath, folderName+".zip"), 'Failed to download Expected document')
+ 
+ WebUI.closeBrowser()
+ 
+diff --git a/Scripts/Folders/Rename Folder/Script1705431739112.groovy b/Scripts/Folders/Rename Folder/Script1705431739112.groovy
+index c7bc5e1..f33b700 100644
+--- a/Scripts/Folders/Rename Folder/Script1705431739112.groovy	
++++ b/Scripts/Folders/Rename Folder/Script1705431739112.groovy	
+@@ -25,52 +25,20 @@ import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
+ 
+ WebUI.callTestCase(findTestCase('Folders/Create Folder modifed'), [:], FailureHandling.STOP_ON_FAILURE)
+ 
+-// WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_search_input'), GlobalVariable.folderN)
+-WebElement table = DriverFactory.getWebDriver().findElement(By.xpath('//table[@id=\'files_files_table\']'))
+-
+-List<WebElement> rows = table.findElements(By.tagName('tr'))
+-
+ // Initialize a variable to store the row number
+-int rowNum = -1
+ 
+ String folderName = GlobalVariable.folderN
+ 
+ // GlobalVariable.folderN = folderName
+ println("Folder name : $folderName")
+ 
+-// Iterate through each row to find the desired text
+-for (int i = 0; i < rows.size(); i++) {
+-    WebElement row = rows.get(i)
+-
+-    String cellValue = table.findElement(By.xpath(('//table/tbody/tr[' + (i + 1).toString()) + ']/td[2]')).getText()
+-
+-    println("Cell value: $cellValue")
+-
+-    // Check each column in the row for the desired text
+-    if (cellValue.contains(folderName)) {
+-        rowNum = (i + 1 // Adding 1 since row numbers are usually 1-based
+-        )
+-
+-        break
+-    }
+-}
+-
+-GlobalVariable.rowNum = rowNum.toString()
+-
+-// Specify the new selector properties
+-String newLocatorStrategy = 'xpath'
+ 
+-String newLocatorValue = "//table/tbody/tr[$GlobalVariable.rowNum]/td[1]/span"
++WebElement btn = CustomKeywords.'folder.FolderHelper.findFolder'(folderName)
+ 
+-// Create a new TestObject with the updated properties
+-TestObject createdFolder = new TestObject().addProperty(newLocatorStrategy, ConditionType.EQUALS, newLocatorValue)
+ 
+-println("LOCATOR var: $newLocatorValue")
++WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+ 
+-// Now, you can use the modified Test Object in your test case
+-WebUI.click(createdFolder)
+ 
+-// WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/createdFolder'))
+ WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/lang_Rename'))
+ 
+ String folderNewName = RandomStringUtils.randomAlphanumeric(5)
+diff --git a/Scripts/Folders/manage folder/Script1705598177835.groovy b/Scripts/Folders/manage folder/Script1705598177835.groovy
+index 2b13da4..ead13b5 100644
+--- a/Scripts/Folders/manage folder/Script1705598177835.groovy	
++++ b/Scripts/Folders/manage folder/Script1705598177835.groovy	
+@@ -28,54 +28,15 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
+ 
+ WebUI.callTestCase(findTestCase('Folders/Create Folder modifed'), [:], FailureHandling.STOP_ON_FAILURE)
+ 
+-WebElement table = DriverFactory.getWebDriver().findElement(By.xpath('//table[@id=\'files_files_table\']'))
+ 
+-List<WebElement> rows = table.findElements(By.tagName('tr'))
+-
+-// Initialize a variable to store the row number
+-int rowNum = -1
+ 
+ String folderName = GlobalVariable.folderN
+ 
+-// GlobalVariable.folderN = folderName
+-println("Folder name : $folderName")
+-
+-// Iterate through each row to find the desired text
+-for (int i = 0; i < rows.size(); i++) {
+-    WebElement row = rows.get(i)
+-
+-    String cellValue = table.findElement(By.xpath(('//table/tbody/tr[' + (i + 1).toString()) + ']/td[2]')).getText()
+-
+-    println("Cell value: $cellValue")
+-
+-    // Check each column in the row for the desired text
+-    if (cellValue.contains(folderName)) {
+-        rowNum = (i + 1 // Adding 1 since row numbers are usually 1-based
+-        )
+-
+-        break
+-    }
+-}
+-
+-GlobalVariable.rowNum = rowNum.toString()
+-
+-// Assuming yourTestObject is the existing Test Object that you want to modify
+-TestObject createdFolder = findTestObject('Folders/Page_Folders - PowerFolder/createdFolder')
+-
+-// Specify the new selector properties
+-String newLocatorStrategy = 'xpath'
+-
+-String newLocatorValue = "//table/tbody/tr[$GlobalVariable.rowNum]/td[1]/span"
+-
+-// Create a new TestObject with the updated properties
+-createdFolder = new TestObject().addProperty(newLocatorStrategy, ConditionType.EQUALS, newLocatorValue)
++WebElement btn = CustomKeywords.'folder.FolderHelper.findFolder'(folderName)
+ 
+-println("LOCATOR var: $newLocatorValue")
+ 
+-// Now, you can use the modified Test Object in your test case
+-WebUI.click(createdFolder)
++WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+ 
+-// WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/createdFolder'))
+ WebUI.click(findTestObject('folder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Manage'))
+ 
+ WebUI.click(findTestObject('folder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/copy_icon'))
+diff --git a/Test Cases/Folders/Create Folder.tc b/Test Cases/Folders/Create Folder.tc
+index 033623c..3ba3c08 100644
+--- a/Test Cases/Folders/Create Folder.tc	
++++ b/Test Cases/Folders/Create Folder.tc	
+@@ -1,21 +1,21 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<TestCaseEntity>
+-   <description></description>
+-   <name>Create Folder</name>
+-   <tag></tag>
+-   <comment></comment>
+-   <testCaseGuid>d4fb2525-bae1-4c62-b52e-c280a864847b</testCaseGuid>
+-   <variableLinks>
+-      <testDataLinkId></testDataLinkId>
+-      <type>DEFAULT</type>
+-      <value></value>
+-      <variableId>372f7b2e-4ae3-408f-a574-26e88f20294c</variableId>
+-   </variableLinks>
+-   <variable>
+-      <defaultValue>RandomStringUtils.randomAlphanumeric(5)</defaultValue>
+-      <description></description>
+-      <id>372f7b2e-4ae3-408f-a574-26e88f20294c</id>
+-      <masked>false</masked>
+-      <name>folderName</name>
+-   </variable>
+-</TestCaseEntity>
++<?xml version="1.0" encoding="UTF-8"?>
++<TestCaseEntity>
++   <description></description>
++   <name>Create Folder</name>
++   <tag></tag>
++   <comment></comment>
++   <testCaseGuid>d4fb2525-bae1-4c62-b52e-c280a864847b</testCaseGuid>
++   <variableLinks>
++      <testDataLinkId></testDataLinkId>
++      <type>DEFAULT</type>
++      <value></value>
++      <variableId>372f7b2e-4ae3-408f-a574-26e88f20294c</variableId>
++   </variableLinks>
++   <variable>
++      <defaultValue>RandomStringUtils.randomAlphanumeric(5)</defaultValue>
++      <description></description>
++      <id>372f7b2e-4ae3-408f-a574-26e88f20294c</id>
++      <masked>false</masked>
++      <name>folderName</name>
++   </variable>
++</TestCaseEntity>
+diff --git a/settings/internal/com.kms.katalon.composer.testcase.properties b/settings/internal/com.kms.katalon.composer.testcase.properties
+index 517e02f..c179aa4 100644
+--- a/settings/internal/com.kms.katalon.composer.testcase.properties
++++ b/settings/internal/com.kms.katalon.composer.testcase.properties
+@@ -1,2 +1,2 @@
+-#Mon Jan 22 14:43:32 WEST 2024
++#Sat Jan 27 14:55:27 WEST 2024
+ testCaseTag=""

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Remove_glyphicons glyphicons-folder-pl_bbd778</name>
+   <tag></tag>
+   <elementGuidId>bacbceb7-c893-4767-901c-bab0bb0d0077</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.glyphicons.glyphicons-folder-plus.pica-glyph</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>01f88951-5d60-44dd-bba7-090bcee50e7b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>glyphicons glyphicons-folder-plus pica-glyph</value>
+      <webElementGuid>100e96a6-7db0-4854-995f-33af9e7558bb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;item_1553490446&quot;)/td[@class=&quot;text-center pica-icon-column&quot;]/span[@class=&quot;glyphicons glyphicons-folder-plus pica-glyph&quot;]</value>
+      <webElementGuid>f5d08a0f-30fa-49cb-9014-1aa54c034e3b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='item_1553490446']/td/span</value>
+      <webElementGuid>9837dc22-9f27-4b7a-be2b-043ffa40285b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div[2]/table/tbody/tr/td/span</value>
+      <webElementGuid>202dd25e-6510-4c83-97fa-46b2f85d6f90</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

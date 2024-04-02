@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>user click</name>
+   <tag></tag>
+   <elementGuidId>94378357-519c-4ed1-a597-bcb3290e2c8b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.pica-taginput-div.form-control.open > ul.pica-taginput-dropdown.dropdown-menu > li > a > div.media > div.media-body > h5.media-heading.text-primary</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[4]/div/div/ul/li/a/div/div[2]/h5</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h5</value>
+      <webElementGuid>72b86577-c51b-4464-bdec-a9be75919908</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>media-heading text-primary</value>
+      <webElementGuid>74d2eb42-bd24-4684-8bf2-15dfdd060979</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>user_1326@test.com</value>
+      <webElementGuid>f025ac5a-6d72-49ef-a249-425f30bca760</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_group_accounts&quot;)/div[@class=&quot;pica-inputlist-taginput pica-taginput form-group input-group&quot;]/div[@class=&quot;pica-taginput-div form-control open&quot;]/ul[@class=&quot;pica-taginput-dropdown dropdown-menu&quot;]/li[1]/a[1]/div[@class=&quot;media&quot;]/div[@class=&quot;media-body&quot;]/h5[@class=&quot;media-heading text-primary&quot;]</value>
+      <webElementGuid>0447d2b9-2ebd-4c60-a764-741eb4e92f10</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_group_accounts']/div/div/ul/li/a/div/div[2]/h5</value>
+      <webElementGuid>2aa7cd8a-2495-43a6-8551-fa98623609a4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nothing to show'])[1]/following::h5[1]</value>
+      <webElementGuid>de526fef-1283-4808-a518-62aba1925a04</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[1]/following::h5[1]</value>
+      <webElementGuid>31476c53-f01b-4b74-a1c0-be1f37f5fcd4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[2]/preceding::h5[1]</value>
+      <webElementGuid>148efd42-04dd-4314-b258-573297b5daa3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='admin'])[3]/preceding::h5[1]</value>
+      <webElementGuid>bd4939de-28c8-4c92-a59d-7b61ba13fafc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='user_1326@test.com']/parent::*</value>
+      <webElementGuid>20c78bed-f413-4ba3-860b-ad3d6e6eff88</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/div/ul/li/a/div/div[2]/h5</value>
+      <webElementGuid>f9350b82-1228-439e-8dc3-e6c4f70872cb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h5[(text() = 'user_1326@test.com' or . = 'user_1326@test.com')]</value>
+      <webElementGuid>14be96a8-27f4-43bf-8c65-f748e262a93b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Save</name>
+   <name>button_Close</name>
    <tag></tag>
-   <elementGuidId>a44aa3a5-ed02-4cb7-8a4d-9b16fefeeaf3</elementGuidId>
+   <elementGuidId>7fcc2adb-eb66-484c-a9a0-839f301d38cc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#pica-group-edit-save</value>
+         <key>XPATH</key>
+         <value>//button[@id='upload_stop_button']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='pica-group-edit-save']</value>
+         <key>CSS</key>
+         <value>#upload_stop_button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,15 +22,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>c248e9de-799f-416d-89cf-e066fbb574ec</webElementGuid>
+      <webElementGuid>e9005d48-73ae-45fa-b1ce-359775aea993</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>pica-group-edit-save</value>
-      <webElementGuid>11d78fc6-01b4-43ee-adbc-2d37e7dd40b5</webElementGuid>
+      <value>upload_stop_button</value>
+      <webElementGuid>e6ed7f76-2082-423f-988d-3ed78c5f7ddc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,23 +38,15 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>11ab3a17-d488-4c8a-afc7-877759d0e921</webElementGuid>
+      <webElementGuid>cd49a779-748c-44e2-8605-c7df307dfb43</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>btn btn-primary</value>
-      <webElementGuid>5e14566d-8c10-4bdb-9709-f6d59b0878c1</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>data-dismiss</name>
-      <type>Main</type>
-      <value>modal</value>
-      <webElementGuid>6dd5eb7b-f2f3-4854-8647-4d31a0f4348a</webElementGuid>
+      <value>btn btn-default</value>
+      <webElementGuid>16969bc9-2e96-4f68-b1b8-c48db95a7fd7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,76 +54,76 @@
       <name>text</name>
       <type>Main</type>
       <value>
-                    Save
-                </value>
-      <webElementGuid>76c3f7d5-49ea-4bec-ae11-7beecb424e01</webElementGuid>
+                            Close
+                        </value>
+      <webElementGuid>04b4f505-6624-4c79-a071-faaf2499066c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pica-group-edit-save&quot;)</value>
-      <webElementGuid>5843d290-0a53-4ae6-8fd1-942ab3e81dac</webElementGuid>
+      <value>id(&quot;upload_stop_button&quot;)</value>
+      <webElementGuid>02f218e3-c0f6-4d98-95a2-4ca8abfe9779</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//button[@id='pica-group-edit-save']</value>
-      <webElementGuid>c38530da-a858-4c9f-9a5c-1cd450edfbf1</webElementGuid>
+      <value>//button[@id='upload_stop_button']</value>
+      <webElementGuid>41b1412d-5d4c-4baa-b298-113aa7c885af</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pica_group_dialog']/div/div/div[3]/button</value>
-      <webElementGuid>07dd2490-35e4-47d0-b4d0-54e4b057bca0</webElementGuid>
+      <value>//div[@id='pica_upload_dialog']/div/div/div[3]/div/div[2]/button[2]</value>
+      <webElementGuid>5c862b0c-7e37-4d78-8fa0-996d471319bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nothing to show'])[1]/following::button[1]</value>
-      <webElementGuid>3df9a4e6-5b19-4a8c-8610-9cd902c818cd</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Upload'])[1]/following::button[1]</value>
+      <webElementGuid>1ba2be94-0a5d-49c3-a017-dd762c73640c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[5]/following::button[1]</value>
-      <webElementGuid>f4cd6d91-d18f-419e-94d3-8dbb8406b6d1</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add directory'])[1]/following::button[2]</value>
+      <webElementGuid>c06e9a54-ec28-4718-8263-2420a4f8fe7f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::button[1]</value>
-      <webElementGuid>cb168dfe-0511-4e2a-99ca-517e25d6fa7d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[5]/preceding::button[1]</value>
+      <webElementGuid>2b450a50-22c9-4d4b-b0e0-079f5f0440f0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div/div[3]/button</value>
-      <webElementGuid>e3022292-ac98-49f8-b337-d62d2246e06b</webElementGuid>
+      <value>//div[2]/button[2]</value>
+      <webElementGuid>cb5c96d7-daa8-4833-9539-d867d1183609</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//button[@id = 'pica-group-edit-save' and @type = 'button' and (text() = '
-                    Save
-                ' or . = '
-                    Save
-                ')]</value>
-      <webElementGuid>70d80d35-a722-4b45-8a82-9ee567835683</webElementGuid>
+      <value>//button[@id = 'upload_stop_button' and @type = 'button' and (text() = '
+                            Close
+                        ' or . = '
+                            Close
+                        ')]</value>
+      <webElementGuid>55b50efa-8599-4e44-890e-96cab8134acb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

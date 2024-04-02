@@ -1,0 +1,29 @@
+{
+  "keywordFileContentHash": "FA71A5CBCABF23EEE3085549E42CF3C2",
+  "keywordClasses": [
+    {
+      "name": "Script1710070693234",
+      "keywordMethods": [
+        {
+          "name": "findGroup",
+          "parameters": [
+            {
+              "name": "groupName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

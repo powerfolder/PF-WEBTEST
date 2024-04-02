@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>CSS ng</name>
+   <name>span_Can administrate</name>
    <tag></tag>
-   <elementGuidId>f19bee24-9eac-47d2-80f7-09ca7ff18188</elementGuidId>
+   <elementGuidId>92e473d0-8df4-40c8-a8e8-becfb09cebc0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>span.pica-icon.pica-glyph.glyphicons.glyphicons-plus-sign</value>
+         <value>span.glyphicons.glyphicons-check</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='groups_create']/span</value>
+         <value>//td[3]/div/ul/li[3]/a/span</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,38 +22,38 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>17de38c2-aa41-4c69-8aea-e373081b90c6</webElementGuid>
+      <webElementGuid>ccdf57dd-d5b0-49d0-8c78-40d96ae9ea34</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>pica-icon pica-glyph glyphicons glyphicons-plus-sign</value>
-      <webElementGuid>0dccef21-5dd8-4213-9f70-b91e55bd2c5b</webElementGuid>
+      <value>glyphicons glyphicons-check</value>
+      <webElementGuid>4ef4bdf1-44b9-4b0c-865b-ff0474dcca4e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;groups_create&quot;)/span[@class=&quot;pica-icon pica-glyph glyphicons glyphicons-plus-sign&quot;]</value>
-      <webElementGuid>06910151-8192-4d96-8c95-78bcc892288e</webElementGuid>
+      <value>id(&quot;item_1604547883&quot;)/td[@class=&quot;hidden-xs&quot;]/div[@class=&quot;pica-inline dropdown pull-right open&quot;]/ul[@class=&quot;dropdown-menu&quot;]/li[3]/a[1]/span[@class=&quot;glyphicons glyphicons-check&quot;]</value>
+      <webElementGuid>f7885d0d-83b1-46ac-99c6-08a1e0e214a3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//a[@id='groups_create']/span</value>
-      <webElementGuid>bad8ac1c-fbbc-4504-9750-4c0b9f3dfd74</webElementGuid>
+      <value>//tr[@id='item_1604547883']/td[3]/div/ul/li[3]/a/span</value>
+      <webElementGuid>eb0cf21b-8609-4c7c-b952-e111b1c56053</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//th/a/span</value>
-      <webElementGuid>b8e070b8-e283-41df-b471-5dc3fb12c2e9</webElementGuid>
+      <value>//td[3]/div/ul/li[3]/a/span</value>
+      <webElementGuid>4a048bf6-e5f6-4136-bd70-59ea06afb0f0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

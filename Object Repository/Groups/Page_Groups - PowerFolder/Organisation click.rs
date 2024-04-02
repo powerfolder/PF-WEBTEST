@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Organisation click</name>
+   <tag></tag>
+   <elementGuidId>61719225-5436-4853-b6f4-cf054a668503</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[5]/div/div/ul/li/a/div/div[2]/h5</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.pica-taginput-div.form-control.open > ul.pica-taginput-dropdown.dropdown-menu > li > a > div.media > div.media-body > h5.media-heading.text-primary</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h5</value>
+      <webElementGuid>f06fb62c-c958-4ea0-b02c-8ed9428b21b8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>media-heading text-primary</value>
+      <webElementGuid>13119e86-92f7-4c61-bfc3-7bf755a11a60</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Organisation_2596</value>
+      <webElementGuid>d6561aad-09b4-49ca-ad81-04b9400306e4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_group_organizations&quot;)/div[@class=&quot;pica-inputlist-taginput pica-taginput form-group input-group&quot;]/div[@class=&quot;pica-taginput-div form-control open&quot;]/ul[@class=&quot;pica-taginput-dropdown dropdown-menu&quot;]/li[1]/a[1]/div[@class=&quot;media&quot;]/div[@class=&quot;media-body&quot;]/h5[@class=&quot;media-heading text-primary&quot;]</value>
+      <webElementGuid>6fe2694b-d882-4e87-b8a2-7574bc6e435b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_group_organizations']/div/div/ul/li/a/div/div[2]/h5</value>
+      <webElementGuid>3cf92f32-7877-4293-a386-e162a1e672d8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[3]/following::h5[1]</value>
+      <webElementGuid>0101864f-0517-4996-b9b6-9d01cffeddf8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Is member and admin'])[2]/following::h5[1]</value>
+      <webElementGuid>b187ef19-23b7-481a-843e-707d3fdc5a0a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[4]/preceding::h5[1]</value>
+      <webElementGuid>7ede0516-de5b-4e9c-96db-a844708beae2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nothing to show'])[2]/preceding::h5[1]</value>
+      <webElementGuid>63b51a63-619e-4fb1-a9c7-7e050ecdb329</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Organisation_2596']/parent::*</value>
+      <webElementGuid>73cda4fd-c132-4665-9278-228721dfbc6a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div/div/ul/li/a/div/div[2]/h5</value>
+      <webElementGuid>2be8027d-c628-478f-844c-7b12fa5d541a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h5[(text() = 'Organisation_2596' or . = 'Organisation_2596')]</value>
+      <webElementGuid>23885f19-9211-47fc-9eae-e27719c88654</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

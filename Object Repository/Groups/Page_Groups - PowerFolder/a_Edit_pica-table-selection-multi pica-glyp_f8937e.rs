@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Edit_pica-table-selection-multi pica-glyp_f8937e</name>
+   <tag></tag>
+   <elementGuidId>84e31eb3-f64a-4054-a52d-5bd862a38de8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='groups_table']/thead/tr/th[3]/div/a[2]/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.pica-table-selection-multi.pica-glyph.glyphicons.glyphicons-bin</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>c0bb659b-b42f-4bb4-9a3c-178de6178758</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-table-selection-multi pica-glyph glyphicons glyphicons-bin</value>
+      <webElementGuid>1e1c7d17-6938-4cf9-998a-adbbe8111237</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;groups_table&quot;)/thead[1]/tr[1]/th[@class=&quot;text-right&quot;]/div[@class=&quot;pica-table-selection-context pica-inline text-right&quot;]/a[@class=&quot;pica-table-selection-multi groups_delete&quot;]/a[@class=&quot;pica-table-selection-multi pica-glyph glyphicons glyphicons-bin&quot;]</value>
+      <webElementGuid>90ad7bba-2ee2-4d91-ac49-73f15c0fa4c5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='groups_table']/thead/tr/th[3]/div/a[2]/a</value>
+      <webElementGuid>24f8093b-b5c2-4fad-a288-799bad816237</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a[2]/a</value>
+      <webElementGuid>86eeddd6-b255-4f6e-b78a-c4adb19bd71b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
