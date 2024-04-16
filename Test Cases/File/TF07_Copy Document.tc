@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF07_Copy Document</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>97c2382d-d9ee-4995-ae77-dd589f6445ac</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e91abbc8-0ff2-4efd-90cd-6f04c4c6a4e8</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e91abbc8-0ff2-4efd-90cd-6f04c4c6a4e8</id>
+      <masked>false</masked>
+      <name>CopyName</name>
+   </variable>
+</TestCaseEntity>

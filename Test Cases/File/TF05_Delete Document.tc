@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF05_Delete Document</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d75947eb-54fa-4e9b-993a-609306c92af6</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>008d5f36-2840-47fc-997e-83b96a73e0bd</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>008d5f36-2840-47fc-997e-83b96a73e0bd</id>
+      <masked>false</masked>
+      <name>DocName</name>
+   </variable>
+</TestCaseEntity>

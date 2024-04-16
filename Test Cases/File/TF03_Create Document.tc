@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF03_Create Document</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ebc35c95-456c-4290-986c-5211fda1b822</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9cf4c8e8-a6c6-45be-b218-11f77ac530f9</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9cf4c8e8-a6c6-45be-b218-11f77ac530f9</id>
+      <masked>false</masked>
+      <name>DocName</name>
+   </variable>
+</TestCaseEntity>

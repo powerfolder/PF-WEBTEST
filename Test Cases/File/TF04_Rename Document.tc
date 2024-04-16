@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF04_Rename Document</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9f21bde3-d961-4566-bf47-fe36cf31fd43</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>13ac8b54-3bc8-4135-8c2d-f73532e39616</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>13ac8b54-3bc8-4135-8c2d-f73532e39616</id>
+      <masked>false</masked>
+      <name>DocRename</name>
+   </variable>
+</TestCaseEntity>

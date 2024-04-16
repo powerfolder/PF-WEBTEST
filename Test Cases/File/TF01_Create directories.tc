@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF01_Create directories</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e9607ec0-be46-4665-8ef8-b0bd6ede3db7</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4dc3dd5f-0b53-46b2-b3c6-5351f35b68a7</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f13cd272-270e-4a5b-8d17-8cdb3a28d36c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f4ea7038-9b95-4e72-96da-ee3abf3d0316</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4dc3dd5f-0b53-46b2-b3c6-5351f35b68a7</id>
+      <masked>false</masked>
+      <name>folderName1</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f13cd272-270e-4a5b-8d17-8cdb3a28d36c</id>
+      <masked>false</masked>
+      <name>folderName2</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f4ea7038-9b95-4e72-96da-ee3abf3d0316</id>
+      <masked>false</masked>
+      <name>folderName3</name>
+   </variable>
+</TestCaseEntity>

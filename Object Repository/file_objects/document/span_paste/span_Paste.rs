@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Paste</name>
+   <tag></tag>
+   <elementGuidId>998034a7-c7dc-4047-b848-71bfca76404f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.pica-glyph.glyphicons.glyphicons-paste</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//thead[@id='files_paste_header']/tr/th[3]/div/a/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>bc3b85bc-acb8-46fd-9f15-be8839c0e17e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-glyph glyphicons glyphicons-paste</value>
+      <webElementGuid>51401a47-9f9f-4f99-b14b-3720d3e244b5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;files_paste_header&quot;)/tr[1]/th[@class=&quot;pica-overflow text-right&quot;]/div[@class=&quot;pica-table-selection-context pica-inline hidden-xs text-right&quot;]/a[@class=&quot;files-ui-paste&quot;]/span[@class=&quot;pica-glyph glyphicons glyphicons-paste&quot;]</value>
+      <webElementGuid>ff6c3fd7-e607-4142-8447-2708d184be6b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//thead[@id='files_paste_header']/tr/th[3]/div/a/span</value>
+      <webElementGuid>8a98f37c-d398-41ed-8267-bcda0b0ca55d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//thead[2]/tr/th[3]/div/a/span</value>
+      <webElementGuid>569da28d-883a-401c-bb24-23a0804f225a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

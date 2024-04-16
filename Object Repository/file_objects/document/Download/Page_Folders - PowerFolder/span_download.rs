@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Dec_glyphicon glyphicon-chevron-up</name>
+   <name>span_download</name>
    <tag></tag>
-   <elementGuidId>bb6a4c23-33b1-4d51-a11e-bfa244805d92</elementGuidId>
+   <elementGuidId>d9cfdb61-d335-4a21-ba39-0eb994802348</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>a.pica-table-selection-multi.files-ui-download > span.pica-glyph.glyphicons.glyphicons-download</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_link_dialog']/div/div/div[2]/div/div/ul/li[3]/div/div/table/tr/td[3]/a/span</value>
+         <value>//thead[@id='files_select_header']/tr/th[3]/div[2]/a/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,33 +22,38 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
+      <webElementGuid>c76569cf-799a-441d-80f1-e81bcdb46c2d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>glyphicon glyphicon-chevron-up</value>
+      <value>pica-glyph glyphicons glyphicons-download</value>
+      <webElementGuid>ff12e51d-9003-4251-9764-f2d869052cd7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pica_link_dialog&quot;)/div[@class=&quot;pica-dialog-small modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-body&quot;]/div[@class=&quot;form-group input-group&quot;]/div[@class=&quot;bootstrap-datetimepicker-widget dropdown-menu bottom&quot;]/ul[@class=&quot;list-unstyled&quot;]/li[@class=&quot;collapse in&quot;]/div[@class=&quot;timepicker&quot;]/div[@class=&quot;timepicker-picker&quot;]/table[@class=&quot;table-condensed&quot;]/tr[1]/td[3]/a[@class=&quot;btn&quot;]/span[@class=&quot;glyphicon glyphicon-chevron-up&quot;]</value>
+      <value>id(&quot;files_select_header&quot;)/tr[1]/th[@class=&quot;text-right&quot;]/div[@class=&quot;pica-table-selection-context pica-inline hidden-xs text-right&quot;]/a[@class=&quot;pica-table-selection-multi files-ui-download&quot;]/span[@class=&quot;pica-glyph glyphicons glyphicons-download&quot;]</value>
+      <webElementGuid>afcfd140-f911-49a5-888c-09c69039e442</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pica_link_dialog']/div/div/div[2]/div/div/ul/li[3]/div/div/table/tr/td[3]/a/span</value>
+      <value>//thead[@id='files_select_header']/tr/th[3]/div[2]/a/span</value>
+      <webElementGuid>1ba26fc8-23c2-479c-86ff-484566b5c175</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//table/tr/td[3]/a/span</value>
+      <value>//th[3]/div[2]/a/span</value>
+      <webElementGuid>84f53576-d6ac-4540-9ffc-0b5ae5405731</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -67,7 +67,7 @@ WebUI.click(findTestObject('SettingsPopUp/inputValidTill'))
 
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/span_Dec_glyphicon glyphicon-time'))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/span_Dec_glyphicon glyphicon-chevron-up'))
+WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/Span_Create_folder_in_folder'))
 
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/span_Dec_glyphicon glyphicon-remove'))
 
