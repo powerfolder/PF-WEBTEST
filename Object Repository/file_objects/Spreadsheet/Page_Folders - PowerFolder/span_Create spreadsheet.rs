@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Create spreadsheet</name>
+   <tag></tag>
+   <elementGuidId>5de3b9a9-4428-4adb-9941-6d87d191d3dd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//thead[3]/tr/th/div/ul/li[5]/a/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.pica-glyph.glyphicons.glyphicons-table</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>cd9fa14a-5cdf-4341-8cf9-b4c3e6fdea3d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-glyph glyphicons glyphicons-table</value>
+      <webElementGuid>4e4130d1-7c16-48f0-8b58-68fcc20ecfd4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica-files-create-dropdown&quot;)/ul[@class=&quot;pica-arrow-left dropdown-menu&quot;]/li[@class=&quot;files-visible-only-other files-ui-create-doc&quot;]/a[1]/span[@class=&quot;pica-glyph glyphicons glyphicons-table&quot;]</value>
+      <webElementGuid>8685fb1b-4fff-4f77-a65e-c49078ecd236</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica-files-create-dropdown']/ul/li[5]/a/span</value>
+      <webElementGuid>f168b16a-f71a-45ab-a17f-a63abaada9c5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//thead[3]/tr/th/div/ul/li[5]/a/span</value>
+      <webElementGuid>1551c4e6-cf4d-40ea-8d36-09bf9dbec3ae</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Upload file</name>
+   <tag></tag>
+   <elementGuidId>53d3e76f-0029-46ba-a2bf-c246a5e40774</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//li[9]/a/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.pica-glyph.glyphicons.glyphicons-cloud-upload</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>f81dd916-e602-480d-a6de-20a32ddde42e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-glyph glyphicons glyphicons-cloud-upload</value>
+      <webElementGuid>f565c104-fa3e-44f3-bd16-b3fe98112527</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica-files-create-dropdown&quot;)/ul[@class=&quot;pica-arrow-left dropdown-menu&quot;]/li[@class=&quot;files-visible-only-other files-ui-upload&quot;]/a[1]/span[@class=&quot;pica-glyph glyphicons glyphicons-cloud-upload&quot;]</value>
+      <webElementGuid>84455c3c-b6a3-4717-95d9-311dd4319c34</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica-files-create-dropdown']/ul/li[9]/a/span</value>
+      <webElementGuid>44711bca-570b-4bd0-9d1a-74153e46052b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[9]/a/span</value>
+      <webElementGuid>064582a5-3fd9-46e0-bacb-c7f8253934c2</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

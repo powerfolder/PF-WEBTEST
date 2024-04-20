@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF10_create spreadsheet</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fe568385-d550-4ad0-9441-2949826b5c48</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7ff11814-f7e5-46d1-803d-9b815d338aa4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1c41a460-ff3a-40aa-b7eb-6e22b9ffce63</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7ff11814-f7e5-46d1-803d-9b815d338aa4</id>
+      <masked>false</masked>
+      <name>characters</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1c41a460-ff3a-40aa-b7eb-6e22b9ffce63</id>
+      <masked>false</masked>
+      <name>sheetName</name>
+   </variable>
+</TestCaseEntity>

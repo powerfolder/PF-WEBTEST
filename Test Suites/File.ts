@@ -44,19 +44,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a0cbb271-2261-4b42-a165-90ad37c08eb3</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/File/TF04_Rename Document</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>13ac8b54-3bc8-4135-8c2d-f73532e39616</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
       <guid>c8621f5d-0b18-48fd-93b4-32ecfeb70ef4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -67,6 +54,19 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>9cf4c8e8-a6c6-45be-b218-11f77ac530f9</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a0cbb271-2261-4b42-a165-90ad37c08eb3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF04_Rename Document</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>13ac8b54-3bc8-4135-8c2d-f73532e39616</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -90,13 +90,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>546cc46a-041d-42eb-a849-10164a6cef54</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/File/TF08_Download Document</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>1e2e2b00-a7f0-4755-bc8c-8c5711328b37</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -107,6 +100,102 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>e91abbc8-0ff2-4efd-90cd-6f04c4c6a4e8</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>546cc46a-041d-42eb-a849-10164a6cef54</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF08_Download Document</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9d68cb3f-f3be-4b43-85dc-0a8c74813044</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF09_Create Text file</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6b17613e-57bd-4b0d-a1ee-26c3100a9f4c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4769c758-ff2e-4a7c-ba7e-1250e5fb5517</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4a0606ae-1272-44b8-8e92-efff5dbb5d4b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF10_create spreadsheet</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7ff11814-f7e5-46d1-803d-9b815d338aa4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1c41a460-ff3a-40aa-b7eb-6e22b9ffce63</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d8384630-88e2-4402-83c6-ec7b5aed00db</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF11_Create CSV file</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>72616890-6062-4175-80f9-eaacf5defdf7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f8801bc4-976e-4bb9-ac5f-d258307aac1f</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5adfdfe8-2a06-43f8-a3ae-744db772d3ec</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF12_Create presentation</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6ec039e2-a528-47d9-b61a-80561545ba8d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9ab45760-37cd-4e49-80e9-5e4357da3dac</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>545f2be7-cddd-4bfb-b434-d0af7d34beb9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF13_Upload file</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bd7a27e7-2332-48e4-97ad-bf86f162f84a</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

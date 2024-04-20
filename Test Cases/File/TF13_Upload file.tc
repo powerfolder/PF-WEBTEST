@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF13_Upload file</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>65768635-0b9e-4d5c-9ab1-e864d7488f43</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bd7a27e7-2332-48e4-97ad-bf86f162f84a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bd7a27e7-2332-48e4-97ad-bf86f162f84a</id>
+      <masked>false</masked>
+      <name>wordFileName</name>
+   </variable>
+</TestCaseEntity>
