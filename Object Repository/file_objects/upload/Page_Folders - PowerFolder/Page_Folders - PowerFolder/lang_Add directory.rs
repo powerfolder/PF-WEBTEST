@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lang_Add directory</name>
+   <tag></tag>
+   <elementGuidId>ba2dbcca-830d-443c-9419-7c09d8f2754e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>lang[name=&quot;button_add_directory&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[2]/lang</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>lang</value>
+      <webElementGuid>9f89dbab-6907-433c-bc65-1d793a440256</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>button_add_directory</value>
+      <webElementGuid>d463bd35-b410-4d2e-9bf6-739e63027c6a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Add directory</value>
+      <webElementGuid>e17cf3bc-0b61-4b07-8fdc-c92548f25158</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;upload_directory&quot;)/lang[1]</value>
+      <webElementGuid>d50d051b-eca0-43c0-8f34-720c1e617e22</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//lang[@name='button_add_directory']</value>
+      <webElementGuid>a0299297-2a0b-436f-b7fe-cec64a2b0187</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//span[@id='upload_directory']/lang</value>
+      <webElementGuid>81f966dd-e206-43b0-b386-4d6d3cd33ca8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add file'])[1]/following::lang[1]</value>
+      <webElementGuid>9c004b23-e001-4cb4-b046-196653c3d85a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nothing to show'])[2]/following::lang[2]</value>
+      <webElementGuid>58d73aff-aa6c-45fa-98d2-e09db0135087</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Upload'])[2]/preceding::lang[1]</value>
+      <webElementGuid>3c76c4d6-222a-4e0f-978d-3b01f73b5ce6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Close'])[3]/preceding::lang[2]</value>
+      <webElementGuid>c12d3c08-4a10-4127-84e6-ce3711010919</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Add directory']/parent::*</value>
+      <webElementGuid>1466ac31-0818-4cfe-b67f-f40c1b9b3e96</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span[2]/lang</value>
+      <webElementGuid>2d6a71f4-1c35-49e5-924d-318d0a47b553</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//lang[@name = 'button_add_directory' and (text() = 'Add directory' or . = 'Add directory')]</value>
+      <webElementGuid>dde5a91e-67a7-41fa-ab3a-a05f72d79fa5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

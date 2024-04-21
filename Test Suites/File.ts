@@ -198,4 +198,25 @@
          <variableId>bd7a27e7-2332-48e4-97ad-bf86f162f84a</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>3a7f4b29-6ac7-4365-a6c4-6978055eacc0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF14_Upload 10xfiles</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>663cbc7a-a70f-48fd-8d97-1876ad279336</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF15_Delete all files</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5ea8cd11-bc9f-4040-adbd-349f9dbdf2e8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF16_Upload folder</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

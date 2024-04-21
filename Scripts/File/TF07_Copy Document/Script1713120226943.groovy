@@ -39,12 +39,14 @@ WebUI.click(findTestObject('file_objects/document/copy/Page_Folders - PowerFolde
 
 String characters = 'äöüß'
 
-String CopyName = ('Copy_' + RandomStringUtils.randomNumeric(2) + '_' + RandomStringUtils.random(2, characters) + '.docx')
+String CopyName = ((('Copy_' + RandomStringUtils.randomNumeric(2)) + '_') + RandomStringUtils.random(2, characters)) + '.docx'
 
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
     CopyName)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
+
+WebUI.delay(3)
 
 def btn = findDoc(CopyName)
 
