@@ -52,6 +52,8 @@ WebUI.delay(10)
 
 WebUI.switchToWindowUrl('https://lab.powerfolder.net:8666/folderstable')
 
+WebUI.refresh()
+
 def btn = findDoc(PresentationName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
@@ -62,7 +64,8 @@ WebUI.closeBrowser()
 
 @Keyword
 WebElement findDoc(String PresentationName) {
-	WebDriver driver = DriverFactory.getWebDriver()
+    WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + PresentationName) + '\')]/td[1]/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + PresentationName) + '\')]/td[1]/span'))
 }
+

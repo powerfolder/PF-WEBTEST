@@ -26,13 +26,10 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
 
 WebUI.callTestCase(findTestCase('File/Pre_test/Create_folder'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -50,6 +47,8 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 WebUI.delay(15)
 
 WebUI.switchToWindowUrl('https://lab.powerfolder.net:8666/folderstable')
+
+WebUI.refresh()
 
 def btn = findDoc(DocName)
 
