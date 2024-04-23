@@ -35,14 +35,12 @@ WebUI.callTestCase(findTestCase('File/Pre_test/Create_folder'), [:], FailureHand
 
 String folderName = GlobalVariable.folderName
 
-WebUI.verifyElementClickable(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
-
-WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
-
 //declare a variables containing these characters : äöüß
 String characters = 'äöüß'
 
 String folderName1 = (('Ordner_' + RandomStringUtils.randomNumeric(2)) + '_') + RandomStringUtils.random(2, characters)
+
+WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
 // Create subdirectories 1 2 3
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
@@ -51,6 +49,8 @@ WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/P
     folderName1)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
+
+WebUI.delay(2)
 
 WebElement btn1 = findFolder(folderName1)
 
@@ -67,6 +67,8 @@ WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/P
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
+WebUI.delay(2)
+
 WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
 WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_Document'))
@@ -78,7 +80,7 @@ WebUiBuiltInKeywords.setText(findTestObject('file_objects/document/Page_Folders 
 
 WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-WebUiBuiltInKeywords.delay(15)
+WebUiBuiltInKeywords.delay(10)
 
 WebUiBuiltInKeywords.closeWindowIndex(1)
 

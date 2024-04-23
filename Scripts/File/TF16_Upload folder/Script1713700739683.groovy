@@ -80,6 +80,8 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn)) // Taper sur
 
 WebUI.delay(3)
 
+deleteFolder(folderPath)
+
 WebUI.closeBrowser()
 
 @Keyword
@@ -178,4 +180,18 @@ void selectFolderAutomatically(String folderPath) {
         e.printStackTrace()
     } 
 }
-
+// Méthode pour supprimer le dossier
+void deleteFolder(String folderPath) {
+	try {
+		def folder = new File(folderPath)
+		if (folder.exists()) {
+			FileUtils.deleteDirectory(folder)
+			println "Le dossier a été supprimé avec succès."
+		} else {
+			println "Le dossier n'existe pas."
+		}
+	} catch (Exception e) {
+		println "Une erreur s'est produite lors de la suppression du dossier : ${e.message}"
+		e.printStackTrace()
+	}
+}

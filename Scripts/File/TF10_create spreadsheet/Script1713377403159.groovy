@@ -58,14 +58,14 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 assert sheetName != null
 
+WebUI.delay(2)
+
 WebUI.closeBrowser()
 
 @Keyword
 WebElement findDoc(String sheetName) {
-	WebDriver driver = DriverFactory.getWebDriver()
+    WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + sheetName) + '\')]/td[1]/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + sheetName) + '\')]/td[1]/span'))
 }
-
-
 

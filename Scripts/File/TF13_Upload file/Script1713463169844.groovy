@@ -47,6 +47,9 @@ import java.awt.Robot as Robot
 import java.awt.event.KeyEvent as KeyEvent
 import java.awt.FileDialog as FileDialog
 import javax.swing.JFrame as JFrame
+import java.nio.file.Files
+import java.nio.file.Path
+import java.nio.file.Paths
 
 WebUI.callTestCase(findTestCase('File/Pre_test/Create_folder'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -81,6 +84,9 @@ assert btn != null : 'Le document n\'est pas présent.'
 
 // Cliquer sur le bouton
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+
+// Supprimer le fichier Word créé sur le bureau
+deleteWordFile(wordFilePath)
 
 WebUI.closeBrowser()
 
@@ -130,6 +136,22 @@ void selectWordFileAutomatically(String wordFilePath) {
         e.printStackTrace()
     } 
 }
+
+// Méthode pour supprimer le fichier Word
+void deleteWordFile(String wordFilePath) {
+	try {
+		Path path = Paths.get(wordFilePath)
+		boolean deleted = Files.deleteIfExists(path)
+		if (deleted) {
+			println "Le fichier a été supprimé avec succès."
+		} else {
+			println "Le fichier n'a pas été trouvé ou n'a pas pu être supprimé."
+		}
+	} catch (Exception e) {
+		e.printStackTrace()
+	}
+}
+
 
 @Keyword
 WebElement findDoc(String wordFileName) {

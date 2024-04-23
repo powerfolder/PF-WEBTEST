@@ -136,4 +136,26 @@ List<WebElement> items = findFiles()
 // Méthode pour trouver les éléments dans la table
 assert !(items.isEmpty())
 
+// Méthode pour supprimer le dossier
+void deleteFolder(String folderPath) {
+    try {
+        def folder = new File(folderPath)
+        if (folder.exists()) {
+            FileUtils.deleteDirectory(folder)
+            println "Le dossier a été supprimé avec succès."
+        } else {
+            println "Le dossier n'existe pas."
+        }
+    } catch (Exception e) {
+        println "Une erreur s'est produite lors de la suppression du dossier : ${e.message}"
+        e.printStackTrace()
+    }
+}
+
+
+// Supprimer le dossier créé sur le bureau
+
+deleteFolder(folderPath)
+
+
 WebUI.closeBrowser()
