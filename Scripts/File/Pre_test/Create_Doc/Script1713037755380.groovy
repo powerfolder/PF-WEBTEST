@@ -30,6 +30,8 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import org.apache.commons.lang3.RandomStringUtils
+
 
 WebUI.callTestCase(findTestCase('File/Pre_test/Create_folder'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -37,7 +39,11 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Cre
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_Document'))
 
-String DocName = 'Doc_num_' + RandomStringUtils.randomNumeric(4)
+// Définir le nom du document en utilisant GlobalVariable
+GlobalVariable.Document = 'Doc_num_' + RandomStringUtils.randomNumeric(4)
+
+// Assigner la valeur de GlobalVariable.DocName à une variable locale
+String DocName = GlobalVariable.Document
 
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
     DocName)

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Restore</name>
+   <tag></tag>
+   <elementGuidId>3718e7de-1f54-4c98-84e6-bee84b280eb0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//th[3]/div/a/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.pica-glyph.glyphicons.glyphicons-restart</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>6bdefbc7-c0b1-45d4-b563-0368a2de327a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-glyph glyphicons glyphicons-restart</value>
+      <webElementGuid>90c7ba37-2762-45e3-8709-bc13d903d02b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;versions_restore&quot;)/span[@class=&quot;pica-glyph glyphicons glyphicons-restart&quot;]</value>
+      <webElementGuid>1d76a105-f6e7-4002-b462-e6adc9c1e03b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//a[@id='versions_restore']/span</value>
+      <webElementGuid>742d5600-145b-4805-a767-d57dda99dc1b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//th[3]/div/a/span</value>
+      <webElementGuid>29150f01-61d5-41ed-9dcd-32272c5ddbd3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

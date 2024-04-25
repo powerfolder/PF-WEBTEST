@@ -48,3 +48,29 @@ WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/P
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
+
+WebUI.delay(10)
+
+WebUI.switchToWindowUrl('https://lab.powerfolder.net:8666/folderstable')
+
+WebUI.refresh()
+
+def btn = findDoc(TextfileName)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+
+assert TextfileName != null
+
+WebUI.delay(2)
+
+WebUI.closeBrowser()
+
+@Keyword
+WebElement findDoc(String TextfileName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+
+	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + TextfileName) + '\')]/td[1]/span'))
+}
+
+
+

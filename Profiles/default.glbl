@@ -49,4 +49,9 @@
       <initValue>''</initValue>
       <name>organisationName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>Document</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

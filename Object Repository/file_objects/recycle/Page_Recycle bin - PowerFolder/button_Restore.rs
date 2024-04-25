@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Restore</name>
+   <tag></tag>
+   <elementGuidId>e1861433-8f28-4e89-bb8a-d1d9ccb3443b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_restore_versions']/div/table/tbody/tr[2]/td[6]/button</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.btn.btn-default.pull-right</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>2d92dadb-e3be-4893-9615-5e3c71eae566</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-default pull-right</value>
+      <webElementGuid>48293e79-09d5-40e4-96a3-69bc770a8fb9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Restore</value>
+      <webElementGuid>54b42f40-3694-422f-92b5-a014031f8342</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_restore_versions&quot;)/div[@class=&quot;pica-inputlist-scroller&quot;]/table[@class=&quot;pica-table-fixed table table-striped table-hover&quot;]/tbody[1]/tr[@class=&quot;pica-table-selection-disabled&quot;]/td[@class=&quot;text-right&quot;]/button[@class=&quot;btn btn-default pull-right&quot;]</value>
+      <webElementGuid>42e679be-ab27-48cd-8c9b-4892543e3cff</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_restore_versions']/div/table/tbody/tr[2]/td[6]/button</value>
+      <webElementGuid>caaa9035-3d4b-45ac-bc35-d67594d10420</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version 0'])[1]/following::button[1]</value>
+      <webElementGuid>8acca121-3a29-4a32-80db-ad17c259df02</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Doc_num_5265.docx'])[4]/following::button[1]</value>
+      <webElementGuid>11d2fcdd-a1b3-422a-a18e-8512ff3163b3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Close'])[1]/preceding::button[1]</value>
+      <webElementGuid>32a28576-a9fb-4074-8756-e6b6039a5e82</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[3]/preceding::button[2]</value>
+      <webElementGuid>b0db199e-ebf0-46d3-8de2-4a7661d335f9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td[6]/button</value>
+      <webElementGuid>c9368fef-7f55-4189-9422-42a0bd535cde</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'Restore' or . = 'Restore')]</value>
+      <webElementGuid>fa01d032-bd45-4069-80fa-43a7a1cc1abc</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -728,4 +728,226 @@
       <testCaseId>Test Cases/Groups/TG15_Remove organization from group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>cc131033-2904-4c84-bb7d-c0a9493384ce</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF01_Create directories</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4dc3dd5f-0b53-46b2-b3c6-5351f35b68a7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f13cd272-270e-4a5b-8d17-8cdb3a28d36c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f4ea7038-9b95-4e72-96da-ee3abf3d0316</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9aae0f8c-42c8-4d45-ab39-ae4af4fee088</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF02_Navigate directories</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4128dc5b-fc8c-45c7-9a98-283840bac89f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF03_Create Document</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9cf4c8e8-a6c6-45be-b218-11f77ac530f9</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4320fcb8-9118-4b84-8596-f991d2f5507d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF04_Rename Document</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>13ac8b54-3bc8-4135-8c2d-f73532e39616</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9a16fb14-6228-48da-9c5d-c019e62f678e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF05_Delete Document</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>008d5f36-2840-47fc-997e-83b96a73e0bd</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>20316f31-f750-415b-9b0f-67194f1c0f28</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF06_Cat Document</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>db839897-674d-4a76-9c70-e109360d255e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF07_Copy Document</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e91abbc8-0ff2-4efd-90cd-6f04c4c6a4e8</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2f34046a-7d15-468e-a8aa-23afbf260d86</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF08_Download Document</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>013b0c27-06a7-4a08-8a79-00ff73f4f2a5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF09_Create Text file</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6b17613e-57bd-4b0d-a1ee-26c3100a9f4c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4769c758-ff2e-4a7c-ba7e-1250e5fb5517</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>39db89d8-a0ad-46c8-97b1-2180230b4638</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF10_create spreadsheet</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7ff11814-f7e5-46d1-803d-9b815d338aa4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1c41a460-ff3a-40aa-b7eb-6e22b9ffce63</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>84bb0c39-57e4-4971-93aa-60388dfd046a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF11_Create CSV file</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>72616890-6062-4175-80f9-eaacf5defdf7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f8801bc4-976e-4bb9-ac5f-d258307aac1f</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9277173d-fe30-4761-921e-36a6c365f37f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF12_Create presentation</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6ec039e2-a528-47d9-b61a-80561545ba8d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9ab45760-37cd-4e49-80e9-5e4357da3dac</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>830aeaa9-7f4d-4923-9ca6-fadfc952c338</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF13_Upload file</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bd7a27e7-2332-48e4-97ad-bf86f162f84a</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f85c9694-3b79-491c-8742-9e67a7fddfe6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF14_Upload 10xfiles</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cb4d72d1-a128-4d62-8351-74653f1dc16b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF15_Delete all files</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>949e78c5-a2f3-4df0-b57c-a61c7e43ebaf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF16_Upload folder</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>245e04d6-8d57-46cf-aafa-06de2b98f49a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF17_Restore file</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4182edb9-12b4-44da-bda9-45308ddbf26c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF18_Restore old version</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
