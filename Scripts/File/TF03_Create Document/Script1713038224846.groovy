@@ -44,7 +44,7 @@ WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/P
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-WebUI.delay(15)
+WebUI.delay(20)
 
 WebUI.switchToWindowUrl('https://lab.powerfolder.net:8666/folderstable')
 

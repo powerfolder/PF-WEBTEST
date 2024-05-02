@@ -80,10 +80,10 @@ selectWordFileAutomatically(wordFilePath)
 // Vérification de la présence du document
 def btn = findDoc(wordFileName)
 
-assert btn != null : 'Le document n\'est pas présent.'
-
 // Cliquer sur le bouton
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+
+assert btn != null
 
 // Supprimer le fichier Word créé sur le bureau
 deleteWordFile(wordFilePath)
