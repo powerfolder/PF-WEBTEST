@@ -69,20 +69,23 @@ selectFolderAutomatically(folderPath)
 
 WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/lang_Cancel'))
 
+WebUI.delay(3)
+
 // Vérification de la présence du document
 def btn = findFolder(folderName)
 
 assert btn != null : 'Le document n\'est pas présent.'
 
 // Cliquer sur le bouton
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn)) // Taper sur la touche Tab
-// Taper sur la touche Entrée
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn) // Taper sur la touche Tab
+    )
 
+// Taper sur la touche Entrée
 WebUI.delay(3)
 
 deleteFolder(folderPath)
 
-WebUI.closeBrowser()
+WebUI.closeBrowser() // Méthode pour supprimer le dossier
 
 @Keyword
 WebElement findFolder(String folderName) {
@@ -180,18 +183,23 @@ void selectFolderAutomatically(String folderPath) {
         e.printStackTrace()
     } 
 }
-// Méthode pour supprimer le dossier
+
 void deleteFolder(String folderPath) {
-	try {
-		def folder = new File(folderPath)
-		if (folder.exists()) {
-			FileUtils.deleteDirectory(folder)
-			println "Le dossier a été supprimé avec succès."
-		} else {
-			println "Le dossier n'existe pas."
-		}
-	} catch (Exception e) {
-		println "Une erreur s'est produite lors de la suppression du dossier : ${e.message}"
-		e.printStackTrace()
-	}
+    try {
+        def folder = new File(folderPath)
+
+        if (folder.exists()) {
+            FileUtils.deleteDirectory(folder)
+
+            println('Le dossier a été supprimé avec succès.')
+        } else {
+            println('Le dossier n\'existe pas.')
+        }
+    }
+    catch (Exception e) {
+        println("Une erreur s'est produite lors de la suppression du dossier : $e.message")
+
+        e.printStackTrace()
+    } 
 }
+

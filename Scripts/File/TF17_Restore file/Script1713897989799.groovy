@@ -69,11 +69,15 @@ WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
 
+WebUI.delay(2)
+
 WebElement btn1 = findFolder(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
 String DocName = GlobalVariable.Document
+
+WebUI.delay(2)
 
 def btn2 = findDoc(DocName)
 

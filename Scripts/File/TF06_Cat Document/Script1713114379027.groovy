@@ -25,49 +25,44 @@ import org.openqa.selenium.By as By
 import java.util.Arrays as Arrays
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-WebUI.callTestCase(findTestCase('File/Pre_test/Create_folder'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUiBuiltInKeywords.callTestCase(findTestCase('File/Pre_test/Create_folder'), [:], FailureHandling.STOP_ON_FAILURE)
 
 String folderName = GlobalVariable.folderName
 
-//declare a variables containing these characters : äöüß
+// déclarer une variable contenant ces caractères : äöüß
 String characters = 'äöüß'
 
 String folderName1 = (('Ordner_' + RandomStringUtils.randomNumeric(2)) + '_') + RandomStringUtils.random(2, characters)
 
-WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
+WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
-// Create subdirectories 1 2 3
-WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
+// Créer des sous-répertoires 1 2 3
+WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
 
-WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
+WebUiBuiltInKeywords.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
     folderName1)
 
-WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
+WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-WebUI.delay(2)
+WebUiBuiltInKeywords.delay(2)
 
 WebElement btn1 = findFolder(folderName1)
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
+WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
 String folderName2 = (('Ordner_' + RandomStringUtils.randomNumeric(2)) + '_') + RandomStringUtils.random(2, characters)
 
-WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
+WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
-WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
+WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
 
-WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
+WebUiBuiltInKeywords.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
     folderName2)
 
-WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
+WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-WebUI.delay(2)
+WebUiBuiltInKeywords.delay(2)
 
 WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
@@ -100,9 +95,11 @@ WebElement btn4 = findFolder(folderName2)
 
 WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn4))
 
-WebUI.click(findTestObject('file_objects/document/span_paste/span_Paste'))
+WebUiBuiltInKeywords.click(findTestObject('file_objects/document/span_paste/span_Paste'))
 
-WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/FolderName1_Path'))
+WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/FolderName1_Path'))
+
+WebUiBuiltInKeywords.delay(2)
 
 // Vérifier que DocName n'est plus présent dans le tableau après le déplacement 
 List<WebElement> items = findElementsInXPath(('//*[@id=\'files_files_table\']/tbody//span[contains(text(), \'' + DocName) + 
@@ -110,10 +107,8 @@ List<WebElement> items = findElementsInXPath(('//*[@id=\'files_files_table\']/tb
 
 assert items.isEmpty()
 
-WebUI.delay(2)
-
 // Fermer le navigateur
-WebUI.closeBrowser()
+WebUiBuiltInKeywords.closeBrowser()
 
 @Keyword
 WebElement findDoc(String DocName) {

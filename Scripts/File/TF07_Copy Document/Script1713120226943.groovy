@@ -46,6 +46,8 @@ WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/P
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
+WebUI.refresh()
+
 WebUI.delay(3)
 
 def btn = findDoc(CopyName)

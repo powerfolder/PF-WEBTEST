@@ -47,9 +47,7 @@ import java.awt.Robot as Robot
 import java.awt.event.KeyEvent as KeyEvent
 import java.awt.FileDialog as FileDialog
 import javax.swing.JFrame as JFrame
-import java.nio.file.Files
-import java.nio.file.Path
-import java.nio.file.Paths
+import java.nio.file.Path as Path
 
 WebUI.callTestCase(findTestCase('File/Pre_test/Create_folder'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -77,6 +75,8 @@ WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/lang_
 // Uploader le fichier Word vide dans le test
 selectWordFileAutomatically(wordFilePath)
 
+WebUI.delay(5)
+
 // Vérification de la présence du document
 def btn = findDoc(wordFileName)
 
@@ -88,7 +88,7 @@ assert btn != null
 // Supprimer le fichier Word créé sur le bureau
 deleteWordFile(wordFilePath)
 
-WebUI.closeBrowser()
+WebUI.closeBrowser() // Méthode pour supprimer le fichier Word
 
 String createEmptyWordFileOnDesktop(String fileName) {
     def desktopWordPath = Paths.get(System.getProperty('user.home'), 'Desktop')
@@ -137,21 +137,22 @@ void selectWordFileAutomatically(String wordFilePath) {
     } 
 }
 
-// Méthode pour supprimer le fichier Word
 void deleteWordFile(String wordFilePath) {
-	try {
-		Path path = Paths.get(wordFilePath)
-		boolean deleted = Files.deleteIfExists(path)
-		if (deleted) {
-			println "Le fichier a été supprimé avec succès."
-		} else {
-			println "Le fichier n'a pas été trouvé ou n'a pas pu être supprimé."
-		}
-	} catch (Exception e) {
-		e.printStackTrace()
-	}
-}
+    try {
+        Path path = Paths.get(wordFilePath)
 
+        boolean deleted = Files.deleteIfExists(path)
+
+        if (deleted) {
+            println('Le fichier a été supprimé avec succès.')
+        } else {
+            println('Le fichier n\'a pas été trouvé ou n\'a pas pu être supprimé.')
+        }
+    }
+    catch (Exception e) {
+        e.printStackTrace()
+    } 
+}
 
 @Keyword
 WebElement findDoc(String wordFileName) {

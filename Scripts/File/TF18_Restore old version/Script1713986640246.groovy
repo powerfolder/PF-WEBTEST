@@ -76,6 +76,8 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
 String DocName = GlobalVariable.Document
 
+WebUI.delay(4)
+
 def btn2 = findDoc(DocName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))

@@ -1,4 +1,4 @@
-// Importations des classes nécessaires
+ // Importations des classes nécessaires
 import com.kms.katalon.core.annotation.Keyword as Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberBuiltinKeywords
@@ -49,37 +49,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 // Définition du chemin vers le dossier sur le bureau
 def desktopWordPath = Paths.get(System.getProperty('user.home'), 'Desktop')
+
 String folderPath = desktopWordPath.resolve('mon_dossier').toString()
 
 // Fonctions
-def pasteFromClipboardAndConfirm(Robot robot) {
-    robot.keyPress(KeyEvent.VK_CONTROL)
-    robot.keyPress(KeyEvent.VK_V)
-    robot.keyRelease(KeyEvent.VK_V)
-    robot.keyRelease(KeyEvent.VK_CONTROL)
-    robot.keyPress(KeyEvent.VK_ENTER)
-    robot.keyRelease(KeyEvent.VK_ENTER)
-}
-
-def createFolderIfNotExists(String folderPath) {
-    File folder = new File(folderPath)
-    if (!(folder.exists())) {
-        folder.mkdir()
-    }
-}
-
-def createFilesInFolder(String folderPath, int numberOfFiles) {
-    for (int i = 1; i <= numberOfFiles; i++) {
-        File file = new File(((folderPath + '/file') + i) + '.txt')
-        file.createNewFile()
-    }
-}
-
-List<WebElement> findFiles() {
-    WebDriver driver = DriverFactory.getWebDriver()
-    return driver.findElements(By.xpath('//div[2]/table/tbody'))
-}
-
 // Appel du test case pour créer un dossier
 WebUiBuiltInKeywords.callTestCase(findTestCase('File/Pre_test/Create_folder'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -94,7 +67,9 @@ WebUiBuiltInKeywords.click(findTestObject('file_objects/upload/Page_Folders - Po
 
 // Attendre que l'élément devienne visible
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+
 WebElement addfile = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[5]/div/div/div[3]/div/div/span')))
+
 addfile.click()
 
 // Créer le dossier sur le bureau s'il n'existe pas déjà
@@ -105,11 +80,15 @@ createFilesInFolder(folderPath, 10)
 
 // Attendre que la fenêtre de dialogue de fichier soit disponible
 Robot robot = new Robot()
-robot.delay(2000) // Attendre 2 secondes pour laisser la fenêtre s'ouvrir
+
+robot.delay(2000 // Attendre 2 secondes pour laisser la fenêtre s'ouvrir
+    )
 
 // Coller le chemin dans la fenêtre de dialogue
 StringSelection stringSelection = new StringSelection(folderPath)
+
 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null)
+
 pasteFromClipboardAndConfirm(robot)
 
 // Attendre le temps nécessaire pour le chargement des fichiers
@@ -117,10 +96,13 @@ robot.delay(2000)
 
 // Sélectionner tous les fichiers dans le dossier
 String allFiles = ''
+
 for (int i = 1; i <= 10; i++) {
     allFiles += (('"file' + i) + '" ')
 }
+
 StringSelection allFilesSelection = new StringSelection(allFiles.trim())
+
 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(allFilesSelection, null)
 
 // Coller la sélection dans la fenêtre de dialogue
@@ -131,31 +113,71 @@ robot.delay(5000)
 
 WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/lang_Cancel'))
 
+WebUI.delay(3)
+
 List<WebElement> items = findFiles()
 
 // Méthode pour trouver les éléments dans la table
 assert !(items.isEmpty())
 
 // Méthode pour supprimer le dossier
-void deleteFolder(String folderPath) {
-    try {
-        def folder = new File(folderPath)
-        if (folder.exists()) {
-            FileUtils.deleteDirectory(folder)
-            println "Le dossier a été supprimé avec succès."
-        } else {
-            println "Le dossier n'existe pas."
-        }
-    } catch (Exception e) {
-        println "Une erreur s'est produite lors de la suppression du dossier : ${e.message}"
-        e.printStackTrace()
+// Supprimer le dossier créé sur le bureau
+deleteFolder(folderPath)
+
+WebUI.closeBrowser()
+
+def pasteFromClipboardAndConfirm(Robot robot) {
+    robot.keyPress(KeyEvent.VK_CONTROL)
+
+    robot.keyPress(KeyEvent.VK_V)
+
+    robot.keyRelease(KeyEvent.VK_V)
+
+    robot.keyRelease(KeyEvent.VK_CONTROL)
+
+    robot.keyPress(KeyEvent.VK_ENTER)
+
+    robot.keyRelease(KeyEvent.VK_ENTER)
+}
+
+def createFolderIfNotExists(String folderPath) {
+    File folder = new File(folderPath)
+
+    if (!(folder.exists())) {
+        folder.mkdir()
     }
 }
 
+def createFilesInFolder(String folderPath, int numberOfFiles) {
+    for (int i = 1; i <= numberOfFiles; i++) {
+        File file = new File(((folderPath + '/file') + i) + '.txt')
 
-// Supprimer le dossier créé sur le bureau
+        file.createNewFile()
+    }
+}
 
-deleteFolder(folderPath)
+List<WebElement> findFiles() {
+    WebDriver driver = DriverFactory.getWebDriver()
 
+    return driver.findElements(By.xpath('//div[2]/table/tbody'))
+}
 
-WebUI.closeBrowser()
+void deleteFolder(String folderPath) {
+    try {
+        def folder = new File(folderPath)
+
+        if (folder.exists()) {
+            FileUtils.deleteDirectory(folder)
+
+            println('Le dossier a été supprimé avec succès.')
+        } else {
+            println('Le dossier n\'existe pas.')
+        }
+    }
+    catch (Exception e) {
+        println("Une erreur s'est produite lors de la suppression du dossier : $e.message")
+
+        e.printStackTrace()
+    } 
+}
+

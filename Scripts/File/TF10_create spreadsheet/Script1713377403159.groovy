@@ -54,6 +54,8 @@ WebUI.switchToWindowUrl('https://lab.powerfolder.net:8666/folderstable')
 
 WebUI.refresh()
 
+WebUI.delay(2)
+
 def btn = findDoc(sheetName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))

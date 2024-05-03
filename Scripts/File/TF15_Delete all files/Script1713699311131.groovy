@@ -36,14 +36,13 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 // Clique sur le bouton "Yes" dans la page "Groups - PowerFolder"
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
 
-// Attendre pendant 3 secondes
-WebUI.delay(2)
+WebUI.delay(3)
 
 // Vérification de la suppression des éléments dans la table
 List<WebElement> items = findGroup()
 
 // Méthode pour trouver les éléments dans la table
-assert items.isEmpty()
+assert items.isEmpty() : 'Les éléments n\'ont pas été supprimés avec succès'
 
 // Fermeture du navigateur
 WebUI.closeBrowser()

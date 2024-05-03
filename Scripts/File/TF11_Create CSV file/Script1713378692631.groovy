@@ -54,6 +54,8 @@ WebUI.switchToWindowUrl('https://lab.powerfolder.net:8666/folderstable')
 
 WebUI.refresh()
 
+WebUI.delay(5)
+
 def btn = findDoc(CSVfileName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
