@@ -31,31 +31,59 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-GlobalVariable.userName = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
+// Déclaration de la variable globale folderName
+GlobalVariable.folderName = ('folder_' + RandomStringUtils.randomNumeric(4))
 
-WebUiBuiltInKeywords.callTestCase(findTestCase('Groups/Pre_test/add member'), [:], FailureHandling.STOP_ON_FAILURE)
+String folderName = GlobalVariable.folderName
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
 
-WebUI.delay(3)
+WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), GlobalVariable.folderName)
 
-WebElement user = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(('//*[@id=\'pica_group_accounts\']//div[2]/table/tbody/tr/td[2][contains(text(), \'' + 
-            GlobalVariable.userName) + '\')]')))
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-user.click()
+WebDriver driver = DriverFactory.getWebDriver()
 
-assert user != null : 'L\'élément utilisateur n\'a pas été trouvé.'
+WebElement folder = driver.findElement(By.xpath(('//td/a[contains(text(),\'' + folderName) + '\')]'))
 
-WebUI.closeBrowser()
+boolean isFolderCreated = folder.isDisplayed()
+
+WebUiBuiltInKeywords.verifyEqual(isFolderCreated, true)
+
+WebElement btn = findFolder(folderName)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+
+WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
+
+WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_Document'))
+
+// Définir le nom du document en utilisant GlobalVariable
+GlobalVariable.Document = ('Doc_num_' + RandomStringUtils.randomNumeric(4))
+
+// Assigner la valeur de GlobalVariable.DocName à une variable locale
+String DocName = GlobalVariable.Document
+
+WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
+    DocName)
+
+WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
 @Keyword
-WebElement findGroup(String groupName) {
+WebElement findDoc(String DocName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + GlobalVariable.GroupName) + '\')]/td[1]/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + DocName) + '\')]/td[1]/span'))
+}
+
+@Keyword
+WebElement findFolder(String folderName) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
 }
 

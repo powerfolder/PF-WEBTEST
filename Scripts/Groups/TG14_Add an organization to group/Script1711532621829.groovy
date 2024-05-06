@@ -72,6 +72,8 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Group
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
+WebUI.delay(2)
+
 WebElement btn = findGroup(GlobalVariable.GroupName)
 
 WebUI.delay(1)
@@ -84,6 +86,8 @@ WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Ed
 
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Organizations'))
 
+WebUI.delay(2)
+
 WebElement inputElement = driver.findElement(By.xpath('//*[@id=\'pica_group_organizations\']/div[1]/div[1]/input'))
 
 inputElement.sendKeys(GlobalVariable.organisationName)
@@ -92,7 +96,7 @@ WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/Orga
 
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
 
-WebUI.delay(1)
+WebUI.delay(3)
 
 WebElement btn1 = findGroup(GlobalVariable.GroupName)
 

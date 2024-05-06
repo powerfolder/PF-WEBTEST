@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lang_Open files in web URL</name>
+   <tag></tag>
+   <elementGuidId>1c404440-8637-407f-b00b-50f85f8e1c4f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#open_files_in_web_urls > a > lang</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[3]/div/div/div[2]/ul/li[3]/a/lang</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>lang</value>
+      <webElementGuid>817c24c7-7473-4003-81d7-81f91f53d2c0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-plural</name>
+      <type>Main</type>
+      <value>false</value>
+      <webElementGuid>08b63b8e-3fe0-413d-b142-d2a4c9cbe144</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Open files in web URL</value>
+      <webElementGuid>2aafc402-6b14-44fc-93ee-7f637fecde7f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;open_files_in_web_urls&quot;)/a[1]/lang[1]</value>
+      <webElementGuid>f7a346c2-b3f3-4746-ace9-70bc438c96f5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//li[@id='open_files_in_web_urls']/a/lang</value>
+      <webElementGuid>967a1e3b-d58d-4a80-a952-d1d4f3d1d242</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Open files in web settings'])[1]/following::lang[1]</value>
+      <webElementGuid>9cb48c6b-7877-4f29-b774-62d92580a3ae</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Features'])[1]/following::lang[2]</value>
+      <webElementGuid>17d6bb3a-fcff-4a26-b49c-ef90024fd668</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version of Terms of Service'])[1]/preceding::lang[1]</value>
+      <webElementGuid>c7621db0-2f06-4708-8400-08b67cc17c26</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='server.tos.version'])[1]/preceding::lang[1]</value>
+      <webElementGuid>7f38cc6f-c026-42a4-9097-8ef1aae09a17</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Open files in web URL']/parent::*</value>
+      <webElementGuid>eac4b6e6-02e4-4887-9fd7-c3dad91c53d6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/div[2]/ul/li[3]/a/lang</value>
+      <webElementGuid>149ac96d-bf88-45d8-8a1a-5fdcfe361d1c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//lang[(text() = 'Open files in web URL' or . = 'Open files in web URL')]</value>
+      <webElementGuid>dac3c610-110d-4211-b517-1fdb2f28b1b1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

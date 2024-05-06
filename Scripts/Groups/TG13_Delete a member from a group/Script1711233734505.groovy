@@ -56,6 +56,8 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/b
 
 WebUI.verifyElementPresent(findTestObject('Groups/Page_Groups - PowerFolder/div_Group updated'), 1)
 
+WebUI.delay(3)
+
 WebElement btn1 = findGroup(GlobalVariable.GroupName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
@@ -67,7 +69,8 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 verifyNoElementWithuserNamePresent(('//*[@id="pica_group_accounts"]/div[2]//*[contains(text(), \'' + GlobalVariable.userName) + 
     '\')]')
 
-WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save')) // Vous pouvez également lever une exception ou prendre d'autres mesures appropriées ici
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save') // Vous pouvez également lever une exception ou prendre d'autres mesures appropriées ici
+    )
 
 WebUI.closeBrowser()
 
