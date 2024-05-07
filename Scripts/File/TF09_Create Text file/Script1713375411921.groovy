@@ -21,6 +21,13 @@ import org.openqa.selenium.By as By
 import java.util.Arrays as Arrays
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.testobject.TestObject as TestObject
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('File/Pre_test/Create_folder'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -39,7 +46,14 @@ WebUiBuiltInKeywords.setText(findTestObject('file_objects/document/Page_Folders 
 
 WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-WebUiBuiltInKeywords.delay(10)
+WebUI.switchToWindowIndex('1')
+
+WebUI.verifyElementNotPresent(findTestObject('file_objects/document/Page_Open - PowerFolder/span_Unable to create document'), 
+    3)
+
+WebUI.refresh()
+
+WebUiBuiltInKeywords.delay(15)
 
 WebUiBuiltInKeywords.switchToWindowUrl('https://lab.powerfolder.net:8666/folderstable')
 
