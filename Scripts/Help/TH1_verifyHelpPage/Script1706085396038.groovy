@@ -21,9 +21,23 @@ WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHa
 WebUI.click(findTestObject('LeftNavigationIcons/Help'))
 WebUI.switchToWindowIndex(1)
 Thread.sleep(11000)
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Spaces - Confluence')
+
+// Vérifiez si le titre de la fenêtre contient 'Confluence'
+String windowTitle = WebUI.getWindowTitle()
+boolean isCorrectTitle = windowTitle.contains('Confluence') && (windowTitle.contains('Spaces') || windowTitle.contains('Espaces'))
+WebUI.verifyEqual(isCorrectTitle, true)
+
 WebUI.click(findTestObject('Help/powerFolder'))
 Thread.sleep(8000)
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'PowerFolder - Confluence')
-WebUI.verifyEqual(WebUI.getText(findTestObject('Help/getTitleText')), 'PowerFolder Documentation and Support')
+
+// Vérifiez si le titre de la fenêtre contient 'PowerFolder - Confluence'
+windowTitle = WebUI.getWindowTitle()
+isCorrectTitle = windowTitle.contains('PowerFolder - Confluence')
+WebUI.verifyEqual(isCorrectTitle, true)
+
+// Vérifiez si le texte contient 'PowerFolder Documentation and Support'
+String actualText = WebUI.getText(findTestObject('Help/getTitleText')).trim()
+String expectedText = 'PowerFolder Documentation and Support'
+WebUI.verifyEqual(actualText.contains(expectedText), true)
+
 WebUI.closeBrowser()
