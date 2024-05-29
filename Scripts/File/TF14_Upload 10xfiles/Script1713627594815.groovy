@@ -120,6 +120,8 @@ List<WebElement> items = findFiles()
 // Méthode pour trouver les éléments dans la table
 assert !(items.isEmpty())
 
+WebUI.delay(3)
+
 // Méthode pour supprimer le dossier
 // Supprimer le dossier créé sur le bureau
 deleteFolder(folderPath)

@@ -44,6 +44,8 @@ List<WebElement> items = findGroup()
 // Méthode pour trouver les éléments dans la table
 assert items.isEmpty() : 'Les éléments n\'ont pas été supprimés avec succès'
 
+WebUI.delay(3)
+
 // Fermeture du navigateur
 WebUI.closeBrowser()
 
