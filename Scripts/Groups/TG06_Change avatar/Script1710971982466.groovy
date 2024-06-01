@@ -76,7 +76,7 @@ def selectImageAutomatically(String imagePath) {
     try {
         Robot robot = new Robot()
 
-        Thread.sleep(1000)
+        WebUI.delay(1)
 
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection(imagePath), null)
 
@@ -85,7 +85,7 @@ def selectImageAutomatically(String imagePath) {
         robot.keyRelease(KeyEvent.VK_V)
         robot.keyRelease(KeyEvent.VK_CONTROL)
 
-        Thread.sleep(1000)
+        WebUI.delay(1)
 
         robot.keyPress(KeyEvent.VK_ENTER)
         robot.keyRelease(KeyEvent.VK_ENTER)
