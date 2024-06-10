@@ -31,8 +31,7 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-
-GlobalVariable.folderName = 'folder_' + RandomStringUtils.randomNumeric(4)
+GlobalVariable.folderName = ('folder_' + RandomStringUtils.randomNumeric(4))
 
 WebUI.callTestCase(findTestCase('Groups/Pre_test/create_group'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -48,6 +47,8 @@ WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
 WebElement folderElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//*[@id="pica_group_folders"]/div[1]/div[1]/ul/li/a/div/div[2]')))
 
 folderElement.click()
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
@@ -69,10 +70,8 @@ WebUI.closeBrowser()
 
 @Keyword
 WebElement findGroup(String groupName) {
-	WebDriver driver = DriverFactory.getWebDriver()
+    WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + GlobalVariable.GroupName) + '\')]/td[1]/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + GlobalVariable.GroupName) + '\')]/td[1]/span'))
 }
-
-
 
