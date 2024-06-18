@@ -23,6 +23,9 @@ import org.openqa.selenium.WebElement as WebElement
 // Ouvre un nouveau navigateur
 WebUI.openBrowser('')
 
+// Maximize the browser window
+WebUI.maximizeWindow()
+
 // Navigue vers l'URL spécifiée dans la variable globale URL
 WebUI.navigateToUrl(GlobalVariable.URL)
 
@@ -36,8 +39,7 @@ WebUI.setText(findTestObject('Object Repository/Login/Page_Login - PowerFolder/i
 WebUI.click(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login'))
 
 // Attend jusqu'à 2 secondes pour que l'élément de saisie de mot de passe soit visible et stocke le résultat dans isPresent
-isPresent = WebUI.waitForElementVisible(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'), 
-    2)
+isPresent = WebUI.waitForElementVisible(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'), 2)
 
 // Vérifie si l'élément de saisie de mot de passe est présent sur la page
 assert isPresent

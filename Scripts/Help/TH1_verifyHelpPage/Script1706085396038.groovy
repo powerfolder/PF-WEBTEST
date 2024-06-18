@@ -17,27 +17,38 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
+WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
+
 WebUI.click(findTestObject('LeftNavigationIcons/Help'))
+
 WebUI.switchToWindowIndex(1)
+
 Thread.sleep(11000)
 
 // Vérifiez si le titre de la fenêtre contient 'Confluence'
 String windowTitle = WebUI.getWindowTitle()
+
 boolean isCorrectTitle = windowTitle.contains('Confluence') && (windowTitle.contains('Spaces') || windowTitle.contains('Espaces'))
+
 WebUI.verifyEqual(isCorrectTitle, true)
 
 WebUI.click(findTestObject('Help/powerFolder'))
+
 Thread.sleep(8000)
 
 // Vérifiez si le titre de la fenêtre contient 'PowerFolder - Confluence'
 windowTitle = WebUI.getWindowTitle()
+
 isCorrectTitle = windowTitle.contains('PowerFolder - Confluence')
+
 WebUI.verifyEqual(isCorrectTitle, true)
 
 // Vérifiez si le texte contient 'PowerFolder Documentation and Support'
 String actualText = WebUI.getText(findTestObject('Help/getTitleText')).trim()
+
 String expectedText = 'PowerFolder Documentation and Support'
+
 WebUI.verifyEqual(actualText.contains(expectedText), true)
 
 WebUI.closeBrowser()
+

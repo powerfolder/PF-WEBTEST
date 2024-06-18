@@ -1,4 +1,4 @@
-// Import statements
+ // Import statements
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -20,8 +20,7 @@ import org.openqa.selenium.By as By
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
-import org.apache.commons.lang3.RandomStringUtils
-
+import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 
 // Call test case to navigate to pre-test
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
@@ -54,33 +53,42 @@ assert getFoldersCount() > originfolderCount
 assert tableContainsFolder(folderName)
 
 // Close browser
-WebUI.closeBrowser()
+WebUI.closeBrowser( // Function to get folders count
+    ) // Function to check if table contains folder
+// Function to generate random folder name
+// Function to get timestamp
 
-// Function to get folders count
 int getFoldersCount() {
     WebDriver driver = DriverFactory.getWebDriver()
-    WebElement tbody = driver.findElement(By.xpath("//table[@id='files_files_table']/tbody"))
+
+    WebElement tbody = driver.findElement(By.xpath('//table[@id=\'files_files_table\']/tbody'))
+
     assert tbody
+
     List<WebElement> rows_table = tbody.findElements(By.tagName('tr'))
+
     return rows_table.size()
 }
 
-// Function to check if table contains folder
 boolean tableContainsFolder(String fileName) {
     WebDriver driver = DriverFactory.getWebDriver()
-    WebElement tfolder = driver.findElement(By.xpath("//td/a[@class='pica-name' and text() ='"+fileName+"']"))
+
+    WebElement tfolder = driver.findElement(By.xpath(('//td/a[@class=\'pica-name\' and text() =\'' + fileName) + '\']'))
+
     return tfolder.isDisplayed()
 }
 
-// Function to generate random folder name
-def String getRandomFolderName() {
+String getRandomFolderName() {
     String folderName = 'F' + getTimestamp()
+
     return folderName
 }
 
-// Function to get timestamp
-def String getTimestamp() {
+String getTimestamp() {
     Date todaysDate = new Date()
-    String formattedDate = todaysDate.format("ddMMMyyyyhhmmss")
+
+    String formattedDate = todaysDate.format('ddMMMyyyyhhmmss')
+
     return formattedDate
 }
+

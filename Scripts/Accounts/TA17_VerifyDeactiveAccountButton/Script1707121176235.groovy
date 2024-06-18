@@ -19,7 +19,7 @@ Emailid = emailId.toLowerCase()
 
 String phone = generateRandomPhoneNumber()
 
-WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
+WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('LeftNavigationIcons/account'))
 

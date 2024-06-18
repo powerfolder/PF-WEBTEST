@@ -60,23 +60,23 @@ WebUI.click(findTestObject('Folders/downloadLink'))
 
 String parentWindow = driver.getWindowHandle()
 
-JavascriptExecutor jsExecutor = ((JavascriptExecutor) driver)
+JavascriptExecutor jsExecutor = ((driver) as JavascriptExecutor)
 
 jsExecutor.executeScript('window.open()')
 
 Set<String> allWinowHandles = driver.getWindowHandles()
 
 for (String winHandle : allWinowHandles) {
-	if (!(winHandle.equals(parentWindow))) {
-		driver.switchTo().window(winHandle)
-	}
+    if (!(winHandle.equals(parentWindow))) {
+        driver.switchTo().window(winHandle)
+    }
 }
 
 WebUI.delay(5)
 
 driver.get('chrome://downloads')
 
-JavascriptExecutor downloadWindowExecutor = ((JavascriptExecutor) driver)
+JavascriptExecutor downloadWindowExecutor = ((driver) as JavascriptExecutor)
 
 String fileName = ((downloadWindowExecutor.executeScript('return document.querySelector(\'downloads-manager\').shadowRoot.querySelector(\'#downloadsList downloads-item\').shadowRoot.querySelector(\'div#content #file-link\').text')) as String)
 
@@ -84,20 +84,21 @@ String downloadSourceLink = ((downloadWindowExecutor.executeScript('return docum
 
 System.out.println('Downloaded File Name: ' + fileName)
 
-WebUI.verifyEqual(fileName, folderName+'.zip')
+WebUI.verifyEqual(fileName, folderName + '.zip')
 
 WebUI.closeBrowser()
 
 String getRandomFolderName() {
-	String folderName = 'FDTF7' + getTimestamp()
+    String folderName = 'FDTF7' + getTimestamp()
 
-	return folderName
+    return folderName
 }
 
 String getTimestamp() {
-	Date todaysDate = new Date()
+    Date todaysDate = new Date()
 
-	String formattedDate = todaysDate.format('dd_MMM_yyyy_hh_mm_ss')
+    String formattedDate = todaysDate.format('dd_MMM_yyyy_hh_mm_ss')
 
-	return formattedDate
+    return formattedDate
 }
+

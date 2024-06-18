@@ -40,7 +40,7 @@ Emailid = emailId.toLowerCase()
 
 String phone = generateRandomPhoneNumber()
 
-WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
+WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('LeftNavigationIcons/account'))
 
@@ -64,9 +64,12 @@ WebUI.click(findTestObject('Accounts/SaveButton'))
 
 WebUI.delay(10)
 
-WebUI.setText(findTestObject('Accounts/inputAccountSearch'),firstName )
+WebUI.setText(findTestObject('Accounts/inputAccountSearch'), firstName)
+
 WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
+
 WebUI.waitForElementClickable(findTestObject('Accounts/checkAccount'), 30, FailureHandling.OPTIONAL)
+
 WebUI.click(findTestObject('Accounts/checkAccount'))
 
 WebUI.click(findTestObject('Accounts/DeleteButton'))
