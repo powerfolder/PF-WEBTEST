@@ -35,7 +35,7 @@ String lastName = generateRandomString(8)
 
 String emailId = generateRandomEmail()
 
-Emailid = emailId.toLowerCase()
+emailId = emailId.toLowerCase()
 
 String phone = generateRandomPhoneNumber()
 
@@ -70,19 +70,19 @@ WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.EN
 WebDriver driver = DriverFactory.getWebDriver()
 
 try {
-    WebElement ClickOnAccount = driver.findElement(By.partialLinkText(firstName))
+	WebElement ClickOnAccount = driver.findElement(By.partialLinkText(firstName))
 
-    WebUI.delay(2)
+	WebUI.delay(2)
 
-    ClickOnAccount.click()
+	ClickOnAccount.click()
 }
 catch (Exception e) {
-    WebElement ClickOnAccount = driver.findElement(By.xpath("//a[@class='pica-name' and @data-original-title ='$emailId']"))
+	WebElement ClickOnAccount = driver.findElement(By.xpath("//a[@class='pica-name' and @data-original-title ='$emailId']"))
 
-    JavascriptExecutor executor = ((driver) as JavascriptExecutor)
+	JavascriptExecutor executor = (JavascriptExecutor) driver
 
-    executor.executeScript('arguments[0].click()', ClickOnAccount)
-} 
+	executor.executeScript('arguments[0].click()', ClickOnAccount)
+}
 
 WebUI.verifyEqual(WebUI.getText(findTestObject('Accounts/VerifyEditPage')), 'Edit Account', FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -125,26 +125,25 @@ WebUI.click(findTestObject('Accounts/YesButton'))
 WebUI.closeBrowser()
 
 String generateRandomString(int length) {
-    String characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+	String characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 
-    StringBuilder randomString = new StringBuilder()
+	StringBuilder randomString = new StringBuilder()
 
-    Random random = new Random()
+	Random random = new Random()
 
-    for (int i = 0; i < length; i++) {
-        randomString.append(characters.charAt(random.nextInt(characters.length())))
-    }
-    
-    return randomString.toString().toLowerCase()
+	for (int i = 0; i < length; i++) {
+		randomString.append(characters.charAt(random.nextInt(characters.length())))
+	}
+	
+	return randomString.toString().toLowerCase()
 }
 
 String generateRandomEmail() {
-    return generateRandomString(8) + '@yopmail.com'
+	return generateRandomString(8) + '@yopmail.com'
 }
 
 String generateRandomPhoneNumber() {
-    Random random = new Random()
+	Random random = new Random()
 
-    return String.format('(%03d) %03d-%04d', random.nextInt(1000), random.nextInt(1000), random.nextInt(10000))
+	return String.format('(%03d) %03d-%04d', random.nextInt(1000), random.nextInt(1000), random.nextInt(10000))
 }
-

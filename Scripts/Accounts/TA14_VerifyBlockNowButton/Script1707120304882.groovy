@@ -34,8 +34,6 @@ WebUI.setText(findTestObject('Accounts/InputPhoneNo'), phone)
 
 WebUI.setText(findTestObject('Accounts/InputQuota'), '5')
 
-WebUI.click(findTestObject('Accounts/BlockNowButton'))
-
 WebUI.click(findTestObject('Accounts/SaveButton'))
 
 WebUI.delay(4)

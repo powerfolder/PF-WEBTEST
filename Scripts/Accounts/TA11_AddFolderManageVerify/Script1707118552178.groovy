@@ -11,7 +11,6 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import java.util.Random as Random
 
-
 String firstName = generateRandomString(8)
 String lastName = generateRandomString(8)
 String emailId = generateRandomEmail().toLowerCase()
@@ -65,6 +64,7 @@ WebUI.verifyEqual(actualText.contains(expectedText), true, FailureHandling.CONTI
 
 WebUI.setText(ObjectRepository.findTestObject('Accounts/inputAccountSearch'), firstName)
 WebUI.waitForElementClickable(ObjectRepository.findTestObject('Accounts/checkAccount'), 10, FailureHandling.OPTIONAL)
+WebUI.scrollToElement(ObjectRepository.findTestObject('Accounts/checkAccount'), 10) // Scroll to the element
 WebUI.click(ObjectRepository.findTestObject('Accounts/checkAccount'))
 WebUI.click(ObjectRepository.findTestObject('Accounts/DeleteButton'))
 WebUI.delay(2)
