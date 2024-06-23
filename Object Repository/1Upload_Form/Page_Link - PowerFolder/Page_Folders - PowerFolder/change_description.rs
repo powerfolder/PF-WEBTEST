@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>change_description</name>
+   <tag></tag>
+   <elementGuidId>bf8df399-97ea-4a54-972d-88cc88e6b883</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused > p.ck-placeholder</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_uploadform_dialog']/div/div/div[2]/div[3]/div[2]/div[2]/div/p</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>ea24279a-6dbe-4009-9d71-cbac18fedaac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ck-placeholder</value>
+      <webElementGuid>73066aac-c7ff-4536-8767-c11691158c07</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-placeholder</name>
+      <type>Main</type>
+      <value>Description</value>
+      <webElementGuid>25b97d0c-a496-4842-92cc-f9d8e641f066</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_uploadform_dialog&quot;)/div[@class=&quot;pica-dialog-medium modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-body&quot;]/div[@class=&quot;form-group input-group&quot;]/div[@class=&quot;ck ck-reset ck-editor ck-rounded-corners&quot;]/div[@class=&quot;ck ck-editor__main&quot;]/div[@class=&quot;ck ck-content ck-editor__editable ck-rounded-corners ck-editor__editable_inline ck-focused&quot;]/p[@class=&quot;ck-placeholder&quot;]</value>
+      <webElementGuid>1ff2c9dc-49a1-4ad0-9251-72f56ea11ec8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_uploadform_dialog']/div/div/div[2]/div[3]/div[2]/div[2]/div/p</value>
+      <webElementGuid>998921cc-997c-411c-b4f7-54341cdc162b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Redo'])[2]/following::p[1]</value>
+      <webElementGuid>696d071f-9b6a-42e0-8aeb-312e1b6509fe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Undo'])[2]/following::p[1]</value>
+      <webElementGuid>e80105f2-eb90-447d-ad27-0614cee9cb3e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Notify Owner'])[1]/preceding::p[1]</value>
+      <webElementGuid>7a1814a6-bc33-42fc-92b5-507a89ddaae2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Notify Admins'])[1]/preceding::p[1]</value>
+      <webElementGuid>4528f3b0-88c9-4af1-bd7c-50a37ec8e44d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div/p</value>
+      <webElementGuid>907f4af2-a6aa-4436-923f-e36a16d54593</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

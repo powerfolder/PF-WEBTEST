@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TUP01_Create an upload form</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bb58b399-3262-4094-8cce-1945ac6da8c9</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9f197bab-1a1d-4db9-8bdf-c2f719d36208</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)'</defaultValue>
+      <description></description>
+      <id>9f197bab-1a1d-4db9-8bdf-c2f719d36208</id>
+      <masked>false</masked>
+      <name>my_clipboard</name>
+   </variable>
+</TestCaseEntity>

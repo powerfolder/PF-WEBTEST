@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Delete_Upload_Form</name>
+   <tag></tag>
+   <elementGuidId>83363d9a-b972-405e-ab78-5136b22603fe</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>i.glyphicons.glyphicons-bin</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='share_Object_100406695']/td[2]/div/div/div/span[2]/i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>2d673bf9-9e72-4782-a3fc-c3d7027d4a58</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>glyphicons glyphicons-bin</value>
+      <webElementGuid>9b0b8167-0348-4878-8e7f-91dc9bb9fd95</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;share_Object_100406695&quot;)/td[@class=&quot;text-right&quot;]/div[@class=&quot;media&quot;]/div[@class=&quot;media-body&quot;]/div[@class=&quot;pica-media-header media-heading clearfix&quot;]/span[@class=&quot;delete-icon&quot;]/i[@class=&quot;glyphicons glyphicons-bin&quot;]</value>
+      <webElementGuid>7af77a1d-3f94-447c-8e9a-f10aa2df07d6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='share_Object_100406695']/td[2]/div/div/div/span[2]/i</value>
+      <webElementGuid>d68766c8-0888-4e6d-9bc9-f01b5f3ec207</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span[2]/i</value>
+      <webElementGuid>e2350681-b084-4087-975e-845aa6accba0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

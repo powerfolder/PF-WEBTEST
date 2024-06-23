@@ -4,7 +4,10 @@
    <name>PowerFolder_Automatisation</name>
    <tag></tag>
    <UUID>f77830d1-79f7-4db1-b714-60088e0583ad</UUID>
+   <freeLicense>true</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
+   <modifiedEdition>FREE</modifiedEdition>
+   <modifiedVersion>9.5.0</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
    <projectFileLocation>C:\Users\tarik.el-haiti\git\katalon project\PF-WEBTEST\PowerFolder_Automatisation.prj</projectFileLocation>
    <sourceContent>

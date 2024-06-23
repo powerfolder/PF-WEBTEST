@@ -4,6 +4,7 @@
    <name>TF13_Upload file</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>65768635-0b9e-4d5c-9ab1-e864d7488f43</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

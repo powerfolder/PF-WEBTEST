@@ -54,4 +54,14 @@
       <initValue>''</initValue>
       <name>Document</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'((\'user_\' + RandomStringUtils.randomNumeric(4)) + \'@test.com\')'</initValue>
+      <name>userEmail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'(\'My_Name_\' + RandomStringUtils.randomNumeric(4))'</initValue>
+      <name>Name</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

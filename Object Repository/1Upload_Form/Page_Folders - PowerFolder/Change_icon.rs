@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Change_icon</name>
+   <tag></tag>
+   <elementGuidId>495b785b-20bc-4e6d-a8a1-b45ab9512b71</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.cogwheel-icon</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;share_Object_97339110&quot;]/td[2]/div/div/div[1]/span[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>9f3385a5-b06d-443c-bfa2-a7737fe19568</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>cogwheel-icon</value>
+      <webElementGuid>f327983b-a8d5-4ac7-83ec-6b4d856e702f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;share_Object_97339110&quot;)/td[@class=&quot;text-right&quot;]/div[@class=&quot;media&quot;]/div[@class=&quot;media-body&quot;]/div[@class=&quot;pica-media-header media-heading clearfix&quot;]/span[@class=&quot;cogwheel-icon&quot;]</value>
+      <webElementGuid>60116d3e-ca61-4dd9-ad14-36a6a13ef14a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='share_Object_97339110']/td[2]/div/div/div/span</value>
+      <webElementGuid>dd391b3f-a410-48de-bb25-0c254bc9999c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='The upload page form is ready to use with the following link:'])[1]/following::span[1]</value>
+      <webElementGuid>b279c625-50fc-4e3c-84bd-65aca1487281</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[1]/following::span[2]</value>
+      <webElementGuid>f82d82eb-2b95-4eca-a97f-8f4e13b37695</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Create link'])[1]/preceding::span[2]</value>
+      <webElementGuid>da371136-14f7-4428-8107-14202455bb82</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Create upload form'])[1]/preceding::span[2]</value>
+      <webElementGuid>e0b8501d-e0fa-469e-bca9-0c466ae693e8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/div/div/div/span</value>
+      <webElementGuid>e91c02ba-4b84-49c3-9413-04dcf0ddf0df</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
