@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TUP07_Connect with two sessions</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>30a1275e-b4f9-4db6-a760-8b8ccb55aa3f</testCaseGuid>
+</TestCaseEntity>

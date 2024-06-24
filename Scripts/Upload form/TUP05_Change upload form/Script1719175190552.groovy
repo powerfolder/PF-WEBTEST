@@ -53,7 +53,7 @@ WebElement settings_button = wait.until(ExpectedConditions.visibilityOfElementLo
 settings_button.click()
 
 // Trouver le champ de texte et le vider avant de définir le nouveau texte
-TestObject descriptionField = findTestObject('1Upload_Form/Page_Link - PowerFolder/Page_Folders - PowerFolder/change_description')
+TestObject descriptionField = findTestObject('1Upload_Form/Page_Error - PowerFolder/Page_Folders - PowerFolder/change_description_1')
 
 WebElement descriptionElement = WebUiCommonHelper.findWebElement(descriptionField, 5)
 
@@ -65,5 +65,21 @@ descriptionElement.sendKeys(Keys.DELETE)
 // Définir le nouveau texte
 WebUI.setText(descriptionField, 'change description')
 
-WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Save'))
+WebDriverWait wait1 = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+
+// Attendre que l'élément devienne visible
+WebElement save_button = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[16]/div/div/div[3]/button')))
+
+// Cliquer sur l'élément
+save_button.click()
+
+WebUI.switchToWindowIndex(1)
+
+WebUI.refresh()
+
+WebUI.verifyElementText(findTestObject('1Upload_Form/Page_Link - PowerFolder/Verify_change'), 'change description')
+
+WebUI.delay(2)
+
+WebUI.closeBrowser()
 

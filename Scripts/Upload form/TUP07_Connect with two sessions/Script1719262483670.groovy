@@ -40,47 +40,57 @@ import java.awt.Robot as Robot
 import java.awt.event.KeyEvent as KeyEvent
 import java.io.IOException as IOException
 
-WebUI.callTestCase(findTestCase('Upload form/Pre_Test/Creat_Folder'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Upload form/Pre_Test/Creat_upload_form'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementClickable(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Create upload form'))
+WebUI.refresh()
 
-WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Create upload form'))
+String userEmail = ('user_2_' + RandomStringUtils.randomNumeric(4)) + '@test.com'
 
-WebUI.setText(findTestObject('1Upload_Form/Page_Folders - PowerFolder/input_uploadform_heading'), 'Workshop')
+String Name = 'My_Name_2_' + RandomStringUtils.randomNumeric(4)
 
-WebUI.setText(findTestObject('1Upload_Form/Page_Folders - PowerFolder/change_description'), 'Workshop number 1')
+WebUI.setText(findTestObject('1Upload_Form/Page_Link - PowerFolder/input_username'), Name)
 
-WebUI.scrollToElement(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Save'), 1)
-
-WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Save'))
-
-WebUI.executeJavaScript('window.open();', [])
-
-WebUI.delay(2)
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.waitForElementClickable(findTestObject('1Upload_Form/Page_Folders - PowerFolder/clipboard_buttom'), 2)
-
-WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/clipboard_buttom'))
-
-WebUI.delay(2)
-
-WebUI.switchToWindowIndex(1)
-
-String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
-
-WebUI.navigateToUrl(my_clipboard)
-
-GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
-
-GlobalVariable.Name = ('My_Name_' + RandomStringUtils.randomNumeric(4))
-
-WebUI.setText(findTestObject('1Upload_Form/Page_Link - PowerFolder/input_username'), GlobalVariable.Name)
-
-WebUI.setText(findTestObject('1Upload_Form/Page_Link - PowerFolder/input_mail'), GlobalVariable.userEmail)
+WebUI.setText(findTestObject('1Upload_Form/Page_Link - PowerFolder/input_mail'), userEmail)
 
 WebUI.click(findTestObject('1Upload_Form/Page_Link - PowerFolder/button_Upload'))
 
+WebUI.switchToWindowIndex('0')
+
 WebUI.delay(2)
+
+WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Close'))
+
+WebElement btn = findFolder(GlobalVariable.folderName)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+
+WebUI.delay(1)
+
+WebElement btn1 = SelectFolder(GlobalVariable.Name)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
+
+WebUI.delay(2)
+
+WebElement btn2 = SelectFolder(Name)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
+
+WebUI.delay(1)
+
+WebUI.closeBrowser()
+
+@Keyword
+WebElement findFolder(String folderName) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
+}
+
+@Keyword
+WebElement SelectFolder(String folderName) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName) + '\')]/td[1]/span'))
+}
 

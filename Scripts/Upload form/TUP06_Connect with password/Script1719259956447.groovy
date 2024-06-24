@@ -50,6 +50,8 @@ WebUI.setText(findTestObject('1Upload_Form/Page_Folders - PowerFolder/input_uplo
 
 WebUI.setText(findTestObject('1Upload_Form/Page_Folders - PowerFolder/change_description'), 'Workshop number 1')
 
+WebUI.setEncryptedText(findTestObject('1Upload_Form/Page_Folders - PowerFolder/Set_Password'), 'p4y+y39Ir5O++RH4jAhtiA==')
+
 WebUI.scrollToElement(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Save'), 1)
 
 WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Save'))
@@ -72,6 +74,12 @@ String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getConten
 
 WebUI.navigateToUrl(my_clipboard)
 
+WebUI.setEncryptedText(findTestObject('1Upload_Form/Page_Link - PowerFolder/input_protected_password'), 'p4y+y39Ir5O++RH4jAhtiA==')
+
+WebUI.verifyElementClickable(findTestObject('1Upload_Form/Page_Link - PowerFolder/button_Ok_for password'))
+
+WebUI.click(findTestObject('1Upload_Form/Page_Link - PowerFolder/button_Ok_for password'))
+
 GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
 
 GlobalVariable.Name = ('My_Name_' + RandomStringUtils.randomNumeric(4))
@@ -83,4 +91,8 @@ WebUI.setText(findTestObject('1Upload_Form/Page_Link - PowerFolder/input_mail'),
 WebUI.click(findTestObject('1Upload_Form/Page_Link - PowerFolder/button_Upload'))
 
 WebUI.delay(2)
+
+WebUI.switchToWindowIndex('0')
+
+WebUI.closeBrowser()
 

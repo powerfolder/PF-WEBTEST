@@ -3,15 +3,15 @@
    <description></description>
    <name>change_description</name>
    <tag></tag>
-   <elementGuidId>bf8df399-97ea-4a54-972d-88cc88e6b883</elementGuidId>
+   <elementGuidId>16f4d88c-e231-40dd-af9f-50f159bd2c1d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused > p.ck-placeholder</value>
+         <key>XPATH</key>
+         <value>//div[@id='pica_uploadform_dialog']/div/div/div[2]/div[3]/div/div[2]/div/p</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='pica_uploadform_dialog']/div/div/div[2]/div[3]/div[2]/div[2]/div/p</value>
+         <key>CSS</key>
+         <value>p.ck-placeholder</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,15 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>p</value>
-      <webElementGuid>ea24279a-6dbe-4009-9d71-cbac18fedaac</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>ck-placeholder</value>
-      <webElementGuid>73066aac-c7ff-4536-8767-c11691158c07</webElementGuid>
+      <webElementGuid>ea33006d-1429-41b7-b928-f2652e9f40b8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +31,15 @@
       <name>data-placeholder</name>
       <type>Main</type>
       <value>Description</value>
-      <webElementGuid>25b97d0c-a496-4842-92cc-f9d8e641f066</webElementGuid>
+      <webElementGuid>1876cffc-98f6-414a-aa89-9d0916de08ef</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ck-placeholder</value>
+      <webElementGuid>5ce860c0-3de9-48bb-858e-e6e50dad96de</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,31 +47,31 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_uploadform_dialog&quot;)/div[@class=&quot;pica-dialog-medium modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-body&quot;]/div[@class=&quot;form-group input-group&quot;]/div[@class=&quot;ck ck-reset ck-editor ck-rounded-corners&quot;]/div[@class=&quot;ck ck-editor__main&quot;]/div[@class=&quot;ck ck-content ck-editor__editable ck-rounded-corners ck-editor__editable_inline ck-focused&quot;]/p[@class=&quot;ck-placeholder&quot;]</value>
-      <webElementGuid>1ff2c9dc-49a1-4ad0-9251-72f56ea11ec8</webElementGuid>
+      <webElementGuid>27c4dbd2-9ee4-4cca-9e92-7a91b940a969</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pica_uploadform_dialog']/div/div/div[2]/div[3]/div[2]/div[2]/div/p</value>
-      <webElementGuid>998921cc-997c-411c-b4f7-54341cdc162b</webElementGuid>
+      <value>//div[@id='pica_uploadform_dialog']/div/div/div[2]/div[3]/div/div[2]/div/p</value>
+      <webElementGuid>0a0c24b3-f8f9-49fa-9fc6-6a80915bf04e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Redo'])[2]/following::p[1]</value>
-      <webElementGuid>696d071f-9b6a-42e0-8aeb-312e1b6509fe</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Redo'])[1]/following::p[1]</value>
+      <webElementGuid>ec7c3a6c-89da-4f17-82c8-05354bd1d7b4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Undo'])[2]/following::p[1]</value>
-      <webElementGuid>e80105f2-eb90-447d-ad27-0614cee9cb3e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Undo'])[1]/following::p[1]</value>
+      <webElementGuid>79325410-3f26-47fd-9884-5cf414e7093a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Notify Owner'])[1]/preceding::p[1]</value>
-      <webElementGuid>7a1814a6-bc33-42fc-92b5-507a89ddaae2</webElementGuid>
+      <webElementGuid>8311cbc1-0de2-49cd-9405-c0320a83ea2b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,14 +87,14 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Notify Admins'])[1]/preceding::p[1]</value>
-      <webElementGuid>4528f3b0-88c9-4af1-bd7c-50a37ec8e44d</webElementGuid>
+      <webElementGuid>6544e3e5-943f-40be-b463-1610bd034ef9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div[2]/div/p</value>
-      <webElementGuid>907f4af2-a6aa-4436-923f-e36a16d54593</webElementGuid>
+      <value>//div[2]/div/p</value>
+      <webElementGuid>a9ce6def-32ce-4ad4-9cc8-fc2a8e2ae31e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

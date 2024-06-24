@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_upload_description</name>
+   <name>change_description_1</name>
    <tag></tag>
-   <elementGuidId>16f4d88c-e231-40dd-af9f-50f159bd2c1d</elementGuidId>
+   <elementGuidId>1aeca712-dc4e-452f-97bc-e8093d6cd34e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -23,15 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>p</value>
-      <webElementGuid>c142732f-6536-40c5-a688-6bb7df5031fe</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>ck-placeholder</value>
-      <webElementGuid>db78f8fe-340a-49fb-adee-3c4554e975cd</webElementGuid>
+      <webElementGuid>0b303fd9-1372-4cec-a8c0-b498d38a79aa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +31,15 @@
       <name>data-placeholder</name>
       <type>Main</type>
       <value>Description</value>
-      <webElementGuid>6a9900d1-9f65-40e4-bbe6-e3f00381987c</webElementGuid>
+      <webElementGuid>c51eef23-9ef5-4b7e-b611-e00601e5f197</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ck-placeholder</value>
+      <webElementGuid>c9059a83-8861-401a-8864-1eb93bde3ed5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_uploadform_dialog&quot;)/div[@class=&quot;pica-dialog-medium modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-body&quot;]/div[@class=&quot;form-group input-group&quot;]/div[@class=&quot;ck ck-reset ck-editor ck-rounded-corners&quot;]/div[@class=&quot;ck ck-editor__main&quot;]/div[@class=&quot;ck ck-content ck-editor__editable ck-rounded-corners ck-editor__editable_inline ck-focused&quot;]/p[@class=&quot;ck-placeholder&quot;]</value>
-      <webElementGuid>13bf28ee-eb36-442f-8b29-a09f093e2e89</webElementGuid>
+      <webElementGuid>aae2888f-4d31-49d6-bd92-1e2f9061a99f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -55,7 +55,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_uploadform_dialog']/div/div/div[2]/div[3]/div/div[2]/div/p</value>
-      <webElementGuid>b310eefd-387f-4107-abf3-8c955a603fb8</webElementGuid>
+      <webElementGuid>b3cf76a8-edff-4a18-a359-9884c61fad6e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -63,7 +63,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Redo'])[1]/following::p[1]</value>
-      <webElementGuid>d7d5fc34-ac54-48a2-a636-87883beb408c</webElementGuid>
+      <webElementGuid>8f9344a5-65e0-44ed-bab4-cf1f59c4ddcb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Undo'])[1]/following::p[1]</value>
-      <webElementGuid>1418baf0-3d97-470f-8a50-a43676f54417</webElementGuid>
+      <webElementGuid>6a25742f-1de3-41b7-a1c3-a2a5634decba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Notify Owner'])[1]/preceding::p[1]</value>
-      <webElementGuid>7a7bde65-0e78-421d-a4f8-8e6996e5e96c</webElementGuid>
+      <webElementGuid>4e3f5c4f-fb66-493b-8b2c-bad4d2b8a8de</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +87,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Notify Admins'])[1]/preceding::p[1]</value>
-      <webElementGuid>65478ceb-ffa3-4587-9e49-57041b4a008b</webElementGuid>
+      <webElementGuid>5e0b2291-e00c-40bd-8bc9-7300d50dc81e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,6 +95,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/p</value>
-      <webElementGuid>84f089db-3fac-4420-af94-f96914fe5728</webElementGuid>
+      <webElementGuid>3b40ac80-f95c-4343-a0fd-7c9504847fa0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
