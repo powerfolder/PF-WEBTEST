@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TUP04_Upload a directory</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2120a1dc-c1ef-4ee5-ad3a-0560ce2e7b62</testCaseGuid>
+</TestCaseEntity>

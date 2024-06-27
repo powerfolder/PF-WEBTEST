@@ -17,18 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
-import com.kms.katalon.core.annotation.Keyword;
-import com.kms.katalon.core.webui.driver.DriverFactory;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import java.util.List;
-
-@Keyword
-public WebElement findStorage(String storageName) {
-	WebDriver driver = DriverFactory.getWebDriver();
-	return driver.findElement(By.xpath("//*[contains(@data-search-keys, '" + storageName + "')]/td[1]/span"));
-}
+import com.kms.katalon.core.annotation.Keyword as Keyword
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import java.util.List as List
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -50,4 +44,15 @@ def btn = findStorage(storageName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 assert storageName != null
+
+WebUI.delay(2)
+
+WebUI.closeBrowser()
+
+@Keyword
+WebElement findStorage(String storageName) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + storageName) + '\')]/td[1]/span'))
+}
 

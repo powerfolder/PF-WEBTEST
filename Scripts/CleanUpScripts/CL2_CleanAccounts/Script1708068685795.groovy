@@ -16,30 +16,43 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import org.openqa.selenium.interactions.Actions
+import org.openqa.selenium.interactions.Actions as Actions
 import org.openqa.selenium.By as By
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
+WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
 
-WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 WebUI.click(findTestObject('LeftNavigationIcons/account'))
 
 TestObject account = findTestObject('Accounts/acountsRows')
-List<WebElement> accounts= WebUI.findWebElements(account, 10)
-int size = accounts.size()
-if(size>3) {
-	WebDriver driver = DriverFactory.getWebDriver()
-	WebElement firstRow = driver.findElement(By.xpath("(//table[@id='accounts_table']//tr//span[@class='glyphicons glyphicons-user pica-glyph']/ancestor::td)[1]"))
-	Actions action = new Actions(driver)
-	action.moveToElement(firstRow)
-	firstRow.click()
-	driver.findElement(By.xpath("//table[@id='accounts_table']//th//span[@class='glyphicons glyphicons-unchecked pica-glyph']")).click()
-	WebUI.click(findTestObject('Accounts/DeleteButton'))
 
-	WebUI.click(findTestObject('Folders/yesButton_Delete'))
-	WebUI.delay(30)
-	WebUI.waitForAlert(20, FailureHandling.OPTIONAL)
+List<WebElement> accounts = WebUI.findWebElements(account, 10)
+
+int size = accounts.size()
+
+if (size > 3) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    WebElement firstRow = driver.findElement(By.xpath('(//table[@id=\'accounts_table\']//tr//span[@class=\'glyphicons glyphicons-user pica-glyph\']/ancestor::td)[1]'))
+
+    Actions action = new Actions(driver)
+
+    action.moveToElement(firstRow)
+
+    firstRow.click()
+
+    driver.findElement(By.xpath('//table[@id=\'accounts_table\']//th//span[@class=\'glyphicons glyphicons-unchecked pica-glyph\']')).click()
+
+    WebUI.click(findTestObject('Accounts/DeleteButton'))
+
+    WebUI.click(findTestObject('Folders/yesButton_Delete'))
+
+    WebUI.delay(30)
+
+    WebUI.waitForAlert(20, FailureHandling.OPTIONAL)
 }
+
 WebUI.closeBrowser()
+

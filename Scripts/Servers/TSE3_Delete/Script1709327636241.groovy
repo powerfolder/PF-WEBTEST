@@ -29,6 +29,8 @@ WebUI.click(findTestObject('Object Repository/servers/Page_Servers - PowerFolder
 
 WebUI.click(findTestObject('Object Repository/servers/Page_Servers - PowerFolder/button_Yes'))
 
+WebUI.delay(2)
+
 WebUI.verifyElementVisible(findTestObject('servers/Page_Servers - PowerFolder/td_server'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()

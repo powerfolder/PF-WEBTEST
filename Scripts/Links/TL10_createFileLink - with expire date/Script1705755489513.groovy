@@ -39,6 +39,8 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
+WebUI.delay(2)
+
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 
 WebUI.setText(findTestObject('Accounts/inputAccountSearch'), folderName)
@@ -67,6 +69,8 @@ WebUI.switchToWindowIndex(0)
 
 WebUI.refresh()
 
+WebUI.delay(2)
+
 WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
@@ -78,6 +82,8 @@ WebElement buttonCreateLink = WebUiCommonHelper.findWebElement(findTestObject('L
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonCreateLink))
 
 WebUI.click(findTestObject('Folders/button_SaveSettings'))
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Folders/buttonCopyToClipboard'))
 
@@ -93,7 +99,14 @@ WebUI.click(findTestObject('SettingsPopUp/inputValidTill'))
 
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/span_Dec_glyphicon glyphicon-time'))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/Span_Create_folder_in_folder'))
+// Ensure the element is clickable
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Folders - PowerFolder/Span_Create_folder_in_folder'), 
+    30)
+
+WebUI.scrollToElement(findTestObject('Object Repository/Page_Folders - PowerFolder/Span_Create_folder_in_folder'), 30)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_Folders - PowerFolder/Span_Create_folder_in_folder'), 
+            30)))
 
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/span_Dec_glyphicon glyphicon-remove'))
 
@@ -113,8 +126,8 @@ WebUI.back()
 
 assert WebUI.waitForElementVisible(findTestObject('Folders/expireTabTitle'), 2)
 
-assert isNotBlank(WebUI.getText(findTestObject('Folders/expireTabTitle')) //WebUI.closeBrowser()
-    )
+assert isNotBlank(WebUI.getText(findTestObject('Folders/expireTabTitle') //WebUI.closeBrowser()
+        ))
 
 WebUI.closeBrowser()
 

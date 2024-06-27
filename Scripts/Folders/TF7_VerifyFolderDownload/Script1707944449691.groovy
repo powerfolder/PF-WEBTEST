@@ -27,6 +27,7 @@ import java.nio.file.Files as Files
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions as ChromeOptions
+import java.text.SimpleDateFormat as SimpleDateFormat  // Add this line for SimpleDateFormat
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -60,14 +61,14 @@ WebUI.click(findTestObject('Folders/downloadLink'))
 
 String parentWindow = driver.getWindowHandle()
 
-JavascriptExecutor jsExecutor = ((JavascriptExecutor) driver)
+JavascriptExecutor jsExecutor = (JavascriptExecutor) driver
 
 jsExecutor.executeScript('window.open()')
 
-Set<String> allWinowHandles = driver.getWindowHandles()
+Set<String> allWindowHandles = driver.getWindowHandles()
 
-for (String winHandle : allWinowHandles) {
-	if (!(winHandle.equals(parentWindow))) {
+for (String winHandle : allWindowHandles) {
+	if (!winHandle.equals(parentWindow)) {
 		driver.switchTo().window(winHandle)
 	}
 }
@@ -76,28 +77,25 @@ WebUI.delay(5)
 
 driver.get('chrome://downloads')
 
-JavascriptExecutor downloadWindowExecutor = ((JavascriptExecutor) driver)
+JavascriptExecutor downloadWindowExecutor = (JavascriptExecutor) driver
 
-String fileName = ((downloadWindowExecutor.executeScript('return document.querySelector(\'downloads-manager\').shadowRoot.querySelector(\'#downloadsList downloads-item\').shadowRoot.querySelector(\'div#content #file-link\').text')) as String)
+String fileName = downloadWindowExecutor.executeScript('return document.querySelector("downloads-manager").shadowRoot.querySelector("#downloadsList downloads-item").shadowRoot.querySelector("div#content #file-link").textContent').toString()
 
-String downloadSourceLink = ((downloadWindowExecutor.executeScript('return document.querySelector(\'downloads-manager\').shadowRoot.querySelector(\'#downloadsList downloads-item\').shadowRoot.querySelector(\'div#content #file-link\').href')) as String)
+String downloadSourceLink = downloadWindowExecutor.executeScript('return document.querySelector("downloads-manager").shadowRoot.querySelector("#downloadsList downloads-item").shadowRoot.querySelector("div#content #file-link").href').toString()
 
 System.out.println('Downloaded File Name: ' + fileName)
 
-WebUI.verifyEqual(fileName, folderName+'.zip')
+WebUI.verifyEqual(fileName, folderName + '.zip')
 
 WebUI.closeBrowser()
 
 String getRandomFolderName() {
 	String folderName = 'FDTF7' + getTimestamp()
-
 	return folderName
 }
 
 String getTimestamp() {
 	Date todaysDate = new Date()
-
-	String formattedDate = todaysDate.format('dd_MMM_yyyy_hh_mm_ss')
-
+	String formattedDate = new SimpleDateFormat('dd_MMM_yyyy_hh_mm_ss').format(todaysDate)
 	return formattedDate
 }

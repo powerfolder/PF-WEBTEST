@@ -30,79 +30,86 @@ import java.awt.Robot as Robot
 import java.awt.event.KeyEvent as KeyEvent
 import java.awt.FileDialog as FileDialog
 import javax.swing.JFrame as JFrame
+import javax.net.ssl.*
+import java.security.cert.X509Certificate
 
-// Fonction pour télécharger une image depuis un lien et la placer dans un dossier sur le bureau
-// Télécharger l'image depuis le lien spécifié et la placer sur le bureau
-downloadImageAndPlaceOnDesktop('https://cdn-icons-png.flaticon.com/512/2919/2919906.png', 'avatar.png')
+// Disable SSL verification
+def disableSSLVerification() {
+    TrustManager[] trustAllCerts = [ new X509TrustManager() {
+        public X509Certificate[] getAcceptedIssuers() { null }
+        public void checkClientTrusted(X509Certificate[] certs, String authType) { }
+        public void checkServerTrusted(X509Certificate[] certs, String authType) { }
+    } ]
 
-// Exécuter les étapes de test
-WebUI.callTestCase(findTestCase('Groups/Pre_test/create_group'), [:], FailureHandling.STOP_ON_FAILURE)
+    SSLContext sc = SSLContext.getInstance("SSL")
+    sc.init(null, trustAllCerts, new java.security.SecureRandom())
+    HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory())
 
-WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Edit_m'))
+    // Create all-trusting host name verifier
+    HostnameVerifier allHostsValid = new HostnameVerifier() {
+        public boolean verify(String hostname, SSLSession session) { true }
+    }
 
-WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Avatar'))
+    // Set the all-trusting host verifier
+    HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid)
+}
 
-WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Change'))
+// Call this method at the beginning of your test case
+disableSSLVerification()
 
-WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/span_Add file_m'))
-
-// Sélectionner l'image téléchargée pour continuer le test
-def desktopImagePath = Paths.get(System.getProperty('user.home'), 'Desktop', 'images', 'avatar.png')
-
-selectImageAutomatically(desktopImagePath.toString( // Fonction pour sélectionner automatiquement l'image dans l'explorateur de fichiers
-        ))
-
-// Créer une instance de Robot
-// Attente pour que l'explorateur de fichiers s'ouvre complètement
-// Coller le chemin d'accès de l'image
-// Attendre un peu
-// Appuyer sur la touche Entrée pour sélectionner l'image
-WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Close'))
-
-WebUI.verifyElementVisible(findTestObject('Groups/Page_Groups - PowerFolder/div_File successfully uploaded_av'))
-
-WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
-
-WebUI.closeBrowser()
-
+// Function to download an image from a URL and place it on the desktop
 def downloadImageAndPlaceOnDesktop(String imageUrl, String imageName) {
     def desktopImagePath = Paths.get(System.getProperty('user.home'), 'Desktop', 'images')
 
-    if (!(Files.exists(desktopImagePath))) {
+    if (!Files.exists(desktopImagePath)) {
         Files.createDirectories(desktopImagePath)
     }
-    
-    def url = new URL(imageUrl)
 
+    def url = new URL(imageUrl)
     def imagePath = Paths.get(desktopImagePath.toString(), imageName)
 
     Files.copy(url.openStream(), imagePath, StandardCopyOption.REPLACE_EXISTING)
 }
 
+// Function to select an image automatically
 def selectImageAutomatically(String imagePath) {
     try {
         Robot robot = new Robot()
 
-        Thread.sleep(1000)
+        WebUI.delay(1)
 
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection(imagePath), null)
 
         robot.keyPress(KeyEvent.VK_CONTROL)
-
         robot.keyPress(KeyEvent.VK_V)
-
         robot.keyRelease(KeyEvent.VK_V)
-
         robot.keyRelease(KeyEvent.VK_CONTROL)
 
-        Thread.sleep(1000)
+        WebUI.delay(1)
 
         robot.keyPress(KeyEvent.VK_ENTER)
-
         robot.keyRelease(KeyEvent.VK_ENTER)
-    }
-    catch (Exception e) {
+    } catch (Exception e) {
         e.printStackTrace()
-    } 
+    }
 }
 
+// Main test script
+downloadImageAndPlaceOnDesktop('https://cdn-icons-png.flaticon.com/512/2919/2919906.png', 'avatar.png')
+
+// Execute test steps
+WebUI.callTestCase(findTestCase('Groups/Pre_test/create_group'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Edit_m'))
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Avatar'))
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Change'))
+WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/span_Add file_m'))
+
+// Select the downloaded image to continue the test
+def desktopImagePath = Paths.get(System.getProperty('user.home'), 'Desktop', 'images', 'avatar.png')
+selectImageAutomatically(desktopImagePath.toString())
+
+WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Close'))
+WebUI.verifyElementVisible(findTestObject('Groups/Page_Groups - PowerFolder/div_File successfully uploaded_av'))
+WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
+WebUI.closeBrowser()

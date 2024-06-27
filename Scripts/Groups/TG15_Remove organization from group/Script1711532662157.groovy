@@ -57,14 +57,20 @@ WebElement btn1 = findGroup(GlobalVariable.GroupName)
 
 WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
 WebUI.click(findTestObject('Page_Groups - PowerFolder/a_Organisationen'))
 
 verifyNoElementWithorganizationNamePresent(('//*[@id="pica_group_organizations"]/div[2]//*[contains(text(), \'' + GlobalVariable.organisationName) + 
-    '\')]') 
+    '\')]')
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
+
+WebUI.delay(1)
 
 WebUI.closeBrowser()
 

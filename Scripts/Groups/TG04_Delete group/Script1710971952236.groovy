@@ -23,6 +23,8 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Yes'))
 
+WebUI.delay(1)
+
 WebUI.verifyElementVisible(findTestObject('Groups/Page_Groups - PowerFolder/div_Group deleted'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()

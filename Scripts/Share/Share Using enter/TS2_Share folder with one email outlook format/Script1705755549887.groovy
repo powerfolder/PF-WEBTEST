@@ -38,20 +38,21 @@ WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-String mail ="${-> folderName} <${-> folderName}@outlook.com>";
+String mail = "${folderName} <${folderName}@outlook.com>";
 
-WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/inputEmail_Share'),
-	mail)
+WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/inputEmail_Share'), mail)
+WebUI.sendKeys(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/inputEmail_Share'), Keys.chord(Keys.ENTER))
 
-WebUI.sendKeys(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/inputEmail_Share'),
-	Keys.chord(Keys.ENTER))
+// Log to see what email name is retrieved
+WebUI.delay(2) // Wait for the element to be updated if needed
+String useremailName = WebUI.getText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom'))
+println("User email name retrieved: " + useremailName)
 
-String useremailName= WebUI.getText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom'))
 WebUI.verifyNotEqual(useremailName, '')
 
 WebUI.closeBrowser()
 
-def int getMembersCount(){
+def int getMembersCount() {
 	WebDriver driver = DriverFactory.getWebDriver()
 	WebElement tbody = driver.findElement(By.xpath("//table[@id='share_table']/tbody"))
 	assert tbody
@@ -60,17 +61,17 @@ def int getMembersCount(){
 }
 
 def String getRandomFolderName() {
-	String folderName = 'FD'+getTimestamp();
-	return folderName;
+	String folderName = 'FD' + getTimestamp()
+	return folderName
 }
+
 def String getTimestamp() {
-	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
-	return formattedDate;
+	Date todaysDate = new Date()
+	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss")
+	return formattedDate
 }
 
 def WebElement findShareButton(String fileName) {
 	WebDriver driver = DriverFactory.getWebDriver()
 	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
 }
-

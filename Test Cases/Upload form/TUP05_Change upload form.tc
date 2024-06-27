@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TUP05_Change upload form</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>46f20de5-c6cf-4dac-bd9a-bb78b4144423</testCaseGuid>
+</TestCaseEntity>
