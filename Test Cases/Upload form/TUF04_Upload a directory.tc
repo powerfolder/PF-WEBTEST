@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TUP07_Connect with two sessions</name>
+   <name>TUF04_Upload a directory</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>30a1275e-b4f9-4db6-a760-8b8ccb55aa3f</testCaseGuid>
+   <testCaseGuid>2120a1dc-c1ef-4ee5-ad3a-0560ce2e7b62</testCaseGuid>
 </TestCaseEntity>

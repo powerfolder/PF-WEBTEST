@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TUP05_Change upload form</name>
+   <name>TUF02_Delete an upload from</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>46f20de5-c6cf-4dac-bd9a-bb78b4144423</testCaseGuid>
+   <testCaseGuid>beaba3d0-c0e8-4f07-9ab9-5c884649da97</testCaseGuid>
 </TestCaseEntity>
