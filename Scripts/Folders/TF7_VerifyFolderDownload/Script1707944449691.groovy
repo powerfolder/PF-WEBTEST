@@ -27,7 +27,7 @@ import java.nio.file.Files as Files
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions as ChromeOptions
-import java.text.SimpleDateFormat as SimpleDateFormat  // Add this line for SimpleDateFormat
+import java.text.SimpleDateFormat as SimpleDateFormat
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -61,23 +61,23 @@ WebUI.click(findTestObject('Folders/downloadLink'))
 
 String parentWindow = driver.getWindowHandle()
 
-JavascriptExecutor jsExecutor = (JavascriptExecutor) driver
+JavascriptExecutor jsExecutor = ((driver) as JavascriptExecutor)
 
 jsExecutor.executeScript('window.open()')
 
 Set<String> allWindowHandles = driver.getWindowHandles()
 
 for (String winHandle : allWindowHandles) {
-	if (!winHandle.equals(parentWindow)) {
-		driver.switchTo().window(winHandle)
-	}
+    if (!(winHandle.equals(parentWindow))) {
+        driver.switchTo().window(winHandle)
+    }
 }
 
 WebUI.delay(5)
 
 driver.get('chrome://downloads')
 
-JavascriptExecutor downloadWindowExecutor = (JavascriptExecutor) driver
+JavascriptExecutor downloadWindowExecutor = ((driver) as JavascriptExecutor)
 
 String fileName = downloadWindowExecutor.executeScript('return document.querySelector("downloads-manager").shadowRoot.querySelector("#downloadsList downloads-item").shadowRoot.querySelector("div#content #file-link").textContent').toString()
 
@@ -85,17 +85,23 @@ String downloadSourceLink = downloadWindowExecutor.executeScript('return documen
 
 System.out.println('Downloaded File Name: ' + fileName)
 
+WebUI.delay(5)
+
 WebUI.verifyEqual(fileName, folderName + '.zip')
 
 WebUI.closeBrowser()
 
 String getRandomFolderName() {
-	String folderName = 'FDTF7' + getTimestamp()
-	return folderName
+    String folderName = 'FDTF7' + getTimestamp()
+
+    return folderName
 }
 
 String getTimestamp() {
-	Date todaysDate = new Date()
-	String formattedDate = new SimpleDateFormat('dd_MMM_yyyy_hh_mm_ss').format(todaysDate)
-	return formattedDate
+    Date todaysDate = new Date()
+
+    String formattedDate = new SimpleDateFormat('dd_MMM_yyyy_hh_mm_ss').format(todaysDate)
+
+    return formattedDate
 }
+

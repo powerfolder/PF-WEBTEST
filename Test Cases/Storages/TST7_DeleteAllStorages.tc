@@ -4,5 +4,6 @@
    <name>TST7_DeleteAllStorages</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>07930e79-8c36-43be-b33d-b6867034be9b</testCaseGuid>
 </TestCaseEntity>

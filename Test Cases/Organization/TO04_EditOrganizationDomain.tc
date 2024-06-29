@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TO04_EditOrganizationDomain</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>def22d0a-7e19-400c-9f05-df2401026ebc</testCaseGuid>
+</TestCaseEntity>

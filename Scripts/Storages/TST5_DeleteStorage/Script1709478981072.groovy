@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 
-WebUI.callTestCase(findTestCase('Storages/TST2_CreateStorage'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Storages/PreTest/CreateStorage'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(3)
 

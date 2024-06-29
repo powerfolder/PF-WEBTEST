@@ -36,6 +36,8 @@ WebUI.delay(2)
 WebUI.setText(ObjectRepository.findTestObject('Accounts/inputAccountSearch'), firstName)
 WebUI.sendKeys(ObjectRepository.findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
 
+WebUI.delay(5)
+
 WebDriver driver = DriverFactory.getWebDriver()
 
 try {
@@ -46,6 +48,7 @@ try {
 	WebElement ClickOnAccount = driver.findElement(By.xpath("//a[@class='pica-name' and @data-original-title ='${emailId}']"))
 	WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(ClickOnAccount))
 }
+
 
 WebUI.verifyEqual(WebUI.getText(ObjectRepository.findTestObject('Accounts/VerifyEditPage')), 'Edit Account', FailureHandling.CONTINUE_ON_FAILURE)
 

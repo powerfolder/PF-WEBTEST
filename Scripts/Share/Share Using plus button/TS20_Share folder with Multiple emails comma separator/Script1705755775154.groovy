@@ -39,6 +39,8 @@ int membersCount = getMembersCount()
 WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/inputEmail_Share'), mails)
 WebUI.click(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/buttonAddEmail'))
 
+WebUI.delay(3)
+
 
 assert membersCount+3 ==getMembersCount()
 

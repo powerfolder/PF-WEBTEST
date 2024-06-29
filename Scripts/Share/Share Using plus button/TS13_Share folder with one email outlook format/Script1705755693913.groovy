@@ -26,9 +26,13 @@ String folderName = getRandomFolderName()
 
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
+
 WebUI.click(findTestObject('Folders/createFolder'))
+
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
+
 WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebElement btn = findShareButton(folderName)
@@ -45,8 +49,12 @@ WebUI.click(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/b
 WebUI.sendKeys(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/inputEmail_Share'),
 	Keys.chord(Keys.ENTER))
 
+WebUI.delay(5)
+
 String useremailName= WebUI.getText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom'))
+
 WebUI.verifyNotEqual(useremailName, '')
+
 WebUI.closeBrowser()
 
 def String getRandomFolderName() {

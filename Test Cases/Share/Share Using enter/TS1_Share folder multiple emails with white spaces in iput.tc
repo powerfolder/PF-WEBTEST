@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TS1_Share folder multiple emails with white spaces in iput</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>465a3622-4fed-4184-bbf4-8f62807ef781</testCaseGuid>
-</TestCaseEntity>

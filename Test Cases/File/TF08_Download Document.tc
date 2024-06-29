@@ -4,5 +4,6 @@
    <name>TF08_Download Document</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>c298c6e5-afd9-4988-93b7-4e1685323a79</testCaseGuid>
 </TestCaseEntity>

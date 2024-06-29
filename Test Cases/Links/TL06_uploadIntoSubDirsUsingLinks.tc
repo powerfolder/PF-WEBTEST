@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL06_uploadIntoSubDirsUsingLinks</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>48d4c0a8-7cf2-4982-bd0a-82eda691815c</testCaseGuid>
+</TestCaseEntity>

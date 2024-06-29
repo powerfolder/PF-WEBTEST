@@ -30,8 +30,6 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import org.apache.commons.lang3.RandomStringUtils
-
 
 WebUI.callTestCase(findTestCase('File/Pre_test/Create_folder'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -40,7 +38,7 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Cre
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_Document'))
 
 // Définir le nom du document en utilisant GlobalVariable
-GlobalVariable.Document = 'Doc_num_' + RandomStringUtils.randomNumeric(4)
+GlobalVariable.Document = ('Doc_num_' + RandomStringUtils.randomNumeric(4))
 
 // Assigner la valeur de GlobalVariable.DocName à une variable locale
 String DocName = GlobalVariable.Document
@@ -63,18 +61,20 @@ WebUI.closeWindowIndex(1)
 
 WebUI.switchToWindowUrl('https://lab.powerfolder.net:8666/folderstable')
 
+WebUI.refresh()
+
+WebUI.delay(2)
+
 def btn = findDoc(DocName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 assert DocName != null
 
-
-
 @Keyword
 WebElement findDoc(String DocName) {
-	WebDriver driver = DriverFactory.getWebDriver()
+    WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + DocName) + '\')]/td[1]/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + DocName) + '\')]/td[1]/span'))
 }
 

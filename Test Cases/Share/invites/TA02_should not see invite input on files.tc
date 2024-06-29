@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TA02_should not see invite input on files</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>339a73b4-49dd-4a82-a8be-e769327e303a</testCaseGuid>
+</TestCaseEntity>

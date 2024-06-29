@@ -4,5 +4,6 @@
    <name>TST5_DeleteStorage</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>dc7d7d1b-adff-4de9-a02b-1bda759bbed2</testCaseGuid>
 </TestCaseEntity>

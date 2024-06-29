@@ -4,5 +4,6 @@
    <name>TG02_Create group</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>a8ac70e5-76df-45a9-9e92-5d815cbdeed8</testCaseGuid>
 </TestCaseEntity>

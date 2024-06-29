@@ -21,16 +21,25 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
+
 String folderName =getRandomFolderName()
+
 WebUI.click(findTestObject('Folders/createFolderIcon'))
+
 WebUI.click(findTestObject('Folders/createFolder'))
+
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
+
 WebUI.click(findTestObject('Folders/buttonOK'))
+
+WebUI.delay(3)
 
 WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+
 String  mails = "${-> folderName+'a'} <${-> folderName+'a'}@outlook.com>;${-> folderName+'b'} <${-> folderName+'b'}@outlook.com>;${-> folderName+'c'} <${-> folderName+'c'}@outlook.com>"
 
 int membersCount = getMembersCount()
@@ -38,6 +47,8 @@ int membersCount = getMembersCount()
 WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/inputEmail_Share'), mails)
 
 WebUI.click(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/buttonAddEmail'))
+
+WebUI.delay(2)
 
 assert membersCount+3 == getMembersCount()
 

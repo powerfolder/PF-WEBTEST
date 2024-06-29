@@ -89,8 +89,8 @@ WebElement findFolder(String folderName) {
 
 @Keyword
 WebElement SelectFolder(String folderName) {
-    WebDriver driver = DriverFactory.getWebDriver()
+	WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName) + '\')]/td[1]/span'))
+	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName) + '\')]/td[1]/span'))
 }
 

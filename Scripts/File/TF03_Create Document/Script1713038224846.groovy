@@ -92,3 +92,11 @@ WebElement findDoc(String DocName) {
     return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + DocName) + '\')]/td[1]/span'))
 }
 
+@Keyword
+WebElement SelectFolder(String folderName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+
+	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName) + '\')]/td[1]/span'))
+}
+
+

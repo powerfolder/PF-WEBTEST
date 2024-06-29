@@ -40,11 +40,13 @@ WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
-WebUI.delay(1)
+WebUI.delay(2)
 
 def btn = findGroup(GlobalVariable.GroupName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+
+WebUI.delay(2)
 
 assert GlobalVariable.GroupName != null
 

@@ -4,5 +4,6 @@
    <name>TST4_EnableStorage</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>41d839ab-6dab-42c0-ba4b-b771c458b7f1</testCaseGuid>
 </TestCaseEntity>

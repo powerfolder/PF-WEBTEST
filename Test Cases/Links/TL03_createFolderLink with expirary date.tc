@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL03_createFolderLink with expirary date</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7c594ec4-2e47-42a7-94b3-67e539f1899a</testCaseGuid>
+</TestCaseEntity>

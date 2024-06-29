@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TO05_EditOrganizationAddingMembers</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1cb21f9d-3471-460d-aa4a-4e87f17ec362</testCaseGuid>
+</TestCaseEntity>

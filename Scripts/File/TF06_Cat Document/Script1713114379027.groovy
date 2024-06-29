@@ -25,6 +25,11 @@ import org.openqa.selenium.By as By
 import java.util.Arrays as Arrays
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('File/Pre_test/Create_folder'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -80,6 +85,10 @@ WebUiBuiltInKeywords.delay(10)
 WebUiBuiltInKeywords.closeWindowIndex(1)
 
 WebUiBuiltInKeywords.switchToWindowUrl('https://lab.powerfolder.net:8666/folderstable')
+
+WebUI.refresh()
+
+WebUiBuiltInKeywords.delay(2)
 
 WebElement btn3 = findDoc(DocName)
 

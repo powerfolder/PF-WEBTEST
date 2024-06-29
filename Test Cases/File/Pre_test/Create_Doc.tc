@@ -4,5 +4,6 @@
    <name>Create_Doc</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>5d8ad3a6-8461-41e3-9b10-570a8ac7fb05</testCaseGuid>
 </TestCaseEntity>

@@ -4,5 +4,6 @@
    <name>Create_folder</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>b2d6ebed-2268-46a2-bf55-db33659117c4</testCaseGuid>
 </TestCaseEntity>

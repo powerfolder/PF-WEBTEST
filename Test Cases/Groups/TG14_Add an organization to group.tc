@@ -4,5 +4,6 @@
    <name>TG14_Add an organization to group</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>b6dee4dd-0570-461b-bdd2-3c32ce1d5c8a</testCaseGuid>
 </TestCaseEntity>

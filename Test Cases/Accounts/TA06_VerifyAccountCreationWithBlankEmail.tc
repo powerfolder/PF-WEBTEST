@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TA06_VerifyAccountCreationWithBlankEmail</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>13a21a4e-654a-4850-80b6-1fa1680a7392</testCaseGuid>
+</TestCaseEntity>

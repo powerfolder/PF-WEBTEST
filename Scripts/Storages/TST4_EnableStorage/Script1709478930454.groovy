@@ -17,13 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Storages/TST2_CreateStorage'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Storages/PreTest/CreateStorage'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/a_Enable'))
 
 WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/lang_Yes'))
 
-WebUI.verifyElementPresent(findTestObject('Storage/Page_Storage - PowerFolder/notification_Storage enabled'), 1)
+WebUI.verifyElementPresent(findTestObject('Storage/Page_Storage - PowerFolder/notification_Storage enabled'), 3)
 
 WebUI.closeBrowser()
 

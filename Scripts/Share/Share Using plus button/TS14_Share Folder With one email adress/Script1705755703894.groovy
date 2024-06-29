@@ -43,6 +43,8 @@ WebUI.setText(findTestObject('Share/Page_Folders - PowerFolder/inputEmail_Share'
 
 WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/buttonAddEmail'))
 
+WebUI.delay(5)
+
 
 WebUI.verifyElementText(findTestObject('Share/Page_Folders - PowerFolder/td_usermailcom'), mail.toLowerCase())
 

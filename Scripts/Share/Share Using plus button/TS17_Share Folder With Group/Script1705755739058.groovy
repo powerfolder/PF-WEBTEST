@@ -60,6 +60,8 @@ WebUI.click(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/t
 
 WebUI.click(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/buttonAddEmail'))
 
+WebUI.delay(5)
+
 WebUI.verifyElementText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/td_Group'), Group)
 
 WebUI.closeBrowser()

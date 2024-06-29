@@ -4,5 +4,6 @@
    <name>TST6_DeletePrimaryStorage</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>d9b1790b-fbf3-4f89-ab67-c910de791222</testCaseGuid>
 </TestCaseEntity>

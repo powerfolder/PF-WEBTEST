@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL09_createFileLink - with max downloads</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4d428c37-d67f-42fc-816f-da2c7a6f01ac</testCaseGuid>
+</TestCaseEntity>

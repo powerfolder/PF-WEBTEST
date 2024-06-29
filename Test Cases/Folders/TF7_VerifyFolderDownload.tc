@@ -4,5 +4,6 @@
    <name>TF7_VerifyFolderDownload</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>71ed7058-3db1-4183-a190-e7b7aaf960fd</testCaseGuid>
 </TestCaseEntity>

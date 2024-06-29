@@ -4,5 +4,6 @@
    <name>TS12_Share folder multiple emails with white space in inpit</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>1e043bae-b380-475c-8b00-905b8674a3cd</testCaseGuid>
 </TestCaseEntity>

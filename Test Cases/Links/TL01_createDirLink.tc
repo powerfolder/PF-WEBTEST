@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL01_createDirLink</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>01f81399-baff-4d4b-bc2b-55aa9dd6bcb3</testCaseGuid>
+</TestCaseEntity>

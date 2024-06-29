@@ -4,5 +4,6 @@
    <name>TS22_Share folder multiple emails with white space in inpit multiple separators</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>7e78d2cb-481c-4a50-9d16-587cd3c4426b</testCaseGuid>
 </TestCaseEntity>

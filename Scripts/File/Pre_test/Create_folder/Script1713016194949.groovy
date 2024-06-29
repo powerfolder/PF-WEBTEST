@@ -48,6 +48,8 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFold
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
+WebUI.delay(2)
+
 WebDriver driver = DriverFactory.getWebDriver()
 
 WebElement folder = driver.findElement(By.xpath(('//td/a[contains(text(),\'' + folderName) + '\')]'))
@@ -62,7 +64,8 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 @Keyword
 WebElement findFolder(String folderName) {
-	WebDriver driver = DriverFactory.getWebDriver()
+    WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
+    return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
 }
+

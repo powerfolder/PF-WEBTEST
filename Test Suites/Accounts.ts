@@ -15,63 +15,63 @@
       <guid>c347d293-a929-49a2-bba8-4933ec8c4d6e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA1_VerifyAccountCreation</testCaseId>
+      <testCaseId>Test Cases/Accounts/TA01_VerifyAccountCreation</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>9d0c5591-0ccc-4d63-a43e-5cbd0900df58</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA2_EditAccount</testCaseId>
+      <testCaseId>Test Cases/Accounts/TA02_EditAccount</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>de1da895-2f0e-48cc-a19c-5a54e055769f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA4_VerifyDeleteAvatar</testCaseId>
+      <testCaseId>Test Cases/Accounts/TA04_VerifyDeleteAvatar</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>7416a739-ddb9-4810-b89c-d471b5c12949</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA3_VerfiyAvtar</testCaseId>
+      <testCaseId>Test Cases/Accounts/TA03_VerfiyAvtar</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>640aec1e-6504-4d03-825d-2a634628ec79</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA5_VerfiyPasswordPolicies</testCaseId>
+      <testCaseId>Test Cases/Accounts/TA05_VerfiyPasswordPolicies</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>267651e4-a02a-48dc-8ca6-99ee0ae3040d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA6_VerifyAccountCreationWithBlankEmail</testCaseId>
+      <testCaseId>Test Cases/Accounts/TA06_VerifyAccountCreationWithBlankEmail</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>6b268d83-9b0e-4e58-82db-72ff9ae0d140</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA7_VerfiyExportAccount</testCaseId>
+      <testCaseId>Test Cases/Accounts/TA07_VerfiyExportAccount</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>e81abd10-3efe-4ab1-9438-d6cc7f5347d4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA8_VerifyImportAccounts</testCaseId>
+      <testCaseId>Test Cases/Accounts/TA08_VerifyImportAccounts</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>110c5636-8479-4fbc-afc6-3f8f3d16d593</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA9_AddAdditionalEmails</testCaseId>
+      <testCaseId>Test Cases/Accounts/TA09_AddAdditionalEmails</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

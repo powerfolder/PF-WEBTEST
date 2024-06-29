@@ -106,6 +106,8 @@ WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Ed
 
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Organizations'))
 
+WebUI.delay(2)
+
 WebUI.verifyElementText(findTestObject('Groups/Page_Groups - PowerFolder/verify_organization'), GlobalVariable.organisationName)
 
 WebUI.click(findTestObject('Share/Page_Groups - PowerFolder/button_Cancel'))

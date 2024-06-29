@@ -4,5 +4,6 @@
    <name>TG15_Remove organization from group</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>ccd0eb25-d510-487e-85e7-1bd7e45ba8e9</testCaseGuid>
 </TestCaseEntity>
