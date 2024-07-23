@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>purge all folders</name>
+   <tag></tag>
+   <elementGuidId>ed799df2-5706-408f-ad7b-7f8c1cee2e9f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.pica-icon.pica-glyph.glyphicons.glyphicons-cleaning</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='versions_purge_all']/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>cf25859d-6e6b-4749-85a1-1c28cd8f6692</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-icon pica-glyph glyphicons glyphicons-cleaning</value>
+      <webElementGuid>0b0cf0ad-b4d1-40c6-9a0c-a9ff60f23fbd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;versions_purge_all&quot;)/span[@class=&quot;pica-icon pica-glyph glyphicons glyphicons-cleaning&quot;]</value>
+      <webElementGuid>e7c788e7-39a9-4110-afc6-dbcce7220283</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//a[@id='versions_purge_all']/span</value>
+      <webElementGuid>c2c1343b-c457-494d-bf1b-58091c31a2b9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//th/a/span</value>
+      <webElementGuid>04607125-59ee-43cb-ae11-5cc57cc4c887</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

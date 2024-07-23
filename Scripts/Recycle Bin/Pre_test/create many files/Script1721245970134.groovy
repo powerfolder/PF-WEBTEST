@@ -45,7 +45,29 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+// Déclaration de la variable globale folderName
 
+GlobalVariable.folderName = ('folder_' + RandomStringUtils.randomNumeric(4))
+
+String folderName = GlobalVariable.folderName
+
+WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
+
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
+
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolderIcon'))
+
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
+
+WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), GlobalVariable.folderName)
+
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
+
+WebUI.delay(2)
+
+WebElement btn = findFolder(folderName)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 // Définition du chemin vers le dossier sur le bureau
 def desktopWordPath = Paths.get(System.getProperty('user.home'), 'Desktop')
@@ -80,8 +102,6 @@ List<WebElement> findFiles() {
 	return driver.findElements(By.xpath('//div[2]/table/tbody'))
 }
 
-// Appel du test case pour créer un dossier
-WebUiBuiltInKeywords.callTestCase(findTestCase('File/Pre_test/Create_folder'), [:], FailureHandling.STOP_ON_FAILURE)
 
 // Clic pour créer un élément à l'intérieur d'un dossier
 WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
@@ -131,8 +151,12 @@ robot.delay(5000)
 
 WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/lang_Cancel'))
 
-List<WebElement> items = findFiles()
 
-// Méthode pour trouver les éléments dans la table
-assert !(items.isEmpty())
+
+@Keyword
+WebElement findFolder(String folderName) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
+}
 

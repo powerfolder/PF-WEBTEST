@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TF17_Restore file</name>
+   <name>restore 5 versions</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>93fb9057-71b4-4736-984e-78f6fe8bbabb</testCaseGuid>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>196da8f6-063b-4303-93f5-1d2b748de8a7</testCaseGuid>
 </TestCaseEntity>

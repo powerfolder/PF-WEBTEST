@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>delete file</name>
+   <name>TB07_Purge the bin</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>504a7193-cbfb-4d34-b6cd-73951d2e999b</testCaseGuid>
+   <testCaseGuid>cb7ed849-b24b-4d81-99c4-215151dddab7</testCaseGuid>
 </TestCaseEntity>

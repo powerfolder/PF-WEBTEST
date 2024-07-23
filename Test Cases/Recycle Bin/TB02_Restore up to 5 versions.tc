@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>delete file</name>
+   <name>TB02_Restore up to 5 versions</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>504a7193-cbfb-4d34-b6cd-73951d2e999b</testCaseGuid>
+   <testCaseGuid>d34d0bfd-8c6b-4041-90f7-b38efc4ce637</testCaseGuid>
 </TestCaseEntity>

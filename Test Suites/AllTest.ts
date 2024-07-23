@@ -968,14 +968,14 @@
       <guid>245e04d6-8d57-46cf-aafa-06de2b98f49a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/File/TF17_Restore file</testCaseId>
+      <testCaseId>Test Cases/Recycle Bin/TB01_Restore file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>4182edb9-12b4-44da-bda9-45308ddbf26c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/File/TF18_Restore old version</testCaseId>
+      <testCaseId>Test Cases/Recycle Bin/TB02_Restore up to 5 versions</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

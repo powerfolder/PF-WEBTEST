@@ -30,8 +30,6 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
-import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 
 WebUI.callTestCase(findTestCase('File/Pre_test/Create_Doc'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -43,53 +41,31 @@ WebUI.refresh()
 
 WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span_recycle'))
 
-String folderName = GlobalVariable.folderName
+WebUI.verifyElementClickable(findTestObject('Recycle bin/Page_Recycle bin - PowerFolder/purge all folders'))
 
-WebElement btn = findFolder(folderName)
+WebUI.click(findTestObject('Recycle bin/Page_Recycle bin - PowerFolder/purge all folders'))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
-
-// Attendre la visibilité de la première ligne du tableau
-WebElement firstElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[2]/table/tbody/tr[1]')))
-
-// Cliquer sur le premier élément du tableau
-firstElement.click()
-
-WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/Restore'))
-
-WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/button_Restore'))
-
-WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/lang_Close'))
-
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
-
-WebElement btn1 = findFolder(folderName)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
-
-String DocName = GlobalVariable.Document
-
-def btn2 = findDoc(DocName)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
-
-assert DocName != null
+WebUI.click(findTestObject('Recycle bin/Page_Recycle bin - PowerFolder/button_Yes_confirme_purge'))
 
 
+WebUI.delay(3)
 
-@Keyword
-WebElement findFolder(String folderName) {
+// Vérification de la suppression des éléments dans la table
+List<WebElement> items = findGroup()
+
+// Méthode pour trouver les éléments dans la table
+assert items.isEmpty() : 'Les éléments ont été supprimés avec succès'
+
+WebUI.delay(3)
+
+// Fermeture du navigateur
+WebUI.closeBrowser()
+
+List<WebElement> findGroup() {
 	WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
+	return driver.findElements(By.xpath('/tbody/tr/td'))
 }
 
-@Keyword
-WebElement findDoc(String DocName) {
-	WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + DocName) + '\')]/td[1]/span'))
-}
 

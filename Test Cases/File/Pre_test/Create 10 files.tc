@@ -4,5 +4,6 @@
    <name>Create 10 files</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>84ace8f9-2ba0-4cb0-97fe-422fe0d83f09</testCaseGuid>
 </TestCaseEntity>

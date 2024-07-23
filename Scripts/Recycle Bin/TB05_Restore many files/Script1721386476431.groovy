@@ -30,16 +30,28 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
-import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 
-WebUI.callTestCase(findTestCase('File/Pre_test/Create_Doc'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Recycle Bin/Pre_test/create many files'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebDriver driver = DriverFactory.getWebDriver()
+
+WebElement premierElement = driver.findElement(By.xpath('//div[2]/table/tbody/tr[1]'))
+
+WebDriverWait wait = new WebDriverWait(driver, 10)
+
+wait.until(ExpectedConditions.elementToBeClickable(premierElement))
+
+premierElement.click()
+
+WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Page_Folders - PowerFolder/select_all'))
+
+// Click on "Delete" link in "Groups - PowerFolder" page
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/span_Delete'))
 
+// Click on "Yes" button in "Groups - PowerFolder" page
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
 
-WebUI.refresh()
+WebUI.delay(3)
 
 WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span_recycle'))
 
@@ -49,47 +61,43 @@ WebElement btn = findFolder(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+WebElement premierElement_bin = driver.findElement(By.xpath('//div[2]/table/tbody/tr[1]'))
 
-// Attendre la visibilité de la première ligne du tableau
-WebElement firstElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[2]/table/tbody/tr[1]')))
+wait.until(ExpectedConditions.elementToBeClickable(premierElement_bin))
 
-// Cliquer sur le premier élément du tableau
-firstElement.click()
+premierElement_bin.click()
+
+WebUI.click(findTestObject('Help/Page_Recycle bin - PowerFolder/select all in bin'))
 
 WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/Restore'))
 
-WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/button_Restore'))
-
-WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/lang_Close'))
+WebUI.verifyElementPresent(findTestObject('Recycle bin/Page_Recycle bin - PowerFolder/File restored notification'), 2)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
+
+WebUI.delay(2)
 
 WebElement btn1 = findFolder(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
-String DocName = GlobalVariable.Document
+WebElement premierElement_folder = driver.findElement(By.xpath('//div[2]/table/tbody/tr[1]'))
 
-def btn2 = findDoc(DocName)
+wait.until(ExpectedConditions.elementToBeClickable(premierElement_folder))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
+premierElement_folder.click()
 
-assert DocName != null
+WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Page_Folders - PowerFolder/select_all'))
 
+// Ajoutez une attente pour s'assurer que les éléments sont sélectionnés
+WebUI.delay(2)
 
+WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
 
 @Keyword
 WebElement findFolder(String folderName) {
-	WebDriver driver = DriverFactory.getWebDriver()
+    WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
-}
-
-@Keyword
-WebElement findDoc(String DocName) {
-	WebDriver driver = DriverFactory.getWebDriver()
-
-	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + DocName) + '\')]/td[1]/span'))
+    return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
 }
 

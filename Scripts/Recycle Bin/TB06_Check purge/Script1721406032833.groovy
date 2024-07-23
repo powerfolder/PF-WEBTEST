@@ -57,39 +57,27 @@ WebElement firstElement = wait.until(ExpectedConditions.visibilityOfElementLocat
 // Cliquer sur le premier élément du tableau
 firstElement.click()
 
-WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/Restore'))
+WebUI.verifyElementClickable(findTestObject('Recycle bin/Page_Recycle bin - PowerFolder/a_Purge'))
 
-WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/button_Restore'))
+WebUI.click(findTestObject('Recycle bin/Page_Recycle bin - PowerFolder/a_Purge'))
 
-WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/lang_Close'))
+WebUI.click(findTestObject('Recycle bin/Page_Recycle bin - PowerFolder/button_Yes_confirme_purge'))
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
+WebUI.verifyElementPresent(findTestObject('Recycle bin/Page_Recycle bin - PowerFolder/lang_Nothing to show'), 3)
 
-WebElement btn1 = findFolder(folderName)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
-
-String DocName = GlobalVariable.Document
-
-def btn2 = findDoc(DocName)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
-
-assert DocName != null
-
-
+WebUI.closeBrowser()
 
 @Keyword
 WebElement findFolder(String folderName) {
-	WebDriver driver = DriverFactory.getWebDriver()
+    WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
+    return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
 }
 
 @Keyword
 WebElement findDoc(String DocName) {
-	WebDriver driver = DriverFactory.getWebDriver()
+    WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + DocName) + '\')]/td[1]/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + DocName) + '\')]/td[1]/span'))
 }
 

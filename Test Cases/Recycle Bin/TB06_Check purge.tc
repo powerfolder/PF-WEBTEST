@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>delete file</name>
+   <name>TB06_Check purge</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>504a7193-cbfb-4d34-b6cd-73951d2e999b</testCaseGuid>
+   <testCaseGuid>7550ba1e-5fc2-4624-beb8-26b27bdec45d</testCaseGuid>
 </TestCaseEntity>

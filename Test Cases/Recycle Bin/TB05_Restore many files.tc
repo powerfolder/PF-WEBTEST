@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>delete file</name>
+   <name>TB05_Restore many files</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>504a7193-cbfb-4d34-b6cd-73951d2e999b</testCaseGuid>
+   <testCaseGuid>4046a2bc-5ff4-4497-b4fd-68c10a9cd023</testCaseGuid>
 </TestCaseEntity>

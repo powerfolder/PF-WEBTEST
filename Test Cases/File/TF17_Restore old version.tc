@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>delete file</name>
+   <name>TF17_Restore old version</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>504a7193-cbfb-4d34-b6cd-73951d2e999b</testCaseGuid>
+   <testCaseGuid>99aec7a1-6cc0-4461-962e-8cb183dcb7ab</testCaseGuid>
 </TestCaseEntity>
