@@ -4,6 +4,7 @@
    <name>Pretest - Admin Login</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>56689f13-438f-4b7d-b420-21dac41e0d9e</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
