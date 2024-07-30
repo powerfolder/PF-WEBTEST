@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>check_Account</name>
+   <tag></tag>
+   <elementGuidId>5c51e046-c05a-44d4-9d03-ba1670f12c3d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='logs_table']/thead[2]/tr/th[4]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>th</value>
+      <webElementGuid>8b2e0b57-4ac0-4d8f-a889-da71b7d35530</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-sortable-column pica-small-column hidden-sm hidden-xs</value>
+      <webElementGuid>7e411c90-2042-4bba-9c95-e13aa47ef720</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                    Account
+                </value>
+      <webElementGuid>773806b9-21b3-4b79-aac2-ebf6420f5c25</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;logs_table&quot;)/thead[2]/tr[1]/th[@class=&quot;pica-sortable-column pica-small-column hidden-sm hidden-xs&quot;]</value>
+      <webElementGuid>c9124c9c-f306-4d20-98fb-dfe66b025bda</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='logs_table']/thead[2]/tr/th[4]</value>
+      <webElementGuid>4db547ef-6874-4cb8-800d-7b76ed78e699</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Logger'])[1]/following::th[1]</value>
+      <webElementGuid>3110a8aa-6cab-498b-a1c1-ab0db12caa58</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Date'])[1]/following::th[2]</value>
+      <webElementGuid>3e40cd15-80b2-4256-b345-ef46ec226316</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Message'])[1]/preceding::th[1]</value>
+      <webElementGuid>cbc47a53-b688-4587-9675-e919442a21dd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//th[4]</value>
+      <webElementGuid>e69c80c6-23e5-4d0e-924a-de8e9328d73d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//th[(text() = '
+                    Account
+                ' or . = '
+                    Account
+                ')]</value>
+      <webElementGuid>56e6bbb1-971e-4f8a-8657-338d2c21de1f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
