@@ -26,9 +26,10 @@ import java.util.Arrays as Arrays
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 
-WebUI.callTestCase(findTestCase('File/Pre_test/delete file'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Recycle Bin/Pre_test/Delete_File'), [:], FailureHandling.STOP_ON_FAILURE)
 
 String folderName = GlobalVariable.folderName
+
 String DocName = GlobalVariable.Document
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/span_Delete'))
@@ -205,12 +206,15 @@ assert DocName != null
 
 @Keyword
 WebElement findFolder(String folderName) {
-	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
 }
 
 @Keyword
 WebElement findDoc(String DocName) {
-	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + DocName) + '\')]/td[1]/span'))
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + DocName) + '\')]/td[1]/span'))
 }
+

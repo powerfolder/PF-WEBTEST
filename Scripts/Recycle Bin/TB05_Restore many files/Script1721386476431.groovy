@@ -71,8 +71,8 @@ WebUI.click(findTestObject('Help/Page_Recycle bin - PowerFolder/select all in bi
 
 WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/Restore'))
 
-WebUI.verifyElementPresent(findTestObject('Recycle bin/Page_Recycle bin - PowerFolder/File restored notification'), 2)
-
+WebUI.verifyElementPresent(findTestObject('Recycle bin/Page_Recycle bin - PowerFolder/Page_Recycle bin - PowerFolder/div_File restored'), 
+    3) 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
 
 WebUI.delay(2)
@@ -88,8 +88,8 @@ wait.until(ExpectedConditions.elementToBeClickable(premierElement_folder))
 premierElement_folder.click()
 
 WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Page_Folders - PowerFolder/select_all'))
-
 // Ajoutez une attente pour s'assurer que les éléments sont sélectionnés
+
 WebUI.delay(2)
 
 WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)

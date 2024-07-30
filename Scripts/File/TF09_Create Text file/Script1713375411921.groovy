@@ -46,7 +46,7 @@ WebUiBuiltInKeywords.setText(findTestObject('file_objects/document/Page_Folders 
 
 WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-WebUI.switchToWindowIndex('1')
+WebUI.switchToWindowIndex(1)
 
 WebUI.verifyElementNotPresent(findTestObject('file_objects/document/Page_Open - PowerFolder/span_Unable to create document'), 
     3)
@@ -55,7 +55,7 @@ WebUI.refresh()
 
 WebUiBuiltInKeywords.delay(15)
 
-WebUiBuiltInKeywords.switchToWindowUrl('https://lab.powerfolder.net:8666/folderstable')
+WebUiBuiltInKeywords.switchToWindowIndex(0)
 
 WebUiBuiltInKeywords.refresh()
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TLG01_Logs show up</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>baaf098c-fb12-4108-a5d0-25c3c77f022e</testCaseGuid>
+</TestCaseEntity>

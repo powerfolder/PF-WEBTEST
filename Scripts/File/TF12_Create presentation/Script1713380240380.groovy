@@ -57,8 +57,7 @@ WebUI.refresh()
 
 WebUiBuiltInKeywords.delay(15)
 
-
-WebUI.switchToWindowUrl('https://lab.powerfolder.net:8666/folderstable')
+WebUI.switchToWindowIndex(0)
 
 WebUI.refresh()
 

@@ -4,6 +4,7 @@
    <name>TF09_Create Text file</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>5b962d43-5f8e-47fc-a390-0e5b73901eb0</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

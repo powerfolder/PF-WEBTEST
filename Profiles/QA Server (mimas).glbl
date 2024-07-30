@@ -3,7 +3,7 @@
    <description></description>
    <name>QA Server (mimas)</name>
    <tag></tag>
-   <defaultProfile>true</defaultProfile>
+   <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://mimas.powerfolder.net/login'</initValue>

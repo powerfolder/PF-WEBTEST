@@ -48,14 +48,14 @@ WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/P
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-WebUI.switchToWindowIndex('1')
+WebUI.switchToWindowIndex(1)
 
 WebUI.verifyElementNotPresent(findTestObject('file_objects/document/Page_Open - PowerFolder/span_Unable to create document'), 
     3)
 
 WebUI.refresh()
 
-WebUI.delay(15)
+WebUI.delay(2)
 
 WebUI.closeWindowIndex(1)
 

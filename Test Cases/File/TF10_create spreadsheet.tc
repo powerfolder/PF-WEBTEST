@@ -4,6 +4,7 @@
    <name>TF10_create spreadsheet</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>fe568385-d550-4ad0-9441-2949826b5c48</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

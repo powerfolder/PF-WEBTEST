@@ -12,6 +12,13 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>3dbe9184-e959-43e0-b49c-ab8a5f14a508</testSuiteGuid>
    <testCaseLink>
+      <guid>72410c7b-3e5b-48ef-9ecc-780e11a9468c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Recycle Bin/TB03_Navigate between restored versions</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>64914547-bf02-4e25-a208-2b740cc3edc0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -23,13 +30,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Recycle Bin/TB02_Restore up to 5 versions</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>72410c7b-3e5b-48ef-9ecc-780e11a9468c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Recycle Bin/TB03_Navigate between restored versions</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

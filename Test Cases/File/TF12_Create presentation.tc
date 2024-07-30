@@ -4,6 +4,7 @@
    <name>TF12_Create presentation</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>0024c0e3-0f1c-4845-9413-f3c962f9fcbc</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

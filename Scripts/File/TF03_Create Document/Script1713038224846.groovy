@@ -71,7 +71,7 @@ WebUI.refresh()
 
 WebUI.delay(15)
 
-WebUI.switchToWindowUrl('https://lab.powerfolder.net:8666/folderstable')
+WebUI.switchToWindowIndex(0)
 
 WebUI.refresh()
 
@@ -94,9 +94,8 @@ WebElement findDoc(String DocName) {
 
 @Keyword
 WebElement SelectFolder(String folderName) {
-	WebDriver driver = DriverFactory.getWebDriver()
+    WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName) + '\')]/td[1]/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName) + '\')]/td[1]/span'))
 }
-
 
