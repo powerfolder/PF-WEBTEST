@@ -57,11 +57,7 @@ WebElement firstElement = wait.until(ExpectedConditions.visibilityOfElementLocat
 // Cliquer sur le premier élément du tableau
 firstElement.click()
 
-WebUI.verifyElementClickable(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/Restore'))
-
 WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/Restore'))
-
-WebUI.verifyElementClickable(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/button_Restore'))
 
 WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/button_Restore'))
 
@@ -69,25 +65,17 @@ WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
 
-WebUI.delay(2)
-
 WebElement btn1 = findFolder(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
 String DocName = GlobalVariable.Document
 
-WebUI.delay(2)
-
 def btn2 = findDoc(DocName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
 
 assert DocName != null
-
-WebUI.delay(2)
-
-WebUI.closeBrowser()
 
 @Keyword
 WebElement findFolder(String folderName) {

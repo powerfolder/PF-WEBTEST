@@ -71,7 +71,7 @@ WebUI.click(findTestObject('Help/Page_Recycle bin - PowerFolder/select all in bi
 
 WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/Restore'))
 
-WebUI.verifyElementPresent(findTestObject('Recycle bin/Page_Recycle bin - PowerFolder/File restored notification'), 2)
+WebUI.verifyElementPresent(findTestObject('Recycle bin/Page_Recycle bin - PowerFolder/div_Datei wiederhergestellt10'), 2) 
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
 
@@ -93,6 +93,7 @@ WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Page_
 WebUI.delay(2)
 
 WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
+
 
 @Keyword
 WebElement findFolder(String folderName) {

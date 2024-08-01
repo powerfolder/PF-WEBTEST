@@ -33,9 +33,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 
-WebUI.callTestCase(findTestCase('File/Pre_test/delete file'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Recycle Bin/Pre_test/Delete_File'), [:], FailureHandling.STOP_ON_FAILURE)
 
 String folderName = GlobalVariable.folderName
+
 String DocName = GlobalVariable.Document
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/span_Delete'))
@@ -74,7 +75,6 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders
 WebElement btn1 = findFolder(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
-
 
 WebUI.delay(1)
 
@@ -163,7 +163,6 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn7))
 
 WebUI.delay(1)
 
-
 WebElement btn8 = findDoc(DocName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn8))
@@ -213,7 +212,6 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn11))
 assert DocName != null
 
 WebUI.closeBrowser()
-
 
 @Keyword
 WebElement findFolder(String folderName) {
