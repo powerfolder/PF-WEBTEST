@@ -50,7 +50,7 @@ WebUI.delay(10)
 
 WebUI.closeWindowIndex(1)
 
-WebUI.switchToWindowUrl('https://lab.powerfolder.net:8666/folderstable')
+WebUI.switchToWindowIndex(0)
 
 WebUI.refresh()
 
@@ -77,7 +77,8 @@ String home = System.getProperty('user.home')
 String downloadPath = home + '/Downloads/'
 
 // Vérifier si le fichier est téléchargé dans le chemin spécifié par l'utilisateur
-assert isFileDownloaded(downloadPath, DocName + '.docx') // 5 minutes
+assert isFileDownloaded(downloadPath, DocName + '.docx' // 5 minutes
+    )
 
 WebUI.closeBrowser()
 

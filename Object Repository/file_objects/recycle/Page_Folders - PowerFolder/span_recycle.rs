@@ -6,15 +6,16 @@
    <elementGuidId>5f861b32-65cb-42e2-a73b-753d678f257e</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//tr[4]/td/a/lang</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>span.pica-glyph.show.glyphicons.glyphicons-recycle</value>
       </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//tr[3]/td/a/span</value>
-      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>ead5e098-0db5-42bf-baaf-99f3ff9a6763</webElementGuid>
+      <webElementGuid>c0e924b6-46c4-4da9-be7a-81e822d1671f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-glyph show glyphicons glyphicons-recycle</value>
-      <webElementGuid>a2ec1cde-b029-4ba9-a895-652bd7e0681b</webElementGuid>
+      <webElementGuid>299a8a0e-39f7-4487-9f05-74c86f8e0adc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +39,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_menu&quot;)/table[1]/tbody[1]/tr[3]/td[@class=&quot;text-center&quot;]/a[1]/span[@class=&quot;pica-glyph show glyphicons glyphicons-recycle&quot;]</value>
-      <webElementGuid>5af9e5bc-42be-4119-a506-6e8232c6742e</webElementGuid>
+      <webElementGuid>52590e2c-89ca-45a4-a780-a7e1aef8e9ae</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +47,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_menu']/table/tbody/tr[3]/td/a/span</value>
-      <webElementGuid>5791d9f6-9cd9-4640-9818-4c833876da85</webElementGuid>
+      <webElementGuid>7761f11b-b5cc-416c-a93e-f07979d06190</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,6 +55,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[3]/td/a/span</value>
-      <webElementGuid>8cc3e134-693d-4813-b66d-88721b678124</webElementGuid>
+      <webElementGuid>aa0d7de3-9f52-4d94-b615-233d1f22003a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

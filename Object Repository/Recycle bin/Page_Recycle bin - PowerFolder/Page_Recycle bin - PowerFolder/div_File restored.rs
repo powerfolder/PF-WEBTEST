@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_File restored</name>
+   <tag></tag>
+   <elementGuidId>b690e198-a9e1-465b-9f6b-8ce5c62e5cbc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.pica-notification-box.alert.alert-info</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='notification_94569882']/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>f5053451-efa6-434c-b775-0f30db14535f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-notification-box alert alert-info</value>
+      <webElementGuid>291e2eaf-c98d-4ca7-be80-10ac5c37124b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>alert</value>
+      <webElementGuid>f95ddffa-b460-45e5-a26e-b78391a91087</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>File restored×11</value>
+      <webElementGuid>bb9d4666-dcc3-4e72-a973-e4b959184fc3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;notification_94569882&quot;)/div[@class=&quot;pica-notification-box alert alert-info&quot;]</value>
+      <webElementGuid>c06ae8de-ba67-4eca-826d-07a3f2a1cb4f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='notification_94569882']/div</value>
+      <webElementGuid>2be05f5a-1aa5-4e80-a590-a4b36b871675</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='`'])[1]/following::div[2]</value>
+      <webElementGuid>96fbcd89-5af9-469b-b1ec-7c26c599d3e2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div</value>
+      <webElementGuid>405cdf7d-d714-4d11-b91b-f5738639990a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'File restored×11' or . = 'File restored×11')]</value>
+      <webElementGuid>8d8f5579-169e-4e89-8340-3c85741e48ac</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

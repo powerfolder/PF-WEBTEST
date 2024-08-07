@@ -89,6 +89,7 @@ WebUI.delay(2)
 
 WebUI.closeBrowser()
 
+
 @Keyword
 WebElement findFolder(String folderName) {
     WebDriver driver = DriverFactory.getWebDriver()
