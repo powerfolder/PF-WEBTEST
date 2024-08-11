@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>check_Message</name>
+   <name>div_Started auto refresh</name>
    <tag></tag>
-   <elementGuidId>f780ae71-a875-41d2-ad8d-bd2b082df471</elementGuidId>
+   <elementGuidId>8c264203-5e2d-4ae7-bbc7-8cbb837e777c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@id='notification_1796846903']/div</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='logs_table']/thead[2]/tr/th[5]</value>
+         <key>CSS</key>
+         <value>div.pica-notification-box.alert.alert-info</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,85 +22,79 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>th</value>
-      <webElementGuid>fad0768c-68a7-448b-911a-48143440c14b</webElementGuid>
+      <value>div</value>
+      <webElementGuid>96d3e782-0721-46d5-890e-ca3a7136fe86</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>pica-sortable-column</value>
-      <webElementGuid>ea2f1a2e-4d35-4b7f-9cb2-6ffcbb9b567f</webElementGuid>
+      <value>pica-notification-box alert alert-info</value>
+      <webElementGuid>a8728f82-d1ab-4b7f-b992-311af24b1636</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>alert</value>
+      <webElementGuid>edcb7c78-3858-4288-b3b4-38ee97468c6b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>
-                    Message
-                </value>
-      <webElementGuid>33c44b34-a80a-41c7-97a8-71d26f51f12e</webElementGuid>
+      <value>Started auto refresh×</value>
+      <webElementGuid>dc4af5c7-126b-4622-9f7a-0df57ea47705</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;logs_table&quot;)/thead[2]/tr[1]/th[@class=&quot;pica-sortable-column&quot;]</value>
-      <webElementGuid>63063cbc-c312-48ce-b7e0-ef74a889870f</webElementGuid>
+      <value>id(&quot;notification_1796846903&quot;)/div[@class=&quot;pica-notification-box alert alert-info&quot;]</value>
+      <webElementGuid>0fd338d9-a1cb-404f-8566-df518ca3a609</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='logs_table']/thead[2]/tr/th[5]</value>
-      <webElementGuid>f7d925bd-610f-4cce-9a71-edb48a0f7825</webElementGuid>
+      <value>//div[@id='notification_1796846903']/div</value>
+      <webElementGuid>b73be2e8-90d4-4f3e-a7f7-582eb5908d26</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Account'])[1]/following::th[1]</value>
-      <webElementGuid>e356611e-5965-4058-b19b-152ee739b1c2</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Privacy Policy'])[1]/following::div[2]</value>
+      <webElementGuid>64289a82-d317-4d0c-ab3a-31e58d0aeda3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Logger'])[1]/following::th[2]</value>
-      <webElementGuid>3c52f87b-dd0b-4982-9511-d9e5c5564314</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='SecurityManagerServer'])[2]/preceding::th[2]</value>
-      <webElementGuid>575da7bf-c22d-4a6f-8166-0f42241bcd1c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Imprint'])[1]/following::div[2]</value>
+      <webElementGuid>e71ce2d1-36bb-4a4d-addc-c699a18ae83d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//th[5]</value>
-      <webElementGuid>f0f27e7d-4de1-4c40-bf2d-00bb1ae1213f</webElementGuid>
+      <value>//div[3]/div</value>
+      <webElementGuid>f52c419a-f953-4e9b-9565-cdda40d057f3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//th[(text() = '
-                    Message
-                ' or . = '
-                    Message
-                ')]</value>
-      <webElementGuid>b63af467-b695-45fe-9b73-3ab1c8745ea8</webElementGuid>
+      <value>//div[(text() = 'Started auto refresh×' or . = 'Started auto refresh×')]</value>
+      <webElementGuid>233a7537-0b86-4a57-ab90-fc84fb3c8f72</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

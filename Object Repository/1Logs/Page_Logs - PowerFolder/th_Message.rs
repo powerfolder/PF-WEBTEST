@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>check_Date</name>
+   <name>th_Message</name>
    <tag></tag>
-   <elementGuidId>c035ab5a-b652-482d-a506-37473928636d</elementGuidId>
+   <elementGuidId>221ef33b-ad96-4e25-98e3-bffd2692032a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>th.pica-sortable-column.pica-small-column.pica-sortable-sorted</value>
+         <key>XPATH</key>
+         <value>//table[@id='logs_table']/thead[2]/tr/th[5]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='logs_table']/thead[2]/tr/th[2]</value>
+         <key>CSS</key>
+         <value>th.pica-sortable-column.pica-sortable-sorted</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,15 +23,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>6075662c-2c40-49f5-94ed-9d48ce69a44b</webElementGuid>
+      <webElementGuid>9869f8a2-aa0d-4965-9b58-d4818f3b48c8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>pica-sortable-column pica-small-column pica-sortable-sorted</value>
-      <webElementGuid>cc434532-92ce-4633-8748-61772394cca3</webElementGuid>
+      <value>pica-sortable-column pica-sortable-sorted</value>
+      <webElementGuid>de253710-3527-438f-b6b8-b6bee7dcb3f0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,57 +39,57 @@
       <name>text</name>
       <type>Main</type>
       <value>
-                    Date
+                    Message
                 </value>
-      <webElementGuid>7b95f0ee-8220-47e2-a0b5-7907e8b8c1a0</webElementGuid>
+      <webElementGuid>209392b3-ac90-4ab3-994a-8fb2698e72f6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;logs_table&quot;)/thead[2]/tr[1]/th[@class=&quot;pica-sortable-column pica-small-column pica-sortable-sorted&quot;]</value>
-      <webElementGuid>0a518126-0f69-4764-9481-57bdccd776fd</webElementGuid>
+      <value>id(&quot;logs_table&quot;)/thead[2]/tr[1]/th[@class=&quot;pica-sortable-column pica-sortable-sorted&quot;]</value>
+      <webElementGuid>4af73af3-9c4a-4178-998d-b286646023fb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='logs_table']/thead[2]/tr/th[2]</value>
-      <webElementGuid>2e88960e-7481-481a-8f88-d137936925f1</webElementGuid>
+      <value>//table[@id='logs_table']/thead[2]/tr/th[5]</value>
+      <webElementGuid>a01ed4af-ab70-4662-a2e3-c5d8df477504</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Copy'])[1]/following::th[2]</value>
-      <webElementGuid>23f25af4-e271-4e03-81da-dca6119f8933</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Account'])[1]/following::th[1]</value>
+      <webElementGuid>40b61843-64f6-46af-99cc-b4ec45757b9b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='tspfdd05'])[1]/following::th[5]</value>
-      <webElementGuid>f2ed46b6-2647-4978-8000-b34dfa12b57d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Logger'])[1]/following::th[2]</value>
+      <webElementGuid>dd5d3d6b-4c4f-44a3-97d2-634dddad5230</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Logger'])[1]/preceding::th[1]</value>
-      <webElementGuid>c2b1d6bc-3bb8-43e4-abaf-81879d31a166</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SecurityManagerServer'])[1]/preceding::th[2]</value>
+      <webElementGuid>0a1cdec5-4ad3-46fb-97b9-2eda243809c4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//thead[2]/tr/th[2]</value>
-      <webElementGuid>2106b602-c6a9-4c13-b913-970570fedbe7</webElementGuid>
+      <value>//th[5]</value>
+      <webElementGuid>7ef5d9a3-103f-428e-84fc-c80f319fd231</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -97,10 +97,10 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[(text() = '
-                    Date
+                    Message
                 ' or . = '
-                    Date
+                    Message
                 ')]</value>
-      <webElementGuid>77dae230-52e7-4705-9b8a-69bf16ca3566</webElementGuid>
+      <webElementGuid>518b892d-7f82-4167-87da-b60224f90422</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
