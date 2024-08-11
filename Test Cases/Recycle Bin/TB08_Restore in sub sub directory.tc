@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TB08_Restore in sub sub directory</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6e10664f-aed4-41dd-a74d-f5eeb202c69e</testCaseGuid>
+</TestCaseEntity>

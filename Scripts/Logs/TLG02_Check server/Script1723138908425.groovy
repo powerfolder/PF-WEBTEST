@@ -19,37 +19,13 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.scrollToElement(findTestObject('1Logs/Page_Dashboard - PowerFolder/lang_Logs'), 1)
-
-WebUI.verifyElementClickable(findTestObject('1Logs/Page_Dashboard - PowerFolder/lang_Logs'))
-
 WebUI.click(findTestObject('1Logs/Page_Dashboard - PowerFolder/lang_Logs'))
 
+WebUI.verifyElementPresent(findTestObject('1Logs/Page_Logs - PowerFolder/Server_1'), 2)
+
+WebUI.click(findTestObject('1Logs/Page_Logs - PowerFolder/Server_1'))
+
 WebUI.verifyElementPresent(findTestObject('1Logs/Page_Logs - PowerFolder/div_Started auto refresh'), 2)
-
-WebUI.click(findTestObject('1Logs/Page_Logs - PowerFolder/th_Date'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('1Logs/Page_Logs - PowerFolder/th_Date'))
-
-WebUI.click(findTestObject('1Logs/Page_Logs - PowerFolder/th_Logger'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('1Logs/Page_Logs - PowerFolder/th_Logger'))
-
-WebUI.click(findTestObject('1Logs/Page_Logs - PowerFolder/th_Account'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('1Logs/Page_Logs - PowerFolder/th_Account'))
-
-WebUI.click(findTestObject('1Logs/Page_Logs - PowerFolder/th_Message'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('1Logs/Page_Logs - PowerFolder/th_Message'))
 
 WebUI.closeBrowser()
 
