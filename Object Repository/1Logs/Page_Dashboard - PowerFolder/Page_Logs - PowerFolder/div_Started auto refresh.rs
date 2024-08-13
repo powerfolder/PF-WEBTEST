@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Started auto refresh</name>
+   <tag></tag>
+   <elementGuidId>ce9f4401-fd15-4a71-ba71-e24b907332c5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='notification_1796846903']/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#notification_1796846903 > div.pica-notification-box.alert.alert-info</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>f59ac336-8ee8-4d59-9ca7-f8efeb664077</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-notification-box alert alert-info</value>
+      <webElementGuid>957b24f8-967d-4c00-b279-15b5ab8e0df8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>alert</value>
+      <webElementGuid>ec243c31-b377-466a-ac5d-45b7245f611e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Started auto refresh×</value>
+      <webElementGuid>d7c637d9-b0c7-4341-8691-f9b39b6ea152</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;notification_1796846903&quot;)/div[@class=&quot;pica-notification-box alert alert-info&quot;]</value>
+      <webElementGuid>82c41ecd-b946-4f98-8ab3-14457785353d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='notification_1796846903']/div</value>
+      <webElementGuid>64662968-a07e-43ca-a75d-4d9bd51c5ab4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[2]/following::div[2]</value>
+      <webElementGuid>9fe930d8-0acb-4491-a27d-fbc2fb200f4f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Stopped auto refresh'])[4]/following::div[2]</value>
+      <webElementGuid>1bdca123-1b82-400a-813b-4a6e611bdf0a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div</value>
+      <webElementGuid>485b4fa3-5043-4704-9adf-77b9d69cb5d8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Started auto refresh×' or . = 'Started auto refresh×')]</value>
+      <webElementGuid>c6ff03c3-ec01-428e-be44-c39832ac9e8d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

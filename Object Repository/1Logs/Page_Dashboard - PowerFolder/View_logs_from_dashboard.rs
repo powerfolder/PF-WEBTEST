@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>View_logs_from_dashboard</name>
+   <tag></tag>
+   <elementGuidId>962c3182-f637-4ad6-af4d-62fc53200719</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[4]/div/div/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>a7e02ab3-c0aa-4152-b9ee-daf4ed011625</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-success pull-right</value>
+      <webElementGuid>6f0141ed-78c1-4643-88f3-7528464dfe56</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/admin/logs</value>
+      <webElementGuid>30473a00-d333-4256-ab8c-379de4342c03</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                    View
+                </value>
+      <webElementGuid>50036ee9-fb30-4207-a606-d63b62c26f3d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_content&quot;)/div[@class=&quot;pica-boxes&quot;]/div[@class=&quot;pica-box pica-block-on-small&quot;]/div[@class=&quot;pica-box-head clearfix&quot;]/a[@class=&quot;btn btn-success pull-right&quot;]</value>
+      <webElementGuid>eaae6c3d-803f-4986-87ae-50191dd1363c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_content']/div[4]/div/div/a</value>
+      <webElementGuid>a03550eb-7777-4961-b2ec-e0b9244e4129</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Logs'])[2]/following::a[1]</value>
+      <webElementGuid>c37078db-dde3-46d2-bfa4-74796bf499e4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nothing to show'])[2]/following::a[1]</value>
+      <webElementGuid>0030172f-8a6e-412d-b5f8-418235666f1a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SecurityManagerServer'])[1]/preceding::a[1]</value>
+      <webElementGuid>d8884566-d23e-4291-8e69-d0d96700e69f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, '/admin/logs')])[2]</value>
+      <webElementGuid>be39c08f-fc82-4ba1-9fe9-eced26d12274</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value></value>
+      <webElementGuid>cfa04c35-ea54-4912-884e-ebf52b560737</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/admin/logs' and (text() = '
+                    View
+                ' or . = '
+                    View
+                ')]</value>
+      <webElementGuid>194f0a4e-93a3-434b-98cd-9ca43c1bd872</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

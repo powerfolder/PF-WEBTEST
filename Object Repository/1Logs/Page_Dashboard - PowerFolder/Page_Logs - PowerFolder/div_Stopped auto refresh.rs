@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Stopped auto refresh</name>
+   <tag></tag>
+   <elementGuidId>5b542af7-8e65-4be5-89fb-29673bfdd46d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='notification_759526653']/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.pica-notification-box.alert.alert-info</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>26193174-52c1-4c9c-86c2-68334a8b9cb4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-notification-box alert alert-info</value>
+      <webElementGuid>e82ecb5e-cdcf-4d15-b2dd-393a2b1cce5a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>alert</value>
+      <webElementGuid>612a065e-cd40-47b3-b1ba-2d063ced738b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Stopped auto refresh×7</value>
+      <webElementGuid>41337e1f-89ad-4fc8-bda9-8ca406c4efaf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;notification_759526653&quot;)/div[@class=&quot;pica-notification-box alert alert-info&quot;]</value>
+      <webElementGuid>c56d06d7-c352-409d-8eba-b899e2808a09</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='notification_759526653']/div</value>
+      <webElementGuid>25f6bafa-cf1f-4d07-8543-9dfa445a9e1e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='`'])[1]/following::div[2]</value>
+      <webElementGuid>1bca7157-fda4-434c-a77a-c9c92ba1182f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div</value>
+      <webElementGuid>72898596-6c3c-4a9c-b0af-9c6714009530</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Stopped auto refresh×7' or . = 'Stopped auto refresh×7')]</value>
+      <webElementGuid>99c601e1-2bbe-4f90-91af-680ba7f55264</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

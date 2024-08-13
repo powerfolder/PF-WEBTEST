@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TLG03_Check log from Dashboard</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b206962d-65a0-448c-acdd-62d94e32bc03</testCaseGuid>
+</TestCaseEntity>
