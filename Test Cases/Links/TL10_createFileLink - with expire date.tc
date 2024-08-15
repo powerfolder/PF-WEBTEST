@@ -4,5 +4,6 @@
    <name>TL10_createFileLink - with expire date</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>0fe3bdc4-15be-42b0-ac8a-8af2c733118a</testCaseGuid>
 </TestCaseEntity>
