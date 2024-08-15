@@ -4,5 +4,6 @@
    <name>TH1_verifyHelpPage</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>71816067-59c4-49de-b237-481255cd21e3</testCaseGuid>
 </TestCaseEntity>

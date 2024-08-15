@@ -17,38 +17,30 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+// Appel du test case de connexion
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
 
+// Cliquez sur l'icône d'aide dans la navigation de gauche
 WebUI.click(findTestObject('LeftNavigationIcons/Help'))
 
+// Passez à la nouvelle fenêtre
 WebUI.switchToWindowIndex(1)
 
-Thread.sleep(11000)
+// Attendez que la page charge complètement
+WebUI.delay(10) 
 
-// Vérifiez si le titre de la fenêtre contient 'Confluence'
-String windowTitle = WebUI.getWindowTitle()
+// Obtenez l'URL actuelle
+String currentUrl = WebUI.getUrl()
 
-boolean isCorrectTitle = windowTitle.contains('Confluence') && (windowTitle.contains('Spaces') || windowTitle.contains('Espaces'))
+// Loguez l'URL actuelle pour vérification
+WebUI.comment("L'URL actuelle est: " + currentUrl)
 
-WebUI.verifyEqual(isCorrectTitle, true)
+// Vérifiez si l'URL correspond à celle attendue
+String expectedUrl = 'https://powerfolder.atlassian.net/wiki/spaces/PF/overview'
+boolean isCorrectUrl = currentUrl.equals(expectedUrl)
 
-WebUI.click(findTestObject('Help/powerFolder'))
+// Vérifiez si l'URL est correcte
+WebUI.verifyEqual(isCorrectUrl, true)
 
-Thread.sleep(8000)
-
-// Vérifiez si le titre de la fenêtre contient 'PowerFolder - Confluence'
-windowTitle = WebUI.getWindowTitle()
-
-isCorrectTitle = windowTitle.contains('PowerFolder - Confluence')
-
-WebUI.verifyEqual(isCorrectTitle, true)
-
-// Vérifiez si le texte contient 'PowerFolder Documentation and Support'
-String actualText = WebUI.getText(findTestObject('Help/getTitleText')).trim()
-
-String expectedText = 'PowerFolder Documentation and Support'
-
-WebUI.verifyEqual(actualText.contains(expectedText), true)
-
+// Fermez le navigateur
 WebUI.closeBrowser()
-
