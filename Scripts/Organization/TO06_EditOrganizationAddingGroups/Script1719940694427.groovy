@@ -23,16 +23,8 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
-WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.navigateToUrl(GlobalVariable.URL)
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Login - PowerFolder')
-WebUI.verifyEqual(WebUI.getAttribute(findTestObject('Login/poweredBy'), 'href'), 'https://www.powerfolder.com/')
-WebUI.verifyEqual(WebUI.getAttribute(findTestObject('Login/documentationLink'), 'href'), 'https://wiki.powerfolder.com/')
-WebUI.verifyElementClickable(findTestObject('Login/registerNewAccountLink'))
-WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.Username)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Password)
-WebUI.click(findTestObject('Login/loginSubmit'))
+WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
 assert WebUI.getWindowTitle().equals('Dashboard - PowerFolder')
 WebUI.click(findTestObject('Organization/SelectOrganization'))
@@ -79,6 +71,6 @@ WebUI.delay(3)
 
 WebUI.click(findTestObject('Organization/SelectYesButton'))
 WebUI.delay(3)
-//WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyToastMsg')), 'Organization deleted')
+WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyToastMsg')), 'Organization deleted')
 WebUI.closeBrowser()
 

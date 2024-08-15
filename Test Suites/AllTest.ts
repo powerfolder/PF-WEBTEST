@@ -241,13 +241,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>61479516-1355-4747-8eb3-3611dc6c0538</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Organization/TO07_EditOrganizationAddingManage</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>f6c9888f-2683-4703-ba1a-0cb3f846dd13</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
