@@ -13,7 +13,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 // Cliquer sur l'élément de la page Serveurs
-WebUI.click(findTestObject('Object Repository/servers/Page_Servers - PowerFolder/lang_Servers'))
+WebUI.click(findTestObject('servers/Page_Dashboard - PowerFolder/lang_Servers_v'))
 
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
 
@@ -35,12 +35,17 @@ WebUI.delay(2)
 // Vérifier que l'élément est présent à la fin du test
 try {
     WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//td[1]/span')))
+
     assert element != null : 'L\'élément //td[1]/span n\'est pas présent à la fin du test.'
+
     println('Le serveur est toujours présent.')
-} catch (Exception e) {
-    WebUI.takeScreenshot()
-    throw new AssertionError('Le serveur est supprimé.')
 }
+catch (Exception e) {
+    WebUI.takeScreenshot()
+
+    throw new AssertionError('Le serveur est supprimé.')
+} 
 
 // Fermer le navigateur
 WebUI.closeBrowser()
+

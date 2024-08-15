@@ -11,7 +11,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/servers/Page_Servers - PowerFolder/lang_Servers'))
+WebUI.click(findTestObject('servers/Page_Dashboard - PowerFolder/lang_Servers_v'))
 
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
 

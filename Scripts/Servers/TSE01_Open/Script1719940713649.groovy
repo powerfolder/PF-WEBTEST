@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/servers/Page_Servers - PowerFolder/lang_Servers'))
+WebUI.click(findTestObject('servers/Page_Dashboard - PowerFolder/lang_Servers_v'))
 
 WebUI.click(findTestObject('Object Repository/servers/Page_Servers - PowerFolder/span_Last connect time_glyphicons glyphicon_720a57'))
 
