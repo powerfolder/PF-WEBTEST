@@ -61,7 +61,8 @@ WebUI.click(findTestObject('Folders/downloadLink'))
 
 String parentWindow = driver.getWindowHandle()
 
-JavascriptExecutor jsExecutor = ((driver) as JavascriptExecutor)
+JavascriptExecutor jsExecutor = (JavascriptExecutor) driver
+
 
 jsExecutor.executeScript('window.open()')
 
@@ -77,7 +78,7 @@ WebUI.delay(5)
 
 driver.get('chrome://downloads')
 
-JavascriptExecutor downloadWindowExecutor = ((driver) as JavascriptExecutor)
+JavascriptExecutor downloadWindowExecutor = (JavascriptExecutor) driver
 
 String fileName = downloadWindowExecutor.executeScript('return document.querySelector("downloads-manager").shadowRoot.querySelector("#downloadsList downloads-item").shadowRoot.querySelector("div#content #file-link").textContent').toString()
 
