@@ -58,7 +58,7 @@ WebUI.setText(findTestObject('Accounts/InputPhoneNo'), phone)
 
 WebUI.setText(findTestObject('Accounts/InputQuota'), '5')
 
-WebUI.selectOptionByLabel(findTestObject('Accounts/SelectLanguageDropDrown'), 'German', false)
+WebUI.selectOptionByLabel(findTestObject('Accounts/SelectLanguageDropDrown'), 'Deutsch', false)
 
 WebUI.click(findTestObject('Accounts/SaveButton'))
 

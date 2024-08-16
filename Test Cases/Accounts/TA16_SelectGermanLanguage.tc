@@ -4,5 +4,6 @@
    <name>TA16_SelectGermanLanguage</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>aaeb7ed2-e2eb-40fd-ac54-44a4282a49fb</testCaseGuid>
 </TestCaseEntity>

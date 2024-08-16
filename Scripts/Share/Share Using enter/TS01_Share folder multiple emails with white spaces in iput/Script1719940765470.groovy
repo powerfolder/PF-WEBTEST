@@ -26,24 +26,26 @@ WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHa
 String folderName =getRandomFolderName()
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
-WebUI.click(findTestObject('Folders/createFolder'))
-WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
-WebUI.click(findTestObject('Folders/buttonOK'))
 
+WebUI.click(findTestObject('Folders/createFolder'))
+
+WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
+
+WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-String  mails = "  ${-> folderName}@a.com,${-> folderName}@b.com,,,,   ,   ,   ,,,,,,     ,,,, ${-> folderName}@c.com  "
+String  mails = "  ${-> folderName}@a.com,${-> folderName}@b.com,${-> folderName}@c.com  "
 
 int membersCount = getMembersCount()
 
 WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/inputEmail_Share'), mails)
 
-WebUI.sendKeys(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/inputEmail_Share'), 
-    Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/inputEmail_Share'), Keys.chord(Keys.ENTER))
 
 WebUI.delay(3)
 
@@ -68,10 +70,9 @@ def int getMembersCount(){
 	return rows_table.size()
 }
 
-
 def WebElement findShareButton(String fileName) {
 	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
+	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[7]/a"))
 }
 
 def String getRandomFolderName() {
