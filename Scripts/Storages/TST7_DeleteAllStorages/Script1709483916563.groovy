@@ -22,7 +22,7 @@ findStorage().each({ WebElement element ->
 
 WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/a_Delete'))
 
-WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/button_Yes'))
+WebUI.click(findTestObject('Storage/Page_Storage - PowerFolder/lang_Yes'))
 
 WebUI.delay(2)
 

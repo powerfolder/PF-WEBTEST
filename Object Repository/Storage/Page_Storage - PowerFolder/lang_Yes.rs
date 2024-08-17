@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//lang[@name='button_yes']</value>
+         <value>//body/div[2]/div[1]/div[2]/div[4]/div/div/div[3]/button[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -15,6 +15,7 @@
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>lang</value>
-      <webElementGuid>ed07a255-581d-4b56-aaa5-24b01ff75082</webElementGuid>
+      <webElementGuid>3dafc2dd-25fc-44e4-91e7-c6a3a211b051</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +31,7 @@
       <name>name</name>
       <type>Main</type>
       <value>button_yes</value>
-      <webElementGuid>3ac2ae16-d5b2-49e5-b154-2072dc7e6cd7</webElementGuid>
+      <webElementGuid>689b98e4-59b0-484d-80d6-6315c8c87d52</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +39,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Yes</value>
-      <webElementGuid>eaf9f670-b79d-4d34-bc85-7209400ef86a</webElementGuid>
+      <webElementGuid>6d733d8c-6f2c-48f1-83c9-64320c15eca2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +47,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_confirmation_dialog&quot;)/div[@class=&quot;modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-footer&quot;]/button[@class=&quot;btn btn-primary&quot;]/lang[1]</value>
-      <webElementGuid>6bfd6f49-914e-4bc8-bd4b-f702e377a184</webElementGuid>
+      <webElementGuid>c4527b20-1d43-4ac8-9ba9-c294c2112e41</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +55,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//lang[@name='button_yes']</value>
-      <webElementGuid>c4235af1-475a-456a-88b2-0455af54d419</webElementGuid>
+      <webElementGuid>c479dcc2-ddb1-4fe1-a93c-7eb9f8c46ca0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +63,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_confirmation_dialog']/div/div/div[3]/button/lang</value>
-      <webElementGuid>62ffffec-36fa-4b47-b228-5a1f00f1b646</webElementGuid>
+      <webElementGuid>ff30a4e1-635e-4fff-b866-75f0a6ece8b6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +71,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Do you really want to delete 25 Elements?'])[1]/following::lang[1]</value>
-      <webElementGuid>bb73bdef-cc0f-4e6e-ad43-162521e91f61</webElementGuid>
+      <webElementGuid>6cd65fb1-2093-4960-9ce8-59773f809b5f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +79,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[3]/following::lang[1]</value>
-      <webElementGuid>a970c84e-2dcb-4c9a-bfa7-78e7d173d928</webElementGuid>
+      <webElementGuid>f5eb1f86-dd23-4aa1-8d76-7f98e35ee441</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +87,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[1]/preceding::lang[1]</value>
-      <webElementGuid>259501b0-3b97-4df6-b2ba-89e39a7590fd</webElementGuid>
+      <webElementGuid>9efc490b-7d4e-4b05-b7bf-f367565a29a7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +95,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Imprint'])[1]/preceding::lang[2]</value>
-      <webElementGuid>47ca0c21-5a29-4177-9d4d-ef07691d331a</webElementGuid>
+      <webElementGuid>f35a3dae-02dc-409f-ab94-dfa245ee9bcf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +103,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Yes']/parent::*</value>
-      <webElementGuid>838e6940-f06e-4827-afc7-d1b9070a37b2</webElementGuid>
+      <webElementGuid>3b4c3984-5fd3-4239-9ede-225b0ec8fabc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +111,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/div/div/div[3]/button/lang</value>
-      <webElementGuid>0f9afa5e-a2ba-4b5d-9810-b17a148947aa</webElementGuid>
+      <webElementGuid>2ca33291-d69c-49ed-a88b-f08615b2339d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,6 +119,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//lang[@name = 'button_yes' and (text() = 'Yes' or . = 'Yes')]</value>
-      <webElementGuid>02a7375e-8d1e-4320-9b43-796cc97991ad</webElementGuid>
+      <webElementGuid>50606df6-833a-4671-be57-4425906096d0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

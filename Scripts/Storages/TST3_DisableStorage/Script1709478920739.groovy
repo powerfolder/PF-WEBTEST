@@ -30,7 +30,7 @@ WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/a_Enable'))
 
-WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/lang_Yes'))
+WebUI.click(findTestObject('Storage/Page_Storage - PowerFolder/lang_Yes'))
 
 WebUI.delay(3)
 
@@ -40,7 +40,7 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/a_Disable'))
 
-WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/button_Yes'))
+WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/lang_Yes'))
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/span_Storage disabled'))
 
@@ -52,4 +52,5 @@ WebElement findStorage(String storageName) {
 
     return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + storageName) + '\')]/td[1]/span'))
 }
+
 
