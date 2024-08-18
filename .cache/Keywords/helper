@@ -1,0 +1,41 @@
+{
+  "keywordFileContentHash": "6753311C02F8ED29B97E3A1D0625AD4E",
+  "keywordClasses": [
+    {
+      "name": "Helper",
+      "keywordMethods": [
+        {
+          "name": "getMembersCount",
+          "parameters": []
+        },
+        {
+          "name": "getRandomFolderName",
+          "parameters": []
+        },
+        {
+          "name": "getTimestamp",
+          "parameters": []
+        },
+        {
+          "name": "findShareButton",
+          "parameters": [
+            {
+              "name": "fileName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

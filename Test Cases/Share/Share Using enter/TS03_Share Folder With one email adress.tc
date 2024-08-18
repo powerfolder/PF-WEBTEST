@@ -4,7 +4,6 @@
    <name>TS03_Share Folder With one email adress</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>c66f2519-90d8-4d65-b961-69e352049319</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

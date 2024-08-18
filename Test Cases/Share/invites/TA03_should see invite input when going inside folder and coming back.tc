@@ -4,6 +4,5 @@
    <name>TA03_should see invite input when going inside folder and coming back</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>448cddb9-0091-43b2-9040-617aca709ac6</testCaseGuid>
 </TestCaseEntity>
