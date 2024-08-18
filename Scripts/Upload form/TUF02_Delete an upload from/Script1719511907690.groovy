@@ -98,7 +98,7 @@ WebUI.switchToWindowIndex('1')
 
 WebUI.refresh()
 
-WebUI.verifyElementText(findTestObject('1Upload_Form/Page_Error - PowerFolder/h4_HTTP ERROR        404'), 'HTTP ERROR 404', 
+WebUI.verifyElementText(findTestObject('1Upload_Form/Page_Error - PowerFolder/h4_HTTP ERROR        404'), 'HTTP FEHLER 404', 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
