@@ -720,6 +720,24 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG12_Change role of member</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>24677dfc-2b4f-46ab-9773-87123b148cfe</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>63804abc-8d6b-4a3d-b71e-13064994570a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a6f0eb19-0eb9-4a69-ae38-3a31c8e39dac</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>fbe94d69-9043-4484-b540-27bd789b9e94</guid>

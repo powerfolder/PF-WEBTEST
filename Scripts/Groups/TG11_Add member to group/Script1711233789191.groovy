@@ -35,14 +35,12 @@ WebUI.callTestCase(findTestCase('Groups/Pre_test/add member'), [:], FailureHandl
 // Navigation vers la page d'édition des groupes
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
-WebUI.delay(2 // Ajout d'un délai pour permettre le chargement de la page
-    )
+WebUI.delay(2)
 
 // Navigation vers la page des membres
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
-WebUI.delay(2 // Ajout d'un délai pour permettre le chargement de la page
-    )
+WebUI.delay(2)
 
 // Initialisation de l'attente explicite
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 10)
@@ -54,8 +52,7 @@ WebElement user = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xp
 // Assertion pour vérifier que l'utilisateur a été trouvé
 assert user != null : 'L\'élément utilisateur n\'a pas été trouvé.'
 
-WebUI.delay(2 // Ajout d'un délai pour permettre le chargement de la page
-    )
+WebUI.delay(2)
 
 user.click()
 

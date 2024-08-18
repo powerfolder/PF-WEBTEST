@@ -64,6 +64,8 @@ WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Delete'))
 // Clique sur le bouton "Yes" dans la page "Groups - PowerFolder"
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Yes'))
 
+WebUI.refresh()
+
 // Attendre pendant 3 secondes
 WebUI.delay(2)
 

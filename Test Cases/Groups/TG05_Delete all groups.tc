@@ -4,5 +4,6 @@
    <name>TG05_Delete all groups</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>694ad84e-9bca-42d8-8494-3d15115329c7</testCaseGuid>
 </TestCaseEntity>

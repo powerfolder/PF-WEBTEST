@@ -4,5 +4,45 @@
    <name>TG12_Change role of member</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>7d673ec5-7390-47af-a7b7-2539315b3fff</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>24677dfc-2b4f-46ab-9773-87123b148cfe</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>63804abc-8d6b-4a3d-b71e-13064994570a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a6f0eb19-0eb9-4a69-ae38-3a31c8e39dac</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'DriverFactory.getWebDriver()'</defaultValue>
+      <description></description>
+      <id>24677dfc-2b4f-46ab-9773-87123b148cfe</id>
+      <masked>false</masked>
+      <name>driver</name>
+   </variable>
+   <variable>
+      <defaultValue>'/html/body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[4]/div[2]/table/tbody/tr[2]/td[3]/div/button'</defaultValue>
+      <description></description>
+      <id>63804abc-8d6b-4a3d-b71e-13064994570a</id>
+      <masked>false</masked>
+      <name>xpath</name>
+   </variable>
+   <variable>
+      <defaultValue>'driver.findElement(By.xpath(xpath))'</defaultValue>
+      <description></description>
+      <id>a6f0eb19-0eb9-4a69-ae38-3a31c8e39dac</id>
+      <masked>false</masked>
+      <name>button</name>
+   </variable>
 </TestCaseEntity>

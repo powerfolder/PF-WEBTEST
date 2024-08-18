@@ -3,6 +3,7 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.annotation.Keyword as Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -16,35 +17,54 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.By as By
+import java.util.Arrays as Arrays
+import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
+import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
+
+// Génération d'un nom d'utilisateur aléat
+String user = 'user_$RandomStringUtils.randomNumeric(4)@test.com'
+
+GlobalVariable.userName = user
+
+// Génération d'un nom de groupe aléatoire
+String groupName = 'Group_$RandomStringUtils.randomNumeric(4)'
+
+GlobalVariable.GroupName = groupName
 
 // Appel du cas de test pour ajouter un membre
 WebUI.callTestCase(findTestCase('Groups/Pre_test/add member'), [:], FailureHandling.STOP_ON_FAILURE)
 
-// Navigation vers la page d'édition des groupes
+// Navigation vers la section "Edit"
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
-WebUI.delay(2) // Ajout d'un délai pour permettre le chargement de la page
 
-// Navigation vers la page des membres
+// Navigation vers la section "Members"
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
-WebUI.delay(2) // Ajout d'un délai pour permettre le chargement de la page
 
-// Délai pour attendre le chargement de la page
-WebUI.delay(1)
+// Localisation du bouton via XPath et clic
+def xpath = '/html/body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[4]/div[2]/table/tbody/tr[2]/td[3]/div/button'
 
-// Clic sur le bouton "Is member"
-WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Is member'))
-WebUI.delay(1) // Ajout d'un délai pour permettre le chargement du menu déroulant
+def driver = DriverFactory.getWebDriver()
 
-// Clic sur l'élément "Is member"
-WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Is member'))
-WebUI.delay(1) // Ajout d'un délai pour permettre la sélection de l'élément
+def button = driver.findElement(By.xpath(xpath))
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button))
+
+WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
+
 
 // Clic sur le bouton "Save"
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
-WebUI.delay(1) // Ajout d'un délai pour permettre la sauvegarde des modifications
+
 
 // Vérification de la présence du message de confirmation de mise à jour du groupe
 WebUI.verifyElementPresent(findTestObject('Groups/Page_Groups - PowerFolder/div_Group updated'), 5)
 
 // Fermeture du navigateur
 WebUI.closeBrowser()
+
+

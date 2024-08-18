@@ -31,7 +31,7 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-user = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
+String user = ('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com'
 
 GlobalVariable.userName = user
 
@@ -51,6 +51,8 @@ WebUiBuiltInKeywords.setText(findTestObject('Accounts/InputQuota'), '5')
 
 WebUiBuiltInKeywords.click(findTestObject('Accounts/SaveButton'))
 
+WebUI.delay(2)
+
 WebDriver driver = DriverFactory.getWebDriver()
 
 WebElement userElement = driver.findElement(By.xpath(('//td/a[contains(text(),\'' + user) + '\')]'))
@@ -67,15 +69,15 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Dashboa
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'),
-	GlobalVariable.GroupName)
+WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
+    GlobalVariable.GroupName)
 
-WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/textarea_Organizations_pica_group_notes'),
-	'create group')
+WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/textarea_Organizations_pica_group_notes'), 
+    'create group')
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
-WebUI.delay(1)
+WebUI.delay(2)
 
 def btn = findGroup(groupName)
 
@@ -95,7 +97,7 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups 
 
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
 
-WebUI.delay(1)
+WebUI.delay(2)
 
 WebElement btn1 = findGroup(GlobalVariable.GroupName)
 
@@ -103,8 +105,8 @@ WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn
 
 @Keyword
 WebElement findGroup(String groupName) {
-	WebDriver driver = DriverFactory.getWebDriver()
+    WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + groupName) + '\')]/td[1]/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + groupName) + '\')]/td[1]/span'))
 }
 

@@ -4,5 +4,6 @@
    <name>TG11_Add member to group</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>ec497185-fc02-4e9e-946f-fe01471ea16a</testCaseGuid>
 </TestCaseEntity>
