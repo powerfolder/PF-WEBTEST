@@ -3,6 +3,9 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import static helpers.Helper.getRandomFolderName
+import static helpers.Helper.findShareButton
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -19,6 +22,9 @@ import org.openqa.selenium.By as By
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
+import java.util.Locale
+import java.text.SimpleDateFormat
+
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 String folderName = getRandomFolderName()
@@ -49,30 +55,6 @@ WebUI.delay(5)
 WebUI.verifyElementText(findTestObject('Share/Page_Folders - PowerFolder/td_usermailcom'), mail.toLowerCase())
 
 WebUI.closeBrowser()
-
-
-def int getMembersCount(){
-	WebDriver driver = DriverFactory.getWebDriver()
-	WebElement tbody = driver.findElement(By.xpath("//table[@id='share_table']/tbody"))
-	assert tbody
-	List<WebElement> rows_table = tbody.findElements(By.className("pica-highlight"))
-	return rows_table.size()
-}
-def String getRandomFolderName() {
-	String folderName = 'FD'+getTimestamp();
-	return folderName;
-}
-
-def String getTimestamp() {
-	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("ddMMMyyyyhhmmss");
-	return formattedDate;
-}
-
-def WebElement findShareButton(String fileName) {
-	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[6]/a"))
-}
 
 
 

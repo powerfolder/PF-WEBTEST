@@ -3,6 +3,9 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import static helpers.Helper.getRandomFolderName
+import static helpers.Helper.findShareButton
+import static helpers.Helper.getMembersCount
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -54,6 +57,7 @@ assert membersCount+3 ==  getMembersCount()
 
 
 WebUI.closeBrowser()
+<<<<<<< HEAD
 
 
 
@@ -80,3 +84,5 @@ def String getRandomFolderName() {
 	return folderName;
 	
 }
+=======
+>>>>>>> develop

@@ -1,0 +1,50 @@
+{
+  "keywordFileContentHash": "AAB7F4FBEE080B213470DBB69BE700FD",
+  "keywordClasses": [
+    {
+      "name": "helpers.Helper",
+      "keywordMethods": [
+        {
+          "name": "getMembersCount",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "getRandomFolderName",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "getRandomGroupName",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "getTimestamp",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "findShareButton",
+          "parameters": [
+            {
+              "name": "fileName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
