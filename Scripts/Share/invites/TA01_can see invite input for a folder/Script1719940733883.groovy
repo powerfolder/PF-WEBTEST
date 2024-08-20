@@ -46,25 +46,5 @@ boolean isVisible = WebUI.verifyElementVisible(findTestObject('Links/buttonCreat
 
 assert isVisible
 
-<<<<<<< HEAD
 WebUI.closeBrowser()
 
-def WebElement findShareButton(String fileName) {
-	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[7]/a"))
-}
-
-def String getRandomGroupName() {
-	String folderName = 'Group_'+getTimestamp();
-	return folderName;
-	
-}
-
-def String getTimestamp() {
-	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("ddMMMyyyyhhmmss");
-	return formattedDate;
-}
-=======
-WebUI.closeBrowser()
->>>>>>> develop

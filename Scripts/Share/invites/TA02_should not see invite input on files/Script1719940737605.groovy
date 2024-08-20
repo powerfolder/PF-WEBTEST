@@ -86,16 +86,3 @@ assert isVisible
 
 WebUI.closeBrowser()
 
-<<<<<<< HEAD
-def String getRandomFolderName() {
-	String folderName = 'Folder'+getTimestamp();
-	return folderName;
-	
-}
-def WebElement findShareButton(String fileName) {
-	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[7]/a"))
-}
-=======
->>>>>>> develop
-

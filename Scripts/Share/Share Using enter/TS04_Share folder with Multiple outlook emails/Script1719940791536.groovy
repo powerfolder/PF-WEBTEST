@@ -59,36 +59,3 @@ WebUI.sendKeys(findTestObject('Object Repository/Share/Page_Folders - PowerFolde
 assert membersCount+3 == getMembersCount()
 
 WebUI.closeBrowser()
-
-<<<<<<< HEAD
-
-def int getMembersCount(){
-	WebDriver driver = DriverFactory.getWebDriver()
-	WebElement tbody = driver.findElement(By.xpath("//table[@id='share_table']/tbody"))
-	assert tbody
-	List<WebElement> rows_table = tbody.findElements(By.className("pica-highlight"))
-	return rows_table.size()
-}
-
-
-def String getRandomFolderName() {
-	String folderName = 'Folder'+getTimestamp();
-	return folderName;
-	
-}
-WebElement findShareButton(String fileName) {
-    WebDriver driver = DriverFactory.getWebDriver()
-
-    return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[7]/a"))
-}
-
-String getTimestamp() {
-    Date todaysDate = new Date()
-
-    String formattedDate = todaysDate.format('dd.MMM.yyyy_hh.mm.ss')
-
-    return formattedDate
-}
-
-=======
->>>>>>> develop

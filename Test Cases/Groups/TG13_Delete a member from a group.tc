@@ -4,5 +4,6 @@
    <name>TG13_Delete a member from a group</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>22a304e2-d5c5-42ae-9c94-f44c00c463a3</testCaseGuid>
 </TestCaseEntity>

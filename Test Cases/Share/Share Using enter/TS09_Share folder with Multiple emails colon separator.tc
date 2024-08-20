@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>share folder with a list of users 
+   <description>share folder with a list of users &#xd;
 ex a@a.co,b@b.com,c@c.com</description>
    <name>TS09_Share folder with Multiple emails colon separator</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>fb87c83d-65c5-47b8-b4fe-9de9e2f1306d</testCaseGuid>
 </TestCaseEntity>

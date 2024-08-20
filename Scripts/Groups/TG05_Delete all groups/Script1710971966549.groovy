@@ -38,6 +38,8 @@ WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
+WebUI.refresh()
+
 String groupN = 'Group_2_' + RandomStringUtils.randomNumeric(4)
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
@@ -70,7 +72,7 @@ WebUI.refresh()
 WebUI.delay(2)
 
 // Vérification de la suppression des éléments dans la table
-List<WebElement> items = findGroup()
+List items = findGroup()
 
 // Méthode pour trouver les éléments dans la table
 assert items.isEmpty()
@@ -78,7 +80,7 @@ assert items.isEmpty()
 // Fermeture du navigateur
 WebUI.closeBrowser()
 
-List<WebElement> findGroup() {
+List findGroup() {
     WebDriver driver = DriverFactory.getWebDriver()
 
     return driver.findElements(By.xpath('//td[1]/span'))

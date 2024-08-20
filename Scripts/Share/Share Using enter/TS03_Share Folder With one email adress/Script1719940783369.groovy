@@ -54,24 +54,3 @@ WebUI.delay(5)
 WebUI.verifyElementText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom'), mail)
 
 WebUI.closeBrowser()
-<<<<<<< HEAD
-
-
-
-def String getRandomFolderName() {
-	String folderName = 'FD'+getTimestamp();
-	return folderName;
-}
-
-def String getTimestamp() {
-	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("dd_MMM_yyyy_hh_mm_ss");
-	return formattedDate;
-}
-
-def WebElement findShareButton(String fileName) {
-	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[7]/a"))
-}
-=======
->>>>>>> develop

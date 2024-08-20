@@ -12,6 +12,19 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>ea5f2274-03a5-4494-8334-0a86fa3508de</testSuiteGuid>
    <testCaseLink>
+      <guid>13394b78-a2d5-4ebe-aea2-957cb0d645f4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Login/Pretest - Admin Login</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8267ad87-1fe0-475f-86fb-985f831da147</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
       <guid>52b8d6bd-2ad6-4e9d-a647-a8cf41a3f551</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -150,19 +163,6 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL09_createFileLink - with max downloads</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>13394b78-a2d5-4ebe-aea2-957cb0d645f4</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Login/Pretest - Admin Login</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>8267ad87-1fe0-475f-86fb-985f831da147</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>c46087ec-d531-4e15-9eef-7c382317f4d8</guid>
