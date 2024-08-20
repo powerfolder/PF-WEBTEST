@@ -4,5 +4,6 @@
    <name>TG08_Delete a folder from a group</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>3001b2ec-c71b-4db3-b053-252f698e51d8</testCaseGuid>
 </TestCaseEntity>

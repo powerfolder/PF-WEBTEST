@@ -30,8 +30,9 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-
 println('Global Variable: ' + GlobalVariable.folderName)
+println('Global Variable: ' + GlobalVariable.GroupName)
+
 
 WebUI.callTestCase(findTestCase('Groups/Pre_test/add folder'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -41,8 +42,8 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups 
 
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
 
-WebElement folderElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(('//div[@id=\'pica_group_folders\']/div[2]/table/tbody/tr/td[2][contains(text(), \'' + 
-            GlobalVariable.folderName) + '\')]')))
+WebElement folderElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(('//div[@id=\'pica_group_folders\']/div[2]/table/tbody/tr/td[2][contains(text(), \'' +
+			GlobalVariable.folderName) + '\')]')))
 
 folderElement.click()
 
@@ -53,8 +54,6 @@ WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(element))
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Yes'))
 
 WebUI.delay(2)
-
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
 WebElement btn = findGroup(GlobalVariable.GroupName)
 
@@ -67,10 +66,10 @@ verifyNoElementWithFolderNamePresent('//*[@id="pica_group_folders"]/div[2]//*[co
 WebUI.closeBrowser()
 
 @Keyword
-WebElement findGroup(String groupName) {
-    WebDriver driver = DriverFactory.getWebDriver()
+WebElement findGroup(String Groupname) {
+	WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//td/a[contains(text(), \'' + groupName) + '\')]'))
+	return driver.findElement(By.xpath(('//td/a[contains(text(), \'' + GlobalVariable.GroupName) + '\')]'))
 }
 
 @Keyword
@@ -82,7 +81,6 @@ void verifyNoElementWithFolderNamePresent(String folderNameXpath) {
 		println("No element containing folder name '${GlobalVariable.folderName}' found.")
 	} else {
 		println("Elements containing folder name '${GlobalVariable.folderName}' found. Verification failed.")
-		// Vous pouvez également lever une exception ou prendre d'autres mesures appropriées ici
 	}
 }
 

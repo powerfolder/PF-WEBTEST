@@ -27,13 +27,14 @@ import java.util.List as List
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.GroupName = ('Group_' + RandomStringUtils.randomNumeric(4))
+String Groupname = GlobalVariable.GroupName
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
 
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
-    GlobalVariable.GroupName)
+    Groupname)
 
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/textarea_Organizations_pica_group_notes'), 
     'create group')
@@ -42,22 +43,22 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/b
 
 WebUI.delay(2)
 
-def btn = findGroup(GlobalVariable.GroupName)
+def btn = findGroup(Groupname)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 WebUI.delay(2)
 
-assert GlobalVariable.GroupName != null
+assert Groupname != null
 
 WebUI.delay(1)
 
 WebUI.closeBrowser()
 
 @Keyword
-WebElement findGroup(String groupName) {
+WebElement findGroup(String Groupname) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + groupName) + '\')]/td[1]/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + Groupname) + '\')]/td[1]/span'))
 }
 

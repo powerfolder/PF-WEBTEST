@@ -4,5 +4,6 @@
    <name>create_group</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>15dbe5c8-fc37-4911-ab28-e955b2f2359a</testCaseGuid>
 </TestCaseEntity>

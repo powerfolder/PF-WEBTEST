@@ -4,5 +4,6 @@
    <name>add organization</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>8345c758-6715-46a5-876b-16b878be1139</testCaseGuid>
 </TestCaseEntity>

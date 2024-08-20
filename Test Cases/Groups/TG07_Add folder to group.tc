@@ -4,5 +4,6 @@
    <name>TG07_Add folder to group</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>6c6943bc-e68c-4dc4-9cea-0e0a27ace811</testCaseGuid>
 </TestCaseEntity>

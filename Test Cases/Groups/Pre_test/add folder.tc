@@ -4,5 +4,6 @@
    <name>add folder</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>de2902fd-3e06-4c8a-b888-0b8f39d6f92f</testCaseGuid>
 </TestCaseEntity>

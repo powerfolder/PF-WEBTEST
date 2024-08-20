@@ -22,67 +22,51 @@ import com.kms.katalon.core.annotation.Keyword as Keyword
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import java.util.List as List
 
+// Appel du cas de test de connexion
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
-GlobalVariable.GroupName = ('Group_' + RandomStringUtils.randomNumeric(4))
+// Création de deux groupes
+String group_1 = 'Group_' + RandomStringUtils.randomNumeric(4)
+String group_2 = 'Group_2_' + RandomStringUtils.randomNumeric(4)
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 
+// Création du premier groupe
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
-
-WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
-    GlobalVariable.GroupName)
-
-WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/textarea_Organizations_pica_group_notes'), 
-    'create group')
-
+WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), group_1)
+WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/textarea_Organizations_pica_group_notes'), 'create group')
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
-
-WebUI.refresh()
-
-String groupN = 'Group_2_' + RandomStringUtils.randomNumeric(4)
-
-WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
-
-WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
-    groupN)
-
-WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/textarea_Organizations_pica_group_notes'), 
-    'create group')
-
-WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
-
 WebUI.delay(2)
 
+// Création du deuxième groupe
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
+WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), group_2)
+WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/textarea_Organizations_pica_group_notes'), 'create group')
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
+WebUI.delay(2)
+
+// Sélection et suppression des groupes créés
 WebElement premierElement = DriverFactory.getWebDriver().findElement(By.xpath('//div[2]/table/tbody/tr[1]'))
-
 premierElement.click()
-
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/select_all'))
-
-// Clique sur le lien "a_Delete" dans la page "Groups - PowerFolder"
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Delete'))
-
-// Clique sur le bouton "Yes" dans la page "Groups - PowerFolder"
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Yes'))
 
+WebUI.delay(5)
+
+// Vérification que la table est vide
+WebDriver driver = DriverFactory.getWebDriver()
+
+// Recharger la page pour être sûr que la table est mise à jour
 WebUI.refresh()
 
-// Attendre pendant 3 secondes
-WebUI.delay(2)
+// Attendre que la table soit mise à jour
+WebUI.delay(3)
 
-// Vérification de la suppression des éléments dans la table
-List items = findGroup()
+List<WebElement> items = driver.findElements(By.xpath('//td[1]/span'))
 
-// Méthode pour trouver les éléments dans la table
-assert items.isEmpty()
+assert items.isEmpty() : "La table n'est pas vide après la suppression des groupes."
 
 // Fermeture du navigateur
 WebUI.closeBrowser()
-
-List findGroup() {
-    WebDriver driver = DriverFactory.getWebDriver()
-
-    return driver.findElements(By.xpath('//td[1]/span'))
-}
 

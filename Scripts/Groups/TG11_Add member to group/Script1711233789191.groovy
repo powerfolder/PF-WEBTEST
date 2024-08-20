@@ -28,6 +28,7 @@ import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 
 // Initialisation de la variable globale
 GlobalVariable.userName = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
+println('Global Variable: ' + GlobalVariable.GroupName)
 
 // Appel du cas de test pour ajouter un membre
 WebUI.callTestCase(findTestCase('Groups/Pre_test/add member'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -66,6 +67,6 @@ WebUI.closeBrowser()
 WebElement findGroup(String groupName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + groupName) + '\')]/td[1]/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + GlobalVariable.GroupName) + '\')]/td[1]/span'))
 }
 

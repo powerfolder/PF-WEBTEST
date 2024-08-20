@@ -32,72 +32,13 @@ import java.awt.FileDialog as FileDialog
 import javax.swing.JFrame as JFrame
 import javax.net.ssl.*
 import java.security.cert.X509Certificate
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
 
-// Disable SSL verification
-def disableSSLVerification() {
-    TrustManager[] trustAllCerts = [ new X509TrustManager() {
-        public X509Certificate[] getAcceptedIssuers() { null }
-        public void checkClientTrusted(X509Certificate[] certs, String authType) { }
-        public void checkServerTrusted(X509Certificate[] certs, String authType) { }
-    } ]
 
-    SSLContext sc = SSLContext.getInstance("SSL")
-    sc.init(null, trustAllCerts, new java.security.SecureRandom())
-    HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory())
 
-    // Create all-trusting host name verifier
-    HostnameVerifier allHostsValid = new HostnameVerifier() {
-        public boolean verify(String hostname, SSLSession session) { true }
-    }
-
-    // Set the all-trusting host verifier
-    HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid)
-}
-
-// Call this method at the beginning of your test case
-disableSSLVerification()
-
-// Function to download an image from a URL and place it on the desktop
-def downloadImageAndPlaceOnDesktop(String imageUrl, String imageName) {
-    def desktopImagePath = Paths.get(System.getProperty('user.home'), 'Desktop', 'images')
-
-    if (!Files.exists(desktopImagePath)) {
-        Files.createDirectories(desktopImagePath)
-    }
-
-    def url = new URL(imageUrl)
-    def imagePath = Paths.get(desktopImagePath.toString(), imageName)
-
-    Files.copy(url.openStream(), imagePath, StandardCopyOption.REPLACE_EXISTING)
-}
-
-// Function to select an image automatically
-def selectImageAutomatically(String imagePath) {
-    try {
-        Robot robot = new Robot()
-
-        WebUI.delay(1)
-
-        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection(imagePath), null)
-
-        robot.keyPress(KeyEvent.VK_CONTROL)
-        robot.keyPress(KeyEvent.VK_V)
-        robot.keyRelease(KeyEvent.VK_V)
-        robot.keyRelease(KeyEvent.VK_CONTROL)
-
-        WebUI.delay(1)
-
-        robot.keyPress(KeyEvent.VK_ENTER)
-        robot.keyRelease(KeyEvent.VK_ENTER)
-    } catch (Exception e) {
-        e.printStackTrace()
-    }
-}
-
-// Main test script
-downloadImageAndPlaceOnDesktop('https://cdn-icons-png.flaticon.com/512/2919/2919906.png', 'avatar.png')
-
-// Execute test steps
 WebUI.callTestCase(findTestCase('Groups/Pre_test/create_group'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Edit_m'))
@@ -110,6 +51,86 @@ def desktopImagePath = Paths.get(System.getProperty('user.home'), 'Desktop', 'im
 selectImageAutomatically(desktopImagePath.toString())
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Close'))
-WebUI.verifyElementVisible(findTestObject('Groups/Page_Groups - PowerFolder/div_File successfully uploaded_av'))
+
+// Localisation du bouton via XPath et clic
+def xpath = '/html/body/div[2]/div[1]/div[2]/div[6]/div/div/div[3]/button[1]'
+
+def driver = DriverFactory.getWebDriver()
+
+def button = driver.findElement(By.xpath(xpath))
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button))
+
+WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Close'))
+
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
+
+WebUI.verifyElementVisible(findTestObject('Groups/Page_Groups - PowerFolder/div_File successfully uploaded_av'))
+
 WebUI.closeBrowser()
+
+// Disable SSL verification
+def disableSSLVerification() {
+	TrustManager[] trustAllCerts = [ new X509TrustManager() {
+		public X509Certificate[] getAcceptedIssuers() { null }
+		public void checkClientTrusted(X509Certificate[] certs, String authType) { }
+		public void checkServerTrusted(X509Certificate[] certs, String authType) { }
+	} ]
+
+	SSLContext sc = SSLContext.getInstance("SSL")
+	sc.init(null, trustAllCerts, new java.security.SecureRandom())
+	HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory())
+
+	// Create all-trusting host name verifier
+	HostnameVerifier allHostsValid = new HostnameVerifier() {
+		public boolean verify(String hostname, SSLSession session) { true }
+	}
+
+	// Set the all-trusting host verifier
+	HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid)
+}
+
+// Call this method at the beginning of your test case
+disableSSLVerification()
+
+// Function to download an image from a URL and place it on the desktop
+def downloadImageAndPlaceOnDesktop(String imageUrl, String imageName) {
+	def desktopImagePath = Paths.get(System.getProperty('user.home'), 'Desktop', 'images')
+
+	if (!Files.exists(desktopImagePath)) {
+		Files.createDirectories(desktopImagePath)
+	}
+
+	def url = new URL(imageUrl)
+	def imagePath = Paths.get(desktopImagePath.toString(), imageName)
+
+	Files.copy(url.openStream(), imagePath, StandardCopyOption.REPLACE_EXISTING)
+}
+
+// Function to select an image automatically
+def selectImageAutomatically(String imagePath) {
+	try {
+		Robot robot = new Robot()
+
+		WebUI.delay(1)
+
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection(imagePath), null)
+
+		robot.keyPress(KeyEvent.VK_CONTROL)
+		robot.keyPress(KeyEvent.VK_V)
+		robot.keyRelease(KeyEvent.VK_V)
+		robot.keyRelease(KeyEvent.VK_CONTROL)
+
+		WebUI.delay(1)
+
+		robot.keyPress(KeyEvent.VK_ENTER)
+		robot.keyRelease(KeyEvent.VK_ENTER)
+	} catch (Exception e) {
+		e.printStackTrace()
+	}
+}
+
+// Main test script
+downloadImageAndPlaceOnDesktop('https://cdn-icons-png.flaticon.com/512/2919/2919906.png', 'avatar.png')
+
+// Execute test steps
