@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TMA02_Delete Avatar</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>870d40bb-65f0-4f3d-baac-bea15b5edaeb</testCaseGuid>
+</TestCaseEntity>

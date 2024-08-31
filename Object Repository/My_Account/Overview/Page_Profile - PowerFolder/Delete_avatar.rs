@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Delete_avatar</name>
+   <tag></tag>
+   <elementGuidId>5656cd30-7d32-4281-8ee7-96fab5edcf95</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_content']/table/tbody/tr/td/div/a[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.profile-ui-avatar-delete.btn.btn-danger</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>b30810d7-df8e-4379-a25a-23959ff3cee9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>profile-ui-avatar-delete btn btn-danger</value>
+      <webElementGuid>90c1637d-94a3-4894-9108-d5eca1dddcda</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                            Delete
+                        </value>
+      <webElementGuid>d0e4479d-7a06-4759-b1d0-018ad9687c08</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_content&quot;)/table[@class=&quot;pica-nav-tab table table-responsive table-striped&quot;]/tbody[1]/tr[1]/td[@class=&quot;pica-column-avatar text-center hidden-sm hidden-xs&quot;]/div[@class=&quot;pica-block-on-big&quot;]/a[@class=&quot;profile-ui-avatar-delete btn btn-danger&quot;]</value>
+      <webElementGuid>26454198-bb76-4ffd-879d-ada014d66a91</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_content']/table/tbody/tr/td/div/a[2]</value>
+      <webElementGuid>0e4013f8-a719-4bda-bea3-947580b5f92d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Change'])[2]/following::a[1]</value>
+      <webElementGuid>28e31098-a3ef-49f7-a4f6-2aa6f6c2f1a6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Devices'])[3]/following::a[2]</value>
+      <webElementGuid>3ba85d5e-2988-48ac-9ddb-fc3b1e555e43</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Avatar'])[1]/preceding::a[1]</value>
+      <webElementGuid>cc6d907f-c73e-44e6-9e70-c637c332c93c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a[2]</value>
+      <webElementGuid>b9f0236a-06f8-49a1-88a7-eab355b1a2b2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[(text() = '
+                            Delete
+                        ' or . = '
+                            Delete
+                        ')]</value>
+      <webElementGuid>dee23fb4-8e7e-459d-89c7-97144e16704d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

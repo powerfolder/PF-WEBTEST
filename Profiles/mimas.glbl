@@ -56,12 +56,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'((\'user_\' + RandomStringUtils.randomNumeric(4)) + \'@test.com\')'</initValue>
+      <initValue>''</initValue>
       <name>userEmail</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'(\'My_Name_\' + RandomStringUtils.randomNumeric(4))'</initValue>
+      <initValue>''</initValue>
       <name>Name</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -73,5 +73,10 @@
       <description></description>
       <initValue>''</initValue>
       <name>folderName2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Tarinix1996!!!!@@'</initValue>
+      <name>PassWord</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

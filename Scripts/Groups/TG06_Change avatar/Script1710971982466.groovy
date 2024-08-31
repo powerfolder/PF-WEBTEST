@@ -52,6 +52,8 @@ selectImageAutomatically(desktopImagePath.toString())
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Close'))
 
+/*
+
 // Localisation du bouton via XPath et clic
 def xpath = '/html/body/div[2]/div[1]/div[2]/div[6]/div/div/div[3]/button[1]'
 
@@ -61,8 +63,9 @@ def button = driver.findElement(By.xpath(xpath))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button))
 
-WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Close'))
 
+WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Close'))
+*/
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
 
 WebUI.verifyElementVisible(findTestObject('Groups/Page_Groups - PowerFolder/div_File successfully uploaded_av'))

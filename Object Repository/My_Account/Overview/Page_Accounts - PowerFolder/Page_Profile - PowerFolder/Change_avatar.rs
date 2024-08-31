@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Change_avatar</name>
+   <tag></tag>
+   <elementGuidId>2e49d979-5742-40f5-a9a7-7110b9fe1830</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;pica_content&quot;]/table[1]/tbody/tr[1]/td[1]/div/a[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.profile-ui-avatar-change.btn.btn-default</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>80e11d53-278e-4fd7-b86c-d1b57b4edda4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>profile-ui-avatar-change btn btn-default</value>
+      <webElementGuid>932e334c-5f3d-41fb-8f9e-30a471d71445</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                            Change
+                        </value>
+      <webElementGuid>71f664d5-416f-436c-99c7-759c6767917b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_content&quot;)/table[@class=&quot;pica-nav-tab table table-responsive table-striped&quot;]/tbody[1]/tr[1]/td[@class=&quot;pica-column-avatar text-center hidden-sm hidden-xs&quot;]/div[@class=&quot;pica-block-on-big&quot;]/a[@class=&quot;profile-ui-avatar-change btn btn-default&quot;]</value>
+      <webElementGuid>5baccc88-64a4-4cec-a6d2-70f0723d142c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_content']/table/tbody/tr/td/div/a</value>
+      <webElementGuid>bfd7582c-30b9-4f36-ab17-c0195b1e4c0f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Devices'])[3]/following::a[1]</value>
+      <webElementGuid>11934eb4-466f-4786-94b5-e0edff057f35</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Organizations'])[3]/following::a[2]</value>
+      <webElementGuid>b77ad6d4-fcbc-4e13-baf2-10ac305a5ec1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[1]/preceding::a[1]</value>
+      <webElementGuid>82ceb340-d559-473f-8b35-2406db717ac7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/div/a</value>
+      <webElementGuid>0ec3f7f3-505b-4514-abf5-3c7cb415159d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[(text() = '
+                            Change
+                        ' or . = '
+                            Change
+                        ')]</value>
+      <webElementGuid>43e61401-7f1b-4d9c-a581-42f8ac86b25c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

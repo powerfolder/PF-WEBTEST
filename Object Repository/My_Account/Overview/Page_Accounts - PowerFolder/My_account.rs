@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>My_account</name>
+   <tag></tag>
+   <elementGuidId>fad0e0d6-946d-4414-a9af-3e9ac629e135</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//lang[@name='label_my_account'])[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>ul.pica-arrow-right.dropdown-menu.dropdown-menu-right > li > div.media > div.media-body > a > lang[name=&quot;label_my_account&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>lang</value>
+      <webElementGuid>4beab685-05ce-4c78-9617-a4eea30c4e3a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>label_my_account</value>
+      <webElementGuid>149370ec-54a8-43ee-9614-533191b5fa85</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>My account</value>
+      <webElementGuid>1bf90ad4-9ead-42f1-a521-d3bd9857c504</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_action_normal&quot;)/div[@class=&quot;pica-inline dropdown open&quot;]/ul[@class=&quot;pica-arrow-right dropdown-menu dropdown-menu-right&quot;]/li[1]/div[@class=&quot;media&quot;]/div[@class=&quot;media-body&quot;]/a[1]/lang[1]</value>
+      <webElementGuid>5c16161b-9438-40a7-a81f-5a5b49214154</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//lang[@name='label_my_account'])[2]</value>
+      <webElementGuid>13521662-6ca3-420c-97e8-591fba5e0979</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_action_normal']/div[2]/ul/li/div/div[2]/a/lang</value>
+      <webElementGuid>2bded30f-b720-4487-8e43-9356ef620769</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='admin'])[2]/following::lang[1]</value>
+      <webElementGuid>1920dcbd-1d02-403c-b14d-0f1a42b8e112</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Log out'])[1]/following::lang[1]</value>
+      <webElementGuid>bac581e1-f6d5-4848-a0d3-1f7eccc9f637</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Log out'])[2]/preceding::lang[1]</value>
+      <webElementGuid>e9670c54-ae88-4d0a-8e59-f825fe81ab64</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[1]/preceding::lang[2]</value>
+      <webElementGuid>8bf57cb8-64c2-497c-9402-a8ccee7694f4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/ul/li/div/div[2]/a/lang</value>
+      <webElementGuid>7eecd495-f101-4bc8-8b77-0bd714efccff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//lang[@name = 'label_my_account' and (text() = 'My account' or . = 'My account')]</value>
+      <webElementGuid>bc3e97a5-adc6-4d9a-b3ba-c2065addd6b7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
