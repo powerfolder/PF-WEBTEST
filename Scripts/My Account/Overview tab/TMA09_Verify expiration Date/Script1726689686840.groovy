@@ -28,6 +28,7 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Calendar as Calendar
 import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
+import java.util.Random as Random
 
 // Variables globales
 GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
@@ -40,7 +41,7 @@ String firstName = GlobalVariable.Name
 
 String lastName = 'nachname ' + generateRandomString(4)
 
-// Fonction pour générer un numéro de téléphone aléatoire
+// Générer un numéro de téléphone aléatoire
 String phone = generateRandomPhoneNumber()
 
 // Plan de test
@@ -56,13 +57,18 @@ WebUI.setText(findTestObject('Accounts/InputUserOrEmail'), Emailid)
 
 WebUI.setText(findTestObject('Accounts/InputPassword'), GlobalVariable.Pass)
 
-WebUI.setText(findTestObject('Accounts/InputFirstName'), firstName)
+// Générer la date et l'heure actuelles avec une minute ajoutée
+String newDateTime = generateDateTimePlusOneMinute()
 
-WebUI.setText(findTestObject('Accounts/InputLastName'), lastName)
+// Afficher la date dans la console (une seule fois)
+println('Date et heure générées : ' + newDateTime)
 
-WebUI.setText(findTestObject('Accounts/InputPhoneNo'), phone)
+// Effacer et saisir la nouvelle date dans le champ
+TestObject accountValidTill = findTestObject('My_Account/Page_Accounts - PowerFolder/input_Active_account_valid_till')
 
-WebUI.setText(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/account_storage_overwiew'), '5')
+WebUI.executeJavaScript('arguments[0].value = ""', [WebUI.findWebElement(accountValidTill)])
+
+WebUI.setText(accountValidTill, newDateTime)
 
 WebUI.click(findTestObject('Accounts/SaveButton'))
 
@@ -74,13 +80,17 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang
 
 WebUI.setText(findTestObject('Login/inputEmail'), Emailid)
 
-WebUI.click(findTestObject('Login/loginSubmit'))
-
 WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
 
-WebUI.click(findTestObject('Login/loginSubmit'))
+WebUI.click(findTestObject('Login/loginSubmit')) // Fonction pour générer une chaîne aléatoire
+// Fonction pour générer un numéro de téléphone aléatoire
+// Fonction pour générer la date et l'heure actuelles avec une minute ajoutée dans le format souhaité
 
-WebUI.delay(3)
+WebUI.verifyElementText(findTestObject('My_Account/Overview/Page_Login - PowerFolder/konto abgelaufen'), 'Konto ist abgelaufen')
+
+WebUI.delay(2)
+
+WebUI.closeBrowser()
 
 String generateRandomString(int length) {
     String characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
@@ -100,5 +110,15 @@ String generateRandomPhoneNumber() {
     Random random = new Random()
 
     return String.format('(%03d) %03d-%04d', random.nextInt(1000), random.nextInt(1000), random.nextInt(10000))
+}
+
+String generateDateTimePlusOneMinute() {
+    Calendar calendar = Calendar.getInstance()
+
+    calendar.add(Calendar.MINUTE, 1)
+
+    SimpleDateFormat sdf = new SimpleDateFormat('dd/MM/yyyy HH:mm')
+
+    return sdf.format(calendar.getTime())
 }
 

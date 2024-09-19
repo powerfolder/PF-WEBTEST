@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TMA04_Verify Username</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>debb4601-6ee3-4716-8ea5-9d7756bc822f</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ab9ad54f-3ae8-449c-825f-db319079a689</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.userEmail</defaultValue>
+      <description></description>
+      <id>ab9ad54f-3ae8-449c-825f-db319079a689</id>
+      <masked>false</masked>
+      <name>userEmail</name>
+   </variable>
+</TestCaseEntity>

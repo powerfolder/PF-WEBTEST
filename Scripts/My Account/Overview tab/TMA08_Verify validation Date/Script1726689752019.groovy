@@ -28,8 +28,10 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Calendar as Calendar
 import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
+import java.util.Random as Random
 
-// Variables globales
+// Function to get a timestamp
+// Global variables
 GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
 
 String Emailid = GlobalVariable.userEmail
@@ -40,10 +42,10 @@ String firstName = GlobalVariable.Name
 
 String lastName = 'nachname ' + generateRandomString(4)
 
-// Fonction pour générer un numéro de téléphone aléatoire
+// Generate a random phone number
 String phone = generateRandomPhoneNumber()
 
-// Plan de test
+// Test plan
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('LeftNavigationIcons/account'))
@@ -56,13 +58,17 @@ WebUI.setText(findTestObject('Accounts/InputUserOrEmail'), Emailid)
 
 WebUI.setText(findTestObject('Accounts/InputPassword'), GlobalVariable.Pass)
 
-WebUI.setText(findTestObject('Accounts/InputFirstName'), firstName)
+// Generate the current date and time with two months added
+WebUI.click(findTestObject('My_Account/Page_Accounts - PowerFolder/input_Active_account_valid_till'))
 
-WebUI.setText(findTestObject('Accounts/InputLastName'), lastName)
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Page_Accounts - PowerFolder/clear_date'))
 
-WebUI.setText(findTestObject('Accounts/InputPhoneNo'), phone)
+String newDateTime = generateDateTimePlusTwoMonths()
 
-WebUI.setText(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/account_storage_overwiew'), '5')
+// Print the date in the console (only once)
+println(newDateTime)
+
+WebUI.setText(findTestObject('My_Account/Page_Accounts - PowerFolder/input_Active_account_valid_till'), generateDateTimePlusTwoMonths())
 
 WebUI.click(findTestObject('Accounts/SaveButton'))
 
@@ -74,13 +80,55 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang
 
 WebUI.setText(findTestObject('Login/inputEmail'), Emailid)
 
-WebUI.click(findTestObject('Login/loginSubmit'))
-
 WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
-WebUI.delay(3)
+WebUI.delay(2)
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/My_account'))
+
+WebUI.mouseOver(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/span_date_overview'))
+
+// Retrieve the displayed date from 'span_date_overview'
+String displayedDateStr = WebUI.getText(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/span_date_overview'))
+
+println('Displayed date: ' + displayedDateStr)
+
+// Convert the string to a Date object with the correct format
+SimpleDateFormat sdfDisplayed = new SimpleDateFormat('dd MMMM yyyy', Locale.ENGLISH)
+
+Date displayedDate = sdfDisplayed.parse(displayedDateStr)
+
+// Generate the current date plus one month
+Calendar calendar = Calendar.getInstance()
+
+calendar.add(Calendar.MONTH, 1)
+
+Date currentDatePlusOneMonth = calendar.getTime()
+
+// Compare the dates
+if (displayedDate.after(currentDatePlusOneMonth)) {
+    WebUI.comment('The date in span_date_overview is greater than the current date plus one month.')
+} else {
+    WebUI.comment('The date in span_date_overview is less than or equal to the current date plus one month.')
+}
+
+WebUI.delay(2)
+
+WebUI.closeBrowser()
+
+String getTimestamp() {
+    Date todaysDate = new Date()
+
+    SimpleDateFormat sdf = new SimpleDateFormat('ddMMMyyyyHHmmss')
+
+    String formattedDate = sdf.format(todaysDate)
+
+    return formattedDate
+}
 
 String generateRandomString(int length) {
     String characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
@@ -100,5 +148,15 @@ String generateRandomPhoneNumber() {
     Random random = new Random()
 
     return String.format('(%03d) %03d-%04d', random.nextInt(1000), random.nextInt(1000), random.nextInt(10000))
+}
+
+String generateDateTimePlusTwoMonths() {
+    Calendar calendar = Calendar.getInstance()
+
+    calendar.add(Calendar.MONTH, 1)
+
+    SimpleDateFormat sdf = new SimpleDateFormat('dd/MM/yyyy HH:mm')
+
+    return sdf.format(calendar.getTime())
 }
 

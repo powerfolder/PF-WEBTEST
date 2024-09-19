@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TMA03_Upgrade Quota</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a2f0dc41-4633-4ce2-8a09-6ecbdf3ffe69</testCaseGuid>
+</TestCaseEntity>
