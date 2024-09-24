@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TMA13_Change Phone Numer</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4452e9e8-531a-4d51-8766-f2a196dcb621</testCaseGuid>
+</TestCaseEntity>
