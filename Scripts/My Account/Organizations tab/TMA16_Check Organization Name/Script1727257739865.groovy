@@ -50,17 +50,25 @@ WebUI.setText(findTestObject('Accounts/InputPassword'), GlobalVariable.Pass)
 
 WebUI.setText(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/account_storage_overwiew'), '5')
 
-WebUI.click(findTestObject('Accounts/SaveButton'))
+WebUI.click(findTestObject('My_Account/Detail/Page_Accounts - PowerFolder/a_Organizations'))
 
-WebUI.delay(3 // Ajout d'un délai pour s'assurer que la page est complètement chargée
-    )
+GlobalVariable.organisationName = ('Organisation_' + RandomStringUtils.randomNumeric(4))
 
-// Déconnexion
+organization = GlobalVariable.organisationName
+
+WebUI.setText(findTestObject('My_Account/Detail/Page_Accounts - PowerFolder/Create newCreate new and automatically assign'), 
+    organization)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('My_Account/Detail/Page_Accounts - PowerFolder/Create organization'))
+
+WebUI.click(findTestObject('My_Account/Detail/Page_Accounts - PowerFolder/organization_button_Save'))
+
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
-// Connexion avec le nouvel utilisateur
 WebUI.setText(findTestObject('Login/inputEmail'), Emailid)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
@@ -71,35 +79,13 @@ WebUI.click(findTestObject('Login/loginSubmit'))
 
 WebUI.delay(3)
 
-// Accès aux détails du compte utilisateur
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/My_account'))
 
-WebUI.click(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/a_Details'))
+WebUI.click(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/a_Organizations_tab'))
 
-WebUI.mouseOver(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/creation_date'))
-
-WebUI.delay(1)
-
-// Récupération de la date dans l'onglet utilisateur
-String Date_from_user_tab = WebUI.getText(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/creation_date'))
-
-println('Date from user tab: ' + Date_from_user_tab)
-
-// Vérification si la date est d'aujourd'hui
-SimpleDateFormat sdf = new SimpleDateFormat('yyyy-MM-dd' // Format de la date à ajuster selon votre cas
-)
-
-String today = sdf.format(new Date( // Date d'aujourd'hui au même format
-    ))
-
-// Vérification si la date récupérée est d'aujourd'hui
-if (Date_from_user_tab.contains(today)) {
-    println('La date est d\'aujourd\'hui : ' + Date_from_user_tab)
-} else {
-    println('La date n\'est pas d\'aujourd\'hui : ' + Date_from_user_tab)
-}
+WebUI.verifyElementText(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/check organization'), organization)
 
 WebUI.delay(3)
 
