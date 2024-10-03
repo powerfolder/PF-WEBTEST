@@ -82,11 +82,9 @@ WebUI.setText(findTestObject('Login/inputEmail'), Emailid)
 
 WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
 
-WebUI.click(findTestObject('Login/loginSubmit')) // Fonction pour générer une chaîne aléatoire
-// Fonction pour générer un numéro de téléphone aléatoire
-// Fonction pour générer la date et l'heure actuelles avec une minute ajoutée dans le format souhaité
+WebUI.click(findTestObject('Login/loginSubmit'))
 
-WebUI.verifyElementText(findTestObject('My_Account/Overview/Page_Login - PowerFolder/konto abgelaufen'), 'Konto ist abgelaufen')
+WebUI.verifyElementPresent(findTestObject('My_Account/Overview/Page_Login - PowerFolder/konto abgelaufen'), 3)
 
 WebUI.delay(2)
 

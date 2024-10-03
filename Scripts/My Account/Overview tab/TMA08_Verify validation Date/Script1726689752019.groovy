@@ -63,12 +63,12 @@ WebUI.click(findTestObject('My_Account/Page_Accounts - PowerFolder/input_Active_
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Page_Accounts - PowerFolder/clear_date'))
 
-String newDateTime = generateDateTimePlusTwoMonths()
+String newDateTime = generateDateTimePlusOneYear()
 
-// Print the date in the console (only once)
-println(newDateTime)
+WebUI.delay(2)
 
-WebUI.setText(findTestObject('My_Account/Page_Accounts - PowerFolder/input_Active_account_valid_till'), generateDateTimePlusTwoMonths())
+WebUI.setText(findTestObject('My_Account/Page_Accounts - PowerFolder/input_Active_account_valid_till'), newDateTime)
+
 
 WebUI.click(findTestObject('Accounts/SaveButton'))
 
@@ -91,6 +91,9 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/My_account'))
 
 WebUI.mouseOver(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/span_date_overview'))
+
+
+ 
 
 // Retrieve the displayed date from 'span_date_overview'
 String displayedDateStr = WebUI.getText(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/span_date_overview'))
@@ -119,6 +122,8 @@ if (displayedDate.after(currentDatePlusOneMonth)) {
 WebUI.delay(2)
 
 WebUI.closeBrowser()
+
+
 
 String getTimestamp() {
     Date todaysDate = new Date()
@@ -150,13 +155,16 @@ String generateRandomPhoneNumber() {
     return String.format('(%03d) %03d-%04d', random.nextInt(1000), random.nextInt(1000), random.nextInt(10000))
 }
 
-String generateDateTimePlusTwoMonths() {
-    Calendar calendar = Calendar.getInstance()
+String generateDateTimePlusOneYear() {
+	Calendar calendar = Calendar.getInstance()
 
-    calendar.add(Calendar.MONTH, 1)
+	calendar.add(Calendar.YEAR, 1) 
+	
+	SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm')
+	
 
-    SimpleDateFormat sdf = new SimpleDateFormat('dd/MM/yyyy HH:mm')
-
-    return sdf.format(calendar.getTime())
+	return sdf.format(calendar.getTime())
 }
+
+
 
