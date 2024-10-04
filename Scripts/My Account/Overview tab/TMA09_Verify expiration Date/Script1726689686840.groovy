@@ -70,6 +70,9 @@ WebUI.executeJavaScript('arguments[0].value = ""', [WebUI.findWebElement(account
 
 WebUI.setText(accountValidTill, newDateTime)
 
+WebUI.sendKeys(findTestObject('My_Account/Page_Accounts - PowerFolder/input_Active_account_valid_till'), Keys.chord(Keys.ENTER))
+
+
 WebUI.click(findTestObject('Accounts/SaveButton'))
 
 WebUI.delay(3)

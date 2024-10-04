@@ -69,6 +69,7 @@ WebUI.delay(2)
 
 WebUI.setText(findTestObject('My_Account/Page_Accounts - PowerFolder/input_Active_account_valid_till'), newDateTime)
 
+WebUI.sendKeys(findTestObject('My_Account/Page_Accounts - PowerFolder/input_Active_account_valid_till'), Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('Accounts/SaveButton'))
 
@@ -91,9 +92,6 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/My_account'))
 
 WebUI.mouseOver(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/span_date_overview'))
-
-
- 
 
 // Retrieve the displayed date from 'span_date_overview'
 String displayedDateStr = WebUI.getText(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/span_date_overview'))
@@ -122,8 +120,6 @@ if (displayedDate.after(currentDatePlusOneMonth)) {
 WebUI.delay(2)
 
 WebUI.closeBrowser()
-
-
 
 String getTimestamp() {
     Date todaysDate = new Date()
@@ -156,15 +152,12 @@ String generateRandomPhoneNumber() {
 }
 
 String generateDateTimePlusOneYear() {
-	Calendar calendar = Calendar.getInstance()
+    Calendar calendar = Calendar.getInstance()
 
-	calendar.add(Calendar.YEAR, 1) 
-	
-	SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm')
-	
+    calendar.add(Calendar.YEAR, 1)
 
-	return sdf.format(calendar.getTime())
+    SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm')
+
+    return sdf.format(calendar.getTime())
 }
-
-
 
