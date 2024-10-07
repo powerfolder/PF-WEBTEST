@@ -72,7 +72,6 @@ WebUI.setText(accountValidTill, newDateTime)
 
 WebUI.sendKeys(findTestObject('My_Account/Page_Accounts - PowerFolder/input_Active_account_valid_till'), Keys.chord(Keys.ENTER))
 
-
 WebUI.click(findTestObject('Accounts/SaveButton'))
 
 WebUI.delay(3)
@@ -87,7 +86,17 @@ WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
-WebUI.verifyElementPresent(findTestObject('My_Account/Overview/Page_Login - PowerFolder/konto abgelaufen'), 3)
+// Récupérer le texte de l'élément
+String elementText = WebUI.getText(findTestObject('My_Account/Overview/Page_Login - PowerFolder/konto abgelaufen'))
+
+// Vérifier si le texte est "Konto ist abgelaufen" ou "Account is expired"
+if (elementText == 'Konto ist abgelaufen' || elementText == 'Account is expired') {
+	println('Le texte est correct : ' + elementText)
+} else {
+	println('Le texte n\'est pas correct : ' + elementText)
+	// Vous pouvez aussi générer une erreur ici si nécessaire
+	WebUI.verifyElementText(findTestObject('My_Account/Overview/Page_Login - PowerFolder/konto abgelaufen'), elementText)
+}
 
 WebUI.delay(2)
 

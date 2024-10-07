@@ -17,6 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang.RandomStringUtils as RandomStringUtils
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.testobject.ConditionType
+
 
 WebUI.callTestCase(findTestCase('My Account/Pre_test/Create Account'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -40,9 +44,14 @@ WebUI.setText(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/Set
 
 WebUI.setText(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/Confirme_New_Password'), NewPasswordWithSymbols)
 
-WebUI.verifyElementClickable(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/button_Change_password'))
+WebUI.delay(2)
 
-WebUI.click(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/button_Change_password'))
+// Cliquez directement sur l'élément en utilisant XPath
+TestObject btn_change = new TestObject().addProperty('xpath', ConditionType.EQUALS, '//body/div[2]/div[1]/div[2]/div[5]/div/div/div[3]/button[1]')
+WebUI.click(btn_change)
+
+//TestObject btn_cancel = new TestObject().addProperty('xpath', ConditionType.EQUALS, '//body/div[2]/div[1]/div[2]/div[5]/div/div/div[3]/button[2]')
+//WebUI.click(btn_cancel)
 
 WebUI.delay(3)
 
