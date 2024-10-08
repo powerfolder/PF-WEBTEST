@@ -31,6 +31,8 @@ WebUI.selectOptionByLabel(findTestObject('My_Account/Overview/Page_Profile - Pow
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Page_Profile - PowerFolder/button_Change_langue'))
 
+WebUI.delay(2)
+
 WebUI.verifyElementText(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/td_lang'), 'English')
 
 WebUI.delay(2)

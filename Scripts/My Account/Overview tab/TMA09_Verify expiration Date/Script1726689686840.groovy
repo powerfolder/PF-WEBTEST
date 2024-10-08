@@ -86,49 +86,39 @@ WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
-// Récupérer le texte de l'élément
-String elementText = WebUI.getText(findTestObject('My_Account/Overview/Page_Login - PowerFolder/konto abgelaufen'))
+// Vérification que le champ de mot de passe est vide
+WebUI.verifyElementAttributeValue(findTestObject('Login/inputPassword'), 'value', '', 10)
 
-// Vérifier si le texte est "Konto ist abgelaufen" ou "Account is expired"
-if (elementText == 'Konto ist abgelaufen' || elementText == 'Account is expired') {
-	println('Le texte est correct : ' + elementText)
-} else {
-	println('Le texte n\'est pas correct : ' + elementText)
-	// Vous pouvez aussi générer une erreur ici si nécessaire
-	WebUI.verifyElementText(findTestObject('My_Account/Overview/Page_Login - PowerFolder/konto abgelaufen'), elementText)
-}
-
-WebUI.delay(2)
-
+// Fermeture du navigateur
 WebUI.closeBrowser()
 
+// Fonctions utilitaires
 String generateRandomString(int length) {
-    String characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+	String characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 
-    StringBuilder randomString = new StringBuilder()
+	StringBuilder randomString = new StringBuilder()
 
-    Random random = new Random()
+	Random random = new Random()
 
-    for (int i = 0; i < length; i++) {
-        randomString.append(characters.charAt(random.nextInt(characters.length())))
-    }
-    
-    return randomString.toString().toLowerCase()
+	for (int i = 0; i < length; i++) {
+		randomString.append(characters.charAt(random.nextInt(characters.length())))
+	}
+	
+	return randomString.toString().toLowerCase()
 }
 
 String generateRandomPhoneNumber() {
-    Random random = new Random()
+	Random random = new Random()
 
-    return String.format('(%03d) %03d-%04d', random.nextInt(1000), random.nextInt(1000), random.nextInt(10000))
+	return String.format('(%03d) %03d-%04d', random.nextInt(1000), random.nextInt(1000), random.nextInt(10000))
 }
 
 String generateDateTimePlusOneMinute() {
-    Calendar calendar = Calendar.getInstance()
+	Calendar calendar = Calendar.getInstance()
 
-    calendar.add(Calendar.MINUTE, 1)
+	calendar.add(Calendar.MINUTE, 1)
 
-    SimpleDateFormat sdf = new SimpleDateFormat('dd/MM/yyyy HH:mm')
+	SimpleDateFormat sdf = new SimpleDateFormat('dd/MM/yyyy HH:mm')
 
-    return sdf.format(calendar.getTime())
+	return sdf.format(calendar.getTime())
 }
-

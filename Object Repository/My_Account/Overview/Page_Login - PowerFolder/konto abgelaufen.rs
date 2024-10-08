@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='notification_1294654753']/div/span[2]</value>
+         <value>//div[2]/div/span[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>783c6d89-aaf4-4de1-af67-cd10463c4c6d</webElementGuid>
+      <webElementGuid>83a9517f-ec0b-4907-b8c5-1c0211a2cc56</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Konto ist abgelaufen</value>
-      <webElementGuid>d1363b40-e3c6-4bf7-a830-61b35f0eded5</webElementGuid>
+      <webElementGuid>9c149308-de2d-410f-b5a7-315506a74bc2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;notification_1294654753&quot;)/div[@class=&quot;pica-notification-box alert alert-danger&quot;]/span[2]</value>
-      <webElementGuid>80cb4c08-bc00-4df8-98b8-d08677aef814</webElementGuid>
+      <webElementGuid>b0778dd9-0238-4200-b78c-70bc088017e1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='notification_1294654753']/div/span[2]</value>
-      <webElementGuid>a62dee44-587d-4e17-8094-0182b1a6e6d0</webElementGuid>
+      <webElementGuid>c3fdfc35-5864-4e2a-b7bf-5ce04be81115</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Powered by PowerFolder'])[1]/following::span[2]</value>
-      <webElementGuid>24085a6e-c47e-4621-bfe8-d293498bc46e</webElementGuid>
+      <webElementGuid>1dc08b6e-4f52-4c05-a9d2-a792058757b9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -63,7 +63,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cookie-Richtlinie'])[1]/following::span[2]</value>
-      <webElementGuid>8b442dac-541c-4948-9bf9-aaff061264de</webElementGuid>
+      <webElementGuid>c8f754d7-4282-4773-b1eb-25742c9e6684</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[1]/preceding::span[1]</value>
-      <webElementGuid>953e8603-5397-4b58-a0ac-775dd2dc1cec</webElementGuid>
+      <webElementGuid>6b76c6e9-62d6-4a8f-b241-bae1f206c9c0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Konto ist abgelaufen']/parent::*</value>
-      <webElementGuid>35214e21-5276-4269-afa1-f15f84b44c4b</webElementGuid>
+      <webElementGuid>5fbac837-d548-4ed0-89b4-40277a9bf94c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,14 +87,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/span[2]</value>
-      <webElementGuid>d16b893c-2c30-4b0b-a98f-714bc3700e1a</webElementGuid>
+      <webElementGuid>b8bb86af-6d8b-498d-a97d-854dfc1f95c7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Konto ist abgelaufen' or . = 'Konto ist abgelaufen')]</value>
-      <webElementGuid>60f78187-ae76-4926-9d52-c8c670783c6f</webElementGuid>
+      <value>//span[(text() = 'Konto ist abgelaufen' or . = 'Account is expired')]</value>
+      <webElementGuid>026c9a67-2d5c-4aff-98e1-67cfb08c5fd2</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
