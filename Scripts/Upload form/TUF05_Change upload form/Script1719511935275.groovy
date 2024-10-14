@@ -77,6 +77,8 @@ WebUI.switchToWindowIndex(1)
 
 WebUI.refresh()
 
+WebUI.delay(2)
+
 WebUI.verifyElementText(findTestObject('1Upload_Form/Page_Link - PowerFolder/Verify_change'), 'change description')
 
 WebUI.delay(2)

@@ -46,7 +46,10 @@ WebUI.verifyElementClickable(findTestObject('1Upload_Form/Page_Folders - PowerFo
 
 WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Create upload form'))
 
+WebUI.delay(5)
+
 WebUI.setText(findTestObject('1Upload_Form/Page_Folders - PowerFolder/input_uploadform_heading'), 'Workshop')
+
 
 WebUI.setText(findTestObject('1Upload_Form/Page_Folders - PowerFolder/change_description'), 'Workshop number 1')
 

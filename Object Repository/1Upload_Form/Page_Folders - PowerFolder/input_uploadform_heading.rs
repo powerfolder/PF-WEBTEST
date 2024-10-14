@@ -6,12 +6,12 @@
    <elementGuidId>27f6c776-641e-4716-8fa2-6118f8f5189e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id = 'pica_uploadform_heading' and @type = 'text' and @placeholder = 'Heading']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#pica_uploadform_heading</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//body/div[2]/div[1]/div[2]/div[16]/div/div/div[2]/div[1]/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>e7d945b0-ca2c-4ce0-b55d-d097b56c3944</webElementGuid>
+      <webElementGuid>d55a9399-567d-4558-9a74-49e38b0ebfc6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <name>id</name>
       <type>Main</type>
       <value>pica_uploadform_heading</value>
-      <webElementGuid>835f7c9c-c277-4fe3-bb10-2ccc5796a7c1</webElementGuid>
+      <webElementGuid>89fc3adf-e185-4877-a6b1-dbc4c4fd1f0a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control</value>
-      <webElementGuid>5d724160-2e24-424a-8bcf-af0bb710cc95</webElementGuid>
+      <webElementGuid>b2d07415-d19b-4261-9009-2f835f294c1a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>d0a8eeeb-e22b-4106-a5c6-e5f985dbf669</webElementGuid>
+      <webElementGuid>33005f2a-3c14-4821-a1a7-0a5d9710d284</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>data-placeholder</name>
       <type>Main</type>
       <value>placeholder_heading</value>
-      <webElementGuid>42c07572-c43a-452d-8019-def03336ca8f</webElementGuid>
+      <webElementGuid>3b80b638-5be3-4ad6-86d6-164aa9aaad72</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -63,7 +63,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Heading</value>
-      <webElementGuid>2966aa81-d8a0-4a7c-84eb-f91640809429</webElementGuid>
+      <webElementGuid>23bb50bd-692b-4969-8d75-d92613551357</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_uploadform_heading&quot;)</value>
-      <webElementGuid>d1be859d-f8d4-4c3d-a520-ef39667efad6</webElementGuid>
+      <webElementGuid>fd950445-13aa-45df-8379-2cc361a9dc29</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='pica_uploadform_heading']</value>
-      <webElementGuid>5690a971-6ebb-4198-b56d-a9df0ed82dd7</webElementGuid>
+      <webElementGuid>bf156e81-d666-4b9b-870b-67300cfca364</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +87,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_uploadform_dialog']/div/div/div[2]/div/input</value>
-      <webElementGuid>3066e165-9790-4e05-866b-f865c3acdf75</webElementGuid>
+      <webElementGuid>b4ec7400-f06d-41b5-8dcc-b0fca9304fe4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +95,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[16]/div/div/div[2]/div/input</value>
-      <webElementGuid>97c2b8fa-cc91-4df6-96a2-8e12f2b97e6c</webElementGuid>
+      <webElementGuid>623ba9ca-845d-45f8-91a7-d467fc1c2018</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,6 +103,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'pica_uploadform_heading' and @type = 'text' and @placeholder = 'Heading']</value>
-      <webElementGuid>3d3716f6-5b25-4a84-9a02-8e1ba7720784</webElementGuid>
+      <webElementGuid>5d6e1ee9-8777-4117-9b92-417d2b93dfae</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
