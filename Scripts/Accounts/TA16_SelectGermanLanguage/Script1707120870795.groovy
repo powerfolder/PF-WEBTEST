@@ -56,7 +56,7 @@ WebUI.setText(findTestObject('Accounts/InputLastName'), lastName)
 
 WebUI.setText(findTestObject('Accounts/InputPhoneNo'), phone)
 
-WebUI.setText(findTestObject('Accounts/InputQuota'), '5')
+WebUI.setText(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/account_storage_overwiew'), '5')
 
 WebUI.selectOptionByLabel(findTestObject('Accounts/SelectLanguageDropDrown'), 'Deutsch', false)
 

@@ -48,11 +48,12 @@ WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys
 
 WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'),  '0')
 
-WebUI.delay(10)
+WebUI.delay(3)
 WebUI.click(findTestObject('SettingsPopUp/buttonSave'))
 WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor);
 WebUI.navigateToUrl(my_clipboard)
+WebUI.delay(3)
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 assert WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Download Limit Reached'),2)
 assert isNotBlank(WebUI.getText(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Download Limit Reached')))

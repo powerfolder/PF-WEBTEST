@@ -4,5 +4,6 @@
    <name>TA17_VerifyDeactiveAccountButton</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>c70f57f6-5fbc-43a3-bbb1-87003c4d8cc1</testCaseGuid>
 </TestCaseEntity>

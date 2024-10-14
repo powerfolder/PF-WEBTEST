@@ -28,9 +28,13 @@ WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHa
 String folderName = getRandomFolderName()
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
+
 WebUI.click(findTestObject('Folders/createFolder'))
+
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
+
 WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebUI.click(findTestObject('Object Repository/Folders/Page_Dashboard - PowerFolder/lang_Groups'))
@@ -40,6 +44,8 @@ WebUI.click(findTestObject('Object Repository/Share/Page_Groups - PowerFolder/cr
 WebUI.setText(findTestObject('Object Repository/Share/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), "Group_${ -> folderName }")
 
 WebUI.click(findTestObject('Object Repository/Share/Page_Groups - PowerFolder/lang_Save'))
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 

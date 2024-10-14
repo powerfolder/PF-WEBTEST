@@ -4,5 +4,6 @@
    <name>TA13_VerifyResetNowButton</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>3d6805c2-10b1-43a6-bf76-e4cf087f3646</testCaseGuid>
 </TestCaseEntity>

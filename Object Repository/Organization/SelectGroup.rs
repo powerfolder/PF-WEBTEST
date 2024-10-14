@@ -6,14 +6,14 @@
    <elementGuidId>2ec57c86-f110-4f68-9aff-52c74d89f3db</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//div)[75]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[5]/div[1]/div[1]/ul</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

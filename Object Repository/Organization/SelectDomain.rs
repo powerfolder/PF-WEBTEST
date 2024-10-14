@@ -7,13 +7,13 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//li[@class='hidden-xs'])[2]/a</value>
+         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/ul/li[3]/a</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

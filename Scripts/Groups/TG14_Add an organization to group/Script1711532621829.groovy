@@ -45,9 +45,11 @@ WebUiBuiltInKeywords.setText(findTestObject('Organization/InputName'), GlobalVar
 
 WebUiBuiltInKeywords.setText(findTestObject('Organization/InputMaxNumber'), '10')
 
-WebUiBuiltInKeywords.setText(findTestObject('Organization/InputQuota'), '2')
+WebUiBuiltInKeywords.setText(findTestObject('Organization/Page_Organizations - PowerFolder/organization_storage'), '2')
 
 WebUiBuiltInKeywords.click(findTestObject('Organization/SaveButton'))
+
+WebUI.delay(2)
 
 WebDriver driver = DriverFactory.getWebDriver()
 

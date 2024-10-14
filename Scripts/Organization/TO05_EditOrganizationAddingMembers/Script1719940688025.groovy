@@ -16,81 +16,51 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.By as By
-import java.text.SimpleDateFormat
-import java.util.Calendar
-import java.util.Date
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 
-WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
+String Organization_name = GlobalVariable.organisationName
+println('Organization_name: ' + Organization_name)
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
-assert WebUI.getWindowTitle().equals('Dashboard - PowerFolder')
-WebUI.click(findTestObject('Organization/SelectOrganization'))
-WebUI.click(findTestObject('Organization/DropDownToggle'))
-WebUI.click(findTestObject('Organization/CreateOrganization'))
-WebUI.delay(3)
-String lan = GlobalVariable.LANG
-if(!lan.equals('GERMAN')) {
-WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyCreateOrganization')), 'Create a new Organization',  FailureHandling.CONTINUE_ON_FAILURE)
-}else {
-	WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyCreateOrganization')), 'Organisation neu erstellen',  FailureHandling.CONTINUE_ON_FAILURE)
-	
-}
-String orgName = 'TO'+generateRandomString(5)
-WebUI.setText(findTestObject('Organization/InputName'), orgName)
-WebUI.setText(findTestObject('Organization/InputMaxNumber'), "10")
-WebUI.setText(findTestObject('Organization/InputQuota'), "2")
-def currentDate = new Date()
-// Format the date and time as per your requirement
-def dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm a")
-def formattedDate = dateFormat.format(currentDate)
-WebUI.click(findTestObject('Organization/InputValidFrom'))
-def calendar = Calendar.getInstance()
-calendar.setTime(currentDate)
-calendar.add(Calendar.DAY_OF_MONTH, 3)
-def futureDate = calendar.getTime()
-// Set the date and time with the timestamp plus 3 days
-//WebUI.setText(findTestObject('Organization/InputValidtill'), dateFormat.format(futureDate))
-WebUI.setText(findTestObject('Organization/EnterNotes'), "AutomationNotes")
-WebUI.delay(3)
-WebUI.click(findTestObject('Organization/SaveButton'))
-WebUI.delay(10)
-//WebUI.click(findTestObject('Organization/SelectCreatedOrganization'))
-WebDriver driver = DriverFactory.getWebDriver()
-orgElement = driver.findElement(By.xpath("//a[(@class='pica-name') and (text() ='"+orgName+"')]"))
-orgElement.click()
-WebUI.click(findTestObject('Organization/EditButton'),FailureHandling.OPTIONAL )
-if(!lan.equals('GERMAN')) {
-WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyEditPageHeader')), 'Edit Organization',  FailureHandling.CONTINUE_ON_FAILURE)
-}else {
-	WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyEditPageHeader')), 'Organisation bearbeitet',  FailureHandling.CONTINUE_ON_FAILURE)
-}
+WebUI.callTestCase(findTestCase('Organization/Pre_test/Create_Org'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.click(findTestObject('Organization/AddMembers'))
-WebUI.setText(findTestObject('Organization/InputAddAccountByName'), "ajit@thoughtcoders.com")
+
+String emailId = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
+
+WebUI.setText(findTestObject('Organization/InputAddAccountByName'), emailId)
+
 WebUI.sendKeys(findTestObject('Organization/InputAddAccountByName'), Keys.chord(Keys.ENTER))
+
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Organization/AddMemberButton'))
+
 WebUI.click(findTestObject('Organization/SaveButton'))
-WebUI.setText(findTestObject('Accounts/inputAccountSearch'),orgName )
-orgElement = driver.findElement(By.xpath("//a[(@class='pica-name') and (text() ='"+orgName+"')]"))
-//orgElement.click()
+
+WebUI.delay(2)
+
+WebUI.setText(findTestObject('Accounts/inputAccountSearch'), Organization_name)
+
+WebDriver driver = DriverFactory.getWebDriver()
+
+WebElement orgElement = driver.findElement(By.xpath(('//a[(@class=\'pica-name\') and (text() =\'' + Organization_name) + '\')]'))
+
+orgElement.click()
+
 WebUI.click(findTestObject('Organization/EditButton'), FailureHandling.OPTIONAL)
-WebUI.click(findTestObject('Organization/AddMembers'),  FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Organization/AddMembers'), FailureHandling.OPTIONAL)
+
 String memberName = WebUI.getText(findTestObject('Accounts/addedMember'))
-WebUI.verifyEqual(memberName, "ajit@thoughtcoders.com")
+
+WebUI.verifyEqual(memberName, emailId)
+
 WebUI.click(findTestObject('Organization/SaveButton'))
+
 WebUI.delay(3)
 WebUI.closeBrowser()
-
-String generateRandomString(int length) {
-	String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-	StringBuilder randomString = new StringBuilder()
-	Random random = new Random()
-
-	for (int i = 0; i < length; i++) {
-		randomString.append(characters.charAt(random.nextInt(characters.length())))
-	}
-
-	return randomString.toString().toLowerCase()
-}

@@ -78,6 +78,9 @@ String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getConten
 
 WebUI.navigateToUrl(my_clipboard)
 
+WebUI.delay(3)
+
+
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
 WebUI.verifyElementText(findTestObject('Page_Link - PowerFolder/getPasswordBodyText'), 'This link is password protected')

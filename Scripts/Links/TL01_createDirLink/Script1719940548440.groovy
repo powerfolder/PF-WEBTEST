@@ -80,13 +80,16 @@ WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(buttonCreateLink))
 WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'), '1')
 
 WebUI.click(findTestObject('SettingsPopUp/buttonSave'))
-WebUI.delay(10)
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
 
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor);
 
 WebUI.navigateToUrl(my_clipboard)
+
+WebUI.delay(3)
+
 
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 

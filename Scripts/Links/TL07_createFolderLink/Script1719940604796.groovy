@@ -20,58 +20,76 @@ import org.openqa.selenium.By as By
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
-import java.awt.Toolkit
-import java.awt.datatransfer.DataFlavor
-import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import java.awt.Toolkit as Toolkit
+import java.awt.datatransfer.DataFlavor as DataFlavor
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
+
 String folderName = getRandomFolderName()
+
 WebUI.click(findTestObject('Folders/createFolderIcon'))
+
 WebUI.click(findTestObject('Folders/createFolder'))
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.setText(findTestObject('Folders/inputFolderName'),folderName)
+
+WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
+
 WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebElement btn = findShareButton(folderName)
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-WebUI.waitForElementClickable(findTestObject('Links/buttonCreateLink'), 30, FailureHandling.CONTINUE_ON_FAILURE)
-WebElement buttonCreateLink = 	WebUiCommonHelper.findWebElement(findTestObject('Links/buttonCreateLink'),30)
-WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(buttonCreateLink))
-WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'),'2')
 
-WebUI.delay(10)
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+
+WebUI.waitForElementClickable(findTestObject('Links/buttonCreateLink'), 30, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebElement buttonCreateLink = WebUiCommonHelper.findWebElement(findTestObject('Links/buttonCreateLink'), 30)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonCreateLink))
+
+WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'), '2')
+
+WebUI.delay(3)
 
 WebUI.click(findTestObject('SettingsPopUp/buttonSave'))
+
 WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
 
-String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor);
+String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
 
-WebUI.navigateToUrl(my_clipboard) 
+WebUI.navigateToUrl(my_clipboard)
+
+WebUI.delay(3)
+
 
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-List list = driver.findElements(By.className("pica-crumb"));
+List<WebElement> list = driver.findElements(By.className('pica-crumb'))
 
-assert list.get(list.size()-1).getText().equals(folderName)
+assert list.get(list.size() - 1).getText().equals(folderName)
+
 WebUI.closeBrowser()
 
+String getRandomFolderName() {
+    String folderName = 'FTL7' + getTimestamp()
 
-
-def String getRandomFolderName() {
-	String folderName = 'FTL7'+getTimestamp();
-	return folderName;
-	
-}
-def WebElement findShareButton(String fileName) {
-	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[7]/a"))
+    return folderName
 }
 
-def String getTimestamp() {
-	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("ddMMMyyyyhhmmss");
-	return formattedDate;
+WebElement findShareButton(String fileName) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[7]/a"))
 }
+
+String getTimestamp() {
+    Date todaysDate = new Date()
+
+    String formattedDate = todaysDate.format('ddMMMyyyyhhmmss')
+
+    return formattedDate
+}
+

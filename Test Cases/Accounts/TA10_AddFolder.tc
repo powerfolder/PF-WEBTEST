@@ -4,5 +4,6 @@
    <name>TA10_AddFolder</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>c8f87b5e-159f-4d9e-8bfc-1938180c00f5</testCaseGuid>
 </TestCaseEntity>

@@ -36,89 +36,57 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
+import java.nio.file.Files
+import java.nio.file.Path
+import java.nio.file.Paths
+import com.kms.katalon.core.configuration.RunConfiguration
+import java.nio.file.Paths
+import java.awt.Robot
+import java.awt.Toolkit
+import java.awt.datatransfer.StringSelection
+import java.awt.event.KeyEvent
 
 
-
+// Appel du cas de test pour créer un groupe
 WebUI.callTestCase(findTestCase('Groups/Pre_test/create_group'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Edit_m'))
+
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Avatar'))
+
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Change'))
+
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/span_Add file_m'))
 
-// Select the downloaded image to continue the test
-def desktopImagePath = Paths.get(System.getProperty('user.home'), 'Desktop', 'images', 'avatar.png')
-selectImageAutomatically(desktopImagePath.toString())
+// Chemin vers l'image locale déjà présente dans le projet Katalon
+def localImagePath = Paths.get(RunConfiguration.getProjectDir(), 'images', 'avatar.png')
+
+// Utilisez l'image locale dans le reste de votre script
+selectImageAutomatically(localImagePath.toString())
+
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Close'))
 
-/*
-
-// Localisation du bouton via XPath et clic
-def xpath = '/html/body/div[2]/div[1]/div[2]/div[6]/div/div/div[3]/button[1]'
-
-def driver = DriverFactory.getWebDriver()
-
-def button = driver.findElement(By.xpath(xpath))
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button))
-
-
-WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Close'))
-*/
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
+
+WebUI.delay(3)
 
 WebUI.verifyElementVisible(findTestObject('Groups/Page_Groups - PowerFolder/div_File successfully uploaded_av'))
 
 WebUI.closeBrowser()
 
-// Disable SSL verification
-def disableSSLVerification() {
-	TrustManager[] trustAllCerts = [ new X509TrustManager() {
-		public X509Certificate[] getAcceptedIssuers() { null }
-		public void checkClientTrusted(X509Certificate[] certs, String authType) { }
-		public void checkServerTrusted(X509Certificate[] certs, String authType) { }
-	} ]
-
-	SSLContext sc = SSLContext.getInstance("SSL")
-	sc.init(null, trustAllCerts, new java.security.SecureRandom())
-	HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory())
-
-	// Create all-trusting host name verifier
-	HostnameVerifier allHostsValid = new HostnameVerifier() {
-		public boolean verify(String hostname, SSLSession session) { true }
-	}
-
-	// Set the all-trusting host verifier
-	HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid)
-}
-
-// Call this method at the beginning of your test case
-disableSSLVerification()
-
-// Function to download an image from a URL and place it on the desktop
-def downloadImageAndPlaceOnDesktop(String imageUrl, String imageName) {
-	def desktopImagePath = Paths.get(System.getProperty('user.home'), 'Desktop', 'images')
-
-	if (!Files.exists(desktopImagePath)) {
-		Files.createDirectories(desktopImagePath)
-	}
-
-	def url = new URL(imageUrl)
-	def imagePath = Paths.get(desktopImagePath.toString(), imageName)
-
-	Files.copy(url.openStream(), imagePath, StandardCopyOption.REPLACE_EXISTING)
-}
-
-// Function to select an image automatically
+// Fonction pour sélectionner une image automatiquement
 def selectImageAutomatically(String imagePath) {
 	try {
 		Robot robot = new Robot()
 
 		WebUI.delay(1)
 
+		// Copier le chemin de l'image dans le presse-papiers
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection(imagePath), null)
 
+		// Simulation de CTRL + V pour coller le chemin
 		robot.keyPress(KeyEvent.VK_CONTROL)
 		robot.keyPress(KeyEvent.VK_V)
 		robot.keyRelease(KeyEvent.VK_V)
@@ -126,14 +94,10 @@ def selectImageAutomatically(String imagePath) {
 
 		WebUI.delay(1)
 
+		// Appuyer sur Entrée pour confirmer
 		robot.keyPress(KeyEvent.VK_ENTER)
 		robot.keyRelease(KeyEvent.VK_ENTER)
 	} catch (Exception e) {
 		e.printStackTrace()
 	}
 }
-
-// Main test script
-downloadImageAndPlaceOnDesktop('https://cdn-icons-png.flaticon.com/512/2919/2919906.png', 'avatar.png')
-
-// Execute test steps

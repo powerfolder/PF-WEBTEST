@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TA14_VerifyBlockNowButton</name>
+   <name>Create_Org</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>c62d5738-c6db-42cb-a0f3-4fb2667fdc74</testCaseGuid>
+   <testCaseGuid>45c6d260-57df-4b33-8186-17d47a14cbf4</testCaseGuid>
 </TestCaseEntity>

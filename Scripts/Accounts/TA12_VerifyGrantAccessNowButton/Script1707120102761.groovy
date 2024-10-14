@@ -21,7 +21,7 @@ WebUI.setText(findTestObject('Accounts/InputPassword'), 'Alexa@131190')
 WebUI.setText(findTestObject('Accounts/InputFirstName'), firstName)
 WebUI.setText(findTestObject('Accounts/InputLastName'), lastName)
 WebUI.setText(findTestObject('Accounts/InputPhoneNo'), phone)
-WebUI.setText(findTestObject('Accounts/InputQuota'), '5')
+WebUI.setText(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/account_storage_overwiew'), '5')
 
 // Add wait for element to be clickable
 WebUI.waitForElementClickable(findTestObject('Accounts/GrantAccessNowButton'), 30, FailureHandling.STOP_ON_FAILURE)

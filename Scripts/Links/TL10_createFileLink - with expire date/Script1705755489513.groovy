@@ -118,6 +118,9 @@ String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getConten
 
 WebUI.navigateToUrl(my_clipboard)
 
+WebUI.delay(3)
+
+
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
 Thread.sleep(5000)
@@ -126,8 +129,7 @@ WebUI.back()
 
 assert WebUI.waitForElementVisible(findTestObject('Folders/expireTabTitle'), 2)
 
-assert isNotBlank(WebUI.getText(findTestObject('Folders/expireTabTitle') //WebUI.closeBrowser()
-        ))
+assert isNotBlank(WebUI.getText(findTestObject('Folders/expireTabTitle')))
 
 WebUI.closeBrowser()
 

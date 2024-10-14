@@ -4,5 +4,6 @@
    <name>TA12_VerifyGrantAccessNowButton</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>aff3a64d-638a-4291-a41f-c60a8f3b5cf3</testCaseGuid>
 </TestCaseEntity>

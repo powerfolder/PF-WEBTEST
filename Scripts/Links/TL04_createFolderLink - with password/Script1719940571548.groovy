@@ -30,24 +30,33 @@ WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHa
 String folderName = getRandomFolderName()
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
+
 WebUI.click(findTestObject('Folders/createFolder'))
+
 WebUI.verifyElementPresent(findTestObject('lang/getCreateText'), 30)
+
 WebUI.verifyElementPresent(findTestObject('lang/getFolderNameLabelText'), 30)
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
 WebUI.setText(findTestObject('Folders/inputFolderName'),folderName)
+
 WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebUI.setText(findTestObject('Accounts/inputAccountSearch'), folderName)
+
 WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
 
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 
 WebElement btn =findShareButton(folderName)
+
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 WebUI.waitForElementClickable(findTestObject('Links/buttonCreateLink'), 30, FailureHandling.CONTINUE_ON_FAILURE)
+
 WebElement buttonCreateLink = 	WebUiCommonHelper.findWebElement(findTestObject('Links/buttonCreateLink'),30)
+
 WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(buttonCreateLink))
 
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Can read'))
@@ -56,9 +65,10 @@ WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_
 
 
 WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'),	'3')
+
 WebUI.setText(findTestObject('Page_Link - PowerFolder/lang_Password required'), 'Alexa@131190')
 
-WebUI.delay(10)
+WebUI.delay(3)
 
 WebUI.click(findTestObject('SettingsPopUp/buttonSave'))
 
@@ -67,6 +77,8 @@ WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor);
 
 WebUI.navigateToUrl(my_clipboard)
+
+WebUI.delay(3)
 
 WebUI.setText(findTestObject('Page_Link - PowerFolder/inputPassword'), 'Alexa@131190')
 
@@ -80,7 +92,7 @@ assert WebUI.waitForElementVisible(findTestObject('Page_Link - PowerFolder/div_P
 
 WebUI.click(findTestObject('Page_Link - PowerFolder/buttonSave'))
 
-//WebUI.closeBrowser()
+WebUI.closeBrowser()
 
 
 def String getRandomFolderName() {

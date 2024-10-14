@@ -24,6 +24,12 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Organization/TO02_EditOrganization</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d108d40a-22dc-4e22-8637-c0e26f7c37c7</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>e163be06-568c-4cd3-ba59-386cde735b8e</guid>

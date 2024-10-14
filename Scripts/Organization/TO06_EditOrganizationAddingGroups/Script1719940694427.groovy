@@ -22,55 +22,63 @@ import java.util.Date
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
+import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
-assert WebUI.getWindowTitle().equals('Dashboard - PowerFolder')
-WebUI.click(findTestObject('Organization/SelectOrganization'))
-WebUI.click(findTestObject('Organization/DropDownToggle'))
-WebUI.click(findTestObject('Organization/CreateOrganization'))
-String lan = GlobalVariable.LANG
-if(!lan.equals('GERMAN')) {
-WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyCreateOrganization')), 'Create a new Organization',  FailureHandling.CONTINUE_ON_FAILURE)
-}else {
-	WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyCreateOrganization')), 'Organisation neu erstellen',  FailureHandling.CONTINUE_ON_FAILURE)
-	
-}
-WebUI.delay(3)
-WebUI.setText(findTestObject('Organization/InputName'), "AutomationTest")
-WebUI.setText(findTestObject('Organization/InputMaxNumber'), "10")
-WebUI.setText(findTestObject('Organization/InputQuota'), "2")
-def currentDate = new Date()
-// Format the date and time as per your requirement
-def dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm a")
-def formattedDate = dateFormat.format(currentDate)
-WebUI.click(findTestObject('Organization/InputValidFrom'))
-def calendar = Calendar.getInstance()
-calendar.setTime(currentDate)
-calendar.add(Calendar.DAY_OF_MONTH, 3)
-def futureDate = calendar.getTime()
-// Set the date and time with the timestamp plus 3 days
-WebUI.setText(findTestObject('Organization/InputValidtill'), dateFormat.format(futureDate))
-WebUI.setText(findTestObject('Organization/EnterNotes'), "AutomationNotes")
-WebUI.delay(3)
-WebUI.click(findTestObject('Organization/SaveButton'))
-WebUI.delay(10)
-WebUI.click(findTestObject('Organization/SelectCreatedOrganization'))
-WebUI.click(findTestObject('Organization/EditButton'))
+String Organization_name = GlobalVariable.organisationName
+
+println('Organization_name: ' + Organization_name)
+
+WebUI.callTestCase(findTestCase('Organization/Pre_test/Create_Org'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.click(findTestObject('Organization/AddGroups'))
-WebUI.setText(findTestObject('Organization/InputgroupName'), "automation")
-WebUI.delay(3)
+
+GlobalVariable.GroupName = ('Group_' + RandomStringUtils.randomNumeric(4))
+
+String Groupname = GlobalVariable.GroupName
+
+WebUI.setText(findTestObject('Organization/InputgroupName'),Groupname)
+
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Organization/SelectGroup'))
-WebUI.click(findTestObject('Organization/SaveButton'))
-WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyOrganizationName')), 'AutomationTest',  FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.delay(10)
-WebUI.click(findTestObject('Organization/SelectCreatedOrganization'))
-WebUI.click(findTestObject('Organization/Deletebutton'))
+
+WebUI.delay(2)
+
+TestObject dynamicObject = new TestObject().addProperty('xpath', ConditionType.EQUALS, '//body/div[2]/div[1]/div[2]/div[3]/div/div/div[3]/div/div[2]/button[1]')
+WebUI.click(dynamicObject)
+
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Organization/SelectYesButton'))
+WebUI.refresh()
+
+Organization_name = GlobalVariable.organisationName
+
+println('Organization_name: ' + Organization_name)
+
+WebElement btn1 = findORG(Organization_name)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
+
+WebUI.click(findTestObject('Organization/AddGroups'))
+
+String actualGroup = WebUI.getText(findTestObject('Organization/Page_Organizations - PowerFolder/Verify_Group_Org')).toLowerCase()
+String expectedGroup = Groupname.toLowerCase()
+
+WebUI.verifyEqual(actualGroup, expectedGroup, FailureHandling.CONTINUE_ON_FAILURE)
+
 WebUI.delay(3)
-WebUI.verifyEqual(WebUI.getText(findTestObject('Organization/VerifyToastMsg')), 'Organization deleted')
-WebUI.closeBrowser()
+
+WebUI.click(findTestObject('Organization/Page_Organizations - PowerFolder/button_Cancel_organization'))
+
+WebUI.closeBrowser() 
+
+WebElement findORG(String Organization_name) {
+	WebDriver driver = DriverFactory.getWebDriver()
+
+	return driver.findElement(By.xpath(('//a[contains(text(),\'' + Organization_name) + '\')]'))
+}
 

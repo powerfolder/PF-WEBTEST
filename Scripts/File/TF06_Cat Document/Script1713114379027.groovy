@@ -80,7 +80,7 @@ WebUiBuiltInKeywords.setText(findTestObject('file_objects/document/Page_Folders 
 
 WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-WebUiBuiltInKeywords.delay(10)
+WebUiBuiltInKeywords.delay(15)
 
 WebUiBuiltInKeywords.closeWindowIndex(1)
 

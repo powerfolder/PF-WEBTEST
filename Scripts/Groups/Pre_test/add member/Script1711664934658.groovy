@@ -47,7 +47,7 @@ WebUiBuiltInKeywords.setText(findTestObject('Accounts/InputUserOrEmail'), user)
 
 WebUiBuiltInKeywords.setText(findTestObject('Accounts/InputPassword'), 'Alexa@131190')
 
-WebUiBuiltInKeywords.setText(findTestObject('Accounts/InputQuota'), '5')
+WebUiBuiltInKeywords.setText(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/account_storage_overwiew'), '5')
 
 WebUiBuiltInKeywords.click(findTestObject('Accounts/SaveButton'))
 

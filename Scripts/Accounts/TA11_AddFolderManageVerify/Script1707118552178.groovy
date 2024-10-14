@@ -29,7 +29,7 @@ WebUI.setText(ObjectRepository.findTestObject('Accounts/InputPassword'), 'Alexa@
 WebUI.setText(ObjectRepository.findTestObject('Accounts/InputFirstName'), firstName)
 WebUI.setText(ObjectRepository.findTestObject('Accounts/InputLastName'), lastName)
 WebUI.setText(ObjectRepository.findTestObject('Accounts/InputPhoneNo'), phone)
-WebUI.setText(ObjectRepository.findTestObject('Accounts/InputQuota'), '5')
+WebUI.setText(ObjectRepository.findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/account_storage_overwiew'), '5')
 WebUI.click(ObjectRepository.findTestObject('Accounts/SaveButton'))
 
 WebUI.delay(2)

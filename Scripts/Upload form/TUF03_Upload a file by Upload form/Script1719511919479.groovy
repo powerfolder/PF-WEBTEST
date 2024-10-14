@@ -123,10 +123,10 @@ WebElement btn1 = findFolder(GlobalVariable.Name)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
-// Vérification de la présence du document
+WebUI.delay(2)
+
 def btn2 = findDoc(wordFileName)
 
-// Cliquer sur le bouton
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
 
 assert btn2 != null

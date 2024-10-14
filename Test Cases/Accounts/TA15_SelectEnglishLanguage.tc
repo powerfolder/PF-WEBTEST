@@ -4,5 +4,6 @@
    <name>TA15_SelectEnglishLanguage</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>2bc4a540-00c2-4b68-95d7-043070057601</testCaseGuid>
 </TestCaseEntity>

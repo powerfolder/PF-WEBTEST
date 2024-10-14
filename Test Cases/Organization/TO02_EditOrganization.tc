@@ -6,4 +6,17 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>98268fc2-bb64-4d6c-a04a-f4d294a02618</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d108d40a-22dc-4e22-8637-c0e26f7c37c7</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d108d40a-22dc-4e22-8637-c0e26f7c37c7</id>
+      <masked>false</masked>
+      <name>Organization_rename</name>
+   </variable>
 </TestCaseEntity>
