@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL29_Disable download for the presentation</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f9e9f9c0-0122-4815-b7bf-1355ebe471b1</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL17_Disable download for the document</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2114ffff-9c7b-4e48-a2f7-af974e8d9fa5</testCaseGuid>
+</TestCaseEntity>

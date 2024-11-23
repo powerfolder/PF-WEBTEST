@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL13_Disable download for the text file</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>62c0dd5e-f304-40df-9996-4ad9f87d655f</testCaseGuid>
+</TestCaseEntity>

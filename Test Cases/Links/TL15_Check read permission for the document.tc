@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL15_Check read permission for the document</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6f5c33f8-6159-4675-a964-ff37ae3d5d34</testCaseGuid>
+</TestCaseEntity>

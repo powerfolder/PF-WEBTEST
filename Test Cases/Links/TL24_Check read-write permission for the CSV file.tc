@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL24_Check read-write permission for the CSV file</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b64f7ce4-39df-47f3-87e3-ab1bc1180caa</testCaseGuid>
+</TestCaseEntity>

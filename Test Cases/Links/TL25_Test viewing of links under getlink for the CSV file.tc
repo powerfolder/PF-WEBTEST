@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL25_Test viewing of links under getlink for the CSV file</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>14a110be-d8e1-45f8-bd54-3fa02742e054</testCaseGuid>
+</TestCaseEntity>

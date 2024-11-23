@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL28_Check read-write permission for the presentation</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>47cfc220-bf4e-46cc-87cd-bb8cb4cd3b7f</testCaseGuid>
+</TestCaseEntity>

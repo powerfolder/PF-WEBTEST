@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL16_Check read-write permission for the document</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>95ba9be2-0b1d-4ddc-82f8-1c51d582e07f</testCaseGuid>
+</TestCaseEntity>

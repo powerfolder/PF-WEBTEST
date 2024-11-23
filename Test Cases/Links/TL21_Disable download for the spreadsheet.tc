@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL21_Disable download for the spreadsheet</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7d2b6a4f-406f-40d2-b177-aace21e114e8</testCaseGuid>
+</TestCaseEntity>

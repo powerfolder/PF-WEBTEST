@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL14_Test viewing of links under getlink for the text file</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1f9978f7-4672-48c6-a171-9cbdbae36855</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL11_Check read permission for the text file</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>34a72eea-4db0-43ec-85f4-1acbd2eb9aa7</testCaseGuid>
+</TestCaseEntity>

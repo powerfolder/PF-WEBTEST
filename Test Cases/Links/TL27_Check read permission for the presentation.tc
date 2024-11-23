@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL27_Check read permission for the presentation</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0196f35a-1ff2-48cd-8f9b-f006159945b6</testCaseGuid>
+</TestCaseEntity>

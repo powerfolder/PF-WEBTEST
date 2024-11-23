@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL22_Test viewing of links under getlink for spreadsheet</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>84bec765-0d5e-45d7-a538-3f153a5e2176</testCaseGuid>
+</TestCaseEntity>

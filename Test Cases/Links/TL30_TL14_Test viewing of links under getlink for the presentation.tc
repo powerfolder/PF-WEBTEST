@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL30_TL14_Test viewing of links under getlink for the presentation</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>068e561c-4c0f-4ce1-9a5a-3a86bde54a8e</testCaseGuid>
+</TestCaseEntity>

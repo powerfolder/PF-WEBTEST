@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL12_Check read-write permission for the text file</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>48f6814a-b351-499b-8c16-1d322d3906e2</testCaseGuid>
+</TestCaseEntity>

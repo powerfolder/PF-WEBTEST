@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL26_Disable download for the CSV file</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>02796ab8-5485-493c-a52c-3164e840f44c</testCaseGuid>
+</TestCaseEntity>

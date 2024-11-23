@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL33_Check with a guest user Test viewing of links under getlink for the text file</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f40ccfb5-bf30-4b1d-b4ce-3be1e3b3eb4b</testCaseGuid>
+</TestCaseEntity>

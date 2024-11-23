@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL19_Check read permission for the spreadsheet</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8c467cfb-18fa-4659-887e-b397a9beea85</testCaseGuid>
+</TestCaseEntity>

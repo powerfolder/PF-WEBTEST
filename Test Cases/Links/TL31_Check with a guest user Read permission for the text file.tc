@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL31_Check with a guest user Read permission for the text file</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d7eefc22-c1b6-4040-bc51-b9fe74f7bc48</testCaseGuid>
+</TestCaseEntity>

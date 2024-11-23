@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL18_Test viewing of links under getlink for the document</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dbf73e3c-b322-4356-b4f9-948fe96f0a93</testCaseGuid>
+</TestCaseEntity>
