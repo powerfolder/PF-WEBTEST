@@ -16,4 +16,76 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By as By
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import java.awt.Toolkit as Toolkit
+import java.awt.datatransfer.DataFlavor as DataFlavor
+import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
+import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
+
+// Afficher le nom du document
+println(GlobalVariable.presentationname)
+
+presentationname = GlobalVariable.presentationname
+
+WebUI.callTestCase(findTestCase('Links/pre_test/Create_presentation_link'), [:], FailureHandling.STOP_ON_FAILURE)
+
+// Vérification si l'élément est cliquable
+boolean isChecked = WebUI.verifyElementClickable(findTestObject('Object Repository/Links/Page_Folders - PowerFolder/label_Can read'), 
+    FailureHandling.CONTINUE_ON_FAILURE)
+
+// Sauvegarder les paramètres
+WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
+
+// Copier le lien
+WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
+
+String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
+
+WebUI.comment('URL copié : ' + my_clipboard)
+
+// Vérifier que l'URL est valide
+assert (my_clipboard != null) && my_clipboard.startsWith('https')
+
+// Ouvrir le lien dans un nouvel onglet
+WebUI.switchToWindowIndex(1)
+
+WebUI.navigateToUrl(my_clipboard)
+
+// Vérification du titre de la fenêtre
+assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+
+// Attendre que la page charge
+WebUI.delay(3)
+
+// Retour à l'onglet principal
+WebUI.switchToWindowIndex(0)
+
+// Fermer la boîte de dialogue
+WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/button_Close'))
+
+// Trouver et cliquer sur le bouton Share
+WebElement btn1 = findShareButton(presentationname)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
+
+// Configurer le lien
+WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/links_config'))
+
+WebUI.delay(2)
+
+// Fermer le navigateur
+WebUI.closeBrowser( // Fonction pour trouver le bouton Share
+    ) // Attendre que l'élément soit visible et interactif
+
+WebElement findShareButton(String fileName) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    WebDriverWait wait = new WebDriverWait(driver, 10)
+
+    return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(('//table[@id=\'files_files_table\']/tbody/tr/td[2]/a[contains(text(),\'' + 
+                fileName) + '\')]/../../td[7]/a')))
+}
 

@@ -16,4 +16,73 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By as By
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import java.awt.Toolkit as Toolkit
+import java.awt.datatransfer.DataFlavor as DataFlavor
+import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
+import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
+
+// Afficher le nom du document
+println(GlobalVariable.csvfilename)
+
+csvfilename = GlobalVariable.csvfilename
+
+// Appel du cas de test pour créer un lien de document
+WebUI.callTestCase(findTestCase('Links/pre_test/Create_CSV_file_link'), [:], FailureHandling.STOP_ON_FAILURE)
+
+// Sauvegarder les paramètres et fermer la fenêtre actuelle
+WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
+
+WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/button_Close'))
+
+WebUI.switchToWindowIndex(1)
+
+WebUI.closeWindowIndex(1)
+
+WebUI.switchToWindowIndex(0)
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Links/Page_Dashboard - PowerFolder/lang_Links'))
+
+
+// Vérification que documentname n'est pas null
+assert csvfilename != null : 'Le nom du document ne doit pas être null.'
+
+// Trouver le bouton "Share" lié au document
+WebElement btn1 = findLinksButton(csvfilename)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
+
+WebUI.delay(2)
+
+// Vérification de l'URL générée
+WebUI.switchToWindowIndex(1)
+
+String currentUrl = WebUI.getUrl()
+
+WebUI.comment('L\'URL actuelle est: ' + currentUrl)
+
+// Vérification si l'URL contient '/getlink/'
+boolean containsGetLink = currentUrl.contains('/getlink/')
+
+WebUI.comment('L\'URL contient \'/getlink/\': ' + containsGetLink)
+
+WebUI.verifyEqual(containsGetLink, true)
+
+// Fermer le navigateur
+WebUI.closeBrowser( ///////////////////////////////////////////////////// Méthodes //////////////////////////////////////////////
+    ) // Attente explicite de 10 secondes
+
+WebElement findLinksButton(String documentname) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    WebDriverWait wait = new WebDriverWait(driver, 10)
+
+    return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(('//body/div[2]/div[1]/div[2]/div[2]/table/tbody/*[contains(text(),\'' + 
+                documentname) + '\')]/td[7]/a/span')))
+}
 

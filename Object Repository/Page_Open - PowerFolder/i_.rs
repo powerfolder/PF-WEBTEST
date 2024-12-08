@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>i_</name>
+   <tag></tag>
+   <elementGuidId>64b48c9d-156e-4a94-b110-9f1ff1afc642</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>i.icon.toolbar__icon.btn-paste</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='id-toolbar-btn-paste']/i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>d809db1c-33cf-4204-9079-1991b1cbff53</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon toolbar__icon btn-paste</value>
+      <webElementGuid>b0f45a5a-424e-46e0-a4c0-5b0131bf4c1c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> </value>
+      <webElementGuid>d98c1c70-0689-4cd0-8810-d82c8dbd07cc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;id-toolbar-btn-paste&quot;)/i[@class=&quot;icon toolbar__icon btn-paste&quot;]</value>
+      <webElementGuid>c926f812-2eac-43e5-99e9-60e50266b686</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Page_Open - PowerFolder/iframe_concat(id(, , pica_embedded, , )ifra_b348c2</value>
+      <webElementGuid>0cb4aaf6-5e9d-4b31-b35e-0ecc4be73ea2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='id-toolbar-btn-paste']/i</value>
+      <webElementGuid>b937f639-2c82-4c17-944b-e708caa81ab4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='A'])[2]/following::i[4]</value>
+      <webElementGuid>2fce71ae-9963-4498-a974-dbac1f38eb38</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='A'])[1]/following::i[4]</value>
+      <webElementGuid>e5b7193d-252a-43af-9650-9a5e5b1f64ef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sentence case.'])[1]/preceding::i[9]</value>
+      <webElementGuid>8ab08812-7da3-457b-a9fd-11156ccdc4e7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='lowercase'])[1]/preceding::i[9]</value>
+      <webElementGuid>d4867054-c24a-4590-9c02-49299a995531</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span[2]/button/i</value>
+      <webElementGuid>a37c03f5-0327-4a59-b417-15431f8f95a2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//i[(text() = ' ' or . = ' ')]</value>
+      <webElementGuid>5315403b-7a43-420a-a473-a76b2f4d0215</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

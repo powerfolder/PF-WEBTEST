@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>links_config</name>
+   <tag></tag>
+   <elementGuidId>0edbc126-e17f-46b6-b055-0f5db2bd816b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//body/div[2]/div[1]/div[2]/div[4]/div/div/div[2]/div[2]/table/tbody/tr/td[2]/div/div/div[1]/span[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>i.glyphicons.glyphicons-cogwheel</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>3166cf04-7d63-4ba8-86e8-12d12012ecfd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>glyphicons glyphicons-cogwheel</value>
+      <webElementGuid>bf19047c-10c5-4b3b-8a81-fd3ad24dd63f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;share_Object_1541445766&quot;)/td[@class=&quot;text-right&quot;]/div[@class=&quot;media&quot;]/div[@class=&quot;media-body&quot;]/div[@class=&quot;pica-media-header media-heading clearfix&quot;]/span[@class=&quot;cogwheel-icon&quot;]/i[@class=&quot;glyphicons glyphicons-cogwheel&quot;]</value>
+      <webElementGuid>c1988bdb-e411-445f-b175-6e9fff4d6ccd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='share_Object_1541445766']/td[2]/div/div/div/span/i</value>
+      <webElementGuid>1515a1d2-974b-4882-94cf-1c53f71a4eeb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value></value>
+      <webElementGuid>d58dfc58-1ded-4852-a16e-58134e246c6b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

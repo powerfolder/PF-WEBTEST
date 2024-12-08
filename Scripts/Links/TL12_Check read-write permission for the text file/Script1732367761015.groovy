@@ -16,4 +16,84 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By as By
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import java.awt.Toolkit as Toolkit
+import java.awt.datatransfer.DataFlavor as DataFlavor
+import org.openqa.selenium.support.ui.WebDriverWait
+import org.openqa.selenium.support.ui.ExpectedConditions
+
+// Afficher la valeur du documentname
+println('Nom du fichier : ' + GlobalVariable.textfilename)
+
+String textfilename = GlobalVariable.textfilename
+
+// Appel du cas de test pour créer un lien
+WebUI.callTestCase(findTestCase('Links/pre_test/create_text_file_link'), [('fileName') : 'getRandomFilerName()'], FailureHandling.STOP_ON_FAILURE)
+
+// Vérifier si l'élément "Can read and write" est cliquable
+TestObject readWriteLabel = findTestObject('links files/Page_Folders - PowerFolder/label_Can read and write')
+
+WebUI.verifyElementClickable(readWriteLabel, FailureHandling.CONTINUE_ON_FAILURE)
+
+// Cliquer sur l'élément "Can read and write"
+WebUI.click(readWriteLabel)
+
+// Sauvegarder les paramètres
+WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
+
+// Copier le lien
+WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
+
+String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
+
+WebUI.comment('URL copiée : ' + my_clipboard)
+
+// Vérifier que l'URL est valide
+assert (my_clipboard != null) && my_clipboard.startsWith('https')
+
+// Ouvrir l'URL dans une nouvelle fenêtre
+WebUI.switchToWindowIndex(1)
+
+WebUI.navigateToUrl(my_clipboard)
+
+// Vérifier le titre de la fenêtre
+assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+
+// Attendre le chargement de la page
+WebUI.delay(3)
+
+// Revenir à la fenêtre principale
+WebUI.switchToWindowIndex(0)
+
+// Fermer la boîte de dialogue
+WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/button_Close'))
+
+WebElement btn1 = findShareButton(textfilename)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
+
+// Configurer le lien
+WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/links_config'))
+
+// Vérifier de nouveau si l'élément est cliquable
+boolean isChecked_2 = WebUI.verifyElementClickable(readWriteLabel, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.comment('Le label \'Can read and write\' est cliquable : ' + isChecked_2)
+
+WebUI.delay(2)
+
+WebUI.closeBrowser()
+
+WebElement findShareButton(String fileName) {
+    WebDriver driver = DriverFactory.getWebDriver()
+    WebDriverWait wait = new WebDriverWait(driver, 10)
+
+    // Attendre que l'élément soit visible et interactif
+    return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+        "//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'" + fileName + "')]/../../td[7]/a"
+    )))
+}
 

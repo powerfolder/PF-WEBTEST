@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>create_text_file_link</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4f81ea9f-14d2-490c-b5d4-179d7906623b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4fabfefa-3b8f-406a-af90-c6c88ae1ff0a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'getRandomFilerName()'</defaultValue>
+      <description></description>
+      <id>4fabfefa-3b8f-406a-af90-c6c88ae1ff0a</id>
+      <masked>false</masked>
+      <name>fileName</name>
+   </variable>
+</TestCaseEntity>
