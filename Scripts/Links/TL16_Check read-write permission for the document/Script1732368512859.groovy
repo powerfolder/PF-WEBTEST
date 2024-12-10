@@ -23,13 +23,12 @@ import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
 
-// Afficher la valeur du documentname
+
+WebUI.callTestCase(findTestCase('Links/pre_test/Create_document_link'), [:], FailureHandling.STOP_ON_FAILURE)
+
 println(GlobalVariable.documentname)
 
 String documentname = GlobalVariable.documentname
-
-// Appel du cas de test pour créer un lien
-WebUI.callTestCase(findTestCase('Links/pre_test/Create_document_link'), [:], FailureHandling.STOP_ON_FAILURE)
 
 // Vérifier si l'élément "Can read and write" est cliquable
 TestObject readWriteLabel = findTestObject('links files/Page_Folders - PowerFolder/label_Can read and write')

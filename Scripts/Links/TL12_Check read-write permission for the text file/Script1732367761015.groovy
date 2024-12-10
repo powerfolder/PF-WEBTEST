@@ -25,14 +25,14 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 import org.openqa.selenium.support.ui.WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions
 
-// Afficher la valeur du documentname
-println('Nom du fichier : ' + GlobalVariable.textfilename)
 
-String textfilename = GlobalVariable.textfilename
 
 // Appel du cas de test pour créer un lien
 WebUI.callTestCase(findTestCase('Links/pre_test/create_text_file_link'), [('fileName') : 'getRandomFilerName()'], FailureHandling.STOP_ON_FAILURE)
 
+println('Nom du fichier : ' + GlobalVariable.textfilename)
+
+String textfilename = GlobalVariable.textfilename
 // Vérifier si l'élément "Can read and write" est cliquable
 TestObject readWriteLabel = findTestObject('links files/Page_Folders - PowerFolder/label_Can read and write')
 

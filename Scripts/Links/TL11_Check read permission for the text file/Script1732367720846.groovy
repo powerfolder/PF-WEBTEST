@@ -25,11 +25,13 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 import org.openqa.selenium.support.ui.WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions
 
+
+
+WebUI.callTestCase(findTestCase('Links/pre_test/create_text_file_link'), [:], FailureHandling.STOP_ON_FAILURE)
+
 println(GlobalVariable.textfilename)
 
 textfilename = GlobalVariable.textfilename
-
-WebUI.callTestCase(findTestCase('Links/pre_test/create_text_file_link'), [:], FailureHandling.STOP_ON_FAILURE)
 
 // Vérification si l'élément est cliquable
 boolean isChecked = WebUI.verifyElementClickable(findTestObject('Object Repository/Links/Page_Folders - PowerFolder/label_Can read'), FailureHandling.CONTINUE_ON_FAILURE)
@@ -39,6 +41,7 @@ WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 
 // Copier le lien
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
+
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
 
 WebUI.comment("URL copié : " + my_clipboard)
@@ -47,7 +50,9 @@ WebUI.comment("URL copié : " + my_clipboard)
 assert my_clipboard != null && my_clipboard.startsWith("https")
 
 // Ouvrir le lien dans un nouvel onglet
+
 WebUI.switchToWindowIndex(1)
+
 WebUI.navigateToUrl(my_clipboard)
 
 // Vérification du titre de la fenêtre
@@ -60,8 +65,8 @@ WebUI.delay(3)
 WebUI.switchToWindowIndex(0)
 
 // Fermer la boîte de dialogue
-WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/button_Close'))
 
+WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/button_Close'))
 
 // Trouver et cliquer sur le bouton Share
 
@@ -78,12 +83,12 @@ WebUI.delay(2)
 WebUI.closeBrowser()
 
 // Fonction pour trouver le bouton Share
-WebElement findShareButton(String fileName) {
+WebElement findShareButton(String textfilename) {
     WebDriver driver = DriverFactory.getWebDriver()
     WebDriverWait wait = new WebDriverWait(driver, 10)
 
     // Attendre que l'élément soit visible et interactif
     return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-        "//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'" + fileName + "')]/../../td[7]/a"
+        "//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'" + textfilename + "')]/../../td[7]/a"
     )))
 }

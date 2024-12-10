@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TL32_Check with a guest user Write permission for the text file</name>
+   <name>TL32_Check with a guest user Read Write permission for the text file</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

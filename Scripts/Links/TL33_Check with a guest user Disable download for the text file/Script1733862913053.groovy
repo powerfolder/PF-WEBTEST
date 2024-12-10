@@ -108,6 +108,10 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 WebUI.click(findTestObject('Object Repository/Folders/shareLink'))
 
+WebUI.verifyElementClickable(findTestObject('Links/Page_Folders - PowerFolder/label_Disable Download (View only)'))
+
+WebUI.click(findTestObject('Links/Page_Folders - PowerFolder/label_Disable Download (View only)'))
+
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
@@ -156,50 +160,50 @@ WebUI.switchToWindowIndex(0)
 WebUI.closeBrowser()
 
 String getRandomFolderName() {
-    String folderName = 'Folder_' + getTimestamp()
+	String folderName = 'Folder_' + getTimestamp()
 
-    return folderName
+	return folderName
 }
 
 String getRandomFileName() {
-    String fileName = 'File_' + getTimestamp()
+	String fileName = 'File_' + getTimestamp()
 
-    return fileName
+	return fileName
 }
 
 String getTimestamp() {
-    Date todaysDate = new Date()
+	Date todaysDate = new Date()
 
-    String formattedDate = todaysDate.format('dd_MMM_yyyy_hh_mm_ss')
+	String formattedDate = todaysDate.format('dd_MMM_yyyy_hh_mm_ss')
 
-    return formattedDate
+	return formattedDate
 }
 
 WebElement findShareButton(String textfilename) {
-    WebDriver driver = DriverFactory.getWebDriver()
+	WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$textfilename')]/../../td[7]/a"))
+	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$textfilename')]/../../td[7]/a"))
 }
 
 WebElement findMembersButton(String folderName) {
-    WebDriver driver = DriverFactory.getWebDriver()
+	WebDriver driver = DriverFactory.getWebDriver()
 
-    String xpath = ('//table[@id=\'files_files_table\']/tbody/tr[.//a[contains(text(),\'' + folderName) + '\')]]/td[5]/a'
+	String xpath = ('//table[@id=\'files_files_table\']/tbody/tr[.//a[contains(text(),\'' + folderName) + '\')]]/td[5]/a'
 
-    return driver.findElement(By.xpath(xpath))
+	return driver.findElement(By.xpath(xpath))
 }
 
 String generateRandomString(int length) {
-    String characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+	String characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 
-    StringBuilder randomString = new StringBuilder()
+	StringBuilder randomString = new StringBuilder()
 
-    Random random = new Random()
+	Random random = new Random()
 
-    for (int i = 0; i < length; i++) {
-        randomString.append(characters.charAt(random.nextInt(characters.length())))
-    }
-    
-    return randomString.toString().toLowerCase()
+	for (int i = 0; i < length; i++) {
+		randomString.append(characters.charAt(random.nextInt(characters.length())))
+	}
+	
+	return randomString.toString().toLowerCase()
 }
 

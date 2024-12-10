@@ -25,15 +25,12 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 
-// Afficher le nom du document
 println(GlobalVariable.textfilename)
 
 textfilename = GlobalVariable.textfilename
 
-// Appel du cas de test pour créer un lien de document
-WebUI.callTestCase(findTestCase('Links/pre_test/create_text_file_link'), [('fileName') : 'getRandomFilerName()'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Links/pre_test/create_text_file_link'), [('fileName') : 'getRandomFileName()'], FailureHandling.STOP_ON_FAILURE)
 
-// Sauvegarder les paramètres et fermer la fenêtre actuelle
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 
 WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/button_Close'))
@@ -82,12 +79,12 @@ WebUI.closeBrowser()
 ///////////////////////////////////////////////////// Méthodes //////////////////////////////////////////////
 
 WebElement findLinksButton(String documentname) {
-    WebDriver driver = DriverFactory.getWebDriver()
+	WebDriver driver = DriverFactory.getWebDriver()
 
-    WebDriverWait wait = new WebDriverWait(driver, 10)
+	WebDriverWait wait = new WebDriverWait(driver, 10)
 
-    return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(('//body/div[2]/div[1]/div[2]/div[2]/table/tbody/*[contains(text(),\'' + 
-                documentname) + '\')]/td[7]/a/span')))
+	return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(('//body/div[2]/div[1]/div[2]/div[2]/table/tbody/*[contains(text(),\'' +
+				documentname) + '\')]/td[7]/a/span')))
 }
 
 

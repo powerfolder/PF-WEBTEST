@@ -25,14 +25,13 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 
-// Afficher le nom du document
+
+WebUI.callTestCase(findTestCase('Links/pre_test/Create_document_link'), [('documentname') : 'getRandomFileName()'], FailureHandling.STOP_ON_FAILURE)
+
 println(GlobalVariable.documentname)
 
 String documentname = GlobalVariable.documentname
 
-WebUI.callTestCase(findTestCase('Links/pre_test/Create_document_link'), [:], FailureHandling.STOP_ON_FAILURE)
-
-// Vérification si l'élément est cliquable
 boolean isChecked = WebUI.verifyElementClickable(findTestObject('Object Repository/Links/Page_Folders - PowerFolder/label_Can read'), 
     FailureHandling.CONTINUE_ON_FAILURE)
 
