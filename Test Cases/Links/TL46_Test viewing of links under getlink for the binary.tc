@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL46_Test viewing of links under getlink for the binary</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>76878c0f-06c7-4962-bcfc-5727ca486406</testCaseGuid>
+</TestCaseEntity>

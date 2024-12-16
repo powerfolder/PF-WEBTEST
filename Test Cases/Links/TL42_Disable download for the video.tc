@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL42_Disable download for the video</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0eaac60b-653a-4d75-a4e5-e33cdba90aa0</testCaseGuid>
+</TestCaseEntity>

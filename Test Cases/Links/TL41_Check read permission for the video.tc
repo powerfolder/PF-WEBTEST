@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL41_Check read permission for the video</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c0d65285-240e-4a2a-aeb4-7a8eacfc0b69</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL39_Disable download for the image</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a6bc5a69-f0cd-40a6-a964-6571cb808b8a</testCaseGuid>
+</TestCaseEntity>

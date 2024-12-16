@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL38_Check read permission for the image</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1011e88a-d8ed-4f2f-a3eb-aa9d51a67812</testCaseGuid>
+</TestCaseEntity>

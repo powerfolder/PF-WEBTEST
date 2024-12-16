@@ -87,12 +87,8 @@ WebUI.comment('Le label \'Can read and write\' est cliquable : ' + isChecked_2)
 WebUI.delay(2)
 
 WebUI.closeBrowser() // Fonction pour trouver le bouton Share
-WebElement findShareButton(String fileName) {
-	WebDriver driver = DriverFactory.getWebDriver()
-	WebDriverWait wait = new WebDriverWait(driver, 10)
+WebElement findShareButton(String pdfFileName) {
+    WebDriver driver = DriverFactory.getWebDriver()
 
-	// Attendre que l'élément soit visible et interactif
-	return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-		"//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'" + fileName + "')]/../../td[7]/a"
-	)))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + pdfFileName) + '\')]/td[7]/a'))
 }

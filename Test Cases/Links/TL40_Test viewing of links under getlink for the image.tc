@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL40_Test viewing of links under getlink for the image</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ecf25d32-1d3e-42fa-858b-0dd1dc459fc8</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL43_Test viewing of links under getlink for the video</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>935593f3-d167-4a9c-8ff9-9550166dc792</testCaseGuid>
+</TestCaseEntity>

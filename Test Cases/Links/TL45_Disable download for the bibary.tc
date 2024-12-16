@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL45_Disable download for the bibary</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f902ad78-54fd-49da-9e33-38dda9a3c956</testCaseGuid>
+</TestCaseEntity>

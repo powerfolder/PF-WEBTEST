@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL44_Check read permission for the binary</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ac387076-3ace-4705-86ba-64c55fb685f7</testCaseGuid>
+</TestCaseEntity>

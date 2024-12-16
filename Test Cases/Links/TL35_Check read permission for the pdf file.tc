@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL35_Check read permission for the pdf file</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7b3fe7a3-fec0-446d-8459-eaf87a55b19e</testCaseGuid>
+</TestCaseEntity>

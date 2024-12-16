@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL37_Test viewing of links under getlink for the PDF file</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>647e32fa-d193-46d5-af44-b55300c0ade5</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL36_Disable download for the pdf file</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d119e6a4-66cf-421a-b26e-4ebd65d99de4</testCaseGuid>
+</TestCaseEntity>

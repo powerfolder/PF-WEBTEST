@@ -70,13 +70,10 @@ assert iconClass.contains('glyphicons-check') : 'The icon does not contain the \
 
 WebUI.delay(2)
 
-WebUI.closeBrowser() // Attente maximale de 10 secondes
-WebElement findShareButton(String fileName) {
-	WebDriver driver = DriverFactory.getWebDriver()
-	WebDriverWait wait = new WebDriverWait(driver, 10)
+WebUI.closeBrowser() 
 
-	// Attendre que l'élément soit visible et interactif
-	return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-		"//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'" + fileName + "')]/../../td[7]/a"
-	)))
+WebElement findShareButton(String pdfFileName) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + pdfFileName) + '\')]/td[7]/a'))
 }

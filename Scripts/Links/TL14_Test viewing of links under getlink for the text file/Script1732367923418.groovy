@@ -78,13 +78,10 @@ WebUI.closeBrowser()
 
 ///////////////////////////////////////////////////// Méthodes //////////////////////////////////////////////
 
-WebElement findLinksButton(String documentname) {
-	WebDriver driver = DriverFactory.getWebDriver()
+WebElement findLinksButton(String pdfFileName) {
+    WebDriver driver = DriverFactory.getWebDriver()
 
-	WebDriverWait wait = new WebDriverWait(driver, 10)
-
-	return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(('//body/div[2]/div[1]/div[2]/div[2]/table/tbody/*[contains(text(),\'' +
-				documentname) + '\')]/td[7]/a/span')))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + pdfFileName) + '\')]/td[7]/a/span'))
 }
 
 

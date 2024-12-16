@@ -12,241 +12,325 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>47e5f5d8-0151-4a6d-9ea0-f99e7a84e8ee</testSuiteGuid>
    <testCaseLink>
-      <guid>0a6dd3cb-0bd0-4293-b233-da92f79eb5c0</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL13_Disable download for the text file</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>8db365aa-7bd6-46f9-beb2-b461b4a3b11c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL12_Check read-write permission for the text file</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>cc2707c8-c3a1-45f8-8a43-bdd4623e68db</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL11_Check read permission for the text file</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f2945cf6-203e-40cf-81e2-07df478e58a0</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL14_Test viewing of links under getlink for the text file</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>c80569f7-7a27-4bb1-a3d4-4ea2a0f16109</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL30_Test viewing of links under getlink for the presentation</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>4beae19b-5942-4641-b758-8d2f0c8dbd46</guid>
+      <guid>dcf1241b-7a68-467b-bd3b-8d828ad21eec</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL01_createDirLink</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4e217508-05c2-4e2f-8359-4e5bfa3f43f1</guid>
+      <guid>c2ffdff6-26d6-4113-b0a3-e34da9734e8f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL02_createFileLink</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e7d7710c-a89b-47bf-9655-49a856b49464</guid>
+      <guid>9e885711-2adf-421a-aabc-f3ce87f21ae5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL03_createFolderLink with expirary date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>577b06b3-3e34-48ba-b4c3-32fc004413f3</guid>
+      <guid>7283162f-06fb-45f2-a17c-5790b1195c98</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL04_createFolderLink - with password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>de9106f2-fe64-4706-937b-88b084165597</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL28_Check read-write permission for the presentation</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d7618061-239c-41b8-9e5d-a7ac3fe9d8d0</guid>
+      <guid>2707e9e3-3b6d-4751-8cc3-873eab14ac01</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL05_createFolderLink - with max downloads</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ea04cff1-f49d-411f-b08b-3697c9609133</guid>
+      <guid>aa7f3c4d-9067-42c8-8fb2-73ba1e99f734</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL06_uploadIntoSubDirsUsingLinks</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>37a47fe4-c136-4466-bab2-569b8f9048fb</guid>
+      <guid>ade97d0e-144c-4ea3-8d73-b95cde05c712</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL07_createFolderLink</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0db55b49-8f75-4d31-b3f2-80fdca5a2234</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL18_Test viewing of links under getlink for the document</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>47802bb4-f78e-419f-9ae5-c0a21830954d</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL16_Check read-write permission for the document</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>1fca06a9-a781-47ad-b5cd-20365a3c23c3</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL15_Check read permission for the document</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d2d67a09-11ed-40a2-a42a-d1d1877d1427</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL17_Disable download for the document</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>84410785-6190-4b78-b337-9a374c796773</guid>
+      <guid>03bfb63d-4cec-41d0-bfc4-de7471a2ac04</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL08_createFileLink - with password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2127c393-0679-46eb-9593-8f95bb9ed5e7</guid>
+      <guid>36eb59fc-7e4a-4edd-af51-b83ade34371e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL09_createFileLink - with max downloads</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>457a6a27-00a6-485c-8267-f9be5d3a9da9</guid>
+      <guid>3b8f7c17-de53-4063-9ccd-3db4ca558a8c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL10_createFileLink - with expire date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>26841a4c-b2be-4fd6-99bc-1c37607d0831</guid>
+      <guid>0d1aac35-342d-4d74-b8f6-f97b19d48800</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL27_Check read permission for the presentation</testCaseId>
+      <testCaseId>Test Cases/Links/TL11_Check read permission for the text file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c6960c26-da4a-4582-8bde-b03a066a5996</guid>
+      <guid>ac367a6d-1e62-4a14-96da-2507efc37b23</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL29_Disable download for the presentation</testCaseId>
+      <testCaseId>Test Cases/Links/TL12_Check read-write permission for the text file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ed8e9bd3-8a9c-4ed8-ae95-36a3fc52a966</guid>
+      <guid>dab5976e-ec29-463d-a677-a5f861effc9f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL22_Test viewing of links under getlink for spreadsheet</testCaseId>
+      <testCaseId>Test Cases/Links/TL13_Disable download for the text file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6165343e-fe15-4dda-b618-53c1133a3c96</guid>
+      <guid>5a3bc673-7e10-4d06-9060-64acc86c8fa6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL14_Test viewing of links under getlink for the text file</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0f9ec38d-768c-4988-9276-0be0fdcf6045</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL15_Check read permission for the document</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>dc22b24b-8468-485a-89bc-c007ca79dc32</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL16_Check read-write permission for the document</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6beb827b-1a4b-4ea4-9de7-80be298c9da2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL17_Disable download for the document</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9e9e7716-a357-4886-b950-ef4e51b4145f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL18_Test viewing of links under getlink for the document</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fa819e7a-cfdb-42d8-80ed-6729fdafa553</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL19_Check read permission for the spreadsheet</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7dc2d6a7-e5d5-4c38-9d33-ab768dcb3c3a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL21_Disable download for the spreadsheet</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>84c3c595-b755-4f9f-8219-b2010a1c87a1</guid>
+      <guid>455cf680-85e3-4da0-b9fa-285a12446959</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL20_Check read-write permission for the spreadsheet</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a10c57e3-4e64-494b-bc8d-f51086a362b3</guid>
+      <guid>50e318c0-3638-4ef9-9eb9-c4c44f7643f3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL26_Disable download for the CSV file</testCaseId>
+      <testCaseId>Test Cases/Links/TL21_Disable download for the spreadsheet</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f07efb25-60e9-4a6f-be1b-4580ac0af3df</guid>
+      <guid>d6f365ca-cc48-4129-aaac-f9d62445443b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL25_Test viewing of links under getlink for the CSV file</testCaseId>
+      <testCaseId>Test Cases/Links/TL22_Test viewing of links under getlink for spreadsheet</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5f7e664b-16a8-48b3-8b58-20ece05226e6</guid>
+      <guid>90b988d8-bd88-4414-8244-bdf9da672ab8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL23_Check read permission for the CSV file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7baf76ed-bb64-4f22-8973-1418b3d716bd</guid>
+      <guid>071d561e-0827-4d20-a731-5067854504f6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL24_Check read-write permission for the CSV file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>538ca5ff-3cc9-441d-bde0-8e3bfd99e266</guid>
+      <guid>60b669b7-09d8-40ff-aa0d-9fb1c45aa1e4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL25_Test viewing of links under getlink for the CSV file</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f4c732c7-cb70-4bee-abea-1c6412cfca35</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL26_Disable download for the CSV file</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5ac4f8e7-e186-48fd-bc27-2a954e8bd761</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL27_Check read permission for the presentation</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cec3686a-e7b2-439b-9339-03cd96358787</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL28_Check read-write permission for the presentation</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a3a9de87-7762-4341-a1f2-fe2a56b52cd3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL29_Disable download for the presentation</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ae220335-6cc1-48f3-a468-3cd2508df238</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL30_Test viewing of links under getlink for the presentation</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2b44c76f-d974-437d-b81e-35ce2f04fd18</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL31_Check with a guest user Read permission for the text file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3c8c3b55-f383-435b-954b-93c2637db725</guid>
+      <guid>0ad5c4c0-68ee-4f03-9b5b-ab4d756f4cb4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL32_Check with a guest user Read Write permission for the text file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f94e76be-eb1b-4799-a2d7-189fae8308b1</guid>
+      <guid>4f26bdae-db5a-437f-8ed8-2ee92dd88d0f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL33_Check with a guest user Disable download for the text file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7ddecd42-1354-47c9-9517-ef13ac922773</guid>
+      <guid>29485885-a411-40bc-ab12-09c40207f92a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL34_Check with a guest user Test viewing of links under getlink for the text file</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cbf53c66-140b-4dbe-90a3-057910f6303a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL35_Check read permission for the pdf file</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>eb05b99b-a12c-436c-b04e-216c30d83f54</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL36_Disable download for the pdf file</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9a89e9bd-0ab7-4935-9d7e-455014dee614</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL37_Test viewing of links under getlink for the PDF file</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fb26847c-f99d-4386-8357-d6eaf95e6d8c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL38_Check read permission for the image</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>48b9616d-d20a-4ea5-b1a5-cff7f9d43602</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL39_Disable download for the image</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>991b2088-efa9-4566-983f-2d6fdd024fda</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL40_Test viewing of links under getlink for the image</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7099e443-071c-41a4-b0f1-e60fe8a7cf0f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL41_Check read permission for the video</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2fbe7beb-5636-4c77-95d0-a79cc5950494</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL42_Disable download for the video</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>db59347d-c755-488f-94bd-ca388f4482a6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL43_Test viewing of links under getlink for the video</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2fcc1b53-68a1-4fdf-b4db-d5a9448d1328</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL44_Check read permission for the binary</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6d7f301c-1b12-4819-847a-e41186692549</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL45_Disable download for the bibary</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d84e9d09-c517-4579-80b0-152ce5b6d61e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL46_Test viewing of links under getlink for the binary</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
