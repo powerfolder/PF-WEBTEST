@@ -39,6 +39,9 @@ import java.awt.datatransfer.StringSelection as StringSelection
 import java.awt.Robot as Robot
 import java.awt.event.KeyEvent as KeyEvent
 import java.io.IOException as IOException
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+
 
 WebUI.callTestCase(findTestCase('Upload form/Pre_Test/Creat_Folder'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -48,7 +51,7 @@ WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Creat
 
 WebUI.delay(5)
 
-WebUI.setText(findTestObject('1Upload_Form/Page_Folders - PowerFolder/input_uploadform_heading'), 'Workshop')
+WebUI.setText(findTestObject('1Upload_Form/Page_Error - PowerFolder/Page_Folders - PowerFolder/input_Create_uploadform_heading'), 'Workshop')
 
 
 WebUI.setText(findTestObject('1Upload_Form/Page_Folders - PowerFolder/change_description'), 'Workshop number 1')
@@ -101,8 +104,25 @@ WebUI.switchToWindowIndex('1')
 
 WebUI.refresh()
 
-WebUI.verifyElementText(findTestObject('1Upload_Form/Page_Error - PowerFolder/h4_HTTP ERROR        404'), 'HTTP FEHLER 404', 
-    FailureHandling.STOP_ON_FAILURE)
+
+
+/* WebUI.verifyElementText(findTestObject('1Upload_Form/Page_Error - PowerFolder/h4_HTTP ERROR        404'), 'HTTP FEHLER 404', 
+    FailureHandling.STOP_ON_FAILURE) */
+
+
+// Localisation de l'élément
+def errorElement = findTestObject('1Upload_Form/Page_Error - PowerFolder/h4_HTTP ERROR        404')
+
+// Récupérer le texte réel
+String actualText = WebUI.getText(errorElement).trim()
+
+// Vérifier si le texte correspond à l'une des deux valeurs
+if (actualText == 'HTTP ERROR 404' || actualText == 'HTTP FEHLER 404') {
+	println("Test Passed: Le texte est correct - ${actualText}")
+} else {
+	WebUI.markFailed("Test Failed: Texte inattendu - ${actualText}")
+}
+
 
 WebUI.delay(2)
 

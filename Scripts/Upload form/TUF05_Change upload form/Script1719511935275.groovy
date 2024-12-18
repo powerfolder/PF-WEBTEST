@@ -65,19 +65,16 @@ descriptionElement.sendKeys(Keys.DELETE)
 // Définir le nouveau texte
 WebUI.setText(descriptionField, 'change description')
 
-WebDriverWait wait1 = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+WebUI.scrollToElement(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Save'), 1)
 
-// Attendre que l'élément devienne visible
-WebElement save_button = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[16]/div/div/div[3]/button')))
-
-// Cliquer sur l'élément
-save_button.click()
+WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Save'))
 
 WebUI.switchToWindowIndex(1)
 
+WebUI.delay(2)
+
 WebUI.refresh()
 
-WebUI.delay(2)
 
 WebUI.verifyElementText(findTestObject('1Upload_Form/Page_Link - PowerFolder/Verify_change'), 'change description')
 

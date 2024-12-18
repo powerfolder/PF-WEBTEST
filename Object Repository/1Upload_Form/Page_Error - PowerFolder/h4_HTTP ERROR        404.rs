@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Not Found'])[1]/preceding::h4[1]</value>
+         <value>//body/div/div/div[2]/div/div/div/h4</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>h4</value>
-      <webElementGuid>72677123-1e9e-4d0b-accc-a39a14ea5497</webElementGuid>
+      <webElementGuid>febf392a-5713-4711-aa73-c644de897db1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -34,7 +34,7 @@
         HTTP ERROR
         404
     </value>
-      <webElementGuid>151dabd2-fee6-4bc8-98ba-66e5d63689b4</webElementGuid>
+      <webElementGuid>1290902a-4cfd-48c7-9f1f-774db6201538</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,7 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[@class=&quot;wallpaper&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-xs-10 col-sm-8 col-md-6 col-lg-6 pica-relative&quot;]/div[@class=&quot;pica-dialog&quot;]/div[1]/div[1]/h4[1]</value>
-      <webElementGuid>082f3388-136d-4b22-9443-37ddf93203e5</webElementGuid>
+      <webElementGuid>5b5b840a-6d96-4bf7-b3fc-2fabcb4409af</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -50,7 +50,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Not Found'])[1]/preceding::h4[1]</value>
-      <webElementGuid>44c4f70f-9f2a-4510-aaa8-b2810b6ce09b</webElementGuid>
+      <webElementGuid>23c2cd19-025d-41cc-8c8d-c20405a1425a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -58,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='404']/parent::*</value>
-      <webElementGuid>da2b149c-c0b4-4fe9-a010-18fc4cd3c607</webElementGuid>
+      <webElementGuid>7079ffca-27fd-40de-8654-2fc4db5ca2c3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -66,7 +66,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//h4</value>
-      <webElementGuid>ac1f925f-e241-40dc-864b-5a53c9e366d8</webElementGuid>
+      <webElementGuid>b36a81ae-9789-4ccf-b17f-c8e6de84bbfe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -80,6 +80,6 @@
         HTTP ERROR
         404
     ')]</value>
-      <webElementGuid>aca8804b-af18-40f8-9253-0ced6c1527a0</webElementGuid>
+      <webElementGuid>0350c30c-065d-4325-ba1a-c1eb9bc64e39</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
