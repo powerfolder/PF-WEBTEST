@@ -25,12 +25,14 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 
+
+
+WebUI.callTestCase(findTestCase('Links/pre_test/Create_CSV_file_link'), [:], FailureHandling.STOP_ON_FAILURE)
+
 // Afficher le nom du document
 println(GlobalVariable.csvfilename)
 
 csvfilename = GlobalVariable.csvfilename
-
-WebUI.callTestCase(findTestCase('Links/pre_test/Create_CSV_file_link'), [:], FailureHandling.STOP_ON_FAILURE)
 
 // Vérification si l'élément est cliquable
 boolean isChecked = WebUI.verifyElementClickable(findTestObject('Object Repository/Links/Page_Folders - PowerFolder/label_Can read'), 

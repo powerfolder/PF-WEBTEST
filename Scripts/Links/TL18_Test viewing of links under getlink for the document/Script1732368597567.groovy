@@ -26,12 +26,14 @@ import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 
 // Afficher le nom du document
-println(GlobalVariable.documentname)
 
-String documentname = GlobalVariable.documentname
 
 // Appel du cas de test pour créer un lien de document
 WebUI.callTestCase(findTestCase('Links/pre_test/Create_document_link'), [:], FailureHandling.STOP_ON_FAILURE)
+
+println(GlobalVariable.documentname)
+
+String documentname = GlobalVariable.documentname
 
 // Sauvegarder les paramètres et fermer la fenêtre actuelle
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))

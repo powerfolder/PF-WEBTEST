@@ -25,11 +25,12 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 
+
+WebUI.callTestCase(findTestCase('Links/pre_test/import pdf'), [:], FailureHandling.STOP_ON_FAILURE)
+
 println(GlobalVariable.pdfname)
 
 pdfname = GlobalVariable.pdfname
-
-WebUI.callTestCase(findTestCase('Links/pre_test/import pdf'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 

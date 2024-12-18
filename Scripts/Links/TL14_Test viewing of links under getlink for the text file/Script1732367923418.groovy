@@ -25,11 +25,13 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 
+
+WebUI.callTestCase(findTestCase('Links/pre_test/create_text_file_link'), [('fileName') : 'getRandomFileName()'], FailureHandling.STOP_ON_FAILURE)
+
 println(GlobalVariable.textfilename)
 
 textfilename = GlobalVariable.textfilename
 
-WebUI.callTestCase(findTestCase('Links/pre_test/create_text_file_link'), [('fileName') : 'getRandomFileName()'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 

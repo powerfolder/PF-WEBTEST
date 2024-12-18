@@ -25,14 +25,12 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 
+WebUI.callTestCase(findTestCase('Links/pre_test/Create_spreadsheet_link'), [:], FailureHandling.STOP_ON_FAILURE)
+
 println(GlobalVariable.spreadsheetname)
 
 spreadsheetname = GlobalVariable.spreadsheetname
 
-// Appel du cas de test pour créer un lien de document
-WebUI.callTestCase(findTestCase('Links/pre_test/Create_spreadsheet_link'), [:], FailureHandling.STOP_ON_FAILURE)
-
-// Sauvegarder les paramètres et fermer la fenêtre actuelle
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 
 WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/button_Close'))
@@ -46,7 +44,6 @@ WebUI.switchToWindowIndex(0)
 WebUI.delay(1)
 
 WebUI.click(findTestObject('Links/Page_Dashboard - PowerFolder/lang_Links'))
-
 
 // Vérification que documentname n'est pas null
 assert spreadsheetname != null : 'Le nom du document ne doit pas être null.'
@@ -73,8 +70,7 @@ WebUI.comment('L\'URL contient \'/getlink/\': ' + containsGetLink)
 WebUI.verifyEqual(containsGetLink, true)
 
 // Fermer le navigateur
-WebUI.closeBrowser( ///////////////////////////////////////////////////// Méthodes //////////////////////////////////////////////
-    ) // Attente explicite de 10 secondes
+WebUI.closeBrowser() ///////////////////////////////////////////////////// Méthodes //////////////////////////////////////////////
 
 WebElement findLinksButton(String pdfFileName) {
     WebDriver driver = DriverFactory.getWebDriver()

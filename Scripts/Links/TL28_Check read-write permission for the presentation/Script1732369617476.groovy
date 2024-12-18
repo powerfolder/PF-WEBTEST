@@ -25,12 +25,14 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 import org.openqa.selenium.support.ui.WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions
 
-println(GlobalVariable.presentationname)
 
-presentationname = GlobalVariable.presentationname
 
 // Appel du cas de test pour créer un lien
 WebUI.callTestCase(findTestCase('Links/pre_test/Create_presentation_link'), [:], FailureHandling.STOP_ON_FAILURE)
+
+println(GlobalVariable.presentationname)
+
+presentationname = GlobalVariable.presentationname
 
 // Vérifier si l'élément "Can read and write" est cliquable
 TestObject readWriteLabel = findTestObject('links files/Page_Folders - PowerFolder/label_Can read and write')

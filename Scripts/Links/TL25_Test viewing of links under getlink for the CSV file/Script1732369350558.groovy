@@ -26,12 +26,14 @@ import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 
 // Afficher le nom du document
+
+// Appel du cas de test pour créer un lien de document
+WebUI.callTestCase(findTestCase('Links/pre_test/Create_CSV_file_link'), [:], FailureHandling.STOP_ON_FAILURE)
+
 println(GlobalVariable.csvfilename)
 
 csvfilename = GlobalVariable.csvfilename
 
-// Appel du cas de test pour créer un lien de document
-WebUI.callTestCase(findTestCase('Links/pre_test/Create_CSV_file_link'), [:], FailureHandling.STOP_ON_FAILURE)
 
 // Sauvegarder les paramètres et fermer la fenêtre actuelle
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))

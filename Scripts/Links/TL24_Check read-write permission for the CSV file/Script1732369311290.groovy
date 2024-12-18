@@ -22,15 +22,15 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
-import org.openqa.selenium.support.ui.WebDriverWait
-import org.openqa.selenium.support.ui.ExpectedConditions
+import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
+import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
+
+// Appel du cas de test pour créer un lien
+WebUI.callTestCase(findTestCase('Links/pre_test/Create_CSV_file_link'), [:], FailureHandling.STOP_ON_FAILURE)
 
 println(GlobalVariable.csvfilename)
 
 csvfilename = GlobalVariable.csvfilename
-
-// Appel du cas de test pour créer un lien
-WebUI.callTestCase(findTestCase('Links/pre_test/Create_CSV_file_link'), [:], FailureHandling.STOP_ON_FAILURE)
 
 // Vérifier si l'élément "Can read and write" est cliquable
 TestObject readWriteLabel = findTestObject('links files/Page_Folders - PowerFolder/label_Can read and write')
@@ -51,7 +51,7 @@ String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getConten
 WebUI.comment('URL copiée : ' + my_clipboard)
 
 // Vérifier que l'URL est valide
-assert (my_clipboard != null) && my_clipboard.startsWith('http')
+assert (my_clipboard != null) && my_clipboard.startsWith('https')
 
 // Ouvrir l'URL dans une nouvelle fenêtre
 WebUI.switchToWindowIndex(1)
@@ -70,7 +70,6 @@ WebUI.switchToWindowIndex(0)
 // Fermer la boîte de dialogue
 WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/button_Close'))
 
-// Trouver et cliquer sur le bouton Share
 WebElement btn1 = findShareButton(csvfilename)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
@@ -83,12 +82,13 @@ boolean isChecked_2 = WebUI.verifyElementClickable(readWriteLabel, FailureHandli
 
 WebUI.comment('Le label \'Can read and write\' est cliquable : ' + isChecked_2)
 
-// Délai et fermeture du navigateur
 WebUI.delay(2)
 
-WebUI.closeBrowser() // Fonction pour trouver le bouton Share
+WebUI.closeBrowser()
+
 WebElement findShareButton(String pdfFileName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
     return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + pdfFileName) + '\')]/td[7]/a'))
 }
+

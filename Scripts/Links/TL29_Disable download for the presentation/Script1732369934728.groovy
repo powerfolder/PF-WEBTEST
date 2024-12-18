@@ -25,11 +25,13 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 
+
+
+WebUI.callTestCase(findTestCase('Links/pre_test/Create_presentation_link'), [:], FailureHandling.STOP_ON_FAILURE)
+
 println(GlobalVariable.presentationname)
 
 presentationname = GlobalVariable.presentationname
-
-WebUI.callTestCase(findTestCase('Links/pre_test/Create_presentation_link'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementClickable(findTestObject('Links/Page_Folders - PowerFolder/label_Disable Download (View only)'))
 

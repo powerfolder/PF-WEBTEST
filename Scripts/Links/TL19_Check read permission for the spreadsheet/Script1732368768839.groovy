@@ -25,11 +25,11 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 
+WebUI.callTestCase(findTestCase('Links/pre_test/Create_spreadsheet_link'), [:], FailureHandling.STOP_ON_FAILURE)
+
 println(GlobalVariable.spreadsheetname)
 
 spreadsheetname = GlobalVariable.spreadsheetname
-
-WebUI.callTestCase(findTestCase('Links/pre_test/Create_spreadsheet_link'), [:], FailureHandling.STOP_ON_FAILURE)
 
 // Vérification si l'élément est cliquable
 boolean isChecked = WebUI.verifyElementClickable(findTestObject('Object Repository/Links/Page_Folders - PowerFolder/label_Can read'), 
@@ -66,9 +66,9 @@ WebUI.switchToWindowIndex(0)
 WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/button_Close'))
 
 // Trouver et cliquer sur le bouton Share
-WebElement btn1 = findShareButton(spreadsheetname)
+WebElement btn = findShareButton(spreadsheetname)
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 // Configurer le lien
 WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/links_config'))
@@ -76,8 +76,7 @@ WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/links_config'
 WebUI.delay(2)
 
 // Fermer le navigateur
-WebUI.closeBrowser( // Fonction pour trouver le bouton Share
-    ) // Attendre que l'élément soit visible et interactif
+WebUI.closeBrowser() // Fonction pour trouver le bouton Share
 
 WebElement findShareButton(String pdfFileName) {
     WebDriver driver = DriverFactory.getWebDriver()
