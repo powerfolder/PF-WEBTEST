@@ -10,7 +10,7 @@ WebUI.click(findTestObject('Login/loginSubmit'))
 
 String actualErrorMessage = WebUI.getText(findTestObject('Login/getLoginErrorMessage'))
 String expectedMessageGerman = 'Benutzername/Email unbekannt oder falsches Passwort'
-String expectedMessageEnglish = 'Unknown Email or wrong password'
+String expectedMessageEnglish = 'Unknown Username/Email or wrong password'
 
 if (actualErrorMessage == expectedMessageGerman) {
 	WebUI.comment('Error message in German verified successfully.')

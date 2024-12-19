@@ -104,7 +104,7 @@ String generateDateTimePlusOneMinute() {
 
 	calendar.add(Calendar.MINUTE, 1)
 
-	SimpleDateFormat sdf = new SimpleDateFormat('dd/MM/yyyy HH:mm')
+	SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm')
 
 	return sdf.format(calendar.getTime())
 }
@@ -114,7 +114,7 @@ String generateDateTimePlusOneYear() {
 
 	calendar.add(Calendar.YEAR, 1)
 
-	SimpleDateFormat sdf = new SimpleDateFormat('dd/MM/yyyy HH:mm')
+	SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm')
 
 	return sdf.format(calendar.getTime())
 }

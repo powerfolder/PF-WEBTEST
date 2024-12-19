@@ -27,6 +27,8 @@ import java.nio.file.Files as Files
 import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Calendar as Calendar
 import java.util.Date as Date
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
 
 String firstName = generateRandomString(8)
 
@@ -58,7 +60,31 @@ WebUI.setText(findTestObject('Accounts/InputPhoneNo'), phone)
 
 WebUI.setText(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/account_storage_overwiew'), '5')
 
-WebUI.selectOptionByLabel(findTestObject('Accounts/SelectLanguageDropDrown'), 'Deutsch', false)
+//WebUI.selectOptionByLabel(findTestObject('Accounts/SelectLanguageDropDrown'), 'Deutsch', false)
+
+
+def selectLanguageDropdown = findTestObject('Accounts/SelectLanguageDropDrown')
+
+// Liste des textes possibles
+List<String> expectedLanguages = ['Deutsch', 'German']
+
+// Vérifier quelle option est disponible et la sélectionner
+boolean languageSelected = false
+for (String language : expectedLanguages) {
+	try {
+		WebUI.selectOptionByLabel(selectLanguageDropdown, language, false)
+		println("Langue sélectionnée avec succès : ${language}")
+		languageSelected = true
+		break
+	} catch (Exception e) {
+		println("L'option '${language}' n'est pas trouvée. On essaie la suivante...")
+	}
+}
+
+if (!languageSelected) {
+	WebUI.markFailed("Aucune des options ('Deutsch' ou 'German') n'a été trouvée dans la liste déroulante.")
+}
+
 
 WebUI.click(findTestObject('Accounts/SaveButton'))
 

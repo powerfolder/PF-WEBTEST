@@ -27,6 +27,7 @@ import java.util.List as List
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.GroupName = ('Group_' + RandomStringUtils.randomNumeric(4))
+
 String Groupname = GlobalVariable.GroupName
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
@@ -54,6 +55,7 @@ assert Groupname != null
 WebUI.delay(1)
 
 WebUI.closeBrowser()
+
 
 @Keyword
 WebElement findGroup(String Groupname) {

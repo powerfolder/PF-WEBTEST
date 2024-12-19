@@ -30,6 +30,10 @@ import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import java.util.Random as Random
 
+
+
+// Test plan
+WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
 // Function to get a timestamp
 // Global variables
 GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
@@ -44,9 +48,6 @@ String lastName = 'nachname ' + generateRandomString(4)
 
 // Generate a random phone number
 String phone = generateRandomPhoneNumber()
-
-// Test plan
-WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('LeftNavigationIcons/account'))
 
@@ -156,7 +157,7 @@ String generateDateTimePlusOneYear() {
 
     calendar.add(Calendar.YEAR, 1)
 
-    SimpleDateFormat sdf = new SimpleDateFormat('dd/MM/yyyy HH:mm')
+    SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm')
 
     return sdf.format(calendar.getTime())
 }

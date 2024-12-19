@@ -33,151 +33,114 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 
+// Variables globales
 String folderName = GlobalVariable.folderName
+String docName = GlobalVariable.Document
 
-String DocName = GlobalVariable.Document
-
+// Appel du test case
 WebUI.callTestCase(findTestCase('Recycle Bin/Pre_test/restore 5 versions'), [:], FailureHandling.STOP_ON_FAILURE)
 
-// First one
+// Restauration des versions
 restoreVersion(2)
+restoreDocumentVersion(docName, 3)
+restoreDocumentVersion(docName, 4)
+restoreDocumentVersion(docName, 5)
+restoreDocumentVersion(docName, 6)
 
-// Second
-restoreDocumentVersion(DocName, 3) 
-// Third
-restoreDocumentVersion(DocName, 4)
-
-// Fourth
-restoreDocumentVersion(DocName, 5)
-
-// Fifth
-restoreDocumentVersion(DocName, 6)
-
-// Final check
-def btn5 = findDoc(DocName)
-if (btn5 != null) {
-    WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn5))
-    assert DocName != null
+// Vérification finale
+def btnFinal = findDoc(docName)
+if (btnFinal != null) {
+	WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btnFinal))
+	assert docName != null
 } else {
-    println("Final document check failed: Document not found.")
-    throw new RuntimeException("Final document check failed: Document not found.")
+	println("Final document check failed: Document not found.")
+	throw new RuntimeException("Final document check failed: Document not found.")
 }
 
-WebUI.closeBrowser() 
+WebUI.closeBrowser()
 
-
+/**
+ * Trouve un dossier par son nom
+ */
 @Keyword
 WebElement findFolder(String folderName) {
-    WebDriver driver = DriverFactory.getWebDriver()
+	WebDriver driver = DriverFactory.getWebDriver()
+	WebDriverWait wait = new WebDriverWait(driver, 30)
 
-    WebDriverWait wait = new WebDriverWait(driver, 30)
+	println("Searching for folder with name: " + folderName)
+	WebElement element = waitForElementVisible(driver, By.xpath("//a[contains(text(),'" + folderName + "')]"), wait)
 
-    WebElement element = null
+	if (element == null) {
+		println("Folder not found: " + folderName)
+		println("Page source:\n" + driver.getPageSource())
+	}
 
-    println('Searching for folder with name: ' + folderName)
-
-    element = waitForElementVisible(driver, By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'), wait)
-
-    if (element == null) {
-        println('Folder not found: ' + folderName)
-
-        println('Page source:\n' + driver.getPageSource())
-    }
-    
-    return element
+	return element
 }
 
+/**
+ * Trouve un document par son nom
+ */
 @Keyword
-WebElement findDoc(String DocName) {
-    WebDriver driver = DriverFactory.getWebDriver()
+WebElement findDoc(String docName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+	WebDriverWait wait = new WebDriverWait(driver, 30)
 
-    WebDriverWait wait = new WebDriverWait(driver, 30)
-
-    try {
-        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(('//*[contains(@data-search-keys, \'' + 
-                    DocName) + '\')]/td[1]/span')))
-
-        println('Document found: ' + DocName)
-
-        return element
-    }
-    catch (org.openqa.selenium.TimeoutException e) {
-        println('Timeout while waiting for document: ' + DocName)
-
-        println('Page source at timeout:\n' + driver.getPageSource())
-
-        return null
-    } 
-    catch (org.openqa.selenium.NoSuchElementException e) {
-        println('Document not found: ' + DocName)
-
-        println('Page source when not found:\n' + driver.getPageSource())
-
-        return null
-    } 
+	try {
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(
+				By.xpath("//*[contains(@data-search-keys, '" + docName + "')]/td[1]/span")))
+		println("Document found: " + docName)
+		return element
+	} catch (org.openqa.selenium.TimeoutException e) {
+		println("Timeout while waiting for document: " + docName)
+		println("Page source at timeout:\n" + driver.getPageSource())
+		return null
+	}
 }
 
+/**
+ * Restaure une version spécifique à partir de l'index de ligne
+ */
 @Keyword
 void restoreVersion(int rowIndex) {
-    WebUI.click(findTestObject('Recycle bin/Page_Folders - PowerFolder/a_Restore'))
+	WebUI.click(findTestObject('Recycle bin/Page_Folders - PowerFolder/a_Restore'))
 
-    WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 10)
+	WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 10)
+	WebElement table = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//*[@id="pica_restore_versions"]/div')))
+	WebElement button = table.findElement(By.xpath("./table/tbody/tr[" + rowIndex + "]/td[6]/button"))
 
-    WebElement table = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//*[@id=\'pica_restore_versions\']/div')))
-
-    WebElement button = table.findElement(By.xpath(('./table/tbody/tr[' + rowIndex) + ']/td[6]/button'))
-
-    button.click()
-
-    WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/lang_Close'))
+	button.click()
+	WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/lang_Close'))
 }
 
+/**
+ * Restaure une version d'un document spécifique
+ */
 @Keyword
 void restoreDocumentVersion(String docName, int rowIndex) {
-	
 	WebUI.refresh()
 	WebUI.delay(2)
-    WebElement btn = findDoc(docName)
 
-    if (btn != null) {
-        if (btn.isDisplayed() && btn.isEnabled()) {
-            println('Clicking on the document: ' + docName)
-
-            WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
-            restoreVersion(rowIndex)
-        } else {
-            println('Document element is not interactable: ' + docName)
-
-            println('Element details: ' + btn.toString())
-
-            throw new RuntimeException('Document element is not interactable.')
-        }
-    } else {
-        println('Cannot restore version: Document not found.')
-
-        WebDriver driver = DriverFactory.getWebDriver()
-
-        println('Page source before exception:\n' + driver.getPageSource())
-
-        throw new RuntimeException('Cannot restore version: Document not found.')
-    }
+	WebElement btn = findDoc(docName)
+	if (btn != null && btn.isDisplayed() && btn.isEnabled()) {
+		println("Clicking on the document: " + docName)
+		WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+		restoreVersion(rowIndex)
+	} else {
+		println("Cannot restore version: Document not found or not interactable.")
+		throw new RuntimeException("Cannot restore version: Document not found.")
+	}
 }
 
+/**
+ * Attends qu'un élément soit visible
+ */
 @Keyword
 WebElement waitForElementVisible(WebDriver driver, By by, WebDriverWait wait) {
-    try {
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(by))
-    }
-    catch (org.openqa.selenium.TimeoutException e) {
-        println('Timeout while waiting for element: ' + by.toString())
-
-        return null
-    } 
-    catch (org.openqa.selenium.NoSuchElementException e) {
-        println('Element not found: ' + by.toString())
-
-        return null
-    } 
+	try {
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(by))
+	} catch (org.openqa.selenium.TimeoutException e) {
+		println("Timeout while waiting for element: " + by.toString())
+		return null
+	}
 }
-
