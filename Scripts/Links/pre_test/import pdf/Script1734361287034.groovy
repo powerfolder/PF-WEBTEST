@@ -83,8 +83,6 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 assert btn != null
 
-deletePdfFile(pdfFilePath)
-
 WebUI.switchToWindowIndex(1)
 
 WebUI.delay(2)
@@ -100,6 +98,8 @@ WebElement btn1 = findShareButton(pdfname)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
 WebUI.click(findTestObject('Object Repository/Folders/shareLink')) 
+
+deletePdfFile(pdfFilePath)
 
 /////////////////////////////methodes//////////////////////////////////////////
 // Chemin vers le bureau

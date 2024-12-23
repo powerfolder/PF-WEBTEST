@@ -88,8 +88,6 @@ assert btn != null
 
 WebUI.delay(2)
 
-deleteImageFile(imagePath)
-
 WebUI.refresh()
 
 WebElement btn1 = findShareButton(imageName)
@@ -97,6 +95,8 @@ WebElement btn1 = findShareButton(imageName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
 WebUI.click(findTestObject('Object Repository/Folders/shareLink'))
+
+deleteImageFile(imagePath)
 
  //////////////////////////////// MÉTHODES //////////////////////////////////
 // Méthode pour créer une image PNG avec du texte

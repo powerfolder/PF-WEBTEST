@@ -58,14 +58,17 @@ WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/lang_
 selectFileAutomatically(binaryFilePath)
 
 WebUI.delay(2)
-deleteBinaryFile(binaryFilePath)
+
 
 WebUI.refresh()
 
 WebElement btn1 = findShareButton(binaryName)
+
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
+
 WebUI.click(findTestObject('Object Repository/Folders/shareLink'))
 
+deleteBinaryFile(binaryFilePath)
 //////////////////////////////////// MÉTHODES ////////////////////////////////////
 
 // Méthode pour créer un fichier binaire

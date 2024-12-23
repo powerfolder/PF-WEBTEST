@@ -56,12 +56,14 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 assert btn != null
 
 WebUI.delay(2)
-deleteVideoFile(videoPath)
+
 WebUI.refresh()
 
 WebElement btn1 = findShareButton(videoName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 WebUI.click(findTestObject('Object Repository/Folders/shareLink'))
+
+deleteVideoFile(videoPath)
 
 //////////////////// MÉTHODES ///////////////////////
 
