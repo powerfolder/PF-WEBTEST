@@ -51,7 +51,9 @@ WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.EN
 
 
 WebDriver driver = DriverFactory.getWebDriver()
-WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$folderName')]"))
+WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'$folderName')]"))
+
+//tbody/tr[6]/td[2]/span/a
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
 
@@ -60,6 +62,7 @@ WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createDirectoryIcon'))
 
 WebUI.setText(findTestObject('Folders/inputFolderName'),folderName)
+
 
 WebUI.sendKeys(findTestObject('Folders/inputFolderName'), Keys.chord(Keys.ENTER))
 
@@ -75,10 +78,6 @@ WebElement buttonCreateLink = 	WebUiCommonHelper.findWebElement(findTestObject('
 
 WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(buttonCreateLink))
 
-
-
-WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'), '1')
-
 WebUI.click(findTestObject('SettingsPopUp/buttonSave'))
 WebUI.delay(3)
 
@@ -90,9 +89,7 @@ WebUI.navigateToUrl(my_clipboard)
 
 WebUI.delay(3)
 
-
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
-
 
 List list = driver.findElements(By.className("pica-crumb"));
 
@@ -100,21 +97,31 @@ assert list.get(list.size()-1).getText().equals(folderName)
 WebUI.closeBrowser()
 
 
-
 def String getRandomFolderName() {
 	String folderName = 'FDTL1'+getTimestamp();
 	return folderName;
 	
 }
-def WebElement findShareButton(String fileName) {
-	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[7]/a"))
-}
 
+WebElement findShareButton(String fileName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+
+	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
+}
 def String getTimestamp() {
 	Date todaysDate = new Date();
 	String formattedDate = todaysDate.format("ddMMMyyyyhhmmss");
 	return formattedDate;
 }
+
+/*
+def WebElement findShareButton(String fileName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+	return driver.findElement(By.xpath("//table[@id='files_files_table']//[contains(text(),'$fileName')]/../../td[7]/a/span"))
+}  
+//tr[@id='Object_559992308']/td[7]/a/span
+//body/div[2]/div[1]/div[2]/div[2]/table/tbody/tr/td[7]/a/span
+ */
+
 
 

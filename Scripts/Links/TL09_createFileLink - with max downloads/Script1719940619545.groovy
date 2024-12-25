@@ -41,7 +41,7 @@ assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 
 
 WebDriver driver = DriverFactory.getWebDriver()
-WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$folderName')]"))
+WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'$folderName')]"))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
 WebUI.click(findTestObject('Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0'))
@@ -109,9 +109,10 @@ WebUI.closeBrowser()
 
 
 
-def WebElement findShareButton(String fileName) {
+WebElement findShareButton(String fileName) {
 	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[7]/a"))
+
+	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
 }
 
 def String getRandomFolderName() {

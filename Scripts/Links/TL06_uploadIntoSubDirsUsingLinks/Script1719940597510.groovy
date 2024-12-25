@@ -39,7 +39,7 @@ WebUI.click(findTestObject('Folders/buttonOK'))
 
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 WebDriver driver = DriverFactory.getWebDriver()
-WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$folderName')]"))
+WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'$folderName')]"))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
 
@@ -51,7 +51,7 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), "dir1")
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-WebElement dir1 =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'dir1')]"))
+WebElement dir1 =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'dir1')]"))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(dir1))
 
@@ -120,9 +120,10 @@ def String getRandomFolderName() {
 	return folderName;
 	
 }
-def WebElement findShareButton(String fileName) {
+WebElement findShareButton(String fileName) {
 	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[7]/a"))
+
+	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
 }
 
 def String getTimestamp() {

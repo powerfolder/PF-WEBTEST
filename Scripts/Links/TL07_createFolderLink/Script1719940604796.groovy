@@ -48,7 +48,7 @@ WebElement buttonCreateLink = WebUiCommonHelper.findWebElement(findTestObject('L
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonCreateLink))
 
-WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'), '2')
+//WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'), '2')
 
 WebUI.delay(3)
 
@@ -80,9 +80,9 @@ String getRandomFolderName() {
 }
 
 WebElement findShareButton(String fileName) {
-    WebDriver driver = DriverFactory.getWebDriver()
+	WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[7]/a"))
+	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
 }
 
 String getTimestamp() {

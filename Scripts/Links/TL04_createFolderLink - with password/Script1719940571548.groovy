@@ -63,9 +63,6 @@ WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_
 //WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
 //WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
 
-
-WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'),	'3')
-
 WebUI.setText(findTestObject('Page_Link - PowerFolder/lang_Password required'), 'Alexa@131190')
 
 WebUI.delay(3)
@@ -100,9 +97,10 @@ def String getRandomFolderName() {
 	return folderName;
 	
 }
-def WebElement findShareButton(String fileName) {
+WebElement findShareButton(String fileName) {
 	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$fileName')]/../../td[7]/a"))
+
+	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
 }
 
 def String getTimestamp() {

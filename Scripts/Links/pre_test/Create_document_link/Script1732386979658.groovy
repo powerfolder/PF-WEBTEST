@@ -54,7 +54,7 @@ WebUI.sendKeys(findTestObject('Object Repository/Accounts/inputAccountSearch'), 
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement folder = driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$folderName')]"))
+WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'$folderName')]"))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
 
@@ -103,9 +103,8 @@ String getTimestamp() {
 	return formattedDate
 }
 
-WebElement findShareButton(String documentname) {
+WebElement findShareButton(String fileName) {
 	WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$documentname')]/../../td[7]/a"))
+	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
 }
-

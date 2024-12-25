@@ -26,7 +26,6 @@ import org.openqa.selenium.support.ui.WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions
 
 
-
 WebUI.callTestCase(findTestCase('Links/pre_test/create_text_file_link'), [:], FailureHandling.STOP_ON_FAILURE)
 
 println(GlobalVariable.textfilename)

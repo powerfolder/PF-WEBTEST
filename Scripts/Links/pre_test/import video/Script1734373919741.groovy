@@ -124,7 +124,7 @@ void deleteVideoFile(String filePath) {
 // Localiser un document
 WebElement findDoc(String fileName) {
 	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[2]/a'))
+	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[2]/span/a'))
 }
 
 // Générer un nom de fichier unique
@@ -133,9 +133,9 @@ String getRandomFileName() {
 	return name
 }
 
-WebElement findShareButton(String documentName) {
+WebElement findShareButton(String fileName) {
 	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$documentName')]/../../td[7]/a"))
-}
 
+	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
+}
 

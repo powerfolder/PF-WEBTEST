@@ -179,9 +179,9 @@ void deletePdfFile(String pdfFilePath) {
 WebElement findDoc(String pdfFileName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + pdfFileName) + '\')]/td[2]/a'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + pdfFileName) + '\')]/td[2]/span/a'))
 }
-
+//body/div[2]/div[1]/div[2]/div[2]/table/tbody/tr/td[2]/span/a
 String getRandomFileName() {
     String documentname = 'pdf_file_' + getTimestamp()
 
@@ -196,9 +196,8 @@ String getTimestamp() {
     return formattedDate
 }
 
-WebElement findShareButton(String documentname) {
-    WebDriver driver = DriverFactory.getWebDriver()
+WebElement findShareButton(String fileName) {
+	WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$documentname')]/../../td[7]/a"))
+	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
 }
-
