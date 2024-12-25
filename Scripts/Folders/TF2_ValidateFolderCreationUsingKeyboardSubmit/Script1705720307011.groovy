@@ -73,8 +73,8 @@ int getFoldersCount() {
 boolean tableContainsFolder(String fileName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    WebElement tfolder = driver.findElement(By.xpath(('//td/a[@class=\'pica-name\' and text() =\'' + fileName) + '\']'))
-
+    WebElement tfolder = driver.findElement(By.xpath(('//td[2]/span/a[contains(text(),\'' + fileName) + '\')]'))
+	
     return tfolder.isDisplayed()
 }
 

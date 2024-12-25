@@ -47,11 +47,12 @@ WebUI.setText(findTestObject('Folders/inputSearch'), folderName)
 
 //WebUI.mouseOver(findTestObject('Folders/firstFolder'), FailureHandling.STOP_ON_FAILURE)
 //WebUI.mouseOverOffset(findTestObject('Folders/firstFolder'), 20, 30)
+
 WebDriver driver = DriverFactory.getWebDriver()
 
 println("//td/a[text()='$folderName']/ancestor::tr/td[1]/span")
 
-WebElement folderNameElement = driver.findElement(By.xpath("//td/a[text()='$folderName']/ancestor::tr/td[1]/span"))
+WebElement folderNameElement = driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName) + '\')]/td[1]/span '))
 
 WebUI.delay(5)
 

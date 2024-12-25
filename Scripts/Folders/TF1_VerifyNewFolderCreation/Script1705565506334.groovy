@@ -53,7 +53,7 @@ WebUI.setText(findTestObject('Folders/inputSearch'), folderName)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement folder = driver.findElement(By.xpath("//td/a[contains(text(),'$folderName')]"))
+WebElement folder = driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName) + '\')]/td[1]/span'))
 
 boolean isfolderCreated = folder.isDisplayed()
 

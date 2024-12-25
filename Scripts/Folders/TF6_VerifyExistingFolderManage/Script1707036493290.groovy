@@ -41,14 +41,14 @@ WebUI.setText(findTestObject('Folders/inputSearch'), folderName)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement folder = driver.findElement(By.xpath("//td/a[contains(text(),'$folderName')]"))
+WebElement folder = driver.findElement(By.xpath("//td/span/a[contains(text(),'$folderName')]"))
 
 boolean isfolderCreated = folder.isDisplayed()
 
 WebUI.verifyEqual(isfolderCreated, true)
 
 //WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getFolderCreationNotification')), 'Folder created')
-WebElement folderNameElement = driver.findElement(By.xpath("//td/a[text()='$folderName']/ancestor::tr/td[1]/span"))
+WebElement folderNameElement = driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName) + '\')]/td[1]/span '))
 
 folderNameElement.click()
 

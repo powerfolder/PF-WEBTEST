@@ -4,6 +4,7 @@
    <name>TF01_Create directories</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>e9607ec0-be46-4665-8ef8-b0bd6ede3db7</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

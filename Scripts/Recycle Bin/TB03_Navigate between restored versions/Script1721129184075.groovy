@@ -33,13 +33,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 
-// Variables globales
-String folderName = GlobalVariable.folderName
-String docName = GlobalVariable.Document
+
 
 // Appel du test case
 WebUI.callTestCase(findTestCase('Recycle Bin/Pre_test/restore 5 versions'), [:], FailureHandling.STOP_ON_FAILURE)
-
+// Variables globales
+String folderName = GlobalVariable.folderName
+String docName = GlobalVariable.Document
 // Restauration des versions
 restoreVersion(2)
 restoreDocumentVersion(docName, 3)

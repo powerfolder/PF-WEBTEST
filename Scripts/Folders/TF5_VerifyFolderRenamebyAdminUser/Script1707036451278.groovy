@@ -44,7 +44,7 @@ WebDriver driver = DriverFactory.getWebDriver()
 
 WebUI.delay(5)
 
-WebElement folderNameElement = driver.findElement(By.xpath("//td/a[text()='$folderName']/ancestor::tr/td[1]/span"))
+WebElement folderNameElement = driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName) + '\')]/td[1]/span '))
 
 folderNameElement.click()
 

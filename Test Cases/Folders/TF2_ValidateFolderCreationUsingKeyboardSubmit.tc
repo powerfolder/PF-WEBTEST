@@ -4,5 +4,6 @@
    <name>TF2_ValidateFolderCreationUsingKeyboardSubmit</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>d4fb2525-bae1-4c62-b52e-c280a864847b</testCaseGuid>
 </TestCaseEntity>

@@ -4,5 +4,6 @@
    <name>TF5_VerifyFolderRenamebyAdminUser</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>770fb405-ab5b-42f6-a0ce-bce3dceb62bf</testCaseGuid>
 </TestCaseEntity>

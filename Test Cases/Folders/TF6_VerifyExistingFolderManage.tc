@@ -4,5 +4,6 @@
    <name>TF6_VerifyExistingFolderManage</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>8d117a6c-d577-4b5f-95c6-5dbfaa7a452f</testCaseGuid>
 </TestCaseEntity>

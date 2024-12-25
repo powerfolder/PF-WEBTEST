@@ -55,7 +55,7 @@ WebUI.setText(findTestObject('Folders/inputSearch'), folderName)
 WebDriver driver = DriverFactory.getWebDriver()
 
 // Find the folder element using the correct XPath with string concatenation
-WebElement folderNameElement = driver.findElement(By.xpath("//td/a[text()='" + folderName + "']/ancestor::tr/td[1]/span"))
+WebElement folderNameElement = driver.findElement(By.xpath("//td/span/a[text()='" + folderName + "']/ancestor::tr/td[1]/span"))
 
 // Delay to ensure the folder is present
 WebUI.delay(5)

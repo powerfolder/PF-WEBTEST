@@ -84,6 +84,6 @@ WebElement findDoc(String DocName) {
 WebElement findFolder(String folderName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
+    return driver.findElement(By.xpath(('//td[2]/span/a[contains(text(),\'' + folderName) + '\')]'))
 }
 

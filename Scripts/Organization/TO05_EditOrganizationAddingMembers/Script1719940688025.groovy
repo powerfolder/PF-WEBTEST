@@ -44,6 +44,7 @@ WebUI.click(findTestObject('Organization/SaveButton'))
 
 WebUI.delay(2)
 
+
 WebUI.setText(findTestObject('Accounts/inputAccountSearch'), Organization_name)
 
 WebDriver driver = DriverFactory.getWebDriver()
@@ -51,6 +52,7 @@ WebDriver driver = DriverFactory.getWebDriver()
 WebElement orgElement = driver.findElement(By.xpath(('//a[(@class=\'pica-name\') and (text() =\'' + Organization_name) + '\')]'))
 
 orgElement.click()
+
 
 WebUI.click(findTestObject('Organization/EditButton'), FailureHandling.OPTIONAL)
 
@@ -64,3 +66,4 @@ WebUI.click(findTestObject('Organization/SaveButton'))
 
 WebUI.delay(3)
 WebUI.closeBrowser()
+

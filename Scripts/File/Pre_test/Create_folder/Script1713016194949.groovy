@@ -32,7 +32,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 // Déclaration de la variable globale folderName
-GlobalVariable.folderName = ('folder_' + RandomStringUtils.randomNumeric(4))
+
+GlobalVariable.folderName = getRandomFolderName()
 
 String folderName = GlobalVariable.folderName
 
@@ -52,7 +53,7 @@ WebUI.delay(2)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement folder = driver.findElement(By.xpath(('//td/a[contains(text(),\'' + folderName) + '\')]'))
+WebElement folder = driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName) + '\')]/td[1]/span'))
 
 boolean isFolderCreated = folder.isDisplayed()
 
@@ -66,6 +67,26 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 WebElement findFolder(String folderName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
+    return driver.findElement(By.xpath(('//td[2]/span/a[contains(text(),\'' + folderName) + '\')]'))
+}
+
+String getTimestamp() {
+	Date todaysDate = new Date()
+
+	String formattedDate = todaysDate.format('dd_MMM_yyyy_hh_mm_ss')
+
+	return formattedDate
+}
+
+String getRandomFileName() {
+	String fileName = 'File_' + getTimestamp()
+
+	return fileName
+}
+
+String getRandomFolderName() {
+	String folderName = 'Folder_' + getTimestamp()
+
+	return folderName
 }
 

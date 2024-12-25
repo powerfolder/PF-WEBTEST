@@ -4,5 +4,6 @@
    <name>TF02_Navigate directories</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>ba485688-0db1-4dab-b618-4a42f4767a0c</testCaseGuid>
 </TestCaseEntity>
