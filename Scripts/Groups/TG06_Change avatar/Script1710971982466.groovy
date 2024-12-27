@@ -24,15 +24,13 @@ import org.openqa.selenium.WebElement as WebElement
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.By as By
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
-
-// Création du dossier temporaire sur le bureau et copie de l'image
 Path desktopPath = Paths.get(System.getProperty("user.home"), "Desktop", "temp_avatar_folder")
 Path tempImagePath = createTempFolderWithImage(desktopPath)
 
-// Bloc try-finally pour s'assurer que le dossier est supprimé après le test
 try {
 	// Appel du cas de test pour créer un groupe
 	WebUI.callTestCase(findTestCase('Groups/Pre_test/create_group'), [:], FailureHandling.STOP_ON_FAILURE)
+
 
 	WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Edit_m'))
 	WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Avatar'))

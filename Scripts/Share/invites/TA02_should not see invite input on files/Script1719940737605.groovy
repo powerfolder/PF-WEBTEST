@@ -56,7 +56,7 @@ WebUI.click(findTestObject('Folders/buttonOK'))
 
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 WebDriver driver = DriverFactory.getWebDriver()
-WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/a[contains(text(),'$folderName')]"))
+WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'$folderName')]"))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
 

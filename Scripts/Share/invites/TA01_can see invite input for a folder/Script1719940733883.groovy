@@ -24,7 +24,7 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
-String folderName =  getRandomGroupName()
+String folderName =  getRandomFolderName()
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 
