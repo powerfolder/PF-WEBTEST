@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>EA09_Edit_Additional_Emails</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c4be528d-931e-466f-97af-c295a53f467a</testCaseGuid>
+</TestCaseEntity>

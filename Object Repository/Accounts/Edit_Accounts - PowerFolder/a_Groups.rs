@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Groups</name>
+   <tag></tag>
+   <elementGuidId>ba1806c0-802b-4e66-bea3-43175b7b5f94</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>li.hidden-xs.active > a</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_account_dialog']/div/div/div[2]/ul/li[5]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>17225d25-0b11-4c79-8067-daaa255db9c7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                            Groups
+                        </value>
+      <webElementGuid>e07d7e6e-d829-471c-9ff5-af87779cddc2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_account_dialog&quot;)/div[@class=&quot;modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-body&quot;]/ul[@class=&quot;pica-space pica-nav-tabs nav nav-tabs&quot;]/li[@class=&quot;hidden-xs active&quot;]/a[1]</value>
+      <webElementGuid>13bdfa6e-f983-487f-aaa8-5d8ee1619eb0</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_account_dialog']/div/div/div[2]/ul/li[5]/a</value>
+      <webElementGuid>ae1f6b7a-a7a0-488b-b877-e303868339ea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Folders'])[3]/following::a[1]</value>
+      <webElementGuid>9741c124-4193-45e1-a93d-4f30881bb3a7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Additional E-Mails'])[1]/following::a[2]</value>
+      <webElementGuid>4e13b17f-3405-4876-ac29-0906aa6ba429</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Organizations'])[2]/preceding::a[1]</value>
+      <webElementGuid>33c2d3a1-834d-4a07-b2b8-1895062b38a9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[5]/a</value>
+      <webElementGuid>7a849c2a-e933-4d8a-8393-83b207d4bb66</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[(text() = '
+                            Groups
+                        ' or . = '
+                            Groups
+                        ')]</value>
+      <webElementGuid>5bd5dd0d-5f8e-4c4b-aee4-4f910e7c61a6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

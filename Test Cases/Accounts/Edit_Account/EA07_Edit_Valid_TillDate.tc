@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>EA07_Edit_Valid_TillDate</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>89da122c-33fc-4354-b196-512ab6178108</testCaseGuid>
+</TestCaseEntity>

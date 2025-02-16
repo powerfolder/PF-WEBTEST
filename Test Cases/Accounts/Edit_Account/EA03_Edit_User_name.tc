@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>EA03_Edit_User_name</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d570d51b-5d9b-4cfa-bc7f-cff92a974cae</testCaseGuid>
+</TestCaseEntity>

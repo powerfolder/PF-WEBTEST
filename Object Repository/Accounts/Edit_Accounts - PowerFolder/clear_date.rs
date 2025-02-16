@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>clear_date</name>
+   <tag></tag>
+   <elementGuidId>14c2137e-09c0-47d4-b436-d72541dc9cc2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_account_dialog']/div/div/div[2]/div/div[4]/div[3]/div/div/ul/li[2]/table/tbody/tr/td[2]/a/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.glyphicon.glyphicon-trash</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>0647ae40-fbca-4a0d-bc8e-934b055bc5c4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>glyphicon glyphicon-trash</value>
+      <webElementGuid>93f0c320-83b6-4ae5-81df-658d35eca1b0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_account_dialog&quot;)/div[@class=&quot;modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-body&quot;]/div[@class=&quot;pica-nav-tab&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;form-group col-xs-4 pica-block-on-small&quot;]/div[@class=&quot;input-group&quot;]/div[@class=&quot;bootstrap-datetimepicker-widget dropdown-menu usetwentyfour top&quot;]/ul[@class=&quot;list-unstyled&quot;]/li[@class=&quot;picker-switch accordion-toggle&quot;]/table[@class=&quot;table-condensed&quot;]/tbody[1]/tr[1]/td[2]/a[1]/span[@class=&quot;glyphicon glyphicon-trash&quot;]</value>
+      <webElementGuid>51dd677b-0fb3-43b5-921c-ffa66152477a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_account_dialog']/div/div/div[2]/div/div[4]/div[3]/div/div/ul/li[2]/table/tbody/tr/td[2]/a/span</value>
+      <webElementGuid>ba5545b5-087f-4443-89f1-17406e507d4b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/a/span</value>
+      <webElementGuid>f986c181-5353-4f3b-bf74-f9e0c2247be8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

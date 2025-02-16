@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>EA01_Open_Edit_Account_Page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>58460e99-eb99-4c5b-a8f4-0ed4fbafe408</testCaseGuid>
+</TestCaseEntity>

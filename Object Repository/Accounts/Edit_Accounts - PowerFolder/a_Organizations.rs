@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Organizations</name>
+   <tag></tag>
+   <elementGuidId>02241243-ebb1-4524-a612-87e5c057ad04</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#pica_account_organizations_nav > a</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/ul/li[6]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>59c479a6-728e-44cc-9b91-fb1c8cd00ccb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                            Organizations
+                        </value>
+      <webElementGuid>ceb55621-ac6d-4d8d-9270-27c8f04a007d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_account_organizations_nav&quot;)/a[1]</value>
+      <webElementGuid>beaa5a5a-0afc-475a-81f9-085697672447</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//li[@id='pica_account_organizations_nav']/a</value>
+      <webElementGuid>15b50b29-c075-4ef7-ac08-91b361fcc071</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Groups'])[3]/following::a[1]</value>
+      <webElementGuid>8ff1b299-bb0d-47b6-b496-e6c2e5bb0d5e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Folders'])[3]/following::a[2]</value>
+      <webElementGuid>4553fcc4-63d0-492a-a263-d4a80f65718c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Invoice details'])[1]/preceding::a[1]</value>
+      <webElementGuid>30327802-3d54-4e8f-bd8d-089c96f15b51</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[6]/a</value>
+      <webElementGuid>04bc7d73-e1ac-451e-830b-078031b17d74</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[(text() = '
+                            Organizations
+                        ' or . = '
+                            Organizations
+                        ')]</value>
+      <webElementGuid>642812c8-7d09-4a6c-be89-f63bd59bd567</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

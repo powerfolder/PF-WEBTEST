@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>EA15_Check_Language_Change</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b798c284-ea0e-4a43-a088-80893a4061f4</testCaseGuid>
+</TestCaseEntity>

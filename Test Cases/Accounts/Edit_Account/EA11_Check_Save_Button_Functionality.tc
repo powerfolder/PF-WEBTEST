@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>EA11_Check_Save_Button_Functionality</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f6f686f6-884a-44c4-ad4f-9fae886c32ba</testCaseGuid>
+</TestCaseEntity>

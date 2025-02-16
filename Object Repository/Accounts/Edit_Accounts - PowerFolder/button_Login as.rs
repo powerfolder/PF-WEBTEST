@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Login as</name>
+   <tag></tag>
+   <elementGuidId>d89d6508-7f72-4d87-9e7c-79a80ecb6155</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#pica_account_loginas</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[3]/div/div[1]/div[1]/div[3]/button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>939bf82a-8d77-4777-a7cf-b1292790ddc4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>pica_account_loginas</value>
+      <webElementGuid>d5067334-2ba0-464e-81e9-fc34cdfadbea</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>be5ff9e6-4e0e-4f91-84b6-1231d2ffde8a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-default</value>
+      <webElementGuid>e6976a6f-e4e4-4c8c-b283-b4f7f39b142e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-color</name>
+      <type>Main</type>
+      <value>primary</value>
+      <webElementGuid>936f18fc-0a2e-47b3-9a94-51f754270a68</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                                            Login as
+                                        </value>
+      <webElementGuid>61e3a70e-0b06-45e5-92a1-740107fd7300</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_account_loginas&quot;)</value>
+      <webElementGuid>3b091307-f70a-4fde-908d-8e1880f7f692</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@id='pica_account_loginas']</value>
+      <webElementGuid>c36b3672-b1f8-48de-9123-1911f0a8f9f6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_account_dialog']/div/div/div[3]/div/div/div/div[3]/button</value>
+      <webElementGuid>044c1492-5542-42a5-bcf7-8f7332bc1c5c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reseller'])[1]/following::button[1]</value>
+      <webElementGuid>4708f781-e8a4-4f9c-9033-ee1977f07158</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Server admin'])[1]/following::button[2]</value>
+      <webElementGuid>e65a3c39-a08e-401f-bc69-e9019b412ede</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/preceding::button[1]</value>
+      <webElementGuid>750152a9-5ff0-44e1-8af0-63822d46997a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/div/div[3]/button</value>
+      <webElementGuid>0191a830-084a-48cc-86fa-e14892590a1c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@id = 'pica_account_loginas' and @type = 'button' and (text() = '
+                                            Login as
+                                        ' or . = '
+                                            Login as
+                                        ')]</value>
+      <webElementGuid>5ee5fe60-9a0d-48d2-ad72-408da22d307f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

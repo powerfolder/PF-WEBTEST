@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>EA16_Verify_Login_As</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f83fb41b-d24d-4994-bedf-eab9d281e271</testCaseGuid>
+</TestCaseEntity>

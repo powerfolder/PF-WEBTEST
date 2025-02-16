@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>EA13_Check_Server_Admin_Toggle</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bacf1995-960e-4f94-afc9-3c7a3f065a25</testCaseGuid>
+</TestCaseEntity>

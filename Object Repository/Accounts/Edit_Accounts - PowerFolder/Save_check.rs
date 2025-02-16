@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Save_check</name>
+   <tag></tag>
+   <elementGuidId>e6a45903-cc22-48ba-99c4-fd6003c7ade4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//body/div[4]/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.pica-notification-box.alert.alert-danger</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>840095cb-d83d-42e9-8124-75fd99b026b1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-notification-box alert alert-danger</value>
+      <webElementGuid>14ea300e-1b10-4d97-88b5-6eb38625558d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>alert</value>
+      <webElementGuid>639e532d-0417-4bba-85ea-f5975af4cf15</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Please fill in all missing fields×</value>
+      <webElementGuid>27ef2e63-41e3-4fc4-85b7-5513c8267f0f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;notification_290962662&quot;)/div[@class=&quot;pica-notification-box alert alert-danger&quot;]</value>
+      <webElementGuid>2fa5be9e-436f-4fb2-b7ad-f761cc00a465</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='notification_290962662']/div</value>
+      <webElementGuid>e3166f8c-5dae-4837-91db-59ae7ddcbd90</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='`'])[1]/following::div[3]</value>
+      <webElementGuid>473a282b-adab-45f7-bbd9-26d0a87feeb1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div</value>
+      <webElementGuid>4db9d901-8f85-4c76-a041-1b8b3d085aa6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Please fill in all missing fields×' or . = 'Please fill in all missing fields×')]</value>
+      <webElementGuid>108cc6b0-723b-467d-9564-6d2ee2f0cf23</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

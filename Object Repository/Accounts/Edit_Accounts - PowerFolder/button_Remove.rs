@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Remove</name>
+   <tag></tag>
+   <elementGuidId>16aebbd0-8d13-4938-aabf-9de9ec21a184</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.btn.btn-default.pull-right</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[3]/div[2]/table/tbody/tr/td[3]/button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>dcac9a90-8139-4658-9c76-7619e5002581</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-default pull-right</value>
+      <webElementGuid>5cfc413a-71ba-4559-b152-2f1d53f73e6b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Remove</value>
+      <webElementGuid>ee0cd545-a562-4cf1-aaa0-4650bcda47db</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;item_4240405&quot;)/td[@class=&quot;hidden-xs&quot;]/button[@class=&quot;btn btn-default pull-right&quot;]</value>
+      <webElementGuid>e24d9ce4-918a-4308-be23-becf92d09a07</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='item_4240405']/td[3]/button</value>
+      <webElementGuid>2b56581a-34a2-4ea4-8140-f28f870b1bd6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='additionalemail@test.com'])[1]/following::button[1]</value>
+      <webElementGuid>84a12b4d-100a-43b6-8c51-320e88f76367</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[1]/following::button[1]</value>
+      <webElementGuid>dc7f25e8-72e1-479c-9ab9-a18b9e7d9dea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Create new'])[1]/preceding::button[2]</value>
+      <webElementGuid>273216b5-84cb-4039-bf48-845a2053dfaf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[3]/preceding::button[3]</value>
+      <webElementGuid>f6a0c6be-a746-45b6-864a-b1aa35fae816</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[3]/button</value>
+      <webElementGuid>263045a4-5afa-4776-ad42-5d6d899112ea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'Remove' or . = 'Remove')]</value>
+      <webElementGuid>f7a73694-1de2-48ae-84af-c4f7c6cbf6ea</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

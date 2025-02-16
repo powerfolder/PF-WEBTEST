@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Edit_account</name>
+   <tag></tag>
+   <elementGuidId>40a68b77-e40c-4e7b-b82d-2d2636b7ff63</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#accounts_edit</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[2]/div[1]/div[2]/div[2]/table/thead[1]/tr/th[3]/div/a[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>efe752ea-abf3-40db-a293-401123058751</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>accounts_edit</value>
+      <webElementGuid>5a5d03a3-8cda-4e25-b0bf-827d3f18340b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-table-selection-single</value>
+      <webElementGuid>9caa13cc-37bb-4051-a5b9-a27e40e1d4c9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                            
+                            Edit
+                        </value>
+      <webElementGuid>72e38915-7161-47a5-9d8a-7191d02670ca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;accounts_edit&quot;)</value>
+      <webElementGuid>85b2dd52-dcde-494c-9847-da6c2f85f173</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@id='accounts_edit']</value>
+      <webElementGuid>62c52c10-a228-4071-bafd-7eb384485279</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//thead[@id='accounts_table_ops']/tr/th[3]/div/a</value>
+      <webElementGuid>60fb235c-d5ae-4668-a201-22c52e26cd19</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Deselect'])[1]/following::a[1]</value>
+      <webElementGuid>974725d5-3285-4ffb-981c-0d1c0028f9ea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='fruwtucm@yopmail.com'])[1]/following::a[2]</value>
+      <webElementGuid>70d9ef3f-b48a-4a7c-ac53-e891b0032b03</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[1]/preceding::a[1]</value>
+      <webElementGuid>bc308a10-cc85-4571-ac60-ed2313627452</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//th[3]/div/a</value>
+      <webElementGuid>050066d5-1b29-496a-9c5d-bc4e42eb29f9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@id = 'accounts_edit' and (text() = '
+                            
+                            Edit
+                        ' or . = '
+                            
+                            Edit
+                        ')]</value>
+      <webElementGuid>c926036b-8855-48df-b641-94af67f598ae</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

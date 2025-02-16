@@ -124,4 +124,14 @@
       <initValue>''</initValue>
       <name>binaryName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>userLastName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>PhoneNumber</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Notes</name>
+   <tag></tag>
+   <elementGuidId>c8fd5fc9-2e67-4f2a-a056-ef2ddea38a74</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>li.hidden-xs.active > a</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_account_dialog']/div/div/div[2]/ul/li[8]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>c8ff4bef-75c8-436e-98bc-65f74d6a2ea4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                            Notes
+                        </value>
+      <webElementGuid>97cd7fdc-e64c-4eb5-9aa9-fec7add752de</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_account_dialog&quot;)/div[@class=&quot;modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-body&quot;]/ul[@class=&quot;pica-space pica-nav-tabs nav nav-tabs&quot;]/li[@class=&quot;hidden-xs active&quot;]/a[1]</value>
+      <webElementGuid>d8055964-fbc0-4dff-a15a-2786a517c8b7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_account_dialog']/div/div/div[2]/ul/li[8]/a</value>
+      <webElementGuid>b48749fc-d903-4d9c-b2aa-953ed5dd5a79</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Invoice details'])[1]/following::a[1]</value>
+      <webElementGuid>f71ac640-de71-4c53-b71b-ce52e8f30ae0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Organizations'])[2]/following::a[2]</value>
+      <webElementGuid>eb0cedd4-6a31-458f-90da-e968e7c5f7e5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Account'])[2]/preceding::a[2]</value>
+      <webElementGuid>a153c924-1e82-4208-a788-d410223f8d38</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[8]/a</value>
+      <webElementGuid>9c8750c4-1614-4c8c-8b51-78ef7b0ceb75</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[(text() = '
+                            Notes
+                        ' or . = '
+                            Notes
+                        ')]</value>
+      <webElementGuid>43dd5658-e77a-4324-8520-c02e89db4790</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

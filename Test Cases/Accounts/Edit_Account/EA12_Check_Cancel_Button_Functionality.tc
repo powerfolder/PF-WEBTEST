@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>EA12_Check_Cancel_Button_Functionality</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>af02c8e5-263f-43fa-b026-5304f446c854</testCaseGuid>
+</TestCaseEntity>

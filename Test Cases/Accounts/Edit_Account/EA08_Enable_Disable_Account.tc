@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>EA08_Enable_Disable_Account</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c1d791b7-1581-4acf-85f5-0ebf4058166e</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>EA05_Edit_Phone_Number</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dc9a0f2d-1416-44b9-b0da-f365d1a04afc</testCaseGuid>
+</TestCaseEntity>

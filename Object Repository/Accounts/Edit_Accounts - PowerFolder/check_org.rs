@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>check_org</name>
+   <tag></tag>
+   <elementGuidId>74e5be82-dfc3-4f6c-abac-7c0c686ec25f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[6]/div[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#item_2075156425 > td.pica-name.pica-overflow.pica-vertical-middle.text-left</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>7f3e1c4e-33b1-4d82-b84a-730c21633030</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-name pica-overflow pica-vertical-middle text-left</value>
+      <webElementGuid>dceaf117-876b-40e9-bca6-e0a07d0f62a2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-placement</name>
+      <type>Main</type>
+      <value>bottom</value>
+      <webElementGuid>c435a986-5151-4fdf-8f03-cff40d2095a2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>colspan</name>
+      <type>Main</type>
+      <value>2</value>
+      <webElementGuid>7faaa863-c596-4aac-88fe-49f8f5250c64</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>llllllllll</value>
+      <webElementGuid>31fb6021-3a69-492b-bf02-3e3541c3e2d7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;item_2075156425&quot;)/td[@class=&quot;pica-name pica-overflow pica-vertical-middle text-left&quot;]</value>
+      <webElementGuid>fa7ec040-80ed-470a-9cb1-8d5468589642</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='item_2075156425']/td[2]</value>
+      <webElementGuid>56914b2c-4c69-490b-ae87-45e2915ab723</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[5]/following::td[2]</value>
+      <webElementGuid>644b7740-5261-4327-a212-fff31bc12e29</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Deselect'])[2]/following::td[2]</value>
+      <webElementGuid>8e33282d-adab-492d-9ea5-1720075c739a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Is admin'])[1]/preceding::td[1]</value>
+      <webElementGuid>349bfc04-90a1-4a2a-b3d4-ab12996a56ff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Is member'])[2]/preceding::td[1]</value>
+      <webElementGuid>91caaadf-829b-4657-9481-036168b2dd3d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[6]/div[2]/table/tbody/tr/td[2]</value>
+      <webElementGuid>aa5a7f57-5cb8-4a03-96bc-ab17a54b03a2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'llllllllll' or . = 'llllllllll')]</value>
+      <webElementGuid>1ac80ca7-39f2-4edf-b3eb-2bd886214390</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

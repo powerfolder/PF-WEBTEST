@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>EA14_Check_Reseller_Toggle</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f9f065f1-4308-4f68-ba8f-afb24e94d34e</testCaseGuid>
+</TestCaseEntity>
