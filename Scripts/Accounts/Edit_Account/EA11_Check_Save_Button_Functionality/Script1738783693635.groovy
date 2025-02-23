@@ -39,8 +39,6 @@ WebUI.click(findTestObject('Accounts/ClickCreateAccount'))
 
 WebUI.click(findTestObject('Accounts/SaveButton'))
 
-WebUI.refresh()
-
 WebUI.delay(2)
 
 String actualText = WebUI.getText(findTestObject('Accounts/Edit_Accounts - PowerFolder/Save_check')).trim()
@@ -49,14 +47,15 @@ actualText = actualText.replaceAll('[^\\p{L}\\p{N}\\s]', '').trim()
 
 println('Texte nettoyé : ' + actualText)
 
-if (actualText.equals('Account Updated') || actualText.equals('Bitte alle fehlenden Felder ausfüllen')) {
-    System.out.println('✅ Le texte est valide : ' + actualText) // Capture d'écran en cas d'erreur
+if (actualText.equals('Account Updated') || actualText.equals('Bitte alle fehlenden Felder ausfüllen') || actualText.equals('Please fill in all missing fields')) {
+    System.out.println('✅ Le texte est valide : ' + actualText)
 } else {
     System.out.println('❌ Le texte ne correspond pas aux attentes : ' + actualText)
 
     WebUI.takeScreenshot()
 
-    WebUI.verifyMatch(actualText, 'Account Updated|Bitte alle fehlenden Felder ausfüllen', true, FailureHandling.STOP_ON_FAILURE)
+    // Modification de l'expression régulière pour inclure la nouvelle variation du message attendu
+    WebUI.verifyMatch(actualText, 'Account Updated|Bitte alle fehlenden Felder ausfüllen|Please fill in all missing fields', true, FailureHandling.STOP_ON_FAILURE)
 }
 
 WebUI.setText(findTestObject('Accounts/InputUserOrEmail'), GlobalVariable.userEmail)
