@@ -60,6 +60,8 @@ WebUI.setText(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/ac
 
 WebUI.click(findTestObject('Accounts/Edit_Accounts - PowerFolder/input_valid_till'))
 
+WebUI.sendKeys(findTestObject('Accounts/Edit_Accounts - PowerFolder/input_valid_till'), Keys.chord(Keys.ENTER))
+
 WebUI.click(findTestObject('Accounts/SaveButton'))
 
 WebUI.refresh()
