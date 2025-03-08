@@ -48,7 +48,8 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-
+import java.awt.datatransfer.DataFlavor as DataFlavor
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -84,7 +85,6 @@ WebElement btn = ClickFolder(folderName_1)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Folders/createFolder'))
@@ -97,13 +97,93 @@ WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebUI.delay(2)
 
-WebElement btn1 = ClickFolder(folderName_1)
+WebElement btn1 = ClickFolder(folderName_2)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
+WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
+
+WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_Document'))
+
+String DocName = 'Doc_num_' + RandomStringUtils.randomNumeric(4)
+
+WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
+    DocName)
+
+WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
+
+WebUI.switchToWindowIndex('1')
+
+WebUI.refresh()
+
+WebUI.delay(5)
+
+WebUI.switchToWindowIndex(0)
+
+WebUI.refresh()
+
+WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/click_on_sub'))
+
+WebElement btn2 = findShareButton(folderName_2)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
+
+WebUI.click(findTestObject('Links/buttonCreateLink'))
+
+WebUI.waitForElementClickable(findTestObject('Links/buttonCreateLink'), 30, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebElement buttonCreateLink = WebUiCommonHelper.findWebElement(findTestObject('Links/buttonCreateLink'), 30)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonCreateLink))
+
+WebUI.click(findTestObject('SettingsPopUp/buttonSave'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
+
+WebUI.click(findTestObject('Links/Page_Folders - PowerFolder/share_button_Close'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
+
+WebUI.switchToWindowIndex(1)
+
+WebUI.refresh()
+
+String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
+
+WebUI.navigateToUrl(my_clipboard)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Links/Page_Link - PowerFolder/click_Doc'))
+
+WebUI.switchToWindowIndex(2)
+
+WebUI.delay(2)
+
+WebDriver driver_2 = DriverFactory.getWebDriver()
+
+String currentUrl = driver_2.getCurrentUrl()
+
+String expectedDocName = DocName + '.docx'
+
+if (currentUrl.contains(expectedDocName)) {
+    WebUI.comment('✅ L\'URL contient bien le fichier attendu: ' + expectedDocName)
+} else {
+    WebUI.comment('❌ L\'URL ne contient pas le fichier attendu! URL actuelle: ' + currentUrl)
+
+    WebUI.takeScreenshot()
+}
+
+WebUI.verifyMatch(currentUrl, ('.*' + expectedDocName) + '.*', true, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.closeBrowser()
 
 String getRandomFolderName() {
-    String folderName = 'FDTest_' + getTimestamp()
+    String folderName = 'FD_Test_' + getTimestamp()
 
     return folderName
 }
@@ -117,14 +197,20 @@ String getTimestamp() {
 }
 
 WebElement SelectFolder(String folderName) {
-	WebDriver driver = DriverFactory.getWebDriver()
+    WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName) + '\')]/td[1]/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName) + '\')]/td[1]/span'))
 }
 
 WebElement ClickFolder(String folderName) {
-	WebDriver driver = DriverFactory.getWebDriver()
+    WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//td[2]/span/a[contains(text(),\'' + folderName) + '\')]'))
+    return driver.findElement(By.xpath(('//td[2]/span/a[contains(text(),\'' + folderName) + '\')]'))
+}
+
+WebElement findShareButton(String fileName) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
 }
 

@@ -90,8 +90,7 @@ WebUI.delay(3)
 // Supprimer le fichier Word créé sur le bureau
 deleteWordFile(wordFilePath)
 
-WebUI.closeBrowser( // Méthode pour supprimer le fichier Word
-    )
+WebUI.closeBrowser()
 
 String createEmptyWordFileOnDesktop(String fileName) {
     def desktopWordPath = Paths.get(System.getProperty('user.home'), 'Desktop')

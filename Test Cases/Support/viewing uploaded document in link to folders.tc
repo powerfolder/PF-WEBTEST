@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>viewing uploaded document in link to folders</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bd6e0825-d1e7-458d-933e-b961b812b25a</testCaseGuid>
+</TestCaseEntity>

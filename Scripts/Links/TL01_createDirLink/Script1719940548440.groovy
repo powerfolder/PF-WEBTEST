@@ -94,6 +94,7 @@ assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 List list = driver.findElements(By.className("pica-crumb"));
 
 assert list.get(list.size()-1).getText().equals(folderName)
+
 WebUI.closeBrowser()
 
 
