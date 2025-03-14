@@ -33,6 +33,8 @@ import java.awt.Robot as Robot
 import java.awt.event.KeyEvent as KeyEvent
 import internal.GlobalVariable as GlobalVariable
 import java.util.Date as Date
+import java.time.Duration
+
 
 //////////////////////////////////////// MAIN CODE ////////////////////////////////////////
 
@@ -42,9 +44,9 @@ WebUI.verifyElementClickable(findTestObject('file_objects/upload/Page_Folders - 
 
 WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Upload file'))
 
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
-WebElement addfile = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[5]/div/div/div[3]/div/div/span')))
+WebElement addfile = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//body/div[2]/div[1]/div[2]/div[5]/div/div/div[3]/div/div[1]/span[1]')))
 addfile.click()
 
 // Générer le fichier binaire
@@ -69,6 +71,7 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 WebUI.click(findTestObject('Object Repository/Folders/shareLink'))
 
 deleteBinaryFile(binaryFilePath)
+
 //////////////////////////////////// MÉTHODES ////////////////////////////////////
 
 // Méthode pour créer un fichier binaire

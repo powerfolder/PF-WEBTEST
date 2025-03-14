@@ -31,14 +31,17 @@ import java.awt.datatransfer.StringSelection as StringSelection
 import java.awt.Robot as Robot
 import java.awt.event.KeyEvent as KeyEvent
 import internal.GlobalVariable as GlobalVariable
+import java.time.Duration
+
 
 WebUI.callTestCase(findTestCase('Links/pre_test/Create folder'), [:])
 
 WebUI.verifyElementClickable(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Upload file'))
 WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Upload file'))
 
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
-WebElement addfile = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[5]/div/div/div[3]/div/div/span')))
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
+
+WebElement addfile = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//body/div[2]/div[1]/div[2]/div[5]/div/div/div[3]/div/div[1]/span[1]')))
 addfile.click()
 
 // Générer la vidéo MP4

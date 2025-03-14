@@ -54,6 +54,8 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import java.awt.FileDialog as FileDialog
 import javax.swing.JFrame as JFrame
 import java.io.OutputStream as OutputStream
+import java.time.Duration
+
 
 WebUI.callTestCase(findTestCase('Links/pre_test/Create folder'), [:])
 
@@ -61,10 +63,9 @@ WebUI.verifyElementClickable(findTestObject('file_objects/upload/Page_Folders - 
 
 WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Upload file'))
 
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
-WebElement addfile = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[5]/div/div/div[3]/div/div/span')))
-
+WebElement addfile = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//body/div[2]/div[1]/div[2]/div[5]/div/div/div[3]/div/div[1]/span[1]')))
 addfile.click()
 
 // Générer l'image PNG

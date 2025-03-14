@@ -6,19 +6,23 @@
       "keywordMethods": [
         {
           "name": "getMembersCount",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "getRandomFolderName",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "getRandomGroupName",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "getTimestamp",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "findShareButton",
@@ -36,10 +40,11 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

@@ -1,29 +1,64 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import static org.apache.commons.lang.StringUtils.isNotBlank
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By as By
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
 import java.util.concurrent.TimeUnit as TimeUnit
-import org.openqa.selenium.By as By
-import org.openqa.selenium.Keys as Keys
-import org.openqa.selenium.WebDriver as WebDriver
-import org.openqa.selenium.WebElement as WebElement
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
-import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import java.awt.Toolkit as Toolkit
+import java.awt.datatransfer.DataFlavor as DataFlavor
+import org.openqa.selenium.By as By
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import java.nio.file.Path as Path
+import java.nio.file.Files as Files
+import java.text.SimpleDateFormat as SimpleDateFormat
+import java.util.Calendar as Calendar
+import java.util.Date as Date
+import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
+import java.util.Random as Random
+
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -57,7 +92,9 @@ WebUI.click(findTestObject('Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Folders/createDocument'))
 
-WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
+String DocName = 'Doc_num_' + RandomStringUtils.randomNumeric(4)
+
+WebUI.setText(findTestObject('Folders/inputFolderName'), DocName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
@@ -71,9 +108,10 @@ WebUI.refresh()
 
 WebUI.delay(2)
 
-WebElement btn = findShareButton(folderName)
+WebElement btn = findShareButton(DocName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+
 
 WebUI.waitForElementClickable(findTestObject('Links/buttonCreateLink'), 30, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -81,38 +119,36 @@ WebElement buttonCreateLink = WebUiCommonHelper.findWebElement(findTestObject('L
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonCreateLink))
 
+WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
+
+// Générer la date et l'heure actuelles avec une minute ajoutée
+String newDateTime = generateDateTimePlusTenSeconds()
+
+// Afficher la date dans la console (une seule fois)
+println('Date et heure générées : ' + newDateTime)
+
+// Effacer et saisir la nouvelle date dans le champ
+TestObject accountValidTill = findTestObject('Page_Folders - PowerFolder/inputValidTill')
+
+WebUI.executeJavaScript('arguments[0].value = ""', [WebUI.findWebElement(accountValidTill)])
+
+WebUI.setText(accountValidTill, newDateTime)
+
+WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
+
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Folders/button_SaveSettings'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Folders/buttonCopyToClipboard'))
+WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
 
-WebUI.click(findTestObject('Folders/cogWheelSettings'))
+WebUI.delay(10)
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Can read'))
+WebUI.executeJavaScript('window.open();', [])
 
-WebElement settings = driver.findElement(By.xpath('//tr[contains(@id,\'share_Object\')]/td[2]/div/div/div/span'))
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(settings))
-
-WebUI.click(findTestObject('SettingsPopUp/inputValidTill'))
-
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/span_Dec_glyphicon glyphicon-time'))
-
-// Ensure the element is clickable
-WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Folders - PowerFolder/Span_Create_folder_in_folder'), 
-    30)
-
-WebUI.scrollToElement(findTestObject('Object Repository/Page_Folders - PowerFolder/Span_Create_folder_in_folder'), 30)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_Folders - PowerFolder/Span_Create_folder_in_folder'), 
-            30)))
-
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/span_Dec_glyphicon glyphicon-remove'))
-
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Save'))
-
-TimeUnit.MINUTES.sleep(1)
+WebUI.switchToWindowIndex(1)
 
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
 
@@ -120,18 +156,14 @@ WebUI.navigateToUrl(my_clipboard)
 
 WebUI.delay(3)
 
-
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
-Thread.sleep(5000)
+WebUI.click(findTestObject('Page_Folders - PowerFolder/closeExpiredAlert'))
 
-WebUI.back()
-
-assert WebUI.waitForElementVisible(findTestObject('Folders/expireTabTitle'), 2)
-
-assert isNotBlank(WebUI.getText(findTestObject('Folders/expireTabTitle')))
+WebUI.verifyElementPresent(findTestObject('lang/expiredlinkText'), 30)
 
 WebUI.closeBrowser()
+
 
 String getRandomFolderName() {
     String folderName = 'Folder' + getTimestamp()
@@ -142,7 +174,7 @@ String getRandomFolderName() {
 String getTimestamp() {
     Date todaysDate = new Date()
 
-    String formattedDate = todaysDate.format('dd_MMM_yyyy_hh_mm_ss')
+    String formattedDate = todaysDate.format('MM_dd_yyyy_hh_mm_ss')
 
     return formattedDate
 }
@@ -157,4 +189,14 @@ WebElement findShareButton(String fileName) {
 	WebDriver driver = DriverFactory.getWebDriver()
 
 	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
+}
+
+String generateDateTimePlusTenSeconds() {
+	Calendar calendar = Calendar.getInstance()
+
+	calendar.add(Calendar.SECOND, 10)
+
+	SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm:ss')
+
+	return sdf.format(calendar.getTime())
 }

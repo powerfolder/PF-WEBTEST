@@ -8,12 +8,13 @@ import org.openqa.selenium.WebElement as WebElement
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import java.time.Duration
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('servers/Page_Dashboard - PowerFolder/lang_Servers_v'))
 
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 // Attendre que l'élément devienne visible
 WebElement settings_button = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//td[1]/span')))
