@@ -26,6 +26,9 @@ import java.util.List as List
 
 WebUI.callTestCase(findTestCase('Storages/PreTest/CreateStorage'), [:], FailureHandling.STOP_ON_FAILURE)
 
+println('Global Variable: ' + GlobalVariable.StorageName)
+
+
 WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/Storage/Page_Storage - PowerFolder/a_Enable'))

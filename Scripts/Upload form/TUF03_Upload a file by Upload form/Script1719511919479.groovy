@@ -39,6 +39,8 @@ import java.awt.datatransfer.StringSelection as StringSelection
 import java.awt.Robot as Robot
 import java.awt.event.KeyEvent as KeyEvent
 import java.io.IOException as IOException
+import java.time.Duration
+
 
 WebUI.callTestCase(findTestCase('Upload form/Pre_Test/Creat_Folder'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -86,7 +88,7 @@ WebUI.verifyElementClickable(findTestObject('1Upload_Form/Page_Link - PowerFolde
 
 WebUI.click(findTestObject('1Upload_Form/Page_Link - PowerFolder/button_Upload'))
 
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 // Attendre que l'élément devienne visible
 WebElement addfile = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[3]/div/div/span')))

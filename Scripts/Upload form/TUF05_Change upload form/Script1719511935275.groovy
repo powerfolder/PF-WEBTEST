@@ -39,12 +39,13 @@ import java.awt.datatransfer.StringSelection as StringSelection
 import java.awt.Robot as Robot
 import java.awt.event.KeyEvent as KeyEvent
 import java.io.IOException as IOException
+import java.time.Duration
 
 WebUI.callTestCase(findTestCase('Upload form/Pre_Test/Creat_upload_form'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.switchToWindowIndex(0)
 
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 // Attendre que l'élément devienne visible
 WebElement settings_button = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//td[2]/div/div/div[1]/span[1]')))
