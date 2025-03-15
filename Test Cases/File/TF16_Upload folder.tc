@@ -4,5 +4,6 @@
    <name>TF16_Upload folder</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>30a10401-1dac-41a1-ac73-4a77355be0eb</testCaseGuid>
 </TestCaseEntity>

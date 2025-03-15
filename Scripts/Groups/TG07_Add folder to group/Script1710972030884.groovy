@@ -30,12 +30,16 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import java.time.Duration
+
+
+
+
+WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 // Déclaration de la variable globale folderName
 GlobalVariable.folderName = ('folder_' + RandomStringUtils.randomNumeric(4))
 String foldername = GlobalVariable.folderName
-
-WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
 
@@ -88,7 +92,7 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Group
     foldername)
 
 // Attendre que l'élément recherché apparaisse dans les résultats de la recherche
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 WebElement folderElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(('//div[3]/div/div[contains(.,\'' + 
             foldername) + '\')]/ul//a')))

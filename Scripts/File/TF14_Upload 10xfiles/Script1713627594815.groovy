@@ -46,6 +46,7 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import java.time.Duration
 
 // Définition du chemin vers le dossier sur le bureau
 def desktopWordPath = Paths.get(System.getProperty('user.home'), 'Desktop')
@@ -66,7 +67,7 @@ WebUiBuiltInKeywords.verifyElementClickable(findTestObject('file_objects/upload/
 WebUiBuiltInKeywords.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Upload file'))
 
 // Attendre que l'élément devienne visible
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 WebElement addfile = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[5]/div/div/div[3]/div/div/span')))
 

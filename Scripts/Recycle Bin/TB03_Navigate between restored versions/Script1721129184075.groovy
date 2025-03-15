@@ -32,6 +32,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
+import java.time.Duration
 
 
 
@@ -65,7 +66,7 @@ WebUI.closeBrowser()
 @Keyword
 WebElement findFolder(String folderName) {
 	WebDriver driver = DriverFactory.getWebDriver()
-	WebDriverWait wait = new WebDriverWait(driver, 30)
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
 	println("Searching for folder with name: " + folderName)
 	WebElement element = waitForElementVisible(driver, By.xpath("//a[contains(text(),'" + folderName + "')]"), wait)
@@ -84,7 +85,7 @@ WebElement findFolder(String folderName) {
 @Keyword
 WebElement findDoc(String docName) {
 	WebDriver driver = DriverFactory.getWebDriver()
-	WebDriverWait wait = new WebDriverWait(driver, 30)
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
 	try {
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(
@@ -105,7 +106,7 @@ WebElement findDoc(String docName) {
 void restoreVersion(int rowIndex) {
 	WebUI.click(findTestObject('Recycle bin/Page_Folders - PowerFolder/a_Restore'))
 
-	WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 10)
+	WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(10))
 	WebElement table = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//*[@id="pica_restore_versions"]/div')))
 	WebElement button = table.findElement(By.xpath("./table/tbody/tr[" + rowIndex + "]/td[6]/button"))
 

@@ -30,10 +30,12 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import java.time.Duration
 
-GlobalVariable.folderName = ('folder_' + RandomStringUtils.randomNumeric(4))
 
 WebUI.callTestCase(findTestCase('Groups/Pre_test/create_group'), [:], FailureHandling.STOP_ON_FAILURE)
+
+GlobalVariable.folderName = ('folder_' + RandomStringUtils.randomNumeric(4))
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
@@ -42,7 +44,7 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Delete_pica-taginput-input form-control'), 
     GlobalVariable.folderName)
 
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 WebElement folderElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//*[@id="pica_group_folders"]/div[1]/div[1]/ul/li/a/div/div[2]')))
 

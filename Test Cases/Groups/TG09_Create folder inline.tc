@@ -4,5 +4,6 @@
    <name>TG09_Create folder inline</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>3188a363-ec3f-47fd-9563-d4de5fa4381b</testCaseGuid>
 </TestCaseEntity>

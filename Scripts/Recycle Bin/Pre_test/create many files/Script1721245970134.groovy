@@ -45,13 +45,15 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-// Déclaration de la variable globale folderName
+import java.time.Duration
+
+
+
+WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.folderName = ('folder_' + RandomStringUtils.randomNumeric(4))
 
 String folderName = GlobalVariable.folderName
-
-WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
 
@@ -113,7 +115,7 @@ WebUiBuiltInKeywords.verifyElementClickable(findTestObject('file_objects/upload/
 WebUiBuiltInKeywords.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Upload file'))
 
 // Attendre que l'élément devienne visible
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 WebElement addfile = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[5]/div/div/div[3]/div/div/span')))
 addfile.click()
 

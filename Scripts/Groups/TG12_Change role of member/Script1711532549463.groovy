@@ -26,18 +26,14 @@ import java.util.Arrays as Arrays
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 
-// Génération d'un nom d'utilisateur aléat
-String user = 'user_$RandomStringUtils.randomNumeric(4)@test.com'
 
-GlobalVariable.userName = user
-
-// Génération d'un nom de groupe aléatoire
-String groupName = 'Group_$RandomStringUtils.randomNumeric(4)'
-
-GlobalVariable.GroupName = groupName
 
 // Appel du cas de test pour ajouter un membre
 WebUI.callTestCase(findTestCase('Groups/Pre_test/add member'), [:], FailureHandling.STOP_ON_FAILURE)
+
+// Génération d'un nom d'utilisateur aléat
+println('Global Variable: ' + GlobalVariable.userName)
+println('Global Variable: ' + GlobalVariable.GroupName)
 
 // Navigation vers la section "Edit"
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))

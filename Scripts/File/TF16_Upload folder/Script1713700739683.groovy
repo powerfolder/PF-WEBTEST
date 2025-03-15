@@ -31,6 +31,7 @@ import java.awt.datatransfer.StringSelection
 import java.awt.Robot
 import java.awt.event.KeyEvent
 import java.io.IOException
+import java.time.Duration
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -46,7 +47,7 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Cre
 WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Upload file'))
 
 // Attente explicite pour l'élément d'ajout
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 WebElement adddir = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[5]/div/div/div[3]/div/div/span[2]')))
 adddir.click()
 

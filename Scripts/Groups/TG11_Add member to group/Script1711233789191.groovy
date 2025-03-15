@@ -25,13 +25,18 @@ import org.openqa.selenium.By as By
 import java.util.Arrays as Arrays
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
+import java.time.Duration
 
-// Initialisation de la variable globale
-GlobalVariable.userName = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
-println('Global Variable: ' + GlobalVariable.GroupName)
+
 
 // Appel du cas de test pour ajouter un membre
 WebUI.callTestCase(findTestCase('Groups/Pre_test/add member'), [:], FailureHandling.STOP_ON_FAILURE)
+
+// Initialisation de la variable globale
+
+println('Global Variable: ' + GlobalVariable.GroupName)
+
+println('Global Variable: ' + GlobalVariable.userName)
 
 // Navigation vers la page d'édition des groupes
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
@@ -41,10 +46,9 @@ WebUI.delay(2)
 // Navigation vers la page des membres
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
-WebUI.delay(2)
 
 // Initialisation de l'attente explicite
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 10)
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 // Localisation de l'utilisateur ajouté
 WebElement user = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(('//*[@id="pica_group_accounts"]//div[2]/table/tbody/tr/td[2][contains(text(), \'' + 

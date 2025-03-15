@@ -28,13 +28,15 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 
+
+// Plan de test : Connexion en tant qu'administrateur
+WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
+
 // Variables globales
 GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
 
 String Emailid = GlobalVariable.userEmail
 
-// Plan de test : Connexion en tant qu'administrateur
-WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
 
 // Création d'un nouvel utilisateur
 WebUI.click(findTestObject('LeftNavigationIcons/account'))

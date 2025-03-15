@@ -30,6 +30,11 @@ import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import java.util.Random as Random
 
+
+
+// Plan de test
+WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
+
 // Variables globales
 GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
 
@@ -43,9 +48,6 @@ String lastName = 'nachname ' + generateRandomString(4)
 
 // Générer un numéro de téléphone aléatoire
 String phone = generateRandomPhoneNumber()
-
-// Plan de test
-WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('LeftNavigationIcons/account'))
 
@@ -88,6 +90,7 @@ WebUI.click(findTestObject('Login/loginSubmit'))
 
 // Vérification que le champ de mot de passe est vide
 WebUI.verifyElementAttributeValue(findTestObject('Login/inputPassword'), 'value', '', 10)
+
 
 // Fermeture du navigateur
 WebUI.closeBrowser()

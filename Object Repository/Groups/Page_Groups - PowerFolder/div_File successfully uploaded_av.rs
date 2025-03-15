@@ -6,15 +6,16 @@
    <elementGuidId>406f6d63-1a1b-4da8-8ed7-e1cf5de97846</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='notification_611275061']/div</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.pica-notification-box.alert.alert-info</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//body/div[3]/div</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>9c31053a-bde0-4521-a993-04f6218e1a7f</webElementGuid>
+      <webElementGuid>282b754e-5ff9-4b8f-98f4-7e6a412f6a47</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-notification-box alert alert-info</value>
-      <webElementGuid>cdcf1571-5e3b-4f82-8147-d8fdf2495eba</webElementGuid>
+      <webElementGuid>a8a85f20-9516-467b-9a26-44cfcd850072</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +39,7 @@
       <name>role</name>
       <type>Main</type>
       <value>alert</value>
-      <webElementGuid>b3dda50c-2763-4668-94ef-21097fb9720d</webElementGuid>
+      <webElementGuid>51e78d71-4727-440e-bdc4-3813a5c3cdb2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +47,7 @@
       <name>text</name>
       <type>Main</type>
       <value>File successfully uploaded×</value>
-      <webElementGuid>ffe38efa-91a6-4e7c-9967-6e0925db991c</webElementGuid>
+      <webElementGuid>2e8fa515-76b3-408e-82ad-6d0f598fc6cc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +55,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;notification_611275061&quot;)/div[@class=&quot;pica-notification-box alert alert-info&quot;]</value>
-      <webElementGuid>5f6c9793-3c20-42d6-bf4e-87ae2d1b005f</webElementGuid>
+      <webElementGuid>a3384f7b-d6df-48eb-af97-900868741b55</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +63,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='notification_611275061']/div</value>
-      <webElementGuid>04908b91-c333-4502-a641-d178d763f1e1</webElementGuid>
+      <webElementGuid>4261ac34-1d69-4f25-8cf2-2eacec989389</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +71,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='`'])[2]/following::div[5]</value>
-      <webElementGuid>85d9e329-10c6-4fe7-9cc7-b28a525170cf</webElementGuid>
+      <webElementGuid>5f58e4e7-4185-414e-a4d4-6fbaca4d4834</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +79,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[2]/following::div[5]</value>
-      <webElementGuid>bb2f26d3-3345-4984-9e3f-70c9917f022b</webElementGuid>
+      <webElementGuid>b3025bea-83da-49d8-a1d2-645eba7d6c80</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +87,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[6]/div</value>
-      <webElementGuid>897d3cd4-2fc7-44b9-bf20-6573fbe285dd</webElementGuid>
+      <webElementGuid>26bf3733-44ed-4127-8b95-e8e3a261c8a3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +95,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'File successfully uploaded×' or . = 'File successfully uploaded×')]</value>
-      <webElementGuid>15071e46-5f84-47af-b76d-544e145db320</webElementGuid>
+      <webElementGuid>c0d3e1b4-8633-4414-989c-abb8662276dd</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

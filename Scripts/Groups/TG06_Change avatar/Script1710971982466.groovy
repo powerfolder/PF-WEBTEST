@@ -24,7 +24,9 @@ import org.openqa.selenium.WebElement as WebElement
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.By as By
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+
 Path desktopPath = Paths.get(System.getProperty("user.home"), "Desktop", "temp_avatar_folder")
+
 Path tempImagePath = createTempFolderWithImage(desktopPath)
 
 try {
@@ -33,19 +35,26 @@ try {
 
 
 	WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Edit_m'))
+	
 	WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Avatar'))
+	
 	WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Change'))
+	
 	WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/span_Add file_m'))
 
 	// Utiliser le chemin de l'image temporaire dans le reste du script
 	selectImageAutomatically(tempImagePath.toString())
 
 	WebUI.delay(3)
+	
 	WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Close'))
+	
 	WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
+	
 	WebUI.delay(3)
 
 	WebUI.verifyElementVisible(findTestObject('Groups/Page_Groups - PowerFolder/div_File successfully uploaded_av'))
+	
 } finally {
 	// Suppression du dossier temporaire
 	deleteTempFolder(desktopPath)

@@ -32,6 +32,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
+import java.time.Duration
 
 WebUI.callTestCase(findTestCase('Recycle Bin/Pre_test/Delete_File'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -49,7 +50,7 @@ WebElement btn = findFolder(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 // Attendre la visibilité de la première ligne du tableau
 WebElement firstElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[2]/table/tbody/tr[1]')))
@@ -92,7 +93,7 @@ WebElement btn3 = findFolder(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn3))
 
-WebDriverWait wait_1 = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+WebDriverWait wait_1 = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 // Attendre la visibilité de la première ligne du tableau
 WebElement firstElement_1 = wait_1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[2]/table/tbody/tr[1]')))
@@ -135,7 +136,7 @@ WebElement btn6 = findFolder(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn6))
 
-WebDriverWait wait_2 = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+WebDriverWait wait_2 = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 // Attendre la visibilité de la première ligne du tableau
 WebElement firstElement_2 = wait_2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[2]/table/tbody/tr[1]')))
@@ -177,7 +178,7 @@ WebElement btn9 = findFolder(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn9))
 
-WebDriverWait wait_3 = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+WebDriverWait wait_3 = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 // Attendre la visibilité de la première ligne du tableau
 WebElement firstElement_3 = wait_3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[2]/table/tbody/tr[1]')))

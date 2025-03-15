@@ -4,5 +4,6 @@
    <name>TF14_Upload 10xfiles</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>3a16bf00-547d-464d-bea1-33870615f24b</testCaseGuid>
 </TestCaseEntity>

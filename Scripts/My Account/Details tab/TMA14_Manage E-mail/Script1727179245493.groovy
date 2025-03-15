@@ -29,6 +29,11 @@ import java.util.Calendar as Calendar
 import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 
+
+
+// Plan de test
+WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
+
 // Variables globales
 GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
 
@@ -42,9 +47,6 @@ String lastName = 'nachname ' + generateRandomString(4)
 
 // Fonction pour générer un numéro de téléphone aléatoire
 String phone = generateRandomPhoneNumber()
-
-// Plan de test
-WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('LeftNavigationIcons/account'))
 

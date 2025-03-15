@@ -22,6 +22,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import java.time.Duration
 
 // Appel du test de création de compte
 WebUI.callTestCase(findTestCase('My Account/Pre_test/Create Account'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -54,7 +55,7 @@ WebUI.setText(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/Con
 WebUI.delay(2)
 
 // Initialisation de l'attente explicite pour l'élément du bouton de changement de mot de passe
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 10)
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 WebElement changepassword = wait.until(ExpectedConditions.elementToBeClickable(By.xpath('//body/div[2]/div[1]/div[2]/div[5]/div/div/div[3]/button[1]')))
 

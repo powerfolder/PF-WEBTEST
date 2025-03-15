@@ -30,18 +30,20 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import java.time.Duration
 
 
 WebUI.callTestCase(findTestCase('Groups/Pre_test/add folder'), [:], FailureHandling.STOP_ON_FAILURE)
 
 println('Global Variable: ' + GlobalVariable.folderName)
+
 println('Global Variable: ' + GlobalVariable.GroupName)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Folders'))
 
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 5)
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 WebElement folderElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(('//div[@id=\'pica_group_folders\']/div[2]/table/tbody/tr/td[2][contains(text(), \'' +
 			GlobalVariable.folderName) + '\')]')))
@@ -54,11 +56,9 @@ WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(element))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Yes'))
 
-
 WebUI.delay(5)
 
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
-
 
 WebElement btn = findGroup(GlobalVariable.GroupName)
 
@@ -69,6 +69,7 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups 
 verifyNoElementWithFolderNamePresent('//*[@id="pica_group_folders"]/div[2]//*[contains(text(), \'' + GlobalVariable.folderName + '\')]')
  
 WebUI.closeBrowser() 
+
 
 @Keyword
 WebElement findGroup(String Groupname) {

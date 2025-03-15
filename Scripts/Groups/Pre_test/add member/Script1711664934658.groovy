@@ -31,11 +31,12 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
- GlobalVariable.userName= ('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com'
-
- String user = GlobalVariable.userName
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
+
+GlobalVariable.userName= ('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com'
+
+String user = GlobalVariable.userName
 
 WebUiBuiltInKeywords.click(findTestObject('LeftNavigationIcons/account'))
 

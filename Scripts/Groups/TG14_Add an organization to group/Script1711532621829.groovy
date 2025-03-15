@@ -31,9 +31,10 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-GlobalVariable.organisationName = ('Organisation_' + RandomStringUtils.randomNumeric(4))
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
+
+GlobalVariable.organisationName = ('Organisation_' + RandomStringUtils.randomNumeric(4))
 
 WebUiBuiltInKeywords.click(findTestObject('Organization/SelectOrganization'))
 

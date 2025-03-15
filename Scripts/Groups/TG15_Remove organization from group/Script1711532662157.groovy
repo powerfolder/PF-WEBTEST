@@ -31,9 +31,9 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-println('Global Variable: ' + GlobalVariable.organisationName)
-
 WebUI.callTestCase(findTestCase('Groups/Pre_test/add organization'), [:], FailureHandling.STOP_ON_FAILURE)
+
+println('Global Variable: ' + GlobalVariable.organisationName)
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
 

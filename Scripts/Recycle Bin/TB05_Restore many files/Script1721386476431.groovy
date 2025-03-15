@@ -30,6 +30,7 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import java.time.Duration
 
 WebUI.callTestCase(findTestCase('Recycle Bin/Pre_test/create many files'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -37,7 +38,7 @@ WebDriver driver = DriverFactory.getWebDriver()
 
 WebElement premierElement = driver.findElement(By.xpath('//div[2]/table/tbody/tr[1]'))
 
-WebDriverWait wait = new WebDriverWait(driver, 10)
+WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
 wait.until(ExpectedConditions.elementToBeClickable(premierElement))
 
