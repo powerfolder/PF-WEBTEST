@@ -107,6 +107,7 @@ String newDateTime = generateDateTimePlusTenSeconds()
 // Afficher la date dans la console (une seule fois)
 println('Date et heure générées : ' + newDateTime)
 
+
 // Effacer et saisir la nouvelle date dans le champ
 TestObject accountValidTill = findTestObject('Page_Folders - PowerFolder/inputValidTill')
 

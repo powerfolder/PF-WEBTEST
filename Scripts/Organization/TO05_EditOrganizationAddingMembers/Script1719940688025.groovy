@@ -19,24 +19,25 @@ import org.openqa.selenium.By as By
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 
+WebUI.callTestCase(findTestCase('Organization/Pre_test/Crete_membr_org'), [:], FailureHandling.STOP_ON_FAILURE)
+
 String Organization_name = GlobalVariable.organisationName
+
+String emailId = GlobalVariable.userEmail
+
 println('Organization_name: ' + Organization_name)
 
-WebUI.callTestCase(findTestCase('Organization/Pre_test/Create_Org'), [:], FailureHandling.STOP_ON_FAILURE)
+println('Organization_name: ' + emailId)
 
 WebUI.click(findTestObject('Organization/AddMembers'))
-
-String emailId = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
 
 WebUI.setText(findTestObject('Organization/InputAddAccountByName'), emailId)
 
 WebUI.sendKeys(findTestObject('Organization/InputAddAccountByName'), Keys.chord(Keys.ENTER))
 
-WebUI.delay(2)
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Organization/AddMemberButton'))
 
@@ -44,17 +45,11 @@ WebUI.click(findTestObject('Organization/SaveButton'))
 
 WebUI.delay(2)
 
+WebUI.refresh()
 
-WebUI.setText(findTestObject('Accounts/inputAccountSearch'), Organization_name)
+WebElement btn = findORG(Organization_name)
 
-WebDriver driver = DriverFactory.getWebDriver()
-
-WebElement orgElement = driver.findElement(By.xpath(('//a[(@class=\'pica-name\') and (text() =\'' + Organization_name) + '\')]'))
-
-orgElement.click()
-
-
-WebUI.click(findTestObject('Organization/EditButton'), FailureHandling.OPTIONAL)
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 WebUI.click(findTestObject('Organization/AddMembers'), FailureHandling.OPTIONAL)
 
@@ -64,6 +59,12 @@ WebUI.verifyEqual(memberName, emailId)
 
 WebUI.click(findTestObject('Organization/SaveButton'))
 
-WebUI.delay(3)
+WebUI.delay(1)
+
 WebUI.closeBrowser()
 
+WebElement findORG(String Organization_name) {
+	WebDriver driver = DriverFactory.getWebDriver()
+
+	return driver.findElement(By.xpath(('//a[contains(text(),\'' + Organization_name) + '\')]'))
+}

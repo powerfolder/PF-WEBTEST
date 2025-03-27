@@ -47,9 +47,12 @@ WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span
 
 String folderName = GlobalVariable.folderName
 
+println('folderName: ' + folderName)
+
 WebElement btn = findFolder(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+
 
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
@@ -98,6 +101,7 @@ WebElement findFolder(String folderName) {
 
     return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
 }
+
 
 @Keyword
 WebElement findDoc(String DocName) {
