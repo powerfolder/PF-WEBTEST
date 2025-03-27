@@ -22,9 +22,8 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
-import org.openqa.selenium.support.ui.WebDriverWait
-import org.openqa.selenium.support.ui.ExpectedConditions
-
+import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
+import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 
 WebUI.callTestCase(findTestCase('Links/pre_test/create_text_file_link'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -33,23 +32,23 @@ println(GlobalVariable.textfilename)
 textfilename = GlobalVariable.textfilename
 
 // Vérification si l'élément est cliquable
-boolean isChecked = WebUI.verifyElementClickable(findTestObject('Object Repository/Links/Page_Folders - PowerFolder/label_Can read'), FailureHandling.CONTINUE_ON_FAILURE)
+boolean isChecked = WebUI.verifyElementClickable(findTestObject('Object Repository/Links/Page_Folders - PowerFolder/label_Can read'), 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
 // Sauvegarder les paramètres
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 
 // Copier le lien
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
+WebUI.doubleClick(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
 
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
 
-WebUI.comment("URL copié : " + my_clipboard)
+WebUI.comment('URL copié : ' + my_clipboard)
 
 // Vérifier que l'URL est valide
-assert my_clipboard != null && my_clipboard.startsWith("https")
+assert (my_clipboard != null) && my_clipboard.startsWith('https')
 
 // Ouvrir le lien dans un nouvel onglet
-
 WebUI.switchToWindowIndex(1)
 
 WebUI.navigateToUrl(my_clipboard)
@@ -64,11 +63,9 @@ WebUI.delay(3)
 WebUI.switchToWindowIndex(0)
 
 // Fermer la boîte de dialogue
-
 WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/button_Close'))
 
 // Trouver et cliquer sur le bouton Share
-
 WebElement btn = findShareButton(textfilename)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
@@ -79,11 +76,11 @@ WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/links_config'
 WebUI.delay(2)
 
 // Fermer le navigateur
-WebUI.closeBrowser()
+WebUI.closeBrowser() // Fonction pour trouver le bouton Share
 
-// Fonction pour trouver le bouton Share
 WebElement findShareButton(String pdfFileName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
     return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + pdfFileName) + '\')]/td[7]/a'))
 }
+

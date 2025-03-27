@@ -25,8 +25,6 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 
-
-
 WebUI.callTestCase(findTestCase('Links/pre_test/Binary file'), [:], FailureHandling.STOP_ON_FAILURE)
 
 println(GlobalVariable.binaryName)
@@ -37,7 +35,7 @@ WebUI.setText(findTestObject('Links/Page_Folders - PowerFolder/input_Disable Dow
 
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
+WebUI.doubleClick(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
 
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
 

@@ -25,7 +25,6 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 
-
 WebUI.callTestCase(findTestCase('Links/pre_test/Create_document_link'), [('documentname') : 'getRandomFileName()'], FailureHandling.STOP_ON_FAILURE)
 
 println(GlobalVariable.documentname)
@@ -39,7 +38,7 @@ boolean isChecked = WebUI.verifyElementClickable(findTestObject('Object Reposito
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 
 // Copier le lien
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
+WebUI.doubleClick(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
 
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
 
@@ -76,8 +75,8 @@ WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/links_config'
 WebUI.delay(2)
 
 // Fermer le navigateur
-WebUI.closeBrowser() // Fonction pour trouver le bouton Share
-// Attendre que l'élément soit visible et interactif
+WebUI.closeBrowser( // Fonction pour trouver le bouton Share
+    ) // Attendre que l'élément soit visible et interactif
 
 WebElement findShareButton(String pdfFileName) {
     WebDriver driver = DriverFactory.getWebDriver()

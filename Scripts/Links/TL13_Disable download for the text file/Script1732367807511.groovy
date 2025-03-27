@@ -22,10 +22,8 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
-import org.openqa.selenium.support.ui.WebDriverWait
-import org.openqa.selenium.support.ui.ExpectedConditions
-
-
+import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
+import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 
 WebUI.callTestCase(findTestCase('Links/pre_test/create_text_file_link'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -34,34 +32,43 @@ println(GlobalVariable.textfilename)
 String textfilename = GlobalVariable.textfilename
 
 WebUI.verifyElementClickable(findTestObject('Links/Page_Folders - PowerFolder/label_Disable Download (View only)'))
+
 WebUI.click(findTestObject('Links/Page_Folders - PowerFolder/label_Disable Download (View only)'))
 
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
+
+WebUI.doubleClick(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
 
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
-assert my_clipboard != null && my_clipboard.startsWith("http")
+
+assert (my_clipboard != null) && my_clipboard.startsWith('http')
 
 WebUI.switchToWindowIndex(1)
+
 WebUI.navigateToUrl(my_clipboard)
+
 assert WebUI.getWindowTitle() == 'Link - PowerFolder'
 
 WebUI.delay(2)
+
 WebUI.switchToWindowIndex(0)
 
 WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/button_Close'))
 
 WebElement btn1 = findShareButton(textfilename)
+
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
 WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/links_config'))
 
 String iconClass = WebUI.getAttribute(findTestObject('Links/Page_Folders - PowerFolder/disable_Download_icon'), 'class')
-println("Icon class after click: " + iconClass)
 
-assert iconClass.contains('glyphicons-check') : "The icon does not contain the 'glyphicons-check' class."
+println('Icon class after click: ' + iconClass)
+
+assert iconClass.contains('glyphicons-check') : 'The icon does not contain the \'glyphicons-check\' class.'
 
 WebUI.delay(2)
+
 WebUI.closeBrowser()
 
 WebElement findShareButton(String pdfFileName) {
@@ -69,3 +76,4 @@ WebElement findShareButton(String pdfFileName) {
 
     return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + pdfFileName) + '\')]/td[7]/a'))
 }
+

@@ -22,10 +22,8 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
-import org.openqa.selenium.support.ui.WebDriverWait
-import org.openqa.selenium.support.ui.ExpectedConditions
-
-
+import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
+import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 
 // Appel du cas de test pour créer un lien
 WebUI.callTestCase(findTestCase('Links/pre_test/create_text_file_link'), [('fileName') : 'getRandomFilerName()'], FailureHandling.STOP_ON_FAILURE)
@@ -33,6 +31,7 @@ WebUI.callTestCase(findTestCase('Links/pre_test/create_text_file_link'), [('file
 println('Nom du fichier : ' + GlobalVariable.textfilename)
 
 String textfilename = GlobalVariable.textfilename
+
 // Vérifier si l'élément "Can read and write" est cliquable
 TestObject readWriteLabel = findTestObject('links files/Page_Folders - PowerFolder/label_Can read and write')
 
@@ -45,7 +44,7 @@ WebUI.click(readWriteLabel)
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 
 // Copier le lien
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
+WebUI.doubleClick(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
 
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
 

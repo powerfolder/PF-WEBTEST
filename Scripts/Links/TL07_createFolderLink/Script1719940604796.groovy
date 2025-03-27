@@ -49,19 +49,17 @@ WebElement buttonCreateLink = WebUiCommonHelper.findWebElement(findTestObject('L
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonCreateLink))
 
 //WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'), '2')
-
 WebUI.delay(3)
 
 WebUI.click(findTestObject('SettingsPopUp/buttonSave'))
 
-WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
+WebUI.doubleClick(findTestObject('Page_Folders - PowerFolder/icon-copy'))
 
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
 
 WebUI.navigateToUrl(my_clipboard)
 
 WebUI.delay(3)
-
 
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
@@ -80,9 +78,9 @@ String getRandomFolderName() {
 }
 
 WebElement findShareButton(String fileName) {
-	WebDriver driver = DriverFactory.getWebDriver()
+    WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
 }
 
 String getTimestamp() {

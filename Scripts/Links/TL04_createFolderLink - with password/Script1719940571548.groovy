@@ -4,7 +4,6 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import static org.apache.commons.lang.StringUtils.isNotBlank
-
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -22,9 +21,10 @@ import org.openqa.selenium.By as By
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
-import java.awt.Toolkit
-import java.awt.datatransfer.DataFlavor
-import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import java.awt.Toolkit as Toolkit
+import java.awt.datatransfer.DataFlavor as DataFlavor
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
 String folderName = getRandomFolderName()
@@ -39,7 +39,7 @@ WebUI.verifyElementPresent(findTestObject('lang/getFolderNameLabelText'), 30)
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Folders/inputFolderName'),folderName)
+WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
@@ -49,29 +49,29 @@ WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.EN
 
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 
-WebElement btn =findShareButton(folderName)
+WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 WebUI.waitForElementClickable(findTestObject('Links/buttonCreateLink'), 30, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebElement buttonCreateLink = 	WebUiCommonHelper.findWebElement(findTestObject('Links/buttonCreateLink'),30)
+WebElement buttonCreateLink = WebUiCommonHelper.findWebElement(findTestObject('Links/buttonCreateLink'), 30)
 
-WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(buttonCreateLink))
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonCreateLink))
 
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Can read'))
+
 //WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
 //WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
-
 WebUI.setText(findTestObject('Page_Link - PowerFolder/lang_Password required'), 'Alexa@131190')
 
 WebUI.delay(3)
 
 WebUI.click(findTestObject('SettingsPopUp/buttonSave'))
 
-WebUI.click(findTestObject('Page_Folders - PowerFolder/icon-copy'))
+WebUI.doubleClick(findTestObject('Page_Folders - PowerFolder/icon-copy'))
 
-String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor);
+String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
 
 WebUI.navigateToUrl(my_clipboard)
 
@@ -85,27 +85,29 @@ WebUI.click(findTestObject('Page_Link - PowerFolder/settings'))
 
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
-assert WebUI.waitForElementVisible(findTestObject('Page_Link - PowerFolder/div_Password required'),2)
+assert WebUI.waitForElementVisible(findTestObject('Page_Link - PowerFolder/div_Password required'), 2)
 
 WebUI.click(findTestObject('Page_Link - PowerFolder/buttonSave'))
 
 WebUI.closeBrowser()
 
+String getRandomFolderName() {
+    String folderName = 'Folder' + getTimestamp()
 
-def String getRandomFolderName() {
-	String folderName = 'Folder'+getTimestamp();
-	return folderName;
-	
+    return folderName
 }
+
 WebElement findShareButton(String fileName) {
-	WebDriver driver = DriverFactory.getWebDriver()
+    WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
 }
 
-def String getTimestamp() {
-	Date todaysDate = new Date();
-	String formattedDate = todaysDate.format("ddMMMyyyyhhmmss");
-	return formattedDate;
+String getTimestamp() {
+    Date todaysDate = new Date()
+
+    String formattedDate = todaysDate.format('ddMMMyyyyhhmmss')
+
+    return formattedDate
 }
 

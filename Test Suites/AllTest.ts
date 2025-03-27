@@ -1248,20 +1248,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>245e04d6-8d57-46cf-aafa-06de2b98f49a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Recycle Bin/TB01_Restore file</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>4182edb9-12b4-44da-bda9-45308ddbf26c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Recycle Bin/TB02_Restore up to 5 versions</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>640417e7-981b-4cbc-8098-4a9dbe153dda</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

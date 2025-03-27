@@ -37,7 +37,7 @@ WebUI.click(findTestObject('Links/Page_Folders - PowerFolder/label_Disable Downl
 
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
+WebUI.doubleClick(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
 
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
 
@@ -82,7 +82,6 @@ assert iconClass.contains('glyphicons-check') : 'The icon does not contain the \
 WebUI.delay(2)
 
 WebUI.closeBrowser()
-
 
 WebElement findShareButton(String pdfFileName) {
     WebDriver driver = DriverFactory.getWebDriver()

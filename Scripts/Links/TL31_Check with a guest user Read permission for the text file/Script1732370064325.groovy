@@ -82,7 +82,7 @@ WebUI.sendKeys(findTestObject('Object Repository/Accounts/inputAccountSearch'), 
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'$folderName')]"))
+WebElement folder = driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'$folderName')]"))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
 
@@ -110,7 +110,7 @@ WebUI.click(findTestObject('Object Repository/Folders/shareLink'))
 
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
+WebUI.doubleClick(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
 
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
 
@@ -176,9 +176,9 @@ String getTimestamp() {
 }
 
 WebElement findShareButton(String fileName) {
-	WebDriver driver = DriverFactory.getWebDriver()
+    WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
 }
 
 WebElement findMembersButton(String folderName) {

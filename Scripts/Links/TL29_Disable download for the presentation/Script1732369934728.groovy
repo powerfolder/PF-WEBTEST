@@ -25,8 +25,6 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 
-
-
 WebUI.callTestCase(findTestCase('Links/pre_test/Create_presentation_link'), [:], FailureHandling.STOP_ON_FAILURE)
 
 println(GlobalVariable.presentationname)
@@ -39,7 +37,7 @@ WebUI.click(findTestObject('Links/Page_Folders - PowerFolder/label_Disable Downl
 
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 
-WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
+WebUI.doubleClick(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
 
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
 
@@ -57,7 +55,6 @@ WebUI.switchToWindowIndex(0)
 
 WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/button_Close'))
 
-
 WebElement btn1 = findShareButton(presentationname)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
@@ -72,10 +69,12 @@ assert iconClass.contains('glyphicons-check') : 'The icon does not contain the \
 
 WebUI.delay(2)
 
-WebUI.closeBrowser() // Attente maximale de 10 secondes
+WebUI.closeBrowser( // Attente maximale de 10 secondes
+    )
 
 WebElement findShareButton(String pdfFileName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
     return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + pdfFileName) + '\')]/td[7]/a'))
 }
+

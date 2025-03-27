@@ -25,8 +25,6 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 
-
-
 // Appel du cas de test pour créer un lien de document
 WebUI.callTestCase(findTestCase('Links/pre_test/Create_presentation_link'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -49,7 +47,6 @@ WebUI.switchToWindowIndex(0)
 WebUI.delay(1)
 
 WebUI.click(findTestObject('Links/Page_Dashboard - PowerFolder/lang_Links'))
-
 
 // Vérification que documentname n'est pas null
 assert presentationname != null : 'Le nom du document ne doit pas être null.'
@@ -77,7 +74,8 @@ WebUI.verifyEqual(containsGetLink, true)
 
 // Fermer le navigateur
 WebUI.closeBrowser( ///////////////////////////////////////////////////// Méthodes //////////////////////////////////////////////
-    ) // Attente explicite de 10 secondes
+    // Attente explicite de 10 secondes
+    )
 
 WebElement findLinksButton(String pdfFileName) {
     WebDriver driver = DriverFactory.getWebDriver()
