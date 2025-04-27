@@ -77,20 +77,6 @@ selectPdfFileAutomatically(pdfFilePath)
 
 WebUI.delay(2)
 
-def btn = findDoc(pdfname)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
-assert btn != null
-
-WebUI.switchToWindowIndex(1)
-
-WebUI.delay(2)
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.delay(2)
-
 WebUI.refresh()
 
 WebElement btn1 = findShareButton(pdfname)

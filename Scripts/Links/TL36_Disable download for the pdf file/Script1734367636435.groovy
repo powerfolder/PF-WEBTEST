@@ -38,16 +38,24 @@ WebUI.click(findTestObject('Links/Page_Folders - PowerFolder/label_Disable Downl
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 
 WebUI.doubleClick(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
-
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
 
+WebUI.comment('URL copié : ' + my_clipboard)
+
+// Vérifier que l'URL est valide
 assert (my_clipboard != null) && my_clipboard.startsWith('https')
 
+// Ouvrir le lien dans un nouvel onglet
+WebUI.executeJavaScript('window.open(arguments[0], \'_blank\');', Arrays.asList(my_clipboard))
+
+// Passer au nouvel onglet (index 1)
 WebUI.switchToWindowIndex(1)
 
-WebUI.navigateToUrl(my_clipboard)
+// Optionnel : Vérification du titre de la page ou chargement réussi
+WebUI.verifyNotEqual(WebUI.getWindowTitle(), '', FailureHandling.CONTINUE_ON_FAILURE)
 
-assert WebUI.getWindowTitle() == 'Link - PowerFolder'
+// Vérification du titre de la fenêtre
+assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
 WebUI.verifyElementNotPresent(findTestObject('Links/Page_Link - PowerFolder/pdf_Download'), 2)
 

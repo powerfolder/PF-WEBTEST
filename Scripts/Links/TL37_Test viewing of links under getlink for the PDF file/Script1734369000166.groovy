@@ -36,12 +36,6 @@ WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 
 WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/button_Close'))
 
-WebUI.switchToWindowIndex(1)
-
-WebUI.closeWindowIndex(1)
-
-WebUI.switchToWindowIndex(0)
-
 WebUI.delay(1)
 
 WebUI.click(findTestObject('Links/Page_Dashboard - PowerFolder/lang_Links'))

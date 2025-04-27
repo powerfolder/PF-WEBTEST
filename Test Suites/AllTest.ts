@@ -12,17 +12,11 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>ea5f2274-03a5-4494-8334-0a86fa3508de</testSuiteGuid>
    <testCaseLink>
-      <guid>13394b78-a2d5-4ebe-aea2-957cb0d645f4</guid>
+      <guid>416b5723-ce55-45e8-998e-7eca00071077</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Login/Pretest - Admin Login</testCaseId>
+      <testCaseId>Test Cases/Links/pre_test/check_eng</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>8267ad87-1fe0-475f-86fb-985f831da147</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>52b8d6bd-2ad6-4e9d-a647-a8cf41a3f551</guid>
@@ -102,11 +96,17 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8fa99a04-43c0-47f5-b5bc-cf6dbfb2f0c4</guid>
+      <guid>13394b78-a2d5-4ebe-aea2-957cb0d645f4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Folders/TF5_VerifyFolderRenamebyAdminUser</testCaseId>
+      <testCaseId>Test Cases/Login/Pretest - Admin Login</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8267ad87-1fe0-475f-86fb-985f831da147</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>b4928063-f61f-43bc-b48e-f985169c01e7</guid>
@@ -186,10 +186,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4cfbbfbe-1b21-4c59-becd-89f3e162292e</guid>
+      <guid>8fa99a04-43c0-47f5-b5bc-cf6dbfb2f0c4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL12_Check read-write permission for the text file</testCaseId>
+      <testCaseId>Test Cases/Folders/TF5_VerifyFolderRenamebyAdminUser</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -291,10 +291,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d60cf867-95bb-4bd1-a27d-ac57dfaf9550</guid>
+      <guid>4cfbbfbe-1b21-4c59-becd-89f3e162292e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL27_Check read permission for the presentation</testCaseId>
+      <testCaseId>Test Cases/Links/TL12_Check read-write permission for the text file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -396,10 +396,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a6eeb3aa-44ac-4516-af63-045df7b44a1b</guid>
+      <guid>d60cf867-95bb-4bd1-a27d-ac57dfaf9550</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL42_Disable download for the video</testCaseId>
+      <testCaseId>Test Cases/Links/TL27_Check read permission for the presentation</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -513,10 +513,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f6c9888f-2683-4703-ba1a-0cb3f846dd13</guid>
+      <guid>a6eeb3aa-44ac-4516-af63-045df7b44a1b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CleanUpScripts/CL1_CleanFolders</testCaseId>
+      <testCaseId>Test Cases/Links/TL42_Disable download for the video</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -576,17 +576,11 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6450f73b-be20-4a02-ba0d-46ad16348338</guid>
+      <guid>f6c9888f-2683-4703-ba1a-0cb3f846dd13</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/Share Using enter/TS03_Share Folder With one email adress</testCaseId>
+      <testCaseId>Test Cases/CleanUpScripts/CL1_CleanFolders</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>29649c36-6e79-4cf1-921a-6466155d6830</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>ff2b4307-b6a8-4288-8151-a37660d6b07d</guid>
@@ -672,11 +666,17 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5f6e7b72-4e6e-4fa8-a899-95ea6a0b2b78</guid>
+      <guid>6450f73b-be20-4a02-ba0d-46ad16348338</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/Share Using plus button/TS17_Share Folder With Group</testCaseId>
+      <testCaseId>Test Cases/Share/Share Using enter/TS03_Share Folder With one email adress</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>29649c36-6e79-4cf1-921a-6466155d6830</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>e469e260-39e5-40dd-aec6-46ed887c200a</guid>
@@ -714,10 +714,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0971cf21-8906-49e4-90f8-3a339f391f50</guid>
+      <guid>5f6e7b72-4e6e-4fa8-a899-95ea6a0b2b78</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CleanUpScripts/CL2_CleanAccounts</testCaseId>
+      <testCaseId>Test Cases/Share/Share Using plus button/TS17_Share Folder With Group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -756,10 +756,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a52ad904-2f53-4f2d-a6c2-c7ee93c270b5</guid>
+      <guid>0971cf21-8906-49e4-90f8-3a339f391f50</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA14_VerifyBlockNowButton</testCaseId>
+      <testCaseId>Test Cases/CleanUpScripts/CL2_CleanAccounts</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -840,10 +840,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1c2dc67b-39d9-49fe-a02d-f7183adda60e</guid>
+      <guid>a52ad904-2f53-4f2d-a6c2-c7ee93c270b5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA09_AddAdditionalEmails</testCaseId>
+      <testCaseId>Test Cases/Accounts/TA14_VerifyBlockNowButton</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -945,10 +945,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>97086099-190f-422a-948b-3b6fe6e1b2a7</guid>
+      <guid>1c2dc67b-39d9-49fe-a02d-f7183adda60e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Groups/TG06_Change avatar</testCaseId>
+      <testCaseId>Test Cases/Accounts/TA09_AddAdditionalEmails</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -1098,17 +1098,11 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>9a16fb14-6228-48da-9c5d-c019e62f678e</guid>
+      <guid>97086099-190f-422a-948b-3b6fe6e1b2a7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/File/TF05_Delete Document</testCaseId>
+      <testCaseId>Test Cases/Groups/TG06_Change avatar</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>008d5f36-2840-47fc-997e-83b96a73e0bd</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>20316f31-f750-415b-9b0f-67194f1c0f28</guid>
@@ -1275,11 +1269,17 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>563ca5c5-fab9-4687-aabd-6c10e4349eac</guid>
+      <guid>9a16fb14-6228-48da-9c5d-c019e62f678e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Upload form/TUF04_Upload a directory</testCaseId>
+      <testCaseId>Test Cases/File/TF05_Delete Document</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>008d5f36-2840-47fc-997e-83b96a73e0bd</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>e178a19c-a2f1-420d-860e-bc73f8f3d625</guid>
@@ -1392,10 +1392,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b3304f60-ed80-4aba-bb0c-d9bdbad62cb5</guid>
+      <guid>563ca5c5-fab9-4687-aabd-6c10e4349eac</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/My Account/Overview tab/TMA07_date validation Upgrade</testCaseId>
+      <testCaseId>Test Cases/Upload form/TUF04_Upload a directory</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -1455,10 +1455,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>639e318d-2d6b-4ef9-905a-31f36dd7155a</guid>
+      <guid>b3304f60-ed80-4aba-bb0c-d9bdbad62cb5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/Edit_Account/EA01_Open_Edit_Account_Page</testCaseId>
+      <testCaseId>Test Cases/My Account/Overview tab/TMA07_date validation Upgrade</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -1539,10 +1539,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5aa9e2dd-986b-49a7-8968-f9dd64f6f42d</guid>
+      <guid>639e318d-2d6b-4ef9-905a-31f36dd7155a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/Edit_Account/EA13_Check_Server_Admin_Toggle</testCaseId>
+      <testCaseId>Test Cases/Accounts/Edit_Account/EA01_Open_Edit_Account_Page</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -1641,6 +1641,13 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Recycle Bin/TB08_Restore in sub sub directory</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5aa9e2dd-986b-49a7-8968-f9dd64f6f42d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Accounts/Edit_Account/EA13_Check_Server_Admin_Toggle</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

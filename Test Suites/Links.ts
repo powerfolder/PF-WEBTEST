@@ -12,6 +12,13 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>47e5f5d8-0151-4a6d-9ea0-f99e7a84e8ee</testSuiteGuid>
    <testCaseLink>
+      <guid>1d542c30-9757-46d8-a6f8-a2ed39703de8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/pre_test/check_eng</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>dcf1241b-7a68-467b-bd3b-8d828ad21eec</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -51,13 +58,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL06_uploadIntoSubDirsUsingLinks</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>ade97d0e-144c-4ea3-8d73-b95cde05c712</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL07_createFolderLink</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -117,10 +117,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>dc22b24b-8468-485a-89bc-c007ca79dc32</guid>
+      <guid>ade97d0e-144c-4ea3-8d73-b95cde05c712</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL16_Check read-write permission for the document</testCaseId>
+      <testCaseId>Test Cases/Links/TL07_createFolderLink</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -187,10 +187,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f4c732c7-cb70-4bee-abea-1c6412cfca35</guid>
+      <guid>dc22b24b-8468-485a-89bc-c007ca79dc32</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL26_Disable download for the CSV file</testCaseId>
+      <testCaseId>Test Cases/Links/TL16_Check read-write permission for the document</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -236,10 +236,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4f26bdae-db5a-437f-8ed8-2ee92dd88d0f</guid>
+      <guid>f4c732c7-cb70-4bee-abea-1c6412cfca35</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL33_Check with a guest user Disable download for the text file</testCaseId>
+      <testCaseId>Test Cases/Links/TL26_Disable download for the CSV file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -331,6 +331,13 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL46_Test viewing of links under getlink for the binary</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4f26bdae-db5a-437f-8ed8-2ee92dd88d0f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL33_Check with a guest user Disable download for the text file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
