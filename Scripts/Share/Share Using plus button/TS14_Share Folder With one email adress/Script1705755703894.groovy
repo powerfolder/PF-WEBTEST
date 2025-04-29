@@ -5,7 +5,6 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import static helpers.Helper.getRandomFolderName
 import static helpers.Helper.findShareButton
-
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -22,40 +21,48 @@ import org.openqa.selenium.By as By
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
-import java.util.Locale
-import java.text.SimpleDateFormat
-
+import java.util.Locale as Locale
+import java.text.SimpleDateFormat as SimpleDateFormat
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
+
 String folderName = getRandomFolderName()
+
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Folders/createFolderIcon'))
+
 WebUI.click(findTestObject('Folders/createFolder'))
+
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
+
 WebUI.click(findTestObject('Folders/buttonOK'))
+
 WebUI.click(findTestObject('Folders/createFolderIcon'))
+
 WebUI.click(findTestObject('Folders/createFolder'))
+
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.setText(findTestObject('Folders/inputFolderName'), folderName+'_Sub')
+
+WebUI.setText(findTestObject('Folders/inputFolderName'), folderName + '_Sub')
+
 WebUI.click(findTestObject('Folders/buttonOK'))
+
 WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-String mail = "${-> folderName}@mail.com"
+String mail = "${ -> ... }@mail.com"
 
-WebUI.setText(findTestObject('Share/Page_Folders - PowerFolder/inputEmail_Share'), 
-    mail)
+WebUI.setText(findTestObject('Share/Page_Folders - PowerFolder/inputEmail_Share'), mail)
 
 WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/buttonAddEmail'))
 
 WebUI.delay(5)
 
-
 WebUI.verifyElementText(findTestObject('Share/Page_Folders - PowerFolder/td_usermailcom'), mail.toLowerCase())
 
 WebUI.closeBrowser()
-
-
-
 

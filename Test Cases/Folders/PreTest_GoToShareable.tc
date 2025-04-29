@@ -4,5 +4,6 @@
    <name>PreTest_GoToShareable</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>f16005ed-fbc9-421a-9131-feea76e9fac8</testCaseGuid>
 </TestCaseEntity>

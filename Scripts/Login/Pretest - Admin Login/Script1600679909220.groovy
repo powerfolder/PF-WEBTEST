@@ -27,5 +27,7 @@ WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Password)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
+WebUI.delay(2)
+
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
 
