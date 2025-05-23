@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAV05_Grp admin permission</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f13056a0-cb9e-424c-88b9-0f956d5f2251</testCaseGuid>
+</TestCaseEntity>

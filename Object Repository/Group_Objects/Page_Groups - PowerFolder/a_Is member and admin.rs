@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Is member and admin</name>
+   <name>a_Is member and admin</name>
    <tag></tag>
-   <elementGuidId>f2c3cf65-1532-44fe-a2d1-54678c55a983</elementGuidId>
+   <elementGuidId>3b7475c4-9682-45a3-8af8-53090b9cf976</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>647431e6-cf62-4bef-9110-5e7ac40c7725</webElementGuid>
+      <webElementGuid>86986c19-b967-4b4e-97a5-7adc852550f9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +31,7 @@
       <name>data-dropdown-type</name>
       <type>Main</type>
       <value>radio</value>
-      <webElementGuid>94449567-dc29-4bf7-82b8-1385558f9b97</webElementGuid>
+      <webElementGuid>4d28e9de-8837-467a-b645-255fdd74dc59</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>data-dropdown-group</name>
       <type>Main</type>
       <value>permission</value>
-      <webElementGuid>34697448-a776-4131-b90d-110709894feb</webElementGuid>
+      <webElementGuid>1638fc3c-36fc-458d-97e8-0a279c9cab5c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,23 +47,23 @@
       <name>text</name>
       <type>Main</type>
       <value>Is member and admin</value>
-      <webElementGuid>adadf4af-10c8-4b07-a42a-828c5001311e</webElementGuid>
+      <webElementGuid>6361589a-9e38-46fb-b4d8-2266ab613665</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;item_1498947661&quot;)/td[@class=&quot;hidden-xs&quot;]/div[@class=&quot;pica-inline dropdown pull-right open&quot;]/ul[@class=&quot;dropdown-menu&quot;]/li[2]/a[1]</value>
-      <webElementGuid>9a2efc57-b783-455f-9b47-8e90e3b2746d</webElementGuid>
+      <value>id(&quot;item_1904451693&quot;)/td[@class=&quot;hidden-xs&quot;]/div[@class=&quot;pica-inline dropdown pull-right open&quot;]/ul[@class=&quot;dropdown-menu&quot;]/li[2]/a[1]</value>
+      <webElementGuid>c2cfdb2f-b238-4c2c-84fe-822a7435a89d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='item_1498947661']/td[3]/div/ul/li[2]/a</value>
-      <webElementGuid>5a3c548a-aab4-400f-a531-6dd85aa2dbb1</webElementGuid>
+      <value>//tr[@id='item_1904451693']/td[3]/div/ul/li[2]/a</value>
+      <webElementGuid>ad5abe2a-2df5-465a-b758-d4b878a33fc0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>(//a[contains(text(),'Is member and admin')])[2]</value>
-      <webElementGuid>c4cd2976-5e67-4dd2-a0f9-29b7da63d194</webElementGuid>
+      <webElementGuid>db5dfe41-4889-49a0-b61d-e47917837aed</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Is member'])[3]/following::a[1]</value>
-      <webElementGuid>a346feeb-ca4e-4f6f-a47e-12e76bcef5a5</webElementGuid>
+      <webElementGuid>675126c7-96e7-4921-bec0-43b9e77ea0e9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +87,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Is member and admin'])[2]/following::a[2]</value>
-      <webElementGuid>71147a84-51a3-4d64-9e91-1fc477db0597</webElementGuid>
+      <webElementGuid>bd50d5bc-de5e-4cd5-ab1e-b5a31eba92e8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +95,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[4]/preceding::a[1]</value>
-      <webElementGuid>4843bc3e-5f2b-4656-a09e-373e8155f49c</webElementGuid>
+      <webElementGuid>b0247012-c6a2-488d-94fa-5ef305893b24</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,7 +103,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[5]/preceding::a[2]</value>
-      <webElementGuid>e8611121-1b78-422f-a60d-f20592127817</webElementGuid>
+      <webElementGuid>7f26f341-0f60-4b0c-8194-5705a97a57b6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,7 +111,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[2]/td[3]/div/ul/li[2]/a</value>
-      <webElementGuid>a8262bda-f5c1-4565-9a84-f6dc65d9dd92</webElementGuid>
+      <webElementGuid>e6a0a18b-fb93-4b45-8346-046d35070e1e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -119,6 +119,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[(text() = 'Is member and admin' or . = 'Is member and admin')]</value>
-      <webElementGuid>14247908-1210-47dd-ac4d-e096f4c22837</webElementGuid>
+      <webElementGuid>635910a7-bf89-4d10-854f-9418cd8424d1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

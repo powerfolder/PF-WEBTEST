@@ -31,10 +31,9 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
-GlobalVariable.userName= ('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com'
+GlobalVariable.userName = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
 
 String user = GlobalVariable.userName
 
@@ -46,9 +45,10 @@ WebUiBuiltInKeywords.click(findTestObject('Accounts/ClickCreateAccount'))
 
 WebUiBuiltInKeywords.setText(findTestObject('Accounts/InputUserOrEmail'), user)
 
-WebUiBuiltInKeywords.setText(findTestObject('Accounts/InputPassword'), 'Alexa@131190')
+WebUiBuiltInKeywords.setText(findTestObject('Accounts/InputPassword'), GlobalVariable.Pass)
 
-WebUiBuiltInKeywords.setText(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/account_storage_overwiew'), '5')
+WebUiBuiltInKeywords.setText(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/account_storage_overwiew'), 
+    '5')
 
 WebUiBuiltInKeywords.click(findTestObject('Accounts/SaveButton'))
 

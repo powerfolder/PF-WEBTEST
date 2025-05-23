@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Is member and admin</name>
+   <name>checkbox_IsAdmin</name>
    <tag></tag>
-   <elementGuidId>f2c3cf65-1532-44fe-a2d1-54678c55a983</elementGuidId>
+   <elementGuidId>88e3ad0b-8090-4bd7-a2e3-dcc90dda5e55</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[4]/div[2]/table/tbody/tr[2]/td[3]/div/ul/li[2]/a</value>
+         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[4]/div[2]/table/tbody/tr/td[4]/div/ul</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,15 +23,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>647431e6-cf62-4bef-9110-5e7ac40c7725</webElementGuid>
+      <webElementGuid>6c84b8af-43ed-4350-a753-f8ebedeb5a17</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-dropdown-type</name>
       <type>Main</type>
-      <value>radio</value>
-      <webElementGuid>94449567-dc29-4bf7-82b8-1385558f9b97</webElementGuid>
+      <value>checkbox</value>
+      <webElementGuid>649754ae-e88d-45a4-9b3e-09222c75add1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,86 +39,94 @@
       <name>data-dropdown-group</name>
       <type>Main</type>
       <value>permission</value>
-      <webElementGuid>34697448-a776-4131-b90d-110709894feb</webElementGuid>
+      <webElementGuid>5b249fb1-9ae5-4e95-81c8-857888401bd1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Is member and admin</value>
-      <webElementGuid>adadf4af-10c8-4b07-a42a-828c5001311e</webElementGuid>
+      <value>Is admin</value>
+      <webElementGuid>799cada8-efb5-48ed-8cb8-7531612c8635</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;item_1498947661&quot;)/td[@class=&quot;hidden-xs&quot;]/div[@class=&quot;pica-inline dropdown pull-right open&quot;]/ul[@class=&quot;dropdown-menu&quot;]/li[2]/a[1]</value>
-      <webElementGuid>9a2efc57-b783-455f-9b47-8e90e3b2746d</webElementGuid>
+      <value>id(&quot;item_792834405&quot;)/td[@class=&quot;hidden-xs&quot;]/div[@class=&quot;pica-inline dropdown pull-right open&quot;]/ul[@class=&quot;dropdown-menu&quot;]/li[2]/a[1]</value>
+      <webElementGuid>7f58a188-674e-4123-9c6a-8096f67d1d8b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='item_1498947661']/td[3]/div/ul/li[2]/a</value>
-      <webElementGuid>5a3c548a-aab4-400f-a531-6dd85aa2dbb1</webElementGuid>
+      <value>//tr[@id='item_792834405']/td[4]/div/ul/li[2]/a</value>
+      <webElementGuid>d6491531-0c1e-4635-8fc0-9303c27723c4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
       <type>Main</type>
-      <value>(//a[contains(text(),'Is member and admin')])[2]</value>
-      <webElementGuid>c4cd2976-5e67-4dd2-a0f9-29b7da63d194</webElementGuid>
+      <value>//a[contains(text(),'Is admin')]</value>
+      <webElementGuid>30faba36-c01e-41c8-8dfc-868015faaf6b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Is member'])[3]/following::a[1]</value>
-      <webElementGuid>a346feeb-ca4e-4f6f-a47e-12e76bcef5a5</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Is member'])[2]/following::a[1]</value>
+      <webElementGuid>51aa2a0c-7887-4f8e-b634-388455cc4dc5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Is member and admin'])[2]/following::a[2]</value>
-      <webElementGuid>71147a84-51a3-4d64-9e91-1fc477db0597</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Is member'])[1]/following::a[2]</value>
+      <webElementGuid>588bc127-4171-4cc9-b47a-079c31f884aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[4]/preceding::a[1]</value>
-      <webElementGuid>4843bc3e-5f2b-4656-a09e-373e8155f49c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[3]/preceding::a[1]</value>
+      <webElementGuid>e2e93188-f500-4931-a77f-6eca4b9bb1fa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[5]/preceding::a[2]</value>
-      <webElementGuid>e8611121-1b78-422f-a60d-f20592127817</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Create new'])[1]/preceding::a[2]</value>
+      <webElementGuid>fc816e75-46c3-49ae-a37c-cb5ed6203007</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Is admin']/parent::*</value>
+      <webElementGuid>16d077db-f8c7-4d62-ac8b-49841f4e05e5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[2]/td[3]/div/ul/li[2]/a</value>
-      <webElementGuid>a8262bda-f5c1-4565-9a84-f6dc65d9dd92</webElementGuid>
+      <value>//td[4]/div/ul/li[2]/a</value>
+      <webElementGuid>f93fe7e8-2046-4134-833c-f2e160944723</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[(text() = 'Is member and admin' or . = 'Is member and admin')]</value>
-      <webElementGuid>14247908-1210-47dd-ac4d-e096f4c22837</webElementGuid>
+      <value>//a[(text() = 'Is admin' or . = 'Is admin')]</value>
+      <webElementGuid>cec664c2-4cc3-40f3-a0d0-789c4b99624c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

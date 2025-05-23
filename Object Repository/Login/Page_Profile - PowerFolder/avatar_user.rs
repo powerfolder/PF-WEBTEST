@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>avatar_user</name>
+   <tag></tag>
+   <elementGuidId>493c63e0-3c3b-4b01-a01f-dad25862852e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>img.pica-avatar.pica-border</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_content']/table/tbody/tr/td/img</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>3a676c1c-174e-41f2-8c76-af68435b5156</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-avatar pica-border</value>
+      <webElementGuid>f1fa78aa-4b5a-4bff-9bb9-adbbf2343574</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>/avatars/QD76ph2wmdeTuADpFabS?1748014401844</value>
+      <webElementGuid>c1a73e67-49c8-45bc-aba4-b24a6d0b0092</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_content&quot;)/table[@class=&quot;pica-nav-tab table table-responsive table-striped&quot;]/tbody[1]/tr[1]/td[@class=&quot;pica-column-avatar text-center hidden-sm hidden-xs&quot;]/img[@class=&quot;pica-avatar pica-border&quot;]</value>
+      <webElementGuid>eca7ad8c-7df6-40ef-8c63-9d661037871e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_content']/table/tbody/tr/td/img</value>
+      <webElementGuid>a2c7145d-0c27-4e7d-9012-3a059d7879e7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/img</value>
+      <webElementGuid>0c202405-58dc-498c-b16d-4e7b72f64de2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '/avatars/QD76ph2wmdeTuADpFabS?1748014401844']</value>
+      <webElementGuid>c02de774-5d1f-4686-8ae6-40c4c9192069</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
