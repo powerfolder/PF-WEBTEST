@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_account_dialog']/div/div/div[2]/ul/li[8]/a</value>
+         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/ul/li[7]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>c8ff4bef-75c8-436e-98bc-65f74d6a2ea4</webElementGuid>
+      <webElementGuid>7fbceb11-c8b1-452e-b93f-6ec85003c3ed</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -33,7 +33,7 @@
       <value>
                             Notes
                         </value>
-      <webElementGuid>97cd7fdc-e64c-4eb5-9aa9-fec7add752de</webElementGuid>
+      <webElementGuid>994419ff-4bf6-48cf-a3f2-5e7abb0b88bf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -41,7 +41,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_account_dialog&quot;)/div[@class=&quot;modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-body&quot;]/ul[@class=&quot;pica-space pica-nav-tabs nav nav-tabs&quot;]/li[@class=&quot;hidden-xs active&quot;]/a[1]</value>
-      <webElementGuid>d8055964-fbc0-4dff-a15a-2786a517c8b7</webElementGuid>
+      <webElementGuid>57da3f65-2a76-4785-9e65-abdf24e46011</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -49,7 +49,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_account_dialog']/div/div/div[2]/ul/li[8]/a</value>
-      <webElementGuid>b48749fc-d903-4d9c-b2aa-953ed5dd5a79</webElementGuid>
+      <webElementGuid>2285c7e4-554a-42aa-9de7-d000ad0f2bb7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -57,7 +57,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Invoice details'])[1]/following::a[1]</value>
-      <webElementGuid>f71ac640-de71-4c53-b71b-ce52e8f30ae0</webElementGuid>
+      <webElementGuid>85c696e7-f9ca-45a2-a9ec-7121944ecc4d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -65,7 +65,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Organizations'])[2]/following::a[2]</value>
-      <webElementGuid>eb0cedd4-6a31-458f-90da-e968e7c5f7e5</webElementGuid>
+      <webElementGuid>3b6fcab3-492e-41ee-8d4c-f4deb864993e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -73,7 +73,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Account'])[2]/preceding::a[2]</value>
-      <webElementGuid>a153c924-1e82-4208-a788-d410223f8d38</webElementGuid>
+      <webElementGuid>f370517a-5e31-4762-9b30-c0cfa7c2be3f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -81,7 +81,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[8]/a</value>
-      <webElementGuid>9c8750c4-1614-4c8c-8b51-78ef7b0ceb75</webElementGuid>
+      <webElementGuid>ac876f6d-0d8b-403d-a1a0-50edbf876a28</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,6 +93,6 @@
                         ' or . = '
                             Notes
                         ')]</value>
-      <webElementGuid>43dd5658-e77a-4324-8520-c02e89db4790</webElementGuid>
+      <webElementGuid>7c54d12f-92d1-42ae-ad66-c1d6df2512ac</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

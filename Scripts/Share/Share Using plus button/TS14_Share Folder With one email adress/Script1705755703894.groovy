@@ -23,6 +23,7 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import java.util.Locale as Locale
 import java.text.SimpleDateFormat as SimpleDateFormat
+import java.util.Arrays as Arrays
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -54,7 +55,7 @@ WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-String mail = "${ -> ... }@mail.com"
+mail = "user@mail.com" 
 
 WebUI.setText(findTestObject('Share/Page_Folders - PowerFolder/inputEmail_Share'), mail)
 
