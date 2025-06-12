@@ -19,3 +19,73 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.verifyElementPresent(findTestObject('Dashboard/servertab_mimas'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Dashboard/Accounts_Manage'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Dashboard/Storage_Manage'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Dashboard/Folders_Manage'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Dashboard/Pricing_License'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Dashboard/Activation_Manage'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Dashboard/Groups_Manage'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Dashboard/Org_Manage'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Dashboard/Dashboard_Logs'), 0)
+
+WebUI.click(findTestObject('Dashboard/Accounts_Manage'))
+
+WebUI.verifyEqual(WebUI.getWindowTitle(), 'Accounts - PowerFolder')
+
+WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
+
+WebUI.click(findTestObject('Dashboard/Storage_Manage'))
+
+WebUI.verifyEqual(WebUI.getWindowTitle(), 'Storage - PowerFolder')
+
+WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
+
+WebUI.click(findTestObject('Dashboard/Folders_Manage'))
+
+WebUI.verifyEqual(WebUI.getWindowTitle(), 'Folders - PowerFolder')
+
+WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
+
+WebUI.click(findTestObject('Dashboard/Groups_Manage'))
+
+WebUI.verifyEqual(WebUI.getWindowTitle(), 'Groups - PowerFolder')
+
+WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
+
+WebUI.click(findTestObject('Dashboard/Org_Manage'))
+
+WebUI.verifyEqual(WebUI.getWindowTitle(), 'Organizations - PowerFolder')
+
+WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
+
+WebUI.click(findTestObject('Dashboard/Pricing_License'))
+
+WebUI.switchToWindowIndex(1)
+
+WebUI.verifyEqual(WebUI.getWindowTitle(), 'Pricing for PowerFolder Sync, Share and Backup Cloud and Onpremise')
+
+WebUI.closeWindowIndex(1)
+
+WebUI.switchToWindowIndex(0)
+
+WebUI.click(findTestObject('Dashboard/Activation_Manage'))
+
+WebUI.switchToWindowIndex(1)
+
+WebUI.verifyEqual(WebUI.getWindowTitle(), 'Activation - PowerFolder')
+
+WebUI.closeWindowIndex(1)
+
+WebUI.switchToWindowIndex(0)
+
+WebUI.closeBrowser()
+
