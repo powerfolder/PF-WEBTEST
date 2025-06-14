@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TN01_Check the date of a folder in News</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c4864c57-6c77-42a1-9a9d-47edc4591e67</testCaseGuid>
+</TestCaseEntity>

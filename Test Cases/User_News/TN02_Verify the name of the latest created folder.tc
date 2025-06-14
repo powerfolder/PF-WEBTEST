@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TN02_Verify the name of the latest created folder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6ab00879-990e-4f58-b786-c47bda2134ff</testCaseGuid>
+</TestCaseEntity>

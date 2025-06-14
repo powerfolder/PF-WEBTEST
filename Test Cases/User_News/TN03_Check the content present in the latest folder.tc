@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TN03_Check the content present in the latest folder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c20cea85-4c2b-4870-a635-a976a14b0c63</testCaseGuid>
+</TestCaseEntity>
