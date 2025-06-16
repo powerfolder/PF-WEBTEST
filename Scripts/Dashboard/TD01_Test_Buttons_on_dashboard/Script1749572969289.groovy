@@ -39,6 +39,8 @@ WebUI.verifyElementPresent(findTestObject('Dashboard/Dashboard_Logs'), 0)
 
 WebUI.click(findTestObject('Dashboard/Accounts_Manage'))
 
+WebUI.delay(3)
+
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Accounts - PowerFolder')
 
 WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
@@ -51,6 +53,8 @@ WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
 
 WebUI.click(findTestObject('Dashboard/Folders_Manage'))
 
+WebUI.delay(3)
+
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Folders - PowerFolder')
 
 WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
@@ -58,6 +62,12 @@ WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
 WebUI.click(findTestObject('Dashboard/Groups_Manage'))
 
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Groups - PowerFolder')
+
+WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
+
+WebUI.click(findTestObject('Dashboard/Log_View'))
+
+WebUI.verifyEqual(WebUI.getWindowTitle(), 'Logs - PowerFolder')
 
 WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
 
