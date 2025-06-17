@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Create Account - keep me logged in</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>135ce425-81b8-4bfa-a9b0-b4beb0937798</testCaseGuid>
+</TestCaseEntity>
