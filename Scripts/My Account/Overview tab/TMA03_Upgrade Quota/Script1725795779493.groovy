@@ -27,8 +27,6 @@ WebUI.verifyElementClickable(findTestObject('My_Account/Overview/Page_Profile - 
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/Upgrade_button'))
 
-WebUI.switchToWindowIndex(1)
-
 WebUI.click(findTestObject('My_Account/Overview/Page_Pricing for PowerFolder Sync, Share and Backup Cloud and Onpremise/span_Preise'))
 
 WebUI.delay(5)
@@ -44,8 +42,6 @@ String expectedSubstring = 'Preise'
 WebUI.verifyMatch(currentWindowTitle, expectedSubstring, false)
 
 WebUI.switchToWindowIndex(0)
-
-WebUI.closeWindowIndex(1)
 
 WebUI.closeBrowser()
 
