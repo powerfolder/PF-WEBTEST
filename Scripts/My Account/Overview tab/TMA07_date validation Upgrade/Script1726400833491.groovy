@@ -27,8 +27,6 @@ WebUI.verifyElementClickable(findTestObject('My_Account/Overview/Page_Profile - 
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/Upgrade_Button_validation_date'))
 
-WebUI.switchToWindowIndex(1)
-
 WebUI.click(findTestObject('My_Account/Overview/Page_Pricing for PowerFolder Sync, Share and Backup Cloud and Onpremise/span_Preise'))
 
 WebUI.delay(5)
@@ -36,16 +34,12 @@ WebUI.delay(5)
 String currentWindowTitle = WebUI.getWindowTitle()
 
 WebUI.comment('Current Window Title: ' + currentWindowTitle // print the actuel title
-	)
+    )
 
 String expectedSubstring = 'Preise'
 
 // Vérifiez que le titre actuel contient la sous-chaîne attendue
 WebUI.verifyMatch(currentWindowTitle, expectedSubstring, false)
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.closeWindowIndex(1)
 
 WebUI.closeBrowser()
 
