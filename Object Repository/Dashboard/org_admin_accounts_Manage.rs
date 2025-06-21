@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>org_admin_accounts_Manage</name>
+   <tag></tag>
+   <elementGuidId>6a81ae93-98f0-4d82-8ba7-eca665db33e1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_content']/div/div/div/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.btn.btn-success.pull-right</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>531aba3b-5a24-4fb1-90cf-44a6f4ed078f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-success pull-right</value>
+      <webElementGuid>3e6083f2-8049-45ce-b312-96212a83e59d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/admin/account</value>
+      <webElementGuid>b4c73e3c-fdff-45ce-88bb-15fd7919c3df</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                    Manage
+                </value>
+      <webElementGuid>623fdb00-4c84-4625-8c2e-cb34e418f906</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_content&quot;)/div[@class=&quot;pica-boxes&quot;]/div[@class=&quot;pica-box pica-block-on-small&quot;]/div[@class=&quot;pica-box-head clearfix&quot;]/a[@class=&quot;btn btn-success pull-right&quot;]</value>
+      <webElementGuid>dd53e1f1-13c3-4a40-9f24-6d2e9d8075cf</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_content']/div/div/div/a</value>
+      <webElementGuid>94a8b8c4-575f-4de9-bb50-9bd28924a28f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Accounts'])[2]/following::a[1]</value>
+      <webElementGuid>12e9baff-7277-4ab6-819d-e75af61fd5cf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Organisation_0381'])[1]/following::a[1]</value>
+      <webElementGuid>787c6a9f-1e3a-47c6-bd82-0e5e7a67bfff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Storage'])[1]/preceding::a[1]</value>
+      <webElementGuid>7be0e9c6-f338-4d5b-b8e8-b8fd00183625</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, '/admin/account')])[2]</value>
+      <webElementGuid>faed3ecf-14f5-4378-98b2-06b29c4536fb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div/div/div/a</value>
+      <webElementGuid>346fb5a3-d4dc-4c6e-9a4a-05ecdd5f91e6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/admin/account' and (text() = '
+                    Manage
+                ' or . = '
+                    Manage
+                ')]</value>
+      <webElementGuid>f8229121-5389-47a2-820a-aebdfcb0bf4a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
