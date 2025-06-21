@@ -41,7 +41,5 @@ String expectedSubstring = 'Preise'
 // Vérifiez que le titre actuel contient la sous-chaîne attendue
 WebUI.verifyMatch(currentWindowTitle, expectedSubstring, false)
 
-WebUI.switchToWindowIndex(0)
-
 WebUI.closeBrowser()
 
