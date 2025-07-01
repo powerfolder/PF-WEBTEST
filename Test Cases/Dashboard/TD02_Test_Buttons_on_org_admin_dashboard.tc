@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test to check if all buttons:
+- occur
+- are clickable</description>
+   <name>TD02_Test_Buttons_on_org_admin_dashboard</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>12b76a30-fc94-4631-9f3f-0482e0ff290e</testCaseGuid>
+</TestCaseEntity>
