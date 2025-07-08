@@ -3,7 +3,7 @@
    <description>Test to check if all buttons:
 - occur
 - are clickable</description>
-   <name>TD01_Test_Buttons_on_dashboard</name>
+   <name>TD01_Test_Buttons_on_admin_dashboard</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
