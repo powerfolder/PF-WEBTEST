@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 // STEP 1: Call the test case and click
-WebUI.callTestCase(findTestCase('User_News/Pre_test/create_user_file'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('User_News/Pre_test/Create_more_files'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('News_User/Page_News - PowerFolder/News'))
 

@@ -1696,7 +1696,7 @@
       <guid>c1af4d41-7b12-40f8-a4cd-7c9a57c333a4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/User_News/TN01_Check the date of a folder in News</testCaseId>
+      <testCaseId>Test Cases/User_News/TN01_check the timestamp of a newly created item</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -1731,7 +1731,7 @@
       <guid>3f4ff466-b792-4fb7-92c7-44ffd58483e8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/User_News/TN06_Scroll down to the bottom of the page</testCaseId>
+      <testCaseId>Test Cases/User_News/TN07_Scroll down to the bottom of the page</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

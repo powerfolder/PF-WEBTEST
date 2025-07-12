@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('User_News/Pre_test/Create_more_files'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('User_News/Pre_test/creat_diffrent_files'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('News_User/Page_News - PowerFolder/News'))
 

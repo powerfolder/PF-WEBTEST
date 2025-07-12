@@ -30,7 +30,8 @@ println('Tooltip content: ' + tooltipText)
 String expectedAdminEmail = GlobalVariable.userEmail 
 
 // Extraire l’e-mail après "modified by"
-String actualEmail = tooltipText.split("modified by ")[1].trim()
+
+String actualEmail = tooltipText.substring(tooltipText.lastIndexOf(' ') + 1).trim()
 
 println("Email from tooltip: " + actualEmail)
 println("Expected admin email: " + expectedAdminEmail)

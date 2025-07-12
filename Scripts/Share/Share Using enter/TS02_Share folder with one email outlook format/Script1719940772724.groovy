@@ -28,13 +28,21 @@ WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHa
 String folderName = getRandomFolderName()
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
+
 WebUI.click(findTestObject('Folders/createFolder'))
+
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
+
 WebUI.click(findTestObject('Folders/buttonOK'))
+
 WebUI.click(findTestObject('Folders/createFolderIcon'))
+
 WebUI.click(findTestObject('Folders/createFolder'))
+
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName+'qa2')
+
 WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebElement btn = findShareButton(folderName)
@@ -44,11 +52,14 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 String mail = "${folderName} <${folderName}@outlook.com>";
 
 WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/inputEmail_Share'), mail)
+
 WebUI.sendKeys(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/inputEmail_Share'), Keys.chord(Keys.ENTER))
 
 // Log to see what email name is retrieved
 WebUI.delay(3) // Wait for the element to be updated if needed
+
 String useremailName = WebUI.getText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/td_usermailcom'))
+
 println("User email name retrieved: " + useremailName)
 
 WebUI.verifyNotEqual(useremailName, '')

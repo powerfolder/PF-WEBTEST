@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TN08_Check the uploaded file</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a40d297e-d438-4c70-8cb5-f5a803fe4ba1</testCaseGuid>
+</TestCaseEntity>

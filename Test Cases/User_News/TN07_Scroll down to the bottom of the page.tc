@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TN07_Scroll down to the bottom of the page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4c04e8b7-92bf-4e29-a9f3-1a963b021a70</testCaseGuid>
+</TestCaseEntity>
