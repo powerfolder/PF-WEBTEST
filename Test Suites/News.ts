@@ -43,7 +43,7 @@
       <guid>651e4cbc-f2a6-462f-a68c-11433544c210</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/User_News/TN05_Verify contributor</testCaseId>
+      <testCaseId>Test Cases/User_News/TN07_Verify contributor</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -57,7 +57,7 @@
       <guid>5503cb06-f305-4209-9a01-d720dbff00f6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/User_News/TN07_Scroll down to the bottom of the page</testCaseId>
+      <testCaseId>Test Cases/User_News/TN10_Scroll down to the bottom of the page</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

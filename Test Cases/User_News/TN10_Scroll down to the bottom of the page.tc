@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TN06_Check a contributor in a shared folder</name>
+   <name>TN10_Scroll down to the bottom of the page</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>a44bd024-5c43-4a84-91c3-5342abb7a406</testCaseGuid>
+   <testCaseGuid>4c04e8b7-92bf-4e29-a9f3-1a963b021a70</testCaseGuid>
 </TestCaseEntity>

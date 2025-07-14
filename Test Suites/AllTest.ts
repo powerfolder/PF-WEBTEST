@@ -1724,14 +1724,14 @@
       <guid>087db489-f3a4-4912-8508-4f623c4d0484</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/User_News/TN05_Verify contributor</testCaseId>
+      <testCaseId>Test Cases/User_News/TN07_Verify contributor</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>3f4ff466-b792-4fb7-92c7-44ffd58483e8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/User_News/TN07_Scroll down to the bottom of the page</testCaseId>
+      <testCaseId>Test Cases/User_News/TN10_Scroll down to the bottom of the page</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
