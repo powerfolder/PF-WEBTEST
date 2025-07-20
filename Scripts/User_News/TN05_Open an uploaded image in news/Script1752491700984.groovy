@@ -27,11 +27,26 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import java.util.Arrays as Arrays
 import java.util.Date as Date
 import java.util.Random as Random
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
+import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.By as By
+import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
+import java.util.Date
+import java.util.Random
+import java.util.Set
 
 // === Test Case Execution ===
+
 WebUI.callTestCase(findTestCase('User_News/Pre_test/Create_user'), [:], FailureHandling.STOP_ON_FAILURE)
 
 println(GlobalVariable.userEmail)
+
+// Login
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 
@@ -46,6 +61,8 @@ WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 
 WebUI.delay(3)
+
+// Create Folder
 
 GlobalVariable.folderName = getRandomFolderName()
 
@@ -65,80 +82,136 @@ WebElement btn = findFolder(GlobalVariable.folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
+// Upload image
+
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
 WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Upload file'))
 
 String projDir = RunConfiguration.getProjectDir()
 
-String fname = projDir + '/Images/PowerFolder.txt'
+String fname = projDir + '/Images/user.png'
 
 WebUI.uploadFile(findTestObject('Accounts/AddFileButton'), fname)
 
 WebUI.click(findTestObject('News_User/Page_Folders - PowerFolder/button_Close_upload_file'))
 
+
+// check News tab
 WebUI.click(findTestObject('News_User/Page_News - PowerFolder/News'))
 
 WebUI.mouseOver(findTestObject('News_User/Page_News - PowerFolder/file_wpath'))
 
 WebUI.click(findTestObject('News_User/Page_News - PowerFolder/file_wpath'))
 
-WebUI.delay(5)
+WebUI.delay(3)
 
-WebUI.switchToWindowIndex(1)
+// check doandload 
 
-WebUI.delay(5)
+WebDriver driver = DriverFactory.getWebDriver()
 
+String parentWindow = driver.getWindowHandle()
 
-@Keyword
-WebElement findDoc(String docName) {
-    WebDriver driver = DriverFactory.getWebDriver()
+JavascriptExecutor jsExecutor = (JavascriptExecutor) driver
 
-    return driver.findElement(By.xpath("//*[contains(@data-search-keys, '$docName')]/td[1]/span"))
+jsExecutor.executeScript('window.open()')
+
+///////// downlad browser ////////
+
+Set<String> allWindowHandles = driver.getWindowHandles()
+for (String winHandle : allWindowHandles) {
+	if (!winHandle.equals(parentWindow)) {
+		driver.switchTo().window(winHandle)
+		break
+	}
 }
 
-@Keyword
-WebElement findFolder(String folderName) {
-    WebDriver driver = DriverFactory.getWebDriver()
+WebUI.delay(2)
 
-    return driver.findElement(By.xpath("//td[2]/span/a[contains(text(),'$folderName')]"))
+driver.get('chrome://downloads')
+
+
+// read donladed image
+
+JavascriptExecutor downloadWindowExecutor = (JavascriptExecutor) driver
+String fileName = ''
+int retryCount = 0
+boolean isFileNameRetrieved = false
+
+while (retryCount < 5 && !isFileNameRetrieved) {
+	try {
+		fileName = downloadWindowExecutor.executeScript(
+			'return document.querySelector("downloads-manager").shadowRoot.querySelector("#downloadsList downloads-item").shadowRoot.querySelector("#file-link").textContent'
+		).toString()
+		isFileNameRetrieved = (fileName != null && !fileName.isEmpty())
+	} catch (Exception e) {
+		WebUI.delay(2)
+		retryCount++
+	}
+}
+
+if (!isFileNameRetrieved) {
+	throw new RuntimeException('Failed to retrieve the downloaded file name after retries.')
+}
+
+System.out.println('Downloaded File Name: ' + fileName)
+
+// check if downloaded image is user.png (or user (1).png, etc.)
+
+WebUI.delay(2)
+
+WebUI.comment("Nom du fichier téléchargé : " + fileName)
+
+if (!fileName.toLowerCase().matches('user( \\(\\d+\\))?\\.png')) {
+	WebUI.comment("❌ Le fichier téléchargé ne correspond pas au format 'user.png' ou 'user (n).png'")
+	WebUI.verifyMatch(fileName, 'user( \\(\\d+\\))?\\.png', true)
+} else {
+	WebUI.comment("✅ Fichier PNG détecté correctement : " + fileName)
+}
+
+WebUI.closeBrowser()
+
+
+// === Fonctions utilitaires ===
+WebElement findDoc(String docName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+	return driver.findElement(By.xpath("//*[contains(@data-search-keys, '" + docName + "')]/td[1]/span"))
+}
+
+WebElement findFolder(String folderName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+	return driver.findElement(By.xpath("//td[2]/span/a[contains(text(),'" + folderName + "')]"))
 }
 
 String getTimestamp() {
-    Date todaysDate = new Date()
-
-    return todaysDate.format('dd_MMM_yyyy_hh_mm_ss')
+	return new Date().format('dd_MMM_yyyy_hh_mm_ss')
 }
 
 String getRandomFileName() {
-    return 'File_' + getTimestamp()
+	return 'File_' + getTimestamp()
 }
 
 String getRandomFolderName() {
-    return 'Folder_' + getTimestamp()
+	return 'Folder_' + getTimestamp()
 }
 
 String generateRandomString(int length) {
-    String characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+	String characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+	StringBuilder randomString = new StringBuilder()
+	Random random = new Random()
 
-    StringBuilder randomString = new StringBuilder()
+	for (int i = 0; i < length; i++) {
+		randomString.append(characters.charAt(random.nextInt(characters.length())))
+	}
 
-    Random random = new Random()
-
-    for (int i = 0; i < length; i++) {
-        randomString.append(characters.charAt(random.nextInt(characters.length())))
-    }
-    
-    return randomString.toString().toLowerCase()
+	return randomString.toString().toLowerCase()
 }
 
 String generateRandomEmail() {
-    return generateRandomString(8) + '@yoemail.com'
+	return generateRandomString(8) + '@yoemail.com'
 }
 
 String generateRandomPhoneNumber() {
-    Random random = new Random()
-
-    return String.format('(%03d) %03d-%04d', random.nextInt(1000), random.nextInt(1000), random.nextInt(10000))
+	Random random = new Random()
+	return String.format('(%03d) %03d-%04d', random.nextInt(1000), random.nextInt(1000), random.nextInt(10000))
 }
-
