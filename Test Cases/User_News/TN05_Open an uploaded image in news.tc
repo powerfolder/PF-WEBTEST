@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TN05_Open an uploaded image in news</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3180a991-0d12-4736-9b51-d4c0b36e16ec</testCaseGuid>
+</TestCaseEntity>

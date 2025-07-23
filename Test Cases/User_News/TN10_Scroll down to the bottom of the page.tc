@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TN05_Verify contributor</name>
+   <name>TN10_Scroll down to the bottom of the page</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>74b0f4da-70f9-4516-8936-d7ef8ed8c369</testCaseGuid>
+   <testCaseGuid>4c04e8b7-92bf-4e29-a9f3-1a963b021a70</testCaseGuid>
 </TestCaseEntity>

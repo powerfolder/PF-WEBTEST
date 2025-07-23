@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TN01_Check the date of a folder in News</name>
+   <name>TN01_check the timestamp of a newly created item</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

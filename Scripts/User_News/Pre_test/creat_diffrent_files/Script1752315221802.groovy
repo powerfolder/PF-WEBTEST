@@ -53,7 +53,6 @@ WebUI.refresh()
 
 WebUI.delay(2)
 
-println(GlobalVariable.userEmail)
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 
@@ -69,7 +68,7 @@ WebUI.click(findTestObject('Login/loginSubmit'))
 
 WebUI.delay(3)
 
-//
+
 
 String Folder_0 = getRandomFolderName()
 
@@ -93,7 +92,7 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Cre
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_Document'))
 
-GlobalVariable.Document = ('Doc_num_' + RandomStringUtils.randomNumeric(4))
+GlobalVariable.Document = ('doc_doc_' + RandomStringUtils.randomNumeric(4))
 
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'),
 	GlobalVariable.Document)
@@ -130,12 +129,12 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
-WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_Document'))
+WebUiBuiltInKeywords.click(findTestObject('file_objects/text file/Page_Folders - PowerFolder/Create Text File'))
 
-GlobalVariable.Document = ('Doc_num_' + RandomStringUtils.randomNumeric(4))
+GlobalVariable.textfilename = ('txt_num_' + RandomStringUtils.randomNumeric(4))
 
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'),
-	GlobalVariable.Document)
+	GlobalVariable.textfilename)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
@@ -169,12 +168,12 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
-WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_Document'))
+WebUI.click(findTestObject('file_objects/Spreadsheet/Page_Folders - PowerFolder/span_Create spreadsheet'))
 
-GlobalVariable.Document = ('Doc_num_' + RandomStringUtils.randomNumeric(4))
+GlobalVariable.spreadsheetname = ('spreadsheet_num_' + RandomStringUtils.randomNumeric(4))
 
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'),
-	GlobalVariable.Document)
+	GlobalVariable.spreadsheetname)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
@@ -209,7 +208,7 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn3))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
-WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_Document'))
+WebUI.click(findTestObject('file_objects/csv file/Page_Folders - PowerFolder/Create CSV File'))
 
 GlobalVariable.Document = ('Doc_num_' + RandomStringUtils.randomNumeric(4))
 
@@ -245,10 +244,10 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Cre
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_Document'))
 
-GlobalVariable.Document = ('Doc_num_' + RandomStringUtils.randomNumeric(4))
+GlobalVariable.csvfilename = ('CSV_num_' + RandomStringUtils.randomNumeric(4))
 
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'),
-	GlobalVariable.Document)
+	GlobalVariable.csvfilename)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
@@ -259,18 +258,6 @@ WebUI.closeWindowIndex(1)
 WebUI.switchToWindowIndex(0)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Home'))
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -300,10 +287,10 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Cre
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_Document'))
 
-GlobalVariable.Document = ('Doc_num_' + RandomStringUtils.randomNumeric(4))
+GlobalVariable.presentationname = ('ppt_num_' + RandomStringUtils.randomNumeric(4))
 
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'),
-	GlobalVariable.Document)
+	GlobalVariable.presentationname)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
@@ -317,9 +304,6 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 
 
 WebUI.refresh()
-
-
-
 
 
 

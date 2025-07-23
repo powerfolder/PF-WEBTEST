@@ -12,45 +12,73 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>3585516f-4445-4a64-8e79-78329cb86b76</testSuiteGuid>
    <testCaseLink>
-      <guid>053ff6c9-b27c-47d2-ae9d-1d1047452be6</guid>
+      <guid>ea512eb4-5046-4c55-9529-26965561963c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/User_News/TN01_Check the date of a folder in News</testCaseId>
+      <testCaseId>Test Cases/User_News/TN01_check the timestamp of a newly created item</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5fcb1893-7252-44f7-9fed-028f3c9e92af</guid>
+      <guid>ce08e481-bf05-4ba3-9aa0-8bd83366e9e3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN02_Verify the name of the latest created folder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>35a64650-373a-4400-90a8-f20b9f414740</guid>
+      <guid>2215f2a7-bdd9-41c5-880f-90e6a0fac003</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN03_Check the content present in the latest folder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>97074931-8ec8-42c1-9b7c-f14843faf347</guid>
+      <guid>912bec3e-7915-48a3-ab94-afdef0cbab4f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN04_Open a file in News</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b5463093-fe27-4afc-8954-92d918ff2037</guid>
+      <guid>3335fe9b-e2b0-4553-aeb1-f97b5bdd9f8c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/User_News/TN05_Verify contributor</testCaseId>
+      <testCaseId>Test Cases/User_News/TN05_Open an uploaded image in news</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6ad06f2e-7eae-4310-8568-f08758c1140c</guid>
+      <guid>967bb74b-dd6b-4ed1-9bb3-a4c648d05e6c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/User_News/TN06_Scroll down to the bottom of the page</testCaseId>
+      <testCaseId>Test Cases/User_News/TN06_Check the uploaded file</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>326e8f06-54bd-41db-a665-3dbefe80ae74</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/User_News/TN07_Verify contributor</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cbc0f768-639a-470a-979e-085a82fc94b8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/User_News/TN08_Check a contributor in a shared folder</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>65c4fe4e-67a2-4f7d-943f-f1beb1c25b1f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/User_News/TN09_Check visibility of multiple top-level folders in News</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8fa57fbd-fb91-4b84-9857-4cfd15a2f60a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/User_News/TN10_Scroll down to the bottom of the page</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

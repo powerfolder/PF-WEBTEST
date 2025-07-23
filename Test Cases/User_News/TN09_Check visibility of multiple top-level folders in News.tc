@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TN09_Check visibility of multiple top-level folders in News</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1e569223-74ab-4ad7-b8b1-aed1cb80de86</testCaseGuid>
+</TestCaseEntity>
