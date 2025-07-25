@@ -1309,6 +1309,19 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>2a60ee21-4398-45ee-aa2a-e95eb46469eb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Upload form/TUF08_Create an upload form and check expiration</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>085a206f-815c-4abc-90b7-10e1ba949ed7</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
       <guid>c4f3b38e-dc64-46e8-a02b-c3c9340205cb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
