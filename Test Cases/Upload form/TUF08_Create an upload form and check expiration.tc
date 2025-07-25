@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TUF08_Create an upload form and check expiration</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>76a1fdbb-0ee1-48ee-a81e-ff9c82a96d9c</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>085a206f-815c-4abc-90b7-10e1ba949ed7</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)'</defaultValue>
+      <description></description>
+      <id>085a206f-815c-4abc-90b7-10e1ba949ed7</id>
+      <masked>false</masked>
+      <name>my_clipboard</name>
+   </variable>
+</TestCaseEntity>
