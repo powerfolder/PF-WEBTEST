@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lang_This link is expired and cannot be used anymore</name>
+   <tag></tag>
+   <elementGuidId>499c7c6b-8d3b-4ce4-8d3a-a3096d82e79e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>lang[name=&quot;dialog_body_expired&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//lang[@name='dialog_body_expired']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>lang</value>
+      <webElementGuid>52df2ba1-863e-4ebb-bb28-b6722bb0c1f4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>dialog_body_expired</value>
+      <webElementGuid>fed48279-aef3-4b6b-8266-c655089f604d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>This link is expired and cannot be used anymore.</value>
+      <webElementGuid>c5cea3fb-1c5e-47ba-bf94-2a8123a19285</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;wallpaper&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-xs-12 col-sm-8 col-md-6 col-lg-6 pica-relative&quot;]/div[@class=&quot;pica-dialog&quot;]/div[1]/div[@class=&quot;pica-boxes&quot;]/div[@class=&quot;pica-box pica-block-on-small&quot;]/h4[@class=&quot;pica-dialog-title modal-title&quot;]/lang[1]</value>
+      <webElementGuid>224c9f5c-8ac1-4552-b896-3005d42b9ddf</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//lang[@name='dialog_body_expired']</value>
+      <webElementGuid>627f1c48-6ebe-44e6-ae07-d67160397be8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[1]/preceding::lang[1]</value>
+      <webElementGuid>1054649d-a493-448b-823b-6f350f6b4a77</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Expired'])[1]/preceding::lang[1]</value>
+      <webElementGuid>0f78c978-0a7c-4e63-8f52-b689b0984af9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='This link is expired and cannot be used anymore.']/parent::*</value>
+      <webElementGuid>5c95a06d-cd92-4cfa-b936-3b9018fac991</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//lang</value>
+      <webElementGuid>bdb7d327-e095-4a91-9c60-bc00ffb07480</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//lang[@name = 'dialog_body_expired' and (text() = 'This link is expired and cannot be used anymore.' or . = 'This link is expired and cannot be used anymore.')]</value>
+      <webElementGuid>70997cc8-0e91-43c3-bac7-56c216d1665b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
