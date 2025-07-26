@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Jetzt Account erstellen</name>
+   <tag></tag>
+   <elementGuidId>9470b229-280d-4437-9a08-d0cbec133e4f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//rs-layer[@id='slider-16-slide-30-layer-1']/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.fusion-button.button-flat.button-round.button-large.button-default.button-1.scaleButton</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>177afb2c-352f-493c-9811-79f4396d2e83</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>../de/account-erstellen/</value>
+      <webElementGuid>2932f68f-bbc9-4772-9c92-708021033999</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fusion-button button-flat button-round button-large button-default button-1 scaleButton</value>
+      <webElementGuid>d81106ee-0084-425d-8212-81a9d3ec77be</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-stylerecorder</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>5760798b-0bda-42a7-8660-e06bcd1b7ce3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Jetzt Account erstellen</value>
+      <webElementGuid>3e49a15f-dbbc-41aa-85d8-90cdab7dd0f8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;slider-16-slide-30-layer-1&quot;)/a[@class=&quot;fusion-button button-flat button-round button-large button-default button-1 scaleButton&quot;]</value>
+      <webElementGuid>36dbd89f-018c-4f5c-bb7f-c217bb9b90ec</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//rs-layer[@id='slider-16-slide-30-layer-1']/a</value>
+      <webElementGuid>9996cc98-eadb-436c-9463-e3f73e0b3b25</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Jetzt Account erstellen')]</value>
+      <webElementGuid>edf7c44c-87f7-4420-80de-bfea7c7b1ada</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Search for:'])[1]/following::a[1]</value>
+      <webElementGuid>0a789598-6eae-447b-a5df-0d7fcb1f360a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='DE'])[4]/following::a[1]</value>
+      <webElementGuid>89cf57c4-6350-44b9-90b6-5a63f782b29c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sichere On-Premise und Cloud File Sync &amp; Share Lösungen'])[1]/preceding::a[1]</value>
+      <webElementGuid>e24bc4d4-1d88-4a83-81ff-b8b53d34070c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='adminpf'])[1]/preceding::a[1]</value>
+      <webElementGuid>31652970-f943-4d92-a2e1-51ba88aeaced</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Jetzt Account erstellen']/parent::*</value>
+      <webElementGuid>2f544e62-fbf1-45f6-9c82-fac7666fa22b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '../de/account-erstellen/')]</value>
+      <webElementGuid>fcff44af-ed18-45ee-ac44-2cdddaa9d32e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//rs-layer/a</value>
+      <webElementGuid>7061f4f1-d7e9-44c3-842c-386000b39aca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '../de/account-erstellen/' and (text() = 'Jetzt Account erstellen' or . = 'Jetzt Account erstellen')]</value>
+      <webElementGuid>13aba88f-5ddd-4619-ad7d-4ca853a7c2f2</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

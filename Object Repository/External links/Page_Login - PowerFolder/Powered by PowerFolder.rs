@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Powered by PowerFolder</name>
+   <tag></tag>
+   <elementGuidId>b1e69de8-bab8-4bc1-86d1-aa3862a33184</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//lang[@name='label_powered_by']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>lang[name=&quot;label_powered_by&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>lang</value>
+      <webElementGuid>cbc204d7-9479-4f4c-85d7-efeb4277ef39</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>label_powered_by</value>
+      <webElementGuid>97e31f62-e82d-4502-af04-5c3162c2fa85</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Propulsé par PowerFolder</value>
+      <webElementGuid>32704815-1361-4c9c-ab4c-fba87e2de407</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;wallpaper&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-xs-12 col-sm-8 col-md-6 col-lg-6 pica-relative&quot;]/div[@class=&quot;pica-dialog&quot;]/div[1]/div[1]/div[@class=&quot;pica-pipe-group pica-space-top text-center&quot;]/a[8]/lang[1]</value>
+      <webElementGuid>1016ea69-fd5e-4c37-9938-34021ccf1eee</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//lang[@name='label_powered_by']</value>
+      <webElementGuid>1e8f2ead-e6e9-4336-b2b0-639e39a19e33</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Politique de confidentialité'])[1]/following::lang[1]</value>
+      <webElementGuid>67e1b0c7-1163-406e-b229-7672c74a56c4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Offres et Tarifs'])[1]/following::lang[2]</value>
+      <webElementGuid>49883811-ca19-4739-9845-f7ac01ee01ae</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Signaler un problème d’accessibilité'])[1]/preceding::lang[1]</value>
+      <webElementGuid>4fd75595-f72c-4af4-9928-d72af370c7af</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Propulsé par PowerFolder']/parent::*</value>
+      <webElementGuid>8d75e1cf-3cd2-450e-b871-e2e1b5422e37</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a[8]/lang</value>
+      <webElementGuid>f3aac5cb-9610-40c3-af68-1c36c15554ae</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//lang[@name = 'label_powered_by' and (text() = 'Propulsé par PowerFolder' or . = 'Propulsé par PowerFolder')]</value>
+      <webElementGuid>bb921998-71d7-4f5a-bfcd-eed6c54bf671</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

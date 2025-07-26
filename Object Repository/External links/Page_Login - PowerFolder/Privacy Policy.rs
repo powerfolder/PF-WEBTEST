@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Privacy Policy</name>
+   <tag></tag>
+   <elementGuidId>694ab5f9-be3b-400f-b569-d4794ccb8318</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//lang[@name='label_privacy_policy']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>lang[name=&quot;label_privacy_policy&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>lang</value>
+      <webElementGuid>0164caa8-5f40-4914-87e5-0b7838f4c010</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>label_privacy_policy</value>
+      <webElementGuid>10edf23c-6042-4ac9-8dd9-7301b9bf8f16</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Politique de confidentialité</value>
+      <webElementGuid>ebe1373b-3d4d-41e6-a678-49f26efd90f6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;wallpaper&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-xs-12 col-sm-8 col-md-6 col-lg-6 pica-relative&quot;]/div[@class=&quot;pica-dialog&quot;]/div[1]/div[1]/div[@class=&quot;pica-pipe-group pica-space-top text-center&quot;]/a[7]/lang[1]</value>
+      <webElementGuid>57eb85c0-52fb-4ba8-bb6d-1a4211581c3b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//lang[@name='label_privacy_policy']</value>
+      <webElementGuid>4ecbf820-6e70-4069-b984-41f8a09dddaf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Offres et Tarifs'])[1]/following::lang[1]</value>
+      <webElementGuid>39ff16e7-8321-4be7-9614-f5a0a6c00a71</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mentions légales'])[1]/following::lang[2]</value>
+      <webElementGuid>755fedfb-6765-437a-91bd-dc91f5ed0929</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Propulsé par PowerFolder'])[1]/preceding::lang[1]</value>
+      <webElementGuid>0a1f677d-f2c1-4c8f-8238-2fc04223cd97</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Signaler un problème d’accessibilité'])[1]/preceding::lang[2]</value>
+      <webElementGuid>f251b681-2f64-44cc-846b-460df9d52ada</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Politique de confidentialité']/parent::*</value>
+      <webElementGuid>7076c70b-5f95-4a33-bec4-ac9b0d8fd0e3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a[7]/lang</value>
+      <webElementGuid>ea452369-ce9e-44d1-8dde-79b19bce3e24</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//lang[@name = 'label_privacy_policy' and (text() = 'Politique de confidentialité' or . = 'Politique de confidentialité')]</value>
+      <webElementGuid>2034ee05-aa0a-44be-95bb-db116787a78a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

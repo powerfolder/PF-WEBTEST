@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Plans and Pricing</name>
+   <tag></tag>
+   <elementGuidId>84bf27a8-6238-4950-ac00-0ba336f71fe6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//lang[@name='label_subscription']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>lang[name=&quot;label_subscription&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>lang</value>
+      <webElementGuid>7d81aa4a-c3ba-42dd-a3f4-997a294c8db8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>label_subscription</value>
+      <webElementGuid>850d689c-266c-4c33-aeb2-bceda0009294</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Offres et Tarifs</value>
+      <webElementGuid>bd821efa-cf7c-4643-a492-fe6e7fbfdd9e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;wallpaper&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-xs-12 col-sm-8 col-md-6 col-lg-6 pica-relative&quot;]/div[@class=&quot;pica-dialog&quot;]/div[1]/div[1]/div[@class=&quot;pica-pipe-group pica-space-top text-center&quot;]/a[6]/lang[1]</value>
+      <webElementGuid>c3543d94-aa64-4965-b7f5-1e1e67494400</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//lang[@name='label_subscription']</value>
+      <webElementGuid>12261669-bd53-4f12-ba59-a5e5da8ff0cf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mentions légales'])[1]/following::lang[1]</value>
+      <webElementGuid>b93d2968-62c4-4a8c-994c-f1e5c3b803a5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Politique de cookies'])[1]/following::lang[2]</value>
+      <webElementGuid>184cee97-7b37-432c-b482-4579558456b6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Politique de confidentialité'])[1]/preceding::lang[1]</value>
+      <webElementGuid>a9b2a1e0-ab47-4851-8360-280c10a6cb20</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Propulsé par PowerFolder'])[1]/preceding::lang[2]</value>
+      <webElementGuid>b6e6fa4a-443c-4a08-8017-ca6a27dd3299</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Offres et Tarifs']/parent::*</value>
+      <webElementGuid>f5573eca-1ac7-433b-a162-5797debcab26</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a[6]/lang</value>
+      <webElementGuid>597cf82a-af37-4601-b918-5cc8a72ac100</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//lang[@name = 'label_subscription' and (text() = 'Offres et Tarifs' or . = 'Offres et Tarifs')]</value>
+      <webElementGuid>09fb674a-6289-47bf-ba95-ea5f6ccf60b0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
