@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TEL18_Get server license</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>44882f4e-f534-4bce-8009-b7f6dd815a07</testCaseGuid>
+</TestCaseEntity>

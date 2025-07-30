@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Unternehmen-name</name>
+   <tag></tag>
+   <elementGuidId>e5a56543-6cb9-4589-80f1-d87556ce1bdc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.Vbfug.auoIOc > a > span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//body[@id='yDmH0d']/c-wiz[2]/div/div/div/div/div/div/div/c-wiz/div[2]/div/div/div/div[2]/div/a/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>aa60a888-4498-4fcb-b6ed-ac150385bee2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>dal33t GmbH</value>
+      <webElementGuid>06c8653b-567c-42a0-9404-0f7a14fdaaa4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;yDmH0d&quot;)/c-wiz[@class=&quot;SSPGKf Czez9d&quot;]/div[@class=&quot;T4LgNb&quot;]/div[@class=&quot;kFwPee&quot;]/div[1]/div[@class=&quot;tU8Y5c&quot;]/div[@class=&quot;P9KVBf&quot;]/div[@class=&quot;dzkqwc&quot;]/div[@class=&quot;wkMJlb YWi3ub&quot;]/c-wiz[1]/div[@class=&quot;hnnXjf XcNflb J1Igtd&quot;]/div[@class=&quot;qxNhq&quot;]/div[@class=&quot;RhBWnf&quot;]/div[1]/div[@class=&quot;tv4jIf&quot;]/div[@class=&quot;Vbfug auoIOc&quot;]/a[1]/span[1]</value>
+      <webElementGuid>99cb62cb-f7e9-4f7d-8213-1d89e59740eb</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//body[@id='yDmH0d']/c-wiz[2]/div/div/div/div/div/div/div/c-wiz/div[2]/div/div/div/div[2]/div/a/span</value>
+      <webElementGuid>ea7443d2-6e38-4e91-9b0d-db569a59b197</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PowerFolder'])[1]/following::span[1]</value>
+      <webElementGuid>15ef3b52-a600-47b1-af4f-e88a8ef2f58e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Téléchargements'])[1]/preceding::span[1]</value>
+      <webElementGuid>368237cd-6478-4b98-ae3e-2c08a5c87032</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PEGI 3'])[1]/preceding::span[1]</value>
+      <webElementGuid>f8bd169b-d36d-41b7-9b68-562b5cfb7b4a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='dal33t GmbH']/parent::*</value>
+      <webElementGuid>769bb643-bf02-4e1e-b24a-015f3ebf3109</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/a/span</value>
+      <webElementGuid>a92c7973-b700-4fdd-b0b7-1a0204896862</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'dal33t GmbH' or . = 'dal33t GmbH')]</value>
+      <webElementGuid>ec1dee6f-8b45-46af-b961-140dc6187892</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

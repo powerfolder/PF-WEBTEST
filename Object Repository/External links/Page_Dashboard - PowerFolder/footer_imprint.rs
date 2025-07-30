@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Imprint</name>
+   <name>footer_imprint</name>
    <tag></tag>
-   <elementGuidId>81689c87-1ddf-4f63-bc23-528ecf3e02c0</elementGuidId>
+   <elementGuidId>1fc6fee9-6c11-4771-8923-71b16a22e1df</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//lang[@name='label_imprint']</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value>lang[name=&quot;label_imprint&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//lang[@name='label_imprint']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>lang</value>
-      <webElementGuid>40baa7cb-9f9b-4a80-8c32-5c60379977cb</webElementGuid>
+      <webElementGuid>abbe41ca-8a1f-4103-a6d4-1fc8cca33263</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,23 +31,23 @@
       <name>name</name>
       <type>Main</type>
       <value>label_imprint</value>
-      <webElementGuid>b2a7c844-418e-4ecb-b565-e1084285cfa9</webElementGuid>
+      <webElementGuid>95ed5a95-ac37-4fd2-982b-b6161c0534fd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Mentions légales</value>
-      <webElementGuid>eb73ad2b-2b5a-437f-bfb3-61d34f47630f</webElementGuid>
+      <value>Imprint</value>
+      <webElementGuid>07cc92c7-8692-411e-ae7c-fcd29cae4fd9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[@class=&quot;wallpaper&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-xs-12 col-sm-8 col-md-6 col-lg-6 pica-relative&quot;]/div[@class=&quot;pica-dialog&quot;]/div[1]/div[1]/div[@class=&quot;pica-pipe-group pica-space-top text-center&quot;]/a[5]/lang[1]</value>
-      <webElementGuid>9376acb8-f330-41fd-b984-73c81a5ea0d4</webElementGuid>
+      <value>id(&quot;pica_footer&quot;)/div[@class=&quot;pica-pipe-group&quot;]/a[2]/lang[1]</value>
+      <webElementGuid>511c656c-b88c-431f-bdcf-ae56b798725c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -55,62 +55,70 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//lang[@name='label_imprint']</value>
-      <webElementGuid>eda98e7d-a33a-485a-b39d-08d0e6b4e7b0</webElementGuid>
+      <webElementGuid>fc3baabc-38b0-47a4-888e-cfd796315798</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_footer']/div/a[2]/lang</value>
+      <webElementGuid>8d7c193b-76ff-4fd4-be26-d975a415bac1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Politique de cookies'])[1]/following::lang[1]</value>
-      <webElementGuid>0d643895-08a0-4b73-9b50-24111778862c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Accessibility'])[1]/following::lang[1]</value>
+      <webElementGuid>4dddd837-09c5-4fd9-b7db-b633fc9e2a6e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Accessibilité'])[1]/following::lang[2]</value>
-      <webElementGuid>6186c0ce-54dc-4a61-9a5e-a6559b1c8fde</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[1]/following::lang[2]</value>
+      <webElementGuid>2bea0ca9-acfb-4699-be17-47af5c133dd7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Offres et Tarifs'])[1]/preceding::lang[1]</value>
-      <webElementGuid>9b843915-9ec6-473b-ac28-4fbf3b331f21</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Privacy Policy'])[1]/preceding::lang[1]</value>
+      <webElementGuid>991f3a7a-ac1f-4b9b-a06b-2e96effadd20</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Politique de confidentialité'])[1]/preceding::lang[2]</value>
-      <webElementGuid>7104b99e-cae7-4fd0-8a22-8465a82f3d5b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Report Accessibility Problem'])[1]/preceding::lang[2]</value>
+      <webElementGuid>bf057eb4-99ce-492c-80cd-e742d7ec9f7d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Mentions légales']/parent::*</value>
-      <webElementGuid>04f06c58-3153-4b19-952d-9f320d27562a</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Imprint']/parent::*</value>
+      <webElementGuid>a5cbfc4f-7de7-4b44-94a1-151da8f72200</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//a[5]/lang</value>
-      <webElementGuid>5a62a789-c962-4ca6-a333-f353766dd2a1</webElementGuid>
+      <value>//div[2]/div/a[2]/lang</value>
+      <webElementGuid>d137e79c-e60f-40ed-b7a7-578d99dbd11f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//lang[@name = 'label_imprint' and (text() = 'Mentions légales' or . = 'Mentions légales')]</value>
-      <webElementGuid>7841fd39-f388-4cf0-af5c-1382e98b82d9</webElementGuid>
+      <value>//lang[@name = 'label_imprint' and (text() = 'Imprint' or . = 'Imprint')]</value>
+      <webElementGuid>0a9ea6fa-04b6-4939-bf5d-53f08937e729</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
