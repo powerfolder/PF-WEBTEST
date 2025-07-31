@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Jetzt Kaufen fr nur 12.50</name>
+   <tag></tag>
+   <elementGuidId>4d8b93e1-8443-4667-9f2c-5662c1f225ab</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='post-293']/div/div[3]/div/div/div/div[5]/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.fusion-button.button-flat.button-large.button-default.button-1.fusion-button-default-span.fusion-button-default-type</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>c875d9d0-e9e7-4d18-adc4-962537208574</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fusion-button button-flat button-large button-default button-1 fusion-button-default-span fusion-button-default-type</value>
+      <webElementGuid>6e61df9e-e531-41c6-be77-5d2af03536ca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>target</name>
+      <type>Main</type>
+      <value>_self</value>
+      <webElementGuid>788542f8-1997-4f9d-b21a-e3a3fa35d743</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>File sync cloud jetzt kaufen</value>
+      <webElementGuid>03e2ef45-cab8-4fd5-8583-bfd9e799e284</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>https://secure.avangate.com/order/product.php?PRODS=4620885&amp;QTY=1&amp;LANG=de&amp;CLEAN_CART=ALL</value>
+      <webElementGuid>79d92066-38c0-4e2b-9ff0-630fe1d4953f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Jetzt Kaufen für nur 12.50 €</value>
+      <webElementGuid>ccd87a19-0673-4224-9750-35ce6c2937ba</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;post-293&quot;)/div[@class=&quot;post-content&quot;]/div[@class=&quot;fusion-fullwidth fullwidth-box fusion-builder-row-3 fusion-parallax-none nonhundred-percent-fullwidth non-hundred-percent-height-scrolling lazyloaded&quot;]/div[@class=&quot;fusion-builder-row fusion-row&quot;]/div[@class=&quot;fusion-layout-column fusion_builder_column fusion-builder-column-2 fusion_builder_column_1_1 1_1 fusion-one-full fusion-column-first fusion-column-last&quot;]/div[@class=&quot;fusion-column-wrapper fusion-flex-column-wrapper-legacy&quot;]/div[@class=&quot;fusion-aligncenter&quot;]/a[@class=&quot;fusion-button button-flat button-large button-default button-1 fusion-button-default-span fusion-button-default-type&quot;]</value>
+      <webElementGuid>8a961c97-9e91-4e32-9e34-f7c8ea684ec4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='post-293']/div/div[3]/div/div/div/div[5]/a</value>
+      <webElementGuid>0780b53b-4de3-4b58-920d-b82b965ce142</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='adminpf'])[1]/following::a[1]</value>
+      <webElementGuid>ab073073-0c78-4ed6-aecd-456d52c29ae0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sichere On-Premise und Cloud File Sync &amp; Share Lösungen'])[1]/following::a[2]</value>
+      <webElementGuid>53f3148d-7020-4ca9-b06a-0e1ae482dd88</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='DATEI SYNC'])[1]/preceding::a[1]</value>
+      <webElementGuid>d8887621-7caf-4d2b-ab79-06d396e342a7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, 'https://secure.avangate.com/order/product.php?PRODS=4620885&amp;QTY=1&amp;LANG=de&amp;CLEAN_CART=ALL')]</value>
+      <webElementGuid>4783ef9f-0dac-499f-b6b3-32117e606ed3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/a</value>
+      <webElementGuid>d83de2af-12c4-4ae5-8f92-c22726d5b515</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@title = 'File sync cloud jetzt kaufen' and @href = 'https://secure.avangate.com/order/product.php?PRODS=4620885&amp;QTY=1&amp;LANG=de&amp;CLEAN_CART=ALL' and (text() = 'Jetzt Kaufen für nur 12.50 €' or . = 'Jetzt Kaufen für nur 12.50 €')]</value>
+      <webElementGuid>a927c2ec-3161-4417-b44d-c859726f7832</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

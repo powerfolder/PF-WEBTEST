@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Compare Functions</name>
+   <tag></tag>
+   <elementGuidId>1d9c8054-970b-4879-b4aa-0ba64c5ac14d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='post-3415']/div/div[2]/div/div/div/div[4]/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.fusion-button.button-flat.fusion-button-default-size.button-default.button-1.fusion-button-default-span.fusion-button-default-type</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>58598863-bd61-4438-99ce-6c7a56ed7858</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fusion-button button-flat fusion-button-default-size button-default button-1 fusion-button-default-span fusion-button-default-type</value>
+      <webElementGuid>13af9957-34f9-44e6-9868-2854dedfd690</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>target</name>
+      <type>Main</type>
+      <value>_self</value>
+      <webElementGuid>d37aba57-6341-4948-a23c-333f2599d7f3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>https://www.powerfolder.com/compare/</value>
+      <webElementGuid>683621ea-a58e-427a-9f5d-f78facf04167</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Compare Functions</value>
+      <webElementGuid>dc9e1f3d-44eb-4b1a-9c1e-e96a93ba0f0d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;post-3415&quot;)/div[@class=&quot;post-content&quot;]/div[@class=&quot;fusion-fullwidth fullwidth-box fusion-builder-row-2 hundred-percent-fullwidth non-hundred-percent-height-scrolling&quot;]/div[@class=&quot;fusion-builder-row fusion-row&quot;]/div[@class=&quot;fusion-layout-column fusion_builder_column fusion-builder-column-0 fusion_builder_column_1_3 1_3 fusion-one-third fusion-column-first fusion-column-no-min-height&quot;]/div[@class=&quot;fusion-column-wrapper fusion-flex-column-wrapper-legacy&quot;]/div[@class=&quot;fusion-alignright&quot;]/a[@class=&quot;fusion-button button-flat fusion-button-default-size button-default button-1 fusion-button-default-span fusion-button-default-type&quot;]</value>
+      <webElementGuid>16f2a911-88a7-49d2-998e-706fe78fef33</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='post-3415']/div/div[2]/div/div/div/div[4]/a</value>
+      <webElementGuid>ec5a55ec-1e6c-4231-97bc-c3c5efb30e61</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='adminpf'])[1]/following::a[1]</value>
+      <webElementGuid>f3ab1925-5726-4415-b3b6-b33e601e5038</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pricing for PowerFolder Sync, Share and Backup Cloud and Onpremise'])[2]/following::a[2]</value>
+      <webElementGuid>cd0bc592-3399-47b0-a0da-f56d9cfbaea4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CALL NOW: +49 2132 97 92 290'])[1]/preceding::a[1]</value>
+      <webElementGuid>ec28a20e-3e26-48ba-a91a-a74d53db4152</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, 'https://www.powerfolder.com/compare/')])[3]</value>
+      <webElementGuid>d8dc295d-4de5-41e3-b537-5b61dc05e65e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/a</value>
+      <webElementGuid>921fe149-7490-4be9-a54d-c8cd692b3f2c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = 'https://www.powerfolder.com/compare/' and (text() = 'Compare Functions' or . = 'Compare Functions')]</value>
+      <webElementGuid>b5dd85fa-e6b0-4814-93dd-16fe173c2a24</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

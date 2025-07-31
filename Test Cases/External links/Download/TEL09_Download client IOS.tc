@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TEL09_Download client IOS</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a523eb4d-477a-4770-ac69-16d2fc485fd8</testCaseGuid>
+</TestCaseEntity>

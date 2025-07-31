@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>PowerFolder Documentation</name>
+   <tag></tag>
+   <elementGuidId>75b72665-e655-4cbe-af6d-878ed36feccc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//h1[@id='title-text']/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.cc-13g71vg</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>be995c96-29ee-490e-9c82-b82748affe7e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>cc-13g71vg</value>
+      <webElementGuid>e1165c56-c851-4b03-90bf-7685f60ad48f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>PowerFolder Documentation and Support</value>
+      <webElementGuid>b3df3743-3954-480d-afb9-ade6cf824277</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;title-text&quot;)/div[@class=&quot;cc-13g71vg&quot;]</value>
+      <webElementGuid>20b3068a-2ffa-45b4-9915-b2d9d6e1c10c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//h1[@id='title-text']/div</value>
+      <webElementGuid>2433ec0a-ec26-4d87-b9c2-b3dc37f24308</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='More actions'])[2]/following::div[5]</value>
+      <webElementGuid>7cd4a842-ebbe-43d3-8bf3-665744e5747d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PowerFolder'])[2]/following::div[18]</value>
+      <webElementGuid>3613c38e-acb2-48ed-a6ba-d7413e073428</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PowerFolder Clients'])[1]/preceding::div[2]</value>
+      <webElementGuid>32b4a5b2-c076-4489-8547-79038b04043b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='System Requirements'])[1]/preceding::div[4]</value>
+      <webElementGuid>d769f48a-bdcd-49aa-a7eb-f5b94dba2364</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h1/div</value>
+      <webElementGuid>e1519f65-b815-4541-a038-8fcd5b716c4c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'PowerFolder Documentation and Support' or . = 'PowerFolder Documentation and Support')]</value>
+      <webElementGuid>47e1fc30-02f0-43a7-b32f-e9f50741b4f5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

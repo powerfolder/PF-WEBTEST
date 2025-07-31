@@ -21,7 +21,6 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
-
 GlobalVariable.userEmail = generateRandomEmail().toLowerCase()
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
@@ -36,7 +35,6 @@ WebUI.setText(findTestObject('Accounts/InputUserOrEmail'), GlobalVariable.userEm
 
 WebUI.setText(findTestObject('Accounts/InputPassword'), GlobalVariable.Pass)
 
-
 WebUI.setText(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/account_storage_overwiew'), '5')
 
 WebUI.click(findTestObject('Accounts/SaveButton'))
@@ -44,6 +42,48 @@ WebUI.click(findTestObject('Accounts/SaveButton'))
 WebUI.refresh()
 
 WebUI.delay(2)
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
+
+WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.userEmail)
+
+WebUI.click(findTestObject('Login/loginSubmit'))
+
+WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+
+WebUI.click(findTestObject('Login/loginSubmit'))
+
+WebUI.delay(3)
+
+WebUI.verifyElementClickable(findTestObject('External links/Page_Dashboard - PowerFolder/footer_accessibility'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('External links/Page_Dashboard - PowerFolder/footer_accessibility'))
+
+WebUI.switchToWindowIndex(1)
+
+String currentUrl = WebUI.getUrl()
+
+WebUI.comment('L\'URL actuelle est: ' + currentUrl)
+
+String expectedUrl = 'https://powerfolder.atlassian.net/wiki/spaces/PF/pages/2159706129/Accessibility+Information'
+
+boolean isCorrectUrl = currentUrl.equals(expectedUrl)
+
+WebUI.verifyEqual(isCorrectUrl, true)
+
+WebUI.verifyElementText(findTestObject('External links/Page_Accessibility Information/Accessibility Information'), 'Accessibility Information')
+
+WebUI.closeWindowIndex(1)
+
+WebUI.switchToWindowIndex(0)
+
+WebUI.delay(2)
+
+WebUI.closeBrowser()
 
 String generateRandomString(int length) {
     String characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'

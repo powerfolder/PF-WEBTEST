@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Get demo license</name>
+   <tag></tag>
+   <elementGuidId>cbc53feb-a04a-4232-93fe-945f7399ac9a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>lang[name=&quot;label_demo_license&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//lang[@name='label_demo_license']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>lang</value>
+      <webElementGuid>1b4b6e38-a1ba-4fa5-987c-9a67562da7ae</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>label_demo_license</value>
+      <webElementGuid>6ad962d3-01ca-4e9f-9824-c6b3f21c1bcd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Get demo license</value>
+      <webElementGuid>348a8e46-07d0-40f6-93e7-7ea614fd7036</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;activation_form&quot;)/div[@class=&quot;pica-table pica-space-top&quot;]/a[3]/lang[1]</value>
+      <webElementGuid>3d33af37-f19f-40a5-b7b0-5f9a7883b3b6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//lang[@name='label_demo_license']</value>
+      <webElementGuid>12126bab-6ff2-4b81-893e-9d8ab1b8c6d1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='activation_form']/div[4]/a[3]/lang</value>
+      <webElementGuid>3c0f57f0-2fab-45a8-a644-180b9eda3432</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Get server license'])[1]/following::lang[1]</value>
+      <webElementGuid>0aa763b4-c81e-4381-a88f-fce9d589e8a3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Proxy settings'])[1]/following::lang[2]</value>
+      <webElementGuid>7df3bbfd-ea1a-4784-a0b0-9875f7e71b2e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Imprint'])[1]/preceding::lang[1]</value>
+      <webElementGuid>adab4d95-abee-4f90-bb7d-d7f3dde3e767</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Privacy Policy'])[1]/preceding::lang[2]</value>
+      <webElementGuid>f8ede7ac-17dc-47a2-98de-8868b0cff827</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Get demo license']/parent::*</value>
+      <webElementGuid>4ca9fe61-3e10-41e0-89cc-78b38c3062b9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a[3]/lang</value>
+      <webElementGuid>700ece75-69cf-46d5-b8e3-a5b8395b5e2a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//lang[@name = 'label_demo_license' and (text() = 'Get demo license' or . = 'Get demo license')]</value>
+      <webElementGuid>05343d02-bab4-45b8-87eb-8a487cc0dd08</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

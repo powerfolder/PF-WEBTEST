@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Get server license</name>
+   <tag></tag>
+   <elementGuidId>67f6d614-c16a-4925-9f40-46a563f72a59</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>lang[name=&quot;label_server_license&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//body/div/div/div[2]/div/div/div/form/div[4]/a[2]/lang</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>lang</value>
+      <webElementGuid>0b3d6307-6b79-4554-8155-ff16d7d771c1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>label_server_license</value>
+      <webElementGuid>93a6654a-7a44-48f0-b7ff-2e8dc4c21b20</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Get server license</value>
+      <webElementGuid>1d5cdcf2-e20d-4288-8019-e0326b809f11</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;activation_form&quot;)/div[@class=&quot;pica-table pica-space-top&quot;]/a[2]/lang[1]</value>
+      <webElementGuid>68df5543-05c2-41c9-868f-eee71a564f49</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//lang[@name='label_server_license']</value>
+      <webElementGuid>2d8f1ec5-0dd4-4cb0-8a22-3ced9a2e0693</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='activation_form']/div[4]/a[2]/lang</value>
+      <webElementGuid>0f160812-e099-4fd1-ad7c-cab368f4709f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Proxy settings'])[1]/following::lang[1]</value>
+      <webElementGuid>9c84444b-c860-451f-bd06-d4c2198e05ba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Online license activation'])[1]/following::lang[2]</value>
+      <webElementGuid>501d5804-e556-4320-b643-e9e5e1889ce9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Get demo license'])[1]/preceding::lang[1]</value>
+      <webElementGuid>1a5b1a63-0fdc-4c55-a6b1-0d4e13c573a9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Imprint'])[1]/preceding::lang[2]</value>
+      <webElementGuid>06e09ddf-c305-4142-ab46-db297341c355</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Get server license']/parent::*</value>
+      <webElementGuid>cdaa35c2-8f6f-4857-9702-16be80c45c09</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a[2]/lang</value>
+      <webElementGuid>d32b9a42-d32b-4d2d-b8c2-5b8da4a2f627</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//lang[@name = 'label_server_license' and (text() = 'Get server license' or . = 'Get server license')]</value>
+      <webElementGuid>a5206774-3e32-450d-99a6-f968e192aeec</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
