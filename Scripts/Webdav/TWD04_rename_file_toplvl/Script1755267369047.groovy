@@ -68,10 +68,37 @@ boolean istoplvlfolderrenamed = renamed_toplvlfolder.isDisplayed()
 
 WebUI.verifyEqual(istoplvlfolderrenamed, true)
 
-// create file in renamed folder
-CustomKeywords.'utils.WebDav.uploadFile'(base, (frenamed_toplvlfolder_webdav + '/' + filename), user, pass, 8192)
+// create file in renamed folder via webdav
+String filename = 'TWD04' + getTimestamp() + '.txt'
+CustomKeywords.'utils.WebDav.uploadFile'(base, renamed_toplvlfolder_webdav + '/' + filename, user, pass, 4096)
 
-//WebUI.closeBrowser()
+// rename file in folder via webdav
+String filename_renamed = 'renamed_' + filename
+CustomKeywords.'utils.WebDav.renameOrMove'(base, renamed_toplvlfolder_webdav + '/' + filename, renamed_toplvlfolder_webdav + '/' + filename_renamed, user, pass, true)
+
+// check present renamed file in web
+WebElement btn_subfolder = findFolder(renamed_toplvlfolder_webdav)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn_subfolder))
+WebUI.refresh()
+
+WebUI.setText(findTestObject('Folders/inputSearch'), filename_renamed)
+
+WebDriver file_driver = DriverFactory.getWebDriver()
+
+WebElement file = file_driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + filename_renamed) + '\')]/td[1]/span'))
+
+boolean isfileCreated = file.isDisplayed()
+
+WebUI.verifyEqual(isfileCreated, true)
+
+WebUI.closeBrowser()
+
+WebElement findFolder(String folderName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+
+	return driver.findElement(By.xpath(('//td[2]/span/a[contains(text(),\'' + folderName) + '\')]'))
+}
 
 String getRandomFolderName() {
     String folderName = 'TWD04' + getTimestamp()
