@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TWD05_use_specific_toplvl_folder_as_webdav_point</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>396a0460-fd8c-4897-936c-e08a9a1f7f3f</testCaseGuid>
+</TestCaseEntity>
