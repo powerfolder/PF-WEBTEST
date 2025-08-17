@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TWD04_rename_file_toplvl</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b0a48a74-21c0-47cd-ada3-d0594f02eba8</testCaseGuid>
+</TestCaseEntity>
