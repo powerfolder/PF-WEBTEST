@@ -98,11 +98,11 @@ WebUI.setText(findTestObject('Folders/inputSearch'), filename)
 
 WebDriver file_driver = DriverFactory.getWebDriver()
 
-WebElement file = driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + filename) + '\')]/td[1]/span'))
+WebElement file = file_driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + filename) + '\')]/td[1]/span'))
 
 boolean isfileCreated = file.isDisplayed()
 
-WebUI.verifyEqual(isfolderCreated, true)
+WebUI.verifyEqual(isfileCreated, true)
 
 // close browser
 WebUI.closeBrowser()
