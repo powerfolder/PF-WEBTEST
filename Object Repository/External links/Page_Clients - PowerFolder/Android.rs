@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Applications'])[1]/following::h5[1]</value>
+         <value>//body/div/div/div[2]/div/div/div/div[5]/div[1]/div[1]/h5/lang</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>h5</value>
-      <webElementGuid>ebcd14ac-5d82-4dd7-8da9-d05062929ea3</webElementGuid>
+      <webElementGuid>bd901de1-19dc-42d4-abdc-dce033049f65</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-overflow pull-left</value>
-      <webElementGuid>a346ae01-74a3-4b14-8fbc-395a3061c2f8</webElementGuid>
+      <webElementGuid>4c16df1c-b783-4f7e-89a8-58ca1dad4d87</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -43,7 +42,7 @@
                         
                         Android
                     </value>
-      <webElementGuid>0eef0551-0836-47f2-99d1-9c3552415da9</webElementGuid>
+      <webElementGuid>8d74966d-fc4e-4cd7-b86b-025249ab9358</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -51,7 +50,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[@class=&quot;wallpaper&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-xs-12 col-sm-8 col-md-6 col-lg-6 pica-relative&quot;]/div[@class=&quot;pica-dialog&quot;]/div[1]/div[1]/div[@class=&quot;pica-boxes&quot;]/div[@class=&quot;pica-box pica-block-on-small&quot;]/div[@class=&quot;pica-box-head clearfix&quot;]/h5[@class=&quot;pica-overflow pull-left&quot;]</value>
-      <webElementGuid>2932f2a9-a379-48d8-a06d-c90e6efa5d48</webElementGuid>
+      <webElementGuid>42aefb19-9cff-4027-be8a-20d59f23659f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -59,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Applications'])[1]/following::h5[1]</value>
-      <webElementGuid>d4f243f5-95c6-4404-88f0-f01ffb986c2d</webElementGuid>
+      <webElementGuid>67a62af9-17de-464e-9a73-ccb1a9f39715</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -67,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='.rpm (x86_64)'])[2]/following::h5[1]</value>
-      <webElementGuid>74aca50d-0de0-4e6d-bd2c-793e7077699b</webElementGuid>
+      <webElementGuid>8452cff4-5a03-4b34-8403-d67cb46b1e5c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -75,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Visiter'])[1]/preceding::h5[1]</value>
-      <webElementGuid>b8db9508-ee94-4d60-9d0c-877e7017986e</webElementGuid>
+      <webElementGuid>4d536f84-649a-4b33-af9b-4b0dd0fee48b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -83,7 +82,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[5]/div/div/h5</value>
-      <webElementGuid>ea1b22fc-6cac-45a7-9f92-df40213917c9</webElementGuid>
+      <webElementGuid>2e233a0b-d303-4df8-983e-ab1dcf7db845</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -99,6 +98,6 @@
                         
                         Android
                     ')]</value>
-      <webElementGuid>d3ccedd9-ae90-4415-bcc4-890fcdc5ad32</webElementGuid>
+      <webElementGuid>8b1e7e61-0d99-446c-b90d-0247fab96fe5</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
