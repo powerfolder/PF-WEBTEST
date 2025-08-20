@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Visiter'])[3]/following::a[1]</value>
+         <value>//body/div/div/div[2]/div/div/div/div[5]/div[2]/div[2]/a/lang</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>1f4788c6-fa43-4eb0-9d5e-153ac351eb5a</webElementGuid>
+      <webElementGuid>de87b9a5-3d2d-4449-a9b3-af5a41f33eba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-space-top pica-hidden-on-small btn btn-success</value>
-      <webElementGuid>4652fcd0-7cf0-4cd7-8826-100298bd4c01</webElementGuid>
+      <webElementGuid>beeaaa0c-59d2-4e33-8ebb-f9e756a02d46</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +38,7 @@
       <name>href</name>
       <type>Main</type>
       <value>https://itunes.apple.com/app/powerfolder/id536214931</value>
-      <webElementGuid>632d7e7c-788a-4669-aa7e-892c81321335</webElementGuid>
+      <webElementGuid>0690b5f3-2dc5-4c2d-9790-72ce0fc12dfa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +46,7 @@
       <name>target</name>
       <type>Main</type>
       <value>_blank</value>
-      <webElementGuid>9ba57189-c92c-44fb-84b8-fd4076a8c35c</webElementGuid>
+      <webElementGuid>de6032e8-7b5c-4f80-8aec-2f010018d18a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -57,7 +56,7 @@
       <value>
                         Visiter
                     </value>
-      <webElementGuid>a86dcd21-da14-4ee8-9be3-44f978a802c6</webElementGuid>
+      <webElementGuid>67b3794b-5119-41e1-b4b1-6c56564c8a0b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -65,7 +64,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[@class=&quot;wallpaper&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-xs-12 col-sm-8 col-md-6 col-lg-6 pica-relative&quot;]/div[@class=&quot;pica-dialog&quot;]/div[1]/div[1]/div[@class=&quot;pica-boxes&quot;]/div[@class=&quot;pica-box pica-block-on-small&quot;]/div[@class=&quot;pica-box-body&quot;]/a[@class=&quot;pica-space-top pica-hidden-on-small btn btn-success&quot;]</value>
-      <webElementGuid>805f77a8-a011-49ba-bcb1-b09aabd836e9</webElementGuid>
+      <webElementGuid>a1376d7f-13b0-4f5f-92b8-4dfb610c9d85</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -73,7 +72,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Visiter'])[3]/following::a[1]</value>
-      <webElementGuid>30a150fe-e967-4372-aadd-e4fea931a2f4</webElementGuid>
+      <webElementGuid>be3efaf8-7f26-4707-9002-20b5481272dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -81,7 +80,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='iOS'])[1]/following::a[2]</value>
-      <webElementGuid>3c3c4ba6-a540-4494-8913-fe1df3baaf1f</webElementGuid>
+      <webElementGuid>64d81358-2789-4ed9-a952-66b670e929b6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,7 +88,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Plugins'])[1]/preceding::a[1]</value>
-      <webElementGuid>c15723c2-e4b3-496c-a8f7-3a3109f5ccb4</webElementGuid>
+      <webElementGuid>d7e27bbf-cf62-4afc-8e76-cd17be3acc96</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -97,7 +96,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>(//a[contains(@href, 'https://itunes.apple.com/app/powerfolder/id536214931')])[2]</value>
-      <webElementGuid>f7a29776-1287-465d-901f-d2b7655c9637</webElementGuid>
+      <webElementGuid>b873e2df-1f18-4a28-a58d-29346950e936</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -105,7 +104,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[5]/div[2]/div[2]/a</value>
-      <webElementGuid>e623a7d6-01ad-4bf2-9215-24ff5cdb3e5d</webElementGuid>
+      <webElementGuid>53f5945b-33b9-4ad3-8c0a-8d56b2f8d3f9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +116,6 @@
                     ' or . = '
                         Visiter
                     ')]</value>
-      <webElementGuid>88ec2ba5-1d31-4b69-8485-f1a7a288a184</webElementGuid>
+      <webElementGuid>9ef2ba02-3d17-45d3-8c92-b494556f6fb5</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
