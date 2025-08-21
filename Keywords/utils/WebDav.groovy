@@ -7,8 +7,8 @@ import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.TestObjectProperty
 import com.kms.katalon.core.testobject.impl.HttpTextBodyContent
 import com.kms.katalon.core.testobject.ConditionType
-//import com.kms.katalon.core.testobject.TestObjectProperty
-
+import com.kms.katalon.core.testobject.TestObjectProperty
+import groovy.json.JsonSlurper
 import java.nio.file.Files
 import java.nio.file.Paths
 import java.net.HttpURLConnection
@@ -27,6 +27,30 @@ class WebDav {
 		return "Basic " + ("${user}:${pass}".getBytes("UTF-8").encodeBase64().toString())
 	}
 
+	private getToken(String username, String password) {
+        // create API-URL
+        String url = "https://mimas.powerfolder.net/login?Username=${username}&Password=${password}&json=1"
+
+        // Request-Objekt erstellen
+        RequestObject request = new RequestObject("loginRequest")
+        request.setRestUrl(url)
+        request.setRestRequestMethod("GET")
+
+        // Request ausführen
+        def response = WS.sendRequest(request)
+
+        // JSON parsen
+        def json = new JsonSlurper().parseText(response.getResponseBodyContent())
+
+        // Token extrahieren
+        String token = json.account.token
+
+        println "INFO: erhaltenes Token = ${token}"
+
+        return token
+    }
+
+	
 	private RequestObject req(String name, String method, String url, Map<String,String> headers = [:], String body = null) {
 		RequestObject r = new RequestObject(name)
 		r.setRestUrl(url)
