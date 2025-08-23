@@ -50,7 +50,6 @@ WebUI.verifyEqual(isfolderCreated, true)
 
 // get token from API
 String token = CustomKeywords.'utils.WebDav.getToken'(GlobalVariable.userEmail, GlobalVariable.Pass)
-println(token)
 
 // start webdav connection
 String base = 'https://mimas.powerfolder.net/webdav/'
@@ -58,7 +57,6 @@ String base = 'https://mimas.powerfolder.net/webdav/'
 String user = GlobalVariable.userEmail
 
 String pass = token
-println(pass)
 // check present of toplvl folder made in web via webdav
 boolean web_toplvl_present = CustomKeywords.'utils.WebDav.exists'(base, folderName, user, pass)
 
@@ -86,7 +84,7 @@ WebUI.verifyEqual(is_webdav_folderCreated, true)
 //WebUI.closeBrowser()
 
 String getRandomFolderName() {
-    String folderName = 'TWD01' + getTimestamp()
+    String folderName = 'TWD06' + getTimestamp()
     return folderName
 }
 

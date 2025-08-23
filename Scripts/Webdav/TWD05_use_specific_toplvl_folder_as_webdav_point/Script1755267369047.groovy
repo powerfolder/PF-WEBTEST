@@ -49,30 +49,6 @@ boolean isfolderCreated = folder.isDisplayed()
 
 WebUI.verifyEqual(isfolderCreated, true)
 
-// create toplvl folder via web
-/*WebUI.click(findTestObject('Folders/createFolderIcon'))
-
-WebUI.click(findTestObject('Folders/createFolder'))
-
-String folderName = getRandomFolderName()
-
-WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
-
-WebUI.click(findTestObject('Folders/buttonOK'))
-
-//verify present of toplvl folder in web
-WebUI.setText(findTestObject('Folders/inputSearch'), folderName)
-
-WebDriver driver = DriverFactory.getWebDriver()
-
-WebElement folder = driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName) + '\')]/td[1]/span'))
-
-boolean isfolderCreated = folder.isDisplayed()
-
-WebUI.verifyEqual(isfolderCreated, true)*/
-
 // start webdav connection
 String base = 'https://mimas.powerfolder.net/webdav/' + folderName
 
