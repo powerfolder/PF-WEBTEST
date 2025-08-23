@@ -7,7 +7,6 @@ import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.TestObjectProperty
 import com.kms.katalon.core.testobject.impl.HttpTextBodyContent
 import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.testobject.TestObjectProperty
 import groovy.json.JsonSlurper
 import java.nio.file.Files
 import java.nio.file.Paths

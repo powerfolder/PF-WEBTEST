@@ -37,6 +37,7 @@ WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandli
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
+WebUI.click(findTestObject('Folders/buttonOK'))
 
 //verify present of toplvl folder in web
 WebUI.setText(findTestObject('Folders/inputSearch'), folderName)
