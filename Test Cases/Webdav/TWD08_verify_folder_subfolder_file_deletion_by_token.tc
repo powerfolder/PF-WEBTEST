@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TWD08_verify_folder_subfolder_file_deletion_by_token</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>97d5d9a1-05ec-4463-a281-3a8384360bd7</testCaseGuid>
+</TestCaseEntity>

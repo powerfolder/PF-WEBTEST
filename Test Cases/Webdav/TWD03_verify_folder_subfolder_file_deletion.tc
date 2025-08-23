@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TWD03_verify_folder_subfolder_file_deletion</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>98bef1db-2451-4391-9871-5938b130edfa</testCaseGuid>
+</TestCaseEntity>
