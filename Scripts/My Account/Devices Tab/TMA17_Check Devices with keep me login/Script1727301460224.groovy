@@ -31,7 +31,28 @@ WebUI.mouseOver(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/ver
 
 WebUI.delay(3)
 
-WebUI.verifyElementText(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/verification_Web'), 'Web')
+WebUI.verifyElementText(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/verification_Web'), 'Web Browser (current session)')
+
+
+WebUI.click(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/verification_Web'))
+
+WebUI.click(findTestObject('My_Account/Page_Profile - PowerFolder/a_Delete'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('My_Account/Page_Profile - PowerFolder/button_Yes'))
+
+WebUI.delay(2)
+
+String currentUrl = WebUI.getUrl()
+
+WebUI.comment('L\'URL actuelle est: ' + currentUrl)
+
+String expectedUrl = 'https://mimas.powerfolder.net/login'
+
+boolean isCorrectUrl = currentUrl.equals(expectedUrl)
+
+WebUI.verifyEqual(isCorrectUrl, true)
 
 WebUI.closeBrowser()
 
