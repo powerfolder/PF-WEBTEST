@@ -1468,6 +1468,13 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>1c474725-bd37-45cd-90eb-96a6479d1af9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/My Account/Devices Tab/TMA18_Check_Devices_without_keep_me_login</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>b3304f60-ed80-4aba-bb0c-d9bdbad62cb5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
