@@ -27,6 +27,10 @@ WebUI.verifyElementClickable(findTestObject('My_Account/Overview/Page_Profile - 
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/Upgrade_button'))
 
+WebUI.delay(5)
+
+WebUI.mouseOver(findTestObject('My_Account/Overview/Page_Pricing for PowerFolder Sync, Share and Backup Cloud and Onpremise/span_Preise'))
+
 WebUI.click(findTestObject('My_Account/Overview/Page_Pricing for PowerFolder Sync, Share and Backup Cloud and Onpremise/span_Preise'))
 
 WebUI.delay(5)

@@ -133,7 +133,7 @@
       <guid>06098109-7e1b-4143-bae0-dfc4083461b4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/My Account/Devices Tab/TMA17_Check Devices</testCaseId>
+      <testCaseId>Test Cases/My Account/Devices Tab/TMA17_Check Devices with keep me login</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

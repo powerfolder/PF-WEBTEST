@@ -19,9 +19,7 @@ WebUI.openBrowser(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
 
-WebUI.verifyElementClickable(findTestObject('External links/Page_Login - PowerFolder/Accessibility Problem'))
-
-WebUI.delay(2)
+WebUI.waitForElementClickable(findTestObject('External links/Page_Login - PowerFolder/Accessibility Problem'), 30)
 
 WebUI.click(findTestObject('External links/Page_Login - PowerFolder/Accessibility Problem'))
 
