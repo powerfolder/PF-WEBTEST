@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TMA18_Check_Devices_without_keep_me_login</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>15115a63-05ed-4535-bfa3-826acff4deed</testCaseGuid>
+</TestCaseEntity>
