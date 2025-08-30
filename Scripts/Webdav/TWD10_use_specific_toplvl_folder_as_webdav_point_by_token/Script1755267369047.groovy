@@ -53,7 +53,7 @@ WebUI.verifyEqual(isfolderCreated, true)
 String token = CustomKeywords.'utils.WebDav.getToken'(GlobalVariable.userEmail, GlobalVariable.Pass)
 
 // start webdav connection
-String base = 'https://mimas.powerfolder.net/webdav/' + folderName
+String base = GlobalVariable.WebdavURL + '/' + folderName
 
 String user = GlobalVariable.userEmail
 
