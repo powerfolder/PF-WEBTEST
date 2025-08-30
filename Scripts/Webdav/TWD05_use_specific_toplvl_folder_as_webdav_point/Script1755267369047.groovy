@@ -50,7 +50,7 @@ boolean isfolderCreated = folder.isDisplayed()
 WebUI.verifyEqual(isfolderCreated, true)
 
 // start webdav connection
-String base = 'https://mimas.powerfolder.net/webdav/' + folderName
+String base = GlobalVariable.WebdavURL + '/' + folderName
 
 String user = GlobalVariable.userEmail
 

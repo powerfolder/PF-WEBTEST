@@ -28,7 +28,7 @@ WebUI.callTestCase(findTestCase('My Account/Pre_test/Create Account'), [:], Fail
 String token = CustomKeywords.'utils.WebDav.getToken'(GlobalVariable.userEmail, GlobalVariable.Pass)
 
 // start webdav connection
-String base = 'https://mimas.powerfolder.net/webdav/'
+String base = GlobalVariable.WebdavURL
 
 String user = GlobalVariable.userEmail
 

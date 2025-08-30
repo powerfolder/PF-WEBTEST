@@ -25,7 +25,7 @@ import org.openqa.selenium.WebElement as WebElement
 WebUI.callTestCase(findTestCase('My Account/Pre_test/Create Account'), [:], FailureHandling.STOP_ON_FAILURE)
 
 // start webdav connection
-String base = 'https://mimas.powerfolder.net/webdav/'
+String base = GlobalVariable.WebdavURL
 
 String user = GlobalVariable.userEmail
 
