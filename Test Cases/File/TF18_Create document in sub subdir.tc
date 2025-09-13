@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF18_Create document in sub subdir</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1962f373-e82a-48b5-9da2-3ff018edb19b</testCaseGuid>
+</TestCaseEntity>
