@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Our Flexible Plans</name>
+   <tag></tag>
+   <elementGuidId>ffbbbbc7-ce7d-49b2-9d98-7442490a6693</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//body/div[2]/div[1]/div[2]/div[2]/div/h2/lang</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>lang[name=&quot;pricing_table_title&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>lang</value>
+      <webElementGuid>81758d38-6a55-4375-beef-24bdb36e73b4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>pricing_table_title</value>
+      <webElementGuid>1e6dae42-4c17-4e66-856b-8d75b9495a14</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Nos offres flexibles</value>
+      <webElementGuid>d7a465f8-e4ca-4d40-8751-2642b084b31c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_content&quot;)/div[@class=&quot;pricing-wrapper&quot;]/h2[1]/lang[1]</value>
+      <webElementGuid>6d75f8a2-e8e2-453a-9c3b-dbcc4ffc0975</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//lang[@name='pricing_table_title']</value>
+      <webElementGuid>1cf61186-67b4-4079-a21e-3e820453ae14</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_content']/div/h2/lang</value>
+      <webElementGuid>575fd80d-9b87-4935-af4e-cce77b09f793</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Déconnexion'])[2]/following::lang[1]</value>
+      <webElementGuid>50bae370-7bf3-4e98-a995-0eb1960b50af</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mon compte'])[2]/following::lang[2]</value>
+      <webElementGuid>f5efb036-1957-47d2-b9e4-d6729be8b4cc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mensuel'])[1]/preceding::lang[1]</value>
+      <webElementGuid>9a986925-afc9-4166-9923-4c5b62313844</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Annuel'])[1]/preceding::lang[2]</value>
+      <webElementGuid>e342de0f-4e2d-474a-8b6f-5cf623d29042</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Nos offres flexibles']/parent::*</value>
+      <webElementGuid>d4ba9903-6d0a-4b37-a59b-18d52a22a6f2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h2/lang</value>
+      <webElementGuid>9f1f1471-9617-4584-8845-580afbaed42f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//lang[@name = 'pricing_table_title' and (text() = 'Nos offres flexibles' or . = 'Nos offres flexibles')]</value>
+      <webElementGuid>05875305-2136-47e0-9ffc-39a3c582e0a0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

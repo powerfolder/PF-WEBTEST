@@ -61,15 +61,16 @@ WebUI.click(findTestObject('External links/Page_Folders - PowerFolder/user_label
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/label_Mensuel'))
+WebUI.verifyElementText(findTestObject('External links/Page_Pricing - PowerFolder/Our Flexible Plans'), 'Our Flexible Plans')
 
-WebUI.verifyElementText(findTestObject('External links/Page_Pricing - PowerFolder/div_price'), '12,50 €')
+WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/label_Mensuel'))
 
 WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/a_Cloud 1 TB'))
 
 WebUI.delay(2)
 
 String currentUrl = WebUI.getUrl()
+
 WebUI.comment('L\'URL actuelle est: ' + currentUrl)
 
 boolean isCorrectUrl = currentUrl.contains('https://shop.powerfolder.com/c/pay/')
@@ -83,8 +84,6 @@ WebUI.back()
 WebUI.delay(2)
 
 WebUI.closeBrowser()
-
-
 
 String generateRandomString(int length) {
     String characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
