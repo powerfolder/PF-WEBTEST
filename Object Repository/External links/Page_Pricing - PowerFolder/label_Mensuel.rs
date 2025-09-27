@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Mensuel</name>
+   <tag></tag>
+   <elementGuidId>3b90a714-f500-447f-99b8-1974d70e77dd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[2]/div[1]/div[2]/div[2]/div/div[1]/label[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>label.toggle-label.toggle-label-left</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>1438c665-1866-42e6-983f-d42230821560</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>monthlyRadio</value>
+      <webElementGuid>f39f0e42-0093-48cc-9718-cd46ccb1260e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>toggle-label toggle-label-left</value>
+      <webElementGuid>132e7307-c0d5-47ad-b4e0-bd889cfda02c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                    Mensuel
+                </value>
+      <webElementGuid>54d80ab5-7c2d-4c2e-b406-8f246bee417e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_content&quot;)/div[@class=&quot;pricing-wrapper&quot;]/div[@class=&quot;toggle-container&quot;]/label[@class=&quot;toggle-label toggle-label-left&quot;]</value>
+      <webElementGuid>8b4f9b56-d6c7-4e67-8e21-e16aeef03f0f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_content']/div/div/label</value>
+      <webElementGuid>7a93141c-535f-42c5-8423-406bc2434f1a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nos offres flexibles'])[1]/following::label[1]</value>
+      <webElementGuid>5d1452e4-c3e2-4337-aa9b-88f121211392</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Déconnexion'])[2]/following::label[1]</value>
+      <webElementGuid>6f10f2db-5415-427b-8139-3c041e8644be</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Annuel'])[1]/preceding::label[1]</value>
+      <webElementGuid>a4c4e003-a44b-4b94-9f73-f703abc5ef5e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//label</value>
+      <webElementGuid>7495c425-024b-428e-9a8c-eda41b35a79f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = '
+                    Mensuel
+                ' or . = '
+                    Mensuel
+                ')]</value>
+      <webElementGuid>d412002a-abe8-4fba-b83a-7c22734baccd</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
