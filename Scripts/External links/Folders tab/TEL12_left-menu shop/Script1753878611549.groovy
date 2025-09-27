@@ -55,27 +55,36 @@ WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
-WebUI.delay(3)
-
 WebUI.verifyElementClickable(findTestObject('External links/Page_Folders - PowerFolder/user_label_shop'))
 
 WebUI.click(findTestObject('External links/Page_Folders - PowerFolder/user_label_shop'))
 
-String currentUrl = WebUI.getUrl()
+WebUI.delay(2)
 
+WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/label_Mensuel'))
+
+WebUI.verifyElementText(findTestObject('External links/Page_Pricing - PowerFolder/div_price'), '12,50 €')
+
+WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/a_Cloud 1 TB'))
+
+WebUI.delay(2)
+
+String currentUrl = WebUI.getUrl()
 WebUI.comment('L\'URL actuelle est: ' + currentUrl)
 
-String expectedUrl = 'https://www.powerfolder.com/pricing/'
-
-boolean isCorrectUrl = currentUrl.equals(expectedUrl)
+boolean isCorrectUrl = currentUrl.contains('https://shop.powerfolder.com/c/pay/')
 
 WebUI.verifyEqual(isCorrectUrl, true)
 
-WebUI.verifyElementText(findTestObject('External links/Page_Pricing/Compare Functions'), 'COMPARE FUNCTIONS')
+WebUI.delay(2)
+
+WebUI.back()
 
 WebUI.delay(2)
 
 WebUI.closeBrowser()
+
+
 
 String generateRandomString(int length) {
     String characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
