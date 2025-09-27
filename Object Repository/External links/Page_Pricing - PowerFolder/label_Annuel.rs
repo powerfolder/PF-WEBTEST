@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Annuel</name>
+   <tag></tag>
+   <elementGuidId>c440bcbe-fd67-4f9d-9f84-f5f6ac75c648</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_content']/div/div/label[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>label.toggle-label.toggle-label-right</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>f91390f1-ca45-4a7b-ab7d-5efe402ce237</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>yearlyRadio</value>
+      <webElementGuid>bdd9d014-112d-4ee1-a3a2-c6811032c87c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>toggle-label toggle-label-right</value>
+      <webElementGuid>55d1902b-6bd3-4494-a400-e2b9406a8460</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                    Annuel
+                </value>
+      <webElementGuid>ec659089-8e35-4541-8251-404c1293cc55</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_content&quot;)/div[@class=&quot;pricing-wrapper&quot;]/div[@class=&quot;toggle-container&quot;]/label[@class=&quot;toggle-label toggle-label-right&quot;]</value>
+      <webElementGuid>83776422-3a9f-434e-9ba4-a6cc3b609ec2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_content']/div/div/label[2]</value>
+      <webElementGuid>3be615a8-1de8-4251-8b9c-885ee3f06e07</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mensuel'])[1]/following::label[1]</value>
+      <webElementGuid>81db4448-ecee-4058-b82e-24cd5357cc7d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nos offres flexibles'])[1]/following::label[2]</value>
+      <webElementGuid>6a538d03-7d88-4792-99ec-51db105a83f1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kostenlos 5 GB'])[1]/preceding::label[1]</value>
+      <webElementGuid>e643d670-41ac-438f-a214-03e882627468</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//label[2]</value>
+      <webElementGuid>9a12fe83-5202-4e08-b5df-78947b31d635</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = '
+                    Annuel
+                ' or . = '
+                    Annuel
+                ')]</value>
+      <webElementGuid>bcc461c6-8bc1-4fed-88ce-3e58dfd1efee</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
