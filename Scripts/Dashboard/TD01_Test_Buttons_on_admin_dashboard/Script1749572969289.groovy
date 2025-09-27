@@ -77,15 +77,33 @@ WebUI.verifyEqual(WebUI.getWindowTitle(), 'Organizations - PowerFolder')
 
 WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
 
-WebUI.click(findTestObject('Dashboard/Pricing_License'))
+WebUI.verifyElementClickable(findTestObject('External links/Page_Dashboard - PowerFolder/license'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('External links/Page_Dashboard - PowerFolder/license'))
 
 WebUI.switchToWindowIndex(1)
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Pricing for PowerFolder Sync, Share and Backup Cloud and Onpremise')
+String currentUrl = WebUI.getUrl()
+
+WebUI.comment('L\'URL actuelle est: ' + currentUrl)
+
+String expectedUrl = 'https://mimas.powerfolder.net/pricing'
+
+boolean isCorrectUrl = currentUrl.equals(expectedUrl)
+
+WebUI.verifyEqual(isCorrectUrl, true)
+
+WebUI.verifyElementText(findTestObject('External links/Page_Pricing - PowerFolder/license_Our Flexible Plans'), 'Our Flexible Plans')
 
 WebUI.closeWindowIndex(1)
 
 WebUI.switchToWindowIndex(0)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
 
 WebUI.click(findTestObject('Dashboard/Activation_Manage'))
 
