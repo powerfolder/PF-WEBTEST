@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('My Account/Pre_test/Create Account - keep me logged in'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('My Account/Pre_test/Create Account'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 
@@ -27,11 +27,26 @@ WebUI.verifyElementClickable(findTestObject('My_Account/Detail/Page_Profile - Po
 
 WebUI.click(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/a_Devices'))
 
-WebUI.mouseOver(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/verification_Web'))
-
 WebUI.delay(3)
 
-WebUI.verifyElementText(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/verification_Web'), 'Web')
+WebUI.click(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/verification_Web'))
+
+WebUI.click(findTestObject('My_Account/Page_Profile - PowerFolder/a_Delete'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('My_Account/Page_Profile - PowerFolder/button_Yes'))
+
+WebUI.delay(2)
+
+String currentUrl = WebUI.getUrl()
+
+WebUI.comment('L\'URL actuelle est: ' + currentUrl)
+
+String expectedUrl = 'https://mimas.powerfolder.net/login'
+
+boolean isCorrectUrl = currentUrl.equals(expectedUrl)
+
+WebUI.verifyEqual(isCorrectUrl, true)
 
 WebUI.closeBrowser()
-

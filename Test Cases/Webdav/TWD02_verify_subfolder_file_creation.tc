@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TWD02_verify_subfolder_file_creation</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a6b0f5a2-e592-461c-9b56-7cfaa51b86a8</testCaseGuid>
+</TestCaseEntity>

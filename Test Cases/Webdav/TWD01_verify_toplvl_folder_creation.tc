@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TWD01_verify_toplvl_folder_creation</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>40ab6476-7223-4579-ac61-26577a63453e</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lang_Nos offres flexibles</name>
+   <tag></tag>
+   <elementGuidId>b5a2962b-c2ba-4f1e-902e-f91fc6ea8f7c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//body/div/div/div[2]/div/div/div/h2/lang</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>lang[name=&quot;pricing_table_title&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>lang</value>
+      <webElementGuid>be7e3650-36f4-4ca5-9118-2be0fb024cf0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>pricing_table_title</value>
+      <webElementGuid>2c956d67-2fcc-44af-aa8b-a3763153001a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Nos offres flexibles</value>
+      <webElementGuid>e2c43cbd-3767-43a8-b7f3-0b3ffbac3bd5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;wallpaper&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-xs-12 col-sm-8 col-md-6 col-lg-12 pica-relative&quot;]/div[@class=&quot;pica-dialog&quot;]/div[1]/div[1]/h2[1]/lang[1]</value>
+      <webElementGuid>807d55fc-302a-456f-8129-2677bdc54001</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//lang[@name='pricing_table_title']</value>
+      <webElementGuid>37b14472-cfbe-46c1-8b2b-c4ab4fe43228</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mensuel'])[1]/preceding::lang[1]</value>
+      <webElementGuid>e71888fd-9dc4-4cd4-a4b2-b2f34f52aa61</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Annuel'])[1]/preceding::lang[2]</value>
+      <webElementGuid>23d7eae6-4636-4fe6-8630-14272fcbf900</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Nos offres flexibles']/parent::*</value>
+      <webElementGuid>18127426-53df-41c2-b3e7-cf09d1b73073</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//lang</value>
+      <webElementGuid>56a21fb3-16f9-4424-ae7b-7651c6205156</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//lang[@name = 'pricing_table_title' and (text() = 'Nos offres flexibles' or . = 'Nos offres flexibles')]</value>
+      <webElementGuid>0c7fca52-2b2d-45f4-8dcb-ad98744baa35</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

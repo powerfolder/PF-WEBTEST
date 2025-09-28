@@ -25,7 +25,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/My_a
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/Change_Language'))
 
-WebUI.selectOptionByLabel(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/Select Langue'), 'English', false)
+WebUI.selectOptionByValue(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/Select Langue'), 'en', false)
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Page_Profile - PowerFolder/button_Change_langue'))
 
@@ -34,3 +34,4 @@ WebUI.delay(2)
 WebUI.verifyElementText(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/td_lang'), 'English')
 
 WebUI.closeBrowser()
+

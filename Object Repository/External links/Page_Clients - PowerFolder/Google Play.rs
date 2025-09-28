@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Visiter'])[1]/following::a[1]</value>
+         <value>/html/body/div/div/div[2]/div/div/div/div[5]/div[1]/div[2]/a/lang</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>d5837dc5-ecca-408b-b055-071ef7ee0dc6</webElementGuid>
+      <webElementGuid>77d3fb68-7546-472a-b31f-1558f681e7ef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-space-top pica-hidden-on-small btn btn-success</value>
-      <webElementGuid>e2aab8ae-d68f-4f26-aaf2-bd12abec37f1</webElementGuid>
+      <webElementGuid>d83bd4ac-d208-4a84-9d19-be2130ad7106</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +38,7 @@
       <name>href</name>
       <type>Main</type>
       <value>https://market.android.com/details?id=de.goddchen.android.powerfolder.A</value>
-      <webElementGuid>21710d2a-29db-4191-8ba6-90dcde4a5aea</webElementGuid>
+      <webElementGuid>47a80a54-5eaa-4c21-a932-2cb4d8cdfb76</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +46,7 @@
       <name>target</name>
       <type>Main</type>
       <value>_blank</value>
-      <webElementGuid>6dd5a205-c0df-41bc-88d4-2077337fa395</webElementGuid>
+      <webElementGuid>e8696d9e-aec4-4eff-9a9a-c8edb656e364</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -57,7 +56,7 @@
       <value>
                         Visiter
                     </value>
-      <webElementGuid>d9a1d1d0-39d7-4f83-a7f7-1235fdb99cdd</webElementGuid>
+      <webElementGuid>db47752d-50ea-44d5-9463-e7bc0d7cdf31</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -65,7 +64,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[@class=&quot;wallpaper&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-xs-12 col-sm-8 col-md-6 col-lg-6 pica-relative&quot;]/div[@class=&quot;pica-dialog&quot;]/div[1]/div[1]/div[@class=&quot;pica-boxes&quot;]/div[@class=&quot;pica-box pica-block-on-small&quot;]/div[@class=&quot;pica-box-body&quot;]/a[@class=&quot;pica-space-top pica-hidden-on-small btn btn-success&quot;]</value>
-      <webElementGuid>729db02b-d0cb-480a-981f-11d4b572beaa</webElementGuid>
+      <webElementGuid>8815d006-c4af-4360-bbef-fcd725f385b8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -73,7 +72,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Visiter'])[1]/following::a[1]</value>
-      <webElementGuid>ed47a08c-2b05-4c81-84f7-02c6b23582a6</webElementGuid>
+      <webElementGuid>556f75a0-c554-4d56-bb39-588cf0b00a00</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -81,7 +80,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Android'])[1]/following::a[2]</value>
-      <webElementGuid>0dab26a5-3998-433c-a460-973a22d59876</webElementGuid>
+      <webElementGuid>94a356a7-586a-4118-8938-afad4f111e85</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,7 +88,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='iOS'])[1]/preceding::a[1]</value>
-      <webElementGuid>ebbe8ced-863b-4982-80d2-83be36c36da5</webElementGuid>
+      <webElementGuid>adfc1273-bf91-4522-a5ec-4ae14ff014d7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -97,7 +96,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>(//a[contains(@href, 'https://market.android.com/details?id=de.goddchen.android.powerfolder.A')])[2]</value>
-      <webElementGuid>7f313136-625f-468c-8557-1808aae5c460</webElementGuid>
+      <webElementGuid>7acaae7c-b864-4fd0-9c67-0b13253f7ddf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -105,7 +104,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[5]/div/div[2]/a</value>
-      <webElementGuid>83c60540-27dd-4528-b5b8-611c9d7f7537</webElementGuid>
+      <webElementGuid>5714b728-dd77-4d16-a167-3bef0b6707d6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +116,6 @@
                     ' or . = '
                         Visiter
                     ')]</value>
-      <webElementGuid>590e2fb6-d0bc-4479-abd9-c5e0e94029cd</webElementGuid>
+      <webElementGuid>dfc641ed-d9d9-4249-bb71-ca8c9097d8fe</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

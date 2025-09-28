@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TMA17_Check Devices with keep me login</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b7ee8166-965f-43be-a8f4-4184c094c997</testCaseGuid>
+</TestCaseEntity>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TMA17_Check Devices</name>
+   <name>TWD07_verify_subfolder_file_creation _by_token</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>b7ee8166-965f-43be-a8f4-4184c094c997</testCaseGuid>
+   <testCaseGuid>c7e7efb1-2172-462e-8a2a-a4b0f5e8fc47</testCaseGuid>
 </TestCaseEntity>
