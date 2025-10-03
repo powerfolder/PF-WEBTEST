@@ -1256,6 +1256,13 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>4c7f7e06-6110-4737-897d-7db63739fa1c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF19_Cut_Paste_between_topvlvl</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>640417e7-981b-4cbc-8098-4a9dbe153dda</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
