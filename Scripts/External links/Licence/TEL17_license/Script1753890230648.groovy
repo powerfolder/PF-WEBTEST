@@ -31,13 +31,13 @@ String currentUrl = WebUI.getUrl()
 
 WebUI.comment('L\'URL actuelle est: ' + currentUrl)
 
-String expectedUrl = 'https://mimas.powerfolder.net/pricing'
+String expectedUrl = 'https://www.powerfolder.com/pricing/'
 
 boolean isCorrectUrl = currentUrl.equals(expectedUrl)
 
 WebUI.verifyEqual(isCorrectUrl, true)
 
-WebUI.verifyElementText(findTestObject('External links/Page_Pricing - PowerFolder/license_Our Flexible Plans'), 'Our Flexible Plans')
+WebUI.verifyElementText(findTestObject('External links/Page_Pricing/Compare Functions'), 'COMPARE FUNCTIONS')
 
 WebUI.closeWindowIndex(1)
 
