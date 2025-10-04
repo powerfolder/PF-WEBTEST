@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AcceptTermsAndConditions</name>
+   <tag></tag>
+   <elementGuidId>c787017e-ad45-4a19-acae-848e7f6de26d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@type='button']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.pica-full-width.btn.btn-default</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>a9edc86b-fdea-40c6-95a0-9340e6b83e79</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>c08c3082-b36c-4e93-b1e6-44fcdaa38702</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-full-width btn btn-default</value>
+      <webElementGuid>1bba1e4e-e7f6-435b-8af0-96d46ad81f33</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-color</name>
+      <type>Main</type>
+      <value>primary</value>
+      <webElementGuid>c356f583-c732-4f9a-b3d1-2e2650b89af0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                    Conditions d'utilisation acceptées
+                </value>
+      <webElementGuid>00cabb00-0356-4856-84f2-5750df65a696</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;register_form&quot;)/div[@class=&quot;pica-full-width form-group&quot;]/span[@class=&quot;pica-button-checkbox pica-full-width&quot;]/button[@class=&quot;pica-full-width btn btn-default&quot;]</value>
+      <webElementGuid>e924cf2d-8941-4852-a516-4e3b11a73c84</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@type='button']</value>
+      <webElementGuid>c14074bb-dc45-4aa1-bd29-06a2302a8e83</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='register_form']/div[4]/span/button</value>
+      <webElementGuid>1fc66d54-0058-4363-b569-d0d0a012c4f1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Création de compte'])[1]/following::button[1]</value>
+      <webElementGuid>f148156c-bd70-490b-9b48-b137427b95e0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Offres et Tarifs'])[1]/preceding::button[1]</value>
+      <webElementGuid>2eb4ee35-4eb8-4697-9c63-a8d7dfbbc409</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button</value>
+      <webElementGuid>bddfe8a7-2bef-45db-b9c4-c48af308718e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = concat(&quot;
+                    Conditions d&quot; , &quot;'&quot; , &quot;utilisation acceptées
+                &quot;) or . = concat(&quot;
+                    Conditions d&quot; , &quot;'&quot; , &quot;utilisation acceptées
+                &quot;))]</value>
+      <webElementGuid>c6bbf435-ebcb-44df-8f18-91c8c59a143f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
