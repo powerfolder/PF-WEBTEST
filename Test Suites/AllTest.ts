@@ -2020,4 +2020,11 @@
       <testCaseId>Test Cases/Webdav/TWD10_use_specific_toplvl_folder_as_webdav_point_by_token</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>9433f066-685f-4ec7-8ee8-50e4172fe0ee</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Registration/TR1_VerifyRegistrationTest</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
