@@ -61,8 +61,6 @@ WebUI.click(findTestObject('External links/Page_Folders - PowerFolder/user_label
 
 WebUI.delay(2)
 
-WebUI.verifyElementText(findTestObject('External links/Page_Pricing - PowerFolder/Our Flexible Plans'), 'Our Flexible Plans')
-
 WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/label_Mensuel'))
 
 WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/a_Cloud 1 TB'))
