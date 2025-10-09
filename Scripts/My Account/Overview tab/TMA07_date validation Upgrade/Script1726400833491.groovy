@@ -29,21 +29,15 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/Upgra
 
 WebUI.delay(5)
 
-WebUI.mouseOver(findTestObject('My_Account/Overview/Page_Pricing for PowerFolder Sync, Share and Backup Cloud and Onpremise/span_Preise'))
+String currentUrl = WebUI.getUrl()
 
-WebUI.click(findTestObject('My_Account/Overview/Page_Pricing for PowerFolder Sync, Share and Backup Cloud and Onpremise/span_Preise'))
+WebUI.comment('L\'URL actuelle est: ' + currentUrl)
 
-WebUI.delay(5)
+String expectedUrl = 'https://mimas.powerfolder.net/pricing'
 
-String currentWindowTitle = WebUI.getWindowTitle()
+boolean isCorrectUrl = currentUrl.equals(expectedUrl)
 
-WebUI.comment('Current Window Title: ' + currentWindowTitle // print the actuel title
-    )
-
-String expectedSubstring = 'Preise'
-
-// Vérifiez que le titre actuel contient la sous-chaîne attendue
-WebUI.verifyMatch(currentWindowTitle, expectedSubstring, false)
+WebUI.verifyEqual(isCorrectUrl, true)
 
 WebUI.closeBrowser()
 
