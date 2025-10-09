@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>valid_till</name>
+   <tag></tag>
+   <elementGuidId>a4542dce-4808-4447-8a7b-0810326761f4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//td[@id='profile_valid_till']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#profile_valid_till > span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>e44af276-cc5e-45b1-a12e-928870ab09a2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-original-title</name>
+      <type>Main</type>
+      <value>20 November 2025 17:52</value>
+      <webElementGuid>4edc5390-d8de-4774-a6cb-93c15eac6b4b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-describedby</name>
+      <type>Main</type>
+      <value>tooltip370085</value>
+      <webElementGuid>cd3379c2-aa5f-40bc-b691-5d9ea548952e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>20 November 2025</value>
+      <webElementGuid>eef0c49e-b1fe-4bad-9c88-1f9449a9f3e5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;profile_valid_till&quot;)/span[1]</value>
+      <webElementGuid>d275ecc2-d1f7-4f7a-ab3b-d1cff5661e96</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//td[@id='profile_valid_till']/span</value>
+      <webElementGuid>881c0b1e-bff1-4eac-b98c-04da102160da</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Gültig bis'])[1]/following::span[1]</value>
+      <webElementGuid>86eab426-2e2f-4b24-8e7d-69d27b454555</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ändern'])[5]/following::span[2]</value>
+      <webElementGuid>83486fe7-1085-4767-a7ec-9ca3bdaaba92</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Upgrade'])[2]/preceding::span[1]</value>
+      <webElementGuid>28c76043-cfbd-438b-a9fd-09ffcafa1351</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Titel'])[1]/preceding::span[2]</value>
+      <webElementGuid>9286498c-9375-41d5-9b68-4c9ca06b5eb5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='20 November 2025']/parent::*</value>
+      <webElementGuid>855e857b-1b0c-426c-bfcb-fdf52649a338</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[6]/td[2]/span</value>
+      <webElementGuid>3f98444e-b583-420e-814a-219a80cd2d2a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = '20 November 2025' or . = '20 November 2025')]</value>
+      <webElementGuid>3b489aa3-8c90-495e-abb8-5086724bdff0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

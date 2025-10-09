@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Rechnungsadresse_Button-textCheckoutSe_303611</name>
+   <tag></tag>
+   <elementGuidId>e3964388-18ae-4c5b-b282-2ff0cfc3671a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='payment-form']/div/div/div/div[2]/div/div[2]/div/div/div/div/div/div[2]/div/div/div/div/div/div[2]/div/div/div/div/div/div[2]/div[2]/button/div/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.Button-textCheckoutSecondary.Text.Text-color--gray400.Text-fontWeight--500.Text--truncate</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>d3cdf7ee-492b-46c0-bb7e-856528a5aba2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Button-textCheckoutSecondary Text Text-color--gray400 Text-fontWeight--500 Text--truncate</value>
+      <webElementGuid>d7309dd7-106f-46a1-9767-c4d62289605e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Adresse manuell eingeben</value>
+      <webElementGuid>f380e4e2-1334-43be-8fcb-a0d66d1716a2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;payment-form&quot;)/div[1]/div[1]/div[1]/div[@class=&quot;PaymentMethodForm&quot;]/div[@class=&quot;Accordion&quot;]/div[@class=&quot;AnimatePresence PaymentMethodFormVisible-container&quot;]/div[@class=&quot;AnimatePresence-inner&quot;]/div[@class=&quot;AnimateSinglePresence PaymentMethodFormAccordionItem-container&quot;]/div[@class=&quot;AnimateSinglePresenceItem&quot;]/div[@class=&quot;AccordionItem PaymentMethodFormAccordionItem PaymentMethodFormAccordionItem--selected PaymentMethodFormAccordionItem--overflowVisible PaymentMethodFormAccordionItem--compact&quot;]/div[@class=&quot;AccordionItem-wrapper&quot;]/div[@class=&quot;AnimatePresence&quot;]/div[@class=&quot;AnimatePresence-inner&quot;]/div[@class=&quot;AccordionItemContent PaymentMethodFormAccordionItem PaymentMethodFormAccordionItem--selected PaymentMethodFormAccordionItem--overflowVisible-content AccordionItemContent--no-title&quot;]/div[1]/div[1]/div[@class=&quot;PaymentForm-paymentMethodForm flex-container direction-column wrap-wrap&quot;]/div[@class=&quot;BillingInfoForm flex-item width-grow&quot;]/div[@class=&quot;AnimateSinglePresence&quot;]/div[@class=&quot;AnimateSinglePresenceItem&quot;]/div[1]/div[@class=&quot;BillingInfoForm-addressInput flex-item width-12&quot;]/div[@class=&quot;flex-container spacing-16 direction-column wrap-wrap&quot;]/div[@class=&quot;flex-item width-12&quot;]/div[@class=&quot;AddressAutocomplete-manual-entry AddressAutocomplete-manual-entry--below-form&quot;]/button[@class=&quot;Button Button--link Button--checkoutSecondaryLink Button--md&quot;]/div[@class=&quot;flex-container justify-content-center align-items-center&quot;]/span[@class=&quot;Button-textCheckoutSecondary Text Text-color--gray400 Text-fontWeight--500 Text--truncate&quot;]</value>
+      <webElementGuid>25a557df-55f6-4420-bd1c-c5a0c6a6b459</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='payment-form']/div/div/div/div[2]/div/div[2]/div/div/div/div/div/div[2]/div/div/div/div/div/div[2]/div/div/div/div/div/div[2]/div[2]/button/div/span</value>
+      <webElementGuid>f8357de1-feb3-4e33-af81-fe2181c609a6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rechnungsadresse'])[1]/following::span[9]</value>
+      <webElementGuid>07a804d0-aa1d-428c-a256-3c0e54c98085</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Name des/der Karteninhaber/in'])[1]/following::span[15]</value>
+      <webElementGuid>51ca6a4c-b49f-4329-972b-2b8fdc4cb989</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PayPal'])[1]/preceding::span[2]</value>
+      <webElementGuid>9b3e3c93-bf0a-4476-a14b-1788aa211304</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Klarna'])[1]/preceding::span[3]</value>
+      <webElementGuid>d45c5d65-93f2-4545-ad66-9fee82dc43f1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Adresse manuell eingeben']/parent::*</value>
+      <webElementGuid>730877e1-f40f-4fad-86a6-fb115efcca98</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/button/div/span</value>
+      <webElementGuid>af74519a-059f-456c-8eae-c669de2ee796</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Adresse manuell eingeben' or . = 'Adresse manuell eingeben')]</value>
+      <webElementGuid>b86ad561-6bea-4bf3-ae5f-69962a33d487</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
