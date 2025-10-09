@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Zahlungspflichtig abonnieren_SubmitButton-IconContainer</name>
+   <tag></tag>
+   <elementGuidId>3733d742-ae00-47a7-8609-f4a1760f45ad</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='payment-form']/div/div/div/div[3]/div/div[2]/div/button/div[3]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.SubmitButton-IconContainer</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>683b258c-148c-4191-9473-89eef0cf9609</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>SubmitButton-IconContainer</value>
+      <webElementGuid>94b71070-a72c-4972-9183-5f4da70147ac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;payment-form&quot;)/div[1]/div[1]/div[1]/div[@class=&quot;PaymentForm-confirmPaymentContainer mt5 flex-item width-grow&quot;]/div[@class=&quot;ConfirmPayment&quot;]/div[@class=&quot;flex-item width-12&quot;]/div[1]/button[@class=&quot;SubmitButton SubmitButton--incomplete&quot;]/div[@class=&quot;SubmitButton-IconContainer&quot;]</value>
+      <webElementGuid>3c1c546e-9c86-4869-99ea-038b966da061</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='payment-form']/div/div/div/div[3]/div/div[2]/div/button/div[3]</value>
+      <webElementGuid>51de80cc-6f02-4690-ba7e-01afd4f3d7d0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Zahlungspflichtig abonnieren'])[1]/following::div[1]</value>
+      <webElementGuid>d39c982c-82bd-4b10-932c-eb1300619a12</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Link'])[1]/following::div[10]</value>
+      <webElementGuid>7c232d22-ce8b-4207-bc06-ff9be0226183</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bedingungen'])[1]/preceding::div[18]</value>
+      <webElementGuid>d6f94206-ed76-40e3-80f6-e56fe802b405</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button/div[3]</value>
+      <webElementGuid>2ca35bfc-9368-459c-8af6-2af4cd2df78e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
