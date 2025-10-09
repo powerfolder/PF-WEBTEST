@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TSH01_check_availability_of_shop_with_user_free_plan</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>389e0421-299c-476d-80c8-b344ca4ead93</testCaseGuid>
+</TestCaseEntity>
