@@ -59,13 +59,15 @@ WebUI.setText(findTestObject('Page_PowerFolder - shop_stripe/input_Kartendaten_c
 
 WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/input_Name desder Karteninhaberin_billingName'))
 
-WebUI.setText(findTestObject('Page_PowerFolder - shop_stripe/input_Name desder Karteninhaberin_billingName'), 'TSH02 Testcheckout')
+WebUI.setText(findTestObject('Page_PowerFolder - shop_stripe/input_Name desder Karteninhaberin_billingName'), 'TSH05 Testcheckout')
+
+//WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/select_Country'))
+
+//WebUI.selectOptionByLabel(findTestObject('Page_PowerFolder - shop_stripe/select_Country'), 'Germany', false)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/select_Country'))
-
-WebUI.selectOptionByLabel(findTestObject('Page_PowerFolder - shop_stripe/select_Country'), 'Germany', false)
+WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/span_Rechnungsadresse_Button-textCheckoutSecondary Text Text-color--gray400 Text-fontWeight--500 Text--truncate'))
 
 WebUI.delay(2)
 
