@@ -17,23 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
-
-WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-
-println(GlobalVariable.userEmail)
-
-println(GlobalVariable.Pass)
-
-WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.userEmail)
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.delay(3)
+WebUI.callTestCase(findTestCase('Registration/TR1_VerifyRegistrationTest'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementClickable(findTestObject('External links/Page_Folders - PowerFolder/user_label_shop'))
 

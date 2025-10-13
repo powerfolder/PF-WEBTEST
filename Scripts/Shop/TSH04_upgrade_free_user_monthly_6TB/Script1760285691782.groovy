@@ -18,34 +18,16 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-//create account
-WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
-
-WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-
-// login as user
-println(GlobalVariable.userEmail)
-
-println(GlobalVariable.Pass)
-
-WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.userEmail)
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.delay(3)
-
 // go to shop
+WebUI.callTestCase(findTestCase('Registration/TR1_VerifyRegistrationTest'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.verifyElementClickable(findTestObject('External links/Page_Folders - PowerFolder/user_label_shop'))
 
 WebUI.click(findTestObject('External links/Page_Folders - PowerFolder/user_label_shop'))
 
 WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/label_Mensuel'))
 
-WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/a_Cloud 1 TB'))
+WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/a_Cloud 6 TB'))
 
 WebUI.delay(2)
 
@@ -67,29 +49,25 @@ WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/input_Kartendaten_car
 
 WebUI.delay(5)
 
-WebUI.setEncryptedText(findTestObject('Page_PowerFolder - shop_stripe/input_Kartendaten_cardNumber'), 'EkRG/9aEEN71HdhO4NomWuiaRDV+ZN+b')
+WebUI.setText(findTestObject('Page_PowerFolder - shop_stripe/input_Kartendaten_cardNumber'), GlobalVariable.CreditcardNumber)
 
 WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/input_Kartendaten_cardExpiry'))
-
-WebUI.delay(2)
 
 WebUI.setText(findTestObject('Page_PowerFolder - shop_stripe/input_Kartendaten_cardExpiry'), '0229')
 
 WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/input_Kartendaten_cardCvc'))
 
-WebUI.delay(2)
-
 WebUI.setText(findTestObject('Page_PowerFolder - shop_stripe/input_Kartendaten_cardCvc'), '123')
 
 WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/input_Name desder Karteninhaberin_billingName'))
-
-WebUI.delay(2)
 
 WebUI.setText(findTestObject('Page_PowerFolder - shop_stripe/input_Name desder Karteninhaberin_billingName'), 'TSH02 Testcheckout')
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/span_Rechnungsadresse_Button-textCheckoutSecondary Text Text-color--gray400 Text-fontWeight--500 Text--truncate'))
+WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/select_Country'))
+
+WebUI.selectOptionByLabel(findTestObject('Page_PowerFolder - shop_stripe/select_Country'), 'Germany', false)
 
 WebUI.delay(2)
 
@@ -118,6 +96,10 @@ WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/div_Zahlungspflichtig
 // high delay needed so stripe call back is done in background
 WebUI.delay(120)
 
+WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/label_Mensuel'))
+
+WebUI.verifyElementText(findTestObject('Page_PowerFolder - shop_stripe/Cloud 6 TB_Current'), 'Current')
+
 // go to my account and check if qouta is there 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 
@@ -125,23 +107,23 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/My_a
 
 WebUI.refresh()
 
-WebUI.delay(3)
+WebUI.delay(2)
 
 // compare timestamps for abo
-
 String expect_valid_till = getTimestamp()
 
 println(expect_valid_till)
 
 WebUI.verifyElementText(findTestObject('My_Account/Overview/valid_till'), expect_valid_till)
 
-WebUI.closeBrowser()
+WebUI.closeBrowser( // add 1 month + 12 days
+    )
 
 String getTimestamp() {
     Date todaysDate = new Date()
 
     use(groovy.time.TimeCategory, { 
-            todaysDate = ((todaysDate + 1.month) + 12.days) // add 1 month + 12 days
+            todaysDate = ((todaysDate + 1.month) + 12.days)
         })
 
     String formattedDate = todaysDate.format('dd MMMM yyyy')

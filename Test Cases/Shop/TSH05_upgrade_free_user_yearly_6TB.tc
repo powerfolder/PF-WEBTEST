@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TSH02_upgrade_free_user</name>
+   <name>TSH05_upgrade_free_user_yearly_6TB</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>21866da3-9fe6-4dc1-8ef1-79bbb7a3a296</testCaseGuid>
+   <testCaseGuid>02ae7bd5-c648-4ba0-830a-d54b0cd4cc84</testCaseGuid>
 </TestCaseEntity>
