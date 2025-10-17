@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TSH08_upgrade_free_user_monthly_6TB_from_my_account</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0576c943-8351-4211-baa3-4f51860f5a06</testCaseGuid>
+</TestCaseEntity>
