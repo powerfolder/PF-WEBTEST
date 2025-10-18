@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Size</name>
+   <tag></tag>
+   <elementGuidId>4ac2485f-cbe4-4595-999d-267f233240f7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//body[@id='customer_portal_page_body']/div/div/div/div/div/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/span/span[2]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.Text-color--default.Text-fontSize--20.Text-fontWeight--medium.Text-lineHeight--24.Text-numericSpacing--proportional.Text-typeface--base.Text-wrap--wrap.Text-display--inline</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>1e1133c2-159a-46c0-a6b5-d39c2a9b6bf9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Text-color--default Text-fontSize--20 Text-fontWeight--medium Text-lineHeight--24 Text-numericSpacing--proportional Text-typeface--base Text-wrap--wrap Text-display--inline</value>
+      <webElementGuid>5012f8f8-d893-411d-8fb7-9314d0f24e2f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Cloud 1 TB</value>
+      <webElementGuid>e3bd7e24-f6e4-455f-87d0-a1db5d8e33e6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;customer_portal_page_body&quot;)/div[@class=&quot;db-CustomerPortalRoot&quot;]/div[@class=&quot;sn-182o7r0 sn-1q4qxi9&quot;]/div[@class=&quot;⚙ ⚙&quot;]/div[@class=&quot;⚙ rs-0 as-0 as-1 as-2 as-3 as-4 as-5 as-6 as-7 as-8 ⚙1te0h1l&quot;]/div[@class=&quot;⚙  as-9 as-a as-b as-c as-d as-8 as-e ⚙156iqll&quot;]/div[@class=&quot;sn-token-provider ⚙  t0 t1 t2 t3 as-f as-g ⚙yfj593&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--row&quot;]/div[2]/div[@class=&quot;Box-root&quot;]/div[1]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--flexStart Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--flexStart Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty Margin-top--24 Margin-left--24&quot;]/div[1]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--flexStart Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty Margin-top--64 Margin-left--64&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--spaceBetween Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty Margin-top--16 Margin-left--16&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-alignItems--flexStart Flex-direction--row Flex-justifyContent--spaceBetween Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--flexStart Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty Margin-top--16 Margin-left--16&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--flexStart Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty Margin-top--12 Margin-left--12&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--flexStart Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty Margin-top--12 Margin-left--12&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root&quot;]/span[1]/span[2]/span[@class=&quot;Text-color--default Text-fontSize--20 Text-fontWeight--medium Text-lineHeight--24 Text-numericSpacing--proportional Text-typeface--base Text-wrap--wrap Text-display--inline&quot;]</value>
+      <webElementGuid>cd36eb6e-fd38-4eb2-b573-897c69a0458d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//body[@id='customer_portal_page_body']/div/div/div/div/div/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/span/span[2]/span</value>
+      <webElementGuid>dad3fb31-619c-45c1-9a99-92601bffc68e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Current subscription'])[1]/following::span[4]</value>
+      <webElementGuid>cf95647f-c36d-4b50-959a-2d02f25ca214</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Privacy'])[1]/following::span[6]</value>
+      <webElementGuid>bf406da1-24e7-4f05-89e5-a1ec958312db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='€12.50 per month'])[1]/preceding::span[2]</value>
+      <webElementGuid>a188f2ab-3a66-422c-899c-a8f37d5bccb2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Cloud 1 TB']/parent::*</value>
+      <webElementGuid>641305d6-71d1-444a-8a1c-013f8b55d20e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span[2]/span</value>
+      <webElementGuid>22e9809c-c05c-40fa-8ec9-4a9f8077274e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Cloud 1 TB' or . = 'Cloud 1 TB')]</value>
+      <webElementGuid>35caf33b-8829-4632-9a13-065e6004aafa</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

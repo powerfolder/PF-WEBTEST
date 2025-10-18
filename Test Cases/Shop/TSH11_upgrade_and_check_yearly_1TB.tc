@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TSH11_upgrade_and_check_yearly_1TB</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>071e8e21-26f8-4c28-8a31-510eb6d98684</testCaseGuid>
+</TestCaseEntity>

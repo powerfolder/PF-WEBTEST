@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>upgrade_monthly_1TB</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9726ce4a-d251-481b-ab3c-61660e05ad59</testCaseGuid>
+</TestCaseEntity>
