@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Price</name>
+   <tag></tag>
+   <elementGuidId>1d9c17d8-869c-44b6-a2a3-8aee3a910ab7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//body[@id='customer_portal_page_body']/div/div/div/div/div/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div[2]/span/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.Text-color--default.Text-fontSize--24.Text-fontWeight--bold.Text-lineHeight--24.Text-numericSpacing--proportional.Text-typeface--base.Text-wrap--wrap.Text-display--inline > span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>a7316c18-9100-4e58-b4a6-534056cd3fc7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>€12.50 per month</value>
+      <webElementGuid>5e15411d-1024-4ad5-8cc8-9b69431ba1e9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;customer_portal_page_body&quot;)/div[@class=&quot;db-CustomerPortalRoot&quot;]/div[@class=&quot;sn-182o7r0 sn-1q4qxi9&quot;]/div[@class=&quot;⚙ ⚙&quot;]/div[@class=&quot;⚙ rs-0 as-0 as-1 as-2 as-3 as-4 as-5 as-6 as-7 as-8 ⚙1te0h1l&quot;]/div[@class=&quot;⚙  as-9 as-a as-b as-c as-d as-8 as-e ⚙156iqll&quot;]/div[@class=&quot;sn-token-provider ⚙  t0 t1 t2 t3 as-f as-g ⚙yfj593&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--row&quot;]/div[2]/div[@class=&quot;Box-root&quot;]/div[1]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--flexStart Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--flexStart Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty Margin-top--24 Margin-left--24&quot;]/div[1]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--flexStart Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty Margin-top--64 Margin-left--64&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--spaceBetween Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty Margin-top--16 Margin-left--16&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-alignItems--flexStart Flex-direction--row Flex-justifyContent--spaceBetween Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--flexStart Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty Margin-top--16 Margin-left--16&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--flexStart Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty Margin-top--12 Margin-left--12&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--flexStart Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty Margin-top--12 Margin-left--12&quot;]/span[@class=&quot;Text-color--default Text-fontSize--24 Text-fontWeight--bold Text-lineHeight--24 Text-numericSpacing--proportional Text-typeface--base Text-wrap--wrap Text-display--inline&quot;]/span[1]</value>
+      <webElementGuid>c3bc13ea-429f-4de6-a591-d5ff483077c0</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//body[@id='customer_portal_page_body']/div/div/div/div/div/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div[2]/span/span</value>
+      <webElementGuid>1c0e3b75-1ee7-4cf2-805e-cddc80554678</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cloud 1 TB'])[1]/following::span[3]</value>
+      <webElementGuid>edf67154-0a89-4f53-ad33-3738963bd91a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Current subscription'])[1]/following::span[7]</value>
+      <webElementGuid>b192c7c5-f77e-4821-bfe6-e712253820be</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='November 18, 2025'])[1]/preceding::span[1]</value>
+      <webElementGuid>944142eb-fe5d-4dbe-9f75-f6c92fb3ff1f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='€12.50 per month']/parent::*</value>
+      <webElementGuid>54baaa6f-b628-4bb8-a6a2-7a5acb8e5cea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div[2]/span/span</value>
+      <webElementGuid>2994c592-10a0-4f93-843b-716289948f87</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = '€12.50 per month' or . = '€12.50 per month')]</value>
+      <webElementGuid>3a6b79ee-9d64-4435-8c48-9f4eb3d33ae7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
