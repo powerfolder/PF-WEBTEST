@@ -60,7 +60,7 @@ firstElement.click()
 
 WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/Restore'))
 
-WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/button_Restore'))
+WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/button_Restore_file'))
 
 WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/lang_Close'))
 
