@@ -6,15 +6,23 @@
    <elementGuidId>bc0f266e-48df-40e7-a1a2-4e1ec7368af0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#pica_confirmation_dialog > div.modal-dialog > div.modal-content > div.modal-footer > button.btn.btn-primary</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>(//button[@type='button'])[6]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'button' and (text() = '
+                    Yes
+                ' or . = '
+                    Yes
+                ')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#pica_confirmation_dialog > div.modal-dialog > div.modal-content > div.modal-footer > button.btn.btn-primary</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
@@ -23,7 +31,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>74dea78a-1f8c-4a7a-a9a2-0d986c97c9f4</webElementGuid>
+      <webElementGuid>775f8e75-55cb-4426-ae4c-942e6c2cf576</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +39,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>7f019805-8e7e-4172-9022-16dc5854b79c</webElementGuid>
+      <webElementGuid>d96b0200-efd6-41ad-b444-312c2ce881d1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +47,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-primary</value>
-      <webElementGuid>0925d2bd-86ec-4e0b-8dd0-d9c467d17e10</webElementGuid>
+      <webElementGuid>95086fcd-d947-472a-8053-62cbee76718e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +55,7 @@
       <name>data-dismiss</name>
       <type>Main</type>
       <value>modal</value>
-      <webElementGuid>f38d2c20-7f86-480f-9f83-c0b298b0dac9</webElementGuid>
+      <webElementGuid>b4e01091-30d4-4142-b316-5f2960f9ae9b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -57,7 +65,7 @@
       <value>
                     Yes
                 </value>
-      <webElementGuid>b907b6ed-91fc-46c7-af46-8f261e4493ca</webElementGuid>
+      <webElementGuid>9326d852-eea6-4feb-a253-97252e304465</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -65,7 +73,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_confirmation_dialog&quot;)/div[@class=&quot;modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-footer&quot;]/button[@class=&quot;btn btn-primary&quot;]</value>
-      <webElementGuid>544bead6-c3a2-46fe-b313-d3d70df74c4f</webElementGuid>
+      <webElementGuid>0aa01d3f-936f-4177-ba42-21e6048431b7</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -73,7 +81,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[6]</value>
-      <webElementGuid>1ce5bcea-7cf8-494e-a82b-6ce63d116ece</webElementGuid>
+      <webElementGuid>2d4d4c31-7e50-4c05-8ba0-96b62b362082</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -81,7 +89,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_confirmation_dialog']/div/div/div[3]/button</value>
-      <webElementGuid>68dc6f3f-6d14-4f4c-8b1f-37f16b7fa6a1</webElementGuid>
+      <webElementGuid>e6b0990d-3666-4071-83be-626ee4c9aee3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Do you really want to purge Doc_num_0818.docx and remove all versioned content?'])[1]/following::button[1]</value>
-      <webElementGuid>310ec34e-2364-47c2-8828-02562690426f</webElementGuid>
+      <webElementGuid>2f9f7b07-a755-47a5-bfe0-d6f5e0f1f527</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -97,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Purge'])[2]/following::button[1]</value>
-      <webElementGuid>93f31c1d-ae2c-4774-a4e6-2e7f9b8813d6</webElementGuid>
+      <webElementGuid>9b378b7a-b55d-4668-bd62-42617f94b333</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -105,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[1]/preceding::button[1]</value>
-      <webElementGuid>433efda6-5881-4a94-86d7-2282c23715eb</webElementGuid>
+      <webElementGuid>eaa3db2c-6842-4d37-9f57-cf665d43b46d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -113,7 +121,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/div/div/div[3]/button</value>
-      <webElementGuid>7a1e1862-d4a7-4efc-b278-fff33da648ee</webElementGuid>
+      <webElementGuid>91219e90-0222-41b2-b441-d80de3436ac0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,6 +133,6 @@
                 ' or . = '
                     Yes
                 ')]</value>
-      <webElementGuid>d080682b-09cd-41a5-834a-70aa3de0996f</webElementGuid>
+      <webElementGuid>5fcb26bd-10d5-40c3-b5a4-04929871a57f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
