@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Restore_file</name>
+   <tag></tag>
+   <elementGuidId>17554ff1-74af-4113-9737-fc02dffc5b37</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_restore_versions']/div/table/tbody/tr[2]/td[7]/button</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;pica_restore_versions&quot;)/div[@class=&quot;pica-inputlist-scroller&quot;]/table[@class=&quot;pica-table-fixed table table-striped table-hover&quot;]/tbody[1]/tr[@class=&quot;pica-table-selection-disabled&quot;]/td[@class=&quot;text-right&quot;]/button[@class=&quot;btn btn-default&quot;][count(. | //button[@class = 'btn btn-default' and (text() = 'Restore' or . = 'Restore')]) = count(//button[@class = 'btn btn-default' and (text() = 'Restore' or . = 'Restore')])]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>bb7fa87d-9e50-4ea1-93e3-718d97561886</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-default</value>
+      <webElementGuid>0275073e-8f6b-49b3-9e43-e128fa3131b9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Restore</value>
+      <webElementGuid>4044765c-6eac-44b1-a6f7-ac4c82aecb5e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_restore_versions&quot;)/div[@class=&quot;pica-inputlist-scroller&quot;]/table[@class=&quot;pica-table-fixed table table-striped table-hover&quot;]/tbody[1]/tr[@class=&quot;pica-table-selection-disabled&quot;]/td[@class=&quot;text-right&quot;]/button[@class=&quot;btn btn-default&quot;]</value>
+      <webElementGuid>b556bef6-29a9-4c18-902f-240f295609fa</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_restore_versions']/div/table/tbody/tr[2]/td[7]/button</value>
+      <webElementGuid>c0e4fee5-7633-45d4-8d43-7714fc79bc26</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Download'])[2]/following::button[1]</value>
+      <webElementGuid>b0403fdf-5459-4814-bdd6-976df1410c2e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version 0'])[1]/following::button[2]</value>
+      <webElementGuid>97461a2f-63c1-46ab-87a4-42964eb07de1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Close'])[1]/preceding::button[1]</value>
+      <webElementGuid>4cf19c75-c65e-4177-9b43-436a17655ec4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[3]/preceding::button[2]</value>
+      <webElementGuid>f9d80ae3-678d-497e-b6aa-187610ac25cc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td[7]/button</value>
+      <webElementGuid>0dce6b10-4f1d-416d-af58-0258788534d6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'Restore' or . = 'Restore')]</value>
+      <webElementGuid>db5f961c-66c6-4610-93b8-8a64ef0e8635</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
