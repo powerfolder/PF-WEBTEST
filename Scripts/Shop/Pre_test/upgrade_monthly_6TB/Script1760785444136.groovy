@@ -61,7 +61,7 @@ WebUI.setText(findTestObject('Page_PowerFolder - shop_stripe/input_Kartendaten_c
 
 WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/input_Name desder Karteninhaberin_billingName'))
 
-WebUI.setText(findTestObject('Page_PowerFolder - shop_stripe/input_Name desder Karteninhaberin_billingName'), 'TSH04 Testcheckout')
+WebUI.setText(findTestObject('Page_PowerFolder - shop_stripe/input_Name desder Karteninhaberin_billingName'), 'Testcheckout')
 
 //WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/select_Country'))
 
@@ -93,6 +93,9 @@ WebUI.setText(findTestObject('Page_PowerFolder - shop_stripe/input_Rechnungsadre
 
 WebUI.delay(2)
 
+WebUI.scrollToElement(findTestObject('Page_PowerFolder - shop_stripe/div_Zahlungspflichtig abonnieren_SubmitButton-IconContainer'), 
+    0)
+
 WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/div_Zahlungspflichtig abonnieren_SubmitButton-IconContainer'))
 
 // high delay needed so stripe call back is done in background
@@ -101,5 +104,4 @@ WebUI.delay(120)
 WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/label_Mensuel'))
 
 WebUI.verifyElementText(findTestObject('Page_PowerFolder - shop_stripe/Cloud 6 TB_Current'), 'Current')
-
 

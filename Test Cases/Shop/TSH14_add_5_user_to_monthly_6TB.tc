@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TG04_Delete group</name>
+   <name>TSH14_add_5_user_to_monthly_6TB</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>20e3c15b-61be-4db7-b63f-fcfede3ea2e8</testCaseGuid>
+   <testCaseGuid>984e3c1a-78f4-4702-975a-996111797f35</testCaseGuid>
 </TestCaseEntity>

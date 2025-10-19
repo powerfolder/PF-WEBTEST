@@ -4,6 +4,7 @@
    <name>TF07_Copy Document</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>97c2382d-d9ee-4995-ae77-dd589f6445ac</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
