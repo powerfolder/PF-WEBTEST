@@ -56,17 +56,15 @@ WebElement firstElement = wait.until(ExpectedConditions.visibilityOfElementLocat
 
 // Cliquer sur le premier élément du tableau
 firstElement.click()
-
+//
 WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/Restore'))
+WebUI.delay(10)
 
 // Attendez que le tableau soit visible
 WebElement table = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//*[@id=\'pica_restore_versions\']/div')))
 
 // Trouvez l'élément button spécifié dans le tableau
-WebElement button = table.findElement(By.xpath('./table/tbody/tr[3]/td[6]/button'))
-
-// Cliquez sur le bouton
-button.click()
+WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/button_Restore_file'))
 
 WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/lang_Close'))
 

@@ -108,7 +108,7 @@ void restoreVersion(int rowIndex) {
 
 	WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(10))
 	WebElement table = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//*[@id="pica_restore_versions"]/div')))
-	WebElement button = table.findElement(By.xpath("./table/tbody/tr[" + rowIndex + "]/td[6]/button"))
+	WebElement button = table.findElement(By.xpath("./table/tbody/tr[" + rowIndex + "]/td[7]/button"))
 
 	button.click()
 	WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/lang_Close'))
