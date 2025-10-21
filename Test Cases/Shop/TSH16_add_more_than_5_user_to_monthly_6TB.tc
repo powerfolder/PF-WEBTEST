@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TSH16_add_more_than_5_user_to_monthly_6TB</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>74928735-51f6-4f7b-95f9-7d5e170e4cd8</testCaseGuid>
+</TestCaseEntity>

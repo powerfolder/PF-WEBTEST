@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TSH18_add_more_than_6TB_to_yearly_6TB</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d4d5946b-8cd6-4bea-993b-d01424ba166b</testCaseGuid>
+</TestCaseEntity>

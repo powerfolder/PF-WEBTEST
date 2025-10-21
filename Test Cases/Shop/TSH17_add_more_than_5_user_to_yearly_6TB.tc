@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TSH17_add_more_than_5_user_to_yearly_6TB</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>455d1cfc-17db-448e-bf5a-6fd3eab76038</testCaseGuid>
+</TestCaseEntity>
