@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Download</name>
+   <tag></tag>
+   <elementGuidId>7148a6a5-50d9-49c2-b2a2-d5876b423969</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='versions_download']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#versions_download</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>cfb37e16-5de2-4c64-acee-ca1b2a92b2f9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>versions_download</value>
+      <webElementGuid>bcb69aa2-c06a-464e-8f59-6f39fdbfde3b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-table-selection-single</value>
+      <webElementGuid>869ca475-1d77-4cac-b6cf-14f8b667b110</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                            
+                            Download
+                        </value>
+      <webElementGuid>18fd8ba9-f22d-4555-93d4-1b59030f1a75</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;versions_download&quot;)</value>
+      <webElementGuid>e44271b1-97c6-4f85-86c5-bb3cb054c00e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@id='versions_download']</value>
+      <webElementGuid>30e9ad5e-0929-44c4-a6f9-3e2310e097f8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='versions_table']/thead/tr/th[3]/div/a</value>
+      <webElementGuid>2e6eed65-a3c8-412f-b26d-3282aaa67fba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Deselect'])[1]/following::a[1]</value>
+      <webElementGuid>961f90bf-cc64-4a5f-a5fe-9cff4be23224</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Doc_num_0221.docx'])[1]/following::a[2]</value>
+      <webElementGuid>c33d37b0-ff88-438a-9592-12ee31c6f0c9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Restore'])[1]/preceding::a[1]</value>
+      <webElementGuid>b76c2c09-7744-44e3-8fc0-7c11fbbf2e85</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//th[3]/div/a</value>
+      <webElementGuid>c43d6430-5db3-4cc5-a805-124c2ed2eba6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@id = 'versions_download' and (text() = '
+                            
+                            Download
+                        ' or . = '
+                            
+                            Download
+                        ')]</value>
+      <webElementGuid>edd15072-be7e-4787-a701-ef646ddce0d5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

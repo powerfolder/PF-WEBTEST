@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Download</name>
+   <tag></tag>
+   <elementGuidId>1aeae5c3-9456-4d5e-9e4f-a68378f41ea9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_download_versions']/div/table/tbody/tr[2]/td[6]/button</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.btn.btn-default</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>29bb579e-dbce-4b1a-8784-a418024dc055</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-default</value>
+      <webElementGuid>a9550910-3262-4cac-a3fc-66485c69cb99</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Download</value>
+      <webElementGuid>c9de0894-feef-431f-8336-98f3e6a2eec6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_download_versions&quot;)/div[@class=&quot;pica-inputlist-scroller&quot;]/table[@class=&quot;pica-table-fixed table table-striped table-hover&quot;]/tbody[1]/tr[@class=&quot;pica-table-selection-disabled&quot;]/td[@class=&quot;text-right&quot;]/button[@class=&quot;btn btn-default&quot;]</value>
+      <webElementGuid>2890d749-0e1a-41fd-8916-46bd569b52f6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_download_versions']/div/table/tbody/tr[2]/td[6]/button</value>
+      <webElementGuid>c511da7e-5baa-4410-aa8c-e42ed306abb6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version 0'])[1]/following::button[1]</value>
+      <webElementGuid>c1aca3cc-eb89-4a8e-912b-f2e1936da8c5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Doc_num_0221.docx'])[4]/following::button[1]</value>
+      <webElementGuid>73c2c2d2-0f3c-4acc-967b-92af877e22e5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Close'])[2]/preceding::button[1]</value>
+      <webElementGuid>ee8b567b-3f8d-423f-9f3f-9ee8266598a7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[4]/preceding::button[2]</value>
+      <webElementGuid>be47487d-385d-4b44-8af7-f57e38c37858</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td[6]/button</value>
+      <webElementGuid>52b02eb1-80da-4fc2-9e4e-ccbc65246211</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'Download' or . = 'Download')]</value>
+      <webElementGuid>bbca4d4f-7b7b-4537-ab95-ba57590a605e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
