@@ -66,6 +66,6 @@ WebUI.click(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/t
  
  WebUI.delay(5)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/td_Group'), Group)
+WebUI.verifyElementText(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/div_Invite users and groups or create'), Group + '×')
 
 WebUI.closeBrowser()
