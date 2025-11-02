@@ -1,107 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Restore</name>
+   <name>check_storage</name>
    <tag></tag>
-   <elementGuidId>e1861433-8f28-4e89-bb8a-d1d9ccb3443b</elementGuidId>
+   <elementGuidId>3aafbefa-4ce9-474d-a435-bbb66c66cdfd</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='pica_restore_versions']/div/table/tbody/tr[2]/td[6]/button</value>
+         <key>CSS</key>
+         <value>td:nth-of-type(3)</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>button.btn.btn-default.pull-right</value>
+         <key>XPATH</key>
+         <value>//body/div[2]/div[1]/div[2]/div[2]/table/tbody/tr/td[3]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>button</value>
-      <webElementGuid>2d92dadb-e3be-4893-9615-5e3c71eae566</webElementGuid>
+      <value>td</value>
+      <webElementGuid>9f7f1490-8f1d-45e1-ba8c-04d6b6a1d5e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>data-sort</name>
       <type>Main</type>
-      <value>btn btn-default pull-right</value>
-      <webElementGuid>48293e79-09d5-40e4-96a3-69bc770a8fb9</webElementGuid>
+      <value>6597069766656</value>
+      <webElementGuid>cad55818-d29c-4c93-bb8d-180b1290c492</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Restore</value>
-      <webElementGuid>54b42f40-3694-422f-92b5-a014031f8342</webElementGuid>
+      <value>6 TB6 TB</value>
+      <webElementGuid>682e584e-c6be-4f7a-bd60-f0126dc1cb8a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pica_restore_versions&quot;)/div[@class=&quot;pica-inputlist-scroller&quot;]/table[@class=&quot;pica-table-fixed table table-striped table-hover&quot;]/tbody[1]/tr[@class=&quot;pica-table-selection-disabled&quot;]/td[@class=&quot;text-right&quot;]/button[@class=&quot;btn btn-default pull-right&quot;]</value>
-      <webElementGuid>42e679be-ab27-48cd-8c9b-4892543e3cff</webElementGuid>
+      <value>id(&quot;Object_360893663&quot;)/td[3]</value>
+      <webElementGuid>1fcd2427-fd4f-4ec3-af7d-4c39c2788a15</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pica_restore_versions']/div/table/tbody/tr[2]/td[6]/button</value>
-      <webElementGuid>caaa9035-3d4b-45ac-bc35-d67594d10420</webElementGuid>
+      <value>//tr[@id='Object_360893663']/td[3]</value>
+      <webElementGuid>ce81c9e9-35d2-4978-9918-e793b40fcf4d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version 0'])[1]/following::button[1]</value>
-      <webElementGuid>8acca121-3a29-4a32-80db-ad17c259df02</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='munswzai@email.com'])[3]/following::td[1]</value>
+      <webElementGuid>7a2c418c-550a-44bc-a418-559ddd5933d8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Doc_num_5265.docx'])[4]/following::button[1]</value>
-      <webElementGuid>11d2fcdd-a1b3-422a-a18e-8512ff3163b3</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Valid till'])[1]/following::td[3]</value>
+      <webElementGuid>6d8d4b0a-a9ba-4af8-8142-62e6aed30fba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Close'])[1]/preceding::button[1]</value>
-      <webElementGuid>32a28576-a9fb-4074-8756-e6b6039a5e82</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[2]/preceding::td[5]</value>
+      <webElementGuid>14abb4e2-6dc6-4585-a53e-07a6410ea01c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[3]/preceding::button[2]</value>
-      <webElementGuid>b0db199e-ebf0-46d3-8de2-4a7661d335f9</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Create'])[1]/preceding::td[5]</value>
+      <webElementGuid>22477bdd-adbe-459f-be29-67277a7de6c4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[2]/td[6]/button</value>
-      <webElementGuid>c9368fef-7f55-4189-9422-42a0bd535cde</webElementGuid>
+      <value>//td[3]</value>
+      <webElementGuid>707ef2eb-c4cb-411c-a45e-7697b6566c66</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//button[(text() = 'Restore' or . = 'Restore')]</value>
-      <webElementGuid>fa01d032-bd45-4069-80fa-43a7a1cc1abc</webElementGuid>
+      <value>//td[(text() = '6 TB6 TB' or . = '6 TB6 TB')]</value>
+      <webElementGuid>a3c9242f-fc6d-4217-9dec-91594506c62a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

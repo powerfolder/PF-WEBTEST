@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TB09_Download deleted file</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>313146b0-2459-4313-bda8-01ddcd93d2e3</testCaseGuid>
+</TestCaseEntity>

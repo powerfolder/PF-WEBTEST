@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TSH19_add_more_than_6TB_to_monthly_6TB</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4fd4669f-03c2-4abe-868b-f3aab948cca7</testCaseGuid>
+</TestCaseEntity>

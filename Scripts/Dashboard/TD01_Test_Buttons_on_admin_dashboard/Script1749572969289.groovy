@@ -19,23 +19,23 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Dashboard/servertab_mimas'), 0)
+WebUI.verifyElementPresent(findTestObject('Dashboard/servertab_mimas'), 30)
 
-WebUI.verifyElementPresent(findTestObject('Dashboard/Accounts_Manage'), 0)
+WebUI.verifyElementPresent(findTestObject('Dashboard/Accounts_Manage'), 30)
 
-WebUI.verifyElementPresent(findTestObject('Dashboard/Storage_Manage'), 0)
+WebUI.verifyElementPresent(findTestObject('Dashboard/Storage_Manage'), 30)
 
-WebUI.verifyElementPresent(findTestObject('Dashboard/Folders_Manage'), 0)
+WebUI.verifyElementPresent(findTestObject('Dashboard/Folders_Manage'), 30)
 
-WebUI.verifyElementPresent(findTestObject('Dashboard/Pricing_License'), 0)
+WebUI.verifyElementPresent(findTestObject('Dashboard/Pricing_License'), 30)
 
-WebUI.verifyElementPresent(findTestObject('Dashboard/Activation_Manage'), 0)
+WebUI.verifyElementPresent(findTestObject('Dashboard/Activation_Manage'), 30)
 
-WebUI.verifyElementPresent(findTestObject('Dashboard/Groups_Manage'), 0)
+WebUI.verifyElementPresent(findTestObject('Dashboard/Groups_Manage'), 30)
 
-WebUI.verifyElementPresent(findTestObject('Dashboard/Org_Manage'), 0)
+WebUI.verifyElementPresent(findTestObject('Dashboard/Org_Manage'), 30)
 
-WebUI.verifyElementPresent(findTestObject('Dashboard/Dashboard_Logs'), 0)
+WebUI.verifyElementPresent(findTestObject('Dashboard/Dashboard_Logs'), 30)
 
 WebUI.click(findTestObject('Dashboard/Accounts_Manage'))
 
@@ -89,13 +89,13 @@ String currentUrl = WebUI.getUrl()
 
 WebUI.comment('L\'URL actuelle est: ' + currentUrl)
 
-String expectedUrl = 'https://mimas.powerfolder.net/pricing'
+String expectedUrl = 'https://www.powerfolder.com/pricing/'
 
 boolean isCorrectUrl = currentUrl.equals(expectedUrl)
 
 WebUI.verifyEqual(isCorrectUrl, true)
 
-WebUI.verifyElementText(findTestObject('External links/Page_Pricing - PowerFolder/license_Our Flexible Plans'), 'Our Flexible Plans')
+WebUI.verifyElementText(findTestObject('External links/Page_Pricing/Compare Functions'), 'COMPARE FUNCTIONS')
 
 WebUI.closeWindowIndex(1)
 

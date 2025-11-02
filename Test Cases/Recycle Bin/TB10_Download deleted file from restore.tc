@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TB10_Download deleted file from restore</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>66b94953-c784-44e3-af3f-1e80abfd2fcf</testCaseGuid>
+</TestCaseEntity>

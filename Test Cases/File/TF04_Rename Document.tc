@@ -4,6 +4,7 @@
    <name>TF04_Rename Document</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>9f21bde3-d961-4566-bf47-fe36cf31fd43</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

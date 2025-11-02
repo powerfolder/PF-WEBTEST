@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Return to PowerFolder</name>
+   <tag></tag>
+   <elementGuidId>06ea7d86-01ff-4daf-8f04-2fb4c1e81cb0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//body[@id='customer_portal_page_body']/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.⚙.rs-1.rs-2.rs-2.rs-0.rs-2.as-h.as-i.as-j.as-y.as-z.as-m.as-n.as-o.as-p.as-10.as-r.as-s.as-t.as-u.as-v.as-11.as-12.as-x.as-6.⚙e42vsz</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>b95bb831-5c48-4b44-be5b-e3a62a1979f2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>https://mimas.powerfolder.net</value>
+      <webElementGuid>75390259-2a4d-4ae2-ba2e-b892f66e8694</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-testid</name>
+      <type>Main</type>
+      <value>return-to-business-link</value>
+      <webElementGuid>3f390c88-cbe9-4a32-b408-f53003a402c3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>f36040a7-01df-4438-bafc-f38c011df455</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>⚙ rs-1 rs-2 rs-2 rs-0 rs-2 as-h as-i as-j as-y as-z as-m as-n as-o as-p as-10 as-r as-s as-t as-u as-v as-11 as-12 as-x as-6 ⚙e42vsz</value>
+      <webElementGuid>5b90507d-a52e-4d1c-969f-006b777d4e78</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Return to PowerFolder - dal33t GmbH</value>
+      <webElementGuid>e64686ad-8067-4d63-aabd-468b470314c6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;customer_portal_page_body&quot;)/div[@class=&quot;db-CustomerPortalRoot&quot;]/div[@class=&quot;sn-182o7r0 sn-1q4qxi9&quot;]/div[@class=&quot;⚙ ⚙&quot;]/div[@class=&quot;⚙ rs-0 as-0 as-1 as-2 as-3 as-4 as-5 as-6 as-7 as-8 ⚙1te0h1l&quot;]/div[@class=&quot;⚙  as-9 as-a as-b as-c as-d as-8 as-e ⚙156iqll&quot;]/div[@class=&quot;sn-token-provider ⚙  t0 t1 t2 t3 as-f as-g ⚙yfj593&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--row&quot;]/div[@class=&quot;Box-root&quot;]/div[1]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--spaceBetween&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--flexStart Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty Margin-top--32 Margin-left--32&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--flexStart Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty Margin-top--32 Margin-left--32&quot;]/a[@class=&quot;⚙ rs-1 rs-2 rs-2 rs-0 rs-2 as-h as-i as-j as-y as-z as-m as-n as-o as-p as-10 as-r as-s as-t as-u as-v as-11 as-12 as-x as-6 ⚙e42vsz&quot;]</value>
+      <webElementGuid>7953e826-dc87-41e0-b7b2-0f33416d46b3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//body[@id='customer_portal_page_body']/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/a</value>
+      <webElementGuid>5222bf26-0b0c-4fe2-a79e-6c80576dbe8a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PowerFolder - dal33t GmbH partners with Stripe for simplified billing.'])[1]/following::a[1]</value>
+      <webElementGuid>c712d15f-db55-4ecc-be25-b14f87120f0d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Test mode'])[1]/following::a[1]</value>
+      <webElementGuid>781c26ff-4000-4c32-a27c-7b1a75fc19fc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Powered by'])[1]/preceding::a[1]</value>
+      <webElementGuid>1a321a2c-cb53-493c-a0ff-0e8cd1400fa3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, 'https://mimas.powerfolder.net')])[2]</value>
+      <webElementGuid>dfa18f33-2a3b-42eb-9055-c2b91ffc3533</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/a</value>
+      <webElementGuid>afd79349-ce1a-4796-bfe6-fa0c321462f8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = 'https://mimas.powerfolder.net' and (text() = 'Return to PowerFolder - dal33t GmbH' or . = 'Return to PowerFolder - dal33t GmbH')]</value>
+      <webElementGuid>9676f4f4-7235-4d6b-9242-bc5992004d61</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -10,11 +10,16 @@
          <value>//th[3]/div/a/span</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>id(&quot;versions_restore&quot;)/span[@class=&quot;pica-glyph glyphicons glyphicons-restart&quot;]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>span.pica-glyph.glyphicons.glyphicons-restart</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +27,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>6bdefbc7-c0b1-45d4-b563-0368a2de327a</webElementGuid>
+      <webElementGuid>04019e1b-acf1-43d1-8e0a-2785ec54804e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +35,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-glyph glyphicons glyphicons-restart</value>
-      <webElementGuid>90c7ba37-2762-45e3-8709-bc13d903d02b</webElementGuid>
+      <webElementGuid>e54c560e-f194-4ab9-8530-feb7a199d746</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +43,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;versions_restore&quot;)/span[@class=&quot;pica-glyph glyphicons glyphicons-restart&quot;]</value>
-      <webElementGuid>1d76a105-f6e7-4002-b462-e6adc9c1e03b</webElementGuid>
+      <webElementGuid>b0111f93-436e-40af-a7fe-2120c4d18c62</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +51,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//a[@id='versions_restore']/span</value>
-      <webElementGuid>742d5600-145b-4805-a767-d57dda99dc1b</webElementGuid>
+      <webElementGuid>12c340a4-dac0-4e58-828c-6c59418b2936</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,6 +59,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//th[3]/div/a/span</value>
-      <webElementGuid>29150f01-61d5-41ed-9dcd-32272c5ddbd3</webElementGuid>
+      <webElementGuid>368fa4fb-3d2e-4b9c-8d16-27d120569662</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

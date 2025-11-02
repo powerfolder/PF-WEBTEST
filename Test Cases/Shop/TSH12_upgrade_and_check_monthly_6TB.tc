@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TSH12_upgrade_and_check_monthly_6TB</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f2f22c98-8d80-486e-b076-16e04f2591c0</testCaseGuid>
+</TestCaseEntity>

@@ -57,7 +57,7 @@ WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/
 WebElement table = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//*[@id=\'pica_restore_versions\']/div')))
 
 // Trouvez l'élément button spécifié dans le tableau
-WebElement button = table.findElement(By.xpath('./table/tbody/tr[3]/td[6]/button'))
+WebElement button = table.findElement(By.xpath('./table/tbody/tr[2]/td[7]/button'))
 
 // Cliquez sur le bouton
 button.click()
@@ -100,7 +100,7 @@ WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/
 WebElement table_2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//*[@id=\'pica_restore_versions\']/div')))
 
 // Trouvez l'élément button spécifié dans le tableau
-WebElement button_2 = table_2.findElement(By.xpath('./table/tbody/tr[4]/td[6]/button'))
+WebElement button_2 = table_2.findElement(By.xpath('./table/tbody/tr[3]/td[7]/button'))
 
 // Cliquez sur le bouton
 button_2.click()
@@ -143,7 +143,7 @@ WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/
 WebElement table_3 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//*[@id=\'pica_restore_versions\']/div')))
 
 // Trouvez l'élément button spécifié dans le tableau
-WebElement button_3 = table_3.findElement(By.xpath('./table/tbody/tr[5]/td[6]/button'))
+WebElement button_3 = table_3.findElement(By.xpath('./table/tbody/tr[4]/td[7]/button'))
 
 button_3.click()
 
@@ -185,7 +185,7 @@ WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/
 WebElement table_4 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//*[@id=\'pica_restore_versions\']/div')))
 
 // Trouvez l'élément button spécifié dans le tableau
-WebElement button_4 = table_4.findElement(By.xpath('./table/tbody/tr[6]/td[6]/button'))
+WebElement button_4 = table_4.findElement(By.xpath('./table/tbody/tr[5]/td[7]/button'))
 
 button_4.click()
 

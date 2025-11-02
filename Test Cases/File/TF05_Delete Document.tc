@@ -4,6 +4,7 @@
    <name>TF05_Delete Document</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>d75947eb-54fa-4e9b-993a-609306c92af6</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

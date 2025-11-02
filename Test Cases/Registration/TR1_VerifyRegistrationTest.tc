@@ -4,5 +4,6 @@
    <name>TR1_VerifyRegistrationTest</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>7318892d-f97d-49d6-aa8e-f920915ad773</testCaseGuid>
 </TestCaseEntity>
