@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL48_check read write in only office</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ab4738b2-b24e-4985-ac76-cc4a13bb6ab3</testCaseGuid>
+</TestCaseEntity>
