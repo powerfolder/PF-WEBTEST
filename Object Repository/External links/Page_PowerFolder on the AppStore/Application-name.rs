@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Preview'])[1]/following::h2[1]</value>
+         <value>//body/div/div/div[2]/main/div/section[1]/div/div[3]/section/h1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>h2</value>
-      <webElementGuid>7cb71ed2-2e3b-4925-aa1d-b23d1b406ba7</webElementGuid>
+      <webElementGuid>a87cb162-1db0-43b5-9c17-f9cb67ad9ed0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>product-header__identity app-header__identity</value>
-      <webElementGuid>a4546e73-a40b-410d-93bc-9acefed15008</webElementGuid>
+      <webElementGuid>dd0f2654-9e4e-4073-9abd-0ab98f108d6c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -43,7 +43,7 @@
             PowerFolder
           
         </value>
-      <webElementGuid>7c2f3cf1-1d6f-43b3-9a3b-6e1b4bb9e5b1</webElementGuid>
+      <webElementGuid>e42d9500-108b-444e-95c2-b0578ad5cc49</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <value>/html[1]/body[@class=&quot;globalnav-scrim ember-application has-js no-touch&quot;]/div[@class=&quot;ember-view&quot;]/main[@class=&quot;selfclear is-apps-theme&quot;]/div[@class=&quot;animation-wrapper is-visible&quot;]/section[@class=&quot;l-content-width section section--hero product-hero&quot;]/div[@class=&quot;l-row&quot;]/div[@class=&quot;l-column small-7
         medium-8 large-9
         small-valign-top&quot;]/header[@class=&quot;product-header app-header product-header--padded-start&quot;]/h2[@class=&quot;product-header__identity app-header__identity&quot;]</value>
-      <webElementGuid>c79fea54-a2d4-491a-a070-3f220b9e8b5d</webElementGuid>
+      <webElementGuid>8c9900bb-ab4d-4510-ab27-4dce9dc69561</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Preview'])[1]/following::h2[1]</value>
-      <webElementGuid>b03666c1-aa2f-486a-a691-b72fa5757406</webElementGuid>
+      <webElementGuid>1428761b-14de-47b5-80fa-ae92e3e1dd9b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Free'])[1]/preceding::h2[1]</value>
-      <webElementGuid>5012d9d6-792c-4ed4-b63b-f33c670167d3</webElementGuid>
+      <webElementGuid>8a395ed8-807d-4a15-8ed5-4d8e35fc1327</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//header/h2</value>
-      <webElementGuid>42a764f4-9ede-4e00-bbbb-54ed7f2bbd18</webElementGuid>
+      <webElementGuid>e099cbcf-70f7-4b7f-8b3e-0803e7aa1d90</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,6 +93,6 @@
             PowerFolder
           
         ')]</value>
-      <webElementGuid>6147cbb9-ba4d-4c2f-85e4-43c276fc8f97</webElementGuid>
+      <webElementGuid>660f6b2a-43a9-4e5c-a815-3dc3d7d8260d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
