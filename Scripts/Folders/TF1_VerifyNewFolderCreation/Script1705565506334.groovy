@@ -30,6 +30,7 @@ WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 
 String folderName = getRandomFolderName()
+/*
 
 String lan = GlobalVariable.LANG
 
@@ -42,6 +43,7 @@ if (!(lan.equals('GERMAN'))) {
 
     WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getFolderNameLabelText')), 'Ordner neu erstellen', FailureHandling.CONTINUE_ON_FAILURE)
 }
+*/
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
 

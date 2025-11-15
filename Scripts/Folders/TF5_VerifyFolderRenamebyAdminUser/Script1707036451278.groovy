@@ -38,6 +38,7 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
 //WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getFolderCreationNotification')), 'Folder created')
+
 Thread.sleep(7000)
 
 WebDriver driver = DriverFactory.getWebDriver()
