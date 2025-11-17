@@ -8,9 +8,9 @@ WebUI.maximizeWindow()
 
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Login - PowerFolder')
 
-WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.Username)
+WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
 
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Password)
+WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'pBWYF2pcOsUDpIqekeA0mU3zdby4CPdv')
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
