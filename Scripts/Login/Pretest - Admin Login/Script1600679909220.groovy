@@ -19,11 +19,9 @@ WebUI.openBrowser(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.Username)
+WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
 
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Password)
+WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'pBWYF2pcOsUDpIqekeA0mU3zdby4CPdv')
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
