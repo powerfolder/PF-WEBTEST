@@ -10,7 +10,7 @@ WebUI.verifyEqual(WebUI.getWindowTitle(), 'Login - PowerFolder')
 
 WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
 
-WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'pBWYF2pcOsUDpIqekeA0mU3zdby4CPdv')
+WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
