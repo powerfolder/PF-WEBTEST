@@ -43,7 +43,7 @@ isPresent = WebUI.waitForElementVisible(findTestObject('Object Repository/Login/
 // Vérifie si l'élément de saisie de mot de passe est présent sur la page
 assert isPresent
 
-WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'pBWYF2pcOsUDpIqekeA0mU3zdby4CPdv')
+WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
 
 // Clique sur le bouton "Login"
 WebUI.click(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login'))
