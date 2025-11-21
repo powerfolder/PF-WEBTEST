@@ -150,6 +150,25 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn3))
 
 WebUI.click(findTestObject('Object Repository/Folders/shareLink'))
 
+WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
+
+// Générer la date et l'heure actuelles avec une minute ajoutée
+String newDateTime = generateDateTimePlusTenSeconds()
+
+// Afficher la date dans la console (une seule fois)
+println('Date et heure générées : ' + newDateTime)
+
+// Effacer et saisir la nouvelle date dans le champ
+TestObject accountValidTill = findTestObject('Page_Folders - PowerFolder/inputValidTill')
+
+WebUI.executeJavaScript('arguments[0].value = ""', [WebUI.findWebElement(accountValidTill)])
+
+WebUI.setText(accountValidTill, newDateTime)
+
+WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
+
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 
 WebUI.doubleClick(findTestObject('Object Repository/Page_Folders - PowerFolder/icon-copy'))
@@ -166,27 +185,13 @@ WebUI.delay(2)
 
 WebUI.navigateToUrl(my_clipboard)
 
+WebUI.delay(3)
+
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
-WebUI.delay(10)
+WebUI.click(findTestObject('Page_Folders - PowerFolder/closeExpiredAlert'))
 
-
-WebUI.verifyElementVisible(findTestObject('ONLY OFFICE/iframe_editor'))
-
-// Switch into the iframe
-WebUI.switchToFrame(findTestObject('ONLY OFFICE/iframe_editor'), 5)
-
-// Try typing into the document
-WebUI.sendKeys(findTestObject('ONLY OFFICE/editor_body'), 'TEST_READ_ONLY')
-
-// Get the document text
-String txt = WebUI.getText(findTestObject('ONLY OFFICE/editor_body'))
-
-// Exit the iframe
-WebUI.switchToDefaultContent()
-
-// Verification: the text MUST NOT be written
-assert !(txt.contains('TEST_READ_ONLY'))
+WebUI.verifyElementPresent(findTestObject('lang/expiredlinkText'), 30)
 
 WebUI.closeBrowser()
 
@@ -222,5 +227,15 @@ WebElement findShareButton(String fileName) {
 	WebDriver driver = DriverFactory.getWebDriver()
 
 	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[8]/a/span'))
+}
+
+String generateDateTimePlusTenSeconds() {
+	Calendar calendar = Calendar.getInstance()
+
+	calendar.add(Calendar.SECOND, 10)
+
+	SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm:ss')
+
+	return sdf.format(calendar.getTime())
 }
 

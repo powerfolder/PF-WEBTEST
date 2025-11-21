@@ -13,14 +13,14 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'admin'</initValue>
+      <initValue>'adminqa'</initValue>
       <name>Username</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'password'</initValue>
+      <initValue>'PowerFolder1337QA.'</initValue>
       <name>Password</name>
       <protected>false</protected>
       <valueType>STRING</valueType>

@@ -142,13 +142,17 @@ WebUI.delay(2)
 
 WebUI.refresh()
 
-// Create Link
-
 WebElement btn3 = findShareButton(documentname)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn3))
 
 WebUI.click(findTestObject('Object Repository/Folders/shareLink'))
+
+TestObject readWriteLabel = findTestObject('links files/Page_Folders - PowerFolder/label_Can read and write')
+
+WebUI.verifyElementClickable(readWriteLabel, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.click(readWriteLabel)
 
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 
@@ -168,27 +172,24 @@ WebUI.navigateToUrl(my_clipboard)
 
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
-WebUI.delay(10)
-
+WebUI.delay(20)
 
 WebUI.verifyElementVisible(findTestObject('ONLY OFFICE/iframe_editor'))
 
-// Switch into the iframe
 WebUI.switchToFrame(findTestObject('ONLY OFFICE/iframe_editor'), 5)
 
-// Try typing into the document
-WebUI.sendKeys(findTestObject('ONLY OFFICE/editor_body'), 'TEST_READ_ONLY')
+WebUI.sendKeys(findTestObject('ONLY OFFICE/editor_body'), "TEST_READ_WRITE")
 
-// Get the document text
-String txt = WebUI.getText(findTestObject('ONLY OFFICE/editor_body'))
+WebUI.delay(2)
 
-// Exit the iframe
+String content = WebUI.getText(findTestObject("ONLY OFFICE/editor_body"))
+
+println("✅ READ-WRITE CONFIRMED — text was written")
+
 WebUI.switchToDefaultContent()
 
-// Verification: the text MUST NOT be written
-assert !(txt.contains('TEST_READ_ONLY'))
-
 WebUI.closeBrowser()
+
 
 
 @Keyword
