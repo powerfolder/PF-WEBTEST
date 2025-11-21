@@ -11,10 +11,18 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/ul/li[8]/a</value>
+         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/ul/li[9]/a</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = '
+                            Notes
+                        ' or . = '
+                            Notes
+                        ')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
@@ -23,7 +31,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>adaf563a-8d54-4dba-8ecc-21d3c3c05329</webElementGuid>
+      <webElementGuid>c9abcc51-b70a-4bc5-8648-14f53851943f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -33,7 +41,7 @@
       <value>
                             Notes
                         </value>
-      <webElementGuid>dc0de58c-6077-4435-b1de-6ed320eac01f</webElementGuid>
+      <webElementGuid>a3d3ee50-cb17-46dd-a276-aa6b8ddb589d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -41,7 +49,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_account_dialog&quot;)/div[@class=&quot;modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-body&quot;]/ul[@class=&quot;pica-space pica-nav-tabs nav nav-tabs&quot;]/li[@class=&quot;hidden-xs active&quot;]/a[1]</value>
-      <webElementGuid>9da893c6-346d-40cb-9f05-77adf03a1315</webElementGuid>
+      <webElementGuid>d06c3732-d564-438c-86d2-ac1a03cd230a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -49,7 +57,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_account_dialog']/div/div/div[2]/ul/li[8]/a</value>
-      <webElementGuid>f6aef549-0f96-46d5-8022-df716a55226d</webElementGuid>
+      <webElementGuid>c7ba3669-74af-4df0-a257-9246ea0cf15f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -57,7 +65,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Invoice details'])[1]/following::a[1]</value>
-      <webElementGuid>38b024f9-961a-44ee-b20b-8ee54fca358c</webElementGuid>
+      <webElementGuid>eb7cbf0b-c958-4d61-b97d-5f86df461f23</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -65,7 +73,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Organizations'])[2]/following::a[2]</value>
-      <webElementGuid>25f27c2e-809b-4dad-af83-cc5835830bb2</webElementGuid>
+      <webElementGuid>d03bc5db-78c6-4067-b657-c718a7da13c9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -73,7 +81,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Account'])[2]/preceding::a[2]</value>
-      <webElementGuid>35ab638c-2aad-41f3-9394-0aa908796233</webElementGuid>
+      <webElementGuid>706db2a9-31da-4837-9e6a-f94327ddc2cb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -81,7 +89,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[8]/a</value>
-      <webElementGuid>f8fb196f-a5a0-45b4-9fdd-f1094ce940e4</webElementGuid>
+      <webElementGuid>5734a4e5-132a-4d81-bb73-f7a3e62bc6fd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,6 +101,6 @@
                         ' or . = '
                             Notes
                         ')]</value>
-      <webElementGuid>a7225c4f-206d-4d24-a73d-8deb016f545e</webElementGuid>
+      <webElementGuid>c64bc758-1fc6-4ae2-b045-6ad2abb13c5c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -11,10 +11,14 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[8]/div/textarea</value>
+         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[9]/div/textarea</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'pica_account_notes' and @placeholder = 'Notes']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
@@ -23,7 +27,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>textarea</value>
-      <webElementGuid>d57c77ed-9e25-4a2d-8a33-203223c0348c</webElementGuid>
+      <webElementGuid>afac7c00-bac8-4579-a7ba-08cfa885ad48</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +35,7 @@
       <name>id</name>
       <type>Main</type>
       <value>pica_account_notes</value>
-      <webElementGuid>2f6c49ac-657a-4d51-9db1-1aafce5e0728</webElementGuid>
+      <webElementGuid>3b5c54c9-7dd9-4a35-b193-8b7eb5eae505</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +43,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control</value>
-      <webElementGuid>62050cd1-5585-4fac-afd1-0971fa130888</webElementGuid>
+      <webElementGuid>a7f65d19-0050-4af9-a68e-60f8b577fd5e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +51,7 @@
       <name>rows</name>
       <type>Main</type>
       <value>5</value>
-      <webElementGuid>20d2e369-3246-4cd8-b709-11e358c05c6f</webElementGuid>
+      <webElementGuid>2cdcf61f-d436-441f-aa10-e71acf528cf8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +59,7 @@
       <name>data-placeholder</name>
       <type>Main</type>
       <value>placeholder_notes</value>
-      <webElementGuid>4f047c31-17f1-45e4-8f32-8c456cf8cb7a</webElementGuid>
+      <webElementGuid>8d401ab4-7919-486b-9c49-ec515c71aeb0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -63,7 +67,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Notes</value>
-      <webElementGuid>cafb174b-abe2-4d95-9332-0dfe7340b526</webElementGuid>
+      <webElementGuid>33f33d02-392b-4bcc-a42d-3df8712cd70d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -71,7 +75,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_account_notes&quot;)</value>
-      <webElementGuid>4e6f615b-a34c-4d6f-a597-356269e17987</webElementGuid>
+      <webElementGuid>6b735e72-995b-4f58-aa69-ef1a56839bc7</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -79,7 +83,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//textarea[@id='pica_account_notes']</value>
-      <webElementGuid>036bf69f-a654-4d85-acfe-84237f963f34</webElementGuid>
+      <webElementGuid>57b42e63-945e-4ad3-9f78-1dfd19c324ff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +91,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_account_dialog']/div/div/div[2]/div[8]/div/textarea</value>
-      <webElementGuid>849a1d1e-2c21-4d52-a2a0-d422b17c03af</webElementGuid>
+      <webElementGuid>5bfdeabc-0509-476b-a3ae-eedae138bee4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +99,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//textarea</value>
-      <webElementGuid>bd9988a6-61de-4b8e-a023-3f26cddf3581</webElementGuid>
+      <webElementGuid>247762fe-dfed-4b02-886c-7db6a576522d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,6 +107,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//textarea[@id = 'pica_account_notes' and @placeholder = 'Notes']</value>
-      <webElementGuid>5e46a374-cf97-4822-9367-776b4e2aed4b</webElementGuid>
+      <webElementGuid>116dfe14-464c-4dda-ad6f-4a0af98b191f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
