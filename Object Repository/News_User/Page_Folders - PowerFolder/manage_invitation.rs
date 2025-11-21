@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>1201d025-b3a3-4407-af4a-bcf86ea3d4f3</webElementGuid>
+      <webElementGuid>2c401de9-152d-41ee-9900-b47400e7575d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>glyphicons glyphicons-directions pica-glyph</value>
-      <webElementGuid>c2b4272b-9040-44af-bb17-b2509d7a2bd0</webElementGuid>
+      <webElementGuid>47d8deb8-0255-461b-ab4a-e172e052670b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +39,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;Object_1203562674&quot;)/td[@class=&quot;pica-icon-column&quot;]/div[@class=&quot;pica-inline dropdown&quot;]/a[@class=&quot;dropdown-toggle&quot;]/span[@class=&quot;glyphicons glyphicons-directions pica-glyph&quot;]</value>
-      <webElementGuid>4648db3d-8937-4051-b5b6-59be6d22e4d8</webElementGuid>
+      <webElementGuid>ed0b904c-b7d2-4aa2-a2ea-12a7dec4195c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='Object_1203562674']/td[7]/div/a/span</value>
-      <webElementGuid>e9cfa3de-7245-4649-9ebb-df8743575c08</webElementGuid>
+      <webElementGuid>6079064f-82b9-4da3-8db0-0585f39a6d7f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -55,6 +55,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[7]/div/a/span</value>
-      <webElementGuid>ca9b3a4a-5d97-4aea-83c6-5552474f2bc2</webElementGuid>
+      <webElementGuid>7e41fa3a-33e9-4a26-976f-7ae8cfbdb37e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
