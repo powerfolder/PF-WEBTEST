@@ -6,12 +6,12 @@
    <elementGuidId>1ee321a5-6ced-49b0-85e3-74e9809aedae</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[1]/table/tbody/tr[5]/td/a/span</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>lang[name=&quot;label_links&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//body/div[2]/div[1]/div[1]/table/tbody/tr[6]/td/a/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>lang</value>
-      <webElementGuid>dea197a1-4471-4e8c-b5a3-8a13b4f3e47d</webElementGuid>
+      <webElementGuid>461fe497-09a0-4190-9f18-8453dded277d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-hidden-on-small text-center</value>
-      <webElementGuid>fd7b2eaf-21ef-47b4-911f-3bbc8f27487c</webElementGuid>
+      <webElementGuid>c75054a2-66ff-4f52-bffa-7ff8efdbca3c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +39,7 @@
       <name>name</name>
       <type>Main</type>
       <value>label_links</value>
-      <webElementGuid>dc58be94-5ff3-4c5a-921f-ebb22479075d</webElementGuid>
+      <webElementGuid>78d6ea3a-407d-4796-adb6-d385b1a8be51</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +47,7 @@
       <name>data-plural</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>959b02ad-110b-40eb-8cf1-81306d40734f</webElementGuid>
+      <webElementGuid>151c6a5a-2b37-4de4-8264-4472ac0ce413</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -55,7 +55,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Links</value>
-      <webElementGuid>28da1303-f2d0-4d87-ba27-295374501079</webElementGuid>
+      <webElementGuid>f1a41df9-f42c-4798-8930-4bdfaabad39d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -63,7 +63,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_menu&quot;)/table[1]/tbody[1]/tr[5]/td[@class=&quot;text-center&quot;]/a[1]/lang[@class=&quot;pica-hidden-on-small text-center&quot;]</value>
-      <webElementGuid>e6494bb6-4a3c-4737-9b39-773a0e8be7c7</webElementGuid>
+      <webElementGuid>18a072e1-08f0-497a-80a4-76685df47a79</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//lang[@name='label_links']</value>
-      <webElementGuid>21473bc7-7925-472f-a6ff-d0679ffc9e73</webElementGuid>
+      <webElementGuid>6f64e830-cc8f-4d2a-8b7f-c07acd6a9422</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_menu']/table/tbody/tr[5]/td/a/lang</value>
-      <webElementGuid>527b566d-7310-4f65-b5c5-8d2a5cd61e9f</webElementGuid>
+      <webElementGuid>be3c7ef1-1d24-45a8-9ac9-08ded6dcac0e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +87,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Recycle Bin'])[1]/following::lang[1]</value>
-      <webElementGuid>36b25f16-066a-45cd-8292-cb215ec2e041</webElementGuid>
+      <webElementGuid>a23ac5dd-bf2d-49e2-8392-7dcf883bdc49</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +95,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Folders'])[1]/following::lang[2]</value>
-      <webElementGuid>38cb3efc-8656-4a8d-8e33-051795c35a4d</webElementGuid>
+      <webElementGuid>6952cd44-2514-4bf6-b045-cc7072e60cbc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,7 +103,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Accounts'])[1]/preceding::lang[1]</value>
-      <webElementGuid>aa5d5e19-23c8-4cbf-a3fc-7fc62ca356e3</webElementGuid>
+      <webElementGuid>e45da428-0689-49f1-b61a-acac23c90c1b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,7 +111,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Groups'])[1]/preceding::lang[2]</value>
-      <webElementGuid>344aecb5-0dbe-49fe-993e-cfc2414594a7</webElementGuid>
+      <webElementGuid>10f210c1-d48f-493b-af7b-30dc2bc768b8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -119,7 +119,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Links']/parent::*</value>
-      <webElementGuid>73d10d4f-ba36-41df-8541-da3fc9fc524d</webElementGuid>
+      <webElementGuid>e557ff40-dcb3-4d7a-922e-cf3cb5778dfd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -127,7 +127,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[5]/td/a/lang</value>
-      <webElementGuid>b11927dd-4c5e-4e87-88e8-1c6890956f0c</webElementGuid>
+      <webElementGuid>29c63793-3ad1-4f18-935d-2d28f3cdd330</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -135,6 +135,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//lang[@name = 'label_links' and (text() = 'Links' or . = 'Links')]</value>
-      <webElementGuid>5cf32705-7645-44ac-9b12-37ca722e0b86</webElementGuid>
+      <webElementGuid>d7b0230b-580f-48f2-aa1a-d32fd0844268</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
