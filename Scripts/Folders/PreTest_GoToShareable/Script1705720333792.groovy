@@ -34,10 +34,7 @@ WebUI.navigateToUrl(GlobalVariable.URL)
 assert WebUI.getWindowTitle().equals('Login - PowerFolder')
 
 // Remplit le champ de saisie pour le nom d'utilisateur avec la valeur de la variable globale Username
-WebUI.setText(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_register new account_Username'), GlobalVariable.Username)
-
-// Clique sur le bouton "Login"
-WebUI.click(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login'))
+WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
 
 // Attend jusqu'à 2 secondes pour que l'élément de saisie de mot de passe soit visible et stocke le résultat dans isPresent
 isPresent = WebUI.waitForElementVisible(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'), 
@@ -46,8 +43,7 @@ isPresent = WebUI.waitForElementVisible(findTestObject('Object Repository/Login/
 // Vérifie si l'élément de saisie de mot de passe est présent sur la page
 assert isPresent
 
-// Remplit le champ de saisie de mot de passe avec la valeur de la variable globale Password1
-WebUI.setText(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'), GlobalVariable.Password)
+WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
 
 // Clique sur le bouton "Login"
 WebUI.click(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login'))
