@@ -80,7 +80,7 @@ String tooltipText = WebUI.getAttribute(findTestObject('News_User/Page_News - Po
 
 println('Tooltip content: ' + tooltipText)
 
-String expectedAdminEmail = GlobalVariable.Username
+String expectedAdminEmail = 'adminqa'
 
 String actualEmail = tooltipText.substring(tooltipText.lastIndexOf(' ') + 1).trim()
 
