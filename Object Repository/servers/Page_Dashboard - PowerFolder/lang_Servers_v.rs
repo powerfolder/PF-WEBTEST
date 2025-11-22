@@ -11,10 +11,14 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//tr[11]/td/a/lang</value>
+         <value>//tr[12]/td/a/lang</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@name = 'label_servers' and (text() = 'Servers' or . = 'Servers')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
@@ -23,7 +27,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>lang</value>
-      <webElementGuid>f811ee16-f7f2-4dbd-a502-d6ae6e9961e6</webElementGuid>
+      <webElementGuid>0ee6f189-671f-4c6a-b293-4188940d33e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +35,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-hidden-on-small text-center</value>
-      <webElementGuid>90f28e64-63c8-43f6-8e81-34128f847ee0</webElementGuid>
+      <webElementGuid>529e5f26-a454-4ce9-832a-e626294a5921</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +43,7 @@
       <name>name</name>
       <type>Main</type>
       <value>label_servers</value>
-      <webElementGuid>a49b6acd-128b-4978-864f-10701b206dcf</webElementGuid>
+      <webElementGuid>51e9ce88-066f-4779-94e0-affdde2091ee</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +51,7 @@
       <name>data-plural</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>b0eb18e8-d215-486c-8b0c-3888b7c6c500</webElementGuid>
+      <webElementGuid>b7e5dd49-ac19-4f06-a888-f83493e3995f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -55,7 +59,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Servers</value>
-      <webElementGuid>ad3af3e2-f7dd-4932-abf8-77ad1f185e6e</webElementGuid>
+      <webElementGuid>860c2962-f9c7-4f72-b434-a8f47dd8320b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -63,7 +67,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_menu&quot;)/table[1]/tbody[1]/tr[11]/td[@class=&quot;text-center&quot;]/a[1]/lang[@class=&quot;pica-hidden-on-small text-center&quot;]</value>
-      <webElementGuid>1b680a4f-33e5-4553-b99f-1f5c38b8bff4</webElementGuid>
+      <webElementGuid>bb2b9eed-2677-4327-b6db-5527326ab3ce</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -71,7 +75,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//lang[@name='label_servers']</value>
-      <webElementGuid>552d685d-ff95-4fa9-9ece-3b89cdf2a1f4</webElementGuid>
+      <webElementGuid>e28580e9-b179-4d00-ac04-5d6f27b138db</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +83,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_menu']/table/tbody/tr[11]/td/a/lang</value>
-      <webElementGuid>8abea10a-eb60-4542-b4a4-f196816bdc48</webElementGuid>
+      <webElementGuid>c09e371f-fb9c-458f-a220-3762955717ff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +91,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Configurations'])[1]/following::lang[1]</value>
-      <webElementGuid>04cf5282-5fc0-47b5-bde0-5f7d2774fc5a</webElementGuid>
+      <webElementGuid>9f3fb428-5829-409e-b963-bc7cefe45d3d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +99,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Devices'])[1]/following::lang[2]</value>
-      <webElementGuid>ea04819f-66eb-4a05-af0e-a9c75e19fb88</webElementGuid>
+      <webElementGuid>2628ed90-fc30-471b-a093-c8ea2dffc71d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,7 +107,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Storage'])[1]/preceding::lang[1]</value>
-      <webElementGuid>bfa5a045-12f6-4055-b93b-737518b2874b</webElementGuid>
+      <webElementGuid>94944c26-f62e-49df-b6ca-de2a1ec82052</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,7 +115,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Logs'])[1]/preceding::lang[2]</value>
-      <webElementGuid>a119eb6c-2a27-49d7-8a0d-4083c5705be7</webElementGuid>
+      <webElementGuid>150dad68-c986-46aa-adee-7468d292ecba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -119,7 +123,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Servers']/parent::*</value>
-      <webElementGuid>c99726d4-9ef9-44d5-94a0-dfd2bcbc1f19</webElementGuid>
+      <webElementGuid>fef87484-610d-410a-a25c-f07c2ee01dd1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -127,7 +131,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value></value>
-      <webElementGuid>89dac2be-08d2-4f28-a9bc-7159905b4b2b</webElementGuid>
+      <webElementGuid>87f0098d-ea2a-4037-94ed-02216a435b4b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -135,6 +139,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//lang[@name = 'label_servers' and (text() = 'Servers' or . = 'Servers')]</value>
-      <webElementGuid>6bb0ee95-00ff-475c-ada8-13eb12918815</webElementGuid>
+      <webElementGuid>9df5a762-2d73-4223-810a-edcd10a7789d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
