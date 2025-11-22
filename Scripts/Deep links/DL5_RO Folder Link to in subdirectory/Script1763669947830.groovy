@@ -66,6 +66,7 @@ import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.junit.Assert
+import helpers.Helper
 
 //Top-level
 
@@ -147,7 +148,7 @@ WebUI.refresh()
 
 // Create Link
 
-WebElement btn3 = findShareButton(folderName)
+WebElement btn3 = Helper.findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn3))
 
@@ -208,10 +209,3 @@ String getRandomFolderName() {
 
 	return folderName
 }
-
-WebElement findShareButton(String fileName) {
-	WebDriver driver = DriverFactory.getWebDriver()
-
-	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[8]/a/span'))
-}
-

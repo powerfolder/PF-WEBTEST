@@ -38,6 +38,7 @@ import java.nio.file.Files as Files
 import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Calendar as Calendar
 import java.util.Date as Date
+import helpers.Helper
 
 //Top-level
 String topLevel = 'Top-level_' + getRandomFolderName()
@@ -115,7 +116,7 @@ WebUI.delay(2)
 
 WebUI.refresh()
 
-WebElement btn3 = findShareButton(documentname)
+WebElement btn3 = Helper.findShareButton(documentname)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn3))
 
@@ -174,11 +175,5 @@ String getRandomFolderName() {
     String folderName = getTimestamp()
 
     return folderName
-}
-
-WebElement findShareButton(String fileName) {
-    WebDriver driver = DriverFactory.getWebDriver()
-
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[8]/a/span'))
 }
 

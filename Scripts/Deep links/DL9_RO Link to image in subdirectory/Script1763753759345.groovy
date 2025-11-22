@@ -39,6 +39,7 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Calendar as Calendar
 import java.util.Date as Date
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
+import helpers.Helper
 
 //Top-level
 String topLevel = 'Top-level_' + getRandomFolderName()
@@ -100,17 +101,21 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
 // Upload image
 String projDir = RunConfiguration.getProjectDir()
 
-String imageName = projDir + '/Images/group.png'
+String imageName = projDir + '/Images/image_links.png'
 
 WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Upload file'))
 
-WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/add_file'), FailureHandling.STOP_ON_FAILURE) /*
+WebUI.uploadFile(findTestObject('file_objects/upload/Page_Folders - PowerFolder/add_file'), imageName)
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/close_upload'))
 
 // Create Link
 
-WebElement btn3 = findShareButton(imageName)
+WebElement btn3 = Helper.findShareButton(imageName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn3))
 
@@ -136,27 +141,8 @@ assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
 WebUI.delay(10)
 
-
 WebUI.verifyElementVisible(findTestObject('ONLY OFFICE/iframe_editor'))
 
-// Switch into the iframe
-WebUI.switchToFrame(findTestObject('ONLY OFFICE/iframe_editor'), 5)
-
-// Try typing into the document
-WebUI.sendKeys(findTestObject('ONLY OFFICE/editor_body'), 'TEST_READ_ONLY')
-
-// Get the document text
-String txt = WebUI.getText(findTestObject('ONLY OFFICE/editor_body'))
-
-// Exit the iframe
-WebUI.switchToDefaultContent()
-
-// Verification: the text MUST NOT be written
-assert !(txt.contains('TEST_READ_ONLY'))
-
-WebUI.closeBrowser()
-
-*/
 
 @Keyword
 WebElement findFolder(String folderName) {
@@ -184,10 +170,3 @@ String getRandomFolderName() {
 
     return folderName
 }
-
-WebElement findShareButton(String fileName) {
-    WebDriver driver = DriverFactory.getWebDriver()
-
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[8]/a/span'))
-}
-
