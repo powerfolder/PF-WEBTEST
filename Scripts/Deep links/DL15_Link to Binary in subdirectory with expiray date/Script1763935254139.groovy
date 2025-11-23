@@ -148,8 +148,24 @@ WebUI.click(findTestObject('Object Repository/Folders/shareLink'))
 
 deleteBinaryFile(binaryFilePath)
 
-// password
-WebUI.setText(findTestObject('Page_Link - PowerFolder/lang_Password required'), 'Easy_PASS@131190')
+WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
+
+// Générer la date et l'heure actuelles avec une minute ajoutée
+String newDateTime = Helper.generateDateTimePlusTenSeconds()
+
+// Afficher la date dans la console (une seule fois)
+println('Date et heure générées : ' + newDateTime)
+
+// Effacer et saisir la nouvelle date dans le champ
+TestObject accountValidTill = findTestObject('Page_Folders - PowerFolder/inputValidTill')
+
+WebUI.executeJavaScript('arguments[0].value = ""', [WebUI.findWebElement(accountValidTill)])
+
+WebUI.setText(accountValidTill, newDateTime)
+
+WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
+
+WebUI.delay(2)
 
 // Sauvegarder les paramètres
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
@@ -175,25 +191,15 @@ WebUI.delay(2)
 
 WebUI.navigateToUrl(my_clipboard)
 
-WebUI.delay(3)
-
-WebUI.setText(findTestObject('Page_Link - PowerFolder/inputPassword'), 'Easy_PASS@131190')
-
-WebUI.click(findTestObject('Page_Link - PowerFolder/buttonOK'))
 
 // Vérification du titre de la fenêtre
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
-// Attendre que la page charge
-WebUI.delay(3)
+WebUI.click(findTestObject('Page_Folders - PowerFolder/closeExpiredAlert'))
 
-// Vérifier présence du bouton de download (ou élément PDF)
-WebUI.verifyElementPresent(findTestObject('Links/Page_Link - PowerFolder/pdf_Download'), 2)
+WebUI.verifyElementPresent(findTestObject('lang/expiredlinkText'), 30)
 
-
-// Fermer le navigateur
 WebUI.closeBrowser()
-
 
 /*******************************
  *         MÉTHODES

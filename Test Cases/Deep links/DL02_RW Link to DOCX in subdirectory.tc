@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>DL5_RO Folder Link to in subdirectory</name>
+   <name>DL02_RW Link to DOCX in subdirectory</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>135a7e6b-053f-489b-a4b9-092b04d3548a</testCaseGuid>
+   <testCaseGuid>2137dcb8-d61e-463d-9535-092ccbd4a521</testCaseGuid>
 </TestCaseEntity>

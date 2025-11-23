@@ -63,4 +63,14 @@ public class Helper {
 		WebDriver driver = DriverFactory.getWebDriver()
 		return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'" + fileName + "')]/../../../td[7]/a"))
 	}
+	@Keyword
+	def static generateDateTimePlusTenSeconds() {
+		Calendar calendar = Calendar.getInstance()
+	
+		calendar.add(Calendar.SECOND, 10)
+	
+		SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm:ss')
+	
+		return sdf.format(calendar.getTime())
+	}
 }

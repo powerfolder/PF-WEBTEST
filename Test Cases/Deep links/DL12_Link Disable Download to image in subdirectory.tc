@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>DL2_RW Link to DOCX in subdirectory</name>
+   <name>DL12_Link Disable Download to image in subdirectory</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>2137dcb8-d61e-463d-9535-092ccbd4a521</testCaseGuid>
+   <testCaseGuid>31a3761b-cd45-42f3-9bd9-87c3bb1e510d</testCaseGuid>
 </TestCaseEntity>

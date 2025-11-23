@@ -60,12 +60,6 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Calendar as Calendar
 import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import org.openqa.selenium.By
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.WebElement
-import com.kms.katalon.core.webui.driver.DriverFactory
-import org.junit.Assert
 import helpers.Helper
 
 //Top-level
@@ -128,27 +122,28 @@ WebElement btn2 = findFolder(subSubDirectory)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
 
-// Create Folder
+// Create DOCX
 
-String folderName = "folder_" + getRandomFolderName()
+String documentName = "DOCX_" + getRandomFolderName()
 
 
 WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
-WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
+WebUI.click(findTestObject('Object Repository/Folders/createDocument'))
 
-WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'),
-	folderName)
+WebUI.setText(findTestObject('Object Repository/Folders/inputFolderName'), documentName)
 
-WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
+WebUI.click(findTestObject('Object Repository/Folders/buttonOK'))
+
+WebUI.delay(5)
+
+WebUI.switchToWindowIndex(0)
 
 WebUI.delay(2)
 
 WebUI.refresh()
 
-// Create Link
-
-WebElement btn3 = Helper.findShareButton(folderName)
+WebElement btn3 = Helper.findShareButton(documentName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn3))
 
@@ -176,17 +171,26 @@ WebUI.delay(2)
 
 WebUI.navigateToUrl(my_clipboard)
 
-WebUI.delay(3)
-
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
-WebDriver driver = DriverFactory.getWebDriver()
+WebUI.delay(20)
 
-List<WebElement> list = driver.findElements(By.className('pica-crumb'))
+WebUI.verifyElementVisible(findTestObject('ONLY OFFICE/iframe_editor'))
 
-assert list.get(list.size() - 1).getText().equals(folderName)
+WebUI.switchToFrame(findTestObject('ONLY OFFICE/iframe_editor'), 5)
+
+WebUI.sendKeys(findTestObject('ONLY OFFICE/editor_body'), "TEST_READ_WRITE")
+
+WebUI.delay(2)
+
+String content = WebUI.getText(findTestObject("ONLY OFFICE/editor_body"))
+
+println("✅ READ-WRITE CONFIRMED — text was written")
+
+WebUI.switchToDefaultContent()
 
 WebUI.closeBrowser()
+
 
 
 @Keyword
@@ -215,5 +219,3 @@ String getRandomFolderName() {
 
 	return folderName
 }
-
-

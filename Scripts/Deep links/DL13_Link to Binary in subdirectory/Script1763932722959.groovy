@@ -148,8 +148,6 @@ WebUI.click(findTestObject('Object Repository/Folders/shareLink'))
 
 deleteBinaryFile(binaryFilePath)
 
-// password
-WebUI.setText(findTestObject('Page_Link - PowerFolder/lang_Password required'), 'Easy_PASS@131190')
 
 // Sauvegarder les paramètres
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
@@ -175,11 +173,6 @@ WebUI.delay(2)
 
 WebUI.navigateToUrl(my_clipboard)
 
-WebUI.delay(3)
-
-WebUI.setText(findTestObject('Page_Link - PowerFolder/inputPassword'), 'Easy_PASS@131190')
-
-WebUI.click(findTestObject('Page_Link - PowerFolder/buttonOK'))
 
 // Vérification du titre de la fenêtre
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')

@@ -61,7 +61,6 @@ import java.util.Calendar as Calendar
 import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import helpers.Helper
-
 //Top-level
 
 String topLevel = "Top-level_" + getRandomFolderName()
@@ -143,17 +142,32 @@ WebUI.delay(2)
 
 WebUI.refresh()
 
+// Create Link
+
 WebElement btn3 = Helper.findShareButton(documentname)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn3))
 
 WebUI.click(findTestObject('Object Repository/Folders/shareLink'))
 
-TestObject readWriteLabel = findTestObject('links files/Page_Folders - PowerFolder/label_Can read and write')
+WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
 
-WebUI.verifyElementClickable(readWriteLabel, FailureHandling.CONTINUE_ON_FAILURE)
+// Générer la date et l'heure actuelles avec une minute ajoutée
+String newDateTime = Helper.generateDateTimePlusTenSeconds()
 
-WebUI.click(readWriteLabel)
+// Afficher la date dans la console (une seule fois)
+println('Date et heure générées : ' + newDateTime)
+
+// Effacer et saisir la nouvelle date dans le champ
+TestObject accountValidTill = findTestObject('Page_Folders - PowerFolder/inputValidTill')
+
+WebUI.executeJavaScript('arguments[0].value = ""', [WebUI.findWebElement(accountValidTill)])
+
+WebUI.setText(accountValidTill, newDateTime)
+
+WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 
@@ -171,26 +185,15 @@ WebUI.delay(2)
 
 WebUI.navigateToUrl(my_clipboard)
 
+WebUI.delay(3)
+
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
-WebUI.delay(20)
+WebUI.click(findTestObject('Page_Folders - PowerFolder/closeExpiredAlert'))
 
-WebUI.verifyElementVisible(findTestObject('ONLY OFFICE/iframe_editor'))
-
-WebUI.switchToFrame(findTestObject('ONLY OFFICE/iframe_editor'), 5)
-
-WebUI.sendKeys(findTestObject('ONLY OFFICE/editor_body'), "TEST_READ_WRITE")
-
-WebUI.delay(2)
-
-String content = WebUI.getText(findTestObject("ONLY OFFICE/editor_body"))
-
-println("✅ READ-WRITE CONFIRMED — text was written")
-
-WebUI.switchToDefaultContent()
+WebUI.verifyElementPresent(findTestObject('lang/expiredlinkText'), 30)
 
 WebUI.closeBrowser()
-
 
 
 @Keyword
@@ -219,3 +222,5 @@ String getRandomFolderName() {
 
 	return folderName
 }
+
+

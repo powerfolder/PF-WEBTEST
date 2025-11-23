@@ -39,7 +39,8 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Calendar as Calendar
 import java.util.Date as Date
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
-import helpers.Helper
+import helpers.Helper as Helper
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 //Top-level
 String topLevel = 'Top-level_' + getRandomFolderName()
@@ -71,8 +72,8 @@ String subDirectory = 'subdirectory_' + getRandomFolderName()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
 
-WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
-    subDirectory)
+WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'),
+	subDirectory)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
@@ -89,8 +90,8 @@ String subSubDirectory = 'subSubDirectory_' + getRandomFolderName()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
 
-WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
-    subSubDirectory)
+WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'),
+	subSubDirectory)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
@@ -101,25 +102,32 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
 // Upload image
 String projDir = RunConfiguration.getProjectDir()
 
-String imageName = projDir + '/Images/image_links.png'
+String image_path = projDir + '/Images/image_links.png'
 
 WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Upload file'))
 
-WebUI.uploadFile(findTestObject('file_objects/upload/Page_Folders - PowerFolder/add_file'), imageName)
+WebUI.uploadFile(findTestObject('file_objects/upload/Page_Folders - PowerFolder/add_file'), image_path)
 
 WebUI.delay(3)
 
 WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/close_upload'))
 
-// Create Link
+WebUI.delay(2)
 
+WebUI.refresh()
+
+String imageName = 'image_links.png'
+
+// Create Link
 WebElement btn3 = Helper.findShareButton(imageName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn3))
 
 WebUI.click(findTestObject('Object Repository/Folders/shareLink'))
+
+WebUI.click(findTestObject('Links/Page_Folders - PowerFolder/label_Disable Download (View only)'))
 
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 
@@ -139,34 +147,39 @@ WebUI.navigateToUrl(my_clipboard)
 
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
-WebUI.delay(10)
+WebUI.delay(5)
 
-WebUI.verifyElementVisible(findTestObject('ONLY OFFICE/iframe_editor'))
+WebUI.click(findTestObject('Links/Page_Link - PowerFolder/button_Close-pngdownload'))
+
+WebUI.verifyElementNotPresent(findTestObject('Links/Page_Link - PowerFolder/pdf_Download'), 2)
+
+WebUI.closeBrowser()
 
 
 @Keyword
 WebElement findFolder(String folderName) {
-    WebDriver driver = DriverFactory.getWebDriver()
+	WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//td[2]/span/a[contains(text(),\'' + folderName) + '\')]'))
+	return driver.findElement(By.xpath(('//td[2]/span/a[contains(text(),\'' + folderName) + '\')]'))
 }
 
 String getTimestamp() {
-    Date todaysDate = new Date()
+	Date todaysDate = new Date()
 
-    String formattedDate = todaysDate.format('dd_MMM_yyyy_hh_mm_ss')
+	String formattedDate = todaysDate.format('dd_MMM_yyyy_hh_mm_ss')
 
-    return formattedDate
+	return formattedDate
 }
 
 String getRandomFileName() {
-    String fileName = 'File_' + getTimestamp()
+	String fileName = 'File_' + getTimestamp()
 
-    return fileName
+	return fileName
 }
 
 String getRandomFolderName() {
-    String folderName = getTimestamp()
+	String folderName = getTimestamp()
 
-    return folderName
+	return folderName
 }
+

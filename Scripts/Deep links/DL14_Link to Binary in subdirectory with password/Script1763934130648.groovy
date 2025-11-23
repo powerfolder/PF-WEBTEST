@@ -114,6 +114,10 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 WebElement btnSubSub = findFolder(subSubDirectory)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btnSubSub))
 
+// Upload via dialog (fichier binaire)
+String projDir = RunConfiguration.getProjectDir()
+String image_path = projDir + '/Images/image_links.png'   // (déclaré mais non utilisé ici, tu peux le supprimer si tu veux)
+
 WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Upload file'))
@@ -128,7 +132,8 @@ WebElement addfile = wait.until(
 addfile.click()
 
 // Générer le fichier binaire
-String binaryName = "binary_" + getRandomFileName()
+String binaryName = getRandomFileName()
+GlobalVariable.binaryName = binaryName
 
 String binaryFilePath = createBinaryFileOnDesktop(binaryName)
 
@@ -141,12 +146,13 @@ WebUI.delay(2)
 WebUI.refresh()
 
 WebElement shareBtn1 = Helper.findShareButton(binaryName)
-
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(shareBtn1))
 
 WebUI.click(findTestObject('Object Repository/Folders/shareLink'))
 
 deleteBinaryFile(binaryFilePath)
+
+binaryName = GlobalVariable.binaryName
 
 // password
 WebUI.setText(findTestObject('Page_Link - PowerFolder/lang_Password required'), 'Easy_PASS@131190')
@@ -163,23 +169,25 @@ String my_clipboard = Toolkit
 	.getContents(null)
 	.getTransferData(DataFlavor.stringFlavor)
 
+WebUI.comment('URL copié : ' + my_clipboard)
+
+// Vérifier que l'URL est valide
 assert (my_clipboard != null) && my_clipboard.startsWith('https')
 
-WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/button_Close'))
+// Ouvrir le lien dans un nouvel onglet
+WebUI.executeJavaScript("window.open(arguments[0], '_blank');", Arrays.asList(my_clipboard))
 
-WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
-
-WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-
-WebUI.delay(2)
-
-WebUI.navigateToUrl(my_clipboard)
+// Passer au nouvel onglet (index 1)
+WebUI.switchToWindowIndex(1)
 
 WebUI.delay(3)
 
 WebUI.setText(findTestObject('Page_Link - PowerFolder/inputPassword'), 'Easy_PASS@131190')
 
 WebUI.click(findTestObject('Page_Link - PowerFolder/buttonOK'))
+
+// Optionnel : Vérification du titre de la page ou chargement réussi
+WebUI.verifyNotEqual(WebUI.getWindowTitle(), '', FailureHandling.CONTINUE_ON_FAILURE)
 
 // Vérification du titre de la fenêtre
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
