@@ -59,7 +59,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\r\n\t * Create Folder (MKCOL). Success 201 (Created) or 405 (Already exists).\r\n\t */"
         },
         {
           "name": "uploadFile",
@@ -142,7 +143,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\r\n\t * Upload file (PUT) – creates file from stream in certain size.\r\n\t */"
         },
         {
           "name": "deletePath",
@@ -199,7 +201,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\r\n\t * File/Folder DELETE.\r\n\t */"
         },
         {
           "name": "renameOrMove",
@@ -282,7 +285,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\r\n\t * Rename\u003dmove (MOVE). destPath is relative to baseUrl.\r\n\t */"
         },
         {
           "name": "exists",
@@ -339,7 +343,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\r\n\t * check if file is created (PROPFIND depth 0). returns 200/207.\r\n\t */"
         },
         {
           "name": "uploadFile",
@@ -409,7 +414,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "renameOrMove",
@@ -479,10 +485,11 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

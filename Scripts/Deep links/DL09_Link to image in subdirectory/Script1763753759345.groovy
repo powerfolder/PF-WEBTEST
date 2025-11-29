@@ -57,7 +57,11 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFold
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-WebUI.delay(2)
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Folders/inputSearch'), topLevel)
+
+WebUI.delay(5)
 
 WebElement btn = findFolder(topLevel)
 
@@ -126,8 +130,6 @@ WebElement btn3 = Helper.findShareButton(imageName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn3))
 
 WebUI.click(findTestObject('Object Repository/Folders/shareLink'))
-
-WebUI.click(findTestObject('Links/Page_Folders - PowerFolder/label_Disable Download (View only)'))
 
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 

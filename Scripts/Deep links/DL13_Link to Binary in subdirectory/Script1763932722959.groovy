@@ -1,15 +1,9 @@
-/***********************
- *   STATIC IMPORTS
- ***********************/
+
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-
-/***********************
- *   KATALON KEYWORDS
- ***********************/
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -26,10 +20,6 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.webui.driver.DriverFactory
 import internal.GlobalVariable
-
-/***********************
- *   SELENIUM
- ***********************/
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import org.openqa.selenium.WebDriver
@@ -71,7 +61,11 @@ WebUI.setText(findTestObject('Object Repository/Folders/inputFolderName'), topLe
 
 WebUI.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-WebUI.delay(2)
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Folders/inputSearch'), topLevel)
+
+WebUI.delay(5)
 
 WebElement btnTop = findFolder(topLevel)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btnTop))

@@ -47,10 +47,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5d6b48e0-dc43-4e55-b723-4445af1947d0</guid>
+      <guid>5cb1acca-43d6-44e0-9b95-5b1a4326ec97</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Deep links/DL08_Folder Link to in subdirectory with expiray date</testCaseId>
+      <testCaseId>Test Cases/Deep links/DL06_R_W_U Folder Link to in subdirectory</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -61,10 +61,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5cb1acca-43d6-44e0-9b95-5b1a4326ec97</guid>
+      <guid>5d6b48e0-dc43-4e55-b723-4445af1947d0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Deep links/DL06_R_W_U Folder Link to in subdirectory</testCaseId>
+      <testCaseId>Test Cases/Deep links/DL08_Folder Link to in subdirectory with expiray date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -114,6 +114,34 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/DL15_Link to Binary in subdirectory with expiray date</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f71ac8ec-3c5f-460b-87ae-771a4212e79e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Deep links/DL16_upload to subdir link</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cf46f808-8468-48bf-ab48-99625f4b6cae</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Deep links/DL17_Download from subdir link</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1726e965-7686-4c46-a0b5-d7d1a3081864</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Deep links/DL18_QR subdir link</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b803f6d1-643f-491c-86ac-c217aad311a9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Deep links/DL19_Download From link Button</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

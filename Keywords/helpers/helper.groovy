@@ -66,11 +66,11 @@ public class Helper {
 	@Keyword
 	def static generateDateTimePlusTenSeconds() {
 		Calendar calendar = Calendar.getInstance()
-	
+
 		calendar.add(Calendar.SECOND, 10)
-	
+
 		SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm:ss')
-	
+
 		return sdf.format(calendar.getTime())
 	}
 }

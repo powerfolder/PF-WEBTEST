@@ -62,8 +62,6 @@ import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import helpers.Helper
 
-
-
 //Top-level
 
 String topLevel = "Top-level_" + getRandomFolderName()
@@ -80,7 +78,11 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFold
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-WebUI.delay(2)
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Folders/inputSearch'), topLevel)
+
+WebUI.delay(5)
 
 WebElement btn = findFolder(topLevel)
 
@@ -174,7 +176,6 @@ WebUI.navigateToUrl(my_clipboard)
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
 WebUI.delay(10)
-
 
 WebUI.verifyElementVisible(findTestObject('ONLY OFFICE/iframe_editor'))
 

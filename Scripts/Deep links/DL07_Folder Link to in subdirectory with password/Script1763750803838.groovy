@@ -84,7 +84,11 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFold
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-WebUI.delay(2)
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Folders/inputSearch'), topLevel)
+
+WebUI.delay(5)
 
 WebElement btn = findFolder(topLevel)
 

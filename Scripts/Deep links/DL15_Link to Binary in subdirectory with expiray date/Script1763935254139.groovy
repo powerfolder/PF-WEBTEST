@@ -71,7 +71,11 @@ WebUI.setText(findTestObject('Object Repository/Folders/inputFolderName'), topLe
 
 WebUI.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-WebUI.delay(2)
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Folders/inputSearch'), topLevel)
+
+WebUI.delay(5)
 
 WebElement btnTop = findFolder(topLevel)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btnTop))
