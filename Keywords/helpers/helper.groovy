@@ -73,4 +73,48 @@ public class Helper {
 
 		return sdf.format(calendar.getTime())
 	}
+
+	@Keyword
+	static String getSmartName() {
+		String safeEmojis =
+				"☺☹✌✍" +
+				"❤❣❥♥♡❦❧" +
+				"★☆✪✫✬✭✮✯✰" +
+				"✓✔✗✘☑" +
+				"←↑→↓↔↕↖↗↘↙" +
+				"⚠⚡⚓✈☀☁☂☃☄" +
+				"♠♣♥♦♤♧♡♢"
+	
+		String deutsch = "äöüßÄÖÜ"
+		String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+		String all = deutsch + chars
+	
+		Random r = new Random()
+	
+		char e1 = safeEmojis.charAt(r.nextInt(safeEmojis.length()))
+		char e2 = safeEmojis.charAt(r.nextInt(safeEmojis.length()))
+	
+		int length = 10 + r.nextInt(6)
+		StringBuilder sb = new StringBuilder()
+	
+		for (int i = 0; i < length; i++) {
+			sb.append(all.charAt(r.nextInt(all.length())))
+		}
+	
+		int pos1 = r.nextInt(sb.length() - 1)
+		sb.insert(pos1, " ")
+	
+		int pos2 = r.nextInt(sb.length() - 1)
+		while (
+				pos2 == pos1 ||
+				pos2 == pos1 + 1 ||
+				pos2 == pos1 - 1 ||
+				pos2 == sb.length() - 1
+		) {
+			pos2 = r.nextInt(sb.length() - 1)
+		}
+		sb.insert(pos2, " ")
+	
+		return e1.toString() + e2.toString() + sb.toString()   // ✅ String
+}
 }

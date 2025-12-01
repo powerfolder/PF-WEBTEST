@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DL23_Link to DOCX in subdirectory with expiray date</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5eae14bc-68a8-4444-bd8a-1caa412393b2</testCaseGuid>
+</TestCaseEntity>

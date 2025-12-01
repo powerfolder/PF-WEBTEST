@@ -1,24 +1,28 @@
 {
-  "keywordFileContentHash": "3F6C1CE5346B2EFE300889BA88E23AD8",
+  "keywordFileContentHash": "9205F62566AA8753F783F4B9A53EA682",
   "keywordClasses": [
     {
       "name": "helpers.Helper",
       "keywordMethods": [
         {
           "name": "getMembersCount",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "getRandomFolderName",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "getRandomGroupName",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "getTimestamp",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "findShareButton",
@@ -36,14 +40,21 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "generateDateTimePlusTenSeconds",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "getSmartName",
+          "parameters": [],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }
