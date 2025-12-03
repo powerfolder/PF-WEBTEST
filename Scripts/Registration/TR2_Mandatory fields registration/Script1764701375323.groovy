@@ -34,6 +34,26 @@ WebUI.verifyElementClickable(findTestObject('Login/registerNewAccountLink'))
 
 WebUI.click(findTestObject('Registration/Page_Login - PowerFolder/ClickOnRegisterNewAccount'))
 
+WebUI.click(findTestObject('Registration/Page_Register - PowerFolder/RegisterButton'))
+
+WebUI.verifyElementAttributeValue(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Email'), 
+    'placeholder', 'Required: Email', 5)
+
+WebUI.verifyElementAttributeValue(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Password'),
+	'placeholder', 'Required: Choose a password', 5)
+
+//WebUI.verifyElementAttributeValue(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Department'), 'placeholder', 'Required: Department', 5)
+
+//WebUI.verifyElementAttributeValue(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Street'), 'placeholder', 'Required: Street', 5)
+
+//WebUI.verifyElementAttributeValue(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_code_postal'), 'placeholder', 'Required: Postal code', 5)
+
+//WebUI.verifyElementAttributeValue(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Location'), 'placeholder', 'Required: Location', 5)
+
+//WebUI.verifyElementAttributeValue(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Raison_For'), 'placeholder', 'Required: Reason for registration', 5)
+
+WebUI.verifyElementPresent(findTestObject('Registration/Page_Register - PowerFolder/TOS_HasError'), 5)
+
 GlobalVariable.userEmail = generateRandomEmail().toLowerCase()
 
 WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Email'), GlobalVariable.userEmail)
@@ -52,11 +72,9 @@ WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cra
 
 WebUI.check(findTestObject('Registration/Page_Register - PowerFolder/AcceptTermsAndConditions'))
 
-
 WebUI.click(findTestObject('Registration/Page_Register - PowerFolder/RegisterButton'))
 
 WebUI.delay(3)
-
 
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Register - PowerFolder')
 
@@ -90,6 +108,8 @@ WebUI.delay(2)
 
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Folders - PowerFolder')
 
+WebUI.closeBrowser()
+
 WebElement findAccount(String emailId) {
     WebDriver driver = DriverFactory.getWebDriver()
 
@@ -120,36 +140,3 @@ String generateRandomPhoneNumber() {
     return String.format('(%03d) %03d-%04d', random.nextInt(1000), random.nextInt(1000), random.nextInt(10000))
 }
 
-/*
- 
- WebUI.openBrowser('')
- 
- WebUI.maximizeWindow()
- 
- WebUI.navigateToUrl("https://yopmail.com/")
- 
- WebUI.setText(findTestObject('YopMail/YopMailSearchMailBar'), emailId)
- 
- WebUI.click(findTestObject('YopMail/ArrowNexrButton'))
- 
- WebUI.switchToFrame(findTestObject('YopMail/IFrame'),10)
- 
- WebUI.delay(3)
- 
- WebUI.click(findTestObject('YopMail/ActivateAccount'))
- 
- String newWindowHandle = WebUI.switchToWindowTitle('Login - PowerFolder')
- 
- WebUI.switchToWindowTitle("Login - PowerFolder")
- 
- WebUI.setText(findTestObject('Registration/EnterLoginPassword'), "Alexa@1311900")
- 
- WebUI.delay(3)
- 
- WebUI.click(findTestObject('Registration/LoginButton'))
- 
- WebUI.delay(3)
- 
- assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
- 
- */ 
