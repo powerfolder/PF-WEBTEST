@@ -27,29 +27,29 @@ class WebDav {
 	}
 
 	private getToken(String username, String password) {
-        // create API-URL
-        String url = "https://mimas.powerfolder.net/login?Username=${username}&Password=${password}&json=1"
+		// create API-URL
+		String url = "https://mimas.powerfolder.net/login?Username=${username}&Password=${password}&json=1"
 
-        // Request-Objekt erstellen
-        RequestObject request = new RequestObject("loginRequest")
-        request.setRestUrl(url)
-        request.setRestRequestMethod("GET")
+		// Request-Objekt erstellen
+		RequestObject request = new RequestObject("loginRequest")
+		request.setRestUrl(url)
+		request.setRestRequestMethod("GET")
 
-        // Request ausführen
-        def response = WS.sendRequest(request)
+		// Request ausführen
+		def response = WS.sendRequest(request)
 
-        // JSON parsen
-        def json = new JsonSlurper().parseText(response.getResponseBodyContent())
+		// JSON parsen
+		def json = new JsonSlurper().parseText(response.getResponseBodyContent())
 
-        // Token extrahieren
-        String token = json.account.token
+		// Token extrahieren
+		String token = json.account.token
 
-        println "INFO: erhaltenes Token = ${token}"
+		println "INFO: erhaltenes Token = ${token}"
 
-        return token
-    }
+		return token
+	}
 
-	
+
 	private RequestObject req(String name, String method, String url, Map<String,String> headers = [:], String body = null) {
 		RequestObject r = new RequestObject(name)
 		r.setRestUrl(url)
