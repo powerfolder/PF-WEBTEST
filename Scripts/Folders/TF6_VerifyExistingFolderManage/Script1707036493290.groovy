@@ -24,6 +24,8 @@ import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
 import java.nio.file.Path as Path
 import java.nio.file.Files as Files
+import com.kms.katalon.core.testobject.ConditionType
+
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -37,20 +39,33 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
+TestObject dynamicObject = new TestObject()
+
+dynamicObject.addProperty(
+	"xpath",
+	ConditionType.EQUALS,
+	"//span[text()='" + folderName + "']"
+)
+
+boolean exists = WebUI.verifyElementPresent(dynamicObject, 10, FailureHandling.OPTIONAL)
+
+// Clique sur le bouton "Folders"
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
+
 WebUI.setText(findTestObject('Folders/inputSearch'), folderName)
 
-WebDriver driver = DriverFactory.getWebDriver()
+TestObject dynamicFolder = new TestObject('dynamicFolder')
+dynamicFolder.addProperty(
+	"xpath",
+	ConditionType.EQUALS,
+	"//*[contains(@data-search-keys, '" + folderName + "')]/td[1]/span"
+)
 
-WebElement folder = driver.findElement(By.xpath("//td/span/a[contains(text(),'$folderName')]"))
+WebUI.waitForElementVisible(dynamicFolder, 10)
 
-boolean isfolderCreated = folder.isDisplayed()
+WebUI.waitForElementClickable(dynamicFolder, 10)
 
-WebUI.verifyEqual(isfolderCreated, true)
-
-//WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getFolderCreationNotification')), 'Folder created')
-WebElement folderNameElement = driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName) + '\')]/td[1]/span '))
-
-folderNameElement.click()
+WebUI.click(dynamicFolder)
 
 WebUI.click(findTestObject('ManagePopup/button_Manage'))
 
