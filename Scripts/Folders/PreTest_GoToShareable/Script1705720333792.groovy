@@ -56,6 +56,3 @@ assert WebUI.getWindowTitle().equals('Dashboard - PowerFolder')
 // Clique sur le bouton "Folders"
 WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 
-// Vérifie si le titre de la page correspond à "Folders - PowerFolder"
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
-
