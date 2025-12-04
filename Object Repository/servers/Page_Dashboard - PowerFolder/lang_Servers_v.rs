@@ -13,8 +13,12 @@
          <key>XPATH</key>
          <value>//tr[12]/td/a/lang</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@name = 'label_servers' and (text() = 'Servers' or . = 'Servers')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
@@ -23,7 +27,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>lang</value>
-      <webElementGuid>b281654d-2c13-4bd0-bf79-06414971efa9</webElementGuid>
+      <webElementGuid>0ee6f189-671f-4c6a-b293-4188940d33e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +35,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-hidden-on-small text-center</value>
-      <webElementGuid>e283de13-2052-4d12-bf64-6191a627aea3</webElementGuid>
+      <webElementGuid>529e5f26-a454-4ce9-832a-e626294a5921</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +43,7 @@
       <name>name</name>
       <type>Main</type>
       <value>label_servers</value>
-      <webElementGuid>07f01349-3e9f-4578-a91c-b506e5801a4d</webElementGuid>
+      <webElementGuid>51e9ce88-066f-4779-94e0-affdde2091ee</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +51,7 @@
       <name>data-plural</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>9a45fa7d-a913-4ab0-97c8-b0a60d955352</webElementGuid>
+      <webElementGuid>b7e5dd49-ac19-4f06-a888-f83493e3995f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -55,7 +59,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Servers</value>
-      <webElementGuid>90461357-444c-4f33-871c-cd03a655c543</webElementGuid>
+      <webElementGuid>860c2962-f9c7-4f72-b434-a8f47dd8320b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -63,7 +67,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_menu&quot;)/table[1]/tbody[1]/tr[11]/td[@class=&quot;text-center&quot;]/a[1]/lang[@class=&quot;pica-hidden-on-small text-center&quot;]</value>
-      <webElementGuid>d3f030c5-ae0b-4793-8061-0d8fdc2c3ec4</webElementGuid>
+      <webElementGuid>bb2b9eed-2677-4327-b6db-5527326ab3ce</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -71,7 +75,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//lang[@name='label_servers']</value>
-      <webElementGuid>220626d0-27d7-4eb0-8da8-27a580562cc0</webElementGuid>
+      <webElementGuid>e28580e9-b179-4d00-ac04-5d6f27b138db</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +83,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_menu']/table/tbody/tr[11]/td/a/lang</value>
-      <webElementGuid>708c0f8d-e5cc-4c79-9487-aba728d44498</webElementGuid>
+      <webElementGuid>c09e371f-fb9c-458f-a220-3762955717ff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +91,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Configurations'])[1]/following::lang[1]</value>
-      <webElementGuid>004c0bbc-f9cd-451f-bde5-a0f8813f53ad</webElementGuid>
+      <webElementGuid>9f3fb428-5829-409e-b963-bc7cefe45d3d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +99,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Devices'])[1]/following::lang[2]</value>
-      <webElementGuid>a60d64cf-1144-4d62-8a1c-f85e3b6d4579</webElementGuid>
+      <webElementGuid>2628ed90-fc30-471b-a093-c8ea2dffc71d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,7 +107,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Storage'])[1]/preceding::lang[1]</value>
-      <webElementGuid>40c96015-2a86-40dc-a57d-6c833ab37d94</webElementGuid>
+      <webElementGuid>94944c26-f62e-49df-b6ca-de2a1ec82052</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,7 +115,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Logs'])[1]/preceding::lang[2]</value>
-      <webElementGuid>0f3a08a6-b959-4f27-8b9f-95cd9f9e4a19</webElementGuid>
+      <webElementGuid>150dad68-c986-46aa-adee-7468d292ecba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -119,7 +123,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Servers']/parent::*</value>
-      <webElementGuid>86d167f5-3ad0-4c02-9ff8-de88ca5eca35</webElementGuid>
+      <webElementGuid>fef87484-610d-410a-a25c-f07c2ee01dd1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -127,7 +131,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value></value>
-      <webElementGuid>0822160d-6974-4ca0-9878-ee537ed29ad5</webElementGuid>
+      <webElementGuid>87f0098d-ea2a-4037-94ed-02216a435b4b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -135,6 +139,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//lang[@name = 'label_servers' and (text() = 'Servers' or . = 'Servers')]</value>
-      <webElementGuid>acdcb682-ee20-4047-a31d-6f806afbb89f</webElementGuid>
+      <webElementGuid>9df5a762-2d73-4223-810a-edcd10a7789d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

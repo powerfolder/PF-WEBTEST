@@ -49,7 +49,6 @@ public class Helper {
 	def static String getRandomGroupName() {
 		String folderName = 'Group_'+getTimestamp();
 		return folderName;
-		
 	}
 
 	@Keyword

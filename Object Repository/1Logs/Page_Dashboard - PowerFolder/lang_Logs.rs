@@ -13,8 +13,12 @@
          <key>XPATH</key>
          <value>//tr[14]/td/a/lang</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@name = 'label_logs' and (text() = 'Logs' or . = 'Logs')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
@@ -23,7 +27,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>lang</value>
-      <webElementGuid>b636ec76-c7ba-4e19-bef9-967baf6e1368</webElementGuid>
+      <webElementGuid>7f82612c-9c37-483f-b267-aa114e9c7bb3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +35,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-hidden-on-small text-center</value>
-      <webElementGuid>cc4e6cce-97ed-4c0d-87d9-676488407599</webElementGuid>
+      <webElementGuid>64abda3c-7dfd-42f7-bc9f-5b3c1c83aa4e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +43,7 @@
       <name>name</name>
       <type>Main</type>
       <value>label_logs</value>
-      <webElementGuid>b7d79fc0-e9ab-4936-9017-3362ab49c76b</webElementGuid>
+      <webElementGuid>2fd22efc-91ef-49ac-80f5-5f6a02a31da7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,7 +51,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Logs</value>
-      <webElementGuid>e0bf79ae-7a91-4561-bdf5-9930f4b2c05f</webElementGuid>
+      <webElementGuid>6c577d1d-3bd4-4a3e-9c1d-6a30bf5e833b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +59,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_menu&quot;)/table[1]/tbody[1]/tr[13]/td[@class=&quot;text-center&quot;]/a[1]/lang[@class=&quot;pica-hidden-on-small text-center&quot;]</value>
-      <webElementGuid>a74ffb61-ba01-4558-9ddb-a3c59a362b7f</webElementGuid>
+      <webElementGuid>e0d34bf9-d350-4cae-904c-4d95f8d7e87f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -63,7 +67,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//lang[@name='label_logs']</value>
-      <webElementGuid>6dba6d4f-8415-46a9-8138-88ce25f5b0cb</webElementGuid>
+      <webElementGuid>0ed0dd70-a305-4567-ae3e-ca6396482ced</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +75,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_menu']/table/tbody/tr[13]/td/a/lang</value>
-      <webElementGuid>3c03f494-329a-46e1-8044-19aa28a0d8af</webElementGuid>
+      <webElementGuid>15884ba8-91fb-4844-8800-d0eacef08933</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +83,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Storage'])[1]/following::lang[1]</value>
-      <webElementGuid>a5dff757-7d35-4ab3-a36d-78bf1129239e</webElementGuid>
+      <webElementGuid>f390aa15-5de0-444c-bab0-fe8ab25c77c2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +91,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Servers'])[1]/following::lang[2]</value>
-      <webElementGuid>d3d530a0-9346-4877-9fd3-9d8c35c77b52</webElementGuid>
+      <webElementGuid>82454e05-04fb-4e7d-8f21-c68332fa4cb5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +99,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Preferences'])[1]/preceding::lang[1]</value>
-      <webElementGuid>4fc0f50b-03bd-4fda-b706-e0318a6499c5</webElementGuid>
+      <webElementGuid>aee67ec3-104c-45c5-8ea5-ce9fd718a1e9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,7 +107,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[1]/preceding::lang[2]</value>
-      <webElementGuid>50242b0b-7de6-4c2f-be6c-7667ed5dc693</webElementGuid>
+      <webElementGuid>950e358c-0384-436e-a1f4-6926bedb54f4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,7 +115,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Logs']/parent::*</value>
-      <webElementGuid>fbcc8be4-0e39-4346-a79c-74954e5012b8</webElementGuid>
+      <webElementGuid>0a8b44b8-6841-4c2a-9ab5-312b0e25cbdb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -119,7 +123,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value></value>
-      <webElementGuid>c574584a-5a44-4c08-a6ab-bc6c1be244d2</webElementGuid>
+      <webElementGuid>1ba8486c-9965-46e5-9a41-b44293a8d5f2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -127,6 +131,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//lang[@name = 'label_logs' and (text() = 'Logs' or . = 'Logs')]</value>
-      <webElementGuid>2d3d7cbb-fc38-47de-9632-aed5a8876ed1</webElementGuid>
+      <webElementGuid>1733093d-59f9-46e5-b72d-f03a1b701396</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
