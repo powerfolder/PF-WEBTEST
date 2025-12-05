@@ -33,4 +33,19 @@ public class GroupFinder {
 		WebDriver driver = DriverFactory.getWebDriver()
 		return driver.findElement(By.xpath("//*[contains(@data-search-keys, '$groupName')]/td[1]/span"));
 	}
+	@Keyword
+	WebElement findGroupSafe(String groupName) {
+
+		WebDriver driver = DriverFactory.getWebDriver()
+
+		List<WebElement> elements = driver.findElements(
+				By.xpath("//*[contains(@data-search-keys, '${groupName}')]/td[1]/span")
+				)
+
+		if (!elements.isEmpty()) {
+			return elements.get(0)
+		}
+
+		return null
+	}
 }
