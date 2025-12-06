@@ -47,7 +47,7 @@ WebUI.delay(2)
 
 WebUI.verifyElementText(findTestObject('Page_PowerFolder - shop_stripe/Size'), 'Team Cloud 6 TB')
 
-WebUI.verifyElementText(findTestObject('Page_PowerFolder - shop_stripe/Price'), '€699.00 per year')
+WebUI.verifyElementText(findTestObject('Page_PowerFolder - shop_stripe/Price'), '€831.81 per year')
 
 WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/Return to PowerFolder'))
 
