@@ -43,8 +43,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-
-
 // Pre-test case call
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -64,11 +62,21 @@ WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandli
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-// Search for the created folder
+TestObject dynamicObject = new TestObject()
+
+dynamicObject.addProperty(
+	"xpath",
+	ConditionType.EQUALS,
+	"//span[text()='" + folderName + "']"
+)
+
+boolean exists = WebUI.verifyElementPresent(dynamicObject, 10, FailureHandling.OPTIONAL)
+
+// Clique sur le bouton "Folders"
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
+
 WebUI.setText(findTestObject('Folders/inputSearch'), folderName)
 
-// Get the WebDriver instance
-WebDriver driver = DriverFactory.getWebDriver()
 TestObject dynamicFolder = new TestObject('dynamicFolder')
 dynamicFolder.addProperty(
 	"xpath",
@@ -86,6 +94,7 @@ WebUI.click(dynamicFolder)
 WebUI.click(findTestObject('Folders/downloadLink'))
 
 // Save the parent window handle
+WebDriver driver = DriverFactory.getWebDriver()
 String parentWindow = driver.getWindowHandle()
 
 // Open a new tab to check the downloads
