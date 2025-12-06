@@ -17,6 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+import group.GroupFinder
+
 
 WebUI.callTestCase(findTestCase('Shop/Pre_test/upgrade_monthly_6TB'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -55,8 +59,13 @@ WebUI.verifyMatch(actualText.trim(), 'Organization storage exceeded.*×', true)
 
 WebUI.delay(2)
 
-WebUI.closeBrowser()
+WebUI.delay(2)
 
+WebElement element = CustomKeywords.'group.GroupFinder.findGroupSafe'(userEmail_1)
+
+assert element == null : "❌ ERROR: A group exists for ${userEmail_1}"
+
+WebUI.closeBrowser()
 String generateRandomString(int length) {
     String characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 
