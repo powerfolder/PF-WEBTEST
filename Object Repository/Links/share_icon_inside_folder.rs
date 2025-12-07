@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>share_icon_inside_folder</name>
+   <tag></tag>
+   <elementGuidId>a5b2545a-4dd7-45f3-99c1-20cd0bbae209</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.pica-glyph.glyphicons.glyphicons-share-alt</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='files_folder_share']/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>f0128298-0019-4ffc-ab7f-644891e1092b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-glyph glyphicons glyphicons-share-alt</value>
+      <webElementGuid>0a34bbd0-b2a6-4a9e-a98d-4c2f29523721</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;files_folder_share&quot;)/span[@class=&quot;pica-glyph glyphicons glyphicons-share-alt&quot;]</value>
+      <webElementGuid>78332c3d-632d-4b67-84e1-2dd3fe1faf12</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//a[@id='files_folder_share']/span</value>
+      <webElementGuid>4d1ee808-ceed-47dc-bb04-b340ea61ef7b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//th[7]/a/span</value>
+      <webElementGuid>13b9e762-a69f-41c6-8032-6304829bf389</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
