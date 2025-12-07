@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TL01_createDirLink</name>
+   <name>TL01_createSubfolder_Link_via_internal_share_icon</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

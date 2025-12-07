@@ -23,6 +23,7 @@ import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import com.kms.katalon.core.testobject.ConditionType
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -44,17 +45,6 @@ WebUI.click(findTestObject('Folders/buttonOK'))
 
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 
-WebUI.setText(findTestObject('Accounts/inputAccountSearch'), folderName)
-
-WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
-
-WebDriver driver = DriverFactory.getWebDriver()
-
-WebElement folder = driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'$folderName')]"))
-
-//tbody/tr[6]/td[2]/span/a
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
-
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Folders/createDirectoryIcon'))
@@ -63,11 +53,7 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.sendKeys(findTestObject('Folders/inputFolderName'), Keys.chord(Keys.ENTER))
 
-WebElement btn = findShareButton(folderName)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
-WebUI.click(findTestObject('Links/buttonCreateLink'))
+WebUI.click(findTestObject('Links/share_icon_inside_folder'))
 
 WebUI.waitForElementClickable(findTestObject('Links/buttonCreateLink'), 30, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -89,9 +75,15 @@ WebUI.delay(3)
 
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
-List list = driver.findElements(By.className('pica-crumb'))
+TestObject dynamicObject = new TestObject()
 
-assert list.get(list.size() - 1).getText().equals(folderName)
+dynamicObject.addProperty(
+	"xpath",
+	ConditionType.EQUALS,
+	"//span[text()='" + folderName + "']"
+)
+
+boolean exists = WebUI.verifyElementPresent(dynamicObject, 10, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 
