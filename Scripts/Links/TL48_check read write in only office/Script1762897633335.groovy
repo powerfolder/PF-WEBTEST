@@ -91,11 +91,10 @@ WebDriver driver = DriverFactory.getWebDriver()
 WebElement folder = driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'$folderName')]"))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
-*/
 
 WebElement btn = findFolder(folderName)
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))*/
 
 WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 

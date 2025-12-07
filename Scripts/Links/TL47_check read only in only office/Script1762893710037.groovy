@@ -76,21 +76,21 @@ String textfilename = getRandomFileName()
 
 GlobalVariable.textfilename = textfilename
 
-//WebUI.setText(findTestObject('Object Repository/Accounts/inputAccountSearch'), folderName)
+/*WebUI.setText(findTestObject('Object Repository/Accounts/inputAccountSearch'), folderName)
 
-//WebUI.sendKeys(findTestObject('Object Repository/Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Object Repository/Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
 
-//WebDriver driver = DriverFactory.getWebDriver()
+WebDriver driver = DriverFactory.getWebDriver()
 
-//WebElement folder = driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'$folderName')]"))
+WebElement folder = driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'$folderName')]"))
 
-//WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
 
 WebUI.delay(2)
 
 WebElement btn = findFolder(folderName)
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))*/
 
 WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 

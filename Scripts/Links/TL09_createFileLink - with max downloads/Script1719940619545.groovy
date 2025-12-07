@@ -47,6 +47,8 @@ WebUI.click(findTestObject('Page_Folders - PowerFolder/span_Paste_pica-glyph gly
 
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/lang_button_upload'))
 
+WebDriver driver = DriverFactory.getWebDriver()
+
 WebElement upload = driver.findElement(By.xpath('//span[@id=\'upload_file\']'))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(upload))
