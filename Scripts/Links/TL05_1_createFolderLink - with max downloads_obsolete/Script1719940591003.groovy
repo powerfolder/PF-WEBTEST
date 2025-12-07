@@ -43,6 +43,8 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
+
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 
 WebUI.setText(findTestObject('Accounts/inputAccountSearch'), folderName)
