@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL07_2_createFolderLink_via_internal_share_icon</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cb99e08f-e041-4ac1-9938-d5228d201510</testCaseGuid>
+</TestCaseEntity>
