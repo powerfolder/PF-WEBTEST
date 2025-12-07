@@ -38,6 +38,8 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
+
 WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
@@ -48,7 +50,6 @@ WebElement buttonCreateLink = WebUiCommonHelper.findWebElement(findTestObject('L
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonCreateLink))
 
-//WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'), '2')
 WebUI.delay(3)
 
 WebUI.click(findTestObject('SettingsPopUp/buttonSave'))
