@@ -4,7 +4,6 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import static org.apache.commons.lang.StringUtils.isNotBlank
-import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -24,24 +23,19 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
-import java.util.concurrent.TimeUnit as TimeUnit
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
-import java.nio.file.Path as Path
-import java.nio.file.Files as Files
-import java.text.SimpleDateFormat as SimpleDateFormat
-import java.util.Calendar as Calendar
-import java.util.Date as Date
-import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
-import java.util.Random as Random
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
-String folderName = getRandomGroupName()
+String folderName = getRandomFolderName()
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Folders/createFolder'))
+
+WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getCreateText')), 'Create', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getFolderNameLabelText')), 'Create a new Folder', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -49,31 +43,15 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 
-WebUI.click(findTestObject('Folders/createFolderIcon'))
+WebUI.setText(findTestObject('Accounts/inputAccountSearch'), folderName)
 
-WebUI.click(findTestObject('Folders/createDocument'))
+WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
 
-String DocName = 'Doc_num_' + RandomStringUtils.randomNumeric(4)
-
-WebUI.setText(findTestObject('Folders/inputFolderName'), DocName)
-
-WebUI.click(findTestObject('Folders/buttonOK'))
-
-WebUI.closeWindowIndex(1)
-
-WebUI.delay(1)
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.refresh()
-
-WebUI.delay(2)
-
-WebElement btn = findShareButton(DocName)
+WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
@@ -83,36 +61,18 @@ WebElement buttonCreateLink = WebUiCommonHelper.findWebElement(findTestObject('L
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonCreateLink))
 
+WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Can read'))
+
 WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
-
-// Générer la date et l'heure actuelles avec une minute ajoutée
-String newDateTime = generateDateTimePlusTenSeconds()
-
-// Afficher la date dans la console (une seule fois)
-println('Date et heure générées : ' + newDateTime)
-
-// Effacer et saisir la nouvelle date dans le champ
-TestObject accountValidTill = findTestObject('Page_Folders - PowerFolder/inputValidTill')
-
-WebUI.executeJavaScript('arguments[0].value = ""', [WebUI.findWebElement(accountValidTill)])
-
-WebUI.setText(accountValidTill, newDateTime)
 
 WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
 
-WebUI.delay(2)
+//WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'),  '0')
+WebUI.delay(3)
 
-WebUI.click(findTestObject('Folders/button_SaveSettings'))
-
-WebUI.delay(2)
+WebUI.click(findTestObject('SettingsPopUp/buttonSave'))
 
 WebUI.doubleClick(findTestObject('Page_Folders - PowerFolder/icon-copy'))
-
-WebUI.delay(10)
-
-WebUI.executeJavaScript('window.open();', [])
-
-WebUI.switchToWindowIndex(1)
 
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
 
@@ -122,28 +82,12 @@ WebUI.delay(3)
 
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
-WebUI.click(findTestObject('Page_Folders - PowerFolder/closeExpiredAlert'))
-
-WebUI.verifyElementPresent(findTestObject('lang/expiredlinkText'), 30)
-
+//assert WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Download Limit Reached'),2)
+//assert isNotBlank(WebUI.getText(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Download Limit Reached')))
 WebUI.closeBrowser()
 
 String getRandomFolderName() {
     String folderName = 'Folder' + getTimestamp()
-
-    return folderName
-}
-
-String getTimestamp() {
-    Date todaysDate = new Date()
-
-    String formattedDate = todaysDate.format('MM_dd_yyyy_hh_mm_ss')
-
-    return formattedDate
-}
-
-String getRandomGroupName() {
-    String folderName = 'G_' + getTimestamp()
 
     return folderName
 }
@@ -154,13 +98,11 @@ WebElement findShareButton(String fileName) {
     return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
 }
 
-String generateDateTimePlusTenSeconds() {
-    Calendar calendar = Calendar.getInstance()
+String getTimestamp() {
+    Date todaysDate = new Date()
 
-    calendar.add(Calendar.SECOND, 10)
+    String formattedDate = todaysDate.format('dd_MMM_yyyy_hh_mm_ss')
 
-    SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm:ss')
-
-    return sdf.format(calendar.getTime())
+    return formattedDate
 }
 

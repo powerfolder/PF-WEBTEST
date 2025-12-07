@@ -48,16 +48,6 @@ String presentationname = getRandomFileName()
 
 GlobalVariable.presentationname = presentationname
 
-WebUI.setText(findTestObject('Object Repository/Accounts/inputAccountSearch'), folderName)
-
-WebUI.sendKeys(findTestObject('Object Repository/Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
-
-WebDriver driver = DriverFactory.getWebDriver()
-
-WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'$folderName')]"))
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
-
 WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('file_objects/presentation/Page_Folders - PowerFolder/Create presentation'))

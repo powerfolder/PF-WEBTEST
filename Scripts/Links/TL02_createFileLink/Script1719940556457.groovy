@@ -43,21 +43,13 @@ WebUI.click(findTestObject('Folders/buttonOK'))
 
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 
-WebUI.setText(findTestObject('Accounts/inputAccountSearch'), folderName)
-
-WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
-
-WebDriver driver = DriverFactory.getWebDriver()
-
-WebElement folder = driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'$folderName')]"))
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
-
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Folders/createDocument'))
 
-WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
+String filename = 'doc_' + getTimestamp()
+
+WebUI.setText(findTestObject('Folders/inputFolderName'), filename)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
@@ -69,7 +61,7 @@ WebUI.switchToWindowIndex(0)
 
 WebUI.refresh()
 
-WebElement btn = findShareButton(folderName)
+WebElement btn = findShareButton(filename)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 

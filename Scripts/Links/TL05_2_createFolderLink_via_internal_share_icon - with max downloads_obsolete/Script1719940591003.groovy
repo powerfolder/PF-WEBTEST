@@ -45,13 +45,7 @@ WebUI.click(findTestObject('Folders/buttonOK'))
 
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 
-WebUI.setText(findTestObject('Accounts/inputAccountSearch'), folderName)
-
-WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
-
-WebElement btn = findShareButton(folderName)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+WebUI.click(findTestObject('Links/share_icon_inside_folder'))
 
 WebUI.waitForElementClickable(findTestObject('Links/buttonCreateLink'), 30, FailureHandling.CONTINUE_ON_FAILURE)
 

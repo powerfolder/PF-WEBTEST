@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TL03_createFolderLink with expirary date</name>
+   <name>TL07_2_createFolderLink_via_internal_share_icon</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>7c594ec4-2e47-42a7-94b3-67e539f1899a</testCaseGuid>
+   <testCaseGuid>cb99e08f-e041-4ac1-9938-d5228d201510</testCaseGuid>
 </TestCaseEntity>

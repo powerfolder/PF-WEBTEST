@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TL05_createFolderLink - with max downloads</name>
+   <name>TL03_1_createFolderLink_with_expiration</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>c5a3ebe5-7c68-4404-a7f2-59c4a8e9e5a8</testCaseGuid>
+   <testCaseGuid>2995d383-80f1-4243-ad6c-4ad458ec618d</testCaseGuid>
 </TestCaseEntity>

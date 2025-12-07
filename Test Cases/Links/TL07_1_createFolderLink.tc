@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TL07_createFolderLink</name>
+   <name>TL07_1_createFolderLink</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
