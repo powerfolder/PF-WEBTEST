@@ -35,22 +35,13 @@ WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandli
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
-
-WebDriver driver = DriverFactory.getWebDriver()
-WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'$folderName')]"))
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
-
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createDirectoryIcon'))
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-WebElement btn = findShareButton(folderName)
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-boolean isElementPresent = WebUI.verifyElementPresent(findTestObject('Links/buttonCreateLink'), 10)
+boolean isElementPresent = WebUI.verifyElementPresent(findTestObject('Links/share_icon_inside_folder'), 10)
 assert isElementPresent
-boolean isVisible = WebUI.verifyElementVisible(findTestObject('Links/buttonCreateLink'))
+boolean isVisible = WebUI.verifyElementVisible(findTestObject('Links/share_icon_inside_folder'))
 assert isVisible
 WebUI.closeBrowser()
