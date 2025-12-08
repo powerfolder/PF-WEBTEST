@@ -52,10 +52,6 @@ WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - 
 
 WebUiBuiltInKeywords.delay(2)
 
-WebElement btn1 = findFolder(folderName1)
-
-WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
-
 String folderName2 = (('Ordner_' + RandomStringUtils.randomNumeric(2)) + '_') + RandomStringUtils.random(2, characters)
 
 WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
@@ -100,7 +96,9 @@ WebUiBuiltInKeywords.verifyElementClickable(findTestObject('file_objects/documen
 
 WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - Cut/span_Cut'))
 
-WebElement btn4 = findFolder(folderName2)
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
+
+WebElement btn4 = findFolder(folderName)
 
 WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn4))
 
