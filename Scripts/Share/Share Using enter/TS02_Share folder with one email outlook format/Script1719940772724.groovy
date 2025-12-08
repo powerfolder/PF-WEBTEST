@@ -37,6 +37,8 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
+
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Folders/createFolder'))
@@ -44,6 +46,8 @@ WebUI.click(findTestObject('Folders/createFolder'))
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName+'qa2')
 
 WebUI.click(findTestObject('Folders/buttonOK'))
+
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 
 WebElement btn = findShareButton(folderName)
 

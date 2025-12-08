@@ -34,15 +34,11 @@ WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandli
 WebUI.setText(findTestObject('Folders/inputFolderName'),folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-WebElement btn =findShareButton(folderName)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
-boolean isElementPresent = WebUI.verifyElementPresent(findTestObject('Links/buttonCreateLink'), 10)
+boolean isElementPresent = WebUI.verifyElementPresent(findTestObject('Links/share_icon_inside_folder'), 10)
 
 assert isElementPresent
 
-boolean isVisible = WebUI.verifyElementVisible(findTestObject('Links/buttonCreateLink'))
+boolean isVisible = WebUI.verifyElementVisible(findTestObject('Links/share_icon_inside_folder'))
 
 assert isVisible
 
