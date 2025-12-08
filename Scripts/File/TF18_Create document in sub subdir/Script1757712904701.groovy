@@ -100,9 +100,9 @@ WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/P
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-WebElement btn1 = findFolder(folderName)
+//WebElement btn1 = findFolder(folderName)
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
+//WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
@@ -152,9 +152,9 @@ WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/P
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-WebElement btn3 = findFolder(folderName_1)
+//WebElement btn3 = findFolder(folderName_1)
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn3))
+//WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn3))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 

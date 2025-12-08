@@ -52,10 +52,6 @@ WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/P
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-WebElement btn1 = findFolder(folderName1)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
-
 String folderName2 = (('Ordner_' + RandomStringUtils.randomNumeric(2)) + '_') + RandomStringUtils.random(2, characters)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
@@ -91,8 +87,6 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn4))
 WebElement btn5 = findFolder(folderName2)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn5))
-
-WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/FolderName1_Path'))
 
 WebElement btn6 = findFolder(folderName3)
 
