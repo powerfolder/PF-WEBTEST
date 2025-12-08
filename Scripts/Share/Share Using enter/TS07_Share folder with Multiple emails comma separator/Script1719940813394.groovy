@@ -33,18 +33,7 @@ WebUI.click(findTestObject('Folders/createFolder'))
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
-
-
-WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/span_Paste_pica-glyph glyphicons glyphicons_ca92f0'))
-
-WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/a_Create Folder                            _852e7b'))
-
-WebUI.setText(findTestObject('/Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'), folderName)
-
-WebUI.sendKeys(findTestObject('Share/Page_Folders - PowerFolder/input_Create a new Folder_pencil'), Keys.chord(
-        Keys.ENTER))
-
-WebUI.delay(3)
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 
 WebElement btn = findShareButton(folderName)
 
