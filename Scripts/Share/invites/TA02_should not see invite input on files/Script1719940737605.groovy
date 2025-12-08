@@ -54,22 +54,7 @@ WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandli
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
-WebDriver driver = DriverFactory.getWebDriver()
-WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'$folderName')]"))
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
-
-
-WebUI.click(findTestObject('Folders/createFolderIcon'))
-WebUI.click(findTestObject('Folders/createDirectoryIcon'))
-WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
-WebUI.click(findTestObject('Folders/buttonOK'))
-
-//WebUI.closeWindowIndex(1)
-//WebUI.delay(1)
-//WebUI.switchToWindowIndex(0)
-WebUI.refresh()
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 
 WebElement btn = findShareButton(folderName)
 
