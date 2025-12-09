@@ -158,7 +158,7 @@ WebUI.closeWindowIndex(1)
 
 WebUI.switchToWindowIndex(0)
 
-WebUI.refresh()WebUI.refresh()
+WebUI.refresh()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Home'))
 
@@ -224,12 +224,6 @@ WebUI.refresh()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Home'))
 
-
-
-
-
-
-
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Home'))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolderIcon'))
@@ -261,13 +255,7 @@ WebUI.switchToWindowIndex(0)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Home'))
 
-
 WebUI.refresh()
-
-
-
-
-
 
 
 @Keyword

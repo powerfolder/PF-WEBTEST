@@ -63,24 +63,15 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
 WebUI.delay(2)
 
-WebElement btn = findFolder(folderName1)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
-
 
 String folderName2 = getRandomFolderName()
 
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), folderName2)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
-
-WebElement btn1 = findFolder(folderName2)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
 String folderName3 = getRandomFolderName()
 
@@ -93,10 +84,6 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFold
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
 WebUI.delay(2)
-
-WebElement btn2 = findFolder(folderName3)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
