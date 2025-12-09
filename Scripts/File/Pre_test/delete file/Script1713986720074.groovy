@@ -47,6 +47,8 @@ WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span
 
 String folderName = GlobalVariable.folderName
 
+WebUI.delay(2)
+
 WebElement btn = findFolder(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))

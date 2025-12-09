@@ -44,6 +44,8 @@ wait.until(ExpectedConditions.elementToBeClickable(premierElement))
 
 premierElement.click()
 
+WebUI.delay(3)
+
 WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Page_Folders - PowerFolder/select_all'))
 
 // Click on "Delete" link in "Groups - PowerFolder" page
