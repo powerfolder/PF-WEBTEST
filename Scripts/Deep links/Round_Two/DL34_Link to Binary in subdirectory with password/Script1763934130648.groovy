@@ -61,15 +61,6 @@ WebUI.setText(findTestObject('Object Repository/Folders/inputFolderName'), topLe
 
 WebUI.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-WebUI.delay(3)
-
-WebUI.setText(findTestObject('Folders/inputSearch'), topLevel)
-
-WebUI.delay(5)
-
-WebElement btnTop = findFolder(topLevel)
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btnTop))
-
 // subdirectory
 WebUI.verifyElementClickable(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
@@ -86,8 +77,6 @@ WebUI.setText(
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-WebElement btnSub = findFolder(subDirectory)
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btnSub))
 
 // sub-subdirectory
 WebUI.verifyElementClickable(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
@@ -104,9 +93,6 @@ WebUI.setText(
 )
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
-
-WebElement btnSubSub = findFolder(subSubDirectory)
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btnSubSub))
 
 // Upload via dialog (fichier binaire)
 String projDir = RunConfiguration.getProjectDir()
@@ -135,9 +121,9 @@ WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/lang_
 
 selectFileAutomatically(binaryFilePath)
 
-WebUI.delay(2)
-
 WebUI.refresh()
+
+WebUI.delay(5)
 
 WebElement shareBtn1 = Helper.findShareButton(binaryName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(shareBtn1))

@@ -59,14 +59,6 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
 WebUI.delay(3)
 
-WebUI.setText(findTestObject('Folders/inputSearch'), topLevel)
-
-WebUI.delay(5)
-
-WebElement btn = findFolder(topLevel)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
 //subdirectory
 WebUI.verifyElementClickable(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
@@ -81,10 +73,6 @@ WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/P
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-WebElement btn1 = findFolder(subDirectory)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
-
 //sub-subdirectory
 WebUI.verifyElementClickable(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
@@ -98,10 +86,6 @@ WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/P
 	subSubDirectory)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
-
-WebElement btn2 = findFolder(subSubDirectory)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
 
 // Upload image
 String projDir = RunConfiguration.getProjectDir()
@@ -123,6 +107,8 @@ WebUI.delay(2)
 WebUI.refresh()
 
 String imageName = 'Image_tp 🌟 Löwe 😀 file tp 🚀.png'
+
+WebUI.delay(5)
 
 // Create Link
 WebElement btn3 = Helper.findShareButton(imageName)

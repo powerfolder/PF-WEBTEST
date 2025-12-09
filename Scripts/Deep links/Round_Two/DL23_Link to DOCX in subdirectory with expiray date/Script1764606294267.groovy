@@ -61,6 +61,7 @@ import java.util.Calendar as Calendar
 import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import helpers.Helper
+
 //Top-level
 
 String topLevel = "Top-level_" + Helper.getSmartName()
@@ -77,16 +78,6 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFold
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-WebUI.delay(3)
-
-WebUI.setText(findTestObject('Folders/inputSearch'), topLevel)
-
-WebUI.delay(5)
-
-WebElement btn = findFolder(topLevel)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
 //subdirectory
 
 WebUI.verifyElementClickable(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
@@ -101,10 +92,6 @@ WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/P
 	subDirectory)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
-
-WebElement btn1 = findFolder(subDirectory)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
 //sub-subdirectory
 
@@ -121,19 +108,15 @@ WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/P
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-WebElement btn2 = findFolder(subSubDirectory)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
-
 // Create DOCX
 
-String documentname = "DOCX_" + Helper.getSmartName()
+String documentName = "DOCX_" + Helper.getSmartName()
 
 WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Object Repository/Folders/createDocument'))
 
-WebUI.setText(findTestObject('Object Repository/Folders/inputFolderName'), documentname)
+WebUI.setText(findTestObject('Object Repository/Folders/inputFolderName'), documentName)
 
 WebUI.click(findTestObject('Object Repository/Folders/buttonOK'))
 
@@ -141,15 +124,15 @@ WebUI.delay(5)
 
 WebUI.switchToWindowIndex(0)
 
-WebUI.delay(2)
-
 WebUI.refresh()
+
+WebUI.delay(5)
 
 // Create Link
 
-WebElement btn3 = Helper.findShareButton(documentname)
+WebElement btn = Helper.findShareButton(documentName)
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn3))
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 WebUI.click(findTestObject('Object Repository/Folders/shareLink'))
 

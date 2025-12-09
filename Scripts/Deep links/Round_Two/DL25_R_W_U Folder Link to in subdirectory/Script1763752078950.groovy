@@ -42,7 +42,8 @@ import org.junit.Assert as Assert
 import helpers.Helper as Helper
 
 //Top-level
-String topLevel = 'Top-level_' + Helper.getSmartName()
+
+String topLevel = "Top-level_" + Helper.getSmartName()
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -56,67 +57,58 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFold
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-WebUI.delay(3)
-
-WebUI.setText(findTestObject('Folders/inputSearch'), topLevel)
-
-WebUI.delay(5)
-
-WebElement btn = findFolder(topLevel)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
 //subdirectory
+
 WebUI.verifyElementClickable(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
-String subDirectory = 'subdirectory_' + Helper.getSmartName()
+String subDirectory = "subdirectory_" + Helper.getSmartName()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
 
-WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
-    subDirectory)
+WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'),
+	subDirectory)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
-
-WebElement btn1 = findFolder(subDirectory)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
 //sub-subdirectory
+
 WebUI.verifyElementClickable(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
-String subSubDirectory = 'subSubDirectory_' + Helper.getSmartName()
+String subSubDirectory = "subSubDirectory_" + Helper.getSmartName()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
 
-WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
-    subSubDirectory)
+WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'),
+	subSubDirectory)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-WebElement btn2 = findFolder(subSubDirectory)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
 
 // Create Folder
-String folderName = 'folder_' + Helper.getSmartName()
+
+String folderName = "folder_" + Helper.getSmartName()
+
 
 WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
 
-WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
-    folderName)
+WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'),
+	folderName)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-WebUI.delay(2)
-
 WebUI.refresh()
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Folders/return_to_subSubDir'))
+
+WebUI.delay(2)
 
 // Create Link
 WebElement btn3 = Helper.findShareButton(folderName)

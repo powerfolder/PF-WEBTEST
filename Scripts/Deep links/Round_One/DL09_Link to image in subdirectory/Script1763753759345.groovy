@@ -43,7 +43,8 @@ import helpers.Helper as Helper
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 //Top-level
-String topLevel = 'Top-level_' + getRandomFolderName()
+
+String topLevel = "Top-level_" + getRandomFolderName()
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -57,51 +58,36 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFold
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-WebUI.delay(3)
-
-WebUI.setText(findTestObject('Folders/inputSearch'), topLevel)
-
-WebUI.delay(5)
-
-WebElement btn = findFolder(topLevel)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
 //subdirectory
+
 WebUI.verifyElementClickable(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
-String subDirectory = 'subdirectory_' + getRandomFolderName()
+String subDirectory = "subdirectory_" + getRandomFolderName()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
 
-WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
-    subDirectory)
+WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'),
+	subDirectory)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-WebElement btn1 = findFolder(subDirectory)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
 //sub-subdirectory
+
 WebUI.verifyElementClickable(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
-String subSubDirectory = 'subSubDirectory_' + getRandomFolderName()
+String subSubDirectory = "subSubDirectory_" + getRandomFolderName()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
 
-WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
-    subSubDirectory)
+WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'),
+	subSubDirectory)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
-
-WebElement btn2 = findFolder(subSubDirectory)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
 
 // Upload image
 String projDir = RunConfiguration.getProjectDir()
