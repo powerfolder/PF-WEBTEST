@@ -96,6 +96,8 @@ WebUI.closeWindowIndex(1)
 
 WebUI.switchToWindowIndex(0)
 
+WebUI.refresh()
+
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Home'))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolderIcon'))
@@ -124,6 +126,8 @@ WebUI.switchToWindowIndex(1)
 WebUI.closeWindowIndex(1)
 
 WebUI.switchToWindowIndex(0)
+
+WebUI.refresh()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Home'))
 
@@ -154,12 +158,7 @@ WebUI.closeWindowIndex(1)
 
 WebUI.switchToWindowIndex(0)
 
-
-
-
-
-
-
+WebUI.refresh()WebUI.refresh()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Home'))
 
@@ -190,6 +189,7 @@ WebUI.closeWindowIndex(1)
 
 WebUI.switchToWindowIndex(0)
 
+WebUI.refresh()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Home'))
 
@@ -219,6 +219,8 @@ WebUI.switchToWindowIndex(1)
 WebUI.closeWindowIndex(1)
 
 WebUI.switchToWindowIndex(0)
+
+WebUI.refresh()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Home'))
 
