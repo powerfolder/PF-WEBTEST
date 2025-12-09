@@ -37,6 +37,8 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
+
 //verify present of toplvl folder in web
 WebUI.setText(findTestObject('Folders/inputSearch'), folderName)
 
@@ -81,7 +83,7 @@ boolean is_webdav_folderCreated = folder_webdav.isDisplayed()
 
 WebUI.verifyEqual(is_webdav_folderCreated, true)
 
-//WebUI.closeBrowser()
+WebUI.closeBrowser()
 
 String getRandomFolderName() {
     String folderName = 'TWD06' + getTimestamp()
