@@ -61,10 +61,6 @@ WebUI.click(findTestObject('Object Repository/Folders/buttonOK'))
 
 WebUI.delay(2)
 
-WebElement btn = findFolder(GlobalVariable.folderName)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
 WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Upload file'))
