@@ -81,12 +81,6 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFold
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-WebUI.delay(2)
-
-WebElement btn = findFolder(GlobalVariable.folderName)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_Document'))

@@ -78,9 +78,6 @@ WebUI.click(findTestObject('Object Repository/Folders/buttonOK'))
 
 WebUI.delay(2)
 
-WebElement btn = findFolder(GlobalVariable.folderName)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 // Upload image
 
