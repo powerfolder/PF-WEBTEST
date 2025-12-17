@@ -76,39 +76,38 @@ public class Helper {
 
 	static String getSmartName() {
 
-    String safeEmojis =
-            "☺☹✌✍" +
-            "❤❣❥♥♡❦❧" +
-            "★☆✪✫✬✭✮✯✰" +
-            "✓✔✗✘☑" +
-            "←↑→↓↔↕↖↗↘↙" +
-            "⚠⚡⚓✈☀☁☂☃☄" +
-            "♠♣♥♦♤♧♡♢";
+		String safeEmojis =
+				"☺☹✌✍" +
+				"❤❣❥♥♡❦❧" +
+				"★☆✪✫✬✭✮✯✰" +
+				"✓✔✗✘☑" +
+				"←↑→↓↔↕↖↗↘↙" +
+				"⚠⚡⚓✈☀☁☂☃☄" +
+				"♠♣♥♦♤♧♡♢";
 
-    String accents = "äöüßÄÖÜéèàùçâêîôûÉÈÀÙÇ";
+		String accents = "äöüßÄÖÜ"; //éèàùçâêîôûÉÈÀÙÇ";
 
-    String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+		String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-    String specials = "[]^'+,;=@!\$#&{}"
+		String specials = "@!\${}"
 
-    String all = accents + chars + specials;
+		String all = accents + chars + specials;
 
-    Random r = new Random();
+		Random r = new Random();
 
-    char e1 = safeEmojis.charAt(r.nextInt(safeEmojis.length()));
-    char e2 = safeEmojis.charAt(r.nextInt(safeEmojis.length()));
+		char e1 = safeEmojis.charAt(r.nextInt(safeEmojis.length()));
+		char e2 = safeEmojis.charAt(r.nextInt(safeEmojis.length()));
 
-    int length = 10 + r.nextInt(6);
-    StringBuilder sb = new StringBuilder();
+		int length = 10 + r.nextInt(6);
+		StringBuilder sb = new StringBuilder();
 
-    for (int i = 0; i < length; i++) {
-        sb.append(all.charAt(r.nextInt(all.length())));
-    }
+		for (int i = 0; i < length; i++) {
+			sb.append(all.charAt(r.nextInt(all.length())));
+		}
 
-    int pos = r.nextInt(sb.length());
-    sb.insert(pos, " ");
+		int pos = r.nextInt(sb.length());
+		sb.insert(pos, " ");
 
-    return e1.toString() + e2.toString() + sb.toString();
-}
-
+		return e1.toString() + e2.toString() + sb.toString();
+	}
 }
