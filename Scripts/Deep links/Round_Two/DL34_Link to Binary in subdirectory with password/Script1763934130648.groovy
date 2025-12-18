@@ -121,6 +121,8 @@ WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/lang_
 
 selectFileAutomatically(binaryFilePath)
 
+WebUI.delay(5)
+
 WebUI.refresh()
 
 WebUI.delay(5)
