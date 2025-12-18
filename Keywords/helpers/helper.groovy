@@ -73,6 +73,17 @@ public class Helper {
 
 		return sdf.format(calendar.getTime())
 	}
+	
+	def static generateDateTimeMinusOneMinute() {
+		Calendar calendar = Calendar.getInstance()
+	
+		// 1 Minute abziehen
+		calendar.add(Calendar.MINUTE, -1)
+	
+		SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm:ss')
+	
+		return sdf.format(calendar.getTime())
+	}
 
 	static String getSmartName() {
 
