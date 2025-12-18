@@ -117,7 +117,7 @@ WebUI.click(findTestObject('Object Repository/Folders/shareLink'))
 
 WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
 
-String newDateTime = Helper.generateDateTimePlusTenSeconds()
+String newDateTime = Helper.generateDateTimeMinusOneMinute()
 
 println('Date et heure générées : ' + newDateTime)
 

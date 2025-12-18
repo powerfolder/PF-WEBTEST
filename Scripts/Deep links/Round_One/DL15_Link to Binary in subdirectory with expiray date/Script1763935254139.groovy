@@ -176,7 +176,7 @@ deleteBinaryFile(binaryFilePath)
 WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
 
 // Générer la date et l'heure actuelles avec une minute ajoutée
-String newDateTime = Helper.generateDateTimePlusTenSeconds()
+String newDateTime = Helper.generateDateTimeMinusOneMinute()
 
 // Afficher la date dans la console (une seule fois)
 println('Date et heure générées : ' + newDateTime)
