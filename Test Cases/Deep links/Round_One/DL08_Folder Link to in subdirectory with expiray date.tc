@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DL08_Folder Link to in subdirectory with expiray date</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b4536bad-d58b-44bd-99ed-6303f4b7a842</testCaseGuid>
+</TestCaseEntity>

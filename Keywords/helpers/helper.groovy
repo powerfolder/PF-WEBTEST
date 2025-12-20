@@ -63,4 +63,62 @@ public class Helper {
 		WebDriver driver = DriverFactory.getWebDriver()
 		return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'" + fileName + "')]/../../../td[7]/a"))
 	}
+	@Keyword
+	def static generateDateTimePlusTenSeconds() {
+		Calendar calendar = Calendar.getInstance()
+
+		calendar.add(Calendar.SECOND, 10)
+
+		SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm:ss')
+
+		return sdf.format(calendar.getTime())
+	}
+	
+	def static generateDateTimeMinusOneMinute() {
+		Calendar calendar = Calendar.getInstance()
+	
+		// 1 Minute abziehen
+		calendar.add(Calendar.MINUTE, -1)
+	
+		SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm:ss')
+	
+		return sdf.format(calendar.getTime())
+	}
+
+	static String getSmartName() {
+
+		String safeEmojis =
+				"☺☹✌✍" +
+				"❤❣❥♥♡❦❧" +
+				"★☆✪✫✬✭✮✯✰" +
+				"✓✔✗✘☑" +
+				"←↑→↓↔↕↖↗↘↙" +
+				"⚠⚡⚓✈☀☁☂☃☄" +
+				"♠♣♥♦♤♧♡♢";
+
+		String accents = "äöüßÄÖÜ"; //éèàùçâêîôûÉÈÀÙÇ";
+
+		String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+		String specials = "@!\${}"
+
+		String all = accents + chars + specials;
+
+		Random r = new Random();
+
+		char e1 = safeEmojis.charAt(r.nextInt(safeEmojis.length()));
+		char e2 = safeEmojis.charAt(r.nextInt(safeEmojis.length()));
+
+		int length = 10 + r.nextInt(6);
+		StringBuilder sb = new StringBuilder();
+
+		for (int i = 0; i < length; i++) {
+			sb.append(all.charAt(r.nextInt(all.length())));
+		}
+
+		int pos = r.nextInt(sb.length());
+		sb.insert(pos, " ");
+
+		return e1.toString() + e2.toString() + sb.toString();
+	}
 }

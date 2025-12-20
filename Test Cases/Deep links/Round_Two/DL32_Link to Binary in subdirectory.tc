@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DL32_Link to Binary in subdirectory</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4bf137fb-d89c-4f46-a896-0cdc59cbacb6</testCaseGuid>
+</TestCaseEntity>

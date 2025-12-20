@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DL21_RW Link to DOCX in subdirectory</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d82daeee-5d75-4ffb-999a-9ca70e08ff91</testCaseGuid>
+</TestCaseEntity>

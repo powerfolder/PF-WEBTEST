@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DL31_Link Disable Download to image in subdirectory</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b22841d7-891f-439f-866f-a7a6a0535bd9</testCaseGuid>
+</TestCaseEntity>
