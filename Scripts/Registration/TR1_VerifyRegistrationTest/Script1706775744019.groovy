@@ -20,6 +20,7 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import utils.FormGenerator as FormGenerator
 
 WebUI.openBrowser('')
 
@@ -37,15 +38,27 @@ GlobalVariable.userEmail = generateRandomEmail().toLowerCase()
 
 WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Email'), GlobalVariable.userEmail)
 
+//WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Department'), FormGenerator.generateDepartment())
+
+//WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Street'), FormGenerator.generateStreet())
+
+//WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_code_postal'), FormGenerator.generatePostalCode())
+
+//WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Location'), FormGenerator.generateLocation())
+
+//WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Raison_For'), FormGenerator.generateReason())
+
 WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Password'), GlobalVariable.Pass)
 
 WebUI.check(findTestObject('Registration/Page_Register - PowerFolder/AcceptTermsAndConditions'))
+
 
 WebUI.click(findTestObject('Registration/Page_Register - PowerFolder/RegisterButton'))
 
 WebUI.delay(3)
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Check mails - PowerFolder')
+
+WebUI.verifyEqual(WebUI.getWindowTitle(), 'Register - PowerFolder')
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
 

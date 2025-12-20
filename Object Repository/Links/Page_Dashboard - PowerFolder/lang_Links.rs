@@ -6,15 +6,19 @@
    <elementGuidId>1ee321a5-6ced-49b0-85e3-74e9809aedae</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[1]/table/tbody/tr[5]/td/a/span</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>lang[name=&quot;label_links&quot;]</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//body/div[2]/div[1]/div[1]/table/tbody/tr[6]/td/a/span</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@name = 'label_links' and (text() = 'Links' or . = 'Links')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
@@ -23,7 +27,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>lang</value>
-      <webElementGuid>dea197a1-4471-4e8c-b5a3-8a13b4f3e47d</webElementGuid>
+      <webElementGuid>c41cf75e-16ab-4cb3-81d1-3e11bc6a7ebc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +35,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-hidden-on-small text-center</value>
-      <webElementGuid>fd7b2eaf-21ef-47b4-911f-3bbc8f27487c</webElementGuid>
+      <webElementGuid>dd2007a2-6dda-4df6-8085-90d5a540a3db</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +43,7 @@
       <name>name</name>
       <type>Main</type>
       <value>label_links</value>
-      <webElementGuid>dc58be94-5ff3-4c5a-921f-ebb22479075d</webElementGuid>
+      <webElementGuid>536bf1ea-1d8b-4fa5-9925-81bdd2cbe8af</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +51,7 @@
       <name>data-plural</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>959b02ad-110b-40eb-8cf1-81306d40734f</webElementGuid>
+      <webElementGuid>29178d2c-40ba-404f-b65e-b481a16e8383</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -55,7 +59,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Links</value>
-      <webElementGuid>28da1303-f2d0-4d87-ba27-295374501079</webElementGuid>
+      <webElementGuid>62e5109a-7a92-4f1d-82cf-218fa4566042</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -63,7 +67,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_menu&quot;)/table[1]/tbody[1]/tr[5]/td[@class=&quot;text-center&quot;]/a[1]/lang[@class=&quot;pica-hidden-on-small text-center&quot;]</value>
-      <webElementGuid>e6494bb6-4a3c-4737-9b39-773a0e8be7c7</webElementGuid>
+      <webElementGuid>42e930e7-d8c0-4c42-8fb9-2cdb9ae0eaa1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -71,7 +75,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//lang[@name='label_links']</value>
-      <webElementGuid>21473bc7-7925-472f-a6ff-d0679ffc9e73</webElementGuid>
+      <webElementGuid>66c8f0c3-9782-4877-aaf0-6638530fbb32</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +83,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_menu']/table/tbody/tr[5]/td/a/lang</value>
-      <webElementGuid>527b566d-7310-4f65-b5c5-8d2a5cd61e9f</webElementGuid>
+      <webElementGuid>048202aa-d9b3-4cea-860a-e05f30813c8f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +91,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Recycle Bin'])[1]/following::lang[1]</value>
-      <webElementGuid>36b25f16-066a-45cd-8292-cb215ec2e041</webElementGuid>
+      <webElementGuid>092fdc2e-8b82-4520-a4dd-df87d5e1b57c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +99,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Folders'])[1]/following::lang[2]</value>
-      <webElementGuid>38cb3efc-8656-4a8d-8e33-051795c35a4d</webElementGuid>
+      <webElementGuid>0f22c02a-197c-4d84-b522-ddcd2efa5628</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,7 +107,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Accounts'])[1]/preceding::lang[1]</value>
-      <webElementGuid>aa5d5e19-23c8-4cbf-a3fc-7fc62ca356e3</webElementGuid>
+      <webElementGuid>f12fc9ca-41d2-45a5-9310-e946a5ceb94d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,7 +115,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Groups'])[1]/preceding::lang[2]</value>
-      <webElementGuid>344aecb5-0dbe-49fe-993e-cfc2414594a7</webElementGuid>
+      <webElementGuid>cb656a49-50dc-4842-a17d-3e7acda05774</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -119,7 +123,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Links']/parent::*</value>
-      <webElementGuid>73d10d4f-ba36-41df-8541-da3fc9fc524d</webElementGuid>
+      <webElementGuid>5d057b92-d325-4a7a-9687-31b71cc0d8d0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -127,7 +131,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[5]/td/a/lang</value>
-      <webElementGuid>b11927dd-4c5e-4e87-88e8-1c6890956f0c</webElementGuid>
+      <webElementGuid>8975f768-76d7-44d1-b0e9-cfae77f0e386</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -135,6 +139,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//lang[@name = 'label_links' and (text() = 'Links' or . = 'Links')]</value>
-      <webElementGuid>5cf32705-7645-44ac-9b12-37ca722e0b86</webElementGuid>
+      <webElementGuid>be851235-0267-4354-b602-9d0dc39947d3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

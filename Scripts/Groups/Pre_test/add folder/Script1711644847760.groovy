@@ -49,6 +49,8 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFold
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
+
 WebDriver driver = DriverFactory.getWebDriver()
 
 WebElement folder = driver.findElement(By.xpath(('//td/span/a[contains(text(),\'' + foldername) + '\')]'))

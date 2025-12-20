@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body[@id='customer_portal_page_body']/div/div/div/div/div/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div[2]/span/span</value>
+         <value>//body/div[1]/div/div/div[1]/div/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[1]/div/div/div[2]/div[1]/div/div/div/div/div/div[1]/div/div/div/div[1]/div/div/div[2]/div/div/div[2]/span/span</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>a7316c18-9100-4e58-b4a6-534056cd3fc7</webElementGuid>
+      <webElementGuid>6853adcd-e75c-4332-a8ee-dbec9dd06e3f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <name>text</name>
       <type>Main</type>
       <value>€12.50 per month</value>
-      <webElementGuid>5e15411d-1024-4ad5-8cc8-9b69431ba1e9</webElementGuid>
+      <webElementGuid>535ea8c9-6c33-4e22-8ebd-ac774e38dd3e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;customer_portal_page_body&quot;)/div[@class=&quot;db-CustomerPortalRoot&quot;]/div[@class=&quot;sn-182o7r0 sn-1q4qxi9&quot;]/div[@class=&quot;⚙ ⚙&quot;]/div[@class=&quot;⚙ rs-0 as-0 as-1 as-2 as-3 as-4 as-5 as-6 as-7 as-8 ⚙1te0h1l&quot;]/div[@class=&quot;⚙  as-9 as-a as-b as-c as-d as-8 as-e ⚙156iqll&quot;]/div[@class=&quot;sn-token-provider ⚙  t0 t1 t2 t3 as-f as-g ⚙yfj593&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--row&quot;]/div[2]/div[@class=&quot;Box-root&quot;]/div[1]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--flexStart Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--flexStart Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty Margin-top--24 Margin-left--24&quot;]/div[1]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--flexStart Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty Margin-top--64 Margin-left--64&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--spaceBetween Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty Margin-top--16 Margin-left--16&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-alignItems--flexStart Flex-direction--row Flex-justifyContent--spaceBetween Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--flexStart Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty Margin-top--16 Margin-left--16&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--flexStart Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty Margin-top--12 Margin-left--12&quot;]/div[@class=&quot;Box-root&quot;]/div[@class=&quot;Box-root Flex-flex Flex-direction--column Flex-justifyContent--flexStart Flex-wrap--nowrap&quot;]/div[@class=&quot;Box-root Box-hideIfEmpty Margin-top--12 Margin-left--12&quot;]/span[@class=&quot;Text-color--default Text-fontSize--24 Text-fontWeight--bold Text-lineHeight--24 Text-numericSpacing--proportional Text-typeface--base Text-wrap--wrap Text-display--inline&quot;]/span[1]</value>
-      <webElementGuid>c3bc13ea-429f-4de6-a591-d5ff483077c0</webElementGuid>
+      <webElementGuid>fa135d57-e2c2-4b85-a139-425ec3d33219</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//body[@id='customer_portal_page_body']/div/div/div/div/div/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div[2]/span/span</value>
-      <webElementGuid>1c0e3b75-1ee7-4cf2-805e-cddc80554678</webElementGuid>
+      <webElementGuid>e382d45a-caa7-45f6-ae04-343e481a463c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cloud 1 TB'])[1]/following::span[3]</value>
-      <webElementGuid>edf67154-0a89-4f53-ad33-3738963bd91a</webElementGuid>
+      <webElementGuid>fbd4fbfb-420a-4b3d-8b92-b029ce890490</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -63,7 +63,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Current subscription'])[1]/following::span[7]</value>
-      <webElementGuid>b192c7c5-f77e-4821-bfe6-e712253820be</webElementGuid>
+      <webElementGuid>6e3a91bb-2d27-4cb9-8b6d-1f3676d0c2d0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='November 18, 2025'])[1]/preceding::span[1]</value>
-      <webElementGuid>944142eb-fe5d-4dbe-9f75-f6c92fb3ff1f</webElementGuid>
+      <webElementGuid>7de3a18a-7f82-4702-9e84-5c383659fccf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='€12.50 per month']/parent::*</value>
-      <webElementGuid>54baaa6f-b628-4bb8-a6a2-7a5acb8e5cea</webElementGuid>
+      <webElementGuid>989ded21-cbee-44f9-8ffa-2196c9330515</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +87,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/div/div[2]/span/span</value>
-      <webElementGuid>2994c592-10a0-4f93-843b-716289948f87</webElementGuid>
+      <webElementGuid>24d6e3a7-1122-46f7-b06e-124e0d1429ea</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,6 +95,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = '€12.50 per month' or . = '€12.50 per month')]</value>
-      <webElementGuid>3a6b79ee-9d64-4435-8c48-9f4eb3d33ae7</webElementGuid>
+      <webElementGuid>7943b506-bbf8-46d6-b288-c9642d76c06a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

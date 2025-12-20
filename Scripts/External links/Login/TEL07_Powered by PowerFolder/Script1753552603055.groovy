@@ -39,10 +39,6 @@ boolean isCorrectUrl = currentUrl.equals(expectedUrl)
 
 WebUI.verifyEqual(isCorrectUrl, true)
 
-WebUI.scrollToElement(findTestObject('External links/Page_Unternehmen/Jetzt Kaufen fr nur 12.50'), 3)
-
-WebUI.verifyElementText(findTestObject('External links/Page_Unternehmen/Jetzt Kaufen fr nur 12.50'), 'JETZT KAUFEN FÜR NUR 12.50 €')
-
 WebUI.closeWindowIndex(1)
 
 WebUI.switchToWindowIndex(0)

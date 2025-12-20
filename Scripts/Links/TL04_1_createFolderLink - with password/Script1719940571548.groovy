@@ -43,6 +43,8 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
+
 WebUI.setText(findTestObject('Accounts/inputAccountSearch'), folderName)
 
 WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
@@ -61,8 +63,6 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonCreateLink))
 
 WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_Can read'))
 
-//WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
-//WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
 WebUI.setText(findTestObject('Page_Link - PowerFolder/lang_Password required'), 'Alexa@131190')
 
 WebUI.delay(3)

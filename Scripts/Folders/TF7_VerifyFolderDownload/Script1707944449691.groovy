@@ -28,6 +28,20 @@ import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions as ChromeOptions
 import java.text.SimpleDateFormat as SimpleDateFormat
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 // Pre-test case call
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
@@ -48,25 +62,39 @@ WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandli
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-// Search for the created folder
+TestObject dynamicObject = new TestObject()
+
+dynamicObject.addProperty(
+	"xpath",
+	ConditionType.EQUALS,
+	"//span[text()='" + folderName + "']"
+)
+
+boolean exists = WebUI.verifyElementPresent(dynamicObject, 10, FailureHandling.OPTIONAL)
+
+// Clique sur le bouton "Folders"
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
+
 WebUI.setText(findTestObject('Folders/inputSearch'), folderName)
 
-// Get the WebDriver instance
-WebDriver driver = DriverFactory.getWebDriver()
+TestObject dynamicFolder = new TestObject('dynamicFolder')
+dynamicFolder.addProperty(
+	"xpath",
+	ConditionType.EQUALS,
+	"//*[contains(@data-search-keys, '" + folderName + "')]/td[1]/span"
+)
 
-// Find the folder element using the correct XPath with string concatenation
-WebElement folderNameElement = driver.findElement(By.xpath("//td/span/a[text()='" + folderName + "']/ancestor::tr/td[1]/span"))
+WebUI.waitForElementVisible(dynamicFolder, 10)
 
-// Delay to ensure the folder is present
-WebUI.delay(5)
+WebUI.waitForElementClickable(dynamicFolder, 10)
 
-// Click on the folder element
-folderNameElement.click()
+WebUI.click(dynamicFolder)
 
 // Download the folder
 WebUI.click(findTestObject('Folders/downloadLink'))
 
 // Save the parent window handle
+WebDriver driver = DriverFactory.getWebDriver()
 String parentWindow = driver.getWindowHandle()
 
 // Open a new tab to check the downloads

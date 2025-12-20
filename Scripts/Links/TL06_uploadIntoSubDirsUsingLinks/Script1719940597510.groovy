@@ -25,6 +25,7 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 import java.nio.file.Path as Path
 import java.nio.file.Files as Files
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import com.kms.katalon.core.testobject.ConditionType
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -42,12 +43,6 @@ WebUI.click(findTestObject('Folders/buttonOK'))
 
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 
-WebDriver driver = DriverFactory.getWebDriver()
-
-WebElement folder = driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'$folderName')]"))
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
-
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Folders/createDirectoryIcon'))
@@ -55,10 +50,6 @@ WebUI.click(findTestObject('Folders/createDirectoryIcon'))
 WebUI.setText(findTestObject('Folders/inputFolderName'), 'dir1')
 
 WebUI.click(findTestObject('Folders/buttonOK'))
-
-WebElement dir1 = driver.findElement(By.xpath('//table[@id=\'files_files_table\']/tbody/tr/td[2]/span/a[contains(text(),\'dir1\')]'))
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(dir1))
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 
@@ -68,9 +59,7 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), 'dir2')
 
 WebUI.sendKeys(findTestObject('Folders/inputFolderName'), Keys.chord(Keys.ENTER))
 
-WebElement btn = findShareButton('dir2')
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+WebUI.click(findTestObject('Links/share_icon_inside_folder'))
 
 WebUI.click(findTestObject('Folders/shareLink'))
 
@@ -80,12 +69,6 @@ WebUI.click(findTestObject('Share/buttonSave'))
 
 WebUI.doubleClick(findTestObject('Page_Folders - PowerFolder/icon-copy'))
 
-WebUI.click(findTestObject('Page_Link - PowerFolder/buttonSettings'))
-
-WebUI.click(findTestObject('Share/button_allowUpload'))
-
-WebUI.click(findTestObject('Share/buttonSave'))
-
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
 
 WebUI.navigateToUrl(my_clipboard)
@@ -94,9 +77,17 @@ WebUI.delay(3)
 
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
-List<WebElement> list = driver.findElements(By.className('pica-crumb'))
+TestObject dynamicObject = new TestObject()
 
-assert list.get(list.size() - 1).getText().equals('dir2')
+dynamicObject.addProperty(
+	"xpath",
+	ConditionType.EQUALS,
+	"//span[text()='" + 'dir2' + "']"
+)
+
+boolean exists = WebUI.verifyElementPresent(dynamicObject, 10, FailureHandling.STOP_ON_FAILURE)
+
+WebDriver driver = DriverFactory.getWebDriver()
 
 WebElement upload = driver.findElement(By.xpath('//a[@id=\'filelink_upload\']'))
 

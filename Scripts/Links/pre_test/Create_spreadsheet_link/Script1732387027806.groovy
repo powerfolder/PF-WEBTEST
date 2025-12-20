@@ -48,16 +48,6 @@ String spreadsheetname = getRandomFilerName()
 
 GlobalVariable.spreadsheetname = spreadsheetname
 
-WebUI.setText(findTestObject('Object Repository/Accounts/inputAccountSearch'), folderName)
-
-WebUI.sendKeys(findTestObject('Object Repository/Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
-
-WebDriver driver = DriverFactory.getWebDriver()
-
-WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'$folderName')]"))
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
-
 WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('file_objects/Spreadsheet/Page_Folders - PowerFolder/span_Create spreadsheet'))

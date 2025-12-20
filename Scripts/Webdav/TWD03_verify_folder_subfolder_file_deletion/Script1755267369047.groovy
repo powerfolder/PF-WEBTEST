@@ -39,6 +39,8 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
+
 //verify present of toplvl folder in web
 WebUI.setText(findTestObject('Folders/inputSearch'), folderName)
 

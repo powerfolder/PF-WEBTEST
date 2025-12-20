@@ -35,9 +35,9 @@ WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandli
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 
 WebElement btn = findShareButton(folderName)
-
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 String  mails = "a_${-> folderName}@a.com   b_${-> folderName}@b.com   c_${-> folderName}@c.com"

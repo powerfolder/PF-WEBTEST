@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL05_2_createFolderLink_via_internal_share_icon - with max downloads_obsolete</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e8b31282-67ee-40cc-ac29-eca3032f760c</testCaseGuid>
+</TestCaseEntity>

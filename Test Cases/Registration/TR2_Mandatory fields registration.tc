@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TR2_Mandatory fields registration</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cf492de1-624f-4bdc-a14c-0f26360909d3</testCaseGuid>
+</TestCaseEntity>

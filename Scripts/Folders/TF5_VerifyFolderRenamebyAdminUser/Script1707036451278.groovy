@@ -13,6 +13,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebDriver
+import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
@@ -24,6 +26,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import java.nio.file.Path as Path
 import java.nio.file.Files as Files
+import com.kms.katalon.core.testobject.ConditionType
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -37,16 +40,33 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-//WebUI.verifyEqual(WebUI.getText(findTestObject('Folders/getFolderCreationNotification')), 'Folder created')
-Thread.sleep(7000)
+TestObject dynamicObject = new TestObject()
 
-WebDriver driver = DriverFactory.getWebDriver()
+dynamicObject.addProperty(
+	"xpath",
+	ConditionType.EQUALS,
+	"//span[text()='" + folderName + "']"
+)
 
-WebUI.delay(5)
+boolean exists = WebUI.verifyElementPresent(dynamicObject, 10, FailureHandling.OPTIONAL)
 
-WebElement folderNameElement = driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName) + '\')]/td[1]/span '))
+// Clique sur le bouton "Folders"
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 
-folderNameElement.click()
+WebUI.setText(findTestObject('Folders/inputSearch'), folderName)
+
+TestObject dynamicFolder = new TestObject('dynamicFolder')
+dynamicFolder.addProperty(
+	"xpath",
+	ConditionType.EQUALS,
+	"//*[contains(@data-search-keys, '" + folderName + "')]/td[1]/span"
+)
+
+WebUI.waitForElementVisible(dynamicFolder, 10)
+
+WebUI.waitForElementClickable(dynamicFolder, 10)
+
+WebUI.click(dynamicFolder)
 
 WebUI.click(findTestObject('Folders/rename'))
 
@@ -56,14 +76,16 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), newFolderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-WebUI.setText(findTestObject('Folders/inputSearch'), newFolderName)
+WebUI.refresh()
+
+WebUI.delay(2)
+
+WebDriver driver = DriverFactory.getWebDriver()
 
 WebElement grpName = driver.findElement(By.xpath("//a[@class='pica-name'  and text () ='$newFolderName']"))
 
 WebUI.verifyEqual(grpName.isDisplayed(), true)
 
-//String notification = grpName.getText()
-//WebUI.verifyEqual(notification, "Renamed "+folderName+" to "+folderName+"_RENAME")
 WebUI.closeBrowser()
 
 String getRandomFolderName() {

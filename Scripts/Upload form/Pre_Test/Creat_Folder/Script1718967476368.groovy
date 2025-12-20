@@ -40,6 +40,8 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), GlobalVariable.folderNa
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
+
 WebElement btn = findShareButton(GlobalVariable.folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))

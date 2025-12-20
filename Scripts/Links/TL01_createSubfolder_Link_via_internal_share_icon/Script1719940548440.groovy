@@ -23,6 +23,7 @@ import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import com.kms.katalon.core.testobject.ConditionType
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -32,15 +33,27 @@ WebUI.click(findTestObject('Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Folders/createFolder'))
 
+WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getCreateText')), 'Create', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getFolderNameLabelText')), 'Create a new Folder', FailureHandling.CONTINUE_ON_FAILURE)
+
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-WebElement btn = findShareButton(folderName)
+assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+WebUI.click(findTestObject('Folders/createFolderIcon'))
+
+WebUI.click(findTestObject('Folders/createDirectoryIcon'))
+
+WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
+
+WebUI.sendKeys(findTestObject('Folders/inputFolderName'), Keys.chord(Keys.ENTER))
+
+WebUI.click(findTestObject('Links/share_icon_inside_folder'))
 
 WebUI.waitForElementClickable(findTestObject('Links/buttonCreateLink'), 30, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -48,10 +61,9 @@ WebElement buttonCreateLink = WebUiCommonHelper.findWebElement(findTestObject('L
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonCreateLink))
 
-//WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'), '2')
-WebUI.delay(3)
-
 WebUI.click(findTestObject('SettingsPopUp/buttonSave'))
+
+WebUI.delay(3)
 
 WebUI.doubleClick(findTestObject('Page_Folders - PowerFolder/icon-copy'))
 
@@ -63,16 +75,20 @@ WebUI.delay(3)
 
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
-WebDriver driver = DriverFactory.getWebDriver()
+TestObject dynamicObject = new TestObject()
 
-List<WebElement> list = driver.findElements(By.className('pica-crumb'))
+dynamicObject.addProperty(
+	"xpath",
+	ConditionType.EQUALS,
+	"//span[text()='" + folderName + "']"
+)
 
-assert list.get(list.size() - 1).getText().equals(folderName)
+boolean exists = WebUI.verifyElementPresent(dynamicObject, 10, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 
 String getRandomFolderName() {
-    String folderName = 'FTL7' + getTimestamp()
+    String folderName = 'FDTL1' + getTimestamp()
 
     return folderName
 }
@@ -91,3 +107,11 @@ String getTimestamp() {
     return formattedDate
 }
 
+/*
+def WebElement findShareButton(String fileName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+	return driver.findElement(By.xpath("//table[@id='files_files_table']//[contains(text(),'$fileName')]/../../td[7]/a/span"))
+}  
+//tr[@id='Object_559992308']/td[7]/a/span
+//body/div[2]/div[1]/div[2]/div[2]/table/tbody/tr/td[7]/a/span
+ */ 

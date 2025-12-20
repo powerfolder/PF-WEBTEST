@@ -38,9 +38,7 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-WebElement btn = findShareButton(folderName)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+WebUI.click(findTestObject('Links/share_icon_inside_folder'))
 
 String  mails = "  ${-> folderName}@a.com,${-> folderName}@b.com,${-> folderName}@c.com  "
 

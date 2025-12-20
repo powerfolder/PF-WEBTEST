@@ -69,8 +69,6 @@ WebUI.click(findTestObject('Login/loginSubmit'))
 
 WebUI.delay(3)
 
-//
-
 String Folder_0 = getRandomFolderName()
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
@@ -85,10 +83,6 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
 WebUI.delay(2)
 
-WebElement btn = findFolder(Folder_0)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_Document'))
@@ -106,11 +100,7 @@ WebUI.closeWindowIndex(1)
 
 WebUI.switchToWindowIndex(0)
 
-
-
-
-
-
+WebUI.refresh()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Home'))
 
@@ -124,10 +114,6 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFold
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-WebElement btn1 = findFolder(Folder_1)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
-
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_Document'))
@@ -145,11 +131,7 @@ WebUI.closeWindowIndex(1)
 
 WebUI.switchToWindowIndex(0)
 
-
-
-
-
-
+WebUI.refresh()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Home'))
 
@@ -163,10 +145,6 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFold
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-WebElement btn2 = findFolder(Folder_2)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
-
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_Document'))
@@ -184,12 +162,7 @@ WebUI.closeWindowIndex(1)
 
 WebUI.switchToWindowIndex(0)
 
-
-
-
-
-
-
+WebUI.refresh()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Home'))
 
@@ -203,10 +176,6 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFold
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-WebElement btn3 = findFolder(Folder_3)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn3))
-
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_Document'))
@@ -224,6 +193,7 @@ WebUI.closeWindowIndex(1)
 
 WebUI.switchToWindowIndex(0)
 
+WebUI.refresh()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Home'))
 
@@ -237,10 +207,6 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFold
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-WebElement btn4 = findFolder(Folder_4)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn4))
-
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_Document'))
@@ -257,6 +223,8 @@ WebUI.switchToWindowIndex(1)
 WebUI.closeWindowIndex(1)
 
 WebUI.switchToWindowIndex(0)
+
+WebUI.refresh()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Home'))
 
@@ -291,10 +259,6 @@ GlobalVariable.folderName = getRandomFolderName()
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), GlobalVariable.folderName)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
-
-WebElement btn5 = findFolder(GlobalVariable.folderName)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn5))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 

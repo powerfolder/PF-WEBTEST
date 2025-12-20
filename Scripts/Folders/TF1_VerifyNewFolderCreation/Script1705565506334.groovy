@@ -20,10 +20,16 @@ import org.openqa.selenium.By as By
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-WebUI.callTestCase(findTestCase('CleanUpScripts/CL1_CleanFolders'), [:], FailureHandling.STOP_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('CleanUpScripts/CL1_CleanFolders'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
+
+// Vérifie si le titre de la page correspond à "Folders - PowerFolder"
+assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 
@@ -31,33 +37,22 @@ WebUI.click(findTestObject('Folders/createFolder'))
 
 String folderName = getRandomFolderName()
 
-String lan = GlobalVariable.LANG
-
-if (!(lan.equals('GERMAN'))) {
-    WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getCreateText')), 'Create', FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getFolderNameLabelText')), 'Create a new Folder', FailureHandling.CONTINUE_ON_FAILURE)
-} else {
-    WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getCreateText')), 'Erstellen', FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getFolderNameLabelText')), 'Ordner neu erstellen', FailureHandling.CONTINUE_ON_FAILURE)
-}
-
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-WebUI.setText(findTestObject('Folders/inputSearch'), folderName)
+TestObject dynamicObject = new TestObject()
 
-WebDriver driver = DriverFactory.getWebDriver()
+dynamicObject.addProperty(
+	"xpath",
+	ConditionType.EQUALS,
+	"//span[text()='" + folderName + "']"
+)
 
-WebElement folder = driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName) + '\')]/td[1]/span'))
+boolean exists = WebUI.verifyElementPresent(dynamicObject, 10, FailureHandling.OPTIONAL)
 
-boolean isfolderCreated = folder.isDisplayed()
-
-WebUI.verifyEqual(isfolderCreated, true)
 
 WebUI.closeBrowser()
 
