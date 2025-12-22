@@ -25,6 +25,8 @@ WebUI.verifyElementClickable(findTestObject('External links/Page_Folders - Power
 
 WebUI.click(findTestObject('External links/Page_Folders - PowerFolder/user_label_shop'))
 
+WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/label_Annuel'))
+
 WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/Cloud 1 TB_yearly'))
 
 WebUI.delay(2)
