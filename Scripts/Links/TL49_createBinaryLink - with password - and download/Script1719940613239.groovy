@@ -69,8 +69,6 @@ assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
 WebUI.click(findTestObject('Links/Page_Link - PowerFolder/folder_link_download_button'))
 
-WebUI.delay(30)
-
 // Save the parent window handle
 WebDriver driver = DriverFactory.getWebDriver()
 String parentWindow = driver.getWindowHandle()
@@ -113,11 +111,11 @@ if (!isFileNameRetrieved) {
 
 String downloadSourceLink = downloadWindowExecutor.executeScript('return document.querySelector("downloads-manager").shadowRoot.querySelector("#downloadsList downloads-item").shadowRoot.querySelector("div#content #file-link").href').toString()
 
-System.out.println('Downloaded File Name: ' + fileName)
+System.out.println('Downloaded File Name: ' + binaryName)
 
 // Verify the downloaded file name
 WebUI.delay(5)
-WebUI.verifyEqual(fileName, folderName + '.zip')
+WebUI.verifyEqual(fileName, binaryName + '.bin')
 
 WebUI.closeBrowser()
 
