@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>folder_link_download_button</name>
+   <tag></tag>
+   <elementGuidId>3f203050-4fc2-45f9-ac9c-4e148ee6f3b5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='filelink_download']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.left.icon.glyphicons.glyphicons-cloud-download</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>6666c7f0-70b8-4af4-9cf9-9939ce225157</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>left icon glyphicons glyphicons-cloud-download</value>
+      <webElementGuid>af2372c0-2c5f-4837-babb-8cabd9ea0b77</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;filelink_download&quot;)/span[@class=&quot;left icon glyphicons glyphicons-cloud-download&quot;]</value>
+      <webElementGuid>a78d84ad-71dd-4d15-9891-7c208e471886</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//a[@id='filelink_download']/span</value>
+      <webElementGuid>0dd516af-a9cf-4964-99a7-54b4f3039c7c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Download'])[1]/preceding::span[2]</value>
+      <webElementGuid>88e72297-0e67-48f7-abeb-757afbc49c96</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Copy Link'])[1]/preceding::span[5]</value>
+      <webElementGuid>42ade8f6-2978-42a0-b465-f1f6d7de91ef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span</value>
+      <webElementGuid>b9126632-784d-4b5a-a43a-05cbdab25225</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
