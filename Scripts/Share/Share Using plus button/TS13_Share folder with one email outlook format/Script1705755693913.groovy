@@ -43,7 +43,7 @@ WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-String mail ="${-> folderName} <${-> folderName}@outlook.com>"
+String mail ="${-> folderName} <${-> folderName}@qa-automated-webtest.com>"
 
 WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/inputEmail_Share'),mail)
 
