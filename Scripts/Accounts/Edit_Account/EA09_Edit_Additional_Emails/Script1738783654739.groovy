@@ -42,7 +42,7 @@ WebUI.click(findTestObject('Accounts/Edit_Accounts - PowerFolder/Edit_account'))
 
 WebUI.click(findTestObject('Accounts/AdditonalEmails'))
 
-String additional_email = 'additional_email@test.com'
+String additional_email = 'additional_email@qa-automated-webtest.com'
 
 WebUI.setText(findTestObject('Accounts/AddAnEmailPlaceholder'), additional_email)
 

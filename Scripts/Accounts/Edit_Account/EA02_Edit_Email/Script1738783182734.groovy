@@ -77,6 +77,6 @@ WebElement findAccount(String emailId) {
 }
 
 String generateRandomEmail() {
-    return ('New' + RandomStringUtils.randomNumeric(4)) + '@email.com'
+    return ('New' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com'
 }
 
