@@ -35,7 +35,7 @@ import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
 
 // Variables globales
-GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
+GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
 
 String Emailid = GlobalVariable.userEmail
 
@@ -74,7 +74,7 @@ WebUI.click(findTestObject('Accounts/CreateButton'))
 
 WebUI.click(findTestObject('Accounts/ClickCreateAccount'))
 
-String Email2 = ('user_2_' + RandomStringUtils.randomNumeric(4)) + '@test.com'
+String Email2 = ('user_2_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com'
 
 WebUI.setText(findTestObject('Accounts/InputUserOrEmail'), Email2)
 
