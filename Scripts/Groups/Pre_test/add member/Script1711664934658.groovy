@@ -33,7 +33,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
-GlobalVariable.userName = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
+GlobalVariable.userName = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
 
 String user = GlobalVariable.userName
 
