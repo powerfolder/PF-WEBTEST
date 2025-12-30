@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>price_team_m</name>
+   <tag></tag>
+   <elementGuidId>e7710c3e-996a-4076-9844-b6c84983ed48</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='monthlyPlans']/div[3]/div/div[4]/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>5dc06e72-5a23-49ec-b4f1-1adbd6c90fe1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>plan-price</value>
+      <webElementGuid>0bc14bcf-9db6-4d88-a3cd-e783be0fa6c3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>39,90 €</value>
+      <webElementGuid>f97cf3fe-e7df-4f3e-89b5-000de0846e08</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;monthlyPlans&quot;)/div[@class=&quot;plan-card&quot;]/div[@class=&quot;plan-content&quot;]/div[@class=&quot;plan-price-section&quot;]/div[@class=&quot;plan-price&quot;]</value>
+      <webElementGuid>696d60f4-e796-4a97-a60b-5d490f0d5f4b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='monthlyPlans']/div[3]/div/div[4]/div</value>
+      <webElementGuid>8f2834b1-8b99-4847-9fe0-87e42a2a138e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='📂 Unbegrenzte Team-Freigaben'])[1]/following::div[2]</value>
+      <webElementGuid>b662a1b7-4923-423b-9872-5b945d985a53</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='🔒 DSGVO-konform · Server DE'])[3]/following::div[2]</value>
+      <webElementGuid>05c6e196-92f7-4fd4-90fa-e8924559302e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Monatlich'])[4]/preceding::div[1]</value>
+      <webElementGuid>7850e576-84dc-45d1-98a8-970c31a35867</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kostenlos 5 GB'])[2]/preceding::div[2]</value>
+      <webElementGuid>02aace57-9e74-4ded-8c2f-6a1de7836936</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='39,90 €']/parent::*</value>
+      <webElementGuid>bdf087d5-f1f3-4416-b387-f69202347ec9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div[4]/div</value>
+      <webElementGuid>4cfb80ac-ef72-4331-b091-fa1899698efd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = '39,90 €' or . = '39,90 €')]</value>
+      <webElementGuid>679bd6be-f7e5-4c84-a5ef-c897119c47ab</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

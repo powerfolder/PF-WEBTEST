@@ -27,6 +27,10 @@ println('Tooltip content: ' + tooltipText)
 
 WebUI.verifyMatch(tooltipText, '.*1 TB.*', true)
 
+String price = WebUI.getText(findTestObject('Page_PowerFolder - shop_stripe/price_team_m'))
+
+println(price)
+
 WebUI.refresh()
 
 WebUI.verifyElementClickable(findTestObject('Page_PowerFolder - shop_stripe/Invoices_6TB'))
@@ -47,7 +51,7 @@ WebUI.delay(2)
 
 WebUI.verifyElementText(findTestObject('Page_PowerFolder - shop_stripe/Size'), 'Team Cloud 6 TB')
 
-WebUI.verifyElementText(findTestObject('Page_PowerFolder - shop_stripe/Price'), '€69.90 per month')
+WebUI.verifyElementText(findTestObject('Page_PowerFolder - shop_stripe/Price'), price + ' per month')
 
 WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/Return to PowerFolder'))
 

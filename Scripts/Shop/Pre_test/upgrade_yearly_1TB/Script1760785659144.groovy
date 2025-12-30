@@ -25,6 +25,8 @@ WebUI.verifyElementClickable(findTestObject('External links/Page_Folders - Power
 
 WebUI.click(findTestObject('External links/Page_Folders - PowerFolder/user_label_shop'))
 
+WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/label_Annuel'))
+
 WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/Cloud 1 TB_yearly'))
 
 WebUI.delay(2)
@@ -98,6 +100,7 @@ WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/div_Zahlungspflichtig
 
 // high delay needed so stripe call back is done in background
 WebUI.delay(120)
+WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/label_Annuel'))
 
 //Verify that the storage is 1 TB.
 WebUI.verifyElementText(findTestObject('Page_PowerFolder - shop_stripe/Cloud 1 TB_Current_y'), 'Current')
