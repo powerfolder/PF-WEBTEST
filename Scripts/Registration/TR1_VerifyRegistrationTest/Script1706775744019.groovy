@@ -111,7 +111,7 @@ String generateRandomString(int length) {
 }
 
 String generateRandomEmail() {
-    return generateRandomString(8) + '@email.com'
+    return generateRandomString(8) + '@qa-automated-webtest.com'
 }
 
 String generateRandomPhoneNumber() {
