@@ -44,7 +44,7 @@ WebUI.callTestCase(findTestCase('Upload form/Pre_Test/Creat_upload_form'), [:], 
 
 WebUI.refresh()
 
-String userEmail = ('user_2_' + RandomStringUtils.randomNumeric(4)) + '@test.com'
+String userEmail = ('user_2_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com'
 
 String Name = 'My_Name_2_' + RandomStringUtils.randomNumeric(4)
 

@@ -76,7 +76,7 @@ String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getConten
 
 WebUI.navigateToUrl(my_clipboard)
 
-GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
+GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
 
 GlobalVariable.Name = ('My_Name_' + RandomStringUtils.randomNumeric(4))
 

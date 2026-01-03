@@ -111,7 +111,7 @@ String generateRandomString(int length) {
 }
 
 String generateRandomEmail() {
-    return generateRandomString(8) + '@email.com'
+    return generateRandomString(8) + '@qa-automated-webtest.com'
 }
 
 String generateRandomPhoneNumber() {
@@ -119,37 +119,3 @@ String generateRandomPhoneNumber() {
 
     return String.format('(%03d) %03d-%04d', random.nextInt(1000), random.nextInt(1000), random.nextInt(10000))
 }
-
-/*
- 
- WebUI.openBrowser('')
- 
- WebUI.maximizeWindow()
- 
- WebUI.navigateToUrl("https://yopmail.com/")
- 
- WebUI.setText(findTestObject('YopMail/YopMailSearchMailBar'), emailId)
- 
- WebUI.click(findTestObject('YopMail/ArrowNexrButton'))
- 
- WebUI.switchToFrame(findTestObject('YopMail/IFrame'),10)
- 
- WebUI.delay(3)
- 
- WebUI.click(findTestObject('YopMail/ActivateAccount'))
- 
- String newWindowHandle = WebUI.switchToWindowTitle('Login - PowerFolder')
- 
- WebUI.switchToWindowTitle("Login - PowerFolder")
- 
- WebUI.setText(findTestObject('Registration/EnterLoginPassword'), "Alexa@1311900")
- 
- WebUI.delay(3)
- 
- WebUI.click(findTestObject('Registration/LoginButton'))
- 
- WebUI.delay(3)
- 
- assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
- 
- */ 

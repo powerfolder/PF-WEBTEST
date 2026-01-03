@@ -88,7 +88,7 @@ WebUI.verifyEqual(WebUI.getText(findTestObject('Accounts/VerifyEditPage')), 'Edi
 
 WebUI.click(findTestObject('Accounts/AdditonalEmails'))
 
-WebUI.setText(findTestObject('Accounts/AddAnEmailPlaceholder'), 'additionalEmail@yopmail.com')
+WebUI.setText(findTestObject('Accounts/AddAnEmailPlaceholder'), 'additionalEmail@qa-automated-webtest.com')
 
 WebUI.click(findTestObject('Accounts/AddTagInputButton'))
 
@@ -139,7 +139,7 @@ String generateRandomString(int length) {
 }
 
 String generateRandomEmail() {
-	return generateRandomString(8) + '@yopmail.com'
+	return generateRandomString(8) + '@qa-automated-webtest.com'
 }
 
 String generateRandomPhoneNumber() {

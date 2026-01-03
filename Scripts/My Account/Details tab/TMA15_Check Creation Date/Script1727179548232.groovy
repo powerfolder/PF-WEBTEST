@@ -33,7 +33,7 @@ import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
 
 // Variables globales
-GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
+GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
 
 String Emailid = GlobalVariable.userEmail
 
