@@ -50,6 +50,13 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Accounts/Edit_Accounts - PowerFolder/Create new Organization'))
 
+WebUI.click(findTestObject('Accounts/Page_Organizations - PowerFolder/button_Is member'))
+
+WebUI.waitForElementVisible(findTestObject('Accounts/Page_Organizations - PowerFolder/checkbox_IsAdmin'), 5)
+
+WebUI.check(findTestObject('Accounts/Page_Organizations - PowerFolder/checkbox_IsAdmin'))
+
+ 
 WebUI.click(findTestObject('Accounts/SaveButton'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
