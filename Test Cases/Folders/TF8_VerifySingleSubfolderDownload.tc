@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF8_VerifySingleSubfolderDownload</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4cc37de6-f806-4dfd-976d-c2a5f73aa4f7</testCaseGuid>
+</TestCaseEntity>
