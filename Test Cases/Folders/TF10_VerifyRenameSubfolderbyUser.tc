@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF10_VerifyRenameSubfolderbyUser</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>67c177ab-a4e2-43c1-b18e-e32230d2729e</testCaseGuid>
+</TestCaseEntity>
