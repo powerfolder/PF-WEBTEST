@@ -2489,4 +2489,11 @@
       <testCaseId>Test Cases/Deep links/Round_Two/DL38_Download From link Button</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>1005ad92-a72b-4c32-adbd-11f88ac917a3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Folders/TF10_VerifyRenameSubfolderbyUser</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
