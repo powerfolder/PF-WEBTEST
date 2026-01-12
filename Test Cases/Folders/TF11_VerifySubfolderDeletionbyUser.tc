@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF11_VerifySubfolderDeletionbyUser</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>03524838-63ea-4de4-849f-76928e5f8744</testCaseGuid>
+</TestCaseEntity>
