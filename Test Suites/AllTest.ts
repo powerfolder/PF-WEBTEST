@@ -2496,4 +2496,11 @@
       <testCaseId>Test Cases/Folders/TF10_VerifyRenameSubfolderbyUser</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>91f5eb21-5973-4b61-83ab-f673b6f0d01b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Folders/TF11_VerifySubfolderDeletionbyUser</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
