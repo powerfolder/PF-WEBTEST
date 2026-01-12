@@ -86,14 +86,6 @@ WebElement btn3 = findFolder(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn3))
 
-
-@Keyword
-WebElement findFolder(String folderName) {
-    WebDriver driver = DriverFactory.getWebDriver()
-
-    return driver.findElement(By.xpath(('//td[2]/span/a[contains(text(),\'' + folderName) + '\')]'))
-}
-
 // mark sublvl folder
 
 TestObject dynamicFolder = new TestObject('dynamicFolder')
@@ -162,3 +154,12 @@ WebUI.verifyEqual(fileName, folderName1 + '.zip')
 
 // Close the browser
 WebUI.closeBrowser()
+
+
+
+@Keyword
+WebElement findFolder(String folderName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+
+	return driver.findElement(By.xpath(('//td[2]/span/a[contains(text(),\'' + folderName) + '\')]'))
+}
