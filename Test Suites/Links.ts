@@ -382,4 +382,11 @@
       <testCaseId>Test Cases/Links/TL49_createBinaryLink - with password - and download</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>aab4afeb-42dd-435a-a9a7-fca15d2b723b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL50_VerifyBinaryFileLinkDownload</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
