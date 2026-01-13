@@ -2517,4 +2517,11 @@
       <testCaseId>Test Cases/Folders/TF9_VerifyMultipleSubfolderDownload</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>d59f3d40-1e3e-4095-a013-79c44cfdf2ef</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL50_VerifyBinaryFileLinkDownload</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
