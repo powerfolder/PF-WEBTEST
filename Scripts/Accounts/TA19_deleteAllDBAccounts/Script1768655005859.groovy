@@ -33,6 +33,14 @@ import com.kms.katalon.core.testobject.ConditionType
 
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
 
+GlobalVariable.userName = generateRandomString(8)
+
+GlobalVariable.userLastName = generateRandomString(8)
+
+GlobalVariable.userEmail = generateRandomEmail().toLowerCase()
+
+GlobalVariable.PhoneNumber = generateRandomPhoneNumber()
+
 WebUI.click(findTestObject('Accounts/CreateButton'))
 
 WebUI.click(findTestObject('Accounts/ClickCreateAccount'))
@@ -80,6 +88,18 @@ accountRow.addProperty(
 
 boolean notPresent = WebUI.waitForElementNotPresent(accountRow, 10)
 WebUI.verifyEqual(notPresent, true)
+
+WebUI.delay(10)
+
+TestObject adminaccount = new TestObject()
+adminaccount.addProperty(
+	"xpath",
+	ConditionType.EQUALS,
+	"//*[contains(@data-search-keys, 'adminqa')]/td[1]/span"
+)
+
+boolean Present = WebUI.waitForElementPresent(adminaccount, 10)
+WebUI.verifyEqual(Present, true)
 
 WebUI.closeBrowser()
 
