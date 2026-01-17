@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>TextAccountDeleteDialog</name>
+   <tag></tag>
+   <elementGuidId>a0916564-32e5-4f48-ab11-e7da1df8f9ec</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#pica_confirmation_dialog > div.modal-dialog > div.modal-content > div.modal-body > h5.pica-dialog-description</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_confirmation_dialog']/div/div/div[2]/h5</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h5</value>
+      <webElementGuid>4e021653-cf63-4893-851a-7958d09b2f7e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-dialog-description</value>
+      <webElementGuid>6a4d9e66-d14c-46ae-a2d7-a2e83fbf4d66</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Do you really want to delete clwbpofn@qa-automated-webtest.com?</value>
+      <webElementGuid>4e0d74c2-b4cb-478a-a699-3dea2a1b7a57</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pica_confirmation_dialog&quot;)/div[@class=&quot;modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-body&quot;]/h5[@class=&quot;pica-dialog-description&quot;]</value>
+      <webElementGuid>74ffe7c4-3e8a-464e-a0ad-0c97162cb28b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_confirmation_dialog']/div/div/div[2]/h5</value>
+      <webElementGuid>f6a1ccab-4946-43a4-b14d-c701de1fd852</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[3]/following::h5[1]</value>
+      <webElementGuid>911d77f5-4820-4c17-be5b-dfaf4a40e255</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[5]/following::h5[1]</value>
+      <webElementGuid>7ec663de-8469-4b38-ac42-fb7a65e5ad4a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Yes'])[1]/preceding::h5[1]</value>
+      <webElementGuid>78c5e129-e8ca-4aa4-871a-8d7e1ab28821</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[1]/preceding::h5[1]</value>
+      <webElementGuid>50250a56-d45c-4832-9b63-39c50dc285f9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Do you really want to delete']/parent::*</value>
+      <webElementGuid>0af4797d-1d59-4661-92d6-b02a64a03e03</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[6]/div/div/div[2]/h5</value>
+      <webElementGuid>1934f388-93db-4660-aae7-46eaed182f73</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h5[(text() = 'Do you really want to delete clwbpofn@qa-automated-webtest.com?' or . = 'Do you really want to delete clwbpofn@qa-automated-webtest.com?')]</value>
+      <webElementGuid>4c60c5bf-20c4-4ae0-8648-0736a6a9ea4e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
