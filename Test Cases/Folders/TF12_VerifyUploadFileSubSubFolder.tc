@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF12_VerifyUploadFileSubSubFolder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>45f0cf7a-dab7-4589-9e73-062b8e2793fb</testCaseGuid>
+</TestCaseEntity>
