@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF21_CreateFileOnSubFolder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>be97ec5a-6dc8-48d1-a2ac-69dd04e3b448</testCaseGuid>
+</TestCaseEntity>
