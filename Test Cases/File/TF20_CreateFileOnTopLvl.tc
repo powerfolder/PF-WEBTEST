@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF20_CreateFileOnTopLvl</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1a0a6a99-5c03-4086-b581-90d569b3ec00</testCaseGuid>
+</TestCaseEntity>
