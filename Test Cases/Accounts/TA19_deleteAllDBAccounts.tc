@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TA19_deleteAllDBAccounts</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b6d9f842-0506-4d59-987b-4b4654c95665</testCaseGuid>
+</TestCaseEntity>

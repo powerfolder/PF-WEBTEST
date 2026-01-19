@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TA18_deleteSingleDBAccount</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ae873dd9-6f5f-475b-8846-71fdac0e5657</testCaseGuid>
+</TestCaseEntity>
