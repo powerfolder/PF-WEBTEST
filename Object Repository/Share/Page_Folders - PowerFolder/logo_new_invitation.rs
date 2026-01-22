@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>logo_new_invitation</name>
+   <tag></tag>
+   <elementGuidId>bb531e9a-e90c-44a4-bbf7-bd17a813d2e1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;Object_1057709570&quot;)/td[@class=&quot;pica-icon-column&quot;]/span[@class=&quot;glyphicons glyphicons-send pica-glyph&quot;]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.glyphicons.glyphicons-send.pica-glyph</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='Object_1057709570']/td/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>f8f0ddcf-fa9c-4435-b005-5d7bb7d322e8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>glyphicons glyphicons-send pica-glyph</value>
+      <webElementGuid>2eb07d6f-0b77-4d16-9288-8494c13e5da8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;Object_1057709570&quot;)/td[@class=&quot;pica-icon-column&quot;]/span[@class=&quot;glyphicons glyphicons-send pica-glyph&quot;]</value>
+      <webElementGuid>082b36ad-1018-404f-ae76-ae2d666a012a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='Object_1057709570']/td/span</value>
+      <webElementGuid>7cb4c108-347a-49c2-9d26-8c6dde7c8a7a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/span</value>
+      <webElementGuid>9c2f97f4-9b53-428b-ad1e-85d899753770</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
