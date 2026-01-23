@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>message_decline_invitation</name>
+   <tag></tag>
+   <elementGuidId>4b4738f0-fad7-4aff-aa51-09b18261f729</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='notification_949007']/div/span[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.pica-notification-box.alert.alert-info > span:nth-of-type(2)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>a6e0e742-3688-4719-a204-00d5f96c445e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Einladung abgelehnt.</value>
+      <webElementGuid>fd057481-5366-48b2-9927-278809eca5ea</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;notification_949007&quot;)/div[@class=&quot;pica-notification-box alert alert-info&quot;]/span[2]</value>
+      <webElementGuid>af4527a7-8cd7-416a-a2c1-fd5c3813fa73</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='notification_949007']/div/span[2]</value>
+      <webElementGuid>7b80f334-ac3c-4aac-b520-b0305f16a04c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='`'])[1]/following::span[2]</value>
+      <webElementGuid>db6b09f6-9081-4d76-a8f4-e8daaea1f26c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[17]/preceding::span[1]</value>
+      <webElementGuid>388f2f68-a21e-48cc-a1a5-65ec492009c9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/span[2]</value>
+      <webElementGuid>4085e0be-343c-4594-b3d8-9f530ad0c55a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Einladung abgelehnt.' or . = 'Einladung abgelehnt.')]</value>
+      <webElementGuid>2817b70b-246d-417a-bea5-6cfc02db964b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
