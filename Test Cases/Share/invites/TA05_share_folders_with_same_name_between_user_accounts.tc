@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TA05_share_folders_with_same_name_between_user_accounts</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9719af44-322a-491b-bdc3-d513c7f0f849</testCaseGuid>
+</TestCaseEntity>

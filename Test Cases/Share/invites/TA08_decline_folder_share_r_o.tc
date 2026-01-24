@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TA08_decline_folder_share_r_o</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>65ce8b9d-7ec1-4408-b8db-ea265b5a610c</testCaseGuid>
+</TestCaseEntity>
