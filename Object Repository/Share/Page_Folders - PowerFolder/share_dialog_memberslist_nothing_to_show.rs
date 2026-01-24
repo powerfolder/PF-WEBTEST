@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>share_dialog_memberslist_nothing_to_show</name>
+   <tag></tag>
+   <elementGuidId>b6bfed64-d39d-44f2-86ab-cb6aa1ac8af1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//lang[@name='string_nothing_found']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>lang[name=&quot;string_nothing_found&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>lang</value>
+      <webElementGuid>833a1a77-d2c9-434a-a9f9-37fe4c63d0be</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>string_nothing_found</value>
+      <webElementGuid>49bf4123-c1d6-4ae4-a826-f3ab56400d80</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Nothing to show</value>
+      <webElementGuid>6025003b-db61-4203-bf89-d21092349375</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;share_table&quot;)/tbody[1]/tr[@class=&quot;pica-table-empty warning&quot;]/td[@class=&quot;text-center&quot;]/lang[1]</value>
+      <webElementGuid>140b7646-b548-43bb-9090-d4eadf1a7c89</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//lang[@name='string_nothing_found']</value>
+      <webElementGuid>1b1760df-d4c8-4cf8-aa3a-da31f97dee09</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='share_table']/tbody/tr/td/lang</value>
+      <webElementGuid>e7b9020e-7760-4d91-a120-364beaca7b47</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove'])[1]/following::lang[1]</value>
+      <webElementGuid>ccfe7803-19d8-45b5-9c49-ed22b856c3e4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Can administrate'])[1]/following::lang[2]</value>
+      <webElementGuid>7041f268-5b2e-4bb0-9a65-023184b974e3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Create link'])[1]/preceding::lang[1]</value>
+      <webElementGuid>c92d43cc-b738-4ce0-b61e-263cfa286722</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Create upload form'])[1]/preceding::lang[2]</value>
+      <webElementGuid>5802e903-2bcf-4486-9286-4aaa41a45041</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Nothing to show']/parent::*</value>
+      <webElementGuid>3b6b6263-9878-4865-b133-f38ad29f8d7e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/lang</value>
+      <webElementGuid>4ffdf4f5-b207-437c-ac8f-487c03d49471</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//lang[@name = 'string_nothing_found' and (text() = 'Nothing to show' or . = 'Nothing to show')]</value>
+      <webElementGuid>64ac880c-c449-4ac6-ae48-694e35571413</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
