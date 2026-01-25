@@ -12,6 +12,13 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>c6bdee9a-07d1-4f52-bb0a-b31de110f631</testSuiteGuid>
    <testCaseLink>
+      <guid>0ca6dfcb-dc7a-469f-8ba5-ed92a4eefec4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/pre_test/check_eng</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>bcfc3693-eee7-40c0-b5ed-b3187ccbbd74</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -134,6 +141,13 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/My Account/Devices Tab/TMA17_Check Devices with keep me login</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>67460d1e-b67c-47ae-8958-7a2eb0600b9d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/My Account/Devices Tab/TMA18_Check_Devices_without_keep_me_login</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
