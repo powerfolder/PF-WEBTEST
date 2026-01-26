@@ -12,6 +12,13 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>79b62cfb-2c22-4a50-ad11-93041e9a794b</testSuiteGuid>
    <testCaseLink>
+      <guid>74b71805-5545-4931-b3df-46f3fbcdd2a0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/pre_test/check_eng</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>7ed0a801-1904-4f02-93ac-da19e1b72f37</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -71,5 +78,18 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Upload form/TUF07_Connect with two sessions</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>174391ef-c295-4dfc-8fca-19480f0949b3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Upload form/TUF08_Create an upload form and check expiration</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>085a206f-815c-4abc-90b7-10e1ba949ed7</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

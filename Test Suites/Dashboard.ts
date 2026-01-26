@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>cleanup1</name>
+   <name>Dashboard</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,19 +10,26 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>9f64c4d2-62b0-4c26-a2f6-871eeb79c172</testSuiteGuid>
+   <testSuiteGuid>abe45b7c-eb40-42b5-b5d7-d23455f796ef</testSuiteGuid>
    <testCaseLink>
-      <guid>ab5ab03d-27d8-4b39-b695-463a41adf578</guid>
+      <guid>a38b5bb9-dbd8-46a9-81c7-76a3c0788119</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CleanUpScripts/CL1_CleanFolders</testCaseId>
+      <testCaseId>Test Cases/Links/pre_test/check_eng</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3a098bff-eae0-4d54-aab8-872aabed22a3</guid>
+      <guid>a215cc95-d56d-41a6-ad2e-5553317284bd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CleanUpScripts/CL2_CleanAccounts</testCaseId>
+      <testCaseId>Test Cases/Dashboard/TD02_Test_Buttons_on_org_admin_dashboard</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cc354dfb-997b-42d9-8534-6bf49641b140</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Dashboard/TD01_Test_Buttons_on_admin_dashboard</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

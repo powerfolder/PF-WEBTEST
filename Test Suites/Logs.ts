@@ -12,6 +12,13 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>6a8c8fa8-39b7-49cc-901a-a9f776cd6b00</testSuiteGuid>
    <testCaseLink>
+      <guid>1c0ee8d3-2ddf-4dad-b1fb-bb1209f8b898</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/pre_test/check_eng</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>1339b53b-59eb-4027-aed2-622628bf1d0f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

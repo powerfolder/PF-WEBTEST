@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>FailedReRun</name>
+   <name>Webdav</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,75 +10,82 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>8df3aff0-536f-4a85-b356-c07b0765171e</testSuiteGuid>
+   <testSuiteGuid>3a5f85cb-f5d1-4c9c-85f5-26f8724aeee1</testSuiteGuid>
    <testCaseLink>
-      <guid>f37889cc-6799-434b-b4c3-078ada112ef8</guid>
+      <guid>881475d9-f083-4fd9-a255-c3387f6b2016</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL10_createFileLink - with expire date</testCaseId>
+      <testCaseId>Test Cases/Links/pre_test/check_eng</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c9769eeb-3bdf-4984-8d09-f3efb5c13324</guid>
+      <guid>7558732d-a832-4ee5-9a3a-583210a1b364</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL01_createDirLink</testCaseId>
+      <testCaseId>Test Cases/Webdav/TWD09_rename_file_toplvl_by_token</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d75f66bd-60df-4075-85a9-a31b58c4d673</guid>
+      <guid>9bef7d84-db2e-40ae-9953-3f4fdc657adf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL02_createFileLink</testCaseId>
+      <testCaseId>Test Cases/Webdav/TWD10_use_specific_toplvl_folder_as_webdav_point_by_token</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3eaf9db5-e9fd-41a0-ae95-6a71195ba952</guid>
+      <guid>86be827b-039d-4047-9415-1cb6faf63128</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL03_createFolderLink with expirary date</testCaseId>
+      <testCaseId>Test Cases/Webdav/TWD07_verify_subfolder_file_creation _by_token</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>9b64ff98-888d-4613-badd-e657be41298f</guid>
+      <guid>ce0a255f-d234-489d-a693-94dcbf1be3eb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL04_createFolderLink - with password</testCaseId>
+      <testCaseId>Test Cases/Webdav/TWD04_rename_file_toplvl</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>493e6241-2d63-4dff-a8ae-3fae8a55d1b1</guid>
+      <guid>bb678d69-30f3-49a7-be33-a08d5610c135</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL05_createFolderLink - with max downloads</testCaseId>
+      <testCaseId>Test Cases/Webdav/TWD05_use_specific_toplvl_folder_as_webdav_point</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a4ac6094-c92e-4360-a4fd-b67efd776871</guid>
+      <guid>36125f1c-da15-440c-9960-e225f59b6833</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL06_uploadIntoSubDirsUsingLinks</testCaseId>
+      <testCaseId>Test Cases/Webdav/TWD01_verify_toplvl_folder_creation</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>18b007af-af63-4df1-9a7d-db01f69abb20</guid>
+      <guid>91af2f94-4990-4d47-92b1-b7116765e24c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL07_createFolderLink</testCaseId>
+      <testCaseId>Test Cases/Webdav/TWD02_verify_subfolder_file_creation</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>00d99765-9f5a-40a7-a5e6-24fb222a308b</guid>
+      <guid>1637306e-5fb9-4a78-b8cf-bd3b8bf72a30</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL08_createFileLink - with password</testCaseId>
+      <testCaseId>Test Cases/Webdav/TWD08_verify_folder_subfolder_file_deletion_by_token</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6e9acdfd-9b2d-4233-b7de-ffd3f8601847</guid>
+      <guid>f43e54cc-8172-4508-9d35-82f68b58b991</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Links/TL09_createFileLink - with max downloads</testCaseId>
+      <testCaseId>Test Cases/Webdav/TWD06_verify_toplvl_folder_creation_by_token</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>234f6d5b-a413-4a0f-bb77-254d134b6822</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Webdav/TWD03_verify_folder_subfolder_file_deletion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

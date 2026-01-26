@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Organization</name>
+   <name>Login</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,60 +10,46 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>b41ba06b-bef2-4893-9f0c-781239c4997e</testSuiteGuid>
+   <testSuiteGuid>4f49c944-b3cf-484a-bedb-7f37293b7677</testSuiteGuid>
    <testCaseLink>
-      <guid>54755fb4-13d1-4021-8ca1-fe5dd2840190</guid>
+      <guid>ebe8cc56-884f-4615-ba01-41c650845f28</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/pre_test/check_eng</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>dac1dfdf-1724-4cae-8f54-3e1e5b174826</guid>
+      <guid>309fc3ba-11e5-463e-b891-f08352ee2b58</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Organization/TO01_CreateNewOrganization</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>54e67f6c-9d4a-465f-80bd-75e02365a9c6</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Organization/TO02_EditOrganization</testCaseId>
+      <testCaseId>Test Cases/Login/TC01_VerifyAdminLoginWithValidCredentails</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>d108d40a-22dc-4e22-8637-c0e26f7c37c7</variableId>
+         <variableId>12eff7a7-6d9c-447e-9e1c-f3ae34e17ec4</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>e163be06-568c-4cd3-ba59-386cde735b8e</guid>
+      <guid>f86c2a71-fcd3-4a83-9215-2358445e2627</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Organization/TO03_EditOrganizationBranding</testCaseId>
+      <testCaseId>Test Cases/Login/TC02_UserShouldNotAllowToLoginWithoutPassword</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1166b6a4-11d3-4a07-a5ed-3b9d92a20928</guid>
+      <guid>db60c142-e341-48b2-b8ee-077960cf9add</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Organization/TO04_EditOrganizationDomain</testCaseId>
+      <testCaseId>Test Cases/Login/TC03_verifyLoginWithWrongCredentials</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>806e076d-2bdf-4433-bf16-3753f8a15a80</guid>
+      <guid>4402bfbc-390b-42dc-b296-5d38238c2473</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Organization/TO05_EditOrganizationAddingMembers</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5217bff1-42c7-424a-99a1-b018bc5be4d0</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Organization/TO06_EditOrganizationAddingGroups</testCaseId>
+      <testCaseId>Test Cases/Login/TC04_verifylogout</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
