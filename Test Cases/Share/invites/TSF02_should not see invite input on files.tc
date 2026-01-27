@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TA07_share_folder_r_o</name>
+   <name>TSF02_should not see invite input on files</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>e3e6d6d9-4e3b-4812-bcf4-799acda391e1</testCaseGuid>
+   <testCaseGuid>339a73b4-49dd-4a82-a8be-e769327e303a</testCaseGuid>
 </TestCaseEntity>

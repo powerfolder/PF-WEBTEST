@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TA09_decline_folder_share_r_w</name>
+   <name>TSF09_decline_folder_share_r_w</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
