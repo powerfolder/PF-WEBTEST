@@ -194,28 +194,28 @@
       <guid>de30550a-3fe5-4797-8d0c-3b00e6e6f3cb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/invites/TA01_can see invite input for a folder</testCaseId>
+      <testCaseId>Test Cases/Share/invites/TSF01_can see invite input for a folder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>4f18a6b2-615f-4c9a-92de-243acfb9de6f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/invites/TA02_should not see invite input on files</testCaseId>
+      <testCaseId>Test Cases/Share/invites/TSF02_should not see invite input on files</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>b6c701bd-c59a-4ccd-a033-10abfa1dc2b5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/invites/TA03_should see invite input when going inside folder and coming back</testCaseId>
+      <testCaseId>Test Cases/Share/invites/TSF03_should see invite input when going inside folder and coming back</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>bd8ca7a3-d28a-4f26-a5c3-9002392bae9b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/invites/TA04_should not see invite input on sub folder</testCaseId>
+      <testCaseId>Test Cases/Share/invites/TSF04_should not see invite input on sub folder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -2605,35 +2605,35 @@
       <guid>bb8af4bb-c627-4842-85ca-00de4243c16a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/invites/TA05_share_folders_with_same_name_between_user_accounts</testCaseId>
+      <testCaseId>Test Cases/Share/invites/TSF05_share_folders_with_same_name_between_user_accounts</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>c44e0edf-2561-4a1b-9163-40402f8fd653</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/invites/TA06_share_folder_r_w</testCaseId>
+      <testCaseId>Test Cases/Share/invites/TSF06_share_folder_r_w</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>8f70da55-baef-4427-a504-a0e46de6d20b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/invites/TA07_share_folder_r_o</testCaseId>
+      <testCaseId>Test Cases/Share/invites/TSF07_share_folder_r_o</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>52d54e64-9da4-47b8-82cb-17afee1c872d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/invites/TA08_decline_folder_share_r_o</testCaseId>
+      <testCaseId>Test Cases/Share/invites/TSF08_decline_folder_share_r_o</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>d3ca005f-9aa0-4a82-bf9d-11deea513861</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share/invites/TA09_decline_folder_share_r_w</testCaseId>
+      <testCaseId>Test Cases/Share/invites/TSF09_decline_folder_share_r_w</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
