@@ -2650,4 +2650,11 @@
       <testCaseId>Test Cases/Links/TL52_VerifyUploadFileByUserFromLink</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>3adcabb2-8e94-40c8-944e-93897d5035c8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Groups/TG19_Create two groups with the same name</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
