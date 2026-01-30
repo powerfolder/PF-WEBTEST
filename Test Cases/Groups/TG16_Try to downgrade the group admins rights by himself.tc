@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG16_Try to downgrade the group admins rights by himself</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1ad0b916-0fc0-44eb-a37b-409204b94cdb</testCaseGuid>
+</TestCaseEntity>
