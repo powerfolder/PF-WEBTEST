@@ -159,36 +159,6 @@ WebUI.delay(2)
 WebUI.verifyElementText(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Permission'), 
     'Member') 
 
-
-/*
-
-WebElement btn2 = findGroup(GlobalVariable.GroupName)
-
-WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
-
-WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
-
-WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
-
-def button_2 = driver.findElement(By.xpath(xpath))
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button_2))
-
-WebUI.delay(2)
-
-String adminNameOrEmail = 'adminqa' // ou "adminqa@xxx.com" selon ce qui est affiché dans la ligne
-
-TestObject isAdminRoleSelected = new TestObject('isAdminRoleSelected')
-
-isAdminRoleSelected.addProperty('xpath', ConditionType.EQUALS, "//tr[.//td[contains(normalize-space(),'$adminNameOrEmail')]]" +
-	'//div[contains(@class,\'dropdown\') and @data-selected=\'Is member and admin\']')
-
-WebUI.verifyElementPresent(isAdminRoleSelected, 5)
-
-WebUI.closeBrowser()
-
-*/
-
 WebUI.closeBrowser()
 
 @Keyword
