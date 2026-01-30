@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG19_Create two groups with the same name</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a2f29317-ac69-4466-8a39-646fa0a38f20</testCaseGuid>
+</TestCaseEntity>
