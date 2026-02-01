@@ -57,7 +57,6 @@ assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
 WebUI.delay(2)
 
-//WebUI.click(findTestObject('Links/Page_Link - PowerFolder/button_Close-pngdownload'))
 WebUI.verifyElementNotPresent(findTestObject('Links/Page_Link - PowerFolder/pdf_Download'), 2)
 
 WebUI.delay(2)

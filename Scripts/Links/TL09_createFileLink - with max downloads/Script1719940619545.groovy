@@ -105,6 +105,8 @@ WebUI.delay(3)
 
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
+WebUI.verifyElementNotPresent(findTestObject('Links/Page_Link - PowerFolder/pdf_Download'), 2)
+
 WebUI.closeBrowser()
 
 WebElement findShareButton(String fileName) {
