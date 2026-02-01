@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TSF11_Share a folder with admin rights (decline)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>20bd3de9-bec5-4c6b-b95f-d58f0a107503</testCaseGuid>
+</TestCaseEntity>

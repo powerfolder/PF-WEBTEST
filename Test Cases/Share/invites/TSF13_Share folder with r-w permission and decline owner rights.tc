@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TSF13_Share folder with r-w permission and decline owner rights</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8199ab36-2468-4349-98ad-79205ceaccd6</testCaseGuid>
+</TestCaseEntity>
