@@ -31,7 +31,9 @@ println(GlobalVariable.videoName)
 
 videoName = GlobalVariable.videoName
 
-WebUI.setText(findTestObject('Links/Page_Folders - PowerFolder/input_Disable Download (View only)'), '0')
+WebUI.verifyElementClickable(findTestObject('Links/Page_Folders - PowerFolder/label_Disable Download (View only)'))
+
+WebUI.click(findTestObject('Links/Page_Folders - PowerFolder/label_Disable Download (View only)'))
 
 WebUI.click(findTestObject('Object Repository/Folders/button_SaveSettings'))
 
