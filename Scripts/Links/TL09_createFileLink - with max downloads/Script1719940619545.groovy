@@ -87,7 +87,9 @@ WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
 
 WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
 
-WebUI.setText(findTestObject('Object Repository/Page_Folders - PowerFolder/input_MaxDownloads'), '0')
+WebUI.verifyElementClickable(findTestObject('Links/Page_Folders - PowerFolder/label_Disable Download (View only)'))
+
+WebUI.click(findTestObject('Links/Page_Folders - PowerFolder/label_Disable Download (View only)'))
 
 WebUI.delay(10)
 
@@ -102,6 +104,8 @@ WebUI.navigateToUrl(my_clipboard)
 WebUI.delay(3)
 
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+
+WebUI.verifyElementNotPresent(findTestObject('Links/Page_Link - PowerFolder/pdf_Download'), 2)
 
 WebUI.closeBrowser()
 
