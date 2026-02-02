@@ -149,6 +149,8 @@ boolean isfoldershown = folder_shown.isDisplayed()
 
 WebUI.verifyEqual(isfoldershown, true)
 
+
+
 // open folder
 
 WebElement btn5 = findFolder(folderName)
