@@ -2706,4 +2706,11 @@
       <testCaseId>Test Cases/Share/invites/TSF10_Share a folder with admin rights (accept)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>45e6ee11-a61f-410e-8d67-e18b5feba164</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL53_VerifyNoLinksNewUser</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL53_VerifyNoLinksNewUser</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>30fb4a28-32bc-4814-8fab-54bc8d6e1fc9</testCaseGuid>
+</TestCaseEntity>
