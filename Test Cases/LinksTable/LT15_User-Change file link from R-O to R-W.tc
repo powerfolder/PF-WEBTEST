@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LT15_User-Change file link from R-O to R-W</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7b7c228e-9dad-49f8-8cc8-a0e9178f8fd2</testCaseGuid>
+</TestCaseEntity>

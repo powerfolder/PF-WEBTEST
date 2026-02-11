@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LT01_File link appears in linkstable</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e647dcf5-0fdc-4bed-b060-9c67a90f30b3</testCaseGuid>
+</TestCaseEntity>

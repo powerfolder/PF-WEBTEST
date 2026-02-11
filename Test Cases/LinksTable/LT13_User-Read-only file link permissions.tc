@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LT13_User-Read-only file link permissions</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7bad7a4b-476a-470a-b2cf-19ae0eae91f6</testCaseGuid>
+</TestCaseEntity>
