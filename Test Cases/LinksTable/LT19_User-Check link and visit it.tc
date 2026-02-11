@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LT19_User-Check link and visit it</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>376263fd-466a-4c08-8d36-dd99632dc2c4</testCaseGuid>
+</TestCaseEntity>

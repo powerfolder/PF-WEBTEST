@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LT10_Check link and visit it</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>aece19ba-f5ae-4cf0-a690-0a69dd02198e</testCaseGuid>
+</TestCaseEntity>

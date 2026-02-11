@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LT18_User-File link appears in linkstable</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0ea525f1-b34c-4618-99ba-b2d5973a16a7</testCaseGuid>
+</TestCaseEntity>

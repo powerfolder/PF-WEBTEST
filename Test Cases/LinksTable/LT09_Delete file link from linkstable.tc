@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LT09_Delete file link from linkstable</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>51a24982-7733-4286-8254-9fb0ca535dce</testCaseGuid>
+</TestCaseEntity>

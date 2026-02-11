@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LT04_Folder link is accessible</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d09d624f-0e21-4494-8512-fa92097e1f74</testCaseGuid>
+</TestCaseEntity>
