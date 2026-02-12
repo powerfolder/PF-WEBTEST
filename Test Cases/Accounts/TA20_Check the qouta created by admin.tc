@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TA20_Check the qouta created by admin</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3e68ad16-70ba-4ca9-8f94-c9894bee4513</testCaseGuid>
+</TestCaseEntity>
