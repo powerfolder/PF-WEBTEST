@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF23_Close_FileOptions_On_Outside_Click</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4129dcec-f3d0-47dd-9f28-d2467c3eca88</testCaseGuid>
+</TestCaseEntity>

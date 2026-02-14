@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF24_Close_FileManage_On_Outside_Click</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e3510b7d-f108-4414-be8e-77ea7564b9ca</testCaseGuid>
+</TestCaseEntity>
