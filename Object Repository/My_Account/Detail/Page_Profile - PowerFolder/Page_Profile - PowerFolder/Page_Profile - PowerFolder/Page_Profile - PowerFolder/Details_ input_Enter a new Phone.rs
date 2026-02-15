@@ -6,12 +6,12 @@
    <elementGuidId>d20a4f16-51c1-4fe8-b0f9-013715b985ec</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[11]/div/div/div[2]/div/input</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#pica_input_text</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//body/div[2]/div[1]/div[2]/div[12]/div/div/div[2]/div/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>f3f1e16a-c332-440c-aabe-d4451f6c25d3</webElementGuid>
+      <webElementGuid>c82b39b9-4cac-4456-be19-42f8c25b30da</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <name>id</name>
       <type>Main</type>
       <value>pica_input_text</value>
-      <webElementGuid>72428345-49d9-4f18-b242-9e9d96762a9e</webElementGuid>
+      <webElementGuid>86398915-cd24-42ce-9e40-aafa59d4af27</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control</value>
-      <webElementGuid>8b05ee00-a09b-4826-88d6-b0b7f4f099bf</webElementGuid>
+      <webElementGuid>5f907fa8-e68f-418d-9538-c371857dfadd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
       <name>name</name>
       <type>Main</type>
       <value>pencil</value>
-      <webElementGuid>c12ad812-056b-4baa-ba57-623a0f307058</webElementGuid>
+      <webElementGuid>0ac28aa9-3663-417a-903e-464daa0845a0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -55,7 +55,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>c040de84-f45c-46e2-90de-43fdd4bdfde7</webElementGuid>
+      <webElementGuid>1dc7c612-9ee9-40e5-a958-2f624f64e34d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -63,7 +63,7 @@
       <name>data-placeholder</name>
       <type>Main</type>
       <value>placeholder_input</value>
-      <webElementGuid>f6b1a923-85ba-45c2-9c00-1ad5085a8d67</webElementGuid>
+      <webElementGuid>5fd97e89-f5c4-4bf1-874f-8a67f378f06e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -71,7 +71,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Insert here</value>
-      <webElementGuid>17fec1b0-df36-4dbc-9b4f-0008fa9feb2f</webElementGuid>
+      <webElementGuid>2b6ca230-9895-4246-a052-8e5edb675a2a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_input_text&quot;)</value>
-      <webElementGuid>fa91db0a-7fba-4fbf-ab3d-95576a85e78a</webElementGuid>
+      <webElementGuid>e57ad7b2-b99e-464c-81bd-d70f433355ee</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -87,7 +87,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='pica_input_text']</value>
-      <webElementGuid>09fb5f92-195c-40d4-9197-3780f526ce5d</webElementGuid>
+      <webElementGuid>ad617e14-ec6f-492a-9995-b71205a8777e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +95,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_input_dialog']/div/div/div[2]/div/input</value>
-      <webElementGuid>9b36fb34-d00b-4f92-9de1-9c06941fc31b</webElementGuid>
+      <webElementGuid>69d947b6-90a1-416b-8982-d0228ce36f22</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,7 +103,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[11]/div/div/div[2]/div/input</value>
-      <webElementGuid>f2afec94-fb62-4aa6-965c-3848753acd8f</webElementGuid>
+      <webElementGuid>485a67ff-8399-4316-90c5-2aa1abb329eb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,6 +111,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'pica_input_text' and @name = 'pencil' and @type = 'text' and @placeholder = 'Insert here']</value>
-      <webElementGuid>4cba5db9-3bc8-41e9-b5cd-8a0b50307f01</webElementGuid>
+      <webElementGuid>d0971cdf-34f3-48e5-b800-94418aed38ae</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
