@@ -6,12 +6,12 @@
    <elementGuidId>73aac230-ae1d-4bf3-9f36-8fba3e091a90</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.profile_storage_bar.form-control-static</value>
+         <key>XPATH</key>
+         <value>//body/div[2]/div[1]/div[2]/div[2]/div/div[4]/div[2]/div[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[2]/div/div[3]/div[2]/div[2]</value>
+         <key>CSS</key>
+         <value>div.profile_storage_bar.form-control-static</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>4d531c49-48d8-4014-a37a-ef400e70e19b</webElementGuid>
+      <webElementGuid>7a24c847-f873-4727-ab77-c60ece676f4b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>profile_storage_bar form-control-static</value>
-      <webElementGuid>c97aa1d0-0259-46af-8671-b1d9dabd1e80</webElementGuid>
+      <webElementGuid>59823ea2-5fdc-487d-9bf9-ca7fefd5db15</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>data-toggle</name>
       <type>Main</type>
       <value>popover</value>
-      <webElementGuid>2604a13d-edd9-4f7f-abaf-fe124fa89079</webElementGuid>
+      <webElementGuid>677e8b00-9869-43d6-9c22-f7a23d4f47aa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +47,7 @@
       <name>data-container</name>
       <type>Main</type>
       <value>body</value>
-      <webElementGuid>eceed6b0-9713-410a-b9d3-fb623800803d</webElementGuid>
+      <webElementGuid>ee6c3ab7-9005-48c1-bd09-8665db5fa9a2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>data-placement</name>
       <type>Main</type>
       <value>left</value>
-      <webElementGuid>de3194a5-3628-4bdc-84a8-87d9043368f6</webElementGuid>
+      <webElementGuid>a6a9ba6e-9738-4df5-b579-a0f16874028f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -63,7 +63,7 @@
       <name>data-trigger</name>
       <type>Main</type>
       <value>hover</value>
-      <webElementGuid>3ecc7a3a-0545-46e3-ba3f-a4264c19049e</webElementGuid>
+      <webElementGuid>613868da-c64f-41d7-97e9-cb62f1cc9f9c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>data-html</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>1d4ecf48-0bca-474c-8784-7159630a7776</webElementGuid>
+      <webElementGuid>6fa7266e-8d47-4e56-8295-e7e8db5eb588</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>data-content</name>
       <type>Main</type>
       <value>&lt;h5>&lt;lang name=&quot;label_storage&quot; class=&quot;pica-space-right-small label label-info&quot;>Stockage&lt;/lang>&lt;span class=&quot;pica-slash-after&quot;>0 bytes&lt;/span>5 GB&lt;/h5></value>
-      <webElementGuid>32614421-777d-48b3-a638-8647fe4e95af</webElementGuid>
+      <webElementGuid>b81c75ff-0431-4f73-b183-ea39e0e0dfce</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -87,7 +87,7 @@
       <name>data-original-title</name>
       <type>Main</type>
       <value>Explication</value>
-      <webElementGuid>380973c0-acd4-4767-b7ad-4f96995a2555</webElementGuid>
+      <webElementGuid>d5793c7a-e8f5-48c0-95f9-4a82b0a2065c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -95,7 +95,7 @@
       <name>aria-describedby</name>
       <type>Main</type>
       <value>popover593732</value>
-      <webElementGuid>d7b4a3a9-ec00-484d-bfc2-614d635883a0</webElementGuid>
+      <webElementGuid>756865a9-912d-42a1-9037-999bd412eca9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -111,7 +111,7 @@
                         0% de stockage utilisé
                     
                 </value>
-      <webElementGuid>9ad4a4ff-942d-4386-b5ee-00099b36cb3e</webElementGuid>
+      <webElementGuid>ca02e6fe-dcc6-4bf8-86f3-4adef480b96b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -119,7 +119,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_action&quot;)/div[@class=&quot;profile_storage_bar form-control-static&quot;]</value>
-      <webElementGuid>e8ec8c32-c1e6-4aee-8405-8e093fa1c577</webElementGuid>
+      <webElementGuid>05f0b4fb-ca04-454a-95ec-ea9611a5b680</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -127,7 +127,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_action']/div[2]</value>
-      <webElementGuid>e4de4bb1-3378-42fe-b546-7914f5456248</webElementGuid>
+      <webElementGuid>f687b15d-bf45-400b-98d2-dbc5567a4029</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -135,7 +135,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Aide'])[1]/following::div[4]</value>
-      <webElementGuid>03fb7420-2dcc-4235-8de4-8cc62655ba47</webElementGuid>
+      <webElementGuid>779ffee3-e292-4946-8374-6d786e6194ed</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -143,7 +143,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Clients'])[1]/following::div[4]</value>
-      <webElementGuid>875ba7b0-00a8-4d4a-8d4c-c42223a7be6e</webElementGuid>
+      <webElementGuid>d5488624-5a9b-46f0-a28b-3f80efe0077b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -151,7 +151,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='tarik'])[1]/preceding::div[5]</value>
-      <webElementGuid>4787d6d4-549a-4540-bf1c-8c943b36f31c</webElementGuid>
+      <webElementGuid>951a1e81-1a2c-4c38-a0a0-807df110606e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -159,7 +159,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Mon compte'])[1]/preceding::div[5]</value>
-      <webElementGuid>4b80cfcb-d9fb-49ed-bfd0-0253be882bcd</webElementGuid>
+      <webElementGuid>2f683438-d82d-4f70-bc9a-f3ee7ae5fe1a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -167,7 +167,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/div[2]/div/div[2]</value>
-      <webElementGuid>b604139d-c4ce-45d4-953a-0fbb499d4e6e</webElementGuid>
+      <webElementGuid>2c473d56-89e9-49bb-92c1-525fcdf04857</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -191,6 +191,6 @@
                         0% de stockage utilisé
                     
                 ')]</value>
-      <webElementGuid>3658cae5-eb01-4d27-b0c7-d5e0be3118cc</webElementGuid>
+      <webElementGuid>016f9292-80b0-475a-9373-6ea5f9ebdce4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
