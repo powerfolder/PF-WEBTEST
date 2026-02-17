@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/div[2]/div[1]/div[2]/div[2]/div/div[1]/label[1]</value>
+         <value>//body/div[2]/div[1]/div[2]/div[2]/div/div[2]/label[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>1438c665-1866-42e6-983f-d42230821560</webElementGuid>
+      <webElementGuid>1f8ff547-9f9d-4ea1-ae06-eb82e48fea24</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +31,7 @@
       <name>for</name>
       <type>Main</type>
       <value>monthlyRadio</value>
-      <webElementGuid>f39f0e42-0093-48cc-9718-cd46ccb1260e</webElementGuid>
+      <webElementGuid>00f51dc4-1356-4714-a4ff-323d13a1e04d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>class</name>
       <type>Main</type>
       <value>toggle-label toggle-label-left</value>
-      <webElementGuid>132e7307-c0d5-47ad-b4e0-bd889cfda02c</webElementGuid>
+      <webElementGuid>09454690-0e5f-439c-ae79-0429c5cc1e6b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -49,7 +49,7 @@
       <value>
                     Mensuel
                 </value>
-      <webElementGuid>54d80ab5-7c2d-4c2e-b406-8f246bee417e</webElementGuid>
+      <webElementGuid>54dc8215-1ec7-43b0-bc54-1c3a85d1a9e6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,7 +57,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_content&quot;)/div[@class=&quot;pricing-wrapper&quot;]/div[@class=&quot;toggle-container&quot;]/label[@class=&quot;toggle-label toggle-label-left&quot;]</value>
-      <webElementGuid>8b4f9b56-d6c7-4e67-8e21-e16aeef03f0f</webElementGuid>
+      <webElementGuid>552cbbcd-00c9-4254-8be9-22e62f71498b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -65,7 +65,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_content']/div/div/label</value>
-      <webElementGuid>7a93141c-535f-42c5-8423-406bc2434f1a</webElementGuid>
+      <webElementGuid>dd22deae-3055-4c06-afee-a477e659b7f2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -73,7 +73,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nos offres flexibles'])[1]/following::label[1]</value>
-      <webElementGuid>5d1452e4-c3e2-4337-aa9b-88f121211392</webElementGuid>
+      <webElementGuid>9822804c-ddb3-4147-8406-5fea6ba3ed00</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -81,7 +81,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Déconnexion'])[2]/following::label[1]</value>
-      <webElementGuid>6f10f2db-5415-427b-8139-3c041e8644be</webElementGuid>
+      <webElementGuid>5d9ab8bb-2f90-4a4b-adf2-31423dd8a16c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,7 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Annuel'])[1]/preceding::label[1]</value>
-      <webElementGuid>a4c4e003-a44b-4b94-9f73-f703abc5ef5e</webElementGuid>
+      <webElementGuid>247b1d5d-da42-4289-87cb-ad31a44c9ea6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -97,7 +97,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//label</value>
-      <webElementGuid>7495c425-024b-428e-9a8c-eda41b35a79f</webElementGuid>
+      <webElementGuid>c620ea4f-59b6-461f-82fe-57ee95e34ef4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
                 ' or . = '
                     Mensuel
                 ')]</value>
-      <webElementGuid>d412002a-abe8-4fba-b83a-7c22734baccd</webElementGuid>
+      <webElementGuid>ec363496-2acb-4c2d-a719-b19ce0423611</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

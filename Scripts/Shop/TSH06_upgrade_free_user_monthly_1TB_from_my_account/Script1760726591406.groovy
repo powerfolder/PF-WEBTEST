@@ -19,7 +19,6 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 // go to shop
-
 WebUI.callTestCase(findTestCase('Registration/TR1_VerifyRegistrationTest'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
@@ -75,7 +74,6 @@ WebUI.delay(2)
 //WebUI.selectOptionByLabel(findTestObject('Page_PowerFolder - shop_stripe/select_Country'), 'Germany', false)
 
 WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/span_Rechnungsadresse_Button-textCheckoutSecondary Text Text-color--gray400 Text-fontWeight--500 Text--truncate'))
-
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/input_Rechnungsadresse_billingAddressLine1'))
@@ -98,13 +96,15 @@ WebUI.setText(findTestObject('Page_PowerFolder - shop_stripe/input_Rechnungsadre
 
 WebUI.delay(2)
 
-WebUI.scrollToElement(findTestObject('Page_PowerFolder - shop_stripe/div_Zahlungspflichtig abonnieren_SubmitButton-IconContainer'),
-	0)
+WebUI.scrollToElement(findTestObject('Page_PowerFolder - shop_stripe/div_Zahlungspflichtig abonnieren_SubmitButton-IconContainer'), 
+    0)
 
 WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/div_Zahlungspflichtig abonnieren_SubmitButton-IconContainer'))
 
 // high delay needed so stripe call back is done in background
 WebUI.delay(120)
+
+WebUI.refresh()
 
 //Verify that the storage is 1 TB.
 WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/label_Mensuel'))
@@ -136,17 +136,17 @@ println(expect_valid_till)
 WebUI.verifyElementText(findTestObject('My_Account/Overview/valid_till'), expect_valid_till)
 
 WebUI.closeBrowser( // add 1 month + 12 days
-	)
+    )
 
 String getTimestamp() {
-	Date todaysDate = new Date()
+    Date todaysDate = new Date()
 
-	use(groovy.time.TimeCategory, {
-			todaysDate = ((todaysDate + 1.month) + 12.days)
-		})
+    use(groovy.time.TimeCategory, { 
+            todaysDate = ((todaysDate + 1.month) + 12.days)
+        })
 
-	String formattedDate = todaysDate.format('dd MMMM yyyy')
+    String formattedDate = todaysDate.format('dd MMMM yyyy')
 
-	return formattedDate
+    return formattedDate
 }
 
