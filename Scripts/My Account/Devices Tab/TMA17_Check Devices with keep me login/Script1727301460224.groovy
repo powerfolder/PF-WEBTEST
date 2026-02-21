@@ -33,7 +33,7 @@ WebUI.delay(3)
 
 WebUI.verifyElementText(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/verification_Web'), 'Web')
 
-WebUI.doubleClick(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/verification_Web'))
+WebUI.click(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/verification_Web'))
 
 WebUI.click(findTestObject('My_Account/Page_Profile - PowerFolder/revoke session'))
 

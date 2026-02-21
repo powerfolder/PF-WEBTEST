@@ -6,19 +6,18 @@
    <elementGuidId>17554ff1-74af-4113-9737-fc02dffc5b37</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='pica_restore_versions']/div/table/tbody/tr[2]/td[7]/button</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>id(&quot;pica_restore_versions&quot;)/div[@class=&quot;pica-inputlist-scroller&quot;]/table[@class=&quot;pica-table-fixed table table-striped table-hover&quot;]/tbody[1]/tr[@class=&quot;pica-table-selection-disabled&quot;]/td[@class=&quot;text-right&quot;]/button[@class=&quot;btn btn-default&quot;][count(. | //button[@class = 'btn btn-default' and (text() = 'Restore' or . = 'Restore')]) = count(//button[@class = 'btn btn-default' and (text() = 'Restore' or . = 'Restore')])]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[2]/div/table/tbody/tr[2]/td[7]/button</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
@@ -27,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>bb7fa87d-9e50-4ea1-93e3-718d97561886</webElementGuid>
+      <webElementGuid>3b2192a4-5444-4aca-a3f8-6a9f2a97ed53</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -35,7 +34,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-default</value>
-      <webElementGuid>0275073e-8f6b-49b3-9e43-e128fa3131b9</webElementGuid>
+      <webElementGuid>f777fd69-915f-45b6-bafa-91dfeb2815a1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -43,7 +42,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Restore</value>
-      <webElementGuid>4044765c-6eac-44b1-a6f7-ac4c82aecb5e</webElementGuid>
+      <webElementGuid>98c224e4-55ab-44f7-96a5-24c6075ef8b2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -51,7 +50,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_restore_versions&quot;)/div[@class=&quot;pica-inputlist-scroller&quot;]/table[@class=&quot;pica-table-fixed table table-striped table-hover&quot;]/tbody[1]/tr[@class=&quot;pica-table-selection-disabled&quot;]/td[@class=&quot;text-right&quot;]/button[@class=&quot;btn btn-default&quot;]</value>
-      <webElementGuid>b556bef6-29a9-4c18-902f-240f295609fa</webElementGuid>
+      <webElementGuid>2d97f6e3-e0c2-4cf4-bc9c-a2c20e170b82</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -59,7 +58,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_restore_versions']/div/table/tbody/tr[2]/td[7]/button</value>
-      <webElementGuid>c0e4fee5-7633-45d4-8d43-7714fc79bc26</webElementGuid>
+      <webElementGuid>e6819372-0909-4072-a7e7-c3e897a14529</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -67,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Download'])[2]/following::button[1]</value>
-      <webElementGuid>b0403fdf-5459-4814-bdd6-976df1410c2e</webElementGuid>
+      <webElementGuid>021bfaab-c4e8-4dd9-8a5f-4c2dac0d47b0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -75,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Version 0'])[1]/following::button[2]</value>
-      <webElementGuid>97461a2f-63c1-46ab-87a4-42964eb07de1</webElementGuid>
+      <webElementGuid>12fa1f56-2555-445c-9051-9692f5229cc3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -83,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Close'])[1]/preceding::button[1]</value>
-      <webElementGuid>4cf19c75-c65e-4177-9b43-436a17655ec4</webElementGuid>
+      <webElementGuid>a921285f-480f-4c1a-9d0e-0aa86854f407</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -91,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[3]/preceding::button[2]</value>
-      <webElementGuid>f9d80ae3-678d-497e-b6aa-187610ac25cc</webElementGuid>
+      <webElementGuid>20d23f73-86da-49dd-ae35-5a14c10c88fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -99,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[2]/td[7]/button</value>
-      <webElementGuid>0dce6b10-4f1d-416d-af58-0258788534d6</webElementGuid>
+      <webElementGuid>8b03604a-106a-4679-bab0-bb7fd664d84e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -107,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[(text() = 'Restore' or . = 'Restore')]</value>
-      <webElementGuid>db5f961c-66c6-4610-93b8-8a64ef0e8635</webElementGuid>
+      <webElementGuid>08aa3e13-b905-4fe7-9b1f-6b0d9a607aae</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -29,7 +29,7 @@ WebUI.click(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/a_Devic
 
 WebUI.delay(3)
 
-WebUI.doubleClick(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/verification_Web'))
+WebUI.click(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/verification_Web'))
 
 WebUI.delay(2)
 
