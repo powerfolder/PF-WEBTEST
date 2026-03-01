@@ -30,13 +30,11 @@ import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import java.util.Random as Random
 
-
-
 // Plan de test
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
 
 // Variables globales
-GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
+GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
 
 String Emailid = GlobalVariable.userEmail
 
@@ -88,40 +86,43 @@ WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
-// Vérification que le champ de mot de passe est vide
-WebUI.verifyElementAttributeValue(findTestObject('Login/inputPassword'), 'value', '', 10)
+// Vérification que la notificatio esr bien affiché 
+WebUI.verifyElementPresent(findTestObject('My_Account/Overview/Page_Login - PowerFolder/Notice_account_has_expired'), 5) 
 
+WebUI.verifyMatch(WebUI.getUrl(),'https://mimas.powerfolder.net/pricing?expired=true',false)
 
 // Fermeture du navigateur
 WebUI.closeBrowser()
 
 // Fonctions utilitaires
+
 String generateRandomString(int length) {
-	String characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+    String characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 
-	StringBuilder randomString = new StringBuilder()
+    StringBuilder randomString = new StringBuilder()
 
-	Random random = new Random()
+    Random random = new Random()
 
-	for (int i = 0; i < length; i++) {
-		randomString.append(characters.charAt(random.nextInt(characters.length())))
-	}
-	
-	return randomString.toString().toLowerCase()
+    for (int i = 0; i < length; i++) {
+        randomString.append(characters.charAt(random.nextInt(characters.length())))
+    }
+    
+    return randomString.toString().toLowerCase()
 }
 
 String generateRandomPhoneNumber() {
-	Random random = new Random()
+    Random random = new Random()
 
-	return String.format('(%03d) %03d-%04d', random.nextInt(1000), random.nextInt(1000), random.nextInt(10000))
+    return String.format('(%03d) %03d-%04d', random.nextInt(1000), random.nextInt(1000), random.nextInt(10000))
 }
 
 String generateDateTimePlusOneMinute() {
-	Calendar calendar = Calendar.getInstance()
+    Calendar calendar = Calendar.getInstance()
 
-	calendar.add(Calendar.MINUTE, 1)
+    calendar.add(Calendar.MINUTE, 1)
 
-	SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm')
+    SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm')
 
-	return sdf.format(calendar.getTime())
+    return sdf.format(calendar.getTime())
 }
+

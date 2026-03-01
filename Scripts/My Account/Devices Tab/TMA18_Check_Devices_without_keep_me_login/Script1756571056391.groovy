@@ -31,11 +31,13 @@ WebUI.delay(3)
 
 WebUI.click(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/verification_Web'))
 
-WebUI.click(findTestObject('My_Account/Page_Profile - PowerFolder/a_Delete'))
+WebUI.delay(2)
+
+WebUI.click(findTestObject('My_Account/Page_Profile - PowerFolder/revoke session'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('My_Account/Page_Profile - PowerFolder/button_Yes'))
+WebUI.click(findTestObject('My_Account/Page_Profile - PowerFolder/yes for revoke'))
 
 WebUI.delay(2)
 
@@ -50,3 +52,4 @@ boolean isCorrectUrl = currentUrl.equals(expectedUrl)
 WebUI.verifyEqual(isCorrectUrl, true)
 
 WebUI.closeBrowser()
+

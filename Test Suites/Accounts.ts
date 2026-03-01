@@ -12,6 +12,13 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>916581c6-7fe1-45f1-b5d2-3139b433bdb9</testSuiteGuid>
    <testCaseLink>
+      <guid>072bd52c-7217-4981-afc0-ad0e5cee2e9b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/pre_test/check_eng</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>c347d293-a929-49a2-bba8-4933ec8c4d6e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -128,6 +135,41 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA17_VerifyDeactiveAccountButton</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d030b032-e4ac-4ec2-b49b-e1e73eca60b0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Accounts/TA18_deleteSingleDBAccount</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e77ca39e-a75a-40a1-bc6b-24efcf1fdec1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Accounts/TA19_deleteAllDBAccounts</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e35b25ee-2ca1-4377-960f-76f7fa94da96</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Help/TH1_verifyHelpPage</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ac34bc46-74fe-4bf0-81d6-71b71cdf02be</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Accounts/TA20_Check the qouta created by admin</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a6bc5f66-18a2-40f0-8536-80d5a003be60</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Accounts/TA21_Check the qouta created by registration</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

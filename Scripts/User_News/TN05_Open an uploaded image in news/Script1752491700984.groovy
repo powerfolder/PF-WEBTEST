@@ -159,11 +159,13 @@ WebUI.delay(2)
 
 WebUI.comment("Nom du fichier téléchargé : " + fileName)
 
-if (!fileName.toLowerCase().matches('user( \\(\\d+\\))?\\.png')) {
-	WebUI.comment("❌ Le fichier téléchargé ne correspond pas au format 'user.png' ou 'user (n).png'")
-	WebUI.verifyMatch(fileName, 'user( \\(\\d+\\))?\\.png', true)
+String pattern = '^user - \\d{4}-\\d{2}-\\d{2}T\\d{2}.*\\.png$'
+
+if (!fileName.toLowerCase().matches(pattern)) {
+	WebUI.comment("❌ Filename dosent fit to expected filename.")
+	WebUI.verifyMatch(fileName, pattern, true)
 } else {
-	WebUI.comment("✅ Fichier PNG détecté correctement : " + fileName)
+	WebUI.comment("✅ got the downloaded file: " + fileName)
 }
 
 WebUI.closeBrowser()
@@ -205,7 +207,7 @@ String generateRandomString(int length) {
 }
 
 String generateRandomEmail() {
-	return generateRandomString(8) + '@yoemail.com'
+	return generateRandomString(8) + '@qa-automated-webtest.com'
 }
 
 String generateRandomPhoneNumber() {

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL52_VerifyUploadFileByUserFromLink</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c3971cd0-4020-48ad-9b6c-116227816544</testCaseGuid>
+</TestCaseEntity>

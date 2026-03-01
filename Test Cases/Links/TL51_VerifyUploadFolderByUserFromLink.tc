@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL51_VerifyUploadFolderByUserFromLink</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>feca1fc1-5758-4abf-a8e8-4c610b4eb754</testCaseGuid>
+</TestCaseEntity>

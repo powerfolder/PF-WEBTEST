@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DL30_Link to image in subdirectory with expiray date</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>38ebcdfd-28bb-49a5-8111-d04109c1663c</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF22_CreateFileOnSubSubFolder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>164e91ad-aa63-4ede-9e7e-603ed85934cd</testCaseGuid>
+</TestCaseEntity>

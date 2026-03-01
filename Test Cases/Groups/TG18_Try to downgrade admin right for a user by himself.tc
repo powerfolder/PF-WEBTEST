@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG18_Try to downgrade admin right for a user by himself</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>943ec69b-a3ea-4222-9553-03aa62aca352</testCaseGuid>
+</TestCaseEntity>

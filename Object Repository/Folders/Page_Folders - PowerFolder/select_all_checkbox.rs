@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_all_checkbox</name>
+   <tag></tag>
+   <elementGuidId>e25cbe52-d2b3-42d3-ba91-69b770f826c1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//thead[@id='files_select_header']/tr/th/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.glyphicons.glyphicons-unchecked.pica-glyph</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>a20b5f39-0433-49e2-9213-cc220c1e39af</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>glyphicons glyphicons-unchecked pica-glyph</value>
+      <webElementGuid>909082e5-5cb0-4b28-9812-19d9e68e049b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;files_select_header&quot;)/tr[1]/th[@class=&quot;pica-icon-column pica-table-selection-icon&quot;]/span[@class=&quot;glyphicons glyphicons-unchecked pica-glyph&quot;]</value>
+      <webElementGuid>4668233c-72e7-4cb8-a508-02e18ea1401f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//thead[@id='files_select_header']/tr/th/span</value>
+      <webElementGuid>f36f0aa6-8982-4297-9fed-66ccca8104ec</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//th/span</value>
+      <webElementGuid>12ae734b-aea1-4326-8934-748fa28f5fa3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

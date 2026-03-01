@@ -6,12 +6,11 @@
    <elementGuidId>7d2349d5-f96e-4e66-8d24-7cf923daf05b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//body/div[2]/div[1]/div[2]/div[2]/div/div[3]/div[3]/div[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div[2]</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>c813c7cf-afc8-4100-bac5-77481d13af1f</webElementGuid>
+      <webElementGuid>b7fb4ed3-0875-4ddf-b27a-3ad3bb41f176</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +30,7 @@
       <name>href</name>
       <type>Main</type>
       <value>#</value>
-      <webElementGuid>e358c074-280a-489c-a2db-2f237fbb1742</webElementGuid>
+      <webElementGuid>00a199fa-5b61-4b37-9be6-257b07ff5de7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>plan-cta</value>
-      <webElementGuid>3dc8f9b6-4633-498d-b8f7-de04a62ebf96</webElementGuid>
+      <webElementGuid>116d7f04-3cb8-46b7-b876-cfb38af39fef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Choisir Team Cloud 6 TB</value>
-      <webElementGuid>0c621837-d05c-467d-940a-94dc7f531971</webElementGuid>
+      <webElementGuid>ee27d539-a5d6-497c-97d9-0bb504725abd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;monthlyPlans&quot;)/div[@class=&quot;plan-card&quot;]/a[@class=&quot;plan-cta&quot;]</value>
-      <webElementGuid>2b37c02f-6542-47eb-bf2e-a47b9bbde962</webElementGuid>
+      <webElementGuid>dc170a01-3df2-4dd6-ac9b-724e53c384de</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -63,7 +62,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='monthlyPlans']/div[3]/a</value>
-      <webElementGuid>0e0323d5-ecdc-44e3-a856-2097de2972af</webElementGuid>
+      <webElementGuid>50d9fb3f-c1c3-42e8-ae66-7c8604f58800</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +70,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Choisir Team Cloud 6 TB')]</value>
-      <webElementGuid>37c31928-dc2c-4816-ba34-d4470e799db7</webElementGuid>
+      <webElementGuid>b58af37a-f790-42d4-b542-84923e726786</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Mensuel'])[4]/following::a[1]</value>
-      <webElementGuid>ee4b94cf-f485-4683-ac82-db74ba659469</webElementGuid>
+      <webElementGuid>f1b83c4b-5d8f-4758-9c59-d39bc8508bcf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Team Cloud 6 TB'])[1]/following::a[1]</value>
-      <webElementGuid>e3ba96e3-d929-49c9-9c4d-ad14695ef2e3</webElementGuid>
+      <webElementGuid>55821c62-674e-47e1-bd52-eacd09bc83c5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Kostenlos 5 GB'])[2]/preceding::a[1]</value>
-      <webElementGuid>5d8531d3-680f-48c7-b1d3-34081aa79f63</webElementGuid>
+      <webElementGuid>ef649879-6a95-4d0c-bf7e-8b2d758ccd50</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Annuel'])[2]/preceding::a[1]</value>
-      <webElementGuid>c0c1fffe-1f04-4cc3-86d0-abe82b677588</webElementGuid>
+      <webElementGuid>511a15cd-75ab-4007-a419-f779e3bd7c43</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Choisir Team Cloud 6 TB']/parent::*</value>
-      <webElementGuid>b5ca7b18-a215-4b05-a845-685c0585211f</webElementGuid>
+      <webElementGuid>f908a588-36f3-4da6-963b-eb956f32724e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -119,7 +118,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>(//a[contains(@href, '#')])[4]</value>
-      <webElementGuid>d51fdcfe-79d0-4d19-844f-0f09b062884c</webElementGuid>
+      <webElementGuid>f1d4c803-3ecc-406f-b9e7-d4f0a537e969</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -127,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/a</value>
-      <webElementGuid>2801d7e2-c0d2-4851-90d1-fd01e58c8487</webElementGuid>
+      <webElementGuid>2861775f-30a3-495a-aaef-844eaa818286</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -135,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = '#' and (text() = 'Choisir Team Cloud 6 TB' or . = 'Choisir Team Cloud 6 TB')]</value>
-      <webElementGuid>bb0d3ff7-dfb8-427d-a323-6cd5caf687f7</webElementGuid>
+      <webElementGuid>a27a811b-4cb0-42c1-afec-f922cb76eefc</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

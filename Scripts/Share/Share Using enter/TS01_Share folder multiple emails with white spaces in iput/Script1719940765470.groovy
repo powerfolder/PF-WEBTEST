@@ -40,7 +40,7 @@ WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebUI.click(findTestObject('Links/share_icon_inside_folder'))
 
-String  mails = "  ${-> folderName}@a.com,${-> folderName}@b.com,${-> folderName}@c.com  "
+String  mails = "  a_${-> folderName}@qa-automated-webtest.com,b_${-> folderName}@2qa-automated-webtest.com,c_${-> folderName}@3qa-automated-webtest.com  "
 
 int membersCount = getMembersCount()
 

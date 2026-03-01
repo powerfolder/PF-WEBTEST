@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LT02_toplvl-folder link appears in linkstable</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>30130637-9be2-4549-a457-f9736d2510a9</testCaseGuid>
+</TestCaseEntity>

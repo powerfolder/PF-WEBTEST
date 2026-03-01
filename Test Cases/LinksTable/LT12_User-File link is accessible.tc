@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LT12_User-File link is accessible</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>366f167e-e346-4593-b5ff-06a226923386</testCaseGuid>
+</TestCaseEntity>

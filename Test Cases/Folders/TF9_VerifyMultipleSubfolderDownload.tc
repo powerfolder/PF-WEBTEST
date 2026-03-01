@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF9_VerifyMultipleSubfolderDownload</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2619146a-9e5f-44ec-9628-20d483a676df</testCaseGuid>
+</TestCaseEntity>

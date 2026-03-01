@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LT06_Read-write file link permissions</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>02fecc3a-b171-4b7a-9c2d-3b9562942b32</testCaseGuid>
+</TestCaseEntity>

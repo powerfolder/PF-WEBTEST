@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LT07_Change file link from R-O to R-W</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fc1e22b2-8138-4ecd-b52b-c4462b66b55a</testCaseGuid>
+</TestCaseEntity>

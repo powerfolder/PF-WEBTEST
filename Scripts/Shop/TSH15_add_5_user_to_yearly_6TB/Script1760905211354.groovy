@@ -63,7 +63,7 @@ WebUI.click(findTestObject('Organization/SelectOrganization') // --- Utility fun
 
 WebUI.delay(2)
 
-WebUI.verifyElementText(findTestObject('Page_PowerFolder - shop_stripe/check_storage'), '6 TB6 TB')
+WebUI.verifyElementText(findTestObject('Page_PowerFolder - shop_stripe/check_storage'), '0 bytes6 TB6 TB')
 
 WebUI.verifyElementText(findTestObject('Page_PowerFolder - shop_stripe/check_users'), '66')
 
@@ -86,7 +86,7 @@ String generateRandomString(int length) {
 }
 
 String generateRandomEmail() {
-    return generateRandomString(8) + '@yopmail.com'
+    return generateRandomString(8) + '@qa-automated-webtest.com'
 }
 
 String generateRandomPhoneNumber() {

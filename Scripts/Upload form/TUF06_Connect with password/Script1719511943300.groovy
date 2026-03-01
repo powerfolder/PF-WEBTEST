@@ -82,7 +82,7 @@ WebUI.verifyElementClickable(findTestObject('1Upload_Form/Page_Link - PowerFolde
 
 WebUI.click(findTestObject('1Upload_Form/Page_Link - PowerFolder/button_Ok_for password'))
 
-GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
+GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
 
 GlobalVariable.Name = ('My_Name_' + RandomStringUtils.randomNumeric(4))
 

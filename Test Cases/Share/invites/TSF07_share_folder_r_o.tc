@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TSF07_share_folder_r_o</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e3e6d6d9-4e3b-4812-bcf4-799acda391e1</testCaseGuid>
+</TestCaseEntity>

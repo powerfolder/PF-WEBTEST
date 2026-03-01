@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DL33_Link to Binary in subdirectory with expiray date</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>235c11d3-cb9c-40cc-8f28-756e80246a5c</testCaseGuid>
+</TestCaseEntity>

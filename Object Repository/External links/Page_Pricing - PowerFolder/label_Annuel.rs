@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_content']/div/div/label[2]</value>
+         <value>//body/div[2]/div[1]/div[2]/div[2]/div/div[2]/label[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>f91390f1-ca45-4a7b-ab7d-5efe402ce237</webElementGuid>
+      <webElementGuid>f2b56c08-ed92-4a35-9123-89625ff52a68</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +31,7 @@
       <name>for</name>
       <type>Main</type>
       <value>yearlyRadio</value>
-      <webElementGuid>bdd9d014-112d-4ee1-a3a2-c6811032c87c</webElementGuid>
+      <webElementGuid>542b4a2b-da76-45c9-a231-950881a9dde7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>class</name>
       <type>Main</type>
       <value>toggle-label toggle-label-right</value>
-      <webElementGuid>55d1902b-6bd3-4494-a400-e2b9406a8460</webElementGuid>
+      <webElementGuid>96f711b0-fca6-4cca-9e4c-ef1b3a9200df</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -49,7 +49,7 @@
       <value>
                     Annuel
                 </value>
-      <webElementGuid>ec659089-8e35-4541-8251-404c1293cc55</webElementGuid>
+      <webElementGuid>bbcb0679-d40a-4064-876e-6cb3170bfdce</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,7 +57,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_content&quot;)/div[@class=&quot;pricing-wrapper&quot;]/div[@class=&quot;toggle-container&quot;]/label[@class=&quot;toggle-label toggle-label-right&quot;]</value>
-      <webElementGuid>83776422-3a9f-434e-9ba4-a6cc3b609ec2</webElementGuid>
+      <webElementGuid>47e5f6a4-2fa0-4887-b3a4-e4c594a23b58</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -65,7 +65,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_content']/div/div/label[2]</value>
-      <webElementGuid>3be615a8-1de8-4251-8b9c-885ee3f06e07</webElementGuid>
+      <webElementGuid>cc7d20e8-d9cb-425e-8ebb-fd94f4556850</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -73,7 +73,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Mensuel'])[1]/following::label[1]</value>
-      <webElementGuid>81db4448-ecee-4058-b82e-24cd5357cc7d</webElementGuid>
+      <webElementGuid>0e02bfe4-68ff-4439-b64d-f39352e1f939</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -81,7 +81,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nos offres flexibles'])[1]/following::label[2]</value>
-      <webElementGuid>6a538d03-7d88-4792-99ec-51db105a83f1</webElementGuid>
+      <webElementGuid>2c01b12d-d55a-49c0-ad46-cfd1cd614226</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,7 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Kostenlos 5 GB'])[1]/preceding::label[1]</value>
-      <webElementGuid>e643d670-41ac-438f-a214-03e882627468</webElementGuid>
+      <webElementGuid>c93f0a9d-7687-4145-93f8-9477e3f791e3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -97,7 +97,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//label[2]</value>
-      <webElementGuid>9a12fe83-5202-4e08-b5df-78947b31d635</webElementGuid>
+      <webElementGuid>7b413760-a8cf-48bc-a2fc-cbab9e068600</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
                 ' or . = '
                     Annuel
                 ')]</value>
-      <webElementGuid>bcc461c6-8bc1-4fed-88ce-3e58dfd1efee</webElementGuid>
+      <webElementGuid>a74eb396-0c18-426f-b7ae-4e6c6ebda58a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

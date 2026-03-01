@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DL06_R_W_U Folder Link to in subdirectory</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ac83742e-d908-472b-8ff9-f3b9138107bb</testCaseGuid>
+</TestCaseEntity>

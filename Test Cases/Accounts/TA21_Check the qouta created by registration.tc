@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TA21_Check the qouta created by registration</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>be0ceec9-b5a7-4c37-b53f-dd32657ac2cc</testCaseGuid>
+</TestCaseEntity>

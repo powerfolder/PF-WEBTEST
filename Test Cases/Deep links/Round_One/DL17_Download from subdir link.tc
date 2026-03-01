@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DL17_Download from subdir link</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d20b27fb-ac0d-4f04-a6a4-9d08e3dda7ae</testCaseGuid>
+</TestCaseEntity>

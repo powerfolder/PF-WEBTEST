@@ -38,7 +38,7 @@ WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder
 WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-String  mails = "${-> folderName}@a.com;${-> folderName}@b.com;${-> folderName}@c.com"
+String  mails = "a_${-> folderName}@qa-automated-webtest.com;b_${-> folderName}@qa-automated-webtest.com;c_${-> folderName}@qa-automated-webtest.com"
 
 int membersCount = getMembersCount()
 

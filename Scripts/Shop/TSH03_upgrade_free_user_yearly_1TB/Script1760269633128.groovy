@@ -25,6 +25,8 @@ WebUI.verifyElementClickable(findTestObject('External links/Page_Folders - Power
 
 WebUI.click(findTestObject('External links/Page_Folders - PowerFolder/user_label_shop'))
 
+WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/label_Annuel'))
+
 WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/Cloud 1 TB_yearly'))
 
 WebUI.delay(2)
@@ -68,7 +70,6 @@ WebUI.setText(findTestObject('Page_PowerFolder - shop_stripe/input_Name desder K
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/span_Rechnungsadresse_Button-textCheckoutSecondary Text Text-color--gray400 Text-fontWeight--500 Text--truncate'))
-
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/input_Rechnungsadresse_billingAddressLine1'))
@@ -91,13 +92,17 @@ WebUI.setText(findTestObject('Page_PowerFolder - shop_stripe/input_Rechnungsadre
 
 WebUI.delay(2)
 
-WebUI.scrollToElement(findTestObject('Page_PowerFolder - shop_stripe/div_Zahlungspflichtig abonnieren_SubmitButton-IconContainer'),
-	0)
+WebUI.scrollToElement(findTestObject('Page_PowerFolder - shop_stripe/div_Zahlungspflichtig abonnieren_SubmitButton-IconContainer'), 
+    0)
 
 WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/div_Zahlungspflichtig abonnieren_SubmitButton-IconContainer'))
 
 // high delay needed so stripe call back is done in background
 WebUI.delay(120)
+
+WebUI.refresh()
+
+WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/label_Annuel'))
 
 //Verify that the storage is 1 TB.
 WebUI.verifyElementText(findTestObject('Page_PowerFolder - shop_stripe/Cloud 1 TB_Current_y'), 'Current')

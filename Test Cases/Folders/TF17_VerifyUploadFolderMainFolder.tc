@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF17_VerifyUploadFolderMainFolder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dc8e0935-82f4-49ca-8fa0-e95c9e5e3f97</testCaseGuid>
+</TestCaseEntity>

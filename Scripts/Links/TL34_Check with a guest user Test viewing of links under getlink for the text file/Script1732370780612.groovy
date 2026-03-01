@@ -29,7 +29,7 @@ import java.util.Calendar as Calendar
 import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 
-GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
+GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
 
 String Emailid = GlobalVariable.userEmail
 

@@ -33,7 +33,7 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 
-GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@test.com')
+GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
 
 String Emailid = GlobalVariable.userEmail
 

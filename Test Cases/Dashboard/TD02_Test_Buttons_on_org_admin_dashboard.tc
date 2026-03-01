@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Test to check if all buttons:
-- occur
+   <description>Test to check if all buttons:&#xd;
+- occur&#xd;
 - are clickable</description>
    <name>TD02_Test_Buttons_on_org_admin_dashboard</name>
    <tag></tag>

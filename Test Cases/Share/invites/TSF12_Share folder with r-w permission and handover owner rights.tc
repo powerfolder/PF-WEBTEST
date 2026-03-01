@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TSF12_Share folder with r-w permission and handover owner rights</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fd3d70fe-ab50-41d2-b7f0-d83bced428ae</testCaseGuid>
+</TestCaseEntity>
