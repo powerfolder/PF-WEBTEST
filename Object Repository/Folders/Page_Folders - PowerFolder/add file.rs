@@ -6,12 +6,11 @@
    <elementGuidId>6bad8177-3a45-42db-8d4a-f5d3463ef0cb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[@id='upload_file']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[5]/div/div/div[3]/div/div[1]/span[1]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

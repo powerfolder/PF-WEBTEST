@@ -34,8 +34,6 @@ WebUI.click(findTestObject('Folders/createFolder'))
 
 String folderName = "TF11_" + RandomStringUtils.randomAlphanumeric(6)
 
-WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
-
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
