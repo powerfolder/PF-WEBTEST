@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[4]/div/div/div[3]/button[3]</value>
+         <value>(//lang[@name='button_close'])[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>ffc8608f-4937-4b2f-ba91-69db4f4cebe9</webElementGuid>
+      <webElementGuid>2552e4e1-0c41-446e-bf69-fbc0caa6298d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>9e81815e-97d9-4a3f-b5ac-871db44f3e4f</webElementGuid>
+      <webElementGuid>4e7fb309-7eb2-4c43-82ed-8909564da771</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-primary pull-right</value>
-      <webElementGuid>9bbedda4-2d8b-4b76-ad1f-129bf8250cbe</webElementGuid>
+      <webElementGuid>f8dab499-38e5-4c49-87f8-b9e0239266e2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +47,7 @@
       <name>data-dismiss</name>
       <type>Main</type>
       <value>modal</value>
-      <webElementGuid>bb0f1452-3a90-4bf4-bbff-b654b4e780ca</webElementGuid>
+      <webElementGuid>3e65e97d-2cf7-4a87-b779-5e03c4816543</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -57,7 +57,7 @@
       <value>
                     Close
                 </value>
-      <webElementGuid>704ef475-17fb-4b60-b5cd-31665c05d27c</webElementGuid>
+      <webElementGuid>c8dc056b-f391-45be-849a-79b56a79c2ce</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -65,7 +65,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_share_dialog&quot;)/div[@class=&quot;modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-footer text-center&quot;]/button[@class=&quot;btn btn-primary pull-right&quot;]</value>
-      <webElementGuid>d8052dd5-7b44-470e-9740-e0bb93dbe64d</webElementGuid>
+      <webElementGuid>cef797c6-bfab-46c9-b25b-ad0abbc0c0e5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -73,7 +73,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[8]</value>
-      <webElementGuid>32deaef1-bac8-42da-82f7-d149e76052d6</webElementGuid>
+      <webElementGuid>778edaa1-fcd0-49b9-a250-5695ceaecbfb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -81,7 +81,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_share_dialog']/div/div/div[3]/button[3]</value>
-      <webElementGuid>3978d79b-2e43-40bc-87b0-0ee1ca6bd990</webElementGuid>
+      <webElementGuid>4e990510-6659-478e-8ca7-a8c45e99800f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,7 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Create upload form'])[1]/following::button[1]</value>
-      <webElementGuid>d4dbde9d-0bc6-4c22-91fa-b2f1535a4e27</webElementGuid>
+      <webElementGuid>4c03e3ad-a5d5-4383-908b-87bc95f3a3bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -97,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Create link'])[1]/following::button[2]</value>
-      <webElementGuid>d8b556c0-fbaa-462f-99ac-a49da6f91730</webElementGuid>
+      <webElementGuid>d1b0931b-9f71-49f9-beb1-53372ed71c06</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -105,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[4]/preceding::button[1]</value>
-      <webElementGuid>dda5cb6b-8815-4337-a054-5d92a7cc550f</webElementGuid>
+      <webElementGuid>b5889742-0dc2-46d3-8908-ff316ccce1a7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -113,7 +113,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button[3]</value>
-      <webElementGuid>7ae77c6c-0f37-45aa-8c08-eeed1135acae</webElementGuid>
+      <webElementGuid>46fa4951-c2d8-4161-81ee-00ed19625208</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,6 +125,6 @@
                 ' or . = '
                     Close
                 ')]</value>
-      <webElementGuid>f311fa15-cc44-4423-9197-08dd5fe207fa</webElementGuid>
+      <webElementGuid>54b1857c-ccac-4c4c-883d-c24a669a4d62</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
