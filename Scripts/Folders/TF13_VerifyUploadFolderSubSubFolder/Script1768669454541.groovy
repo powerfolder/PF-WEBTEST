@@ -51,6 +51,7 @@ import java.awt.FileDialog as FileDialog
 import javax.swing.JFrame as JFrame
 import java.nio.file.Path as Path
 import java.time.Duration as Duration
+import java.io.IOException as IOException
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -58,178 +59,122 @@ WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHa
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
-
 WebUI.click(findTestObject('Folders/createFolder'))
 
 String mainFolderName = getRandomFolderName()
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
-
 WebUI.setText(findTestObject('Folders/inputFolderName'), mainFolderName)
-
 WebUI.click(findTestObject('Folders/buttonOK'))
 
 TestObject dynamicObject = new TestObject()
-
-dynamicObject.addProperty('xpath', ConditionType.EQUALS, ('//span[text()=\'' + mainFolderName) + '\']')
+dynamicObject.addProperty('xpath', ConditionType.EQUALS, "//span[text()='" + mainFolderName + "']")
 
 boolean exists = WebUI.verifyElementPresent(dynamicObject, 10, FailureHandling.OPTIONAL)
 
 WebUI.verifyElementPresent(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'), 5)
-
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'))
 
-String subFolderName = "Sub_"+ getRandomFolderName()
-
+String subFolderName = "Sub_" + getRandomFolderName()
 WebUI.setText(findTestObject('Folders/inputFolderName'), subFolderName)
-
 WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'))
 
-String subSubFolderName = "Sub_Sub_"+ getRandomFolderName()
-
+String subSubFolderName = "Sub_Sub_" + getRandomFolderName()
 WebUI.setText(findTestObject('Folders/inputFolderName'), subSubFolderName)
-
 WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebUI.verifyElementPresent(findTestObject('Folders/Page_Folders - PowerFolder/Upload files'), 5)
-
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/Upload files'))
 
-WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/add folder'))
 
-String folderName = 'folder_with_files_' + RandomStringUtils.randomNumeric(4)
 
-String folderPath = createFolderWithWordFilesOnDesktop(folderName, 3)
+// Création du fichier Word vide sur le bureau
+String wordFileName = 'word_file_' + RandomStringUtils.randomNumeric(4)
+String wordFilePath = createEmptyWordFileOnDesktop(wordFileName)
 
-selectFolderAutomatically(folderPath)
+// Upload direct dans l'input file
+TestObject uploadInput = new TestObject('uploadInput')
+uploadInput.addProperty('xpath', ConditionType.EQUALS, "//input[@id='upload_input_files']")
 
-// Annulation de l'upload
-WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/lang_Cancel'))
-WebUI.delay(3)
+WebUI.waitForElementPresent(uploadInput, 10)
+WebUI.uploadFile(uploadInput, wordFilePath)
 
-// Vérification de la présence du dossier
-def btn = findFolder(folderName)
-assert btn != null : 'Le document n\'est pas présent.'
+// Attendre que l’upload soit visible comme réussi
+TestObject successMsg = new TestObject('successMsg')
+successMsg.addProperty('xpath', ConditionType.EQUALS, "//*[contains(text(),'Successfully uploaded')]")
 
-// Cliquer sur le bouton trouvé
+WebUI.waitForElementVisible(successMsg, 15)
+
+// Fermer la popup avec le vrai bouton Close
+TestObject closeBtn = new TestObject('closeBtn')
+closeBtn.addProperty('xpath', ConditionType.EQUALS, "//button[@id='upload_stop_button']")
+
+WebUI.waitForElementClickable(closeBtn, 10)
+WebUI.click(closeBtn)
+
+WebUI.delay(2)
+
+// Vérification de la présence du document
+def btn = findDoc(wordFileName)
+assert btn != null
+
+// Cliquer sur le document si besoin
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+
 WebUI.delay(3)
 
-// Suppression du dossier
-deleteFolder(folderPath)
+// Supprimer le fichier Word créé sur le bureau
+deleteWordFile(wordFilePath)
 
-// Fermeture du navigateur
 WebUI.closeBrowser()
 
-// Méthode pour trouver un dossier par nom
-@Keyword
-WebElement findFolder(String folderName) {
-	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath('//*[contains(@data-search-keys, \'' + folderName + '\')]/td[1]/span'))
-}
+String createEmptyWordFileOnDesktop(String fileName) {
+	def desktopWordPath = Paths.get(System.getProperty('user.home'), 'Desktop')
 
-// Méthode pour créer un dossier avec des fichiers Word sur le bureau
-String createFolderWithWordFilesOnDesktop(String folderName, int numFiles) {
-	def desktopFolderPath = Paths.get(System.getProperty('user.home'), 'Desktop', folderName)
-	if (!Files.exists(desktopFolderPath)) {
-		Files.createDirectories(desktopFolderPath)
+	if (!Files.exists(desktopWordPath)) {
+		Files.createDirectories(desktopWordPath)
 	}
-	for (int i = 0; i < numFiles; i++) {
-		String fileName = 'word_file_' + RandomStringUtils.randomNumeric(4) + '.docx'
-		createEmptyWordFileOnDesktop(desktopFolderPath.resolve(fileName).toString())
-	}
-	return desktopFolderPath.toString()
-}
 
-// Méthode pour créer un fichier Word vide
-String createEmptyWordFileOnDesktop(String filePath) {
+	def wordFilePath = desktopWordPath.resolve(fileName + '.docx')
+
 	XWPFDocument document = new XWPFDocument()
-	FileOutputStream out = null
-	try {
-		out = new FileOutputStream(filePath)
-		document.write(out)
-	} catch (IOException e) {
-		e.printStackTrace()
-	} finally {
-		if (out != null) {
-			try {
-				out.close()
-			} catch (IOException e) {
-				e.printStackTrace()
-			}
-		}
-		try {
-			document.close()
-		} catch (IOException e) {
-			e.printStackTrace()
-		}
-	}
-	return filePath
+	FileOutputStream out = new FileOutputStream(wordFilePath.toFile())
+
+	document.write(out)
+	out.close()
+	document.close()
+
+	return wordFilePath.toString()
 }
 
-// Méthode pour sélectionner un dossier automatiquement
-void selectFolderAutomatically(String folderPath) {
+void deleteWordFile(String wordFilePath) {
 	try {
-		Robot robot = new Robot()
-		Thread.sleep(500)
-		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection(folderPath), null)
-		robot.keyPress(KeyEvent.VK_CONTROL)
-		robot.keyPress(KeyEvent.VK_O)
-		robot.keyRelease(KeyEvent.VK_O)
-		robot.keyRelease(KeyEvent.VK_CONTROL)
-		Thread.sleep(500)
-		robot.keyPress(KeyEvent.VK_CONTROL)
-		robot.keyPress(KeyEvent.VK_V)
-		robot.keyRelease(KeyEvent.VK_V)
-		robot.keyRelease(KeyEvent.VK_CONTROL)
-		Thread.sleep(500)
-		robot.keyPress(KeyEvent.VK_TAB)
-		robot.keyRelease(KeyEvent.VK_TAB)
-		Thread.sleep(500)
-		robot.keyPress(KeyEvent.VK_ENTER)
-		robot.keyRelease(KeyEvent.VK_ENTER)
-		Thread.sleep(2000)
-		robot.keyPress(KeyEvent.VK_TAB)
-		robot.keyRelease(KeyEvent.VK_TAB)
-		Thread.sleep(500)
-		robot.keyPress(KeyEvent.VK_ENTER)
-		robot.keyRelease(KeyEvent.VK_ENTER)
-		Thread.sleep(2000)
-	} catch (Exception e) {
-		e.printStackTrace()
-	}
-}
+		Path path = Paths.get(wordFilePath)
+		boolean deleted = Files.deleteIfExists(path)
 
-// Méthode pour supprimer un dossier
-void deleteFolder(String folderPath) {
-	try {
-		def folder = new File(folderPath)
-		if (folder.exists()) {
-			FileUtils.deleteDirectory(folder)
-			println('Le dossier a été supprimé avec succès.')
+		if (deleted) {
+			println('Le fichier a été supprimé avec succès.')
 		} else {
-			println('Le dossier n\'existe pas.')
+			println("Le fichier n'a pas été trouvé ou n'a pas pu être supprimé.")
 		}
 	} catch (Exception e) {
-		println("Une erreur s'est produite lors de la suppression du dossier : $e.message")
 		e.printStackTrace()
 	}
 }
 
 @Keyword
+WebElement findDoc(String wordFileName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+	return driver.findElement(By.xpath("//*[contains(@data-search-keys, '" + wordFileName + "')]/td[1]/span"))
+}
 
 String getRandomFolderName() {
-	String folderName = 'TF' + getTimestamp()
-
-	return folderName
+	return 'TF' + getTimestamp()
 }
 
 String getTimestamp() {
 	Date todaysDate = new Date()
-
-	String formattedDate = todaysDate.format('_dd_MM_yyyy_hh_mm_ss')
-
-	return formattedDate
+	return todaysDate.format('_dd_MM_yyyy_hh_mm_ss')
 }

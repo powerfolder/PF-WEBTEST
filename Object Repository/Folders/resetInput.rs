@@ -6,14 +6,14 @@
    <elementGuidId>548c0379-3b94-421a-9076-89e07c55e577</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//body/div[2]/div[1]/div[2]/div[8]/div/div/div[2]/div/span[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@class='modal-content']//span[@class='pica-input-clear input-group-addon'])[1]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

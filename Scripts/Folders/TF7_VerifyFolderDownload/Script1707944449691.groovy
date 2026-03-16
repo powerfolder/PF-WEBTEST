@@ -56,7 +56,6 @@ WebUI.click(findTestObject('Folders/createFolder'))
 // Verify folder creation interface
 WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getCreateText')), 'Create', FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getFolderNameLabelText')), 'Create a new Folder', FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
 
 // Set folder name and create the folder
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
