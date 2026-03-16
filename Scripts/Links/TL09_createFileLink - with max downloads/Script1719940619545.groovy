@@ -63,8 +63,6 @@ WebUI.uploadFile(findTestObject('Page_Link - PowerFolder/span_Add file'), file.t
 
 WebUI.uploadFile(findTestObject('Object Repository/Page_Link - PowerFolder/span_Add file'), file.toAbsolutePath().toString())
 
-WebUI.click(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Upload_1'))
-
 WebUI.click(findTestObject('Object Repository/Page_Link - PowerFolder/button_Close'))
 
 WebUI.refresh()
