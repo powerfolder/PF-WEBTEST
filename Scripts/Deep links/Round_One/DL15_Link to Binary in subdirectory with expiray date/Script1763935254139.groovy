@@ -147,7 +147,7 @@ WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.of
 
 WebElement addfile = wait.until(
 	ExpectedConditions.visibilityOfElementLocated(
-		By.xpath('//body/div[2]/div[1]/div[2]/div[5]/div/div/div[3]/div/div[1]/span[1]')
+		By.xpath('//body/div[2]/div[1]/div[2]/div[5]/div/div/div[3]/div/span[1]')
 	)
 )
 addfile.click()
@@ -156,8 +156,6 @@ addfile.click()
 String binaryName = "binary_" + getRandomFileName()
 
 String binaryFilePath = createBinaryFileOnDesktop(binaryName)
-
-WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/lang_Cancel'))
 
 selectFileAutomatically(binaryFilePath)
 
@@ -184,11 +182,12 @@ println('Date et heure générées : ' + newDateTime)
 // Effacer et saisir la nouvelle date dans le champ
 TestObject accountValidTill = findTestObject('Page_Folders - PowerFolder/inputValidTill')
 
-WebUI.executeJavaScript('arguments[0].value = ""', [WebUI.findWebElement(accountValidTill)])
+def element = WebUI.findWebElement(accountValidTill)
 
-WebUI.setText(accountValidTill, newDateTime)
-
-WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
+WebUI.executeJavaScript(
+    "arguments[0].value = arguments[1]; arguments[0].dispatchEvent(new Event('change'));",
+    Arrays.asList(element, newDateTime)
+)
 
 WebUI.delay(2)
 

@@ -123,11 +123,12 @@ println('Date et heure générées : ' + newDateTime)
 
 TestObject accountValidTill = findTestObject('Page_Folders - PowerFolder/inputValidTill')
 
-WebUI.executeJavaScript('arguments[0].value = ""', [WebUI.findWebElement(accountValidTill)])
+def element = WebUI.findWebElement(accountValidTill)
 
-WebUI.setText(accountValidTill, newDateTime)
-
-WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
+WebUI.executeJavaScript(
+    "arguments[0].value = arguments[1]; arguments[0].dispatchEvent(new Event('change'));",
+    Arrays.asList(element, newDateTime)
+)
 
 WebUI.delay(2)
 
