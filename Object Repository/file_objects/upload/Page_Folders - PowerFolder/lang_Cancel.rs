@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[2]/button[2]/lang</value>
+         <value>//div[2]/div/div/div[3]/button[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -15,6 +15,7 @@
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>lang</value>
-      <webElementGuid>eb0016e6-701a-46b8-8d31-ccea3d76bc9c</webElementGuid>
+      <webElementGuid>1cbe0b58-800b-4fc5-b691-d8bba283b986</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +31,7 @@
       <name>name</name>
       <type>Main</type>
       <value>button_cancel</value>
-      <webElementGuid>773db0f1-d043-45a3-9892-78dbf04c958e</webElementGuid>
+      <webElementGuid>b58c33e8-42ee-481b-99bc-8dadf2088606</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +39,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Cancel</value>
-      <webElementGuid>9b86af28-17f0-4192-80a6-3fd557b3e48a</webElementGuid>
+      <webElementGuid>e269f555-414d-4de9-baa3-13f7c9ed3399</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +47,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;upload_stop_button&quot;)/lang[1]</value>
-      <webElementGuid>58516e2e-0243-4edc-a516-57a870a799d3</webElementGuid>
+      <webElementGuid>5d10ccf7-1986-49dd-b90f-2bc6c0dc7afe</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +55,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//lang[@name='button_cancel']</value>
-      <webElementGuid>f794465b-e82f-4f0b-8fc9-d88b3e420e57</webElementGuid>
+      <webElementGuid>1b6b1e3d-a94f-4029-94db-05f157174ec9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +63,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//button[@id='upload_stop_button']/lang</value>
-      <webElementGuid>271ecc19-d19e-4263-bda9-5e3054918972</webElementGuid>
+      <webElementGuid>98769d53-3121-4c4b-a0b4-46c9b6aafebd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +71,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Upload'])[2]/following::lang[1]</value>
-      <webElementGuid>a9f66e5b-44ba-4f52-b138-98325f29e690</webElementGuid>
+      <webElementGuid>6b23a28e-ba2e-4e6e-b2f3-83f95ae09c90</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +79,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Add directory'])[1]/following::lang[2]</value>
-      <webElementGuid>763b843f-610b-4777-96f9-641b70fb5ddc</webElementGuid>
+      <webElementGuid>5c7e21f3-3f5b-4e2b-b9fc-9be7605536b3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +87,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[5]/preceding::lang[1]</value>
-      <webElementGuid>660459e5-bf92-4a55-b734-2c4c228d0159</webElementGuid>
+      <webElementGuid>b085b62e-328b-4405-a0a5-707d28914906</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +95,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ok'])[1]/preceding::lang[1]</value>
-      <webElementGuid>8f41ff7e-f62a-4b6c-9a5a-d8a855f8e5d4</webElementGuid>
+      <webElementGuid>da350fe9-ab19-4c58-a8eb-20ce42745b7d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +103,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Cancel']/parent::*</value>
-      <webElementGuid>ea3e0098-8355-43ae-8095-58d53f7716bd</webElementGuid>
+      <webElementGuid>e3eadbe7-3720-4675-b615-6453675bd85d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +111,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/button[2]/lang</value>
-      <webElementGuid>82028f83-3f59-4e99-83f2-14beec71010e</webElementGuid>
+      <webElementGuid>9b158408-1500-4cab-9cf5-d5107e6f557a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,6 +119,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//lang[@name = 'button_cancel' and (text() = 'Cancel' or . = 'Cancel')]</value>
-      <webElementGuid>f8406f8f-6e4b-4427-82d7-c1da28ebe846</webElementGuid>
+      <webElementGuid>3f2b7134-d9ac-4584-9e33-e0274483995e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

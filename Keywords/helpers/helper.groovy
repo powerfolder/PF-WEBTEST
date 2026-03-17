@@ -69,7 +69,7 @@ public class Helper {
 
 		calendar.add(Calendar.SECOND, 10)
 
-		SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm:ss')
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm")
 
 		return sdf.format(calendar.getTime())
 	}
@@ -80,7 +80,7 @@ public class Helper {
 		// 1 Minute abziehen
 		calendar.add(Calendar.MINUTE, -1)
 	
-		SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm:ss')
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm")
 	
 		return sdf.format(calendar.getTime())
 	}

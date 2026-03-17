@@ -75,20 +75,15 @@ WebUI.click(findTestObject('Object Repository/Page_Folders - PowerFolder/button_
 
 WebUI.click(findTestObject('Page_Folders - PowerFolder/inputValidTill'))
 
-// Générer la date et l'heure actuelles avec une minute ajoutée
 String newDateTime = generateDateTimePlusTenSeconds()
 
-// Afficher la date dans la console (une seule fois)
-println('Date et heure générées : ' + newDateTime)
-
-// Effacer et saisir la nouvelle date dans le champ
 TestObject accountValidTill = findTestObject('Page_Folders - PowerFolder/inputValidTill')
+def element = WebUI.findWebElement(accountValidTill)
 
-WebUI.executeJavaScript('arguments[0].value = ""', [WebUI.findWebElement(accountValidTill)])
-
-WebUI.setText(accountValidTill, newDateTime)
-
-WebUI.sendKeys(findTestObject('Page_Folders - PowerFolder/inputValidTill'), Keys.chord(Keys.TAB))
+WebUI.executeJavaScript(
+    "arguments[0].value = arguments[1]; arguments[0].dispatchEvent(new Event('change'));",
+    Arrays.asList(element, newDateTime)
+)
 
 WebUI.delay(2)
 
@@ -138,10 +133,8 @@ String getTimestamp() {
 
 String generateDateTimePlusTenSeconds() {
     Calendar calendar = Calendar.getInstance()
-
     calendar.add(Calendar.SECOND, 10)
 
-    SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm:ss')
-
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm")
     return sdf.format(calendar.getTime())
 }
