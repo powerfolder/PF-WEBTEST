@@ -55,7 +55,7 @@ WebUI.verifyElementVisible(findTestObject('Page_PowerFolder - shop_stripe/Max us
 
 String actualText = WebUI.getText(findTestObject('Page_PowerFolder - shop_stripe/Max users'))
 
-WebUI.verifyMatch(actualText.trim(), 'Organization storage exceeded.*×', true)
+WebUI.verifyMatch(actualText.trim(), 'Organization storage exceeded.', true)
 
 WebUI.delay(2)
 
