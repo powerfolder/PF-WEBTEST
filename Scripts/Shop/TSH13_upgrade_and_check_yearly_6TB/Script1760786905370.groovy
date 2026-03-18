@@ -21,7 +21,7 @@ WebUI.callTestCase(findTestCase('Shop/Pre_test/upgrade_yearly_6TB'), [:], Failur
 
 WebUI.mouseOver(findTestObject('Page_PowerFolder - shop_stripe/Size_of_storage'))
 
-String tooltipText = WebUI.getAttribute(findTestObject('Page_PowerFolder - shop_stripe/Size_of_storage'), 'data-content')
+String tooltipText = WebUI.getAttribute(findTestObject('Page_PowerFolder - shop_stripe/Size_of_storage'), 'data-bs-content')
 
 println('Tooltip content: ' + tooltipText)
 

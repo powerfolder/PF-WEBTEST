@@ -109,7 +109,7 @@ WebUI.verifyElementText(findTestObject('Page_PowerFolder - shop_stripe/Cloud 1 T
 
 WebUI.mouseOver(findTestObject('Page_PowerFolder - shop_stripe/Size_of_storage'))
 
-String tooltipText = WebUI.getAttribute(findTestObject('Page_PowerFolder - shop_stripe/Size_of_storage'), 'data-content')
+String tooltipText = WebUI.getAttribute(findTestObject('Page_PowerFolder - shop_stripe/Size_of_storage'), 'data-bs-content')
 
 println('Tooltip content: ' + tooltipText)
 

@@ -6,12 +6,12 @@
    <elementGuidId>78909344-cf2f-43ee-9043-e8186681b0e9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#yearlyPlans > div.plan-card > a.plan-cta</value>
+         <key>XPATH</key>
+         <value>//body/div[2]/div[1]/div[2]/div[2]/div/div[4]/div[2]/a</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='yearlyPlans']/div[2]/a</value>
+         <key>CSS</key>
+         <value>#yearlyPlans > div.plan-card > a.plan-cta</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>2718d2f6-16d4-4454-8480-dc80b33596ae</webElementGuid>
+      <webElementGuid>0928cdba-918b-4ed3-95fb-1ce79c9297bb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <name>href</name>
       <type>Main</type>
       <value>#</value>
-      <webElementGuid>559f27e3-eccf-4001-acef-d2b73ddca160</webElementGuid>
+      <webElementGuid>4163c389-81d4-48fd-bc06-a943840722c4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>class</name>
       <type>Main</type>
       <value>plan-cta</value>
-      <webElementGuid>92a86a0c-bba0-4c9f-9029-307baaf4c663</webElementGuid>
+      <webElementGuid>e2d87b8a-2fad-4a7f-8730-f5516434c078</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Choisir Cloud 1 TB</value>
-      <webElementGuid>c1984c35-798f-47f7-8db1-32a6aa9b7e82</webElementGuid>
+      <webElementGuid>1c1cb360-00fd-4bdc-a505-5f7470c17c1e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;yearlyPlans&quot;)/div[@class=&quot;plan-card&quot;]/a[@class=&quot;plan-cta&quot;]</value>
-      <webElementGuid>b55d7b28-23f6-48ed-ae07-41a73fb6a846</webElementGuid>
+      <webElementGuid>358bc4ef-9061-4e42-b0e1-f319c72ec5a9</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -63,7 +63,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='yearlyPlans']/div[2]/a</value>
-      <webElementGuid>147b62d8-9c77-4da8-9784-0bf79b15f0c4</webElementGuid>
+      <webElementGuid>1f935e33-76b8-4326-85ac-c350faac1d68</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>(//a[contains(text(),'Choisir Cloud 1 TB')])[2]</value>
-      <webElementGuid>783bd405-4ed5-40d6-888a-c1e0e4e5b40e</webElementGuid>
+      <webElementGuid>02a39d1d-525a-4bf6-b731-6c05c2477415</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Annuel'])[3]/following::a[1]</value>
-      <webElementGuid>b3c36b39-9bcc-4dd9-abe5-25c0e2f89f89</webElementGuid>
+      <webElementGuid>c49b2587-d320-4a69-a178-87ea107524b7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +87,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cloud 1 TB'])[2]/following::a[1]</value>
-      <webElementGuid>c1be0e01-4c9a-4013-9d53-0aae494d3df0</webElementGuid>
+      <webElementGuid>f2e75f36-59fc-4f0d-8773-ca0613fc51ac</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +95,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Team Cloud 6 TB'])[2]/preceding::a[1]</value>
-      <webElementGuid>354255a1-3592-424c-9fb2-8cbe4de87257</webElementGuid>
+      <webElementGuid>872219a4-7a2c-416a-a81e-7a247a875aec</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,7 +103,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Annuel'])[4]/preceding::a[1]</value>
-      <webElementGuid>e36cfc05-541a-4019-92b6-ae90e668ebd2</webElementGuid>
+      <webElementGuid>461d508c-4fc9-44af-9255-9916562a8ef2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,7 +111,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>(//a[contains(@href, '#')])[5]</value>
-      <webElementGuid>c98f5001-7074-4e14-abcd-a0599c215cc0</webElementGuid>
+      <webElementGuid>0391abd1-8595-491f-b36f-75afa584e22a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -119,7 +119,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div[2]/a</value>
-      <webElementGuid>45951998-9946-4b12-b5df-f223f1f8bc6d</webElementGuid>
+      <webElementGuid>e8528e5a-ab55-49ab-ac65-d7a9d8518cc5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -127,6 +127,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = '#' and (text() = 'Choisir Cloud 1 TB' or . = 'Choisir Cloud 1 TB')]</value>
-      <webElementGuid>c29d270c-7ed7-4832-824a-ef499a1ee253</webElementGuid>
+      <webElementGuid>45d37b72-a68e-48f8-a36b-d6c8f1561eb9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
