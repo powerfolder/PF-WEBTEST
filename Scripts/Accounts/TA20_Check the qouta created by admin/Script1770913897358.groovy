@@ -30,7 +30,7 @@ WebUI.mouseOver(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/
 
 WebUI.delay(2)
 
-def tooltipText = WebUI.getAttribute(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Storage used'), 'data-content')
+def tooltipText = WebUI.getAttribute(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Storage used'), 'data-bs-content')
 
 println('Tooltip content: ' + tooltipText)
 

@@ -58,6 +58,10 @@ if (actualText.equals('Account Updated') || actualText.equals('Bitte alle fehlen
     WebUI.verifyMatch(actualText, 'Account Updated|Bitte alle fehlenden Felder ausfüllen|Please fill in all missing fields', true, FailureHandling.STOP_ON_FAILURE)
 }
 
+WebUI.click(findTestObject('Accounts/CreateButton'))
+
+WebUI.click(findTestObject('Accounts/ClickCreateAccount'))
+
 WebUI.setText(findTestObject('Accounts/InputUserOrEmail'), GlobalVariable.userEmail)
 
 WebUI.click(findTestObject('Accounts/SaveButton'))

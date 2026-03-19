@@ -45,8 +45,11 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups 
 
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
-WebElement folderElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(('//div[@id=\'pica_group_folders\']/div[2]/table/tbody/tr/td[2][contains(text(), \'' +
-			GlobalVariable.folderName) + '\')]')))
+WebElement folderElement = wait.until(
+    ExpectedConditions.visibilityOfElementLocated(
+        By.xpath("//td[contains(., '" + GlobalVariable.folderName + "')]")
+    )
+)
 
 folderElement.click()
 
@@ -66,7 +69,9 @@ WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Folders'))
 
-verifyNoElementWithFolderNamePresent('//*[@id="pica_group_folders"]/div[2]//*[contains(text(), \'' + GlobalVariable.folderName + '\')]')
+verifyNoElementWithFolderNamePresent(
+  "//td[contains(., '" + GlobalVariable.folderName + "')]"
+)
  
 WebUI.closeBrowser() 
 

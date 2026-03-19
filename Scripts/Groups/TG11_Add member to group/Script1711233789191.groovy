@@ -51,8 +51,11 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 // Localisation de l'utilisateur ajouté
-WebElement user = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(('//*[@id="pica_group_accounts"]//div[2]/table/tbody/tr/td[2][contains(text(), \'' + 
-            GlobalVariable.userName) + '\')]')))
+WebElement user = wait.until(
+	ExpectedConditions.visibilityOfElementLocated(
+		By.xpath("//td[contains(., '" + GlobalVariable.userName + "')]")
+	)
+)
 
 // Assertion pour vérifier que l'utilisateur a été trouvé
 assert user != null : 'L\'élément utilisateur n\'a pas été trouvé.'
