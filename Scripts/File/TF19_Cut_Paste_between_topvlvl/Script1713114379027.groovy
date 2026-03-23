@@ -81,6 +81,7 @@ WebUiBuiltInKeywords.verifyElementClickable(findTestObject('file_objects/documen
 
 WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - Cut/span_Cut'))
 
+
 // search for toplvl folder A and paste doc
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
@@ -90,6 +91,7 @@ WebElement btn2 = findFolder(folderNameA)
 WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
 
 WebUiBuiltInKeywords.click(findTestObject('file_objects/document/span_paste/span_Paste'))
+
 
 // check if doc is pasted in successfully
 

@@ -65,13 +65,13 @@ String FromDateTime = generateDateTimePlusOneMinute()
 
 WebUI.setText(findTestObject('Organization/InputValidFrom'), FromDateTime)
 
-WebUI.sendKeys(findTestObject('Organization/InputValidFrom'), Keys.chord(Keys.TAB))
+WebUI.sendKeys(findTestObject('Organization/InputValidFrom'), Keys.chord(Keys.ENTER))
 
 String TillDateTime = generateDateTimePlusOneYear()
 
 WebUI.setText(findTestObject('Organization/InputValidtill'), TillDateTime)
 
-WebUI.sendKeys(findTestObject('Organization/InputValidtill'), Keys.chord(Keys.TAB))
+WebUI.sendKeys(findTestObject('Organization/InputValidtill'), Keys.chord(Keys.ENTER))
 
 WebUI.setText(findTestObject('Organization/EnterNotes'), 'AutomationNotes')
 
@@ -108,6 +108,7 @@ String generateDateTimePlusOneMinute() {
 
 	return sdf.format(calendar.getTime())
 }
+
 
 String generateDateTimePlusOneYear() {
 	Calendar calendar = Calendar.getInstance()

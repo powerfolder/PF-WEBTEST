@@ -6,12 +6,12 @@
    <elementGuidId>dfc7b2a8-cb5b-47c7-995c-f10b3d33cfbc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>span.filetypes.filetypes-docx.pica-glyph-color.text-info</value>
+         <key>XPATH</key>
+         <value>//body/div[2]/div[1]/div[2]/div[2]/div[2]/ul/li/div[3]/div/span</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='pica_content']/div[2]/ul/li/div[3]/div/span</value>
+         <key>CSS</key>
+         <value>span.filetypes.filetypes-docx.pica-glyph-color.text-info</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>5e8affd7-3f15-4a8a-a405-b7fe5982036e</webElementGuid>
+      <webElementGuid>20cc85e0-38ef-43d9-8cc6-ead2350c39f4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>filetypes filetypes-docx pica-glyph-color text-info</value>
-      <webElementGuid>a526d0a8-a971-4e4b-8ec1-01788d58dd3d</webElementGuid>
+      <webElementGuid>bea16f62-fb57-4fdd-9c4f-336e1542c4a2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>data-tooltip</name>
       <type>Main</type>
       <value>tooltip_file</value>
-      <webElementGuid>b739d003-f532-45ed-b58f-898a99c35ae3</webElementGuid>
+      <webElementGuid>759e13ce-38df-49d9-b285-9b02ec461901</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +47,7 @@
       <name>data-placement</name>
       <type>Main</type>
       <value>bottom</value>
-      <webElementGuid>7d78a3bd-c816-4139-bd1b-b8642e185257</webElementGuid>
+      <webElementGuid>31749379-f925-4ef8-bc2d-2f3da0e323c3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>data-original-title</name>
       <type>Main</type>
       <value>Doc_num_6882.docx (3.7 KB) modified by ogcgwblv@yoemail.com</value>
-      <webElementGuid>38b8c649-d9b8-40f5-ba3f-73c4a2aaa6ea</webElementGuid>
+      <webElementGuid>6d439415-7e36-422d-819a-f4d567344341</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -63,7 +63,7 @@
       <name>aria-describedby</name>
       <type>Main</type>
       <value>tooltip603898</value>
-      <webElementGuid>88d568e0-c6a0-44d3-9883-b98be5c858c9</webElementGuid>
+      <webElementGuid>71099cf4-adea-44b3-8c92-8ea220a46a0f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_content&quot;)/div[@class=&quot;pica-content-scroll-with-header&quot;]/ul[@class=&quot;pica-timeline pica-timeline-centered&quot;]/li[@class=&quot;pica-timeline-item&quot;]/div[@class=&quot;pica-timeline-content&quot;]/div[@class=&quot;pica-timeline-files&quot;]/span[@class=&quot;filetypes filetypes-docx pica-glyph-color text-info&quot;]</value>
-      <webElementGuid>8575683c-2aeb-428c-9953-1ae8fd11dd90</webElementGuid>
+      <webElementGuid>43f5998d-3e3e-420f-8a6e-d3dcd0b3fbb8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_content']/div[2]/ul/li/div[3]/div/span</value>
-      <webElementGuid>08e6e331-4931-4c7d-9cf5-536d2c93f114</webElementGuid>
+      <webElementGuid>97e04bcb-f9fd-40e7-8a19-28257e371116</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,6 +87,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div/span</value>
-      <webElementGuid>de74ee1e-cb97-4bfc-982f-b1cc63ca843f</webElementGuid>
+      <webElementGuid>e62f0fc2-d6a5-4eaa-91d0-c75078b4fafd</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

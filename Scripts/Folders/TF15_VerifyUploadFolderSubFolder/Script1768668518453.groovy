@@ -3,6 +3,7 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+
 import com.kms.katalon.core.annotation.Keyword as Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
@@ -51,6 +52,8 @@ import java.awt.FileDialog as FileDialog
 import javax.swing.JFrame as JFrame
 import java.nio.file.Path as Path
 import java.time.Duration as Duration
+import java.io.File as File
+import java.io.IOException as IOException
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -58,48 +61,39 @@ WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHa
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
-
 WebUI.click(findTestObject('Folders/createFolder'))
 
 String mainFolderName = getRandomFolderName()
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
-
 WebUI.setText(findTestObject('Folders/inputFolderName'), mainFolderName)
-
 WebUI.click(findTestObject('Folders/buttonOK'))
 
 TestObject dynamicObject = new TestObject()
-
 dynamicObject.addProperty('xpath', ConditionType.EQUALS, ('//span[text()=\'' + mainFolderName) + '\']')
 
 boolean exists = WebUI.verifyElementPresent(dynamicObject, 10, FailureHandling.OPTIONAL)
 
 WebUI.verifyElementPresent(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'), 5)
-
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'))
 
-String subFolderName = "Sub_"+ getRandomFolderName()
-
+String subFolderName = "Sub_" + getRandomFolderName()
 WebUI.setText(findTestObject('Folders/inputFolderName'), subFolderName)
-
 WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebUI.verifyElementPresent(findTestObject('Folders/Page_Folders - PowerFolder/Upload files'), 5)
-
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/Upload files'))
 
+// Création d'un dossier local avec plusieurs fichiers Word
+String folderName = 'folder_with_files_' + RandomStringUtils.randomNumeric(4)
+String folderPath = createFolderWithWordFilesOnDesktop(folderName, 3)
 
-// Création du fichier Word vide sur le bureau
-String wordFileName = 'word_file_' + RandomStringUtils.randomNumeric(4)
-String wordFilePath = createEmptyWordFileOnDesktop(wordFileName)
-
-// Upload direct dans l'input file
+// Upload direct dans l'input folder
 TestObject uploadInput = new TestObject('uploadInput')
-uploadInput.addProperty('xpath', ConditionType.EQUALS, "//input[@id='upload_input_files']")
+uploadInput.addProperty('xpath', ConditionType.EQUALS, "//input[@id='upload_input_directories']")
 
 WebUI.waitForElementPresent(uploadInput, 10)
-WebUI.uploadFile(uploadInput, wordFilePath)
+WebUI.uploadFile(uploadInput, folderPath)
 
 // Attendre que l’upload soit visible comme réussi
 TestObject successMsg = new TestObject('successMsg')
@@ -116,48 +110,61 @@ WebUI.click(closeBtn)
 
 WebUI.delay(2)
 
-// Vérification de la présence du document
-def btn = findDoc(wordFileName)
+// Vérification de la présence du dossier
+def btn = findFolder(folderName)
 assert btn != null
 
-// Cliquer sur le document si besoin
+// Cliquer sur le dossier si besoin
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 WebUI.delay(3)
 
-// Supprimer le fichier Word créé sur le bureau
-deleteWordFile(wordFilePath)
+// Supprimer le dossier créé sur le bureau
+deleteFolder(folderPath)
 
 WebUI.closeBrowser()
 
-String createEmptyWordFileOnDesktop(String fileName) {
-	def desktopWordPath = Paths.get(System.getProperty('user.home'), 'Desktop')
+String createFolderWithWordFilesOnDesktop(String folderName, int numFiles) {
+	def desktopFolderPath = Paths.get(System.getProperty('user.home'), 'Desktop', folderName)
 
-	if (!Files.exists(desktopWordPath)) {
-		Files.createDirectories(desktopWordPath)
+	if (!Files.exists(desktopFolderPath)) {
+		Files.createDirectories(desktopFolderPath)
 	}
 
-	def wordFilePath = desktopWordPath.resolve(fileName + '.docx')
+	for (int i = 0; i < numFiles; i++) {
+		String fileName = 'word_file_' + RandomStringUtils.randomNumeric(4) + '.docx'
+		String filePath = desktopFolderPath.resolve(fileName).toString()
+		createEmptyWordFile(filePath)
+	}
 
-	XWPFDocument document = new XWPFDocument()
-	FileOutputStream out = new FileOutputStream(wordFilePath.toFile())
-
-	document.write(out)
-	out.close()
-	document.close()
-
-	return wordFilePath.toString()
+	return desktopFolderPath.toString()
 }
 
-void deleteWordFile(String wordFilePath) {
-	try {
-		Path path = Paths.get(wordFilePath)
-		boolean deleted = Files.deleteIfExists(path)
+String createEmptyWordFile(String filePath) {
+	XWPFDocument document = new XWPFDocument()
+	FileOutputStream out = null
 
-		if (deleted) {
-			println('Le fichier a été supprimé avec succès.')
+	try {
+		out = new FileOutputStream(filePath)
+		document.write(out)
+	} finally {
+		if (out != null) {
+			out.close()
+		}
+		document.close()
+	}
+
+	return filePath
+}
+
+void deleteFolder(String folderPath) {
+	try {
+		File folder = new File(folderPath)
+		if (folder.exists()) {
+			FileUtils.deleteDirectory(folder)
+			println('Le dossier a été supprimé avec succès.')
 		} else {
-			println("Le fichier n'a pas été trouvé ou n'a pas pu être supprimé.")
+			println("Le dossier n'existe pas.")
 		}
 	} catch (Exception e) {
 		e.printStackTrace()
@@ -165,9 +172,9 @@ void deleteWordFile(String wordFilePath) {
 }
 
 @Keyword
-WebElement findDoc(String wordFileName) {
+WebElement findFolder(String folderName) {
 	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath("//*[contains(@data-search-keys, '" + wordFileName + "')]/td[1]/span"))
+	return driver.findElement(By.xpath("//*[contains(@data-search-keys, '" + folderName + "')]/td[1]/span"))
 }
 
 String getRandomFolderName() {

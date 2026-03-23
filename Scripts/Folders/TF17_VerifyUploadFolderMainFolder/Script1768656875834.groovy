@@ -51,6 +51,7 @@ import java.awt.FileDialog as FileDialog
 import javax.swing.JFrame as JFrame
 import java.nio.file.Path as Path
 import java.time.Duration as Duration
+import java.io.File as File
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -58,37 +59,32 @@ WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHa
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
-
 WebUI.click(findTestObject('Folders/createFolder'))
 
 String mainFolder = getRandomFolderName()
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
-
 WebUI.setText(findTestObject('Folders/inputFolderName'), mainFolder)
-
 WebUI.click(findTestObject('Folders/buttonOK'))
 
 TestObject dynamicObject = new TestObject()
-
 dynamicObject.addProperty('xpath', ConditionType.EQUALS, ('//span[text()=\'' + mainFolder) + '\']')
 
 boolean exists = WebUI.verifyElementPresent(dynamicObject, 10, FailureHandling.OPTIONAL)
 
 WebUI.verifyElementPresent(findTestObject('Folders/Page_Folders - PowerFolder/Upload files'), 5)
-
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/Upload files'))
 
-// Création du fichier Word vide sur le bureau
-String wordFileName = 'word_file_' + RandomStringUtils.randomNumeric(4)
-String wordFilePath = createEmptyWordFileOnDesktop(wordFileName)
+// Création d'un dossier avec plusieurs fichiers Word sur le bureau
+String folderName = 'folder_with_files_' + RandomStringUtils.randomNumeric(4)
+String folderPath = createFolderWithWordFilesOnDesktop(folderName, 3)
 
-// Upload direct dans l'input file
+// Upload direct dans l'input folder
 TestObject uploadInput = new TestObject('uploadInput')
-uploadInput.addProperty('xpath', ConditionType.EQUALS, "//input[@id='upload_input_files']")
+uploadInput.addProperty('xpath', ConditionType.EQUALS, "//input[@id='upload_input_directories']")
 
 WebUI.waitForElementPresent(uploadInput, 10)
-WebUI.uploadFile(uploadInput, wordFilePath)
+WebUI.uploadFile(uploadInput, folderPath)
 
 // Attendre que l’upload soit visible comme réussi
 TestObject successMsg = new TestObject('successMsg')
@@ -105,48 +101,55 @@ WebUI.click(closeBtn)
 
 WebUI.delay(2)
 
-// Vérification de la présence du document
-def btn = findDoc(wordFileName)
+// Vérification de la présence du dossier
+def btn = findFolder(folderName)
 assert btn != null
 
-// Cliquer sur le document si besoin
+// Cliquer sur le dossier si besoin
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 WebUI.delay(3)
 
-// Supprimer le fichier Word créé sur le bureau
-deleteWordFile(wordFilePath)
+// Supprimer le dossier créé sur le bureau
+deleteFolder(folderPath)
 
 WebUI.closeBrowser()
 
-String createEmptyWordFileOnDesktop(String fileName) {
-	def desktopWordPath = Paths.get(System.getProperty('user.home'), 'Desktop')
+String createFolderWithWordFilesOnDesktop(String folderName, int numFiles) {
+	def desktopFolderPath = Paths.get(System.getProperty('user.home'), 'Desktop', folderName)
 
-	if (!Files.exists(desktopWordPath)) {
-		Files.createDirectories(desktopWordPath)
+	if (!Files.exists(desktopFolderPath)) {
+		Files.createDirectories(desktopFolderPath)
 	}
 
-	def wordFilePath = desktopWordPath.resolve(fileName + '.docx')
+	for (int i = 0; i < numFiles; i++) {
+		String fileName = 'word_file_' + RandomStringUtils.randomNumeric(4) + '.docx'
+		String filePath = desktopFolderPath.resolve(fileName).toString()
+		createEmptyWordFile(filePath)
+	}
 
+	return desktopFolderPath.toString()
+}
+
+String createEmptyWordFile(String filePath) {
 	XWPFDocument document = new XWPFDocument()
-	FileOutputStream out = new FileOutputStream(wordFilePath.toFile())
+	FileOutputStream out = new FileOutputStream(filePath)
 
 	document.write(out)
 	out.close()
 	document.close()
 
-	return wordFilePath.toString()
+	return filePath
 }
 
-void deleteWordFile(String wordFilePath) {
+void deleteFolder(String folderPath) {
 	try {
-		Path path = Paths.get(wordFilePath)
-		boolean deleted = Files.deleteIfExists(path)
-
-		if (deleted) {
-			println('Le fichier a été supprimé avec succès.')
+		File folder = new File(folderPath)
+		if (folder.exists()) {
+			FileUtils.deleteDirectory(folder)
+			println('Le dossier a été supprimé avec succès.')
 		} else {
-			println("Le fichier n'a pas été trouvé ou n'a pas pu être supprimé.")
+			println("Le dossier n'existe pas.")
 		}
 	} catch (Exception e) {
 		e.printStackTrace()
@@ -154,9 +157,9 @@ void deleteWordFile(String wordFilePath) {
 }
 
 @Keyword
-WebElement findDoc(String wordFileName) {
+WebElement findFolder(String folderName) {
 	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath("//*[contains(@data-search-keys, '" + wordFileName + "')]/td[1]/span"))
+	return driver.findElement(By.xpath("//*[contains(@data-search-keys, '" + folderName + "')]/td[1]/span"))
 }
 
 String getRandomFolderName() {

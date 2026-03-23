@@ -1,51 +1,35 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
 WebUI.openBrowser(GlobalVariable.URL)
-
 WebUI.maximizeWindow()
 
-WebUI.verifyElementClickable(findTestObject('External links/Page_Login - PowerFolder/Cookies Policy'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('External links/Page_Login - PowerFolder/Cookies Policy'))
-
-WebUI.delay(5)
+WebUI.verifyElementClickable(findTestObject('Object Repository/External links/Page_Login - PowerFolder/Cookies Policy'))
+WebUI.click(findTestObject('Object Repository/External links/Page_Login - PowerFolder/Cookies Policy'))
 
 WebUI.switchToWindowIndex(1)
+WebUI.waitForPageLoad(20)
 
+// cliquer sur Accept si le bouton est présent
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/External links/Page_Datenschutzerklrung/button_Accept'), 5, FailureHandling.OPTIONAL)) {
+    WebUI.waitForElementClickable(findTestObject('Object Repository/External links/Page_Datenschutzerklrung/button_Accept'), 10)
+    WebUI.click(findTestObject('Object Repository/External links/Page_Datenschutzerklrung/button_Accept'))
+}
+
+// attendre que la page soit bien chargée
+WebUI.waitForElementVisible(findTestObject('Object Repository/External links/Page_Datenschutzerklrung/Serverstandort'), 20)
+
+// récupérer l’URL seulement après
 String currentUrl = WebUI.getUrl()
-
-WebUI.comment('L\'URL actuelle est: ' + currentUrl)
+WebUI.comment("L'URL actuelle est: " + currentUrl)
 
 String expectedUrl = 'https://www.powerfolder.com/7084-2/'
+WebUI.verifyEqual(currentUrl, expectedUrl)
 
-boolean isCorrectUrl = currentUrl.equals(expectedUrl)
-
-WebUI.verifyEqual(isCorrectUrl, true)
-
-WebUI.verifyElementText(findTestObject('External links/Page_Datenschutzerklrung/Serverstandort'), 'SERVERSTANDORT:')
+WebUI.verifyElementText(findTestObject('Object Repository/External links/Page_Datenschutzerklrung/Serverstandort'), 'SERVERSTANDORT:')
 
 WebUI.closeWindowIndex(1)
-
 WebUI.switchToWindowIndex(0)
-
-WebUI.delay(2)
-
 WebUI.closeBrowser()
-

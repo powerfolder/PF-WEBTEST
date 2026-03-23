@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Is member</name>
+   <name>logo_powerfolder</name>
    <tag></tag>
-   <elementGuidId>b2d5612a-9aef-44ec-a252-de207fa61c84</elementGuidId>
+   <elementGuidId>cfd5cbe1-6ea6-4fa3-92a8-256f3041aaf6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//body/div[2]/div[2]/header/div[1]/div[3]/div/div[1]/a/img</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[6]/div[2]/table/tbody/tr/td[3]/div/button</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

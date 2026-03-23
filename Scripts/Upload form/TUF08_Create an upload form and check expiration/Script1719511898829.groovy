@@ -43,6 +43,8 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Calendar as Calendar
 import java.util.Date as Date
 import static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.*
+import java.text.SimpleDateFormat
+import java.util.Calendar
 
 // create folder with uploadform where expiration is in 2min future
 WebUI.callTestCase(findTestCase('Upload form/Pre_Test/Creat_Folder'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -59,17 +61,14 @@ WebUI.setText(findTestObject('1Upload_Form/Page_Error - PowerFolder/Page_Folders
 WebUI.setText(findTestObject('1Upload_Form/Page_Folders - PowerFolder/change_description'), 'Workshop number 1')
 
 // get time stamp in 2 min future
+TestObject dateInput = findTestObject('1Upload_Form/Page_Folders - PowerFolder/input_Redo_pica_uploadform_valid_till')
 String newDateTime = generateDateTimePlusTwoMinutes()
 
-// click in calender
-WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/input_Redo_pica_uploadform_valid_till'))
-
-// clear pre filled textfield
-WebUI.sendKeys(findTestObject('1Upload_Form/Page_Folders - PowerFolder/input_Redo_pica_uploadform_valid_till'), Keys.chord(
-        Keys.DELETE))
-
-// set new expiration date
-WebUI.setText(findTestObject('1Upload_Form/Page_Folders - PowerFolder/input_Redo_pica_uploadform_valid_till'), newDateTime)
+WebUI.executeJavaScript("""
+    arguments[0].value = arguments[1];
+    arguments[0].dispatchEvent(new Event('input', { bubbles: true }));
+    arguments[0].dispatchEvent(new Event('change', { bubbles: true }));
+""", [WebUI.findWebElement(dateInput), newDateTime])
 
 WebUI.scrollToElement(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Save'), 1)
 
@@ -105,6 +104,8 @@ WebUI.click(findTestObject('1Upload_Form/Page_Link - PowerFolder/button_Upload')
 
 WebUI.delay(2)
 
+
+
 WebUI.switchToWindowIndex(0)
 
 WebUI.delay(2)
@@ -118,6 +119,8 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 WebElement btn1 = findFolder(GlobalVariable.Name)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
+
+/*
 
 WebUI.delay(2)
 
@@ -243,7 +246,7 @@ WebUI.verifyElementPresent(findTestObject('1Upload_Form/Page_Link - PowerFolder/
 WebUI.closeWindowIndex('0')
 
 WebUI.closeBrowser()
-
+*/
 @Keyword
 WebElement findFolder(String folderName) {
     WebDriver driver = DriverFactory.getWebDriver()
@@ -251,12 +254,13 @@ WebElement findFolder(String folderName) {
     return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
 }
 
+
 String generateDateTimePlusTwoMinutes() {
     Calendar calendar = Calendar.getInstance()
-    // add two minutes
-    calendar.add(Calendar.MINUTE, 2)
+    
+    calendar.add(Calendar.MINUTE, 5)
 
-    SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm:ss')
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm")
 
     return sdf.format(calendar.getTime())
 }
