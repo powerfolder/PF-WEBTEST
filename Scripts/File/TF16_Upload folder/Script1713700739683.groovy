@@ -39,6 +39,9 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
+
+
 // Appel du cas de test pour créer un dossier
 WebUI.callTestCase(findTestCase('File/Pre_test/Create_folder'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -46,33 +49,47 @@ WebUI.callTestCase(findTestCase('File/Pre_test/Create_folder'), [:], FailureHand
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Upload file'))
 
-// Attente explicite pour l'élément d'ajout
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
-WebElement adddir = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[5]/div/div/div[3]/div/div/span[2]')))
-adddir.click()
 
-// Création d'un dossier avec des fichiers Word sur le bureau
+// Création du fichier Word vide sur le bureau
 String folderName = 'folder_with_files_' + RandomStringUtils.randomNumeric(4)
 String folderPath = createFolderWithWordFilesOnDesktop(folderName, 3)
-selectFolderAutomatically(folderPath)
 
-// Annulation de l'upload
-WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/lang_Cancel'))
-WebUI.delay(3)
+// Upload direct dans l'input file
+TestObject uploadInput = new TestObject('uploadInput')
+uploadInput.addProperty('xpath', ConditionType.EQUALS, "//input[@id='upload_input_directories']")
 
-// Vérification de la présence du dossier
+WebUI.waitForElementPresent(uploadInput, 10)
+WebUI.uploadFile(uploadInput, folderPath)
+
+// Attendre que l’upload soit visible comme réussi
+TestObject successMsg = new TestObject('successMsg')
+successMsg.addProperty('xpath', ConditionType.EQUALS, "//*[contains(text(),'Successfully uploaded')]")
+
+WebUI.waitForElementVisible(successMsg, 15)
+
+// Fermer la popup avec le vrai bouton Close
+TestObject closeBtn = new TestObject('closeBtn')
+closeBtn.addProperty('xpath', ConditionType.EQUALS, "//button[@id='upload_stop_button']")
+
+WebUI.waitForElementClickable(closeBtn, 10)
+WebUI.click(closeBtn)
+
+WebUI.delay(2)
+
+// Vérification de la présence du document
 def btn = findFolder(folderName)
-assert btn != null : 'Le document n\'est pas présent.'
+assert btn != null
 
-// Cliquer sur le bouton trouvé
+// Cliquer sur le document si besoin
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+
 WebUI.delay(3)
 
-// Suppression du dossier
+// Supprimer le fichier Word créé sur le bureau
 deleteFolder(folderPath)
 
-// Fermeture du navigateur
 WebUI.closeBrowser()
+
 
 // Méthode pour trouver un dossier par nom
 @Keyword

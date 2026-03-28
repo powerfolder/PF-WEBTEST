@@ -11,10 +11,11 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//thead[@id='files_paste_header']/tr/th[3]/div/a/span</value>
+         <value>//body/div[2]/div[1]/div[2]/div[2]/table/thead[2]/tr/th[3]/div/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>bc3b85bc-acb8-46fd-9f15-be8839c0e17e</webElementGuid>
+      <webElementGuid>f1604b7b-e992-4dda-94d0-cdc7dd5a36a7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-glyph glyphicons glyphicons-paste</value>
-      <webElementGuid>51401a47-9f9f-4f99-b14b-3720d3e244b5</webElementGuid>
+      <webElementGuid>92a17413-3be8-41e9-9447-3cca1d362536</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +39,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;files_paste_header&quot;)/tr[1]/th[@class=&quot;pica-overflow text-right&quot;]/div[@class=&quot;pica-table-selection-context pica-inline hidden-xs text-right&quot;]/a[@class=&quot;files-ui-paste&quot;]/span[@class=&quot;pica-glyph glyphicons glyphicons-paste&quot;]</value>
-      <webElementGuid>ff6c3fd7-e607-4142-8447-2708d184be6b</webElementGuid>
+      <webElementGuid>13a2d512-23a1-4809-b1f8-1f06fbb58963</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +47,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//thead[@id='files_paste_header']/tr/th[3]/div/a/span</value>
-      <webElementGuid>8a98f37c-d398-41ed-8267-bcda0b0ca55d</webElementGuid>
+      <webElementGuid>b9c50fa2-b73a-4f05-a505-b6719a7e107a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,6 +55,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//thead[2]/tr/th[3]/div/a/span</value>
-      <webElementGuid>569da28d-883a-401c-bb24-23a0804f225a</webElementGuid>
+      <webElementGuid>631c2302-52e7-4ede-a84b-cdd819aaaeda</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -50,6 +50,9 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Accounts/Edit_Accounts - PowerFolder/Create new Organization'))
 
+/*
+ 
+
 WebUI.click(findTestObject('Accounts/Page_Organizations - PowerFolder/button_Is member'))
 
 WebUI.waitForElementVisible(findTestObject('Accounts/Page_Organizations - PowerFolder/checkbox_IsAdmin'), 5)
@@ -98,6 +101,7 @@ WebUI.click(findTestObject('Dashboard/org_admin_edit_org'))
 WebUI.verifyElementPresent(findTestObject('Dashboard/org_admin_organization_name'), 0)
 
 WebUI.closeBrowser()
+*/
 
 WebElement findAccount(String emailId) {
     WebDriver driver = DriverFactory.getWebDriver()

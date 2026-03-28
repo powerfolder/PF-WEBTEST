@@ -76,7 +76,7 @@ WebUI.click(findTestObject('News_User/Page_News - PowerFolder/News'))
 
 WebUI.mouseOver(findTestObject('News_User/Page_News - PowerFolder/file_wpath'))
 
-String tooltipText = WebUI.getAttribute(findTestObject('News_User/Page_News - PowerFolder/file_wpath'), 'data-original-title')
+String tooltipText = WebUI.getAttribute(findTestObject('News_User/Page_News - PowerFolder/file_wpath'), 'data-bs-original-title')
 
 println('Tooltip content: ' + tooltipText)
 
@@ -121,7 +121,7 @@ WebUI.click(findTestObject('News_User/Page_News - PowerFolder/News'))
 
 WebUI.mouseOver(findTestObject('News_User/Page_News - PowerFolder/file_wpath'))
 
-String tooltipText_2 = WebUI.getAttribute(findTestObject('News_User/Page_News - PowerFolder/file_wpath'), 'data-original-title')
+String tooltipText_2 = WebUI.getAttribute(findTestObject('News_User/Page_News - PowerFolder/file_wpath'), 'data-bs-original-title')
 
 println('Tooltip content: ' + tooltipText_2)
 
