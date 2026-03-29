@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TB12_CheckoutDefaultVersionToplv</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a22584cb-ec46-4af6-9fa5-384fc4a7aa27</testCaseGuid>
+</TestCaseEntity>
