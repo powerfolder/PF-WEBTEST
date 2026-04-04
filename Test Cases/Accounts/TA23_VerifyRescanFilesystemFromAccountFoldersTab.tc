@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TA23_VerifyRescanFilesystemFromAccountFoldersTab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9a951383-6927-4d13-83d4-9de40ca678c8</testCaseGuid>
+</TestCaseEntity>
