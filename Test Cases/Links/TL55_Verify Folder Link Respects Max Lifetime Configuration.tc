@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL55_Verify Folder Link Respects Max Lifetime Configuration</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4d8605b9-6af0-422c-a182-f0e352624b97</testCaseGuid>
+</TestCaseEntity>
