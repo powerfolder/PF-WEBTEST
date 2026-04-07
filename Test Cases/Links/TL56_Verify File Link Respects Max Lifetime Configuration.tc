@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL56_Verify File Link Respects Max Lifetime Configuration</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cdab1e7e-6294-42fb-9cc6-104853f41d23</testCaseGuid>
+</TestCaseEntity>
