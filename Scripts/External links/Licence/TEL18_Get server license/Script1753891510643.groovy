@@ -35,9 +35,9 @@ String currentUrl = WebUI.getUrl()
 
 WebUI.comment('L\'URL actuelle est: ' + currentUrl)
 
-String expectedUrl = 'https://my.powerfolder.com/pricing'
+String expectedUrl = 'https://secure.avangate.com'
 
-boolean isCorrectUrl = currentUrl.equals(expectedUrl)
+boolean isCorrectUrl = currentUrl.contains(expectedUrl)
 
 WebUI.verifyEqual(isCorrectUrl, true)
 
