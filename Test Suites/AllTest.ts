@@ -2909,4 +2909,11 @@
       <testCaseId>Test Cases/Links/TL56_Verify File Link Respects Max Lifetime Configuration</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>10614a0a-db36-4f1e-b833-cd35b3686c55</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF25_Cut File from toplv to subdir</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

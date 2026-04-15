@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF25_Cut File from toplv to subdir</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>183aec3c-e0b4-4ab7-9aa1-37cfc703abcd</testCaseGuid>
+</TestCaseEntity>
