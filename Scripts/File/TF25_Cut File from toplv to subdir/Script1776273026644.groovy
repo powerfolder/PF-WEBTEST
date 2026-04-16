@@ -31,13 +31,13 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-
+// create toplvl folder A
 String folderName_1 = getRandomFolderName()
 
 String folderName_2 = getRandomFolderName()
 
 while (folderName_2 == folderName_1) {
-	folderName_2 = getRandomFolderName()
+    folderName_2 = getRandomFolderName()
 }
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
@@ -53,31 +53,19 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFold
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
-
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolderIcon'))
-
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
-
-// crete toplevel dir
-WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), folderName_2)
-
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
-
-// create doc in toplvl folder B
+// create doc in toplvl folder A
 WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
 WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_Document'))
 
-String DocName = 'Doc_num_' + RandomStringUtils.randomNumeric(4)
+String docName = 'Doc_num_' + RandomStringUtils.randomNumeric(4)
 
 WebUiBuiltInKeywords.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
-    DocName)
+    docName)
 
 WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-WebUiBuiltInKeywords.delay(15)
+WebUiBuiltInKeywords.delay(10)
 
 WebUiBuiltInKeywords.closeWindowIndex(1)
 
@@ -85,60 +73,90 @@ WebUiBuiltInKeywords.switchToWindowIndex(0)
 
 WebUI.refresh()
 
-WebUiBuiltInKeywords.delay(2)
+// crete subdir
+WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
-WebElement btn1 = findDoc(DocName)
+WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
 
-// check if doc is created
+WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), folderName_2)
 
-boolean isDocCreated = btn1.isDisplayed()
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-WebUiBuiltInKeywords.verifyEqual(isDocCreated, true)
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 
-WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
+WebUI.delay(2)
 
-assert DocName != null
+WebDriver driver = DriverFactory.getWebDriver()
 
-// cut created doc
+WebElement folder = driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName_1) + '\')]/td[1]/span'))
+
+boolean isFolderCreated = folder.isDisplayed()
+
+WebUiBuiltInKeywords.verifyEqual(isFolderCreated, true)
+
+WebElement btn = findFolder(folderName_1)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+
+WebUI.delay(2)
+
+WebElement btn_1 = findDoc(docName)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn_1))
 
 WebUiBuiltInKeywords.verifyElementClickable(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - Cut/span_Cut'))
 
 WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - Cut/span_Cut'))
 
-// search for toplvl folder A and paste doc
+// search for sub dir A and paste doc
+WebElement btn_3 = findFolder(folderName_2)
 
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
-
-WebElement btn2 = findFolder(folderName_1)
-
-WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
+WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn_3))
 
 WebUiBuiltInKeywords.click(findTestObject('file_objects/document/span_paste/span_Paste'))
 
+def btn_4 = findDoc(docName)
 
-// check if doc is pasted in successfully
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn_4))
 
-WebElement btn3 = findDoc(DocName)
+assert docName != null
 
-boolean isDocPasted = btn3.isDisplayed()
-
-WebUiBuiltInKeywords.verifyEqual(isDocPasted, true)
-
-WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
-
-WebElement btn4 = findFolder(folderName_2)
-
-WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn4))
-
+WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/Return_to_toplvl'))
 
 WebUI.delay(2)
 
-boolean docStillPresentInTopLevel = isDocPresent(DocName)
+boolean docStillPresentInTopLevel = isDocPresent(docName)
 
 WebUI.verifyEqual(docStillPresentInTopLevel, false)
 
 WebUI.closeBrowser()
 
+@Keyword
+WebElement findFolder(String folderName) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    return driver.findElement(By.xpath(('//td[2]/span/a[contains(text(),\'' + folderName) + '\')]'))
+}
+
+String getTimestamp() {
+    Date todaysDate = new Date()
+
+    String formattedDate = todaysDate.format('dd_MMM_yyyy_hh_mm_ss')
+
+    return formattedDate
+}
+
+String getRandomFileName() {
+    String fileName = 'File_' + getTimestamp()
+
+    return fileName
+}
+
+String getRandomFolderName() {
+    String folderName = 'Folder_' + getTimestamp()
+
+    return folderName
+}
 
 @Keyword
 WebElement findDoc(String DocName) {
@@ -147,37 +165,11 @@ WebElement findDoc(String DocName) {
     return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + DocName) + '\')]/td[1]/span'))
 }
 
-@Keyword
-WebElement findFolder(String folderName) {
+boolean isDocPresent(String docName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
+    List<WebElement> docs = driver.findElements(By.xpath(('//*[contains(@data-search-keys, \'' + docName) + '\')]/td[1]/span'))
+
+    return !(docs.isEmpty())
 }
 
-String getTimestamp() {
-	Date todaysDate = new Date()
-
-	String formattedDate = todaysDate.format('dd_MMM_yyyy_hh_mm_ss')
-
-	return formattedDate
-}
-
-String getRandomFileName() {
-	String fileName = 'File_' + getTimestamp()
-
-	return fileName
-}
-
-String getRandomFolderName() {
-	String folderName = 'Folder_' + getTimestamp()
-
-	return folderName
-}
-
-boolean isDocPresent(String docName) {
-	WebDriver driver = DriverFactory.getWebDriver()
-
-	List<WebElement> docs = driver.findElements(By.xpath(('//*[contains(@data-search-keys, \'' + docName) + '\')]/td[1]/span'))
-
-	return !(docs.isEmpty())
-}
