@@ -2923,4 +2923,11 @@
       <testCaseId>Test Cases/File/TF26_Verify NoCutPaste On TopLevelFolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>084eb0c2-540f-4180-9c64-3264ebe707e2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL57_Verify RW Link Creation When Upload Links Disabled</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
