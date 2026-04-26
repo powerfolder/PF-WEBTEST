@@ -153,6 +153,8 @@ WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/Account_rescan_fi
 
 WebUI.waitForElementPresent(findTestObject('Folders/Page_Folders - PowerFolder/Account_Popup_Rescan'), 3)
 
+WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/Account_rescan_filesystem'), FailureHandling.STOP_ON_FAILURE)
+
 WebUI.verifyElementText(findTestObject('Folders/Page_Folders - PowerFolder/Account_Popup_Rescan'), 'Filesystem scan successfully triggered. New and changed files will show up after the folder has been completely scanned.')
 
 WebUI.closeBrowser()
