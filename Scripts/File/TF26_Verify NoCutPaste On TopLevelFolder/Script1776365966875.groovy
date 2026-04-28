@@ -56,20 +56,17 @@ WebElement btn = findDoc(folderName_1)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-TestObject cutButton = new TestObject('cutButton')
+WebDriver driver = DriverFactory.getWebDriver()
 
-cutButton.addProperty('xpath', ConditionType.EQUALS, '//a[contains(@class,\'files-ui-cut\')]//lang[text()=\'Cut\']')
+List<WebElement> cutButtons = driver.findElements(By.xpath(
+	"//table[@id='files_files_table']//a[contains(@class,'files-ui-cut') and not(contains(@style,'display: none'))]"
+))
 
-// Check: the Cut button must NOT exist for a top-level folder
-boolean isPresent = WebUI.verifyElementPresent(cutButton, 3, FailureHandling.OPTIONAL)
-
-if (isPresent) {
-    KeywordUtil.markFailedAndStop('❌ The CUT button exists in a top-level folder (unexpected behavior)')
+if (cutButtons.size() > 0) {
+	KeywordUtil.markFailedAndStop("Le bouton CUT est visible dans la table pour un top-level folder")
 } else {
-    KeywordUtil.markPassed('✅ Cut button is not present as expected')
+	KeywordUtil.markPassed("Aucun bouton CUT visible dans la table pour un top-level folder")
 }
-
-WebUI.delay(2)
 
 WebUI.closeBrowser()
 
