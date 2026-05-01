@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BB02_Admin_DashboardToAccounts_BackToDashboard</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c4973b0d-c935-4824-9eca-8e790bcbf332</testCaseGuid>
+</TestCaseEntity>

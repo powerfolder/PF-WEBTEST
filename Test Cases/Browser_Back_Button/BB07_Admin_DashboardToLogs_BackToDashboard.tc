@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BB07_Admin_DashboardToLogs_BackToDashboard</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d59f9d13-5bde-45b0-811d-1ef2301eb1c2</testCaseGuid>
+</TestCaseEntity>
