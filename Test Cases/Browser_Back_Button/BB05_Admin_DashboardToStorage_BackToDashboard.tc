@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BB05_Admin_DashboardToStorage_BackToDashboard</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>21f76627-a455-4e7c-bd8d-ab92147531c3</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BB11_User_CreateFolderAndSubfolder_BackToTopLevelFolder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8006b7c4-5c6e-4c03-8f7d-8e734fc6f10b</testCaseGuid>
+</TestCaseEntity>

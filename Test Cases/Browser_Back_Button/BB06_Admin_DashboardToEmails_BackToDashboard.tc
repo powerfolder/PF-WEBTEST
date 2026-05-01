@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BB06_Admin_DashboardToEmails_BackToDashboard</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>46219ebc-70e2-471b-8aa6-6fde566d27c9</testCaseGuid>
+</TestCaseEntity>

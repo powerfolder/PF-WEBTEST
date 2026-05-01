@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BB08_Admin_DashboardToPreferences_BackToDashboard</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a8ec2996-a16c-40f4-af79-29686c333802</testCaseGuid>
+</TestCaseEntity>

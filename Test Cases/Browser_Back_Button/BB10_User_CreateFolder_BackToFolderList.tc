@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BB10_User_CreateFolder_BackToFolderList</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>38c64b9e-fb57-4640-9b59-b477ad4434f7</testCaseGuid>
+</TestCaseEntity>

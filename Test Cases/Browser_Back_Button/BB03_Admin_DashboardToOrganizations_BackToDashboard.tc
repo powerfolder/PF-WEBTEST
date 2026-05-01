@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BB03_Admin_DashboardToOrganizations_BackToDashboard</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3e9c2d07-54f3-49f9-8d06-38c344b8145f</testCaseGuid>
+</TestCaseEntity>
