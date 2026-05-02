@@ -6,12 +6,12 @@
    <elementGuidId>393ed58d-7978-4eb7-9195-c2026f66943f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[2]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>button.wpgdprc-button.wpgdprc-button--accept.lazyloaded</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//body/div[1]/div/div/div/div[3]/button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>7cca3f01-3a11-43d7-8e7e-d467ee68beea</webElementGuid>
+      <webElementGuid>5549fcba-efee-401c-8556-3a49b7201d31</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>eb4cfa0c-1204-433b-a95a-87392849732a</webElementGuid>
+      <webElementGuid>d6c5dd6b-ca40-445e-b50b-88a1baa92679</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>class</name>
       <type>Main</type>
       <value>wpgdprc-button wpgdprc-button--accept lazyloaded</value>
-      <webElementGuid>a1d74767-28a2-45e5-90a0-4e0051b7d93f</webElementGuid>
+      <webElementGuid>3aec98fb-3d88-4b68-8de1-08cdacfc3710</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
       <name>text</name>
       <type>Main</type>
       <value> Accept </value>
-      <webElementGuid>fd561de8-b201-4d1c-aaea-39c3bb864d69</webElementGuid>
+      <webElementGuid>e5b5128c-bacd-41d4-bc2e-d4289843f8a9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[@class=&quot;avada-html-layout-Wide avada-html-header-position-Top avada-is-100-percent-template js csstransforms csstransforms3d csstransitions ua-windows_nt ua-windows_nt-10 ua-windows_nt-10-0 ua-chrome ua-chrome-146 ua-chrome-146-0 ua-chrome-146-0-0 ua-chrome-146-0-0-0 ua-desktop ua-desktop-windows ua-webkit ua-webkit-537 ua-webkit-537-36 js no-applicationcache geolocation history postmessage websockets localstorage sessionstorage no-websqldatabase webworkers hashchange audio canvas canvastext video webgl cssgradients multiplebgs opacity rgba inlinesvg hsla supports svgclippaths smil no-touchevents fontface generatedcontent textshadow cssanimations backgroundsize borderimage borderradius boxshadow flexbox cssreflections csstransforms csstransforms3d csstransitions&quot;]/body[@class=&quot;home wp-singular page-template page-template-100-width page-template-100-width-php page page-id-293 wp-theme-Avada sfsi_actvite_theme_default metaslider-plugin fusion-image-hovers fusion-pagination-sizing fusion-button_size-large fusion-button_type-flat fusion-button_span-no avada-image-rollover-circle-yes avada-image-rollover-no fusion-has-button-gradient fusion-body ltr fusion-sticky-header no-mobile-sticky-header no-mobile-totop avada-has-rev-slider-styles fusion-disable-outline fusion-sub-menu-fade mobile-logo-pos-left layout-wide-mode avada-has-boxed-modal-shadow-None layout-scroll-offset-full avada-has-zero-margin-offset-top fusion-top-header menu-text-align-left mobile-menu-design-classic fusion-show-pagination-text fusion-header-layout-v3 avada-responsive avada-footer-fx-none avada-menu-highlight-style-bar fusion-search-form-classic fusion-main-menu-search-dropdown fusion-avatar-square avada-dropdown-styles avada-blog-layout-Large avada-blog-archive-layout-Large avada-header-shadow-yes avada-menu-icon-position-left avada-has-megamenu-shadow avada-has-mainmenu-dropdown-divider avada-has-header-100-width avada-has-mobile-menu-search avada-has-breadcrumb-mobile-hidden avada-has-titlebar-hide avada-has-pagination-width_height avada-flyout-menu-direction-fade avada-ec-views-v1 rs-safari sfsi_2.77 do-animate fusion-no-touch&quot;]/div[@class=&quot;wpgdprc-consent-bar wpgdprc-consent-bar--position-bottom&quot;]/div[@class=&quot;wpgdprc-consent-bar__inner&quot;]/div[@class=&quot;wpgdprc-consent-bar__container&quot;]/div[@class=&quot;wpgdprc-consent-bar__content&quot;]/div[@class=&quot;wpgdprc-consent-bar__column wpgdprc-consent-bar__column--accept&quot;]/button[@class=&quot;wpgdprc-button wpgdprc-button--accept lazyloaded&quot;]</value>
-      <webElementGuid>d520db09-34d3-4a9f-9511-d2a54a3926b4</webElementGuid>
+      <webElementGuid>b4883f7b-0b3c-4d61-95ef-e1b93f9884cb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -63,7 +63,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[2]</value>
-      <webElementGuid>a81b17b1-65df-4062-b76f-154966e9a4a3</webElementGuid>
+      <webElementGuid>6b2fee40-c981-417e-837b-15404b3e3818</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='More information'])[1]/following::button[1]</value>
-      <webElementGuid>0dfc5cdd-e456-47ce-a169-def7d3f15e9c</webElementGuid>
+      <webElementGuid>26bdcfaa-7a30-45da-8276-239ef24018de</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Skip to content'])[1]/preceding::button[1]</value>
-      <webElementGuid>a1c7aba6-5bf9-41d0-8930-0b649690be9e</webElementGuid>
+      <webElementGuid>79d67a9b-035e-43ac-99c8-e15711ce1d69</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +87,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Übersicht'])[1]/preceding::button[1]</value>
-      <webElementGuid>34bfe852-fa5c-44fb-b240-f140864a4868</webElementGuid>
+      <webElementGuid>d5566bb2-86e1-4189-9dde-642bcdfd7d33</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +95,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Accept']/parent::*</value>
-      <webElementGuid>66e67f2f-8341-4926-8cd4-d1e7500f00a0</webElementGuid>
+      <webElementGuid>adf11c11-ad79-40bc-8134-0f09b40b80e5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,7 +103,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/button</value>
-      <webElementGuid>dab2c112-6f5b-4005-999d-249614ca0464</webElementGuid>
+      <webElementGuid>a203bdc5-8b34-4e33-a6b3-093e34f72d28</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,6 +111,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = ' Accept ' or . = ' Accept ')]</value>
-      <webElementGuid>aa4d1053-3125-440c-ab8e-858feceb14e0</webElementGuid>
+      <webElementGuid>0f184cb5-5f99-482a-985c-62aebb6af15d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
