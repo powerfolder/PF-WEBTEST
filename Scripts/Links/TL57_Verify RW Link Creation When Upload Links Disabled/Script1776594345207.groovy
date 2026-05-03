@@ -168,6 +168,21 @@ WebUI.navigateToUrl(my_clipboard)
 
 assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
+WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('LeftNavigationIcons/Preferences'))
+
+WebUI.click(findTestObject('Preferences/Security/Security_Configuration'))
+
+WebUI.click(findTestObject('Preferences/Security/Filelink security'))
+
+TestObject uploadToggle = findTestObject('Preferences/Security/Allow creation of Upload forms')
+
+// Enable the upload forms toggle if it is currently disabled
+if (!WebUI.getAttribute(uploadToggle, 'class').contains('active')) {
+	WebUI.click(uploadToggle)
+	WebUI.click(findTestObject('Preferences/Security/Save'))
+}
 WebUI.closeBrowser()
 
 String generateRandomString(int length) {

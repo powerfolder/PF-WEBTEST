@@ -6,15 +6,15 @@
    <elementGuidId>6e6a59dc-5320-4ca5-841a-adb30efe7225</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[3]/span</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//body/div[2]/div[1]/div[2]/div[2]/table/tbody/tr[1]/td[2]/span/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>9f11241f-e882-4037-b447-5575e4abd858</webElementGuid>
+      <webElementGuid>8dfcc8f4-1e75-46cc-9c00-f00b680b399c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Ordner_15_üü</value>
-      <webElementGuid>e4b11344-2e6e-44e9-b3bc-48af5b5b561d</webElementGuid>
+      <webElementGuid>6b8b8a49-3ab8-4db9-8d14-e56ab723fb6f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_action_search&quot;)/a[@class=&quot;pica-crumb&quot;]/span[1]</value>
-      <webElementGuid>ce6fa2c8-4a76-4a1b-8292-a3fd03489a29</webElementGuid>
+      <webElementGuid>841af570-b7b4-4644-89d7-b4b86079e15f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_action_search']/a[3]/span</value>
-      <webElementGuid>8a75619b-f797-45df-a287-ef9e94f9236e</webElementGuid>
+      <webElementGuid>5bbc03d9-0f2c-45bb-8829-b6cd47c89752</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='folder_8380'])[1]/following::span[1]</value>
-      <webElementGuid>21cc5728-2c13-412f-ace1-ab0c814ed4da</webElementGuid>
+      <webElementGuid>75db7e9e-05dc-4ebc-8e1b-aa4c977cb94b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Home'])[1]/following::span[2]</value>
-      <webElementGuid>39d00ede-39db-41fc-878a-32c3550eb8e2</webElementGuid>
+      <webElementGuid>aa48a90b-54b6-40f9-bb3b-63bcbf5d1399</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ordner_44_äü'])[1]/preceding::span[1]</value>
-      <webElementGuid>9ed768fa-21e2-46be-aad8-d806e346bddb</webElementGuid>
+      <webElementGuid>a3e709b4-638a-4b6a-a760-3b31a859e97f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='admin'])[1]/preceding::span[6]</value>
-      <webElementGuid>40949a60-a148-45fe-ac58-b6331162c1c1</webElementGuid>
+      <webElementGuid>4e3c6a23-6dc1-4965-a9b3-0e49892e25c6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Ordner_15_üü']/parent::*</value>
-      <webElementGuid>fa781be1-3b8a-4fb5-af4e-921a255b344e</webElementGuid>
+      <webElementGuid>c38862e6-b46c-45cd-bbfb-d70a2084d13d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//a[3]/span</value>
-      <webElementGuid>f3374731-de64-437f-85ec-a53924fca78f</webElementGuid>
+      <webElementGuid>8556fc62-c160-4452-be33-d2b536ad34f5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Ordner_15_üü' or . = 'Ordner_15_üü')]</value>
-      <webElementGuid>c049307a-8ae1-4f5a-8d9a-e60f3020e8ea</webElementGuid>
+      <webElementGuid>026467cf-bc8d-4542-a025-c18087e23b09</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='folder_5836'])[1]/following::span[1]</value>
-      <webElementGuid>c1fbc6ce-0888-4011-a04e-a38d5e89b465</webElementGuid>
+      <webElementGuid>eef14fbe-a209-4e46-b7c5-047565c4e90d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ordner_01_üö'])[1]/preceding::span[1]</value>
-      <webElementGuid>f56957ff-faa7-4ef0-9973-d99f0dcc691a</webElementGuid>
+      <webElementGuid>fe7920b1-3a9d-4c84-b75a-2c059ce7e764</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Ordner_06_üö']/parent::*</value>
-      <webElementGuid>ebf0c98f-7e15-463e-9a7a-12639ecd3164</webElementGuid>
+      <webElementGuid>33ff7525-f1c4-4541-809b-94545ffb3902</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Ordner_06_üö' or . = 'Ordner_06_üö')]</value>
-      <webElementGuid>70d31c16-6cda-4abf-ba79-f91f41db6383</webElementGuid>
+      <webElementGuid>7b33c021-c795-46c5-b9e8-98eb02a4a6ea</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
