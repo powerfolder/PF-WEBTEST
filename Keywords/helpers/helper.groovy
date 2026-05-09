@@ -61,7 +61,7 @@ public class Helper {
 	@Keyword
 	def static WebElement findShareButton(String fileName) {
 		WebDriver driver = DriverFactory.getWebDriver()
-		return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'" + fileName + "')]/../../../td[7]/a"))
+		return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr[contains(@data-search-keys,'" + fileName + "')]/td[7]/a"))
 	}
 	@Keyword
 	def static generateDateTimePlusTenSeconds() {
