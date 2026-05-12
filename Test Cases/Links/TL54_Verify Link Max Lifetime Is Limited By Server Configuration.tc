@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL54_Verify Link Max Lifetime Is Limited By Server Configuration</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6660b8fe-f809-41f1-b54b-9a8380462237</testCaseGuid>
+</TestCaseEntity>

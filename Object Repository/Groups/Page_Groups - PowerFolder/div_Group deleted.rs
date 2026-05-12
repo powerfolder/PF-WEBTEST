@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[(text() = 'Group deleted×' or . = 'Group deleted×')]</value>
+         <value>//body/div[3]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -15,6 +15,7 @@
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>ba7df9dd-4f01-4624-bcae-d03c77c5985f</webElementGuid>
+      <webElementGuid>e55bfc26-47d1-413c-9b18-a1aef40d9523</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-notification-box alert alert-info</value>
-      <webElementGuid>74e4b141-f244-4024-a34e-5fb546a25e09</webElementGuid>
+      <webElementGuid>e8180bd4-2562-4f8c-b225-e86eaee1c5a1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +39,7 @@
       <name>role</name>
       <type>Main</type>
       <value>alert</value>
-      <webElementGuid>9aaa3e33-3e44-4fed-8b1c-757a254c3911</webElementGuid>
+      <webElementGuid>cc6d6b49-5937-4aa8-8f2e-71faee910394</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +47,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Group deleted×</value>
-      <webElementGuid>f8661f5a-ffa0-4d31-905a-b44f2bb99f2f</webElementGuid>
+      <webElementGuid>08488c71-e1f0-483c-bd77-af551633c699</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +55,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;notification_22215848&quot;)/div[@class=&quot;pica-notification-box alert alert-info&quot;]</value>
-      <webElementGuid>9321504c-6d19-4e87-a0ba-a749661806ec</webElementGuid>
+      <webElementGuid>1c9ada9a-991e-4679-bdce-cf31adbe0551</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +63,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='notification_22215848']/div</value>
-      <webElementGuid>1adec511-2ddd-458e-b027-5f3c71ea1ac5</webElementGuid>
+      <webElementGuid>5936b24a-da99-4039-9842-55460e43f66f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +71,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='`'])[2]/following::div[3]</value>
-      <webElementGuid>fb700e09-f0c3-4c8f-af98-96aede8a2442</webElementGuid>
+      <webElementGuid>73b42e30-b6a2-410b-b08b-61bbea0be717</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +79,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[2]/following::div[3]</value>
-      <webElementGuid>4debf278-e54a-47d4-88d8-78d30f1ba9d5</webElementGuid>
+      <webElementGuid>984f78b9-ce96-4e1c-8649-e68e5544b417</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +87,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/div</value>
-      <webElementGuid>516f2512-600a-4a44-99f0-de15b822db41</webElementGuid>
+      <webElementGuid>d2882b5d-f716-49b7-b963-45541431ce75</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +95,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Group deleted×' or . = 'Group deleted×')]</value>
-      <webElementGuid>6cf4c720-1b6f-4e85-b222-92089b812fc7</webElementGuid>
+      <webElementGuid>86b6744a-d2cb-43a8-bc9d-998166cb4317</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

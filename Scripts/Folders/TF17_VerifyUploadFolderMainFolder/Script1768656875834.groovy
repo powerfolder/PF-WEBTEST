@@ -51,6 +51,7 @@ import java.awt.FileDialog as FileDialog
 import javax.swing.JFrame as JFrame
 import java.nio.file.Path as Path
 import java.time.Duration as Duration
+import java.io.File as File
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -58,160 +59,114 @@ WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHa
 assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
-
 WebUI.click(findTestObject('Folders/createFolder'))
 
 String mainFolder = getRandomFolderName()
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
-
 WebUI.setText(findTestObject('Folders/inputFolderName'), mainFolder)
-
 WebUI.click(findTestObject('Folders/buttonOK'))
 
 TestObject dynamicObject = new TestObject()
-
 dynamicObject.addProperty('xpath', ConditionType.EQUALS, ('//span[text()=\'' + mainFolder) + '\']')
 
 boolean exists = WebUI.verifyElementPresent(dynamicObject, 10, FailureHandling.OPTIONAL)
 
 WebUI.verifyElementPresent(findTestObject('Folders/Page_Folders - PowerFolder/Upload files'), 5)
-
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/Upload files'))
 
-WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/add folder'))
-
+// Création d'un dossier avec plusieurs fichiers Word sur le bureau
 String folderName = 'folder_with_files_' + RandomStringUtils.randomNumeric(4)
-
 String folderPath = createFolderWithWordFilesOnDesktop(folderName, 3)
 
-selectFolderAutomatically(folderPath)
+// Upload direct dans l'input folder
+TestObject uploadInput = new TestObject('uploadInput')
+uploadInput.addProperty('xpath', ConditionType.EQUALS, "//input[@id='upload_input_directories']")
 
-// Annulation de l'upload
-WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/lang_Cancel'))
-WebUI.delay(3)
+WebUI.waitForElementPresent(uploadInput, 10)
+WebUI.uploadFile(uploadInput, folderPath)
+
+// Attendre que l’upload soit visible comme réussi
+TestObject successMsg = new TestObject('successMsg')
+successMsg.addProperty('xpath', ConditionType.EQUALS, "//*[contains(text(),'Successfully uploaded')]")
+
+WebUI.waitForElementVisible(successMsg, 15)
+
+// Fermer la popup avec le vrai bouton Close
+TestObject closeBtn = new TestObject('closeBtn')
+closeBtn.addProperty('xpath', ConditionType.EQUALS, "//button[@id='upload_stop_button']")
+
+WebUI.waitForElementClickable(closeBtn, 10)
+WebUI.click(closeBtn)
+
+WebUI.delay(2)
 
 // Vérification de la présence du dossier
 def btn = findFolder(folderName)
-assert btn != null : 'Le document n\'est pas présent.'
+assert btn != null
 
-// Cliquer sur le bouton trouvé
+// Cliquer sur le dossier si besoin
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+
 WebUI.delay(3)
 
-// Suppression du dossier
+// Supprimer le dossier créé sur le bureau
 deleteFolder(folderPath)
 
-// Fermeture du navigateur
 WebUI.closeBrowser()
 
-// Méthode pour trouver un dossier par nom
-@Keyword
-WebElement findFolder(String folderName) {
-	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath('//*[contains(@data-search-keys, \'' + folderName + '\')]/td[1]/span'))
-}
-
-// Méthode pour créer un dossier avec des fichiers Word sur le bureau
 String createFolderWithWordFilesOnDesktop(String folderName, int numFiles) {
 	def desktopFolderPath = Paths.get(System.getProperty('user.home'), 'Desktop', folderName)
+
 	if (!Files.exists(desktopFolderPath)) {
 		Files.createDirectories(desktopFolderPath)
 	}
+
 	for (int i = 0; i < numFiles; i++) {
 		String fileName = 'word_file_' + RandomStringUtils.randomNumeric(4) + '.docx'
-		createEmptyWordFileOnDesktop(desktopFolderPath.resolve(fileName).toString())
+		String filePath = desktopFolderPath.resolve(fileName).toString()
+		createEmptyWordFile(filePath)
 	}
+
 	return desktopFolderPath.toString()
 }
 
-// Méthode pour créer un fichier Word vide
-String createEmptyWordFileOnDesktop(String filePath) {
+String createEmptyWordFile(String filePath) {
 	XWPFDocument document = new XWPFDocument()
-	FileOutputStream out = null
-	try {
-		out = new FileOutputStream(filePath)
-		document.write(out)
-	} catch (IOException e) {
-		e.printStackTrace()
-	} finally {
-		if (out != null) {
-			try {
-				out.close()
-			} catch (IOException e) {
-				e.printStackTrace()
-			}
-		}
-		try {
-			document.close()
-		} catch (IOException e) {
-			e.printStackTrace()
-		}
-	}
+	FileOutputStream out = new FileOutputStream(filePath)
+
+	document.write(out)
+	out.close()
+	document.close()
+
 	return filePath
 }
 
-// Méthode pour sélectionner un dossier automatiquement
-void selectFolderAutomatically(String folderPath) {
-	try {
-		Robot robot = new Robot()
-		Thread.sleep(500)
-		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection(folderPath), null)
-		robot.keyPress(KeyEvent.VK_CONTROL)
-		robot.keyPress(KeyEvent.VK_O)
-		robot.keyRelease(KeyEvent.VK_O)
-		robot.keyRelease(KeyEvent.VK_CONTROL)
-		Thread.sleep(500)
-		robot.keyPress(KeyEvent.VK_CONTROL)
-		robot.keyPress(KeyEvent.VK_V)
-		robot.keyRelease(KeyEvent.VK_V)
-		robot.keyRelease(KeyEvent.VK_CONTROL)
-		Thread.sleep(500)
-		robot.keyPress(KeyEvent.VK_TAB)
-		robot.keyRelease(KeyEvent.VK_TAB)
-		Thread.sleep(500)
-		robot.keyPress(KeyEvent.VK_ENTER)
-		robot.keyRelease(KeyEvent.VK_ENTER)
-		Thread.sleep(2000)
-		robot.keyPress(KeyEvent.VK_TAB)
-		robot.keyRelease(KeyEvent.VK_TAB)
-		Thread.sleep(500)
-		robot.keyPress(KeyEvent.VK_ENTER)
-		robot.keyRelease(KeyEvent.VK_ENTER)
-		Thread.sleep(2000)
-	} catch (Exception e) {
-		e.printStackTrace()
-	}
-}
-
-// Méthode pour supprimer un dossier
 void deleteFolder(String folderPath) {
 	try {
-		def folder = new File(folderPath)
+		File folder = new File(folderPath)
 		if (folder.exists()) {
 			FileUtils.deleteDirectory(folder)
 			println('Le dossier a été supprimé avec succès.')
 		} else {
-			println('Le dossier n\'existe pas.')
+			println("Le dossier n'existe pas.")
 		}
 	} catch (Exception e) {
-		println("Une erreur s'est produite lors de la suppression du dossier : $e.message")
 		e.printStackTrace()
 	}
 }
 
 @Keyword
+WebElement findFolder(String folderName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+	return driver.findElement(By.xpath("//*[contains(@data-search-keys, '" + folderName + "')]/td[1]/span"))
+}
 
 String getRandomFolderName() {
-	String folderName = 'TF' + getTimestamp()
-
-	return folderName
+	return 'TF' + getTimestamp()
 }
 
 String getTimestamp() {
 	Date todaysDate = new Date()
-
-	String formattedDate = todaysDate.format('_dd_MM_yyyy_hh_mm_ss')
-
-	return formattedDate
+	return todaysDate.format('_dd_MM_yyyy_hh_mm_ss')
 }

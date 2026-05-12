@@ -76,7 +76,7 @@ WebUI.click(findTestObject('Accounts/Edit_Accounts - PowerFolder/Edit_account'))
 
 WebUI.click(findTestObject('Accounts/Edit_Accounts - PowerFolder/input_valid_till'))
 
-WebUI.click(findTestObject('Accounts/Edit_Accounts - PowerFolder/clear_date'))
+//WebUI.click(findTestObject('Accounts/Edit_Accounts - PowerFolder/clear_date'))
 
 String newDateTime = generateDateTimePlusOneYear()
 

@@ -46,6 +46,25 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import java.time.Duration
+import org.openqa.selenium.support.ui.ExpectedConditions
+import com.kms.katalon.core.annotation.Keyword as Keyword
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.By as By
+import org.apache.commons.io.FileUtils as FileUtils
+
+import java.nio.file.Paths as Paths
+import java.nio.file.Files as Files
+import java.time.Duration
+
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 
 
@@ -116,45 +135,41 @@ WebUiBuiltInKeywords.verifyElementClickable(findTestObject('file_objects/upload/
 // Clic pour uploader un fichier
 WebUiBuiltInKeywords.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Upload file'))
 
-// Attendre que l'élément devienne visible
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
-WebElement addfile = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[5]/div/div/div[3]/div/div/span')))
-addfile.click()
-
-// Créer le dossier sur le bureau s'il n'existe pas déjà
+// Créer le dossier local s'il n'existe pas
 createFolderIfNotExists(folderPath)
 
 // Créer 10 fichiers dans le dossier
 createFilesInFolder(folderPath, 10)
 
-// Attendre que la fenêtre de dialogue de fichier soit disponible
-Robot robot = new Robot()
-robot.delay(2000) // Attendre 2 secondes pour laisser la fenêtre s'ouvrir
+// Construire la liste complète des fichiers à uploader
+List<String> filePaths = buildFilePaths(folderPath, 10)
 
-// Coller le chemin dans la fenêtre de dialogue
-StringSelection stringSelection = new StringSelection(folderPath)
-Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null)
-pasteFromClipboardAndConfirm(robot)
+// Katalon/Selenium attend plusieurs chemins séparés par un saut de ligne
+String filesToUpload = filePaths.join('\n')
 
-// Attendre le temps nécessaire pour le chargement des fichiers
-robot.delay(2000)
+// Input file direct
+TestObject uploadInput = new TestObject('uploadInput')
+uploadInput.addProperty('xpath', ConditionType.EQUALS, "//input[@id='upload_input_files']")
 
-// Sélectionner tous les fichiers dans le dossier
-String allFiles = ''
-for (int i = 1; i <= 10; i++) {
-	allFiles += (('"file' + i) + '" ')
-}
-StringSelection allFilesSelection = new StringSelection(allFiles.trim())
-Toolkit.getDefaultToolkit().getSystemClipboard().setContents(allFilesSelection, null)
+WebUI.waitForElementPresent(uploadInput, 10)
+WebUI.uploadFile(uploadInput, filesToUpload)
 
-// Coller la sélection dans la fenêtre de dialogue
-pasteFromClipboardAndConfirm(robot)
+TestObject closeBtn = new TestObject('closeBtn')
+closeBtn.addProperty('xpath', ConditionType.EQUALS, "//button[@id='upload_stop_button']")
 
-// Attendre le temps nécessaire pour le téléchargement des fichiers
-robot.delay(5000)
+WebUI.waitForElementClickable(closeBtn, 10)
+WebUI.click(closeBtn)
+// Attendre que la popup se ferme ou que l’upload soit fini
+WebUI.delay(5)
 
-WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/lang_Cancel'))
+// Vérifier que les fichiers sont présents
+List<WebElement> items = findFiles()
+assert !items.isEmpty()
 
+WebUI.delay(3)
+
+// Supprimer le dossier local
+deleteFolder(folderPath)
 
 
 @Keyword
@@ -164,3 +179,24 @@ WebElement findFolder(String folderName) {
     return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
 }
 
+void deleteFolder(String folderPath) {
+	try {
+		File folder = new File(folderPath)
+		if (folder.exists()) {
+			FileUtils.deleteDirectory(folder)
+			println('Le dossier a été supprimé avec succès.')
+		} else {
+			println('Le dossier n’existe pas.')
+		}
+	} catch (Exception e) {
+		println("Une erreur s'est produite lors de la suppression du dossier : ${e.message}")
+		e.printStackTrace()
+	}
+}
+List<String> buildFilePaths(String folderPath, int numberOfFiles) {
+	List<String> files = []
+	for (int i = 1; i <= numberOfFiles; i++) {
+		files.add("${folderPath}/file${i}.txt")
+	}
+	return files
+}

@@ -61,7 +61,7 @@ public class Helper {
 	@Keyword
 	def static WebElement findShareButton(String fileName) {
 		WebDriver driver = DriverFactory.getWebDriver()
-		return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'" + fileName + "')]/../../../td[7]/a"))
+		return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr[contains(@data-search-keys,'" + fileName + "')]/td[7]/a"))
 	}
 	@Keyword
 	def static generateDateTimePlusTenSeconds() {
@@ -69,7 +69,7 @@ public class Helper {
 
 		calendar.add(Calendar.SECOND, 10)
 
-		SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm:ss')
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm")
 
 		return sdf.format(calendar.getTime())
 	}
@@ -80,7 +80,7 @@ public class Helper {
 		// 1 Minute abziehen
 		calendar.add(Calendar.MINUTE, -1)
 	
-		SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm:ss')
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm")
 	
 		return sdf.format(calendar.getTime())
 	}

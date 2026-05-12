@@ -7,12 +7,13 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='modal fade in']//h4[@class='pica-dialog-title modal-title']</value>
+         <value>//body/div[2]/div[1]/div[2]/div[8]/div/div/div[1]/h4</value>
       </entry>
       <entry>
          <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

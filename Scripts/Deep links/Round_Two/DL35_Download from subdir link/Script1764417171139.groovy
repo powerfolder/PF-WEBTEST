@@ -110,7 +110,7 @@ WebUI.delay(2)
 
 WebUI.refresh()
 
-WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/FolderName1_Path'))
+WebUI.click(findTestObject('Folders/return_to_subDir'))
 
 WebUI.delay(5)
 

@@ -30,16 +30,40 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-// create toplvl folder A
-WebUiBuiltInKeywords.callTestCase(findTestCase('File/Pre_test/Create_folder'), [:], FailureHandling.STOP_ON_FAILURE)
 
-String folderNameA = GlobalVariable.folderName
-println(folderNameA)
 
-// create toplvl folder B
-WebUiBuiltInKeywords.callTestCase(findTestCase('File/Pre_test/Create_folder'), [:], FailureHandling.STOP_ON_FAILURE)
-String folderNameB = GlobalVariable.folderName
-println(folderNameB)
+String folderName_1 = getRandomFolderName()
+
+String folderName_2 = getRandomFolderName()
+
+while (folderName_2 == folderName_1) {
+	folderName_2 = getRandomFolderName()
+}
+
+WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
+
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
+
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolderIcon'))
+
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
+
+// crete toplevel dir
+WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), folderName_1)
+
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
+
+
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
+
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolderIcon'))
+
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
+
+// crete toplevel dir
+WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), folderName_2)
+
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
 // create doc in toplvl folder B
 WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
@@ -85,11 +109,12 @@ WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - 
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
 
-WebElement btn2 = findFolder(folderNameA)
+WebElement btn2 = findFolder(folderName_1)
 
 WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
 
 WebUiBuiltInKeywords.click(findTestObject('file_objects/document/span_paste/span_Paste'))
+
 
 // check if doc is pasted in successfully
 
@@ -99,8 +124,21 @@ boolean isDocPasted = btn3.isDisplayed()
 
 WebUiBuiltInKeywords.verifyEqual(isDocPasted, true)
 
-// Fermer le navigateur
-WebUiBuiltInKeywords.closeBrowser()
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
+
+WebElement btn4 = findFolder(folderName_2)
+
+WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn4))
+
+
+WebUI.delay(2)
+
+boolean docStillPresentInTopLevel = isDocPresent(DocName)
+
+WebUI.verifyEqual(docStillPresentInTopLevel, false)
+
+WebUI.closeBrowser()
+
 
 @Keyword
 WebElement findDoc(String DocName) {
@@ -114,4 +152,32 @@ WebElement findFolder(String folderName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
     return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
+}
+
+String getTimestamp() {
+	Date todaysDate = new Date()
+
+	String formattedDate = todaysDate.format('dd_MMM_yyyy_hh_mm_ss')
+
+	return formattedDate
+}
+
+String getRandomFileName() {
+	String fileName = 'File_' + getTimestamp()
+
+	return fileName
+}
+
+String getRandomFolderName() {
+	String folderName = 'Folder_' + getTimestamp()
+
+	return folderName
+}
+
+boolean isDocPresent(String docName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+
+	List<WebElement> docs = driver.findElements(By.xpath(('//*[contains(@data-search-keys, \'' + docName) + '\')]/td[1]/span'))
+
+	return !(docs.isEmpty())
 }

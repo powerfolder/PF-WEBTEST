@@ -27,7 +27,7 @@ WebUI.mouseOver(findTestObject('News_User/Page_News - PowerFolder/file_wpath'))
 
 // Retrieve tooltip content (from 'data-original-title')
 
-String tooltipText = WebUI.getAttribute(findTestObject('News_User/Page_News - PowerFolder/file_wpath'), 'data-original-title')
+String tooltipText = WebUI.getAttribute(findTestObject('News_User/Page_News - PowerFolder/file_wpath'), 'data-bs-original-title')
 
 println('Tooltip content: ' + tooltipText)
 
@@ -40,9 +40,10 @@ println('Tooltip file name: ' + tooltipDocName)
 println('Expected file name: ' + expectedDocName)
 
 // Compare tooltip file name with expected
-assert tooltipDocName == expectedDocName : '❌ Tooltip filename does not match the created document.'
+assert tooltipDocName == expectedDocName : 
+    "❌ Mismatch!\nExpected: ${expectedDocName}\nActual: ${tooltipDocName}"
 
-println('Tooltip shows the correct document name.')
+println('✅ Tooltip shows the correct document name.')
 
 WebUI.closeBrowser()
 

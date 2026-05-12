@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF26_Verify NoCutPaste On TopLevelFolder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e76b6252-fc76-47f4-bde5-6e5843ae3dae</testCaseGuid>
+</TestCaseEntity>

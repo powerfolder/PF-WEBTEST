@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[4]/div</value>
+         <value>//body/div[3]/div</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>840095cb-d83d-42e9-8124-75fd99b026b1</webElementGuid>
+      <webElementGuid>19fbfff4-06ac-4375-a80f-113679e268af</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-notification-box alert alert-danger</value>
-      <webElementGuid>14ea300e-1b10-4d97-88b5-6eb38625558d</webElementGuid>
+      <webElementGuid>bb666464-f0cd-4477-adb2-192c71884478</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>role</name>
       <type>Main</type>
       <value>alert</value>
-      <webElementGuid>639e532d-0417-4bba-85ea-f5975af4cf15</webElementGuid>
+      <webElementGuid>a1aa742d-5b53-4a2b-80b5-df4533fe82a2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Please fill in all missing fields×</value>
-      <webElementGuid>27ef2e63-41e3-4fc4-85b7-5513c8267f0f</webElementGuid>
+      <webElementGuid>0458eb7b-0258-4842-894d-2bf0b2d6c471</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;notification_290962662&quot;)/div[@class=&quot;pica-notification-box alert alert-danger&quot;]</value>
-      <webElementGuid>2fa5be9e-436f-4fb2-b7ad-f761cc00a465</webElementGuid>
+      <webElementGuid>fbf1d210-23ab-4ca4-b7b3-fe386bc61757</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -63,7 +63,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='notification_290962662']/div</value>
-      <webElementGuid>e3166f8c-5dae-4837-91db-59ae7ddcbd90</webElementGuid>
+      <webElementGuid>495a7ced-9241-4bf9-96c7-3c6a77fcebb9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='`'])[1]/following::div[3]</value>
-      <webElementGuid>473a282b-adab-45f7-bbd9-26d0a87feeb1</webElementGuid>
+      <webElementGuid>bd61269b-8f58-4745-abce-af3b9546fa59</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/div</value>
-      <webElementGuid>4db9d901-8f85-4c76-a041-1b8b3d085aa6</webElementGuid>
+      <webElementGuid>7e28a87e-4e9a-49d9-95f8-ae217a110d37</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,6 +87,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Please fill in all missing fields×' or . = 'Please fill in all missing fields×')]</value>
-      <webElementGuid>108cc6b0-723b-467d-9564-6d2ee2f0cf23</webElementGuid>
+      <webElementGuid>0c5e6ed9-fca9-45a3-85f3-8f20376c5681</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

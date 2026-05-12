@@ -49,6 +49,7 @@ import java.awt.FileDialog as FileDialog
 import javax.swing.JFrame as JFrame
 import java.nio.file.Path as Path
 import java.time.Duration
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 
 WebUI.callTestCase(findTestCase('File/Pre_test/Create_folder'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -59,41 +60,46 @@ WebUI.verifyElementClickable(findTestObject('file_objects/upload/Page_Folders - 
 
 WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Upload file'))
 
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
-
-// Attendre que l'élément devienne visible
-WebElement addfile = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[5]/div/div/div[3]/div/div/span')))
-
-// Cliquer sur l'élément
-addfile.click()
 
 // Création du fichier Word vide sur le bureau
 String wordFileName = 'word_file_' + RandomStringUtils.randomNumeric(4)
+String wordFilePath = createEmptyWordFileOnDesktop(wordFileName)
 
-def wordFilePath = createEmptyWordFileOnDesktop(wordFileName)
+// Upload direct dans l'input file
+TestObject uploadInput = new TestObject('uploadInput')
+uploadInput.addProperty('xpath', ConditionType.EQUALS, "//input[@id='upload_input_files']")
 
-WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/lang_Cancel'))
+WebUI.waitForElementPresent(uploadInput, 10)
+WebUI.uploadFile(uploadInput, wordFilePath)
 
-// Uploader le fichier Word vide dans le test
-selectWordFileAutomatically(wordFilePath)
+// Attendre que l’upload soit visible comme réussi
+TestObject successMsg = new TestObject('successMsg')
+successMsg.addProperty('xpath', ConditionType.EQUALS, "//*[contains(text(),'Successfully uploaded')]")
 
-WebUI.delay(5)
+WebUI.waitForElementVisible(successMsg, 15)
+
+// Fermer la popup avec le vrai bouton Close
+TestObject closeBtn = new TestObject('closeBtn')
+closeBtn.addProperty('xpath', ConditionType.EQUALS, "//button[@id='upload_stop_button']")
+
+WebUI.waitForElementClickable(closeBtn, 10)
+WebUI.click(closeBtn)
+
+WebUI.delay(2)
 
 // Vérification de la présence du document
 def btn = findDoc(wordFileName)
-
-// Cliquer sur le bouton
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
 assert btn != null
+
+// Cliquer sur le document si besoin
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 WebUI.delay(3)
 
 // Supprimer le fichier Word créé sur le bureau
 deleteWordFile(wordFilePath)
 
-WebUI.closeBrowser( // Méthode pour supprimer le fichier Word
-    )
+WebUI.closeBrowser()
 
 String createEmptyWordFileOnDesktop(String fileName) {
     def desktopWordPath = Paths.get(System.getProperty('user.home'), 'Desktop')

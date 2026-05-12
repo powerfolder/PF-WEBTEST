@@ -30,6 +30,7 @@ import java.util.Calendar as Calendar
 import java.util.Date as Date
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import java.util.Random as Random
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 WebUI.callTestCase(findTestCase('Organization/Pre_test/Crete_membr_org'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -89,11 +90,9 @@ WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
-WebUI.delay(3)
-
 WebUI.click(findTestObject('Organization/Page_Dashboard - PowerFolder/Manage_Org_Dashboard'))
 
-WebUI.click(findTestObject('Organization/SelectBranding'))
+WebUI.click(findTestObject('Organization/SelectBranding_user'))
 
 //WebUI.click(findTestObject('Organization/Page_Organizations - PowerFolder/Change_org_avatar'))
 WebUI.click(findTestObject('Page_Organizations - PowerFolder/a_Change'))
@@ -114,7 +113,7 @@ WebUI.click(findTestObject('Organization/SaveButton'))
 
 WebUI.click(findTestObject('Organization/Page_Dashboard - PowerFolder/Manage_Org_Dashboard'))
 
-WebUI.click(findTestObject('Organization/SelectBranding'))
+WebUI.click(findTestObject('Organization/SelectBranding_user'))
 
 WebUI.delay(3)
 

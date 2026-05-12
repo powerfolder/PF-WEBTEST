@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL57_Verify RW Link Creation When Upload Links Disabled</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f74617c7-fb39-4b26-b110-4c829105726a</testCaseGuid>
+</TestCaseEntity>

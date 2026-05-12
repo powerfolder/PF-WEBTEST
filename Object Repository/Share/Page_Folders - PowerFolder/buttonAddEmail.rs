@@ -7,10 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class='pica-taginput-button btn btn-default']</value>
+         <value>//body/div[2]/div[1]/div[2]/div[4]/div/div/div[2]/div[1]/div[2]/button[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -18,7 +19,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>695f6e78-0f0e-48de-85f4-02f37db8374d</webElementGuid>
+      <webElementGuid>56670d6d-2693-4227-ba5e-d4722b9a5f9d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,7 +27,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-taginput-button btn btn-default</value>
-      <webElementGuid>cdadca8d-41d3-4701-9775-e0d7e116caa8</webElementGuid>
+      <webElementGuid>33c04313-7225-45e5-8457-fe980a79f94a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -34,6 +35,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;share_buttons&quot;)/button[@class=&quot;pica-taginput-button btn btn-default&quot;]</value>
-      <webElementGuid>86f00a5d-de45-452c-8825-ecac3809bc11</webElementGuid>
+      <webElementGuid>20ea6f9b-fcb1-4143-a0b5-0553db836b68</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

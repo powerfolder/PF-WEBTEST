@@ -19,7 +19,7 @@ WebUI.openBrowser(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
 
-//WebUI.verifyElementClickable(findTestObject('External links/Page_Login - PowerFolder/imprint'))
+WebUI.verifyElementClickable(findTestObject('External links/Page_Login - PowerFolder/imprint'))
 
 WebUI.delay(2)
 

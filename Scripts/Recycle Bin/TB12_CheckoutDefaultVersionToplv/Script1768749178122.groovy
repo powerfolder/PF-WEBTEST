@@ -1,0 +1,78 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By as By
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
+
+WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
+
+// Vérifie si le titre de la page correspond à "Folders - PowerFolder"
+assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+
+WebUI.click(findTestObject('Folders/createFolderIcon'))
+
+WebUI.click(findTestObject('Folders/createFolder'))
+
+String topLvlFolderName = 'Top_lvl' + getTimestamp()
+
+WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.setText(findTestObject('Folders/inputFolderName'), topLvlFolderName)
+
+WebUI.click(findTestObject('Folders/buttonOK'))
+
+WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Home'))
+
+WebUI.refresh()
+
+WebUI.delay(3)
+
+def btn = findFolder(topLvlFolderName)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+
+WebUI.click(findTestObject('ManagePopup/button_Manage'))
+
+WebUI.waitForElementVisible(findTestObject('Folders/version/input version'), 10)
+
+WebUI.verifyElementAttributeValue(findTestObject('Folders/version/input version'), 'value', '25', 10)
+
+String actualValue = WebUI.getAttribute(findTestObject('Folders/version/input version'), 'value')
+
+WebUI.verifyMatch(actualValue.trim(), '25', false)
+
+WebUI.click(findTestObject('Folders/version/Close button'))
+
+WebUI.closeBrowser()
+
+String getTimestamp() {
+    Date todaysDate = new Date()
+
+    String formattedDate = todaysDate.format('_dd_MM_yyyy_hh_mm_ss')
+
+    return formattedDate
+}
+
+WebElement findFolder(String topLvlFolderName) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + topLvlFolderName) + '\')]/td[1]/span'))
+}

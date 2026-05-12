@@ -62,15 +62,17 @@ WebUI.setText(findTestObject('Accounts/InputPassword'), GlobalVariable.Pass)
 // Generate the current date and time with two months added
 WebUI.click(findTestObject('My_Account/Page_Accounts - PowerFolder/input_Active_account_valid_till'))
 
-WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Page_Accounts - PowerFolder/clear_date'))
-
 String newDateTime = generateDateTimePlusOneYear()
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('My_Account/Page_Accounts - PowerFolder/input_Active_account_valid_till'), newDateTime)
+TestObject accountValidTill = findTestObject('My_Account/Page_Accounts - PowerFolder/input_Active_account_valid_till')
+def element = WebUI.findWebElement(accountValidTill)
 
-WebUI.sendKeys(findTestObject('My_Account/Page_Accounts - PowerFolder/input_Active_account_valid_till'), Keys.chord(Keys.ENTER))
+WebUI.executeJavaScript(
+    "arguments[0].value = arguments[1]; arguments[0].dispatchEvent(new Event('change'));",
+    Arrays.asList(element, newDateTime)
+)
 
 WebUI.click(findTestObject('Accounts/SaveButton'))
 
@@ -157,7 +159,7 @@ String generateDateTimePlusOneYear() {
 
     calendar.add(Calendar.YEAR, 1)
 
-    SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm')
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm")
 
     return sdf.format(calendar.getTime())
 }

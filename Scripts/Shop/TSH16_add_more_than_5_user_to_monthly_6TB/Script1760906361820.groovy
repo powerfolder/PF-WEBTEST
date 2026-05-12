@@ -93,7 +93,7 @@ WebUI.verifyElementVisible(findTestObject('Page_PowerFolder - shop_stripe/Max us
 
 String actualText = WebUI.getText(findTestObject('Page_PowerFolder - shop_stripe/Max users'))
 
-WebUI.verifyMatch(actualText.trim(), 'Max users of organization reached.*×', true)
+WebUI.verifyMatch(actualText.trim(), 'Max users of organization reached.', true)
 
 WebUI.delay(2)
 

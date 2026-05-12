@@ -40,6 +40,8 @@ import java.awt.Robot as Robot
 import java.awt.event.KeyEvent as KeyEvent
 import java.io.IOException as IOException
 import java.time.Duration
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
+
 
 
 WebUI.callTestCase(findTestCase('Upload form/Pre_Test/Creat_Folder'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -88,21 +90,18 @@ WebUI.verifyElementClickable(findTestObject('1Upload_Form/Page_Link - PowerFolde
 
 WebUI.click(findTestObject('1Upload_Form/Page_Link - PowerFolder/button_Upload'))
 
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
-
-// Attendre que l'élément devienne visible
-WebElement addfile = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[3]/div/div/span')))
-
-// Cliquer sur l'élément
-addfile.click()
-
 // Création du fichier Word vide sur le bureau
 String wordFileName = 'word_file_' + RandomStringUtils.randomNumeric(4)
 
 def wordFilePath = createEmptyWordFileOnDesktop(wordFileName)
 
-// Uploader le fichier Word vide dans le test
-selectWordFileAutomatically(wordFilePath)
+TestObject uploadInput = new TestObject('uploadInput')
+uploadInput.addProperty('xpath', ConditionType
+	.EQUALS, "//input[@id='upload_input_files']")
+
+WebUI.waitForElementPresent(uploadInput, 10)
+WebUI.uploadFile(uploadInput, wordFilePath)
+
 
 WebUI.click(findTestObject('1Upload_Form/Page_Link - PowerFolder/button_Upload_2'))
 

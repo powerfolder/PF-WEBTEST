@@ -154,7 +154,6 @@ assert WebUI.getWindowTitle().equals('Link - PowerFolder')
 
 WebUI.delay(10)
 
-
 WebUI.verifyElementVisible(findTestObject('ONLY OFFICE/iframe_editor'))
 
 WebUI.switchToFrame(findTestObject('ONLY OFFICE/iframe_editor'), 5)

@@ -65,7 +65,7 @@ WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Uploa
 
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
-WebElement addfile = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//body/div[2]/div[1]/div[2]/div[5]/div/div/div[3]/div/div[1]/span[1]')))
+WebElement addfile = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//body/div[2]/div[1]/div[2]/div[5]/div/div/div[3]/div/span[1]')))
 addfile.click()
 
 // Générer l'image PNG
@@ -74,8 +74,6 @@ String imageName = getRandomFileName()
 GlobalVariable.imageName = imageName
 
 def imagePath = createEmptyImageFileOnDesktop(imageName)
-
-WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/lang_Cancel'))
 
 selectFileAutomatically(imagePath)
 

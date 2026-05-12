@@ -79,29 +79,40 @@ WebUI.verifyElementPresent(findTestObject('Folders/Page_Folders - PowerFolder/Up
 
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/Upload files'))
 
-WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/add file'))
 
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 // Création du fichier Word vide sur le bureau
 String wordFileName = 'word_file_' + RandomStringUtils.randomNumeric(4)
+String wordFilePath = createEmptyWordFileOnDesktop(wordFileName)
 
-def wordFilePath = createEmptyWordFileOnDesktop(wordFileName)
+// Upload direct dans l'input file
+TestObject uploadInput = new TestObject('uploadInput')
+uploadInput.addProperty('xpath', ConditionType.EQUALS, "//input[@id='upload_input_files']")
 
-WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/lang_Cancel'))
+WebUI.waitForElementPresent(uploadInput, 10)
+WebUI.uploadFile(uploadInput, wordFilePath)
 
-// Uploader le fichier Word vide dans le test
-selectWordFileAutomatically(wordFilePath)
+// Attendre que l’upload soit visible comme réussi
+TestObject successMsg = new TestObject('successMsg')
+successMsg.addProperty('xpath', ConditionType.EQUALS, "//*[contains(text(),'Successfully uploaded')]")
 
-WebUI.delay(5)
+WebUI.waitForElementVisible(successMsg, 15)
+
+// Fermer la popup avec le vrai bouton Close
+TestObject closeBtn = new TestObject('closeBtn')
+closeBtn.addProperty('xpath', ConditionType.EQUALS, "//button[@id='upload_stop_button']")
+
+WebUI.waitForElementClickable(closeBtn, 10)
+WebUI.click(closeBtn)
+
+WebUI.delay(2)
 
 // Vérification de la présence du document
 def btn = findDoc(wordFileName)
-
-// Cliquer sur le bouton
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
-
 assert btn != null
+
+// Cliquer sur le document si besoin
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 WebUI.delay(3)
 
@@ -110,89 +121,51 @@ deleteWordFile(wordFilePath)
 
 WebUI.closeBrowser()
 
-
 String createEmptyWordFileOnDesktop(String fileName) {
-    def desktopWordPath = Paths.get(System.getProperty('user.home'), 'Desktop')
+	def desktopWordPath = Paths.get(System.getProperty('user.home'), 'Desktop')
 
-    if (!(Files.exists(desktopWordPath))) {
-        Files.createDirectories(desktopWordPath)
-    }
-    
-    def wordFilePath = desktopWordPath.resolve(fileName + '.docx')
+	if (!Files.exists(desktopWordPath)) {
+		Files.createDirectories(desktopWordPath)
+	}
 
-    XWPFDocument document = new XWPFDocument()
+	def wordFilePath = desktopWordPath.resolve(fileName + '.docx')
 
-    FileOutputStream out = new FileOutputStream(wordFilePath.toFile())
+	XWPFDocument document = new XWPFDocument()
+	FileOutputStream out = new FileOutputStream(wordFilePath.toFile())
 
-    document.write(out)
+	document.write(out)
+	out.close()
+	document.close()
 
-    out.close()
-
-    return wordFilePath.toString()
-}
-
-void selectWordFileAutomatically(String wordFilePath) {
-    try {
-        Robot robot = new Robot()
-
-        Thread.sleep(500)
-
-        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection(wordFilePath), null)
-
-        robot.keyPress(KeyEvent.VK_CONTROL)
-
-        robot.keyPress(KeyEvent.VK_V)
-
-        robot.keyRelease(KeyEvent.VK_V)
-
-        robot.keyRelease(KeyEvent.VK_CONTROL)
-
-        Thread.sleep(500)
-
-        robot.keyPress(KeyEvent.VK_ENTER)
-
-        robot.keyRelease(KeyEvent.VK_ENTER)
-    }
-    catch (Exception e) {
-        e.printStackTrace()
-    } 
+	return wordFilePath.toString()
 }
 
 void deleteWordFile(String wordFilePath) {
-    try {
-        Path path = Paths.get(wordFilePath)
+	try {
+		Path path = Paths.get(wordFilePath)
+		boolean deleted = Files.deleteIfExists(path)
 
-        boolean deleted = Files.deleteIfExists(path)
-
-        if (deleted) {
-            println('Le fichier a été supprimé avec succès.')
-        } else {
-            println('Le fichier n\'a pas été trouvé ou n\'a pas pu être supprimé.')
-        }
-    }
-    catch (Exception e) {
-        e.printStackTrace()
-    } 
+		if (deleted) {
+			println('Le fichier a été supprimé avec succès.')
+		} else {
+			println("Le fichier n'a pas été trouvé ou n'a pas pu être supprimé.")
+		}
+	} catch (Exception e) {
+		e.printStackTrace()
+	}
 }
 
 @Keyword
 WebElement findDoc(String wordFileName) {
-    WebDriver driver = DriverFactory.getWebDriver()
-
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + wordFileName) + '\')]/td[1]/span'))
+	WebDriver driver = DriverFactory.getWebDriver()
+	return driver.findElement(By.xpath("//*[contains(@data-search-keys, '" + wordFileName + "')]/td[1]/span"))
 }
 
 String getRandomFolderName() {
-    String folderName = 'TF' + getTimestamp()
-
-    return folderName
+	return 'TF' + getTimestamp()
 }
 
 String getTimestamp() {
-    Date todaysDate = new Date()
-
-    String formattedDate = todaysDate.format('_dd_MM_yyyy_hh_mm_ss')
-
-    return formattedDate
+	Date todaysDate = new Date()
+	return todaysDate.format('_dd_MM_yyyy_hh_mm_ss')
 }
-
