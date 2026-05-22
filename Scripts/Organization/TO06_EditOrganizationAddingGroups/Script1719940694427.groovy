@@ -48,8 +48,7 @@ WebUI.click(findTestObject('Organization/SelectGroup'))
 
 WebUI.delay(2)
 
-TestObject dynamicObject = new TestObject().addProperty('xpath', ConditionType.EQUALS, '//body/div[2]/div[1]/div[2]/div[3]/div/div/div[3]/div/div[2]/button[1]')
-WebUI.click(dynamicObject)
+WebUI.click(findTestObject('Organization/SaveButton'))
 
 WebUI.delay(3)
 

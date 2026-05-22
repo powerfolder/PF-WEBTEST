@@ -20,7 +20,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[5]/div[2]/table/tbody/tr/td[2]</value>
+         <value>//div[@id='pica_organization_groups']//table[contains(@class,'pica-inputlist-table')]//tbody/tr/td[contains(@class,'pica-name')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
