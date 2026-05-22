@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF27_Verify Pdf inline view in browser</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>68eeeb2c-0901-4f88-afa9-85653f3c42de</testCaseGuid>
+</TestCaseEntity>
