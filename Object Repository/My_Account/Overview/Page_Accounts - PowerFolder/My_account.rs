@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>ul.pica-arrow-right.dropdown-menu.dropdown-menu-right > li > div.media > div.media-body > a > lang[name=&quot;label_my_account&quot;]</value>
+         <value>ul.pica-arrow-right.dropdown-menu.dropdown-menu-end > li > div.media > div.media-body > a > lang[name=&quot;label_my_account&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -46,7 +46,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pica_action_normal&quot;)/div[@class=&quot;pica-inline dropdown open&quot;]/ul[@class=&quot;pica-arrow-right dropdown-menu dropdown-menu-right&quot;]/li[1]/div[@class=&quot;media&quot;]/div[@class=&quot;media-body&quot;]/a[1]/lang[1]</value>
+      <value>id(&quot;pica_action_normal&quot;)/div[@class=&quot;pica-inline dropdown open&quot;]/ul[@class=&quot;pica-arrow-right dropdown-menu dropdown-menu-end&quot;]/li[1]/div[@class=&quot;media&quot;]/div[@class=&quot;media-body&quot;]/a[1]/lang[1]</value>
       <webElementGuid>5c16161b-9438-40a7-a81f-5a5b49214154</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
