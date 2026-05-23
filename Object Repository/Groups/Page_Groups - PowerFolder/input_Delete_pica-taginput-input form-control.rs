@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//input[@type='text'])[3]</value>
+         <value>//div[@id='pica_group_folders']//input[contains(@class,'pica-taginput-input')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

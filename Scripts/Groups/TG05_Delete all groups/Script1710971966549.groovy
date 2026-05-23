@@ -46,7 +46,7 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/b
 WebUI.delay(2)
 
 // Sélection et suppression des groupes créés
-WebElement premierElement = DriverFactory.getWebDriver().findElement(By.xpath('//div[2]/table/tbody/tr[1]'))
+WebElement premierElement = DriverFactory.getWebDriver().findElement(By.xpath('//table[@id=\'groups_table\']/tbody/tr[not(contains(@class,\'pica-not-striped\'))][1]'))
 premierElement.click()
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/select_all'))
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Delete'))

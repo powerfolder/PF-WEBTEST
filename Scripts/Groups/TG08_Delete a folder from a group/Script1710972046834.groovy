@@ -59,7 +59,21 @@ WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(element))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Yes'))
 
-WebUI.delay(5)
+// Aktiv auf Schliessen des Confirmation-Dialogs warten; per JS hart schliessen, falls Bootstrap-Animation klemmt
+new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(10)).until { driver ->
+    !((Boolean) ((org.openqa.selenium.JavascriptExecutor) driver).executeScript(
+        "var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
+}
+
+WebUI.executeJavaScript("var el = document.getElementById('pica_confirmation_dialog');" +
+    " if (el && el.classList.contains('show')) {" +
+    "   var inst = (window.bootstrap && bootstrap.Modal) ? bootstrap.Modal.getInstance(el) : null;" +
+    "   if (inst) { inst.hide(); } else { el.classList.remove('show'); el.style.display='none'; }" +
+    "   document.querySelectorAll('.modal-backdrop').forEach(function(b){ b.parentNode.removeChild(b); });" +
+    "   document.body.classList.remove('modal-open');" +
+    " }", null)
+
+WebUI.delay(1)
 
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
 
