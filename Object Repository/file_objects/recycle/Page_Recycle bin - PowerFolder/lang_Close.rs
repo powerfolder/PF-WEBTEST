@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[3]/div/div/div[3]/button/lang</value>
+         <value>//div[@id='pica_restore_dialog']//div[contains(@class,'modal-footer')]/button[.//lang[@name='button_close']]</value>
       </entry>
       <entry>
          <key>CSS</key>

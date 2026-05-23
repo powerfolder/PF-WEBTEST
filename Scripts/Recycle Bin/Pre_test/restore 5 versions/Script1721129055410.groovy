@@ -46,7 +46,7 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 // Attendre la visibilité de la première ligne du tableau
-WebElement firstElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[2]/table/tbody/tr[1]')))
+WebElement firstElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//table[@id=\'versions_table\']/tbody/tr[@id][1]')))
 
 // Cliquer sur le premier élément du tableau
 firstElement.click()
@@ -89,7 +89,7 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn3))
 WebDriverWait wait_1 = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 // Attendre la visibilité de la première ligne du tableau
-WebElement firstElement_1 = wait_1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[2]/table/tbody/tr[1]')))
+WebElement firstElement_1 = wait_1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//table[@id=\'versions_table\']/tbody/tr[@id][1]')))
 
 // Cliquer sur le premier élément du tableau
 firstElement_1.click()
@@ -132,7 +132,7 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn6))
 WebDriverWait wait_2 = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 // Attendre la visibilité de la première ligne du tableau
-WebElement firstElement_2 = wait_2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[2]/table/tbody/tr[1]')))
+WebElement firstElement_2 = wait_2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//table[@id=\'versions_table\']/tbody/tr[@id][1]')))
 
 // Cliquer sur le premier élément du tableau
 firstElement_2.click()
@@ -174,7 +174,7 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn9))
 WebDriverWait wait_3 = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 // Attendre la visibilité de la première ligne du tableau
-WebElement firstElement_3 = wait_3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[2]/table/tbody/tr[1]')))
+WebElement firstElement_3 = wait_3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//table[@id=\'versions_table\']/tbody/tr[@id][1]')))
 
 // Cliquer sur le premier élément du tableau
 firstElement_3.click()
