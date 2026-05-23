@@ -58,7 +58,8 @@ WebUI.delay(5)
 WebUI.setText(findTestObject('1Upload_Form/Page_Error - PowerFolder/Page_Folders - PowerFolder/input_Create_uploadform_heading'), 
     'Workshop - not expired')
 
-WebUI.setText(findTestObject('1Upload_Form/Page_Folders - PowerFolder/change_description'), 'Workshop number 1')
+WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/change_description'))
+WebUI.sendKeys(findTestObject('1Upload_Form/Page_Folders - PowerFolder/change_description'), 'Workshop number 1')
 
 // get time stamp in 2 min future
 TestObject dateInput = findTestObject('1Upload_Form/Page_Folders - PowerFolder/input_Redo_pica_uploadform_valid_till')
@@ -138,7 +139,8 @@ WebUI.delay(5)
 WebUI.setText(findTestObject('1Upload_Form/Page_Error - PowerFolder/Page_Folders - PowerFolder/input_Create_uploadform_heading'), 
     'Workshop - present - expired')
 
-WebUI.setText(findTestObject('1Upload_Form/Page_Folders - PowerFolder/change_description'), 'Workshop number 2')
+WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/change_description'))
+WebUI.sendKeys(findTestObject('1Upload_Form/Page_Folders - PowerFolder/change_description'), 'Workshop number 2')
 
 // click in calender
 WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/input_Redo_pica_uploadform_valid_till'))
@@ -194,7 +196,8 @@ WebUI.delay(5)
 WebUI.setText(findTestObject('1Upload_Form/Page_Error - PowerFolder/Page_Folders - PowerFolder/input_Create_uploadform_heading'),
 	'Workshop - expired - 2min from past')
 
-WebUI.setText(findTestObject('1Upload_Form/Page_Folders - PowerFolder/change_description'), 'Workshop number 3')
+WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/change_description'))
+WebUI.sendKeys(findTestObject('1Upload_Form/Page_Folders - PowerFolder/change_description'), 'Workshop number 3')
 
 // click in calender
 WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/input_Redo_pica_uploadform_valid_till'))

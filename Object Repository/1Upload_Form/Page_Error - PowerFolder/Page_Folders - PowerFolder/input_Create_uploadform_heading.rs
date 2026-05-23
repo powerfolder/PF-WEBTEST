@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[17]/div/div/div[2]/div[1]/input</value>
+         <value>//input[@id='pica_uploadform_heading']</value>
       </entry>
       <entry>
          <key>CSS</key>
