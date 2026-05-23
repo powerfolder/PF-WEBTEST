@@ -104,8 +104,6 @@ WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn
 
 WebUiBuiltInKeywords.click(findTestObject('file_objects/document/span_paste/span_Paste'))
 
-WebUiBuiltInKeywords.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/FolderName1_Path'))
-
 WebUiBuiltInKeywords.delay(2)
 
 // Vérifier que DocName n'est plus présent dans le tableau après le déplacement 
