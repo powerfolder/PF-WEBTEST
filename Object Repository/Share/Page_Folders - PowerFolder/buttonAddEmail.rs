@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[4]/div/div/div[2]/div[1]/div[2]/button[2]</value>
+         <value>//div[@id='share_buttons']//button[contains(@class,'pica-taginput-button')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -26,7 +26,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>pica-taginput-button btn btn-default</value>
+      <value>pica-taginput-button btn btn-secondary</value>
       <webElementGuid>33c04313-7225-45e5-8457-fe980a79f94a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
@@ -34,7 +34,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;share_buttons&quot;)/button[@class=&quot;pica-taginput-button btn btn-default&quot;]</value>
+      <value>id(&quot;share_buttons&quot;)/button[@class=&quot;pica-taginput-button btn btn-secondary&quot;]</value>
       <webElementGuid>20ea6f9b-fcb1-4143-a0b5-0553db836b68</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
