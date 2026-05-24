@@ -44,6 +44,11 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
 
+new org.openqa.selenium.support.ui.WebDriverWait(DriverFactory.getWebDriver(), java.time.Duration.ofSeconds(10)).until { driver ->
+    !((Boolean) ((org.openqa.selenium.JavascriptExecutor) driver).executeScript(
+        "var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
+}
+
 WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span_recycle'))
 
 WebElement btn = findFolder(folderName)
@@ -83,6 +88,11 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/span_Delete'))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
+
+new org.openqa.selenium.support.ui.WebDriverWait(DriverFactory.getWebDriver(), java.time.Duration.ofSeconds(10)).until { driver ->
+    !((Boolean) ((org.openqa.selenium.JavascriptExecutor) driver).executeScript(
+        "var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
+}
 
 WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span_recycle'))
 
@@ -124,6 +134,11 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
 
+new org.openqa.selenium.support.ui.WebDriverWait(DriverFactory.getWebDriver(), java.time.Duration.ofSeconds(10)).until { driver ->
+    !((Boolean) ((org.openqa.selenium.JavascriptExecutor) driver).executeScript(
+        "var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
+}
+
 WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span_recycle'))
 
 WebElement btn6 = findFolder(folderName)
@@ -163,6 +178,11 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn8))
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/span_Delete'))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
+
+new org.openqa.selenium.support.ui.WebDriverWait(DriverFactory.getWebDriver(), java.time.Duration.ofSeconds(10)).until { driver ->
+    !((Boolean) ((org.openqa.selenium.JavascriptExecutor) driver).executeScript(
+        "var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
+}
 
 WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span_recycle'))
 

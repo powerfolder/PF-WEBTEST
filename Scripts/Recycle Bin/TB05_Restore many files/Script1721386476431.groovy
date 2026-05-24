@@ -36,9 +36,9 @@ WebUI.callTestCase(findTestCase('Recycle Bin/Pre_test/create many files'), [:], 
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement premierElement = driver.findElement(By.xpath('//table[@id=\'versions_table\']/tbody/tr[@id][1]'))
+WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+WebElement premierElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//table[@id=\'files_files_table\']/tbody/tr[@id][1]')))
 
 wait.until(ExpectedConditions.elementToBeClickable(premierElement))
 
@@ -64,7 +64,7 @@ WebElement btn = findFolder(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-WebElement premierElement_bin = driver.findElement(By.xpath('//table[@id=\'versions_table\']/tbody/tr[@id][1]'))
+WebElement premierElement_bin = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//table[@id=\'versions_table\']/tbody/tr[@id][1]')))
 
 wait.until(ExpectedConditions.elementToBeClickable(premierElement_bin))
 
@@ -84,7 +84,7 @@ WebElement btn1 = findFolder(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
-WebElement premierElement_folder = driver.findElement(By.xpath('//table[@id=\'versions_table\']/tbody/tr[@id][1]'))
+WebElement premierElement_folder = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//table[@id=\'files_files_table\']/tbody/tr[@id][1]')))
 
 wait.until(ExpectedConditions.elementToBeClickable(premierElement_folder))
 

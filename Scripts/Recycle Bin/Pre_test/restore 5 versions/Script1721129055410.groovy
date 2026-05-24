@@ -37,6 +37,12 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
 
+
+new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(10)).until { d ->
+	!((Boolean) ((org.openqa.selenium.JavascriptExecutor) d).executeScript(
+		"var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
+}
+
 WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span_recycle'))
 
 WebElement btn = findFolder(folderName)
@@ -79,6 +85,15 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/span_Delete'))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
+
+// Warten bis der Bestätigungsdialog vollständig geschlossen ist (Bootstrap entfernt
+// die 'show'-Klasse, das Element selbst bleibt aber im DOM – daher reicht
+// invisibilityOfElementLocated nicht aus). Sonst fängt das Modal-Overlay den
+// nächsten Klick ab (ElementClickInterceptedException).
+new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(10)).until { d ->
+	!((Boolean) ((org.openqa.selenium.JavascriptExecutor) d).executeScript(
+		"var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
+}
 
 WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span_recycle'))
 
@@ -123,6 +138,15 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
 
+// Warten bis der Bestätigungsdialog vollständig geschlossen ist (Bootstrap entfernt
+// die 'show'-Klasse, das Element selbst bleibt aber im DOM – daher reicht
+// invisibilityOfElementLocated nicht aus). Sonst fängt das Modal-Overlay den
+// nächsten Klick ab (ElementClickInterceptedException).
+new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(10)).until { d ->
+	!((Boolean) ((org.openqa.selenium.JavascriptExecutor) d).executeScript(
+		"var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
+}
+
 WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span_recycle'))
 
 WebElement btn6 = findFolder(folderName)
@@ -164,6 +188,15 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn8))
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/span_Delete'))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
+
+// Warten bis der Bestätigungsdialog vollständig geschlossen ist (Bootstrap entfernt
+// die 'show'-Klasse, das Element selbst bleibt aber im DOM – daher reicht
+// invisibilityOfElementLocated nicht aus). Sonst fängt das Modal-Overlay den
+// nächsten Klick ab (ElementClickInterceptedException).
+new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(10)).until { d ->
+	!((Boolean) ((org.openqa.selenium.JavascriptExecutor) d).executeScript(
+		"var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
+}
 
 WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span_recycle'))
 

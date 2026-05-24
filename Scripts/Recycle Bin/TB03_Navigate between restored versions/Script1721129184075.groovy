@@ -107,8 +107,10 @@ void restoreVersion(int rowIndex) {
 	WebUI.click(findTestObject('Recycle bin/Page_Folders - PowerFolder/a_Restore'))
 
 	WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(10))
-	WebElement table = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//*[@id="pica_restore_versions"]/div')))
-	WebElement button = table.findElement(By.xpath("./table/tbody/tr[" + rowIndex + "]/td[7]/button"))
+	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//*[@id="pica_restore_versions"]/div')))
+	WebElement button = wait.until(ExpectedConditions.elementToBeClickable(
+		By.xpath("(//div[@id='pica_restore_versions']//table/tbody/tr/td[last()]/button[not(contains(@class,'disabled'))])[" + rowIndex + "]")
+	))
 
 	button.click()
 	WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/lang_Close'))
