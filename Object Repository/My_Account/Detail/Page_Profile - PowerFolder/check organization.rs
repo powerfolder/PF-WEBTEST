@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/table[3]/tbody/tr/td[2]</value>
+         <value>(//table[@id='profile_organizations_table']/tbody/tr[@id])[1]/td[2]</value>
       </entry>
       <entry>
          <key>CSS</key>

@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[2]/div[1]/div[2]/div[3]/table[1]/tbody/tr[6]/td[3]/a</value>
+         <value>//a[@id='profile_upgrade_validity']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

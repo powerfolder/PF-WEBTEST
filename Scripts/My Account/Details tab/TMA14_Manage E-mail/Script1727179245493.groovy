@@ -110,7 +110,7 @@ WebUI.click(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/Details
 
 WebUI.setText(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/Details_manage_E-Mails'), Email2)
 
-xpath = '//body/div[2]/div[1]/div[2]/div[4]/div/div/div[2]/div/div[1]/div[2]/button'
+xpath = "//div[@id='profile_mails_inputlist']//button[contains(@class,'pica-taginput-button')]"
 
 driver = DriverFactory.getWebDriver()
 
