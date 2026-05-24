@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[2]/div[1]/div[2]/div[3]/div/div/div[2]/h5</value>
+         <value>//div[@id='pica_account_dialog']//h5[contains(@class,'pica-dialog-description')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
