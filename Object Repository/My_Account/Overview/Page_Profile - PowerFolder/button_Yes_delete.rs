@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[13]/div/div/div[3]/button[1]</value>
+         <value>//div[@id='pica_confirmation_dialog']//div[contains(@class,'modal-footer')]/button[.//lang[@name='button_yes']]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -44,7 +44,7 @@
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-dismiss</name>
+      <name>data-bs-dismiss</name>
       <type>Main</type>
       <value>modal</value>
       <webElementGuid>cba1065a-8384-4c9c-aa19-257bc51b96d3</webElementGuid>
