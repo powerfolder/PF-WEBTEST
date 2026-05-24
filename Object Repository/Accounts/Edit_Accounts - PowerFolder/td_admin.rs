@@ -14,7 +14,7 @@
          <value>//body/div[2]/div[1]/div[2]/div[3]/table[1]/tbody/tr[3]/td[2]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
