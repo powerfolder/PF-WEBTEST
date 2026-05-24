@@ -56,10 +56,9 @@ settings_button.click()
 // Trouver le champ de texte et le vider avant de définir le nouveau texte
 TestObject descriptionField = findTestObject('1Upload_Form/Page_Error - PowerFolder/Page_Folders - PowerFolder/change_description_1')
 
-// CKEditor 5: in das contenteditable Editable-Div klicken, Inhalt loeschen, neuen Text per sendKeys eingeben
 WebUI.click(descriptionField)
-WebUI.sendKeys(descriptionField, Keys.chord(Keys.CONTROL, 'a'))
-WebUI.sendKeys(descriptionField, Keys.DELETE)
+WebUI.sendKeys(descriptionField, Keys.chord(Keys.END))
+WebUI.sendKeys(descriptionField, Keys.BACK_SPACE.toString() * 80)
 WebUI.sendKeys(descriptionField, 'change description')
 
 WebUI.scrollToElement(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Save'), 1)
