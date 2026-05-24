@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[12]/div/div/div[3]/div/div[2]/button[1]</value>
+         <value>//div[@id='pica_input_dialog']//div[contains(@class,'modal-footer')]//button[.//lang[@name='button_ok']]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[5]/div/div/div[2]/div[3]/input</value>
+         <value>//input[@id='profile_password_repeat']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

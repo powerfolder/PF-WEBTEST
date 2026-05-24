@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/table[2]/tbody/tr[5]/td[2]</value>
+         <value>//td[@id='profile_phone']</value>
       </entry>
       <entry>
          <key>CSS</key>

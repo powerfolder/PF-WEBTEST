@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#profile_upgrade_quota</value>
+         <value>#profile_upgrade_storage</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/table[1]/tbody/tr[2]/td[3]/a</value>
+         <value>//a[@id='profile_upgrade_storage']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -30,7 +30,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>profile_upgrade_quota</value>
+      <value>profile_upgrade_storage</value>
       <webElementGuid>92fda326-3193-4b3e-8fef-e5723cc44310</webElementGuid>
    </webElementProperties>
    <webElementProperties>
@@ -38,7 +38,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>btn btn-default</value>
+      <value>btn btn-secondary</value>
       <webElementGuid>8a012f69-8b41-4064-af12-486a58627121</webElementGuid>
    </webElementProperties>
    <webElementProperties>
