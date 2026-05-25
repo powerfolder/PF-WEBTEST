@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[10]/div/div/div[2]/div[2]/label</value>
+         <value>//div[@id='pica_link_dialog']//label[.//input[@id='pica_link_read_only']]</value>
       </entry>
       <entry>
          <key>CSS</key>
