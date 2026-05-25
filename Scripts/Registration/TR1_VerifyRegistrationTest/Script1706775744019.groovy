@@ -80,9 +80,11 @@ WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.userEmail)
 
+WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+
 WebUI.click(findTestObject('Login/loginSubmit'))
 
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
