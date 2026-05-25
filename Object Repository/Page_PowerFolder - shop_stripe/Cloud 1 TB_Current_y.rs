@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class,'plan-card') and .//div[contains(@class,'plan-title') and contains(text(),'1 TB')]]//div[contains(@class,'current-badge')]</value>
+         <value>//div[@id='yearlyPlans']//div[contains(@class,'plan-card')][.//div[contains(@class,'plan-title') and contains(text(),'Cloud 1 TB')]]//div[contains(@class,'current-badge')]</value>
       </entry>
       <entry>
          <key>CSS</key>

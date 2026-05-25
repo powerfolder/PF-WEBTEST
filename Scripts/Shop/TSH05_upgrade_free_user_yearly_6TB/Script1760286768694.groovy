@@ -29,7 +29,9 @@ WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/label_Annu
 
 WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/Cloud 6 TB_yearly'))
 
-WebUI.delay(2)
+WebUI.waitForPageLoad(30, FailureHandling.OPTIONAL)
+
+WebUI.delay(8)
 
 String currentUrl = WebUI.getUrl()
 
@@ -103,6 +105,8 @@ WebUI.delay(120)
 WebUI.refresh()
 
 WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/label_Annuel'))
+
+WebUI.delay(2)
 
 WebUI.verifyElementText(findTestObject('Page_PowerFolder - shop_stripe/Cloud 6 TB_Current_y'), 'Current')
 
