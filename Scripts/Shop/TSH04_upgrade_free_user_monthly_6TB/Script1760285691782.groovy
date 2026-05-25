@@ -106,6 +106,8 @@ WebUI.refresh()
 
 WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/label_Mensuel'))
 
+WebUI.delay(2)
+
 WebUI.verifyElementText(findTestObject('Page_PowerFolder - shop_stripe/Cloud 6 TB_Current'), 'Current')
 
 // go to my account and check if qouta is there 
