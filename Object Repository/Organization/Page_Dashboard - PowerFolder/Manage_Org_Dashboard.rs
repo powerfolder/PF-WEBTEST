@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/a</value>
+         <value>//div[contains(@class,'pica-box-head') and .//lang[@name='label_organizations']]/a[contains(@class,'btn-success')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>btn btn-success pull-right</value>
+      <value>btn btn-success float-end</value>
       <webElementGuid>a2863c66-8753-435a-9781-370d1d8c18a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>

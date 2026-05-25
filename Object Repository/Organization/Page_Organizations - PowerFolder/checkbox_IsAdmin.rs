@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[4]/div[2]/table/tbody/tr/td[4]/div/ul</value>
+         <value>(//div[@id='pica_organization_accounts']//table/tbody/tr[@data-userdata])[1]//ul[contains(@class,'dropdown-menu')]/li[2]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
