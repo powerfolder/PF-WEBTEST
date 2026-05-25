@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div/div/div[2]/div/div/div/form/div[4]/a[2]/lang</value>
+         <value>//a[.//lang[@name='label_server_license']]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

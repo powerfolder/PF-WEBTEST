@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div/div/div[2]/div/div/div/div[5]/div[1]/div[1]/h5/lang</value>
+         <value>//lang[@name='label_android']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
