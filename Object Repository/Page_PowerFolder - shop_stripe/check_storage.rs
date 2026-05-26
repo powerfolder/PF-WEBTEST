@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>td:nth-of-type(3)</value>
+         <value>#organizations_table tbody tr[id]:first-of-type td:nth-of-type(3)</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[2]/table/tbody/tr/td[3]</value>
+         <value>//table[@id='organizations_table']/tbody/tr[@id][1]/td[3]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
