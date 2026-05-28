@@ -7,7 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[1]/div[1]/a[4]</value>
+         <value>(//a[contains(@class,'pica-crumb')])[4]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#pica_action_search a.pica-crumb:nth-of-type(4)</value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -17,4 +21,28 @@
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>9f5eb5d8-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-crumb</value>
+      <webElementGuid>9f5eb5d8-0001-0001-0001-000000000002</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//a[contains(@class,'pica-crumb')])[4]</value>
+      <webElementGuid>9f5eb5d8-0001-0001-0001-000000000003</webElementGuid>
+   </webElementXpaths>
 </WebElementEntity>
