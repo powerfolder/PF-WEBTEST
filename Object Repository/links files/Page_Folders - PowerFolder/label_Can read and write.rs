@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[10]/div/div/div[2]/div[3]/label</value>
+         <value>//label[./input[@id='pica_link_read_write']]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>label:has(> input#pica_link_read_write)</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
