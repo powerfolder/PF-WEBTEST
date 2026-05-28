@@ -10,10 +10,42 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[4]/div/div/div[3]/button</value>
+         <value>//div[@id='pica_share_dialog']//div[contains(@class,'modal-footer')]/button[@data-bs-dismiss='modal']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>a1b2c3d4-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-bs-dismiss</name>
+      <type>Main</type>
+      <value>modal</value>
+      <webElementGuid>a1b2c3d4-0001-0001-0001-000000000002</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//div[@id='pica_share_dialog']//div[contains(@class,'modal-footer')]/button[@data-bs-dismiss='modal']</value>
+      <webElementGuid>a1b2c3d4-0001-0001-0001-000000000003</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pica_share_dialog']/div/div/div[3]/button</value>
+      <webElementGuid>a1b2c3d4-0001-0001-0001-000000000004</webElementGuid>
+   </webElementXpaths>
 </WebElementEntity>

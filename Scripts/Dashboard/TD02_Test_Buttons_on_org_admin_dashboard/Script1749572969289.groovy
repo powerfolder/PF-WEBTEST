@@ -1,36 +1,19 @@
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
-import java.awt.Toolkit as Toolkit
-import java.awt.datatransfer.DataFlavor as DataFlavor
-import org.openqa.selenium.By as By
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import java.nio.file.Path as Path
-import java.nio.file.Files as Files
-import java.text.SimpleDateFormat as SimpleDateFormat
-import java.util.Calendar as Calendar
-import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
-import java.util.Random as Random
 
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.refresh()
+
+WebUI.delay(5)
 
 println(GlobalVariable.userEmail)
 
@@ -50,16 +33,12 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Accounts/Edit_Accounts - PowerFolder/Create new Organization'))
 
-/*
- 
-
 WebUI.click(findTestObject('Accounts/Page_Organizations - PowerFolder/button_Is member'))
 
 WebUI.waitForElementVisible(findTestObject('Accounts/Page_Organizations - PowerFolder/checkbox_IsAdmin'), 5)
 
 WebUI.check(findTestObject('Accounts/Page_Organizations - PowerFolder/checkbox_IsAdmin'))
 
- 
 WebUI.click(findTestObject('Accounts/SaveButton'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
@@ -101,11 +80,13 @@ WebUI.click(findTestObject('Dashboard/org_admin_edit_org'))
 WebUI.verifyElementPresent(findTestObject('Dashboard/org_admin_organization_name'), 0)
 
 WebUI.closeBrowser()
-*/
 
-WebElement findAccount(String emailId) {
+WebElement findAccount(String searchKey) {
     WebDriver driver = DriverFactory.getWebDriver()
+    new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
+        org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
+            By.xpath("//table[@id='accounts_table']/tbody/tr[@id]")))
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + emailId) + '\')]/td[1]/span'))
+    String xp = "//table[@id='accounts_table']/tbody/tr[contains(@data-search-keys,'" + searchKey + "') or .//a[contains(@title,'" + searchKey + "') or contains(text(),'" + searchKey + "')]]/td[1]/span"
+    return driver.findElement(By.xpath(xp))
 }
-
