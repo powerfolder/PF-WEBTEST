@@ -7,7 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[2]/table/tbody/tr/td</value>
+         <value>//table[@id='links_table']//tr[contains(@class,'pica-table-empty')]/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#links_table tr.pica-table-empty > td</value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -17,4 +21,12 @@
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>49a8e969-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

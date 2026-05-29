@@ -7,7 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//lang[(text()='Save') and @name='button_save'])[2]</value>
+         <value>//div[@id='pica_link_dialog']//div[contains(@class,'modal-footer')]/button[contains(@class,'btn-primary')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#pica_link_dialog .modal-footer button.btn-primary</value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -15,4 +19,28 @@
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>36e66914-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn-primary</value>
+      <webElementGuid>36e66914-0001-0001-0001-000000000002</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-bs-dismiss</name>
+      <type>Main</type>
+      <value>modal</value>
+      <webElementGuid>36e66914-0001-0001-0001-000000000003</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>
