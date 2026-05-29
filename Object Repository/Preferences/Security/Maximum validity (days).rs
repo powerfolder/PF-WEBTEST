@@ -7,7 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div/div[5]/div[8]/div/span[1]</value>
+         <value>//input[@id='file_link.validity.maximum']/ancestor::div[contains(@class,'form-group')][1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#file\.link\.validity\.maximum</value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -17,4 +21,12 @@
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>2ea812a2-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>
