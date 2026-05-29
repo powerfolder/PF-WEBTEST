@@ -7,7 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[2]/table/tbody/tr/td/div/div/button[2]</value>
+         <value>//div[@id='pica-files-create-dropdown']//li[contains(@class,'files-ui-create-doc')]/a[@data-label='document']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#pica-files-create-dropdown li.files-ui-create-doc > a[data-label='document']</value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -17,4 +21,20 @@
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>94d51e96-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-label</name>
+      <type>Main</type>
+      <value>document</value>
+      <webElementGuid>94d51e96-0001-0001-0001-000000000002</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>
