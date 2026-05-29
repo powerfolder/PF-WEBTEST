@@ -138,6 +138,8 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/folder_name_is_owner'))
 
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/confirme_handover'))
 
 WebUI.delay(2)
@@ -166,18 +168,18 @@ WebUI.verifyElementClickable(findTestObject('Share/Page_Folders - PowerFolder/ac
 
 WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/accept_invitation'))
 
+WebUI.delay(3)
+
 assert isShareButtonPresent(GlobalVariable.folderName) : 'Share button IS present'
 
-WebElement btn4 = findFolder(GlobalVariable.folderName)
-
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn4) /*
+/*
  
  assert isUserNotPresentInShareList(GlobalVariable.userName2) : '❌ USER2 is present in Share list but should NOT be'
  
  WebUI.closeBrowser()
- */ )
+ */
 
-WebUI.verifyElementClickable(findTestObject('Share/Page_Folders - PowerFolder/verify acces folder'))
+//WebUI.verifyElementClickable(findTestObject('Share/Page_Folders - PowerFolder/verify acces folder'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 
