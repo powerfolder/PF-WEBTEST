@@ -3007,4 +3007,11 @@
       <testCaseId>Test Cases/Browser_Back_Button/BB11_User_CreateFolderAndSubfolder_BackToTopLevelFolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>35f43074-292c-43a9-aec4-9115196b013a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/File/TF27_Verify Pdf inline view in browser</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
