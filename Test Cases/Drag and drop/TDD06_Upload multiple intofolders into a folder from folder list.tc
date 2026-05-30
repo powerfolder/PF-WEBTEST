@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TDD06_Upload multiple intofolders into a folder from folder list</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e556acca-1be6-4f50-8c35-97f358e6e365</testCaseGuid>
+</TestCaseEntity>

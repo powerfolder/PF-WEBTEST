@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TDD02_Upload multiple files into a opened folder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>42bcdc47-6974-4dd6-855d-d0124afaf545</testCaseGuid>
+</TestCaseEntity>

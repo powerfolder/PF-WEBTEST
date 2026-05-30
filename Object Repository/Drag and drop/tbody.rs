@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>tbody</name>
+   <tag></tag>
+   <elementGuidId>91bebe93-b9d3-4786-b004-0615181da0a2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='files_files_table']/tbody</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#files_files_table > tbody</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>tbody</value>
+      <webElementGuid>6f994097-ca47-40ef-a999-de9e1f3f9c18</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Nouveau Document Microsoft Word.docx16.8 KBadminqa4 minutes agoprocédure_ddb.docx189 KBadminqa4 minutes agouser jenkins.xlsx9.4 KBadminqa4 minutes ago</value>
+      <webElementGuid>c09ae7dc-df22-4349-8682-5dfff423cf9a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;files_files_table&quot;)/tbody[1]</value>
+      <webElementGuid>fc7f6828-ba28-42e9-8578-0586b845898e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='files_files_table']/tbody</value>
+      <webElementGuid>a5f980c8-137b-4bf1-bbd4-d925ea4065ed</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Gallery'])[1]/following::tbody[1]</value>
+      <webElementGuid>72ef0ca9-2c73-4da5-94d2-94149d930075</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Grid'])[1]/following::tbody[1]</value>
+      <webElementGuid>45bcda4e-efb8-4c74-9eab-dc83c92ffb9d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/table/tbody</value>
+      <webElementGuid>1e036088-84a6-4b75-bff3-b9bae8a88e32</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//tbody[(text() = 'Nouveau Document Microsoft Word.docx16.8 KBadminqa4 minutes agoprocédure_ddb.docx189 KBadminqa4 minutes agouser jenkins.xlsx9.4 KBadminqa4 minutes ago' or . = 'Nouveau Document Microsoft Word.docx16.8 KBadminqa4 minutes agoprocédure_ddb.docx189 KBadminqa4 minutes agouser jenkins.xlsx9.4 KBadminqa4 minutes ago')]</value>
+      <webElementGuid>02ac0afb-519f-4c96-9f17-d1f1deda762d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
