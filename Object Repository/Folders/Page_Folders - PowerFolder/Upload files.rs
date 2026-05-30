@@ -11,11 +11,11 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica-files-create-dropdown']//li[contains(@class,'files-ui-upload')]/a</value>
+         <value>//div[@id='pica-files-create-dropdown']//ul[contains(@class,'dropdown-menu') and contains(@class,'show')]//li[contains(@class,'files-ui-upload') and not(contains(@style,'display: none'))]/a</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#pica-files-create-dropdown li.files-ui-upload > a</value>
+         <value>#pica-files-create-dropdown ul.dropdown-menu.show li.files-ui-upload:not([style*='display: none']) > a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

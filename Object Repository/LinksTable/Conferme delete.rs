@@ -7,7 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[4]/div/div/div[3]/button[1]</value>
+         <value>//div[@id='pica_confirmation_dialog']//div[contains(@class,'modal-footer')]/button[contains(@class,'btn-primary')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#pica_confirmation_dialog .modal-footer button.btn-primary</value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -17,4 +21,28 @@
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>b1d82dc5-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn-primary</value>
+      <webElementGuid>b1d82dc5-0001-0001-0001-000000000002</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-bs-dismiss</name>
+      <type>Main</type>
+      <value>modal</value>
+      <webElementGuid>b1d82dc5-0001-0001-0001-000000000003</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>
