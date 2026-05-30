@@ -6,12 +6,12 @@
    <elementGuidId>7fc8e1b0-1c65-4f7f-a109-e680149cdb29</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//body/div[2]/div/div/main/div[2]/div/div/div[2]/div[1]/div[3]/div[2]/div/input</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#pica_account_storage</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='pica_account_storage']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>bf063b11-f14e-4447-b2ee-66027e8515df</webElementGuid>
+      <webElementGuid>12b3739d-f8a8-46ca-8b2a-8df930702215</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <name>id</name>
       <type>Main</type>
       <value>pica_account_storage</value>
-      <webElementGuid>1c4b50e8-8c56-44c1-80c9-897d205bd90a</webElementGuid>
+      <webElementGuid>1265d4f3-a098-4ef7-b758-3606712f0c32</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control</value>
-      <webElementGuid>ab0164e7-8580-438e-a29f-b4530d68ccef</webElementGuid>
+      <webElementGuid>ef6c5883-bf67-4a97-bc73-64ec446f1cbf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
       <name>type</name>
       <type>Main</type>
       <value>number</value>
-      <webElementGuid>fe79cb4b-eab2-45c9-bb30-7db3d724dabe</webElementGuid>
+      <webElementGuid>57d1975f-4163-4f1a-bd82-60e76520c9f3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>min</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>cb7a4793-6c1d-4dd2-a8f5-b6d0bca2558c</webElementGuid>
+      <webElementGuid>7f6f362c-a5ee-4e73-999a-2f5f8771e427</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -63,7 +63,7 @@
       <name>max</name>
       <type>Main</type>
       <value>9999</value>
-      <webElementGuid>c94ac19a-8cbf-4b0c-85bb-18ba81494249</webElementGuid>
+      <webElementGuid>92719fe5-2364-4aff-b73d-6ca460a295ad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -71,15 +71,15 @@
       <name>data-placeholder</name>
       <type>Main</type>
       <value>placeholder_storage</value>
-      <webElementGuid>1097c254-f58b-4ab1-8879-66ee172a513a</webElementGuid>
+      <webElementGuid>3f98131f-d15a-4e68-9037-07a75e25a872</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>placeholder</name>
       <type>Main</type>
       <value>Storage (GB)</value>
-      <webElementGuid>e1cc64c9-04e9-4973-93f0-9773accb5bf9</webElementGuid>
+      <webElementGuid>49196556-ef60-4f50-ac2e-97471880e807</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -87,15 +87,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_account_storage&quot;)</value>
-      <webElementGuid>d00c2b27-54c8-4ff5-82f4-1671c813cb8d</webElementGuid>
+      <webElementGuid>79316191-5864-450a-bb35-8f7262c695ae</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='pica_account_storage']</value>
-      <webElementGuid>c75d5ab1-aafd-44e7-bfa5-566f539e21d2</webElementGuid>
+      <webElementGuid>e37f67e0-0ac0-45b2-b17f-e088063ff253</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,7 +103,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_account_dialog']/div/div/div[2]/div/div[3]/div[2]/div/input</value>
-      <webElementGuid>1e03cae2-a4e3-441d-b745-8d1627ef89c4</webElementGuid>
+      <webElementGuid>6c3af26a-d846-4ed3-b3e1-ab5e21ad1a0d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,14 +111,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div[2]/div/input</value>
-      <webElementGuid>032aabab-af78-4dd1-ad66-a4585dc5bbfc</webElementGuid>
+      <webElementGuid>96d59a38-14be-4a65-ae50-fd46ec7d3e00</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'pica_account_storage' and @type = 'number' and @placeholder = 'Storage (GB)']</value>
-      <webElementGuid>405ea9e3-bf09-4c6f-88e3-ed83841f06ff</webElementGuid>
+      <value>//input[@id = 'pica_account_storage' and @type = 'number']</value>
+      <webElementGuid>72f22138-2d79-40aa-b585-93771559960f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
