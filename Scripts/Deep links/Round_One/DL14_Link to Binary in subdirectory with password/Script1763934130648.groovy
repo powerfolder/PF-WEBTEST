@@ -151,7 +151,7 @@ WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.of
 
 WebElement addfile = wait.until(
 	ExpectedConditions.visibilityOfElementLocated(
-		By.xpath('//body/div[2]/div[1]/div[2]/div[5]/div/div/div[3]/div/span[1]')
+		By.xpath("//span[@id='upload_file']")
 	)
 )
 addfile.click()

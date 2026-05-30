@@ -11,10 +11,30 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[9]/div/div/div[2]/div[4]/span/button</value>
+         <value>//button[@id='pica_settings_rescan']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#pica_settings_rescan</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>b6ab4b67-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>pica_settings_rescan</value>
+      <webElementGuid>b6ab4b67-0001-0001-0001-000000000002</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

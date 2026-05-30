@@ -11,10 +11,54 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[6]/div[2]/table/tbody/tr/td[3]/div/ul/li[2]/a</value>
+         <value>(//div[@id='pica_account_organizations']//ul[contains(@class,'dropdown-menu')]//a[@data-dropdown-group='permission'])[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#pica_account_organizations ul.dropdown-menu a[data-dropdown-group='permission']:nth-of-type(2)</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>95754b44-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-dropdown-group</name>
+      <type>Main</type>
+      <value>permission</value>
+      <webElementGuid>95754b44-0001-0001-0001-000000000003</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-dropdown-type</name>
+      <type>Main</type>
+      <value>checkbox</value>
+      <webElementGuid>95754b44-0001-0001-0001-000000000004</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//div[@id='pica_account_organizations']//ul[contains(@class,'dropdown-menu')]//a[@data-dropdown-group='permission'])[2]</value>
+      <webElementGuid>95754b44-0001-0001-0001-000000000005</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:text</name>
+      <type>Main</type>
+      <value>//div[@id='pica_account_organizations']//ul[contains(@class,'dropdown-menu')]//a[normalize-space()='Is admin']</value>
+      <webElementGuid>95754b44-0001-0001-0001-000000000006</webElementGuid>
+   </webElementXpaths>
 </WebElementEntity>

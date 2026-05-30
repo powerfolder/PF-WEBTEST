@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='monthlyPlans']/div[3]/a</value>
+         <value>//div[@id='monthlyPlans']//div[contains(@class,'plan-card')][.//div[contains(@class,'plan-title') and contains(text(),'Team Cloud 6 TB')]]//a[contains(@class,'plan-cta')]</value>
       </entry>
       <entry>
          <key>CSS</key>

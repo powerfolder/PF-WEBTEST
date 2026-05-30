@@ -7,7 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/ul/li[5]/a</value>
+         <value>//div[@id='pica_account_dialog']//ul[contains(@class,'pica-nav-tabs')]/li/a[./lang[@name='label_groups']]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#pica_account_dialog ul.pica-nav-tabs li > a:has(> lang[name='label_groups'])</value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -17,4 +21,12 @@
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>656af09d-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

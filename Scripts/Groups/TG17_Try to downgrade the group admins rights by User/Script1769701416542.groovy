@@ -79,6 +79,12 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Group
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
+WebUI.refresh()
+
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Groups/Search group'), groupName)
+
 WebUI.delay(2)
 
 def btn = findGroup(groupName)
@@ -132,6 +138,12 @@ WebUI.delay(3)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Groups/Search group'), groupName)
+
+WebUI.delay(2)
+
 def btn1 = findGroup(groupName)
 
 WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
@@ -157,6 +169,12 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/b
 
 // Vérification de la présence du message de confirmation de mise à jour du groupe
 WebUI.verifyElementPresent(findTestObject('Groups/Page_Groups - PowerFolder/div_Group updated'), 5)
+
+WebUI.refresh()
+
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Groups/Search group'), GlobalVariable.GroupName)
 
 WebUI.delay(2)
 
@@ -188,7 +206,11 @@ WebUI.closeBrowser()
 @Keyword
 WebElement findGroup(String groupName) {
     WebDriver driver = DriverFactory.getWebDriver()
+    new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
+        org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
+            By.xpath("//table[@id='groups_table']/tbody/tr[@id]")))
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + GlobalVariable.GroupName) + '\')]/td[1]/span'))
+    String xp = "//table[@id='groups_table']/tbody/tr[contains(@data-search-keys,'" + groupName + "') or .//a[contains(text(),'" + groupName + "')]]/td[1]/span"
+    return driver.findElement(By.xpath(xp))
 }
 

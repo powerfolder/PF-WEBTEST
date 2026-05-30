@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[5]/div[1]/div[1]/ul</value>
+         <value>//div[@id='pica_organization_groups']//ul[contains(@class,'pica-taginput-dropdown')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

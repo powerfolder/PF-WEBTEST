@@ -32,7 +32,10 @@ println(GlobalVariable.userEmail)
 
 println(GlobalVariable.PhoneNumber)
 
-WebElement btn = findAccount(GlobalVariable.userEmail)
+WebUI.refresh()
+WebUI.delay(5)
+
+WebElement btn = findAccount(GlobalVariable.userName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
@@ -48,7 +51,7 @@ WebUI.refresh()
 
 WebUI.delay(3)
 
-WebElement btn1 = findAccount(GlobalVariable.userEmail)
+WebElement btn1 = findAccount(GlobalVariable.userName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
@@ -66,9 +69,16 @@ String generateRandomPhoneNumber() {
     return String.format('(%03d) %03d-%04d', random.nextInt(1000), random.nextInt(1000), random.nextInt(10000))
 }
 
-WebElement findAccount(String emailId) {
+WebElement findAccount(String searchKey) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + emailId) + '\')]/td[1]/span'))
+    String key = searchKey.contains('@') ? searchKey.substring(0, searchKey.indexOf('@')) : searchKey
+
+    new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
+        org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
+            By.xpath("//table[@id='accounts_table']/tbody/tr[@id]")))
+
+    String xp = "//table[@id='accounts_table']/tbody/tr[contains(@data-search-keys,'" + key + "') or .//a[contains(@title,'" + key + "') or contains(text(),'" + key + "')]]/td[1]/span"
+    return driver.findElement(By.xpath(xp))
 }
 

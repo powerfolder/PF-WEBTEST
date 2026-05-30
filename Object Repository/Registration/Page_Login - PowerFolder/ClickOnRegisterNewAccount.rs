@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div/div/div[2]/div/div/div/form/p/a[1]/lang</value>
+         <value>//a[@href='/register' and .//lang[@name='action_sign_up']]</value>
       </entry>
       <entry>
          <key>CSS</key>

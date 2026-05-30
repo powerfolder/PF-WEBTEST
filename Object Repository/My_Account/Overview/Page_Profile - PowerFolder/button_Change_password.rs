@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[5]/div/div/div[3]/button[1]</value>
+         <value>//div[@id='profile_password_dialog']//div[contains(@class,'modal-footer')]/button[.//lang[@name='button_change']]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

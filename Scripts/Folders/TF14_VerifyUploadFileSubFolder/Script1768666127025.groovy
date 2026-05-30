@@ -75,7 +75,9 @@ dynamicObject.addProperty('xpath', ConditionType.EQUALS, ('//span[text()=\'' + f
 
 boolean exists = WebUI.verifyElementPresent(dynamicObject, 10, FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'), 5) 
+WebUI.click(findTestObject('Folders/createFolderIcon'))
+
+WebUI.verifyElementPresent(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'), 5)
 
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'))
 
@@ -84,6 +86,8 @@ String subFolderName = "Sub_"+ getRandomFolderName()
 WebUI.setText(findTestObject('Folders/inputFolderName'), subFolderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
+
+WebUI.click(findTestObject('Folders/createFolderIcon'))
 
 WebUI.verifyElementPresent(findTestObject('Folders/Page_Folders - PowerFolder/Upload files'), 5)
 

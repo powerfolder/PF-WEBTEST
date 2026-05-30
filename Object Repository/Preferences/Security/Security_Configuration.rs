@@ -7,7 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[2]/div/div[6]/div/a</value>
+         <value>//a[@id='button-security']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#button-security</value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -17,4 +21,20 @@
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>91fc0756-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>button-security</value>
+      <webElementGuid>91fc0756-0001-0001-0001-000000000002</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

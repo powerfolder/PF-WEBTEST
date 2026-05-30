@@ -75,6 +75,8 @@ dynamicObject.addProperty('xpath', ConditionType.EQUALS, ('//span[text()=\'' + t
 
 boolean exists = WebUI.verifyElementPresent(dynamicObject, 10, FailureHandling.OPTIONAL)
 
+WebUI.click(findTestObject('Folders/createFolderIcon'))
+
 WebUI.verifyElementPresent(findTestObject('Folders/Page_Folders - PowerFolder/Create Doc'), 5)
 
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/Create Doc'))

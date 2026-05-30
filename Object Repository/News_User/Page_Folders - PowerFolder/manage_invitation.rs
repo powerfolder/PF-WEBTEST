@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[2]/table/tbody/tr/td[7]/div/a</value>
+         <value>(//table[@id='files_files_table']//tr[contains(@class,'pica-table-selection-disabled')]//a[contains(@class,'dropdown-toggle')])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

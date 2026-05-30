@@ -34,7 +34,10 @@ WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account')
 
 println(GlobalVariable.userEmail)
 
-WebElement btn = findAccount(GlobalVariable.userEmail)
+WebUI.refresh()
+WebUI.delay(5)
+
+WebElement btn = findAccount(GlobalVariable.userName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
@@ -48,7 +51,7 @@ WebUI.refresh()
 
 WebUI.delay(2)
 
-WebElement btn1 = findAccount(GlobalVariable.userEmail)
+WebElement btn1 = findAccount(GlobalVariable.userName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
@@ -58,9 +61,14 @@ WebUI.verifyElementNotChecked(findTestObject('Accounts/Edit_Accounts - PowerFold
 
 WebUI.closeBrowser()
 
-WebElement findAccount(String emailId) {
+WebElement findAccount(String searchKey) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + emailId) + '\')]/td[1]/span'))
+    new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
+        org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
+            By.xpath("//table[@id='accounts_table']/tbody/tr[@id]")))
+
+    String xp = "//table[@id='accounts_table']/tbody/tr[contains(@data-search-keys,'" + searchKey + "') or .//a[contains(@title,'" + searchKey + "') or contains(text(),'" + searchKey + "')]]/td[1]/span"
+    return driver.findElement(By.xpath(xp))
 }
 

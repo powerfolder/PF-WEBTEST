@@ -55,7 +55,7 @@ TestObject dynamicObject = new TestObject()
 dynamicObject.addProperty('xpath', ConditionType.EQUALS, "//span[text()='" + mainFolderName + "']")
 WebUI.verifyElementPresent(dynamicObject, 10, FailureHandling.OPTIONAL)
 
-// Création sous-dossier
+WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.verifyElementPresent(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'), 5)
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'))
 
@@ -63,14 +63,14 @@ String subFolderName = "Sub_" + getRandomFolderName()
 WebUI.setText(findTestObject('Folders/inputFolderName'), subFolderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-// Création sous-sous-dossier
+WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'))
 
 String subSubFolderName = "Sub_Sub_" + getRandomFolderName()
 WebUI.setText(findTestObject('Folders/inputFolderName'), subSubFolderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-// Ouvrir popup upload
+WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.verifyElementPresent(findTestObject('Folders/Page_Folders - PowerFolder/Upload files'), 5)
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/Upload files'))
 

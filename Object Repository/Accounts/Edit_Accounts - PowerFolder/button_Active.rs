@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[1]/div[4]/div[1]/div/button</value>
+         <value>//div[@id='pica_account_dialog']//div[contains(@class,'pica-button-checkbox')]/button[.//lang[@name='label_active']]</value>
       </entry>
       <entry>
          <key>CSS</key>

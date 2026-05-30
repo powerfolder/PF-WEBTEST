@@ -78,6 +78,12 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Group
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
+WebUI.refresh()
+
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Groups/Search group'), groupName)
+
 WebUI.delay(2)
 
 def btn = findGroup(groupName)
@@ -98,6 +104,12 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups 
 
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
 
+WebUI.refresh()
+
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Groups/Search group'), GlobalVariable.GroupName)
+
 WebUI.delay(2)
 
 WebElement btn1 = findGroup(GlobalVariable.GroupName)
@@ -107,7 +119,11 @@ WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn
 @Keyword
 WebElement findGroup(String groupName) {
     WebDriver driver = DriverFactory.getWebDriver()
+    new WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
+        ExpectedConditions.presenceOfElementLocated(
+            By.xpath("//table[@id='groups_table']/tbody/tr[@id]")))
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + GlobalVariable.GroupName) + '\')]/td[1]/span'))
+    String xp = "//table[@id='groups_table']/tbody/tr[contains(@data-search-keys,'" + groupName + "') or .//a[contains(text(),'" + groupName + "')]]/td[1]/span"
+    return driver.findElement(By.xpath(xp))
 }
 

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/ul/li[3]/a</value>
+         <value>//ul[@id='profile_nav']//a[@data-tab='organizations']</value>
       </entry>
       <entry>
          <key>CSS</key>

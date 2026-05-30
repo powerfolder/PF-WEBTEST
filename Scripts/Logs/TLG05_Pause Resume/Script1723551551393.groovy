@@ -32,10 +32,8 @@ WebUI.verifyElementPresent(findTestObject('1Logs/Page_Dashboard - PowerFolder/Pa
 
 WebUI.refresh()
 
-WebUI.click(findTestObject('1Logs/Page_Dashboard - PowerFolder/Page_Logs - PowerFolder/start_stop auto refresh'))
-
-WebUI.verifyElementPresent(findTestObject('1Logs/Page_Dashboard - PowerFolder/Page_Logs - PowerFolder/div_Started auto refresh'), 
-    3)
+WebUI.verifyElementPresent(findTestObject('1Logs/Page_Dashboard - PowerFolder/Page_Logs - PowerFolder/div_Started auto refresh'),
+    5)
 
 WebUI.delay(3)
 

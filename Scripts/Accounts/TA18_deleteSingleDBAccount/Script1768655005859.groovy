@@ -33,6 +33,10 @@ import com.kms.katalon.core.testobject.ConditionType
 
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.refresh()
+
+WebUI.delay(5)
+
 println(GlobalVariable.userEmail)
 
 WebElement btn = findAccount(GlobalVariable.userEmail)
@@ -63,9 +67,13 @@ WebUI.verifyEqual(notPresent, true)
 
 WebUI.closeBrowser()
 
-WebElement findAccount(String emailId) {
+WebElement findAccount(String searchKey) {
     WebDriver driver = DriverFactory.getWebDriver()
+    new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
+        org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
+            By.xpath("//table[@id='accounts_table']/tbody/tr[@id]")))
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + emailId) + '\')]/td[1]/span'))
+    String xp = "//table[@id='accounts_table']/tbody/tr[contains(@data-search-keys,'" + searchKey + "') or .//a[contains(@title,'" + searchKey + "') or contains(text(),'" + searchKey + "')]]/td[1]/span"
+    return driver.findElement(By.xpath(xp))
 }
 

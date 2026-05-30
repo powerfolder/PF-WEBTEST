@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[4]/div/div/div[2]/div/div[1]/div[1]/input</value>
+         <value>//div[@id='profile_emails_dialog']//input[contains(@class,'pica-taginput-input')]</value>
       </entry>
       <entry>
          <key>CSS</key>

@@ -111,7 +111,7 @@ WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Uploa
 
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
-WebElement addfile = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//body/div[2]/div[1]/div[2]/div[5]/div/div/div[3]/div/span[1]')))
+WebElement addfile = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@id='upload_file']")))
 
 addfile.click()
 

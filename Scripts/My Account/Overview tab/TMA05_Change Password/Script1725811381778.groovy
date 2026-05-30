@@ -57,7 +57,7 @@ WebUI.delay(2)
 // Initialisation de l'attente explicite pour l'élément du bouton de changement de mot de passe
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
-WebElement changepassword = wait.until(ExpectedConditions.elementToBeClickable(By.xpath('//body/div[2]/div[1]/div[2]/div[5]/div/div/div[3]/button[1]')))
+WebElement changepassword = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='profile_password_dialog']//div[contains(@class,'modal-footer')]/button[.//lang[@name='button_change']]")))
 
 // Clic sur le bouton pour changer le mot de passe
 changepassword.click()

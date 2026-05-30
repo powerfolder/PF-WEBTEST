@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/ul/li[5]/a</value>
+         <value>//div[@id='pica_organization_dialog']//ul[contains(@class,'nav-tabs')]//a[lang[@name='label_groups']]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

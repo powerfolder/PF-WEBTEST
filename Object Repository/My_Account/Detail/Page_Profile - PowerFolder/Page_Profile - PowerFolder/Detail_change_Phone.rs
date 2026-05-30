@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//table[2]/tbody/tr[5]/td[3]/a</value>
+         <value>//a[@id='profile_change_phone']</value>
       </entry>
       <entry>
          <key>CSS</key>

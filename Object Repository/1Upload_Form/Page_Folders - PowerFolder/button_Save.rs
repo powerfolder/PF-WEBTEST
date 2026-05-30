@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[17]/div/div/div[3]/button[1]</value>
+         <value>//div[@id='pica_uploadform_dialog']//div[contains(@class,'modal-footer')]/button[.//lang[@name='button_save']]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -44,7 +44,7 @@
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-dismiss</name>
+      <name>data-bs-dismiss</name>
       <type>Main</type>
       <value>modal</value>
       <webElementGuid>36ac2e82-64e6-4800-a718-bbbc9d6f5580</webElementGuid>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[3]/div/div[2]/button[2]</value>
+         <value>//div[@id='pica_organization_dialog']//div[contains(@class,'modal-footer')]//button[.//lang[@name='button_cancel']]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -38,13 +38,13 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>btn btn-default</value>
+      <value>btn btn-secondary</value>
       <webElementGuid>db423ef3-2cf1-4e73-90dd-60ee5925e415</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-dismiss</name>
+      <name>data-bs-dismiss</name>
       <type>Main</type>
       <value>modal</value>
       <webElementGuid>6cb0a0bb-9a2f-4695-a245-61ff7b27fbf6</webElementGuid>

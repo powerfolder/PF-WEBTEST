@@ -71,6 +71,8 @@ WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebUI.delay(2)
 
+WebUI.click(findTestObject('Folders/createFolderIcon'))
+
 WebUI.verifyElementPresent(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'), 5)
 
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'))

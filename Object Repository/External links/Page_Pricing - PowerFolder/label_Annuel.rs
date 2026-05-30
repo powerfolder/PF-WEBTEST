@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[2]/div/div[2]/label[2]</value>
+         <value>//label[@for='yearlyRadio']</value>
       </entry>
       <entry>
          <key>CSS</key>
