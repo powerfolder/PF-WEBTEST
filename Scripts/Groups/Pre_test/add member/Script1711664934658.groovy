@@ -100,9 +100,20 @@ WebElement inputElement = driver.findElement(By.xpath('//*[@id=\'pica_group_acco
 
 inputElement.sendKeys(user)
 
+new WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
+    ExpectedConditions.elementToBeClickable(
+        By.xpath("(//div[@id='pica_group_accounts']//ul[contains(@class,'pica-taginput-dropdown')]/li[not(contains(@class,'pica-taginput-dropdown-fixed'))])[1]/a")))
+
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
 
+new WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
+    ExpectedConditions.presenceOfElementLocated(
+        By.xpath("//div[@id='pica_group_accounts']//table//tr[@data-userdata]")))
+
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
+
+new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
+    ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id='pica_group_dialog' and contains(concat(' ',normalize-space(@class),' '),' show ')]")))
 
 WebUI.refresh()
 
