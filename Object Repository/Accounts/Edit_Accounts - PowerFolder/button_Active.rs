@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_account_dialog']//div[contains(@class,'pica-button-checkbox')]/button[.//lang[@name='label_active']]</value>
+         <value>//div[@id='pica_account_dialog']//div[contains(@class,'pica-button-checkbox')]/button[.//lang[@name='label_email_validated']]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>button.btn.btn-primary.active</value>
+         <value>div#pica_account_dialog div.pica-button-checkbox > button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
