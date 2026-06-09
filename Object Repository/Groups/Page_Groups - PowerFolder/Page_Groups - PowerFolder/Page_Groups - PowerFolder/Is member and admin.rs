@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>div.pica-inline.dropdown.pull-right.open > ul.dropdown-menu > li:nth-of-type(2) > a</value>
+         <value>#pica_group_accounts ul.dropdown-menu.show > li:nth-of-type(2) > a</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@id='pica_group_accounts']//table/tbody/tr[@data-userdata])[2]//ul[contains(@class,'dropdown-menu')]/li[2]/a</value>
+         <value>//div[@id='pica_group_accounts']//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]/li[a[@data-dropdown-group='permission']][2]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

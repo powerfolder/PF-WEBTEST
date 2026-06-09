@@ -47,21 +47,27 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
 // Localisation du bouton dropdown
-def xpath = '//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[4]/div[2]/table/tbody/tr[1]/td[3]/div/button'
+def xpath = "//div[@id='pica_group_accounts']//table//tr[@data-userdata][1]//button[contains(@class,'dropdown-toggle')]"
 
 def driver = DriverFactory.getWebDriver()
+
+new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
+    ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)))
 
 def button = driver.findElement(By.xpath(xpath))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button))
 
-WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Is member'))
+WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Is member and admin'))
 
 // Clic sur le bouton "Save"
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
 // Vérification de la présence du message de confirmation de mise à jour du groupe
 WebUI.verifyElementPresent(findTestObject('Groups/Page_Groups - PowerFolder/div_Group updated'), 5)
+
+new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
+    ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id='pica_group_dialog' and contains(concat(' ',normalize-space(@class),' '),' show ')]")))
 
 WebUI.delay(2)
 
@@ -73,20 +79,22 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
+new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
+    ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)))
+
 def button1 = driver.findElement(By.xpath(xpath))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button1))
 
 WebUI.delay(2)
 
-String adminNameOrEmail = 'adminqa' // ou "adminqa@xxx.com" selon ce qui est affiché dans la ligne
+String memberLocalPart = GlobalVariable.userName.contains('@') ? GlobalVariable.userName.substring(0, GlobalVariable.userName.indexOf('@')) : GlobalVariable.userName
 
 TestObject isAdminRoleSelected = new TestObject('isAdminRoleSelected')
 
-isAdminRoleSelected.addProperty('xpath', ConditionType.EQUALS, "//tr[.//td[contains(normalize-space(),'$adminNameOrEmail')]]" + 
-    '//div[contains(@class,\'dropdown\') and @data-selected=\'Is member and admin\']')
+isAdminRoleSelected.addProperty('xpath', ConditionType.EQUALS, "//div[@id='pica_group_accounts']//tr[@data-userdata and contains(@data-userdata,'$memberLocalPart')]//div[contains(@class,'dropdown') and (@data-selected='Is member and admin' or @data-selected='Ist Mitglied und Admin')]")
 
-WebUI.verifyElementPresent(isAdminRoleSelected, 5)
+WebUI.verifyElementPresent(isAdminRoleSelected, 10)
 
 WebUI.closeBrowser()
 

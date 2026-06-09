@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//th[6]/a/span</value>
+         <value>//a[@id='logs_refresh']/span[contains(@class,'glyphicons-clock')]</value>
       </entry>
       <entry>
          <key>CSS</key>
