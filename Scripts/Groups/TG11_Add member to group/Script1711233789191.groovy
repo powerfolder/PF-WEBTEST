@@ -48,12 +48,14 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 
 
 // Initialisation de l'attente explicite
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(10))
 
-// Localisation de l'utilisateur ajouté
+String userLocalPart = GlobalVariable.userName.contains('@') ? GlobalVariable.userName.substring(0, GlobalVariable.userName.indexOf('@')) : GlobalVariable.userName
+
+// Localisation de la ligne du membre (par data-userdata, robuste gegen Locale/Display-Name)
 WebElement user = wait.until(
 	ExpectedConditions.visibilityOfElementLocated(
-		By.xpath("//td[contains(., '" + GlobalVariable.userName + "')]")
+		By.xpath("//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]//td[contains(concat(' ',normalize-space(@class),' '),' pica-name ')]")
 	)
 )
 
@@ -62,7 +64,10 @@ assert user != null : 'L\'élément utilisateur n\'a pas été trouvé.'
 
 WebUI.delay(2)
 
-user.click()
+// Scroll ins Viewport + JS-Click — umgeht ElementClickInterceptedException durch sticky Nav-Tabs
+DriverFactory.getWebDriver().executeScript('arguments[0].scrollIntoView({block: "center"});', user)
+WebUI.delay(1)
+DriverFactory.getWebDriver().executeScript('arguments[0].click();', user)
 
 // Délai pour voir l'action effectuée
 WebUI.delay(2)
