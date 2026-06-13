@@ -18,7 +18,10 @@ public class AccessibilityKeywords {
 
 	@Keyword
 	def checkAccessibility() {
-		Results results = new AxeBuilder().analyze(DriverFactory.getWebDriver())
+		Results results = new AxeBuilder()
+				.withTags(Arrays.asList("wcag2a", "wcag2aa", "wcag21aa", "wcag22aa", "EN-301-549"))
+				.analyze(DriverFactory.getWebDriver())
+
 		List<Rule> violations = results.getViolations()
 		if (violations.size() == 0) {
 			KeywordUtil.logInfo("No Violation Found")
