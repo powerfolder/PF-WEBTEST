@@ -41,10 +41,17 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/Chang
 // Saisie de l'ancien mot de passe
 WebUI.setText(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/Set_Old_Password'), GlobalVariable.Pass)
 
-// Génération d'un nouveau mot de passe complexe
-String characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_-+=<>?'
-
-String NewPasswordWithSymbols = RandomStringUtils.random(12, characters.toCharArray())
+// Génération d'un nouveau mot de passe complexe — garantiert mindestens
+// 1 Kleinbuchstabe, 1 Großbuchstabe, 1 Zahl, 1 Sonderzeichen, Mindestlänge 8 (Ziel 12)
+List<String> pwChars = []
+pwChars << RandomStringUtils.random(1, 'abcdefghijklmnopqrstuvwxyz')
+pwChars << RandomStringUtils.random(1, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+pwChars << RandomStringUtils.random(1, '0123456789')
+pwChars << RandomStringUtils.random(1, '!@#$%^&*()_-+=<>?')
+String fillerPool = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_-+=<>?'
+(12 - pwChars.size()).times { pwChars << RandomStringUtils.random(1, fillerPool) }
+Collections.shuffle(pwChars)
+String NewPasswordWithSymbols = pwChars.join('')
 
 // Saisie du nouveau mot de passe
 WebUI.setText(findTestObject('My_Account/Overview/Page_Profile - PowerFolder/Set_New_Password'), NewPasswordWithSymbols)
