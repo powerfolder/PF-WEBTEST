@@ -29,7 +29,7 @@ import file.FileFinder
 
 // ================== LOGIN + CREATE TARGET FOLDER ==================
 
-String topFolder = "Top_lvl" + Helper.getRandomFolderName()
+String topFolder = "Top_lvl_" + Helper.getRandomFolderName()
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 

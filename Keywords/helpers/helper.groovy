@@ -52,6 +52,7 @@ public class Helper {
 		List<WebElement> rows_table = tbody.findElements(By.className("pica-highlight"))
 		return rows_table.size()
 	}
+	
 
 	@Keyword
 	def static String getRandomFolderName() {
@@ -151,6 +152,7 @@ public class Helper {
 	
 
 	@Keyword
+	
 	def static void dragAndDropFileNative(String dropZoneCss, String filePath) {
 		WebDriver driver = DriverFactory.getWebDriver()
 		JavascriptExecutor js = (JavascriptExecutor) driver
@@ -249,6 +251,54 @@ public class Helper {
 		javax.swing.SwingUtilities.invokeLater(new Runnable() {
 			void run() { frame.dispose() }
 		})
+	}
+	@Keyword
+	def static void selectUploadedFolders(List<String> folderNames, String subFolderName) {
+		WebDriver driver = DriverFactory.getWebDriver()
+	
+		List<WebElement> icons = driver.findElements(
+			By.xpath("//table[@id='files_files_table']/tbody/tr[not(contains(@data-search-keys,'" + subFolderName + "'))]//td[1]/span")
+		)
+	
+		if (icons.size() == 0) {
+			throw new RuntimeException("No uploaded folder icons found")
+		}
+	
+		WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(icons.get(0)))
+		Thread.sleep(500)
+	
+		new org.openqa.selenium.interactions.Actions(driver)
+			.keyDown(org.openqa.selenium.Keys.SHIFT)
+			.click(icons.get(icons.size() - 1))
+			.keyUp(org.openqa.selenium.Keys.SHIFT)
+			.build()
+			.perform()
+	
+		Thread.sleep(1000)
+	}
+	
+	@Keyword
+	def static void dragSelectedFoldersToSubFolder(String subFolderName) {
+		WebDriver driver = DriverFactory.getWebDriver()
+	
+		WebElement source = driver.findElement(
+			By.xpath("//tr[contains(@class,'info') and not(contains(@data-search-keys,'" + subFolderName + "'))]//td[1]/span")
+		)
+	
+		WebElement target = driver.findElement(
+			By.xpath("//tr[contains(@data-search-keys,'" + subFolderName + "')]//td[1]/span")
+		)
+	
+		new org.openqa.selenium.interactions.Actions(driver)
+			.clickAndHold(source)
+			.pause(800)
+			.moveToElement(target)
+			.pause(1200)
+			.release()
+			.build()
+			.perform()
+	
+		Thread.sleep(3000)
 	}
 	@Keyword
 	def static void dragAndDropFilesNative(String dropZoneCss, List<String> filePaths) {

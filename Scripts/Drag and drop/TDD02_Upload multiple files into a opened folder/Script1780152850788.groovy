@@ -3,7 +3,6 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import internal.GlobalVariable
 import helpers.Helper
 
 import com.kms.katalon.core.webui.driver.DriverFactory
@@ -12,14 +11,13 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 
 import java.util.Arrays
-import java.util.Comparator
 import java.nio.file.Files
 import java.nio.file.Paths
 import java.nio.file.Path
 
-// ================== LOGIN + CREATE FOLDER ==================
+// ================== LOGIN + CREATE TOP FOLDER ==================
 
-String topFolder = "Top_lvl" + Helper.getRandomFolderName()
+String topFolder = "Top_lvl_" + Helper.getRandomFolderName()
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -40,83 +38,66 @@ WebUI.delay(3)
 WebDriver driver = DriverFactory.getWebDriver()
 
 List<WebElement> folderLinks = driver.findElements(
-	By.xpath("//td//a[contains(text(),'" + topFolder + "')]")
+    By.xpath("//td//a[contains(text(),'" + topFolder + "')]")
 )
 
 if (folderLinks.size() > 0) {
-	WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folderLinks.get(0)))
-	WebUI.delay(2)
+    WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folderLinks.get(0)))
+    WebUI.delay(2)
 }
 
-// ================== CREATE MULTIPLE LOCAL FOLDERS ==================
+// ================== CREATE MULTIPLE LOCAL FILES ==================
 
-List<String> folderNames = []
-List<String> folderPaths = []
+List<String> fileNames = []
+List<String> filePaths = []
 
 for (int i = 1; i <= 5; i++) {
-	String folderName = Helper.getRandomFolderName()
-	String folderPath = createLocalFolderOnDesktop(folderName)
+    String fileName = Helper.getRandomFileName() + ".txt"
+    String filePath = createLocalFileOnDesktop(fileName)
 
-	folderNames.add(folderName)
-	folderPaths.add(folderPath)
+    fileNames.add(fileName)
+    filePaths.add(filePath)
 }
 
-// ================== DRAG AND DROP MULTIPLE FOLDERS ==================
+// ================== DRAG AND DROP MULTIPLE FILES ==================
 
-Helper.dragAndDropFoldersNative('#pica_content', folderPaths)
+Helper.dragAndDropFilesNative('#pica_content', filePaths)
 
 WebUI.delay(5)
 
 WebUI.click(findTestObject('Drag and drop/Close_button'))
 
-// ================== VERIFY UPLOADED FOLDERS ==================
+// ================== VERIFY UPLOADED FILES ==================
 
-for (String folderName : folderNames) {
-	boolean uploaded = driver.findElements(
-		By.xpath("//table[@id='files_files_table']//*[contains(text(),'" + folderName + "')]")
-	).size() > 0
+for (String fileName : fileNames) {
+    boolean uploaded = driver.findElements(
+        By.xpath("//table[@id='files_files_table']//*[contains(text(),'" + fileName + "')]")
+    ).size() > 0
 
-	WebUI.verifyEqual(uploaded, true)
+    WebUI.verifyEqual(uploaded, true)
 }
 
-// ================== DELETE LOCAL FOLDERS ==================
+// ================== DELETE LOCAL FILES ==================
 
-for (String folderPath : folderPaths) {
-	deleteLocalFolder(folderPath)
+for (String filePath : filePaths) {
+    Files.deleteIfExists(Paths.get(filePath))
+    println('LOCAL FILE DELETED : ' + filePath)
 }
 
 WebUI.closeBrowser()
 
 // ================== FUNCTIONS ==================
 
-String createLocalFolderOnDesktop(String folderName) {
-	Path desktop = Paths.get(System.getProperty('user.home'), 'Desktop')
+String createLocalFileOnDesktop(String fileName) {
+    Path desktop = Paths.get(System.getProperty('user.home'), 'Desktop')
 
-	if (!Files.exists(desktop)) {
-		Files.createDirectories(desktop)
-	}
+    if (!Files.exists(desktop)) {
+        Files.createDirectories(desktop)
+    }
 
-	Path folder = desktop.resolve(folderName)
+    Path file = desktop.resolve(fileName)
 
-	if (!Files.exists(folder)) {
-		Files.createDirectories(folder)
-	}
+    Files.write(file, 'file drag test'.getBytes())
 
-	Path fileInside = folder.resolve('test_file_inside.txt')
-
-	Files.write(fileInside, 'folder drag test'.getBytes())
-
-	return folder.toString()
-}
-
-void deleteLocalFolder(String folderPath) {
-	Path path = Paths.get(folderPath)
-
-	if (Files.exists(path)) {
-		Files.walk(path)
-			.sorted(Comparator.reverseOrder())
-			.forEach { p -> Files.deleteIfExists(p) }
-	}
-
-	println('LOCAL FOLDER DELETED : ' + folderPath)
+    return file.toString()
 }
