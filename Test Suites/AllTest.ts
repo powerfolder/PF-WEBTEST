@@ -3008,12 +3008,13 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-<<<<<<< HEAD
       <guid>35f43074-292c-43a9-aec4-9115196b013a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF27_Verify Pdf inline view in browser</testCaseId>
-=======
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>610d1535-8374-4467-8697-71738001141c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -3049,11 +3050,11 @@
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6c0c6cea-ef27-43b2-bc76-70aa76bb6870</guid>
+      <guid>e8736807-4a64-48e1-97ee-0aa6c70a2c67</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Drag and drop/TDD06_Upload multiple intofolders into a folder from folder list</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <testCaseId>Test Cases/Drag and drop/TDD06_Upload multiple folders into a folder from folder list</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>17a8bd64-1819-4592-ae25-f7a88e31c9b4</guid>
@@ -3081,7 +3082,20 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Drag and drop/TDD10_Move a folder into a subfolder via drag and drop</testCaseId>
->>>>>>> 5063cef (feat(PFS-4770): test drag and drop katalon studio fonction)
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c19ccccb-003d-4f1e-9946-d4f09877bc3a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Drag and drop/TDD11_Move folders into a subfolder via drag and drop</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0170d9ba-7850-40d4-af89-b1a48861cf48</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Drag and drop/TDD12_Move files into a subfolder via drag and drop</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
