@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TDD03_Upload single file into a folder from folder list</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>33fdeb7d-2dae-4174-9c41-ef82d3ba55fe</testCaseGuid>
+</TestCaseEntity>

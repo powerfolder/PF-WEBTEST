@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TDD09_Move a file into a subfolder via drag and drop</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e03b5b94-de37-4caf-b41d-b666c0e9532f</testCaseGuid>
+</TestCaseEntity>
