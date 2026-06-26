@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF28_Verify folder view all_folders</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>21567840-505e-43c6-a31b-16047f2daadb</testCaseGuid>
+</TestCaseEntity>
