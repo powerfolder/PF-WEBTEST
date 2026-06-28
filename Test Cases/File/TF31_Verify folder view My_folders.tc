@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF31_Verify folder view My_folders</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b1cd3b99-e6c6-4d5c-917d-71aba1094835</testCaseGuid>
+</TestCaseEntity>
