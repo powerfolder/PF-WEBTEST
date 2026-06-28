@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//a[@data-tooltip='tooltip_create_dots'])[1]</value>
+         <value>//a[contains(concat(' ',normalize-space(@class),' '),' dropdown-toggle ') and .//*[@data-tooltip='tooltip_create_menu']]</value>
       </entry>
       <entry>
          <key>BASIC</key>
