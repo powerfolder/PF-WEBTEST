@@ -43,43 +43,47 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups 
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Folders'))
 
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
+WebDriver pageDriver = DriverFactory.getWebDriver()
+
+WebDriverWait wait = new WebDriverWait(pageDriver, Duration.ofSeconds(15))
 
 WebElement folderElement = wait.until(
     ExpectedConditions.visibilityOfElementLocated(
-        By.xpath("//td[contains(., '" + GlobalVariable.folderName + "')]")
+        By.xpath("//div[@id='pica_group_folders']//table//tr[@data-userdata and .//*[contains(normalize-space(.), '" + GlobalVariable.folderName + "')]]//td[contains(concat(' ',normalize-space(@class),' '),' pica-name ')]")
     )
 )
 
-folderElement.click()
+WebUI.executeJavaScript('arguments[0].scrollIntoView({block: "center"});', Arrays.asList(folderElement))
+WebUI.delay(1)
+WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(folderElement))
 
-WebElement element = DriverFactory.getWebDriver().findElement(By.xpath('//*[@id="pica_group_folders"]/div[2]/table/thead[1]/tr/th[4]/div/a'))
+WebElement element = pageDriver.findElement(By.xpath("//div[@id='pica_group_folders']//a[contains(concat(' ',normalize-space(@class),' '),' pica-inputlist-remove ')]"))
 
 WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(element))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Yes'))
 
-// Aktiv auf Schliessen des Confirmation-Dialogs warten; per JS hart schliessen, falls Bootstrap-Animation klemmt
-new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(10)).until { driver ->
-    !((Boolean) ((org.openqa.selenium.JavascriptExecutor) driver).executeScript(
-        "var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
-}
-
-WebUI.executeJavaScript("var el = document.getElementById('pica_confirmation_dialog');" +
-    " if (el && el.classList.contains('show')) {" +
-    "   var inst = (window.bootstrap && bootstrap.Modal) ? bootstrap.Modal.getInstance(el) : null;" +
-    "   if (inst) { inst.hide(); } else { el.classList.remove('show'); el.style.display='none'; }" +
-    "   document.querySelectorAll('.modal-backdrop').forEach(function(b){ b.parentNode.removeChild(b); });" +
-    "   document.body.classList.remove('modal-open');" +
-    " }", null)
-
-WebUI.delay(1)
+WebUI.delay(2)
 
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
 
-WebElement btn = findGroup(GlobalVariable.GroupName)
+WebUI.delay(2)
 
-WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
+String groupIconXpath = "//table[@id='groups_table']//tr[.//a[contains(concat(' ',normalize-space(@class),' '),' pica-name ') and contains(normalize-space(text()),'" + GlobalVariable.GroupName + "')]]/td[1]//*[contains(concat(' ',normalize-space(@class),' '),' pica-glyph ')]"
+
+new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(15)).until(
+    ExpectedConditions.elementToBeClickable(By.xpath(groupIconXpath)))
+
+WebElement rowIcon = DriverFactory.getWebDriver().findElement(By.xpath(groupIconXpath))
+WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(rowIcon))
+
+new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(10)).until(
+    ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(concat(' ',normalize-space(@class),' '),' pica-table-selection-multi ') and contains(concat(' ',normalize-space(@class),' '),' groups_edit ')]")))
+
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
+
+new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(15)).until(
+    ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='pica_group_dialog' and contains(concat(' ',normalize-space(@class),' '),' show ')]")))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Folders'))
 
