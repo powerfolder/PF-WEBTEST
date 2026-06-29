@@ -56,7 +56,22 @@ for (int i = 1; i <= 5; i++) {
 
 // ================== DRAG MULTIPLE FILES INTO TARGET FOLDER ROW ==================
 
+// Helper.dragAndDropFilesNative computes Robot coords from window.screenX/Y + chrome diff —
+// any non-zero window position or DevTools offset pushes the drop off-viewport.
+// Normalize the window to (0,0) + maximized first.
+driver.manage().window().setPosition(new org.openqa.selenium.Point(0, 0))
+WebUI.maximizeWindow()
+WebUI.delay(1)
+
+// Clear any persisted search filter (files.js restores sessionStorage.searchQuery on reload — would hide the new folder if a previous test typed something).
+WebUI.executeJavaScript("try { sessionStorage.removeItem('searchQuery'); } catch (e) {}", null)
+
 String targetFolderCss = "tr[data-search-keys*='" + topFolder + "']"
+
+// Wait until the target folder row is actually present in the DOM before invoking the native drag helper.
+new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
+    org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
+        By.cssSelector(targetFolderCss)))
 
 Helper.dragAndDropFilesNative(targetFolderCss, filePaths)
 
