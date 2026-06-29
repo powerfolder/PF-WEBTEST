@@ -91,6 +91,11 @@ WebElement inputElement = driver.findElement(By.xpath('//*[@id=\'pica_group_orga
 
 inputElement.sendKeys(GlobalVariable.organisationName)
 
+// Wait for autocomplete entry to appear — Picasso debounces input by 800ms before fetching suggestions
+new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
+    org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable(
+        By.xpath("(//div[@id='pica_group_organizations']//ul[contains(concat(' ',normalize-space(@class),' '),' pica-taginput-dropdown ')]/li[not(contains(@class,'pica-taginput-dropdown-fixed'))])[1]/a")))
+
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/Organisation click'))
 
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
