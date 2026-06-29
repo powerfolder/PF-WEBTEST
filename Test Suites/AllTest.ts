@@ -1629,13 +1629,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>165849d5-0ccb-450c-8d56-0b4bb6c500bb</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/External links/Licence/TEL19_Get demo license</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>8e934df3-882f-4d21-9e00-40cd1222c5b2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
