@@ -19,14 +19,15 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
+// Server tab list (populated by dashboard.js addNavTab) — at least one server tab must render
 WebUI.verifyElementPresent(findTestObject('Dashboard/servertab_mimas'), 30)
 
+// Row 1: Accounts, Storage charts (Server chart only rendered when pAdmin && !isCommunityEdition)
 WebUI.verifyElementPresent(findTestObject('Dashboard/Accounts_Manage'), 30)
 
 WebUI.verifyElementPresent(findTestObject('Dashboard/Storage_Manage'), 30)
 
-WebUI.verifyElementPresent(findTestObject('Dashboard/Folders_Manage'), 30)
-
+// Row 2: License section header + Activation (target=_blank), Groups, Organizations
 WebUI.verifyElementPresent(findTestObject('Dashboard/Pricing_License'), 30)
 
 WebUI.verifyElementPresent(findTestObject('Dashboard/Activation_Manage'), 30)
@@ -35,6 +36,7 @@ WebUI.verifyElementPresent(findTestObject('Dashboard/Groups_Manage'), 30)
 
 WebUI.verifyElementPresent(findTestObject('Dashboard/Org_Manage'), 30)
 
+// Row 3: Recent Warnings / Logs section header
 WebUI.verifyElementPresent(findTestObject('Dashboard/Dashboard_Logs'), 30)
 
 WebUI.click(findTestObject('Dashboard/Accounts_Manage'))
@@ -48,14 +50,6 @@ WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
 WebUI.click(findTestObject('Dashboard/Storage_Manage'))
 
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Storage - PowerFolder')
-
-WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
-
-WebUI.click(findTestObject('Dashboard/Folders_Manage'))
-
-WebUI.delay(3)
-
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Folders - PowerFolder')
 
 WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
 
