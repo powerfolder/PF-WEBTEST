@@ -55,11 +55,13 @@ WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(element))
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Yes'))
 
-WebUI.delay(1)
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
-WebUI.verifyElementPresent(findTestObject('Groups/Page_Groups - PowerFolder/div_Group updated'), 1)
+WebUI.verifyElementPresent(findTestObject('Groups/Page_Groups - PowerFolder/div_Group updated'), 2)
+
+WebUI.delay(2)
 
 WebElement btn1 = findGroup(GlobalVariable.GroupName)
 
