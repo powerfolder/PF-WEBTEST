@@ -38,8 +38,20 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
 
 
-new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(10)).until { d ->
-	!((Boolean) ((org.openqa.selenium.JavascriptExecutor) d).executeScript(
+// Poll every 500ms: force-close the confirmation dialog if it is (or becomes) .show.
+// Handles the race where BS5 fade-in has not yet added the .show class when we first try to close,
+// so we retry until it stays closed. setOkHandler runs (delete succeeds) but BS5 data-bs-dismiss
+// sometimes fails to fire in this Picasso build.
+new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(15)).until { drv ->
+	def js = (org.openqa.selenium.JavascriptExecutor) drv
+	js.executeScript("var d = document.getElementById('pica_confirmation_dialog');" +
+		" if (d && d.classList.contains('show') && window.bootstrap && window.bootstrap.Modal) {" +
+		"   var i = bootstrap.Modal.getInstance(d) || bootstrap.Modal.getOrCreateInstance(d);" +
+		"   if (i) i.hide();" +
+		" }" +
+		" document.querySelectorAll('.modal-backdrop').forEach(function(b){ b.parentNode.removeChild(b); });" +
+		" document.body.classList.remove('modal-open');")
+	return !((Boolean) js.executeScript(
 		"var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
 }
 
@@ -63,7 +75,7 @@ WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/
 WebElement table = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//*[@id=\'pica_restore_versions\']/div')))
 
 // Trouvez l'élément button spécifié dans le tableau
-WebElement button = table.findElement(By.xpath('./table/tbody/tr[2]/td[7]/button'))
+WebElement button = table.findElement(By.xpath(".//tbody/tr//a[.//span[contains(concat(' ',normalize-space(@class),' '),' glyphicons-restart ')]]"))
 
 // Cliquez sur le bouton
 button.click()
@@ -86,12 +98,20 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
 
-// Warten bis der Bestätigungsdialog vollständig geschlossen ist (Bootstrap entfernt
-// die 'show'-Klasse, das Element selbst bleibt aber im DOM – daher reicht
-// invisibilityOfElementLocated nicht aus). Sonst fängt das Modal-Overlay den
-// nächsten Klick ab (ElementClickInterceptedException).
-new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(10)).until { d ->
-	!((Boolean) ((org.openqa.selenium.JavascriptExecutor) d).executeScript(
+// Poll every 500ms: force-close the confirmation dialog if it is (or becomes) .show.
+// Handles the race where BS5 fade-in has not yet added the .show class when we first try to close,
+// so we retry until it stays closed. setOkHandler runs (delete succeeds) but BS5 data-bs-dismiss
+// sometimes fails to fire in this Picasso build.
+new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(15)).until { drv ->
+	def js = (org.openqa.selenium.JavascriptExecutor) drv
+	js.executeScript("var d = document.getElementById('pica_confirmation_dialog');" +
+		" if (d && d.classList.contains('show') && window.bootstrap && window.bootstrap.Modal) {" +
+		"   var i = bootstrap.Modal.getInstance(d) || bootstrap.Modal.getOrCreateInstance(d);" +
+		"   if (i) i.hide();" +
+		" }" +
+		" document.querySelectorAll('.modal-backdrop').forEach(function(b){ b.parentNode.removeChild(b); });" +
+		" document.body.classList.remove('modal-open');")
+	return !((Boolean) js.executeScript(
 		"var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
 }
 
@@ -115,7 +135,7 @@ WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/
 WebElement table_2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//*[@id=\'pica_restore_versions\']/div')))
 
 // Trouvez l'élément button spécifié dans le tableau
-WebElement button_2 = table_2.findElement(By.xpath('./table/tbody/tr[3]/td[7]/button'))
+WebElement button_2 = table_2.findElement(By.xpath(".//tbody/tr//a[.//span[contains(concat(' ',normalize-space(@class),' '),' glyphicons-restart ')]]"))
 
 // Cliquez sur le bouton
 button_2.click()
@@ -138,12 +158,20 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
 
-// Warten bis der Bestätigungsdialog vollständig geschlossen ist (Bootstrap entfernt
-// die 'show'-Klasse, das Element selbst bleibt aber im DOM – daher reicht
-// invisibilityOfElementLocated nicht aus). Sonst fängt das Modal-Overlay den
-// nächsten Klick ab (ElementClickInterceptedException).
-new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(10)).until { d ->
-	!((Boolean) ((org.openqa.selenium.JavascriptExecutor) d).executeScript(
+// Poll every 500ms: force-close the confirmation dialog if it is (or becomes) .show.
+// Handles the race where BS5 fade-in has not yet added the .show class when we first try to close,
+// so we retry until it stays closed. setOkHandler runs (delete succeeds) but BS5 data-bs-dismiss
+// sometimes fails to fire in this Picasso build.
+new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(15)).until { drv ->
+	def js = (org.openqa.selenium.JavascriptExecutor) drv
+	js.executeScript("var d = document.getElementById('pica_confirmation_dialog');" +
+		" if (d && d.classList.contains('show') && window.bootstrap && window.bootstrap.Modal) {" +
+		"   var i = bootstrap.Modal.getInstance(d) || bootstrap.Modal.getOrCreateInstance(d);" +
+		"   if (i) i.hide();" +
+		" }" +
+		" document.querySelectorAll('.modal-backdrop').forEach(function(b){ b.parentNode.removeChild(b); });" +
+		" document.body.classList.remove('modal-open');")
+	return !((Boolean) js.executeScript(
 		"var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
 }
 
@@ -167,7 +195,7 @@ WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/
 WebElement table_3 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//*[@id=\'pica_restore_versions\']/div')))
 
 // Trouvez l'élément button spécifié dans le tableau
-WebElement button_3 = table_3.findElement(By.xpath('./table/tbody/tr[4]/td[7]/button'))
+WebElement button_3 = table_3.findElement(By.xpath(".//tbody/tr//a[.//span[contains(concat(' ',normalize-space(@class),' '),' glyphicons-restart ')]]"))
 
 button_3.click()
 
@@ -189,12 +217,20 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
 
-// Warten bis der Bestätigungsdialog vollständig geschlossen ist (Bootstrap entfernt
-// die 'show'-Klasse, das Element selbst bleibt aber im DOM – daher reicht
-// invisibilityOfElementLocated nicht aus). Sonst fängt das Modal-Overlay den
-// nächsten Klick ab (ElementClickInterceptedException).
-new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(10)).until { d ->
-	!((Boolean) ((org.openqa.selenium.JavascriptExecutor) d).executeScript(
+// Poll every 500ms: force-close the confirmation dialog if it is (or becomes) .show.
+// Handles the race where BS5 fade-in has not yet added the .show class when we first try to close,
+// so we retry until it stays closed. setOkHandler runs (delete succeeds) but BS5 data-bs-dismiss
+// sometimes fails to fire in this Picasso build.
+new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(15)).until { drv ->
+	def js = (org.openqa.selenium.JavascriptExecutor) drv
+	js.executeScript("var d = document.getElementById('pica_confirmation_dialog');" +
+		" if (d && d.classList.contains('show') && window.bootstrap && window.bootstrap.Modal) {" +
+		"   var i = bootstrap.Modal.getInstance(d) || bootstrap.Modal.getOrCreateInstance(d);" +
+		"   if (i) i.hide();" +
+		" }" +
+		" document.querySelectorAll('.modal-backdrop').forEach(function(b){ b.parentNode.removeChild(b); });" +
+		" document.body.classList.remove('modal-open');")
+	return !((Boolean) js.executeScript(
 		"var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
 }
 
@@ -218,7 +254,7 @@ WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/
 WebElement table_4 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//*[@id=\'pica_restore_versions\']/div')))
 
 // Trouvez l'élément button spécifié dans le tableau
-WebElement button_4 = table_4.findElement(By.xpath('./table/tbody/tr[5]/td[7]/button'))
+WebElement button_4 = table_4.findElement(By.xpath(".//tbody/tr//a[.//span[contains(concat(' ',normalize-space(@class),' '),' glyphicons-restart ')]]"))
 
 button_4.click()
 

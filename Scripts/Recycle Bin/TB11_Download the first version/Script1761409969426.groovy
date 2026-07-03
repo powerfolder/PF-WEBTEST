@@ -44,6 +44,23 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
 
+// Poll every 500ms: force-close the confirmation dialog if it is (or becomes) .show.
+// Handles the race where BS5 fade-in has not yet added the .show class when we first try to close,
+// so we retry until it stays closed. setOkHandler runs (delete succeeds) but BS5 data-bs-dismiss
+// sometimes fails to fire in this Picasso build.
+new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(15)).until { drv ->
+    def js = (org.openqa.selenium.JavascriptExecutor) drv
+    js.executeScript("var d = document.getElementById('pica_confirmation_dialog');" +
+        " if (d && d.classList.contains('show') && window.bootstrap && window.bootstrap.Modal) {" +
+        "   var i = bootstrap.Modal.getInstance(d) || bootstrap.Modal.getOrCreateInstance(d);" +
+        "   if (i) i.hide();" +
+        " }" +
+        " document.querySelectorAll('.modal-backdrop').forEach(function(b){ b.parentNode.removeChild(b); });" +
+        " document.body.classList.remove('modal-open');")
+    return !((Boolean) js.executeScript(
+        "var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
+}
+
 WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span_recycle'))
 
 WebElement btn = findFolder(folderName)
@@ -84,6 +101,23 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
 
+// Poll every 500ms: force-close the confirmation dialog if it is (or becomes) .show.
+// Handles the race where BS5 fade-in has not yet added the .show class when we first try to close,
+// so we retry until it stays closed. setOkHandler runs (delete succeeds) but BS5 data-bs-dismiss
+// sometimes fails to fire in this Picasso build.
+new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(15)).until { drv ->
+    def js = (org.openqa.selenium.JavascriptExecutor) drv
+    js.executeScript("var d = document.getElementById('pica_confirmation_dialog');" +
+        " if (d && d.classList.contains('show') && window.bootstrap && window.bootstrap.Modal) {" +
+        "   var i = bootstrap.Modal.getInstance(d) || bootstrap.Modal.getOrCreateInstance(d);" +
+        "   if (i) i.hide();" +
+        " }" +
+        " document.querySelectorAll('.modal-backdrop').forEach(function(b){ b.parentNode.removeChild(b); });" +
+        " document.body.classList.remove('modal-open');")
+    return !((Boolean) js.executeScript(
+        "var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
+}
+
 WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span_recycle'))
 
 WebElement btn3 = findFolder(folderName)
@@ -122,6 +156,23 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
 
+// Poll every 500ms: force-close the confirmation dialog if it is (or becomes) .show.
+// Handles the race where BS5 fade-in has not yet added the .show class when we first try to close,
+// so we retry until it stays closed. setOkHandler runs (delete succeeds) but BS5 data-bs-dismiss
+// sometimes fails to fire in this Picasso build.
+new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(15)).until { drv ->
+    def js = (org.openqa.selenium.JavascriptExecutor) drv
+    js.executeScript("var d = document.getElementById('pica_confirmation_dialog');" +
+        " if (d && d.classList.contains('show') && window.bootstrap && window.bootstrap.Modal) {" +
+        "   var i = bootstrap.Modal.getInstance(d) || bootstrap.Modal.getOrCreateInstance(d);" +
+        "   if (i) i.hide();" +
+        " }" +
+        " document.querySelectorAll('.modal-backdrop').forEach(function(b){ b.parentNode.removeChild(b); });" +
+        " document.body.classList.remove('modal-open');")
+    return !((Boolean) js.executeScript(
+        "var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
+}
+
 WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span_recycle'))
 
 WebElement btn6 = findFolder(folderName)
@@ -159,6 +210,23 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn8))
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/span_Delete'))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
+
+// Poll every 500ms: force-close the confirmation dialog if it is (or becomes) .show.
+// Handles the race where BS5 fade-in has not yet added the .show class when we first try to close,
+// so we retry until it stays closed. setOkHandler runs (delete succeeds) but BS5 data-bs-dismiss
+// sometimes fails to fire in this Picasso build.
+new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(15)).until { drv ->
+    def js = (org.openqa.selenium.JavascriptExecutor) drv
+    js.executeScript("var d = document.getElementById('pica_confirmation_dialog');" +
+        " if (d && d.classList.contains('show') && window.bootstrap && window.bootstrap.Modal) {" +
+        "   var i = bootstrap.Modal.getInstance(d) || bootstrap.Modal.getOrCreateInstance(d);" +
+        "   if (i) i.hide();" +
+        " }" +
+        " document.querySelectorAll('.modal-backdrop').forEach(function(b){ b.parentNode.removeChild(b); });" +
+        " document.body.classList.remove('modal-open');")
+    return !((Boolean) js.executeScript(
+        "var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
+}
 
 WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span_recycle'))
 

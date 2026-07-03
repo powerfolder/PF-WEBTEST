@@ -109,7 +109,7 @@ void restoreVersion(int rowIndex) {
 	WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(10))
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//*[@id="pica_restore_versions"]/div')))
 	WebElement button = wait.until(ExpectedConditions.elementToBeClickable(
-		By.xpath("(//div[@id='pica_restore_versions']//table/tbody/tr/td[last()]/button[not(contains(@class,'disabled'))])[" + rowIndex + "]")
+		By.xpath("(//div[@id='pica_restore_versions']//tbody/tr//a[.//span[contains(concat(' ',normalize-space(@class),' '),' glyphicons-restart ')]])[" + rowIndex + "]")
 	))
 
 	button.click()

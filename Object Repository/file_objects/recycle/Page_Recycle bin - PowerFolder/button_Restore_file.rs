@@ -14,7 +14,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_restore_versions']//tbody/tr[2]/td[last()]/button</value>
+         <value>(//div[@id='pica_restore_versions']//tbody/tr//a[.//span[contains(concat(' ',normalize-space(@class),' '),' glyphicons-restart ')]])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
