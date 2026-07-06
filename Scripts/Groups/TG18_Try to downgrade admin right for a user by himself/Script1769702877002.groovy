@@ -91,7 +91,8 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups 
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
-WebElement inputElement = driver.findElement(By.xpath('//*[@id=\'pica_group_accounts\']/div[1]/div[1]/input'))
+// Semantic locate: pica-taginput-input class — stable against new .pica-members-filter dropdown that shifted div positions in group.vm:156
+WebElement inputElement = driver.findElement(By.xpath("//*[@id='pica_group_accounts']//input[contains(concat(' ',normalize-space(@class),' '),' pica-taginput-input ')]"))
 
 inputElement.sendKeys(user)
 
@@ -167,8 +168,43 @@ WebUI.refresh()
 
 WebUI.delay(2)
 
-WebUI.verifyElementText(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Permission'), 
-    'Member') 
+// Verify the self-downgrade persisted by re-opening the group's Members tab and checking that the user's
+// dropdown-toggle now shows "Is member" (not "Is member and admin"). The old Permission selector
+// //body/div[2]/…/td[5]/button no longer exists after the dashboard redesign — the groups list
+// has no dedicated permission column, so we anchor on the user's own row in pica_group_accounts instead.
+userLocalPart = user.contains('@') ? user.substring(0, user.indexOf('@')) : user
+
+WebElement grpBtn = findGroup(GlobalVariable.GroupName)
+
+WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(grpBtn))
+
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
+
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
+
+new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
+    ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]")))
+
+// Open the user's role dropdown so the current selection is visible (marked by glyphicons-check in combo.js:144-149).
+String userToggleXpath = "//div[@id='pica_group_accounts']//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]//button[contains(concat(' ',normalize-space(@class),' '),' dropdown-toggle ')]"
+
+WebElement userToggle = driver.findElement(By.xpath(userToggleXpath))
+WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(userToggle))
+
+new WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
+    ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='pica_group_accounts']//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]")))
+
+// Verify: within the opened dropdown, the option carrying the active check icon (glyphicons-check) is
+// "Is member" — not "Is member and admin". combo.js:144-149 sets glyphicons-check on the currently selected radio option.
+TestObject isMemberRoleSelected = new TestObject('isMemberRoleSelected')
+isMemberRoleSelected.addProperty('xpath', ConditionType.EQUALS,
+    "//div[@id='pica_group_accounts']//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]" +
+    "//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]" +
+    "//a[@data-dropdown-group='permission'" +
+    " and .//span[contains(concat(' ',normalize-space(@class),' '),' glyphicons-check ')]" +
+    " and (normalize-space(.)='Is member' or normalize-space(.)='Ist Mitglied')]")
+
+WebUI.verifyElementPresent(isMemberRoleSelected, 15)
 
 WebUI.closeBrowser()
 

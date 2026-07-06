@@ -97,7 +97,7 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups 
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
-WebElement inputElement = driver.findElement(By.xpath('//*[@id=\'pica_group_accounts\']/div[1]/div[1]/input'))
+WebElement inputElement = driver.findElement(By.xpath("//*[@id='pica_group_accounts']//input[contains(concat(' ',normalize-space(@class),' '),' pica-taginput-input ')]"))
 
 inputElement.sendKeys(user)
 
