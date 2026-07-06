@@ -24,8 +24,8 @@ WebUI.click(findTestObject('News_User/Page_News - PowerFolder/News'))
 
 WebUI.delay(2)
 
-// Verify News page
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'News - PowerFolder')
+// Verify Activity page (page was renamed from "News" — activity.vm:1 sets TITLE = "Activity - $skinTitle")
+WebUI.verifyEqual(WebUI.getWindowTitle(), 'Activity - PowerFolder')
 
 // Browser back button
 WebUI.back()

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[4]/div/div/a</value>
+         <value>//div[contains(concat(' ',normalize-space(@class),' '),' pica-box ') and .//h2[@id='dashboard_logs_label']]//a[@href='/admin/logs']</value>
       </entry>
       <entry>
          <key>CSS</key>

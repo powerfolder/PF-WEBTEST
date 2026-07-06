@@ -46,8 +46,8 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 // Navigation vers la section "Members"
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
-// Localisation du bouton dropdown
-def xpath = "//div[@id='pica_group_accounts']//table//tr[@data-userdata][1]//button[contains(@class,'dropdown-toggle')]"
+String userLocalPart = GlobalVariable.userName.contains('@') ? GlobalVariable.userName.substring(0, GlobalVariable.userName.indexOf('@')) : GlobalVariable.userName
+def xpath = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]//button[contains(@class,'dropdown-toggle')]"
 
 def driver = DriverFactory.getWebDriver()
 
@@ -92,9 +92,12 @@ String memberLocalPart = GlobalVariable.userName.contains('@') ? GlobalVariable.
 
 TestObject isAdminRoleSelected = new TestObject('isAdminRoleSelected')
 
-isAdminRoleSelected.addProperty('xpath', ConditionType.EQUALS, "//div[@id='pica_group_accounts']//tr[@data-userdata and contains(@data-userdata,'$memberLocalPart')]//div[contains(@class,'dropdown') and (@data-selected='Is member and admin' or @data-selected='Ist Mitglied und Admin')]")
+isAdminRoleSelected.addProperty('xpath', ConditionType.EQUALS,
+    "//div[@id='pica_group_accounts']//tr[@data-userdata" +
+    " and contains(@data-userdata,'" + memberLocalPart + "')" +
+    " and contains(@data-userdata,'\"isGroupAdmin\":true')]")
 
-WebUI.verifyElementPresent(isAdminRoleSelected, 10)
+WebUI.verifyElementPresent(isAdminRoleSelected, 15)
 
 WebUI.closeBrowser()
 

@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[(text() = 'Folders' or . = 'Folders')]</value>
+         <value>//ul[@id='pica_group_nav']/li/a[.//lang[@name='label_folders']]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>li.hidden-xs.active > a</value>
+         <value>#pica_group_nav li > a:has(lang[name='label_folders'])</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
