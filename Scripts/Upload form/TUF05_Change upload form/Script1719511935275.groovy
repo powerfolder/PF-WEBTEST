@@ -56,15 +56,10 @@ settings_button.click()
 // Trouver le champ de texte et le vider avant de définir le nouveau texte
 TestObject descriptionField = findTestObject('1Upload_Form/Page_Error - PowerFolder/Page_Folders - PowerFolder/change_description_1')
 
-WebElement descriptionElement = WebUiCommonHelper.findWebElement(descriptionField, 5)
-
-// Sélectionner tout le texte et le supprimer
-descriptionElement.sendKeys(Keys.chord(Keys.CONTROL, 'a'))
-
-descriptionElement.sendKeys(Keys.DELETE)
-
-// Définir le nouveau texte
-WebUI.setText(descriptionField, 'change description')
+WebUI.click(descriptionField)
+WebUI.sendKeys(descriptionField, Keys.chord(Keys.END))
+WebUI.sendKeys(descriptionField, Keys.BACK_SPACE.toString() * 80)
+WebUI.sendKeys(descriptionField, 'change description')
 
 WebUI.scrollToElement(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Save'), 1)
 

@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>lang[name=&quot;label_news&quot;]</value>
+         <value>#pica_menu lang[name=&quot;label_activity&quot;], #pica_menu lang[name=&quot;label_news&quot;]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[1]/table/tbody/tr[1]/td/a/span</value>
+         <value>//nav[@id='pica_menu']//a[.//lang[@name='label_activity' or @name='label_news']]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

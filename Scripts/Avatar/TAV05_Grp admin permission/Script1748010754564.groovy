@@ -46,7 +46,7 @@ WebUI.delay(2)
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
 // Localisation du bouton via XPath et clic
-def xpath = '/html/body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[4]/div[2]/table/tbody/tr[2]/td[3]/div/button'
+def xpath = '(//div[@id=\'pica_group_accounts\']//table/tbody/tr[@data-userdata])[2]//button[contains(@class,\'dropdown-toggle\')]'
 
 def driver = DriverFactory.getWebDriver()
 

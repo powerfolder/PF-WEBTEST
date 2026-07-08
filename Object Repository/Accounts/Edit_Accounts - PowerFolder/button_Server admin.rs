@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[2]/div[1]/div[2]/div[3]/div/div/div[3]/div/div[1]/div[1]/div[1]/button</value>
+         <value>//div[contains(@class,'pica-button-checkbox')][.//input[@id='pica_account_server_admin']]/button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

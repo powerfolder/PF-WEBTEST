@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_restore_versions']/div/table/tbody/tr[2]/td[6]/button</value>
+         <value>(//div[@id='pica_restore_versions']//tbody/tr//a[.//span[contains(concat(' ',normalize-space(@class),' '),' glyphicons-download ')]])[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>button.btn.btn-default</value>
+         <value>#pica_restore_versions tbody tr a > span.glyphicons-download</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

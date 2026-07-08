@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//lang[@name='string_nothing_found']</value>
+         <value>//table[@id='share_table']//tr[contains(concat(' ',normalize-space(@class),' '),' pica-table-empty ')]//lang[@name='string_nothing_found']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>lang[name=&quot;string_nothing_found&quot;]</value>
+         <value>#share_table tr.pica-table-empty lang[name=&quot;string_nothing_found&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

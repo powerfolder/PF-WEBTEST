@@ -37,9 +37,11 @@ WebUI.setText(findTestObject('Accounts/InputPassword'), GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Accounts/SaveButton'))
 
+WebUI.delay(5)
+
 WebUI.refresh()
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebElement btn = findAccount(emailId)
 
@@ -88,6 +90,13 @@ String generateRandomEmail() {
 WebElement findAccount(String emailId) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + emailId) + '\')]/td[1]/span'))
+    String key = emailId.contains('@') ? emailId.substring(0, emailId.indexOf('@')) : emailId
+
+    new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
+        org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
+            By.xpath("//table[@id='accounts_table']/tbody/tr[@id]")))
+
+    String xp = "//table[@id='accounts_table']/tbody/tr[contains(@data-search-keys,'" + key + "') or .//a[contains(@title,'" + key + "') or contains(text(),'" + key + "')]]/td[1]/span"
+    return driver.findElement(By.xpath(xp))
 }
 

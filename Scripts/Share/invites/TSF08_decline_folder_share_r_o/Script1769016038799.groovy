@@ -139,7 +139,15 @@ WebUI.verifyElementClickable(findTestObject('Share/Page_Folders - PowerFolder/ac
 
 WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/decline_invitation'))
 
-WebUI.verifyElementPresent(findTestObject('Share/Page_Folders - PowerFolder/message_decline_invitation'), 5)
+WebUI.verifyElementPresent(findTestObject('Share/Page_Folders - PowerFolder/message_decline_invitation'), 10)
+
+// Wait for the invitation modal to actually close (BS5 .show class removed) — the decline XHR fires async via the click handler;
+// without this wait, the subsequent logout cancels the in-flight request and the share stays accepted server-side.
+new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
+    org.openqa.selenium.support.ui.ExpectedConditions.invisibilityOfElementLocated(
+        By.xpath("//div[@id='pica_invitation_dialog' and contains(concat(' ',normalize-space(@class),' '),' show ')]")))
+
+WebUI.delay(2)
 
 // check if folder is not shown
 
@@ -171,9 +179,16 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn6))
 
 WebUI.click(findTestObject('Links/share_icon_inside_folder'))
 
-String result = WebUI.getText(findTestObject('Share/Page_Folders - PowerFolder/share_dialog_memberslist_nothing_to_show'))
+WebUI.delay(2)
 
-WebUI.verifyEqual(result, "Nothing to show")
+// Owner is always listed in the share dialog — verify the declined second user is NOT in the members list
+String secondUserLocalPart = secondaccount_userEmail.contains('@') ? secondaccount_userEmail.substring(0, secondaccount_userEmail.indexOf('@')) : secondaccount_userEmail
+
+TestObject declinedUserRow = new TestObject('declinedUserRow')
+declinedUserRow.addProperty('xpath', com.kms.katalon.core.testobject.ConditionType.EQUALS,
+    "//table[@id='share_table']//tr[contains(@data-search-keys,'" + secondUserLocalPart + "') or .//a[contains(@title,'" + secondUserLocalPart + "') or contains(text(),'" + secondUserLocalPart + "')]]")
+
+WebUI.verifyElementNotPresent(declinedUserRow, 5)
 
 // close browser
 

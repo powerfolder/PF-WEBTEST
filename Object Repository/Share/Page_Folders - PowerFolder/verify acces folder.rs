@@ -7,7 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[2]/table/tbody/tr/td/div/div/button[2]</value>
+         <value>//div[@id='pica-files-create-dropdown']/a[contains(@class,'dropdown-toggle')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#pica-files-create-dropdown > a.dropdown-toggle</value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -17,4 +21,28 @@
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>570fdf2d-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dropdown-toggle</value>
+      <webElementGuid>570fdf2d-0001-0001-0001-000000000002</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-bs-toggle</name>
+      <type>Main</type>
+      <value>dropdown</value>
+      <webElementGuid>570fdf2d-0001-0001-0001-000000000003</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

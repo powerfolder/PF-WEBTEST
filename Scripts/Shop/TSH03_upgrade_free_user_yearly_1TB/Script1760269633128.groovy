@@ -104,6 +104,8 @@ WebUI.refresh()
 
 WebUI.click(findTestObject('External links/Page_Pricing - PowerFolder/label_Annuel'))
 
+WebUI.delay(2)
+
 //Verify that the storage is 1 TB.
 WebUI.verifyElementText(findTestObject('Page_PowerFolder - shop_stripe/Cloud 1 TB_Current_y'), 'Current')
 

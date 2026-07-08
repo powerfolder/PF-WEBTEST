@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TDD08_Upload folder via drag and drop into a folder from folder list</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c81f0828-5b35-4891-ba97-9ca9353ac1a5</testCaseGuid>
+</TestCaseEntity>

@@ -53,7 +53,7 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 // Attendre la visibilité de la première ligne du tableau
-WebElement firstElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[2]/table/tbody/tr[1]')))
+WebElement firstElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//table[@id=\'versions_table\']/tbody/tr[@id][1]')))
 
 // Cliquer sur le premier élément du tableau
 firstElement.click()
@@ -91,7 +91,7 @@ WebElement btn3 = findFolder(folderName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn3))
 
 // Attendre la visibilité de la première ligne du tableau
-WebElement firstElement_1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[2]/table/tbody/tr[1]')))
+WebElement firstElement_1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//table[@id=\'versions_table\']/tbody/tr[@id][1]')))
 
 // Cliquer sur le premier élément du tableau
 firstElement_1.click()
@@ -129,7 +129,7 @@ WebElement btn6 = findFolder(folderName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn6))
 
 // Attendre la visibilité de la première ligne du tableau
-WebElement firstElement_2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[2]/table/tbody/tr[1]')))
+WebElement firstElement_2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//table[@id=\'versions_table\']/tbody/tr[@id][1]')))
 
 // Cliquer sur le premier élément du tableau
 firstElement_2.click()
@@ -167,7 +167,7 @@ WebElement btn9 = findFolder(folderName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn9))
 
 // Attendre la visibilité de la première ligne du tableau
-WebElement firstElement_3 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[2]/table/tbody/tr[1]')))
+WebElement firstElement_3 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//table[@id=\'versions_table\']/tbody/tr[@id][1]')))
 
 // Cliquer sur le premier élément du tableau
 firstElement_3.click()

@@ -7,7 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[4]/div/div/div[2]/div[2]/table/tbody/tr[2]/td[3]/div/ul/li[5]/a</value>
+         <value>(//table[@id='share_table']/tbody//ul[contains(@class,'dropdown-menu')]//a[@data-dropdown-group='permissions'])[4]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#share_table tbody ul.dropdown-menu a[data-dropdown-group='permissions']:nth-of-type(4)</value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -17,4 +21,28 @@
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>6f742d64-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-dropdown-group</name>
+      <type>Main</type>
+      <value>permissions</value>
+      <webElementGuid>6f742d64-0001-0001-0001-000000000002</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-dropdown-type</name>
+      <type>Main</type>
+      <value>radio</value>
+      <webElementGuid>6f742d64-0001-0001-0001-000000000003</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//lang[@name='action_view']</value>
+         <value>//a[@href='/admin/logs' and .//lang[@name='action_view']]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

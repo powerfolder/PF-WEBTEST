@@ -8,7 +8,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//td[2]/div/div/div[2]/div/div/button/i</value>
+         <value>(//table[@id='share_table']//tr[.//span[contains(@class,'glyphicons-wallet')]])[1]//button[.//i[contains(@class,'glyphicons-copy')]]</value>
       </entry>
       <entry>
          <key>CSS</key>

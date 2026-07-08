@@ -69,14 +69,26 @@ String folderName_webdav = getRandomFolderName()
 
 CustomKeywords.'utils.WebDav.createFolder'(base, folderName_webdav, user, pass)
 
+// Clear persisted search query (sessionStorage in files.js) so the previous filter does not exclude the new folder
+WebUI.executeJavaScript("try { sessionStorage.removeItem('searchQuery'); } catch (e) {}", null)
+
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/lang_Folders'))
+
+// Force a fresh fetch — WebDAV-created folder only appears after the UI re-queries the server
+WebUI.refresh()
+
+WebUI.delay(3)
 
 // check present of toplvl folder made via webdav in web
 WebUI.setText(findTestObject('Folders/inputSearch'), folderName_webdav)
 
 WebDriver webdav_driver = DriverFactory.getWebDriver()
 
-WebElement folder_webdav = webdav_driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName_webdav) + 
+new org.openqa.selenium.support.ui.WebDriverWait(webdav_driver, java.time.Duration.ofSeconds(15)).until(
+    org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
+        By.xpath("//*[contains(@data-search-keys, '" + folderName_webdav + "')]/td[1]/span")))
+
+WebElement folder_webdav = webdav_driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName_webdav) +
         '\')]/td[1]/span'))
 
 boolean is_webdav_folderCreated = folder_webdav.isDisplayed()

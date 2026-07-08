@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>div:has(> label#pica_link_disable_download_label) > span#disable_icon > i</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[10]/div/div/div[2]/div[4]/span/i</value>
+         <value>//div[./label[@id='pica_link_disable_download_label']]/span[@id='disable_icon']/i</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -54,7 +54,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@id='disable_icon'])[3]</value>
+      <value>//div[./label[@id='pica_link_disable_download_label']]/span[@id='disable_icon']/i</value>
       <webElementGuid>ee5ec84a-d34d-4e08-bb13-261e78d1aee3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>

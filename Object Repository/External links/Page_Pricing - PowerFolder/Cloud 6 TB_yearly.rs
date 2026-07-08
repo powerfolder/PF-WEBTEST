@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='yearlyPlans']/div[3]/a</value>
+         <value>//div[@id='yearlyPlans']//div[contains(@class,'plan-card')][.//div[contains(@class,'plan-title') and contains(text(),'6 TB')]]//a[contains(@class,'plan-cta')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

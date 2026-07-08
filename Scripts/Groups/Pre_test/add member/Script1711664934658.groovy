@@ -78,6 +78,12 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Group
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
+WebUI.refresh()
+
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Groups/Search group'), groupName)
+
 WebUI.delay(2)
 
 def btn = findGroup(groupName)
@@ -90,13 +96,31 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups 
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
-WebElement inputElement = driver.findElement(By.xpath('//*[@id=\'pica_group_accounts\']/div[1]/div[1]/input'))
+// Semantic locate: pica-taginput-input class — stable against new .pica-members-filter dropdown that shifted div positions in group.vm:156
+WebElement inputElement = driver.findElement(By.xpath("//*[@id='pica_group_accounts']//input[contains(concat(' ',normalize-space(@class),' '),' pica-taginput-input ')]"))
 
 inputElement.sendKeys(user)
 
+new WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
+    ExpectedConditions.elementToBeClickable(
+        By.xpath("(//div[@id='pica_group_accounts']//ul[contains(@class,'pica-taginput-dropdown')]/li[not(contains(@class,'pica-taginput-dropdown-fixed'))])[1]/a")))
+
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
 
+new WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
+    ExpectedConditions.presenceOfElementLocated(
+        By.xpath("//div[@id='pica_group_accounts']//table//tr[@data-userdata]")))
+
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
+
+new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
+    ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id='pica_group_dialog' and contains(concat(' ',normalize-space(@class),' '),' show ')]")))
+
+WebUI.refresh()
+
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Groups/Search group'), GlobalVariable.GroupName)
 
 WebUI.delay(2)
 
@@ -107,7 +131,11 @@ WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn
 @Keyword
 WebElement findGroup(String groupName) {
     WebDriver driver = DriverFactory.getWebDriver()
+    new WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
+        ExpectedConditions.presenceOfElementLocated(
+            By.xpath("//table[@id='groups_table']/tbody/tr[@id]")))
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + GlobalVariable.GroupName) + '\')]/td[1]/span'))
+    String xp = "//table[@id='groups_table']/tbody/tr[contains(@data-search-keys,'" + groupName + "') or .//a[contains(text(),'" + groupName + "')]]/td[1]/span"
+    return driver.findElement(By.xpath(xp))
 }
 

@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[2]/table/tbody/tr[1]/td[2]/span/a</value>
+         <value>(//table[@id='files_files_table']/tbody/tr[@draggable='false'])[1]//a[contains(@class,'pica-name')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

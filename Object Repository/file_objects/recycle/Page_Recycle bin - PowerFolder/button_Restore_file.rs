@@ -14,7 +14,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[2]/div/table/tbody/tr[2]/td[7]/button</value>
+         <value>(//div[@id='pica_restore_versions']//tbody/tr//a[.//span[contains(concat(' ',normalize-space(@class),' '),' glyphicons-restart ')]])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -33,7 +33,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>btn btn-default</value>
+      <value>btn btn-secondary</value>
       <webElementGuid>f777fd69-915f-45b6-bafa-91dfeb2815a1</webElementGuid>
    </webElementProperties>
    <webElementProperties>

@@ -11,10 +11,22 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[2]/table/tbody/tr/td/div/div/button[3]</value>
+         <value>//div[@id='pica-files-create-dropdown']//li[contains(@class,'files-ui-create-dir')]/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#pica-files-create-dropdown li.files-ui-create-dir > a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>03babbe1-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

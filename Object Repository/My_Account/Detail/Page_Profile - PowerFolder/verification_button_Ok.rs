@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[7]/div/div/div[3]/button</value>
+         <value>//div[@id='profile_verification_dialog']//div[contains(@class,'modal-footer')]//button[.//lang[@name='button_ok']]</value>
       </entry>
       <entry>
          <key>CSS</key>

@@ -44,6 +44,23 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
 
+// Poll every 500ms: force-close the confirmation dialog if it is (or becomes) .show.
+// Handles the race where BS5 fade-in has not yet added the .show class when we first try to close,
+// so we retry until it stays closed. setOkHandler runs (delete succeeds) but BS5 data-bs-dismiss
+// sometimes fails to fire in this Picasso build.
+new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(15)).until { drv ->
+    def js = (org.openqa.selenium.JavascriptExecutor) drv
+    js.executeScript("var d = document.getElementById('pica_confirmation_dialog');" +
+        " if (d && d.classList.contains('show') && window.bootstrap && window.bootstrap.Modal) {" +
+        "   var i = bootstrap.Modal.getInstance(d) || bootstrap.Modal.getOrCreateInstance(d);" +
+        "   if (i) i.hide();" +
+        " }" +
+        " document.querySelectorAll('.modal-backdrop').forEach(function(b){ b.parentNode.removeChild(b); });" +
+        " document.body.classList.remove('modal-open');")
+    return !((Boolean) js.executeScript(
+        "var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
+}
+
 WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span_recycle'))
 
 WebElement btn = findFolder(folderName)
@@ -53,7 +70,7 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(5))
 
 // Attendre la visibilité de la première ligne du tableau
-WebElement firstElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[2]/table/tbody/tr[1]')))
+WebElement firstElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//table[@id=\'versions_table\']/tbody/tr[@id][1]')))
 
 // Cliquer sur le premier élément du tableau
 firstElement.click()
@@ -84,6 +101,23 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
 
+// Poll every 500ms: force-close the confirmation dialog if it is (or becomes) .show.
+// Handles the race where BS5 fade-in has not yet added the .show class when we first try to close,
+// so we retry until it stays closed. setOkHandler runs (delete succeeds) but BS5 data-bs-dismiss
+// sometimes fails to fire in this Picasso build.
+new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(15)).until { drv ->
+    def js = (org.openqa.selenium.JavascriptExecutor) drv
+    js.executeScript("var d = document.getElementById('pica_confirmation_dialog');" +
+        " if (d && d.classList.contains('show') && window.bootstrap && window.bootstrap.Modal) {" +
+        "   var i = bootstrap.Modal.getInstance(d) || bootstrap.Modal.getOrCreateInstance(d);" +
+        "   if (i) i.hide();" +
+        " }" +
+        " document.querySelectorAll('.modal-backdrop').forEach(function(b){ b.parentNode.removeChild(b); });" +
+        " document.body.classList.remove('modal-open');")
+    return !((Boolean) js.executeScript(
+        "var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
+}
+
 WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span_recycle'))
 
 WebElement btn3 = findFolder(folderName)
@@ -91,7 +125,7 @@ WebElement btn3 = findFolder(folderName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn3))
 
 // Attendre la visibilité de la première ligne du tableau
-WebElement firstElement_1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[2]/table/tbody/tr[1]')))
+WebElement firstElement_1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//table[@id=\'versions_table\']/tbody/tr[@id][1]')))
 
 // Cliquer sur le premier élément du tableau
 firstElement_1.click()
@@ -122,6 +156,23 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
 
+// Poll every 500ms: force-close the confirmation dialog if it is (or becomes) .show.
+// Handles the race where BS5 fade-in has not yet added the .show class when we first try to close,
+// so we retry until it stays closed. setOkHandler runs (delete succeeds) but BS5 data-bs-dismiss
+// sometimes fails to fire in this Picasso build.
+new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(15)).until { drv ->
+    def js = (org.openqa.selenium.JavascriptExecutor) drv
+    js.executeScript("var d = document.getElementById('pica_confirmation_dialog');" +
+        " if (d && d.classList.contains('show') && window.bootstrap && window.bootstrap.Modal) {" +
+        "   var i = bootstrap.Modal.getInstance(d) || bootstrap.Modal.getOrCreateInstance(d);" +
+        "   if (i) i.hide();" +
+        " }" +
+        " document.querySelectorAll('.modal-backdrop').forEach(function(b){ b.parentNode.removeChild(b); });" +
+        " document.body.classList.remove('modal-open');")
+    return !((Boolean) js.executeScript(
+        "var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
+}
+
 WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span_recycle'))
 
 WebElement btn6 = findFolder(folderName)
@@ -129,7 +180,7 @@ WebElement btn6 = findFolder(folderName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn6))
 
 // Attendre la visibilité de la première ligne du tableau
-WebElement firstElement_2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[2]/table/tbody/tr[1]')))
+WebElement firstElement_2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//table[@id=\'versions_table\']/tbody/tr[@id][1]')))
 
 // Cliquer sur le premier élément du tableau
 firstElement_2.click()
@@ -160,6 +211,23 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/button_Yes'))
 
+// Poll every 500ms: force-close the confirmation dialog if it is (or becomes) .show.
+// Handles the race where BS5 fade-in has not yet added the .show class when we first try to close,
+// so we retry until it stays closed. setOkHandler runs (delete succeeds) but BS5 data-bs-dismiss
+// sometimes fails to fire in this Picasso build.
+new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(15)).until { drv ->
+    def js = (org.openqa.selenium.JavascriptExecutor) drv
+    js.executeScript("var d = document.getElementById('pica_confirmation_dialog');" +
+        " if (d && d.classList.contains('show') && window.bootstrap && window.bootstrap.Modal) {" +
+        "   var i = bootstrap.Modal.getInstance(d) || bootstrap.Modal.getOrCreateInstance(d);" +
+        "   if (i) i.hide();" +
+        " }" +
+        " document.querySelectorAll('.modal-backdrop').forEach(function(b){ b.parentNode.removeChild(b); });" +
+        " document.body.classList.remove('modal-open');")
+    return !((Boolean) js.executeScript(
+        "var el = document.getElementById('pica_confirmation_dialog'); return !!(el && el.classList.contains('show'));"))
+}
+
 WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span_recycle'))
 
 WebElement btn9 = findFolder(folderName)
@@ -167,7 +235,7 @@ WebElement btn9 = findFolder(folderName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn9))
 
 // Attendre la visibilité de la première ligne du tableau
-WebElement firstElement_3 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//div[2]/table/tbody/tr[1]')))
+WebElement firstElement_3 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath('//table[@id=\'versions_table\']/tbody/tr[@id][1]')))
 
 // Cliquer sur le premier élément du tableau
 firstElement_3.click()

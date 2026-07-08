@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[2]/div[1]/div[2]/div/a[1]</value>
+         <value>//a[@id='pica_organization_avatar_change']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

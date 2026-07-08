@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[2]/div[2]/ul/li/div[3]/div/span</value>
+         <value>(//ul[contains(@class,'pica-timeline')]//div[contains(@class,'pica-timeline-files')]//span[contains(@class,'filetypes-')])[1]</value>
       </entry>
       <entry>
          <key>CSS</key>

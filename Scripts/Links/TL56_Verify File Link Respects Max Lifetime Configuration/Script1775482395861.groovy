@@ -151,9 +151,16 @@ println(('current valid till date = [' + currentValue) + ']')
 
 assert (currentValue != null) && (currentValue.trim() != '')
 
-String cleanCurrentValue = currentValue.replace('until ', '').trim()
+String cleanCurrentValue = currentValue.replaceFirst('(?i)^(until|bis|jusqu\'à|hasta|fino al)\\s+', '').trim()
 
-Date currentDate = new SimpleDateFormat('dd MMMM yyyy HH:mm', Locale.ENGLISH).parse(cleanCurrentValue)
+Date currentDate = null
+for (Locale loc : [Locale.ENGLISH, Locale.GERMAN, Locale.FRENCH, Locale.ITALIAN, new Locale('es')]) {
+    try {
+        currentDate = new SimpleDateFormat('dd MMMM yyyy HH:mm', loc).parse(cleanCurrentValue)
+        break
+    } catch (java.text.ParseException ignore) {}
+}
+assert currentDate != null : 'Unable to parse date: ' + cleanCurrentValue
 
 Date tillDate = new SimpleDateFormat('yyyy-MM-dd\'T\'HH:mm').parse(tillDateTime)
 

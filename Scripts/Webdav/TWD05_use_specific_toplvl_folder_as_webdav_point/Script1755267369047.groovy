@@ -70,16 +70,29 @@ assert web_toplvl_present
 
 // open toplvl folder
 
+// Clear persisted search query so the previous filter does not exclude the WebDAV-created subfolder
+WebUI.executeJavaScript("try { sessionStorage.removeItem('searchQuery'); } catch (e) {}", null)
+
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/lang_Folders'))
+
+WebUI.refresh()
+
+WebUI.delay(3)
 
 WebElement btn = findFolder(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
+WebUI.delay(2)
+
 // verify present of sublvl folder in web
 WebDriver webdav_driver = DriverFactory.getWebDriver()
 
-WebElement folder_webdav = webdav_driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName_webdav) + 
+new org.openqa.selenium.support.ui.WebDriverWait(webdav_driver, java.time.Duration.ofSeconds(15)).until(
+    org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
+        By.xpath("//*[contains(@data-search-keys, '" + folderName_webdav + "')]/td[1]/span")))
+
+WebElement folder_webdav = webdav_driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName_webdav) +
         '\')]/td[1]/span'))
 
 boolean is_webdav_folderCreated = folder_webdav.isDisplayed()
@@ -96,16 +109,25 @@ for (int i = 1; i <= 10; i++) {
 	String filename = "TWD05_${getTimestamp()}_${i}.txt"
 	CustomKeywords.'utils.WebDav.uploadFile'(base, folderName_webdav + '/' + filename, user, pass, 32768)
 	WebUI.delay(3)
+
+	// Clear persisted search query so the previous filename filter does not exclude the new file after refresh
+	WebUI.executeJavaScript("try { sessionStorage.removeItem('searchQuery'); } catch (e) {}", null)
+
 	WebUI.refresh() //reload page
+	WebUI.delay(2)
 	// verifiy present of files via web
 	WebUI.setText(findTestObject('Folders/inputSearch'), filename)
-    
+
     WebDriver filedriver = DriverFactory.getWebDriver()
-    
+
+    new org.openqa.selenium.support.ui.WebDriverWait(filedriver, java.time.Duration.ofSeconds(15)).until(
+        org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
+            By.xpath("//*[contains(@data-search-keys, '${filename}')]/td[1]/span")))
+
     WebElement fileElement = filedriver.findElement(
         By.xpath("//*[contains(@data-search-keys, '${filename}')]/td[1]/span")
     )
-    
+
     boolean isFileCreated = fileElement.isDisplayed()
     WebUI.verifyEqual(isFileCreated, true)
 }

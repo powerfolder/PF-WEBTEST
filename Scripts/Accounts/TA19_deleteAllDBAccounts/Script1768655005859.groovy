@@ -61,7 +61,9 @@ WebUI.click(findTestObject('Accounts/SaveButton'))
 
 WebUI.refresh()
 
-WebElement btn = findAccount(GlobalVariable.userEmail)
+WebUI.delay(5)
+
+WebElement btn = findFirstAccount()
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
@@ -103,10 +105,13 @@ WebUI.verifyEqual(Present, true)
 
 WebUI.closeBrowser()
 
-WebElement findAccount(String emailId) {
+WebElement findFirstAccount() {
     WebDriver driver = DriverFactory.getWebDriver()
+    new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
+        org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
+            By.xpath("//table[@id='accounts_table']/tbody/tr[@id]")))
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + emailId) + '\')]/td[1]/span'))
+    return driver.findElement(By.xpath("(//table[@id='accounts_table']/tbody/tr[@id])[1]/td[1]/span"))
 }
 
 String generateRandomString(int length) {

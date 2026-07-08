@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[6]/div[2]</value>
+         <value>//div[@id='pica_account_organizations']//tbody//tr//td[contains(@class,'pica-name')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#item_2075156425 > td.pica-name.pica-overflow.pica-vertical-middle.text-left</value>
+         <value>#pica_account_organizations tbody tr td.pica-name</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

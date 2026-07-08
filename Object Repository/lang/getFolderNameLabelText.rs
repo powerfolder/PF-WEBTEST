@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[8]/div/div/div[2]/h5</value>
+         <value>//div[@id='pica_input_dialog']//h5[contains(@class,'pica-dialog-description')]</value>
       </entry>
       <entry>
          <key>BASIC</key>

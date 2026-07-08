@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/div[1]/div[2]/table/tbody/tr/td[8]</value>
+         <value>(//table[@id='profile_devices_table']/tbody/tr[@id])[1]/td[8]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

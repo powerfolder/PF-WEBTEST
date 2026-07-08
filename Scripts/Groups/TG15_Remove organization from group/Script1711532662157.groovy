@@ -39,21 +39,29 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 
 WebUI.click(findTestObject('Page_Groups - PowerFolder/a_Organisationen'))
 
+// Wait for organizations inputlist to finish loading before selecting the row
+new org.openqa.selenium.support.ui.WebDriverWait(DriverFactory.getWebDriver(), java.time.Duration.ofSeconds(15)).until(
+    org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
+        By.xpath("//div[@id='pica_group_organizations']//table//tr[@data-userdata]")))
+
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/td_Organisation'))
 
 WebUI.delay(1)
 
-WebElement element = DriverFactory.getWebDriver().findElement(By.xpath('//*[@id="pica_group_organizations"]/div[2]/table/thead[1]/tr/th[3]/div/a'))
+// Remove action lives in the table's "selection" thead (visible once a row is selected) — anchored on .pica-inputlist-remove from input-list.js
+WebElement element = DriverFactory.getWebDriver().findElement(By.xpath("//div[@id='pica_group_organizations']//a[contains(concat(' ',normalize-space(@class),' '),' pica-inputlist-remove ')]"))
 
 WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(element))
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Yes'))
 
-WebUI.delay(1)
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
-WebUI.verifyElementPresent(findTestObject('Groups/Page_Groups - PowerFolder/div_Group updated'), 1)
+WebUI.verifyElementPresent(findTestObject('Groups/Page_Groups - PowerFolder/div_Group updated'), 2)
+
+WebUI.delay(2)
 
 WebElement btn1 = findGroup(GlobalVariable.GroupName)
 
@@ -65,8 +73,13 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 
 WebUI.click(findTestObject('Page_Groups - PowerFolder/a_Organisationen'))
 
-verifyNoElementWithorganizationNamePresent(('//*[@id="pica_group_organizations"]/div[2]//*[contains(text(), \'' + GlobalVariable.organisationName) + 
-    '\')]')
+// Wait until the organizations inputlist has finished its AJAX load —
+// either a data row appears, or the "Nothing to show" empty marker. Otherwise the verify could fire while the table is briefly empty.
+new org.openqa.selenium.support.ui.WebDriverWait(DriverFactory.getWebDriver(), java.time.Duration.ofSeconds(15)).until(
+    org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
+        By.xpath("//div[@id='pica_group_organizations']//table//tr[@data-userdata] | //div[@id='pica_group_organizations']//tr[contains(concat(' ',normalize-space(@class),' '),' pica-table-empty ')]")))
+
+verifyNoElementWithorganizationNamePresent("//div[@id='pica_group_organizations']//tr[@data-userdata][.//*[contains(normalize-space(.), '" + GlobalVariable.organisationName + "')]]")
 
 WebUI.delay(2)
 
@@ -90,9 +103,10 @@ void verifyNoElementWithorganizationNamePresent(String userNameXpath) {
     List<WebElement> elements = driver.findElements(By.xpath(userNameXpath))
 
     if (elements.size() == 0) {
-        println("No element containing folder name '$GlobalVariable.organisationName' found.")
+        println("No element containing organization name '${GlobalVariable.organisationName}' found — remove succeeded.")
     } else {
-        println("Elements containing folder name '$GlobalVariable.organisationName' found. Verification failed.")
+        WebUiBuiltInKeywords.comment("Organization '${GlobalVariable.organisationName}' still present after remove — verification failed.")
+        assert false : "Organization '${GlobalVariable.organisationName}' still present in pica_group_organizations after remove."
     }
 }
 

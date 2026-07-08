@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//tr[4]/td/a/lang</value>
+         <value>//nav[@id='pica_menu']//a[.//lang[@name='label_recycle_bin']]</value>
       </entry>
       <entry>
          <key>CSS</key>

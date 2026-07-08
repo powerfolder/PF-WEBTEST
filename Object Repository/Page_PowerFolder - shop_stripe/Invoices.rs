@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_menu']/table/tbody/tr[6]/td</value>
+         <value>//nav[@id='pica_menu']//a[@data-tooltip='web.help.main.invoices']</value>
       </entry>
       <entry>
          <key>CSS</key>

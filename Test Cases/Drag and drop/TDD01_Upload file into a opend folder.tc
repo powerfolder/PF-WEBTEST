@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TDD01_Upload file into a opend folder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a978ba24-fd05-4a57-934b-984d31498b60</testCaseGuid>
+</TestCaseEntity>

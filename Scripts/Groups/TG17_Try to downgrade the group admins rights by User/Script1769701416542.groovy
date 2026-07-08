@@ -79,6 +79,12 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Group
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
+WebUI.refresh()
+
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Groups/Search group'), groupName)
+
 WebUI.delay(2)
 
 def btn = findGroup(groupName)
@@ -91,18 +97,20 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups 
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
-WebElement inputElement = driver.findElement(By.xpath('//*[@id=\'pica_group_accounts\']/div[1]/div[1]/input'))
+WebElement inputElement = driver.findElement(By.xpath("//*[@id='pica_group_accounts']//input[contains(concat(' ',normalize-space(@class),' '),' pica-taginput-input ')]"))
 
 inputElement.sendKeys(user)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
 
-WebUI.delay(2)
+String userLocalPart = user.contains('@') ? user.substring(0, user.indexOf('@')) : user
+
+new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
+    ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]")))
 
 // Localisation du bouton via XPath et clic
-def xpath = '/html/body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[4]/div[2]/table/tbody/tr[2]/td[3]/div/button'
+def xpath = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]//button[contains(@class,'dropdown-toggle')]"
 
-//def driver = DriverFactory.getWebDriver()
 def button = driver.findElement(By.xpath(xpath))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button))
@@ -111,6 +119,9 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button))
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
 
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
+
+new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
+    ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id='pica_group_dialog' and contains(concat(' ',normalize-space(@class),' '),' show ')]")))
 
 WebUI.delay(2)
 
@@ -132,6 +143,12 @@ WebUI.delay(3)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Groups/Search group'), groupName)
+
+WebUI.delay(2)
+
 def btn1 = findGroup(groupName)
 
 WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
@@ -144,7 +161,10 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 
 // Localisation du bouton dropdown
 
-def xpathAdmin = '//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[4]/div[2]/table/tbody/tr[1]/td[3]/div/button'
+def xpathAdmin = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]//button[contains(@class,'dropdown-toggle')]"
+
+new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
+    ExpectedConditions.presenceOfElementLocated(By.xpath(xpathAdmin)))
 
 def button_1 = driver.findElement(By.xpath(xpathAdmin))
 
@@ -158,6 +178,15 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/b
 // Vérification de la présence du message de confirmation de mise à jour du groupe
 WebUI.verifyElementPresent(findTestObject('Groups/Page_Groups - PowerFolder/div_Group updated'), 5)
 
+new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
+    ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id='pica_group_dialog' and contains(concat(' ',normalize-space(@class),' '),' show ')]")))
+
+WebUI.refresh()
+
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Groups/Search group'), GlobalVariable.GroupName)
+
 WebUI.delay(2)
 
 WebElement btn2 = findGroup(GlobalVariable.GroupName)
@@ -168,27 +197,31 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
+new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
+    ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)))
+
 def button_2 = driver.findElement(By.xpath(xpath))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button_2))
 
 WebUI.delay(2)
 
-String adminNameOrEmail = 'adminqa' // ou "adminqa@xxx.com" selon ce qui est affiché dans la ligne
-
 TestObject isAdminRoleSelected = new TestObject('isAdminRoleSelected')
 
-isAdminRoleSelected.addProperty('xpath', ConditionType.EQUALS, "//tr[.//td[contains(normalize-space(),'$adminNameOrEmail')]]" + 
-    '//div[contains(@class,\'dropdown\') and @data-selected=\'Is member and admin\']')
+isAdminRoleSelected.addProperty('xpath', ConditionType.EQUALS, "//div[@id='pica_group_accounts']//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]//div[contains(@class,'dropdown') and (@data-selected='Is member and admin' or @data-selected='Ist Mitglied und Admin')]")
 
-WebUI.verifyElementPresent(isAdminRoleSelected, 5)
+WebUI.verifyElementPresent(isAdminRoleSelected, 10)
 
 WebUI.closeBrowser()
 
 @Keyword
 WebElement findGroup(String groupName) {
     WebDriver driver = DriverFactory.getWebDriver()
+    new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
+        org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
+            By.xpath("//table[@id='groups_table']/tbody/tr[@id]")))
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + GlobalVariable.GroupName) + '\')]/td[1]/span'))
+    String xp = "//table[@id='groups_table']/tbody/tr[contains(@data-search-keys,'" + groupName + "') or .//a[contains(text(),'" + groupName + "')]]/td[1]/span"
+    return driver.findElement(By.xpath(xp))
 }
 

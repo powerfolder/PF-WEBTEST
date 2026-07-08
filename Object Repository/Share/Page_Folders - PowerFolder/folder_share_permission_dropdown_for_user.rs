@@ -7,7 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[4]/div/div/div[2]/div[2]/table/tbody/tr[2]/td[3]/div/button</value>
+         <value>(//table[@id='share_table']/tbody//button[contains(@class,'dropdown-toggle')])[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#share_table tbody button.dropdown-toggle</value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -17,4 +21,28 @@
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>399a9e48-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dropdown-toggle</value>
+      <webElementGuid>399a9e48-0001-0001-0001-000000000002</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-bs-toggle</name>
+      <type>Main</type>
+      <value>dropdown</value>
+      <webElementGuid>399a9e48-0001-0001-0001-000000000003</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

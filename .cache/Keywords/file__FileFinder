@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "0422D5782B964D1AA0A26D5AD9F35131",
+  "keywordClasses": [
+    {
+      "name": "file.FileFinder",
+      "keywordMethods": [
+        {
+          "name": "findDoc",
+          "parameters": [
+            {
+              "name": "docName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

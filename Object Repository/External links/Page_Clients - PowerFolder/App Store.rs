@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div/div/div[2]/div/div/div/div[5]/div[2]/div[2]/a/lang</value>
+         <value>//div[contains(concat(' ',@class,' '),' pica-box ') and .//lang[@name='label_ios']]//a[contains(@class,'btn-success') and not(contains(@class,'pica-hidden-on-big'))]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

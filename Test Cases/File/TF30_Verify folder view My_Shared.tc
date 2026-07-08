@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF30_Verify folder view My_Shared</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5abd4707-5267-4868-96c2-6f6366e06d90</testCaseGuid>
+</TestCaseEntity>

@@ -46,7 +46,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Started auto refresh×</value>
+      <value>Started auto refresh</value>
       <webElementGuid>d7c637d9-b0c7-4341-8691-f9b39b6ea152</webElementGuid>
    </webElementProperties>
    <webElementProperties>
@@ -94,7 +94,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'Started auto refresh×' or . = 'Started auto refresh×')]</value>
+      <value>//div[contains(@class,'pica-notification-box') and .//span[text()='Started auto refresh']]</value>
       <webElementGuid>c6ff03c3-ec01-428e-be44-c39832ac9e8d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

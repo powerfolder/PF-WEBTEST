@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//lang[@name='button_accept']</value>
+         <value>//button[@id='invitation_accept']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>lang[name=&quot;button_accept&quot;]</value>
+         <value>button#invitation_accept</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

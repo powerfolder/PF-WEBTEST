@@ -7,7 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[3]/button[2]/lang</value>
+         <value>//div[@id='pica_preference_dialog']//div[contains(@class,'modal-footer')]/button[contains(@class,'btn-cancel')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#pica_preference_dialog .modal-footer button.btn-cancel</value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -17,4 +21,20 @@
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>50d87c4c-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn-cancel</value>
+      <webElementGuid>50d87c4c-0001-0001-0001-000000000002</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

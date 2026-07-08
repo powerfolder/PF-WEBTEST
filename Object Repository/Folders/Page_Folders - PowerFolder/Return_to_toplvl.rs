@@ -11,10 +11,30 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[1]/div[1]/a[2]/span</value>
+         <value>(//a[contains(@class,'pica-crumb')])[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#pica_action_search a.pica-crumb:nth-of-type(2)</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>6356bee5-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-crumb</value>
+      <webElementGuid>6356bee5-0001-0001-0001-000000000002</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

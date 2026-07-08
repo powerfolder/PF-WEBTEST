@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/table[1]/tbody/tr[5]/td[3]/a</value>
+         <value>//a[@id='profile_manage_language']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -38,7 +38,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>btn btn-default</value>
+      <value>btn btn-secondary</value>
       <webElementGuid>612916ca-030b-4d48-8e54-e7b49ea5376b</webElementGuid>
    </webElementProperties>
    <webElementProperties>

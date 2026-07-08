@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[6]/div/div/div[3]/button[1]</value>
+         <value>//div[@id='profile_language_dialog']//div[contains(@class,'modal-footer')]/button[contains(@class,'btn-primary')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -44,7 +44,7 @@
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-dismiss</name>
+      <name>data-bs-dismiss</name>
       <type>Main</type>
       <value>modal</value>
       <webElementGuid>2c61f0bb-5f23-4986-a26b-a50d5460c37a</webElementGuid>

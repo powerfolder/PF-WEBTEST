@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//th[3]/div/a</value>
+         <value>//a[contains(concat(' ',normalize-space(@class),' '),' pica-table-selection-multi ') and contains(concat(' ',normalize-space(@class),' '),' groups_edit ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

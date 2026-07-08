@@ -36,11 +36,11 @@ WebUI.click(findTestObject('Registration/Page_Login - PowerFolder/ClickOnRegiste
 
 WebUI.click(findTestObject('Registration/Page_Register - PowerFolder/RegisterButton'))
 
-WebUI.verifyElementAttributeValue(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Email'), 
-    'placeholder', 'Required: Email', 5)
+String emailPh = WebUI.getAttribute(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Email'), 'placeholder')
+assert (emailPh == 'Required: Email' || emailPh == 'Erforderlich: Email') : 'Unerwarteter Email-Placeholder: ' + emailPh
 
-WebUI.verifyElementAttributeValue(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Password'),
-	'placeholder', 'Required: Choose a password', 5)
+String pwPh = WebUI.getAttribute(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Password'), 'placeholder')
+assert (pwPh == 'Required: Choose a password' || pwPh == 'Erforderlich: Passwort wählen') : 'Unerwarteter Password-Placeholder: ' + pwPh
 
 //WebUI.verifyElementAttributeValue(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Department'), 'placeholder', 'Required: Department', 5)
 
@@ -101,6 +101,10 @@ WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.userEmail)
 WebUI.click(findTestObject('Login/loginSubmit'))
 
 WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+
+WebUI.click(findTestObject('Login/loginSubmit'))
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

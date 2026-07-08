@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[5]/div/div/ul/li/a/div/div[2]/h5</value>
+         <value>(//div[@id='pica_group_organizations']//ul[contains(concat(' ',normalize-space(@class),' '),' pica-taginput-dropdown ')]/li[not(contains(@class,'pica-taginput-dropdown-fixed'))])[1]/a</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.pica-taginput-div.form-control.open > ul.pica-taginput-dropdown.dropdown-menu > li > a > div.media > div.media-body > h5.media-heading.text-primary</value>
+         <value>#pica_group_organizations ul.pica-taginput-dropdown > li:not(.pica-taginput-dropdown-fixed):first-child > a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

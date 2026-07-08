@@ -24,7 +24,7 @@ import java.util.List as List
 
 WebUI.callTestCase(findTestCase('File/Pre_test/Create 10 files'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebElement premierElement = DriverFactory.getWebDriver().findElement(By.xpath('//div[2]/table/tbody/tr[1]'))
+WebElement premierElement = DriverFactory.getWebDriver().findElement(By.xpath('//table[@id=\'files_files_table\']/tbody/tr[@id][1]'))
 
 premierElement.click()
 
@@ -52,6 +52,6 @@ WebUI.closeBrowser()
 List<WebElement> findGroup() {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElements(By.xpath('//td[1]/span'))
+    return driver.findElements(By.xpath('//table[@id=\'files_files_table\']/tbody/tr[@id]'))
 }
 

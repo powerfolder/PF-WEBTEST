@@ -99,15 +99,29 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), folderName1_new)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
+WebDriver driver = DriverFactory.getWebDriver()
+
+new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
+    org.openqa.selenium.support.ui.ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id='pica_input_dialog' and contains(concat(' ',normalize-space(@class),' '),' show ')]")))
+
+// Clear persisted search query (sessionStorage in files.js) so the renamed folder is not filtered out
+WebUI.executeJavaScript("try { sessionStorage.removeItem('searchQuery'); } catch (e) {}", null)
+
 WebUI.refresh()
+
+WebUI.delay(2)
+
+// Ensure visible search input is empty too (defensive)
+WebUI.executeJavaScript("var el = document.getElementById('pica_action_search_input'); if (el) { el.value=''; el.dispatchEvent(new Event('input', {bubbles:true})); el.dispatchEvent(new Event('change', {bubbles:true})); }", null)
 
 WebUI.delay(2)
 
 // verify rename of subfolder
 
-WebDriver driver = DriverFactory.getWebDriver()
+new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
+    org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(By.xpath("//a[contains(concat(' ',normalize-space(@class),' '),' pica-name ') and normalize-space(text())='" + folderName1_new + "']")))
 
-WebElement SubfolderName = driver.findElement(By.xpath("//a[@class='pica-name'  and text () ='$folderName1_new']"))
+WebElement SubfolderName = driver.findElement(By.xpath("//a[contains(concat(' ',normalize-space(@class),' '),' pica-name ') and normalize-space(text())='" + folderName1_new + "']"))
 
 WebUI.verifyEqual(SubfolderName.isDisplayed(), true)
 

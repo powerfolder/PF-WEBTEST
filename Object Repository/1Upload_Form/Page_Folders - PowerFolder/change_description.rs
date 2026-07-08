@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_uploadform_dialog']/div/div/div[2]/div[3]/div/div[2]/div/p</value>
+         <value>//div[@id='pica_uploadform_dialog']//div[contains(@class,'ck-editor__editable')]</value>
       </entry>
       <entry>
          <key>CSS</key>

@@ -75,6 +75,8 @@ dynamicObject.addProperty('xpath', ConditionType.EQUALS, ('//span[text()=\'' + t
 
 boolean exists = WebUI.verifyElementPresent(dynamicObject, 10, FailureHandling.OPTIONAL)
 
+WebUI.click(findTestObject('Folders/createFolderIcon'))
+
 WebUI.verifyElementPresent(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'), 5)
 
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'))
@@ -84,6 +86,8 @@ String subFolderName = "Sub"+ getTimestamp()
 WebUI.setText(findTestObject('Folders/inputFolderName'), subFolderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
+
+WebUI.click(findTestObject('Folders/createFolderIcon'))
 
 WebUI.verifyElementPresent(findTestObject('Folders/Page_Folders - PowerFolder/Create Doc'), 5)
 
