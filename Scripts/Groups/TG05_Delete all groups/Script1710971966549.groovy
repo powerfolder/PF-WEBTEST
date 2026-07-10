@@ -45,8 +45,7 @@ WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 WebUI.delay(2)
 
-// Sélection et suppression des groupes créés
-WebElement premierElement = DriverFactory.getWebDriver().findElement(By.xpath('//table[@id=\'groups_table\']/tbody/tr[not(contains(@class,\'pica-not-striped\'))][1]'))
+WebElement premierElement = DriverFactory.getWebDriver().findElement(By.xpath("//table[@id='groups_table']/tbody/tr[not(contains(@class,'pica-not-striped'))][1]/td[1]//*[contains(concat(' ',normalize-space(@class),' '),' pica-glyph ')]"))
 premierElement.click()
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/select_all'))
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Delete'))
