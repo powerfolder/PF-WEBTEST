@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_download_versions']/div/table/tbody/tr[2]/td[6]/button</value>
+         <value>(//div[@id='pica_download_versions']//tbody/tr//a[.//span[contains(concat(' ',normalize-space(@class),' '),' glyphicons-download ')]])[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
