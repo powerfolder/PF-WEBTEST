@@ -64,6 +64,14 @@ String Folder_1 = 'Folder_1' + Helper.getRandomFolderName()
 
 createFolder(Folder_1)
 
+WebUI.executeJavaScript("try { sessionStorage.removeItem('searchQuery'); } catch (e) {}", null)
+
+WebUI.refresh()
+
+new org.openqa.selenium.support.ui.WebDriverWait(DriverFactory.getWebDriver(), java.time.Duration.ofSeconds(15)).until(
+    org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
+        By.xpath("//*[contains(@data-search-keys, '" + GlobalVariable.folderName + "')]/td[7]/a/span")))
+
 WebElement btn = findShareButton(GlobalVariable.folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
