@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//thead[@id='files_select_header']/tr/th[3]/div[2]/a[6]/span</value>
+         <value>//thead[@id='files_select_header']//div[contains(concat(' ',normalize-space(@class),' '),' pica-table-selection-context ')]//a[contains(concat(' ',normalize-space(@class),' '),' files-ui-delete ')]/span</value>
       </entry>
       <entry>
          <key>CSS</key>
