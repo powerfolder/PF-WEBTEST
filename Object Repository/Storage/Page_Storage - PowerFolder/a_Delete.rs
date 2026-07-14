@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//html/body/div[2]/div[1]/div[2]/div[2]/table/thead[1]/tr/th[3]/div[2]/a[3]/span</value>
+         <value>//thead[@id='storage_select_header']//div[contains(concat(' ',normalize-space(@class),' '),' pica-table-selection-context ')]//a[contains(concat(' ',normalize-space(@class),' '),' storages_delete ')]/span</value>
       </entry>
       <entry>
          <key>CSS</key>
