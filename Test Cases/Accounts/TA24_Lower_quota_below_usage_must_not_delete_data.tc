@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>PFS-5629 regression: lowering a user's storage quota below their current usage must only block future uploads (PFS-4499 behavior), never delete existing files/folders or strip folder ownership.</description>
+   <name>TA24_Lower_quota_below_usage_must_not_delete_data</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0ddabdd1-8dc6-47c5-b500-3a1cca60343b</testCaseGuid>
+</TestCaseEntity>

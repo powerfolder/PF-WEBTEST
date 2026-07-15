@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//li[9]/a/span</value>
+         <value>//div[@id='pica-files-create-dropdown']//li[contains(@class,'files-ui-upload')]/a/span[contains(@class,'glyphicons-cloud-upload')]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -45,7 +45,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pica-files-create-dropdown']/ul/li[9]/a/span</value>
+      <value>//div[@id='pica-files-create-dropdown']/ul/li[contains(@class,'files-ui-upload')]/a/span</value>
       <webElementGuid>44711bca-570b-4bd0-9d1a-74153e46052b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
