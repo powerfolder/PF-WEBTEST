@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@name='label_folders']/ancestor::a[@href='/folderstable']/span</value>
+         <value>//*[@name='label_folders']/ancestor::a[@href='/files']/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
