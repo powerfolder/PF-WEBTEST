@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//ul[contains(@class,'pica-timeline')]//div[contains(@class,'pica-timeline-files')]//span[contains(@class,'filetypes-')])[1]</value>
+         <value>//body/div[2]/div/div/main/div[1]/div/div/section/article/div[3]/a</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>20cc85e0-38ef-43d9-8cc6-ead2350c39f4</webElementGuid>
+      <webElementGuid>dd2ff1c2-0682-4d0e-a5ad-90ba7630bbc8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>filetypes filetypes-docx pica-glyph-color text-info</value>
-      <webElementGuid>bea16f62-fb57-4fdd-9c4f-336e1542c4a2</webElementGuid>
+      <webElementGuid>aef3672c-ef5a-4497-95e0-e88dba8bb49e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>data-tooltip</name>
       <type>Main</type>
       <value>tooltip_file</value>
-      <webElementGuid>759e13ce-38df-49d9-b285-9b02ec461901</webElementGuid>
+      <webElementGuid>87c02b1c-5d24-4242-8cfe-242a22bb318a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +47,7 @@
       <name>data-placement</name>
       <type>Main</type>
       <value>bottom</value>
-      <webElementGuid>31749379-f925-4ef8-bc2d-2f3da0e323c3</webElementGuid>
+      <webElementGuid>558c2285-ae79-40eb-a039-bebdc8d5f6d2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>data-original-title</name>
       <type>Main</type>
       <value>Doc_num_6882.docx (3.7 KB) modified by ogcgwblv@yoemail.com</value>
-      <webElementGuid>6d439415-7e36-422d-819a-f4d567344341</webElementGuid>
+      <webElementGuid>269992d7-6a80-4ea0-8b22-bd77c4270963</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -63,7 +63,7 @@
       <name>aria-describedby</name>
       <type>Main</type>
       <value>tooltip603898</value>
-      <webElementGuid>71099cf4-adea-44b3-8c92-8ea220a46a0f</webElementGuid>
+      <webElementGuid>73089f18-bc04-4820-9720-846b9b47881d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -71,15 +71,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pica_content&quot;)/div[@class=&quot;pica-content-scroll-with-header&quot;]/ul[@class=&quot;pica-timeline pica-timeline-centered&quot;]/li[@class=&quot;pica-timeline-item&quot;]/div[@class=&quot;pica-timeline-content&quot;]/div[@class=&quot;pica-timeline-files&quot;]/span[@class=&quot;filetypes filetypes-docx pica-glyph-color text-info&quot;]</value>
-      <webElementGuid>43f5998d-3e3e-420f-8a6e-d3dcd0b3fbb8</webElementGuid>
+      <webElementGuid>d4734b87-cec2-43f7-a61c-8882fd5eae29</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pica_content']/div[2]/ul/li/div[3]/div/span</value>
-      <webElementGuid>97e04bcb-f9fd-40e7-8a19-28257e371116</webElementGuid>
+      <webElementGuid>44f5c240-6fe8-4a85-92f6-e44ad2a2159e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,6 +87,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div/span</value>
-      <webElementGuid>e62f0fc2-d6a5-4eaa-91d0-c75078b4fafd</webElementGuid>
+      <webElementGuid>4d60dcee-847d-42d6-8554-9b58c76cb5bf</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

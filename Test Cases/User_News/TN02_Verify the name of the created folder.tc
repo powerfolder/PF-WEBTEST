@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TN02_Verify the name of the latest created folder</name>
+   <name>TN02_Verify the name of the created folder</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
