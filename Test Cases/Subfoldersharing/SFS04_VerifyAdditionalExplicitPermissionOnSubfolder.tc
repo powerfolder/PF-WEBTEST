@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS04_VerifyAdditionalExplicitPermissionOnSubfolder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5fa31e02-1361-4d31-a734-987bbb0977ed</testCaseGuid>
+</TestCaseEntity>

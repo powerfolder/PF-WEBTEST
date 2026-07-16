@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS06_ConfirmInterruptInheritanceSnapshotsPermissions</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>43625215-268c-44ad-ae01-4960c145eb19</testCaseGuid>
+</TestCaseEntity>

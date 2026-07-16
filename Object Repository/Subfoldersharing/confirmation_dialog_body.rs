@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>Generic confirmation dialog body (#pica_confirmation_dialog), used by the interrupt/restore inheritance flow with lang keys dialog_body_interrupt_inheritance / dialog_body_restore_inheritance (contains the folder name).</description>
+   <name>confirmation_dialog_body</name>
+   <tag></tag>
+   <elementGuidId>cd4c99c3-c9b1-4fa7-a9b7-aa682c7783a5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_confirmation_dialog']//h5[contains(@class,'pica-dialog-description')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#pica_confirmation_dialog .pica-dialog-description</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h5</value>
+      <webElementGuid>cd4c99c3-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-dialog-description</value>
+      <webElementGuid>cd4c99c3-0001-0001-0001-000000000002</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

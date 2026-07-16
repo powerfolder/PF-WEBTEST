@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS01_VerifyInheritanceToggleHiddenOnTopLevelFolder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>54bae881-d7c8-4617-9c46-a7e2f4f1fb59</testCaseGuid>
+</TestCaseEntity>

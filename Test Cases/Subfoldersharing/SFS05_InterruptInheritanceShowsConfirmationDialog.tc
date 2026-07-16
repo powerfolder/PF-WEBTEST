@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS05_InterruptInheritanceShowsConfirmationDialog</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ef4032d5-d923-47da-b0c7-a2158e97142f</testCaseGuid>
+</TestCaseEntity>
