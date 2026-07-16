@@ -16,12 +16,30 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+import org.openqa.selenium.JavascriptExecutor
 
 WebUI.callTestCase(findTestCase('User_News/Pre_test/creat_diffrent_files'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('News_User/Page_News - PowerFolder/News'))
 
-WebUI.scrollToElement(findTestObject('News_User/Page_News - PowerFolder/timeline-marker'), 2)
+WebDriver driver = DriverFactory.getWebDriver()
+
+WebElement activityContainer = driver.findElement(
+    By.cssSelector('div.pf-activity-layout')
+)
+
+JavascriptExecutor js = (JavascriptExecutor) driver
+
+// Scroll complètement vers le bas du conteneur
+js.executeScript(
+    'arguments[0].scrollTop = arguments[0].scrollHeight;',
+    activityContainer
+)
+
+WebUI.delay(2)
 
 WebUI.closeBrowser()
-

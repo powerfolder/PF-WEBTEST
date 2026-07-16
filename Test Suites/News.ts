@@ -29,14 +29,14 @@
       <guid>ce08e481-bf05-4ba3-9aa0-8bd83366e9e3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/User_News/TN02_Verify the name of the latest created folder</testCaseId>
+      <testCaseId>Test Cases/User_News/TN02_Verify the name of the created folder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>2215f2a7-bdd9-41c5-880f-90e6a0fac003</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/User_News/TN03_Check the content present in the latest folder</testCaseId>
+      <testCaseId>Test Cases/User_News/TN03_Check the content present in the folder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

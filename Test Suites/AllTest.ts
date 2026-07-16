@@ -1450,14 +1450,14 @@
       <guid>584ebcde-9aeb-40ba-a880-52c02d21fc5d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/User_News/TN02_Verify the name of the latest created folder</testCaseId>
+      <testCaseId>Test Cases/User_News/TN02_Verify the name of the created folder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>e7137834-3ccf-4fe0-b6bc-51738d2ce8ee</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/User_News/TN03_Check the content present in the latest folder</testCaseId>
+      <testCaseId>Test Cases/User_News/TN03_Check the content present in the folder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

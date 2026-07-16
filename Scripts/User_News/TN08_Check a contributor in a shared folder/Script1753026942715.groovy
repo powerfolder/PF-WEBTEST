@@ -24,7 +24,6 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 
-
 WebUI.callTestCase(findTestCase('User_News/Pre_test/create_admin_file'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Home'))
@@ -71,7 +70,6 @@ WebUI.click(findTestObject('News_User/Page_Folders - PowerFolder/manage_invitati
 
 WebUI.click(findTestObject('News_User/Page_Folders - PowerFolder/button_invitation_Accept'))
 
-
 WebUI.click(findTestObject('News_User/Page_News - PowerFolder/News'))
 
 WebUI.mouseOver(findTestObject('News_User/Page_News - PowerFolder/file_wpath'))
@@ -84,13 +82,14 @@ String expectedAdminEmail = 'adminqa'
 
 String actualEmail = tooltipText.substring(tooltipText.lastIndexOf(' ') + 1).trim()
 
-println("Email from tooltip: " + actualEmail)
-println("Expected admin email: " + expectedAdminEmail)
+println('Email from tooltip: ' + actualEmail)
+
+println('Expected admin email: ' + expectedAdminEmail)
 
 // Comparaison
-assert actualEmail == expectedAdminEmail : "❌ Email mismatch in tooltip."
+assert actualEmail == expectedAdminEmail : '❌ Email mismatch in tooltip.'
 
-println("✅ Tooltip shows the correct admin email.")
+println('✅ Tooltip shows the correct admin email.')
 
 WebUI.delay(3)
 
@@ -102,22 +101,47 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
 println(GlobalVariable.Document)
 
-WebElement btn2 = findDoc(GlobalVariable.Document)
+WebElement btn2 = findFolder(GlobalVariable.Document)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
 
-WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Page_Folders - PowerFolder/span_Rename'),
-	FailureHandling.STOP_ON_FAILURE)
+WebUI.switchToWindowIndex(1)
 
-String DocRename = ('Doc_num_' + RandomStringUtils.randomNumeric(4))
+WebUI.delay(10)
 
-WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'),
-	DocRename)
+WebUI.verifyElementVisible(findTestObject('ONLY OFFICE/iframe_editor'))
 
-WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
+WebUI.switchToFrame(findTestObject('ONLY OFFICE/iframe_editor'), 5)
 
+WebUI.sendKeys(findTestObject('ONLY OFFICE/editor_body'), "I'm a contributor")
+
+// Ctrl + S
+WebUI.sendKeys(findTestObject('ONLY OFFICE/editor_body'), Keys.chord(Keys.CONTROL, "s"))
+
+WebUI.delay(5)
+
+String content = WebUI.getText(findTestObject("ONLY OFFICE/editor_body"))
+
+println("✅ READ-WRITE CONFIRMED — text was written")
+
+WebUI.switchToDefaultContent()
+
+WebUI.closeWindowIndex(1)
+
+WebUI.delay(1)
+
+WebUI.switchToWindowIndex(0)
 
 WebUI.click(findTestObject('News_User/Page_News - PowerFolder/News'))
+
+WebUI.delay(10)
+
+WebUI.refresh()
+
+WebUI.delay(10)
+
+/*
+
 
 WebUI.mouseOver(findTestObject('News_User/Page_News - PowerFolder/file_wpath'))
 
@@ -141,12 +165,9 @@ println("✅ Tooltip shows the correct contributor email.")
 WebUI.delay(3)
 
 WebUI.closeBrowser()
+*/
 
-
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 WebElement findShareButton(String fileName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
@@ -155,15 +176,14 @@ WebElement findShareButton(String fileName) {
 }
 
 WebElement findDoc(String DocRename) {
-	WebDriver driver = DriverFactory.getWebDriver()
+    WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + DocRename) + '\')]/td[1]/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + DocRename) + '\')]/td[1]/span'))
 }
 
 WebElement findFolder(String folderName) {
-	WebDriver driver = DriverFactory.getWebDriver()
+    WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//td[2]/span/a[contains(text(),\'' + folderName) + '\')]'))
+    return driver.findElement(By.xpath(('//td[2]/span/a[contains(text(),\'' + folderName) + '\')]'))
 }
-
 

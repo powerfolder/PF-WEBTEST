@@ -17,13 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-// STEP 1: Call the test case and click
-WebUI.callTestCase(findTestCase('User_News/Pre_test/Create_more_files'), [:], FailureHandling.STOP_ON_FAILURE)
+// Call the test case Create Folder
+
+WebUI.callTestCase(findTestCase('User_News/Pre_test/create_user_file'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('News_User/Page_News - PowerFolder/News'))
 
 // STEP 2: Read folder name from UI
-WebUI.mouseOver(findTestObject('News_User/Page_News - PowerFolder/Name_folder_in_news_part'))
 
 String folderNameFromUI = WebUI.getText(findTestObject('News_User/Page_News - PowerFolder/Name_folder_in_news_part'))
 
@@ -43,4 +43,5 @@ if (folderNameFromUI == expectedFolderName) {
 }
 
 WebUI.closeBrowser()
+
 
