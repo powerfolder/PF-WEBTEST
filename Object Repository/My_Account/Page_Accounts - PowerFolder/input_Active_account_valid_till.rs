@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[3]/div/div/div[2]/div[1]/div[4]/div[3]/div/input</value>
+         <value>//input[@id='pica_account_valid_till']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//th[3]/div/a[2]</value>
+         <value>//a[@id='versions_purge']</value>
       </entry>
       <entry>
          <key>BASIC</key>

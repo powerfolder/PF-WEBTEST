@@ -122,7 +122,7 @@ def createFilesInFolder(String folderPath, int numberOfFiles) {
 
 List<WebElement> findFiles() {
 	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElements(By.xpath('//div[2]/table/tbody'))
+	return driver.findElements(By.xpath("//table[@id='files_files_table']/tbody"))
 }
 
 
