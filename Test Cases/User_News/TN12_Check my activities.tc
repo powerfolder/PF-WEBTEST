@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TN12_Check my activities</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>622293d3-ec7f-4080-a521-8ccd5f6f04d6</testCaseGuid>
+</TestCaseEntity>
