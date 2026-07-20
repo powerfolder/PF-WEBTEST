@@ -140,9 +140,6 @@ WebUI.refresh()
 
 WebUI.delay(10)
 
-/*
-
-
 WebUI.mouseOver(findTestObject('News_User/Page_News - PowerFolder/file_wpath'))
 
 String tooltipText_2 = WebUI.getAttribute(findTestObject('News_User/Page_News - PowerFolder/file_wpath'), 'data-bs-original-title')
@@ -165,7 +162,6 @@ println("✅ Tooltip shows the correct contributor email.")
 WebUI.delay(3)
 
 WebUI.closeBrowser()
-*/
 
  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 WebElement findShareButton(String fileName) {
