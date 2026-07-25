@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS19_VerifyRemovingGroupShareRevokesAccess</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>126376cf-4f5c-4039-8ee2-8d16a00e7d7b</testCaseGuid>
+</TestCaseEntity>

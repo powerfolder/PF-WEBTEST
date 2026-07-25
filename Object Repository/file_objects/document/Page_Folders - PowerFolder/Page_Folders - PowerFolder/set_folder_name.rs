@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[2]/div/input</value>
+         <value>//input[@id='pica_input_text']</value>
       </entry>
       <entry>
          <key>CSS</key>
