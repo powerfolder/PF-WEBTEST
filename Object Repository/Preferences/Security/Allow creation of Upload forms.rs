@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(@class,'pica-button-checkbox') and ./input[@id='file_link.upload_landing_page']]/button</value>
+         <value>//input[@id='file_link.upload_landing_page']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>span.pica-button-checkbox:has(> input#file_link\.upload_landing_page) > button</value>
+         <value>input#file_link\.upload_landing_page</value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -26,7 +26,7 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>button</value>
+      <value>input</value>
       <webElementGuid>3a454765-0001-0001-0001-000000000001</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
