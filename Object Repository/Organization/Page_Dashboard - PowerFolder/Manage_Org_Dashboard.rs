@@ -7,10 +7,11 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
+         <value>#dashboard_organization_edit</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class,'pica-box-head') and .//lang[@name='label_organizations']]/a[contains(@class,'btn-success')]</value>
+         <value>//a[@id='dashboard_organization_edit']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -33,7 +34,7 @@
       <webElementGuid>a2863c66-8753-435a-9781-370d1d8c18a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
@@ -43,10 +44,18 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>dashboard_organization_edit</value>
+      <webElementGuid>d5f55780-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value>
-                    Manage
+                    Edit
                 </value>
       <webElementGuid>491dbbfd-7526-4d49-81a0-925022df0a89</webElementGuid>
    </webElementProperties>

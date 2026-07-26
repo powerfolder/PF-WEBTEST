@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>PFC-3543: label of the inheritance toggle. Carries the data-tooltip attribute that explains the effect of breaking/restoring inheritance (lang key share_inheritance_own_permissions_tooltip).</description>
+   <name>share_inheritance_tooltip_label</name>
+   <tag></tag>
+   <elementGuidId>c231df31-fe3f-4bc2-ba97-35927cd9ac01</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@for='share_inheritance_toggle']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>label[for='share_inheritance_toggle']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>share_inheritance_toggle</value>
+      <webElementGuid>c231df31-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

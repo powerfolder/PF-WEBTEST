@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS13_VerifyCombinationSubfolderToAccountASubSubfolderToAccountB</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b2f4e0c5-0b29-48b8-9fdb-39f494007b51</testCaseGuid>
+</TestCaseEntity>

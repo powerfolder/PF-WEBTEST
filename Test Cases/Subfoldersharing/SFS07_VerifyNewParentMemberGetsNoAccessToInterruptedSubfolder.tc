@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS07_VerifyNewParentMemberGetsNoAccessToInterruptedSubfolder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c5021409-d53b-4d47-be94-7f208a3e4cce</testCaseGuid>
+</TestCaseEntity>

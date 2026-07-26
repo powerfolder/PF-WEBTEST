@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS09_RestoreInheritanceReappliesParentPermissions</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d2fd7634-2b5b-4166-9234-ff2539a45b40</testCaseGuid>
+</TestCaseEntity>

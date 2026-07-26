@@ -10,9 +10,21 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@name='label_folders']/ancestor::a[@href='/files']/span</value>
+         <value>//a[@id='folders-menu']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#folders-menu</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>folders-menu</value>
+      <webElementGuid>297abdf8-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

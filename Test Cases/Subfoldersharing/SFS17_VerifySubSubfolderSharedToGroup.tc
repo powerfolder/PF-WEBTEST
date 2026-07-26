@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS17_VerifySubSubfolderSharedToGroup</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>497111db-db4b-4f01-a4ca-2bcf58f0db18</testCaseGuid>
+</TestCaseEntity>

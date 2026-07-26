@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS02_VerifyInheritanceToggleVisibleOnSubfolder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3a08f52f-b55f-453a-b496-c7153667f88e</testCaseGuid>
+</TestCaseEntity>

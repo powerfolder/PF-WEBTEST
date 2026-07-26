@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>Generic confirmation dialog title (#pica_confirmation_dialog), used by the interrupt/restore inheritance flow with lang keys dialog_title_interrupt_inheritance / dialog_title_restore_inheritance.</description>
+   <name>confirmation_dialog_title</name>
+   <tag></tag>
+   <elementGuidId>0c137caa-e989-4700-9d5b-2fa4976d71d0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_confirmation_dialog']//h4[contains(@class,'pica-dialog-title')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#pica_confirmation_dialog .pica-dialog-title</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h4</value>
+      <webElementGuid>0c137caa-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-dialog-title</value>
+      <webElementGuid>0c137caa-0001-0001-0001-000000000002</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
