@@ -2,6 +2,10 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import org.openqa.selenium.WebElement as WebElement
+import java.util.Arrays as Arrays
 
 WebUI.openBrowser(GlobalVariable.URL)
 
@@ -15,19 +19,15 @@ WebUI.click(findTestObject('External links/Page_Login - PowerFolder/Powered by P
 // switch vers nouvel onglet
 WebUI.switchToWindowIndex(1)
 
-//WebUI.waitForPageLoad(20)
+WebUI.delay(5)
 
-// cliquer sur Accept du cookie
-WebUI.waitForElementClickable(
-	findTestObject('External links/Page_File Sync, Share und Backup Lsungen fr_1e97b9/button_Accept'),
-	10
-)
-WebUI.click(
-	findTestObject('External links/Page_File Sync, Share und Backup Lsungen fr_1e97b9/button_Accept')
-)
+// cliquer sur Accept du cookie (le bandeau ne s'affiche qu'une fois par profil navigateur ;
+TestObject cookieAccept = findTestObject('External links/Page_File Sync, Share und Backup Lsungen fr_1e97b9/button_Accept')
 
-// attendre que la page soit bien chargée (élément fiable)
-WebUI.waitForElementVisible(findTestObject('External links/Page_File Sync, Share und Backup Lsungen fr_1e97b9/img_Skip to content_NzQxOjMxOA-1'), 20)
+if (WebUI.verifyElementPresent(cookieAccept, 5, FailureHandling.OPTIONAL)) {
+	WebElement acceptBtn = WebUiCommonHelper.findWebElement(cookieAccept, 5)
+	WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(acceptBtn))
+}
 
 // récupérer URL
 String currentUrl = WebUI.getUrl()
