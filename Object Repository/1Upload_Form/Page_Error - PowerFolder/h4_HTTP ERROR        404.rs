@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>h4</value>
+         <value>h4 > lang[name="label_http_error"]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div/div/div[2]/div/div/div/h4</value>
+         <value>//h4[lang[@name='label_http_error']]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
