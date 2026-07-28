@@ -72,9 +72,7 @@ WebElement btn3 = findFolder(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn3))
 
-// mark sublvl folder 
-
-WebUI.setText(findTestObject('Folders/inputSearch'), folderName1)
+// mark sublvl folder
 
 TestObject dynamicFolder = new TestObject('dynamicFolder')
 dynamicFolder.addProperty(
@@ -104,24 +102,12 @@ WebDriver driver = DriverFactory.getWebDriver()
 new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
     org.openqa.selenium.support.ui.ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id='pica_input_dialog' and contains(concat(' ',normalize-space(@class),' '),' show ')]")))
 
-// Clear persisted search query (sessionStorage in files.js) so the renamed folder is not filtered out
-WebUI.executeJavaScript("try { sessionStorage.removeItem('searchQuery'); } catch (e) {}", null)
-
-WebUI.refresh()
-
-WebUI.delay(2)
-
-// Ensure visible search input is empty too (defensive)
-WebUI.executeJavaScript("var el = document.getElementById('pica_action_search_input'); if (el) { el.value=''; el.dispatchEvent(new Event('input', {bubbles:true})); el.dispatchEvent(new Event('change', {bubbles:true})); }", null)
-
-WebUI.delay(2)
-
 // verify rename of subfolder
 
 new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
-    org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(By.xpath("//a[contains(concat(' ',normalize-space(@class),' '),' pica-name ') and normalize-space(text())='" + folderName1_new + "']")))
+    org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(@data-search-keys, '" + folderName1_new + "')]/td[1]/span")))
 
-WebElement SubfolderName = driver.findElement(By.xpath("//a[contains(concat(' ',normalize-space(@class),' '),' pica-name ') and normalize-space(text())='" + folderName1_new + "']"))
+WebElement SubfolderName = driver.findElement(By.xpath("//*[contains(@data-search-keys, '" + folderName1_new + "')]/td[1]/span"))
 
 WebUI.verifyEqual(SubfolderName.isDisplayed(), true)
 
