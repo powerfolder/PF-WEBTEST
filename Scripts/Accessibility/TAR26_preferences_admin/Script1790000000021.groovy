@@ -29,6 +29,8 @@ WebUI.delay(2)
 
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
 
+WebUI.click(findTestObject('LeftNavigationIcons/Preferences'))
+
 WebUI.delay(3)
 
 CustomKeywords.'accessibility.AccessibilityKeywords.checkAccessibility'()

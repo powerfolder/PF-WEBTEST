@@ -14,23 +14,25 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import static helpers.Helper.getRandomFolderName
 
-WebUI.openBrowser(GlobalVariable.URL)
+// Reuses the existing Folders fixture (logs in, opens the Folders page) - same
+// precondition already used by Test Cases/Folders/TF1_VerifyNewFolderCreation.
+WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.maximizeWindow()
+WebUI.click(findTestObject('Folders/createFolderIcon'))
 
-WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
+WebUI.click(findTestObject('Folders/createFolder'))
 
-WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.delay(2)
-
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
+WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.delay(3)
 
+// Scans the "New Folder" naming dialog (#pica_input_dialog) while it is open.
 CustomKeywords.'accessibility.AccessibilityKeywords.checkAccessibility'()
+
+WebUI.setText(findTestObject('Folders/inputFolderName'), 'TAR28_' + getRandomFolderName())
+
+WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebUI.closeBrowser()

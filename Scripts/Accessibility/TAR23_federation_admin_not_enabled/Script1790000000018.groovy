@@ -29,6 +29,12 @@ WebUI.delay(2)
 
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
 
+// Federation table is only rendered when the server has federation enabled ($federationEnabled) -
+// verify this precondition holds in the target test environment before relying on this test case.
+def baseUrl = new URL(GlobalVariable.URL)
+
+WebUI.navigateToUrl(baseUrl.protocol + '://' + baseUrl.authority + '/federationtable')
+
 WebUI.delay(3)
 
 CustomKeywords.'accessibility.AccessibilityKeywords.checkAccessibility'()

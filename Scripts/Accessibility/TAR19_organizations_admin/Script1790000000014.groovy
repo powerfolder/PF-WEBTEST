@@ -29,6 +29,10 @@ WebUI.delay(2)
 
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
 
+def baseUrl = new URL(GlobalVariable.URL)
+
+WebUI.navigateToUrl(baseUrl.protocol + '://' + baseUrl.authority + '/admin/organizations')
+
 WebUI.delay(3)
 
 CustomKeywords.'accessibility.AccessibilityKeywords.checkAccessibility'()

@@ -19,15 +19,9 @@ WebUI.openBrowser(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
 
-WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
+def baseUrl = new URL(GlobalVariable.URL)
 
-WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.delay(2)
-
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
+WebUI.navigateToUrl(baseUrl.protocol + '://' + baseUrl.authority + '/activation')
 
 WebUI.delay(3)
 

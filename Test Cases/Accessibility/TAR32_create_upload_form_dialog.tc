@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAR32_create_upload_form_dialog</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>55aeb22e-688a-4dd5-9739-3387159c3c64</testCaseGuid>
+</TestCaseEntity>

@@ -15,12 +15,26 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
-WebUI.openBrowser(GlobalVariable.URL)
+// Reuses the existing Upload-form fixture (Test Cases/Upload form/Pre_Test) that
+// logs in and creates a folder, then opens the admin-side "Create upload form" dialog.
+WebUI.callTestCase(findTestCase('Upload form/Pre_Test/Creat_Folder'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.maximizeWindow()
+WebUI.verifyElementClickable(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Create upload form'))
+
+WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Create upload form'))
 
 WebUI.delay(3)
 
+WebUI.setText(findTestObject('1Upload_Form/Page_Error - PowerFolder/Page_Folders - PowerFolder/input_Create_uploadform_heading'), 'TAR32_Accessibility_Test')
+
+WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/change_description'))
+WebUI.sendKeys(findTestObject('1Upload_Form/Page_Folders - PowerFolder/change_description'), 'Accessibility test - upload form creation dialog')
+
+// Scans the "Create upload form" dialog (heading/description/expiry fields) while it is open.
 CustomKeywords.'accessibility.AccessibilityKeywords.checkAccessibility'()
+
+WebUI.scrollToElement(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Save'), 1)
+
+WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Save'))
 
 WebUI.closeBrowser()
