@@ -29,6 +29,12 @@ WebUI.delay(2)
 
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
 
+// CMIS migration dashboard is only rendered when $cmisEnabled - verify this precondition
+// holds in the target test environment before relying on this test case.
+def baseUrl = new URL(GlobalVariable.URL)
+
+WebUI.navigateToUrl(baseUrl.protocol + '://' + baseUrl.authority + '/admin/cmis-migration-dashboard')
+
 WebUI.delay(3)
 
 CustomKeywords.'accessibility.AccessibilityKeywords.checkAccessibility'()

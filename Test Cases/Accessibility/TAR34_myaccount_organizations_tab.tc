@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAR34_myaccount_organizations_tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>83b9dab3-ad0a-4e56-9603-504385d4cc40</testCaseGuid>
+</TestCaseEntity>

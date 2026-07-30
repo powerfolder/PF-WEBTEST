@@ -19,15 +19,9 @@ WebUI.openBrowser(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
 
-WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
+WebUI.verifyElementClickable(findTestObject('Login/recoverPasswordLink'))
 
-WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.delay(2)
-
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
+WebUI.click(findTestObject('Login/recoverPasswordLink'))
 
 WebUI.delay(3)
 

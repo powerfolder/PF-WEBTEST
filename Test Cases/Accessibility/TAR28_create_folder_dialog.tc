@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAR28_create_folder_dialog</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8f3e8808-f0fe-4d50-a5fa-9a4f362cdb3b</testCaseGuid>
+</TestCaseEntity>

@@ -29,6 +29,14 @@ WebUI.delay(2)
 
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
 
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/My_account'))
+
+WebUI.verifyElementClickable(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/a_Organizations_tab'))
+
+WebUI.click(findTestObject('My_Account/Detail/Page_Profile - PowerFolder/a_Organizations_tab'))
+
 WebUI.delay(3)
 
 CustomKeywords.'accessibility.AccessibilityKeywords.checkAccessibility'()

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAR23_federation_admin_not_enabled</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0fa88f90-ee7d-46e3-bdd8-fbdb01e11eb2</testCaseGuid>
+</TestCaseEntity>

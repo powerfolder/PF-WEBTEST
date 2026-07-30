@@ -31,4 +31,8 @@ WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
 
 WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 
+WebUI.delay(3)
+
 CustomKeywords.'accessibility.AccessibilityKeywords.checkAccessibility'()
+
+WebUI.closeBrowser()

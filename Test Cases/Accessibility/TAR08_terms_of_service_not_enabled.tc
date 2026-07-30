@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAR08_terms_of_service_not_enabled</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e909d0be-3442-4fb1-9241-4c5242c0516c</testCaseGuid>
+</TestCaseEntity>
