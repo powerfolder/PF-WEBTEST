@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAR52_recycle_bin_restore_dialog</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>07b90847-6aa7-47f9-ad05-e0b0818095a3</testCaseGuid>
+</TestCaseEntity>

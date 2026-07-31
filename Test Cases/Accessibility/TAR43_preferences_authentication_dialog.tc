@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAR43_preferences_authentication_dialog</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>17cc8248-51fa-4806-8bc5-52d1d67dce76</testCaseGuid>
+</TestCaseEntity>
