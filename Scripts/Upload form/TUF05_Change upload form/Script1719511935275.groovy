@@ -65,6 +65,13 @@ WebUI.scrollToElement(findTestObject('1Upload_Form/Page_Folders - PowerFolder/bu
 
 WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Save'))
 
+WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Close'))
+
+// Log out admin now that the edit is saved, so the verification below reflects a genuine anonymous guest session
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
+
 WebUI.switchToWindowIndex(1)
 
 WebUI.delay(2)
