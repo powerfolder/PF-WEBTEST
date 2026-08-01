@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAR39_folder_delete_dialog</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c05a606e-9f53-4b24-8a7a-f0728e3db992</testCaseGuid>
+</TestCaseEntity>

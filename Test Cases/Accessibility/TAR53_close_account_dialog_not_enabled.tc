@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAR53_close_account_dialog_not_enabled</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>037a5e31-a051-49ca-bd78-36d8202c7faa</testCaseGuid>
+</TestCaseEntity>
