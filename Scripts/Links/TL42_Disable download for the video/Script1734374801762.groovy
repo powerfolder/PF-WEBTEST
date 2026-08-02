@@ -43,6 +43,13 @@ String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getConten
 
 assert (my_clipboard != null) && my_clipboard.startsWith('https')
 
+WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/button_Close'))
+
+// Log out admin before opening the link, so the guest session is not carried over via the shared browser cookies
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
+
 // Ouvrir le lien dans un nouvel onglet
 WebUI.executeJavaScript('window.open(arguments[0], \'_blank\');', Arrays.asList(my_clipboard))
 
@@ -62,8 +69,6 @@ WebUI.verifyElementNotPresent(findTestObject('Links/Page_Link - PowerFolder/pdf_
 WebUI.delay(2)
 
 WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/button_Close'))
 
 WebUI.closeBrowser()
 

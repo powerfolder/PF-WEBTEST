@@ -35,6 +35,13 @@ WebUI.comment('Copied URL: ' + url)
 
 assert url != null && url.startsWith('https')
 
+WebUI.click(findTestObject('Page_Folders - PowerFolder/button_Close'))
+
+// Log out admin before opening the link, so the guest session is not carried over via the shared browser cookies
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
+
 WebUI.executeJavaScript('window.open(arguments[0], "_blank");', [url])
 WebUI.switchToWindowIndex(1)
 
