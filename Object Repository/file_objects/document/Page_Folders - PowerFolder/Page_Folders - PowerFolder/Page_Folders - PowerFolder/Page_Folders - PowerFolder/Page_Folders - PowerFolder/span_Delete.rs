@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//thead[@id='files_select_header']//div[contains(concat(' ',normalize-space(@class),' '),' pica-table-selection-context ')]//a[contains(concat(' ',normalize-space(@class),' '),' files-ui-delete ')]/span</value>
+         <value>//body/div[2]/div/div/main/div[1]/table/thead[1]/tr/th[3]/div[2]/a[7]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -15,6 +15,7 @@
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>b42c123c-1f47-49c3-8c00-04cc6faa3511</webElementGuid>
+      <webElementGuid>bd6866a5-7e9d-4a2e-adff-7a5860150207</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-glyph glyphicons glyphicons-bin</value>
-      <webElementGuid>d32785d3-8126-4e82-909a-ac481c43dee6</webElementGuid>
+      <webElementGuid>34df8af3-3089-404a-9ced-133b2deb2849</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,15 +39,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;files_select_header&quot;)/tr[1]/th[@class=&quot;text-right&quot;]/div[@class=&quot;pica-table-selection-context pica-inline hidden-xs text-right&quot;]/a[@class=&quot;pica-table-selection-multi files-ui-delete&quot;]/span[@class=&quot;pica-glyph glyphicons glyphicons-bin&quot;]</value>
-      <webElementGuid>615974be-bba2-476d-b520-cbcb6e1c07b2</webElementGuid>
+      <webElementGuid>f01740c0-ad63-4fca-84e6-1ee0e01eec5a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//thead[@id='files_select_header']/tr/th[3]/div[2]/a[6]/span</value>
-      <webElementGuid>71874483-8c6f-40f5-9d78-95b6ec437fe7</webElementGuid>
+      <webElementGuid>35ab6236-705c-476f-8b9e-b0bb3d6948b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,6 +55,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//a[6]/span</value>
-      <webElementGuid>74da74ff-b55f-4ed9-842b-83cda491f420</webElementGuid>
+      <webElementGuid>ca1a8973-074f-4233-b6ac-ab16b4553802</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TN19_Check the most active folders in the Activity Overview</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1e29db8b-0bda-4b4b-aa97-0b8ebabb8972</testCaseGuid>
+</TestCaseEntity>

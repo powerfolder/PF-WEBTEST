@@ -16,30 +16,34 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.webui.driver.DriverFactory
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.WebElement
-import org.openqa.selenium.By
-import org.openqa.selenium.JavascriptExecutor
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebDriver as WebDriver
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
-WebUI.callTestCase(findTestCase('User_News/Pre_test/creat_diffrent_files'), [:], FailureHandling.STOP_ON_FAILURE)
+// Call the test case Create Folder
+WebUI.callTestCase(findTestCase('User_News/Pre_test/create_user_file'), [:], FailureHandling.STOP_ON_FAILURE)
+
+println(GlobalVariable.folderName)
+
+String folderName = GlobalVariable.folderName
 
 WebUI.click(findTestObject('News_User/Page_News - PowerFolder/News'))
 
-WebDriver driver = DriverFactory.getWebDriver()
+WebUI.verifyElementPresent(findTestObject('News_User/Page_News - PowerFolder/My_activities'), 5)
 
-WebElement activityContainer = driver.findElement(
-    By.cssSelector('div.pf-activity-layout')
-)
+WebUI.click(findTestObject('News_User/Page_News - PowerFolder/My_activities'))
 
-JavascriptExecutor js = (JavascriptExecutor) driver
+WebUI.verifyElementText(findTestObject('News_User/Page_News - PowerFolder/check_time_activities'), 'Today')
 
-// Scroll complètement vers le bas du conteneur
-js.executeScript(
-    'arguments[0].scrollTop = arguments[0].scrollHeight;',
-    activityContainer
-)
-
-WebUI.delay(2)
+assert isFolderPresent(folderName)
 
 WebUI.closeBrowser()
+
+boolean isFolderPresent(String folderName) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    String xpath = ('//a[contains(@class,\'pf-path-link\') and normalize-space(text())=\'' + folderName) + '\']'
+
+    return driver.findElements(By.xpath(xpath)).size() > 0
+}
+

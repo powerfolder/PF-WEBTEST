@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "C489C8377FB496B1BF6A97637961DCAD",
+  "keywordClasses": [
+    {
+      "name": "accessibility.AccessibilityKeywords",
+      "keywordMethods": [
+        {
+          "name": "checkAccessibility",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

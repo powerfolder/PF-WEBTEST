@@ -16,30 +16,32 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.webui.driver.DriverFactory
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.WebElement
-import org.openqa.selenium.By
-import org.openqa.selenium.JavascriptExecutor
 
-WebUI.callTestCase(findTestCase('User_News/Pre_test/creat_diffrent_files'), [:], FailureHandling.STOP_ON_FAILURE)
+// Call the test case Create Folder
+
+WebUI.callTestCase(findTestCase('User_News/Pre_test/create_user_file'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('News_User/Page_News - PowerFolder/News'))
 
-WebDriver driver = DriverFactory.getWebDriver()
+// STEP 2: Read folder name from UI
 
-WebElement activityContainer = driver.findElement(
-    By.cssSelector('div.pf-activity-layout')
-)
+String folderNameFromUI = WebUI.getText(findTestObject('News_User/Page_News - PowerFolder/Name_folder_in_news_part'))
 
-JavascriptExecutor js = (JavascriptExecutor) driver
+println('📁 Folder name from UI: ' + folderNameFromUI)
 
-// Scroll complètement vers le bas du conteneur
-js.executeScript(
-    'arguments[0].scrollTop = arguments[0].scrollHeight;',
-    activityContainer
-)
+// STEP 3: Compare with variable
+String expectedFolderName = GlobalVariable.folderName
 
-WebUI.delay(2)
+println('📌 Expected folder name: ' + expectedFolderName)
+
+if (folderNameFromUI == expectedFolderName) {
+    println('✅ Folder name matches.')
+} else {
+    println('❌ Folder name does NOT match.')
+
+    assert false
+}
 
 WebUI.closeBrowser()
+
+

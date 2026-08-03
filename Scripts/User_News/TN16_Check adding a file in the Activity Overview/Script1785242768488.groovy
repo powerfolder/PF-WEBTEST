@@ -16,31 +16,34 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebDriver as WebDriver
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-// STEP 1: Call the test case and click
-WebUI.callTestCase(findTestCase('User_News/Pre_test/Create_more_files'), [:], FailureHandling.STOP_ON_FAILURE)
+// Call the test case Create Folder
+WebUI.callTestCase(findTestCase('User_News/Pre_test/create_user_file'), [:], FailureHandling.STOP_ON_FAILURE)
+
+println(GlobalVariable.folderName)
+
+String folderName = GlobalVariable.folderName
 
 WebUI.click(findTestObject('News_User/Page_News - PowerFolder/News'))
 
-// STEP 2: Read folder name from UI
-WebUI.mouseOver(findTestObject('News_User/Page_News - PowerFolder/Name_folder_in_news_part'))
+WebUI.waitForPageLoad(10)
 
-String folderNameFromUI = WebUI.getText(findTestObject('News_User/Page_News - PowerFolder/Name_folder_in_news_part'))
+// Dynamic object for the "Added" activity counter
+TestObject addedActivity = new TestObject('Added activity counter')
 
-println('📁 Folder name from UI: ' + folderNameFromUI)
+addedActivity.addProperty('xpath', ConditionType.EQUALS, '//div[contains(@class,\'pica-chart-legend-item\')][contains(normalize-space(.),\'Added\')]')
 
-// STEP 3: Compare with variable
-String expectedFolderName = GlobalVariable.folderName
+WebUI.waitForElementVisible(addedActivity, 10)
 
-println('📌 Expected folder name: ' + expectedFolderName)
+String addedText = WebUI.getText(addedActivity).trim()
 
-if (folderNameFromUI == expectedFolderName) {
-    println('✅ Folder name matches.')
-} else {
-    println('❌ Folder name does NOT match.')
+println("Activity overview value: $addedText")
 
-    assert false
-}
+WebUI.verifyMatch(addedText, '.*Added\\s*:\\s*1.*', true, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 
