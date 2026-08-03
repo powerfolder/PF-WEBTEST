@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TN17_Check updating a file in the Activity Overview</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e3a89257-af27-42be-ad35-f4a1ab1d78d7</testCaseGuid>
+</TestCaseEntity>
