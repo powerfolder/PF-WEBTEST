@@ -27,6 +27,8 @@ WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHa
 
 String folderName = getRandomFolderName()
 
+GlobalVariable.folderName = folderName
+
 WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Object Repository/Folders/createFolder'))
