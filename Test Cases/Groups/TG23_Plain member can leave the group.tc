@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG23_Plain member can leave the group</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1de4add1-7372-4bcd-8eec-6d157198f517</testCaseGuid>
+</TestCaseEntity>

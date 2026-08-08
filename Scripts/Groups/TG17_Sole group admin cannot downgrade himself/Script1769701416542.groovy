@@ -79,6 +79,12 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Group
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
+WebUI.refresh()
+
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Groups/Search group'), groupName)
+
 WebUI.delay(2)
 
 def btn = findGroup(groupName)
@@ -91,7 +97,6 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups 
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
-// Semantic locate: pica-taginput-input class — stable against new .pica-members-filter dropdown that shifted div positions in group.vm:156
 WebElement inputElement = driver.findElement(By.xpath("//*[@id='pica_group_accounts']//input[contains(concat(' ',normalize-space(@class),' '),' pica-taginput-input ')]"))
 
 inputElement.sendKeys(user)
@@ -110,6 +115,7 @@ def button = driver.findElement(By.xpath(xpath))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button))
 
+
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
 
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
@@ -118,6 +124,8 @@ new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
     ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id='pica_group_dialog' and contains(concat(' ',normalize-space(@class),' '),' show ')]")))
 
 WebUI.delay(2)
+
+
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 
@@ -135,6 +143,12 @@ WebUI.delay(3)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Groups/Search group'), groupName)
+
+WebUI.delay(2)
+
 def btn1 = findGroup(groupName)
 
 WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
@@ -146,14 +160,26 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
 // Localisation du bouton dropdown
-new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
-    ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)))
 
-def button_1 = driver.findElement(By.xpath(xpath))
+def xpathAdmin = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]//button[contains(@class,'dropdown-toggle')]"
+
+new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
+    ExpectedConditions.presenceOfElementLocated(By.xpath(xpathAdmin)))
+
+def button_1 = driver.findElement(By.xpath(xpathAdmin))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button_1))
 
-WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member'))
+WebElement isMemberOption = driver.findElement(By.xpath(
+    "//div[@id='pica_group_accounts']//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]/li[a[@data-dropdown-group='permission']][1]/a"))
+
+Object hasClickHandler = WebUI.executeJavaScript(
+    "var el = arguments[0]; var ev = (window.jQuery && jQuery._data) ? jQuery._data(el, 'events') : null; return !!(ev && ev.click && ev.click.length > 0);",
+    Arrays.asList(isMemberOption))
+
+WebUiBuiltInKeywords.verifyEqual(hasClickHandler, false)
+
+WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Is member'))
 
 // Clic sur le bouton "Save"
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
@@ -166,52 +192,45 @@ new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
 
 WebUI.refresh()
 
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Groups/Search group'), GlobalVariable.GroupName)
+
 WebUI.delay(2)
 
-// Verify the self-downgrade persisted by re-opening the group's Members tab and checking that the user's
-// dropdown-toggle now shows "Is member" (not "Is member and admin"). The old Permission selector
-// //body/div[2]/…/td[5]/button no longer exists after the dashboard redesign — the groups list
-// has no dedicated permission column, so we anchor on the user's own row in pica_group_accounts instead.
-userLocalPart = user.contains('@') ? user.substring(0, user.indexOf('@')) : user
+WebElement btn2 = findGroup(GlobalVariable.GroupName)
 
-WebElement grpBtn = findGroup(GlobalVariable.GroupName)
-
-WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(grpBtn))
+WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
 new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
-    ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]")))
+    ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)))
 
-// Open the user's role dropdown so the current selection is visible (marked by glyphicons-check in combo.js:144-149).
-String userToggleXpath = "//div[@id='pica_group_accounts']//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]//button[contains(concat(' ',normalize-space(@class),' '),' dropdown-toggle ')]"
+def button_2 = driver.findElement(By.xpath(xpath))
 
-WebElement userToggle = driver.findElement(By.xpath(userToggleXpath))
-WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(userToggle))
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button_2))
 
-new WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
-    ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='pica_group_accounts']//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]")))
+WebUI.delay(2)
 
-// Verify: within the opened dropdown, the option carrying the active check icon (glyphicons-check) is
-// "Is member" — not "Is member and admin". combo.js:144-149 sets glyphicons-check on the currently selected radio option.
-TestObject isMemberRoleSelected = new TestObject('isMemberRoleSelected')
-isMemberRoleSelected.addProperty('xpath', ConditionType.EQUALS,
-    "//div[@id='pica_group_accounts']//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]" +
-    "//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]" +
-    "//a[@data-dropdown-group='permission'" +
-    " and .//span[contains(concat(' ',normalize-space(@class),' '),' glyphicons-check ')]" +
-    " and (normalize-space(.)='Is member' or normalize-space(.)='Ist Mitglied')]")
+TestObject isAdminRoleSelected = new TestObject('isAdminRoleSelected')
 
-WebUI.verifyElementPresent(isMemberRoleSelected, 15)
+isAdminRoleSelected.addProperty('xpath', ConditionType.EQUALS, "//div[@id='pica_group_accounts']//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]//div[contains(@class,'dropdown') and (@data-selected='Is member and admin' or @data-selected='Ist Mitglied und Admin')]")
+
+WebUI.verifyElementPresent(isAdminRoleSelected, 10)
 
 WebUI.closeBrowser()
 
 @Keyword
 WebElement findGroup(String groupName) {
     WebDriver driver = DriverFactory.getWebDriver()
+    new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
+        org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
+            By.xpath("//table[@id='groups_table']/tbody/tr[@id]")))
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + GlobalVariable.GroupName) + '\')]/td[1]/span'))
+    String xp = "//table[@id='groups_table']/tbody/tr[contains(@data-search-keys,'" + groupName + "') or .//a[contains(text(),'" + groupName + "')]]/td[1]/span"
+    return driver.findElement(By.xpath(xp))
 }
 

@@ -41,10 +41,19 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 // Navigation vers la section "Members"
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
-// Localisation du bouton via XPath et clic
-def xpath = '(//div[@id=\'pica_group_accounts\']//table/tbody/tr[@data-userdata])[2]//button[contains(@class,\'dropdown-toggle\')]'
+// PFS-5510: the group creator (site admin) only gets GroupAdminPermission on creation, he is never
+// added as an explicit member (no addGroup() call) - so "Pre_test/add member" leaves exactly ONE row in
+// this table (the invited user), never two. Target that row by the invited user's own data instead of
+// a fixed position, and wait for it - the Members tab now also awaits the (default-on) child-groups
+// fetch before finishing its render, so a plain findElement without a wait is timing-sensitive.
+String userLocalPart = GlobalVariable.userName.contains('@') ? GlobalVariable.userName.substring(0, GlobalVariable.userName.indexOf('@')) : GlobalVariable.userName
+
+def xpath = "//div[@id='pica_group_accounts']//table/tbody/tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]//button[contains(@class,'dropdown-toggle')]"
 
 def driver = DriverFactory.getWebDriver()
+
+new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
+    ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)))
 
 def button = driver.findElement(By.xpath(xpath))
 
