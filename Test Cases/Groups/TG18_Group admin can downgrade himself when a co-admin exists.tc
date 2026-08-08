@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TG17_Try to downgrade the group admins rights by User</name>
+   <name>TG18_Group admin can downgrade himself when a co-admin exists</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>9fb2f044-47ae-46ce-8651-f8f40ea27dd7</testCaseGuid>
+   <testCaseGuid>943ec69b-a3ea-4222-9553-03aa62aca352</testCaseGuid>
 </TestCaseEntity>

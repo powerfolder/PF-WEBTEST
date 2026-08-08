@@ -2661,14 +2661,14 @@
       <guid>b6c3863e-2178-44b9-a138-d683a226f767</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Groups/TG17_Try to downgrade the group admins rights by User</testCaseId>
+      <testCaseId>Test Cases/Groups/TG17_Sole group admin cannot downgrade himself</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>bf717af0-4a15-4101-a2b7-f67259626aef</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Groups/TG18_Try to downgrade admin right for a user by himself</testCaseId>
+      <testCaseId>Test Cases/Groups/TG18_Group admin can downgrade himself when a co-admin exists</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

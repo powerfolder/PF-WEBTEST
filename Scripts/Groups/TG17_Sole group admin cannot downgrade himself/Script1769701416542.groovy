@@ -170,6 +170,15 @@ def button_1 = driver.findElement(By.xpath(xpathAdmin))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button_1))
 
+WebElement isMemberOption = driver.findElement(By.xpath(
+    "//div[@id='pica_group_accounts']//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]/li[a[@data-dropdown-group='permission']][1]/a"))
+
+Object hasClickHandler = WebUI.executeJavaScript(
+    "var el = arguments[0]; var ev = (window.jQuery && jQuery._data) ? jQuery._data(el, 'events') : null; return !!(ev && ev.click && ev.click.length > 0);",
+    Arrays.asList(isMemberOption))
+
+WebUiBuiltInKeywords.verifyEqual(hasClickHandler, false)
+
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Is member'))
 
 // Clic sur le bouton "Save"

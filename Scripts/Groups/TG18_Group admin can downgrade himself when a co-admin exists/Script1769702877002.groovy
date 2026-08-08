@@ -48,7 +48,7 @@ WebUiBuiltInKeywords.setText(findTestObject('Accounts/InputUserOrEmail'), user)
 
 WebUiBuiltInKeywords.setText(findTestObject('Accounts/InputPassword'), GlobalVariable.Pass)
 
-WebUiBuiltInKeywords.setText(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/account_storage_overwiew'), 
+WebUiBuiltInKeywords.setText(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/account_storage_overwiew'),
     '5')
 
 WebUiBuiltInKeywords.click(findTestObject('Accounts/SaveButton'))
@@ -63,6 +63,29 @@ boolean isUserCreated = userElement.isDisplayed()
 
 WebUiBuiltInKeywords.verifyEqual(isUserCreated, true)
 
+String coAdmin = (('coadmin_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
+
+WebUiBuiltInKeywords.click(findTestObject('Accounts/CreateButton'))
+
+WebUiBuiltInKeywords.click(findTestObject('Accounts/ClickCreateAccount'))
+
+WebUiBuiltInKeywords.setText(findTestObject('Accounts/InputUserOrEmail'), coAdmin)
+
+WebUiBuiltInKeywords.setText(findTestObject('Accounts/InputPassword'), GlobalVariable.Pass)
+
+WebUiBuiltInKeywords.setText(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/account_storage_overwiew'),
+    '5')
+
+WebUiBuiltInKeywords.click(findTestObject('Accounts/SaveButton'))
+
+WebUI.delay(2)
+
+WebElement coAdminElement = driver.findElement(By.xpath(('//td/a[contains(text(),\'' + coAdmin) + '\')]'))
+
+boolean isCoAdminCreated = coAdminElement.isDisplayed()
+
+WebUiBuiltInKeywords.verifyEqual(isCoAdminCreated, true)
+
 String groupName = 'Group_' + RandomStringUtils.randomNumeric(4)
 
 GlobalVariable.GroupName = groupName
@@ -71,10 +94,10 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Dashboa
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
+WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'),
     GlobalVariable.GroupName)
 
-WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/textarea_Organizations_pica_group_notes'), 
+WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/textarea_Organizations_pica_group_notes'),
     'create group')
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
@@ -91,7 +114,7 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups 
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
-// Semantic locate: pica-taginput-input class — stable against new .pica-members-filter dropdown that shifted div positions in group.vm:156
+// Add 'user' as member and promote him to group admin
 WebElement inputElement = driver.findElement(By.xpath("//*[@id='pica_group_accounts']//input[contains(concat(' ',normalize-space(@class),' '),' pica-taginput-input ')]"))
 
 inputElement.sendKeys(user)
@@ -103,12 +126,31 @@ String userLocalPart = user.contains('@') ? user.substring(0, user.indexOf('@'))
 new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
     ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]")))
 
-// Localisation du bouton via XPath et clic
 def xpath = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]//button[contains(@class,'dropdown-toggle')]"
 
 def button = driver.findElement(By.xpath(xpath))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button))
+
+WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
+
+// Add 'coAdmin' as member and promote him to group admin too, so the group ends up with two admins
+WebElement inputElement2 = driver.findElement(By.xpath("//*[@id='pica_group_accounts']//input[contains(concat(' ',normalize-space(@class),' '),' pica-taginput-input ')]"))
+
+inputElement2.sendKeys(coAdmin)
+
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
+
+String coAdminLocalPart = coAdmin.contains('@') ? coAdmin.substring(0, coAdmin.indexOf('@')) : coAdmin
+
+new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
+    ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" + coAdminLocalPart + "')]")))
+
+def xpathCoAdmin = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" + coAdminLocalPart + "')]//button[contains(@class,'dropdown-toggle')]"
+
+def buttonCoAdmin = driver.findElement(By.xpath(xpathCoAdmin))
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonCoAdmin))
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
 
@@ -119,6 +161,7 @@ new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
 
 WebUI.delay(2)
 
+// Log in as 'user' and try to downgrade himself - now allowed since 'coAdmin' remains a group admin (PFS-5585)
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
@@ -164,19 +207,36 @@ WebUI.verifyElementPresent(findTestObject('Groups/Page_Groups - PowerFolder/div_
 new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
     ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id='pica_group_dialog' and contains(concat(' ',normalize-space(@class),' '),' show ')]")))
 
-WebUI.refresh()
+WebUI.delay(2)
+
+// 'user' just gave up his own GroupAdminPermission, so isAtLeastGroupAdmin() now rejects him
+// (AbstractGroupAPIAction#isAtLeastGroupAdmin) - he can no longer reopen the group's Edit dialog to verify the
+// result himself. Verification is therefore done by logging back in as the site admin, who is unaffected.
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
+
+WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
+
+WebUI.click(findTestObject('Login/loginSubmit'))
+
+WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
+
+WebUI.click(findTestObject('Login/loginSubmit'))
+
+WebUI.delay(3)
+
+WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
+
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Groups/Search group'), GlobalVariable.GroupName)
 
 WebUI.delay(2)
 
-// Verify the self-downgrade persisted by re-opening the group's Members tab and checking that the user's
-// dropdown-toggle now shows "Is member" (not "Is member and admin"). The old Permission selector
-// //body/div[2]/…/td[5]/button no longer exists after the dashboard redesign — the groups list
-// has no dedicated permission column, so we anchor on the user's own row in pica_group_accounts instead.
-userLocalPart = user.contains('@') ? user.substring(0, user.indexOf('@')) : user
+WebElement btn2 = findGroup(GlobalVariable.GroupName)
 
-WebElement grpBtn = findGroup(GlobalVariable.GroupName)
-
-WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(grpBtn))
+WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn2))
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
@@ -185,26 +245,20 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
     ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]")))
 
-// Open the user's role dropdown so the current selection is visible (marked by glyphicons-check in combo.js:144-149).
-String userToggleXpath = "//div[@id='pica_group_accounts']//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]//button[contains(concat(' ',normalize-space(@class),' '),' dropdown-toggle ')]"
+// 'user' downgraded himself while 'coAdmin' still held group-admin rights (PFS-5585 allows this) -
+// his row must now read as a plain member.
+TestObject userIsPlainMember = new TestObject('userIsPlainMember')
+userIsPlainMember.addProperty('xpath', ConditionType.EQUALS,
+    "//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "') and contains(@data-userdata,'\"isGroupAdmin\":false')]")
 
-WebElement userToggle = driver.findElement(By.xpath(userToggleXpath))
-WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(userToggle))
+WebUI.verifyElementPresent(userIsPlainMember, 10)
 
-new WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
-    ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='pica_group_accounts']//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]")))
+// The remaining group admin must be unaffected by the other member's self-downgrade.
+TestObject coAdminStillAdmin = new TestObject('coAdminStillAdmin')
+coAdminStillAdmin.addProperty('xpath', ConditionType.EQUALS,
+    "//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" + coAdminLocalPart + "') and contains(@data-userdata,'\"isGroupAdmin\":true')]")
 
-// Verify: within the opened dropdown, the option carrying the active check icon (glyphicons-check) is
-// "Is member" — not "Is member and admin". combo.js:144-149 sets glyphicons-check on the currently selected radio option.
-TestObject isMemberRoleSelected = new TestObject('isMemberRoleSelected')
-isMemberRoleSelected.addProperty('xpath', ConditionType.EQUALS,
-    "//div[@id='pica_group_accounts']//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]" +
-    "//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]" +
-    "//a[@data-dropdown-group='permission'" +
-    " and .//span[contains(concat(' ',normalize-space(@class),' '),' glyphicons-check ')]" +
-    " and (normalize-space(.)='Is member' or normalize-space(.)='Ist Mitglied')]")
-
-WebUI.verifyElementPresent(isMemberRoleSelected, 15)
+WebUI.verifyElementPresent(coAdminStillAdmin, 10)
 
 WebUI.closeBrowser()
 
@@ -214,4 +268,3 @@ WebElement findGroup(String groupName) {
 
     return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + GlobalVariable.GroupName) + '\')]/td[1]/span'))
 }
-
