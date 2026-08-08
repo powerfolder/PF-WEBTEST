@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG21_Group admin leaves group when another admin exists</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0f2ec141-79cf-476a-b85c-1673c312db71</testCaseGuid>
+</TestCaseEntity>

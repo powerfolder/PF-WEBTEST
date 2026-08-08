@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG24_Server admin membership counts as second group admin</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>833d2a71-9033-4b8a-91ed-33c278d03a57</testCaseGuid>
+</TestCaseEntity>

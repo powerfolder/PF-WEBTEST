@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG20_Sole server admin cannot downgrade himself to member</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>20a408ee-e686-4d96-8b01-003ed6929c1f</testCaseGuid>
+</TestCaseEntity>

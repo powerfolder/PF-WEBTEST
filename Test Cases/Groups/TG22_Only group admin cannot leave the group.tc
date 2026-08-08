@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG22_Only group admin cannot leave the group</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>520555a6-22cb-4978-9bee-c22912ea7bce</testCaseGuid>
+</TestCaseEntity>
