@@ -27,17 +27,37 @@ import tags.TagHelper as TagHelper
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.STOP_ON_FAILURE)
 
 String workspaceName = TagHelper.createWorkspace()
+String tagText = 'TAG16_' + RandomStringUtils.randomAlphanumeric(6) + '.'
+
+// Tag am Arbeitsbereich selbst (dazu erst zurueck zur Liste, die ihn als Zeile zeigt)
+TagHelper.backToFolderList()
+TagHelper.openTagEditorViaIcon(workspaceName)
+TagHelper.addTag(tagText)
+TagHelper.saveEditorViaEnter()
+WebUI.refresh()
+WebUI.delay(2)
+
+TagHelper.openItem(workspaceName)
 String subfolderName = TagHelper.createSubfolder()
 
 TagHelper.backToFolderList()
 TagHelper.openItem(workspaceName)
-
-String tagText = 'TAG09_' + RandomStringUtils.randomAlphanumeric(6)
-
 TagHelper.openTagEditorViaIcon(subfolderName)
 TagHelper.addTag(tagText)
 TagHelper.saveEditorViaEnter()
+WebUI.refresh()
+WebUI.delay(2)
 
+TagHelper.openItem(subfolderName)
+String docName = TagHelper.createDocumentInCurrentFolder()
+TagHelper.openTagEditorViaIcon(docName)
+
+// Vorschlagsliste: der bereits verwendete Tag soll vorgeschlagen werden
+TagHelper.typeTagText(tagText.substring(0, Math.max(0, tagText.length() - 3)))
+List<String> suggestions = TagHelper.getSuggestionTexts()
+assert suggestions.contains(tagText)
+TagHelper.selectSuggestionByArrowDown()
+TagHelper.saveEditorViaEnter()
 WebUI.refresh()
 WebUI.delay(2)
 
@@ -45,6 +65,8 @@ TagHelper.backToFolderList()
 TagHelper.searchForTag(tagText)
 
 WebDriver driver = DriverFactory.getWebDriver()
-assert !driver.findElements(By.xpath("//*[contains(@data-search-keys, '" + subfolderName + "')]")).isEmpty()
+assert TagHelper.rowExistsEventually(workspaceName)
+assert TagHelper.rowExistsEventually(subfolderName)
+assert TagHelper.rowExistsEventually(docName)
 
 WebUI.closeBrowser()

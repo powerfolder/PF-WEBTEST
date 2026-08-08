@@ -27,66 +27,24 @@ import tags.TagHelper as TagHelper
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.STOP_ON_FAILURE)
 
 String workspaceName = TagHelper.createWorkspace()
-String tagText = 'TAG24_' + RandomStringUtils.randomAlphanumeric(6)
-
-// Tag am Arbeitsbereich selbst
-TagHelper.backToFolderList()
-TagHelper.openTagEditorViaIcon(workspaceName)
-TagHelper.addTag(tagText)
-TagHelper.saveEditorViaEnter()
-WebUI.refresh()
-WebUI.delay(2)
-
-TagHelper.openItem(workspaceName)
 String subfolderName = TagHelper.createSubfolder()
 
 TagHelper.backToFolderList()
 TagHelper.openItem(workspaceName)
-TagHelper.openTagEditorViaIcon(subfolderName)
+
+String tagText = 'TAG10_' + RandomStringUtils.randomAlphanumeric(6)
+
+TagHelper.openTagEditorViaRowMenu(subfolderName)
 TagHelper.addTag(tagText)
 TagHelper.saveEditorViaEnter()
+
 WebUI.refresh()
 WebUI.delay(2)
 
-TagHelper.openItem(subfolderName)
-String docName1 = TagHelper.createDocumentInCurrentFolder()
-TagHelper.openTagEditorViaIcon(docName1)
-TagHelper.addTag(tagText)
-TagHelper.saveEditorViaEnter()
-WebUI.refresh()
-WebUI.delay(2)
-
-String docName2 = TagHelper.createDocumentInCurrentFolder()
-TagHelper.openTagEditorViaIcon(docName2)
-TagHelper.addTag(tagText)
-TagHelper.saveEditorViaEnter()
-WebUI.refresh()
-WebUI.delay(2)
-
-// (a) Filter von der obersten Arbeitsbereichs-Ebene aus
 TagHelper.backToFolderList()
-TagHelper.filterByTag(tagText)
+TagHelper.searchForTag(tagText)
+
 WebDriver driver = DriverFactory.getWebDriver()
-assert !driver.findElements(By.xpath("//*[contains(@data-search-keys, '" + workspaceName + "')]")).isEmpty()
-
-// F5-Persistenz
-WebUI.refresh()
-WebUI.delay(2)
-assert TagHelper.isTagFilterActive(tagText)
-
-TagHelper.clearTagFilterViaX(tagText)
-assert !TagHelper.isTagFilterActive(tagText)
-
-// (b) Filter von innerhalb eines Unterordners aus - muss weiterhin arbeitsbereichsweit filtern
-TagHelper.openItem(workspaceName)
-TagHelper.openItem(subfolderName)
-TagHelper.filterByTag(tagText)
-
-WebDriver driver2 = DriverFactory.getWebDriver()
-assert !driver2.findElements(By.xpath("//*[contains(@data-search-keys, '" + docName1 + "')]")).isEmpty()
-assert !driver2.findElements(By.xpath("//*[contains(@data-search-keys, '" + docName2 + "')]")).isEmpty()
-
-TagHelper.clickResetFilterAndSearch()
-assert !TagHelper.isTagFilterActive(tagText)
+assert TagHelper.rowExistsEventually(subfolderName)
 
 WebUI.closeBrowser()

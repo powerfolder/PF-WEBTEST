@@ -10,6 +10,9 @@ import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
+import org.openqa.selenium.support.ui.ExpectedConditions
+import org.openqa.selenium.support.ui.WebDriverWait
+import java.time.Duration
 
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -31,23 +34,64 @@ public class TagHelper {
     private static final String EDITOR_SUGGESTION_CSS = ".pica-tageditor-wrapper.pica-tageditor-inline .pica-tageditor-suggestions .pica-tageditor-suggestion"
     private static final String ROW_MENU_TAGS_ITEM_CSS = "#files_files_table ul.conext-dropdown-menu a.files-ui-tags"
     private static final String ACTIONBAR_TAGS_ITEM_CSS = ".pica-table-selection-context a.files-ui-tags"
-    private static final String TAG_FILTER_CONTAINER_ID = "pica_tag_filter_chips"
+    // PFS-5653 replaced the separate tag-filter state with a generic search-operator
+    // system (Picasso.SearchFilters in search_autocomplete.js); the active-filter chip
+    // bar's id changed from "pica_tag_filter_chips" to "pica_op_filter_chips", though
+    // the chip/x classes themselves (pica-tag-chip / pica-tag-filter-x) were reused as-is.
+    private static final String TAG_FILTER_CONTAINER_ID = "pica_op_filter_chips"
 
     // ------------------------------------------------------------------
     // Row lookup (same data-search-keys convention as Keywords/file/FileFinder.groovy)
     // ------------------------------------------------------------------
 
+    // The file/folder table is rendered client-side via AJAX (Picasso), so a row that
+    // was just created/navigated to may not exist in the DOM yet at the instant this
+    // is called - unlike Katalon's built-in WebUI.* keywords, a raw driver.findElement
+    // does NOT retry. Poll for it instead of failing immediately.
     @Keyword
     static WebElement findRow(String itemName) {
         WebDriver driver = DriverFactory.getWebDriver()
-        return driver.findElement(By.xpath(String.format(ROW_XPATH, itemName)))
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15))
+        return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(String.format(ROW_XPATH, itemName))))
     }
 
+    // For use in test scripts' own assertions instead of a raw, non-retrying
+    // driver.findElements(...).isEmpty() check (e.g. right after a search or filter) -
+    // fixes the same class of timing failure as findRow()'s wait, for callers that
+    // build their own xpath rather than going through findRow().
+    @Keyword
+    static boolean rowExistsEventually(String itemName, int timeoutSeconds = 10) {
+        WebDriver driver = DriverFactory.getWebDriver()
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds))
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(String.format(ROW_XPATH, itemName))))
+            return true
+        } catch (org.openqa.selenium.TimeoutException ignored) {
+            return false
+        }
+    }
+
+    // Opens (navigates into) a folder/workspace row. IMPORTANT: the icon in td[1] is
+    // the SELECTION toggle (see selectRowCheckbox() below / Keywords/helpers/helper.groovy
+    // selectUploadedFolders(), which clicks this exact icon to select rows) - it does
+    // NOT navigate. The real "open" target is the name link with class "pica-name"
+    // (confirmed in Scripts/Subfoldersharing/SFS04.../*.groovy). Clicking the wrong one
+    // was the root cause of every "openItem() didn't actually navigate" failure in the
+    // first real test run (TAG06-10, TAG16-20, TAG22, TAG24-27).
     @Keyword
     static void openItem(String itemName) {
         WebElement row = findRow(itemName)
-        WebElement nameSpan = row.findElement(By.xpath("./td[1]/span"))
-        WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(nameSpan))
+        WebElement nameLink = row.findElement(By.xpath(".//a[contains(concat(' ',normalize-space(@class),' '),' pica-name ')]"))
+        WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(nameLink))
+        waitForFolderView()
+    }
+
+    // Confirms navigation into a folder/workspace actually completed, by waiting for a
+    // control that only exists inside a folder view, instead of returning immediately
+    // and letting the caller race the page's AJAX update.
+    private static void waitForFolderView() {
+        WebUI.waitForElementPresent(
+            findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'), 10)
     }
 
     // Creating a workspace or a subfolder navigates straight INTO it (confirmed against
@@ -111,10 +155,16 @@ public class TagHelper {
         waitForEditor()
     }
 
+    // There is no native <input type="checkbox"> in this table - a row is selected by
+    // clicking its td[1] icon (confirmed in Keywords/helpers/helper.groovy
+    // selectUploadedFolders(), which uses this exact xpath to select rows via
+    // shift-click). This was previously confused with openItem()'s target, which is
+    // why row selection failed in the first real test run (TAG03, TAG13, TAG30).
     @Keyword
     static void selectRowCheckbox(String itemName) {
-        WebElement checkbox = findRow(itemName).findElement(By.xpath(".//input[@type='checkbox']"))
-        WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(checkbox))
+        WebElement icon = findRow(itemName).findElement(By.xpath("./td[1]/span"))
+        WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(icon))
+        WebUI.delay(1)
     }
 
     @Keyword
@@ -134,8 +184,9 @@ public class TagHelper {
     static void typeTagText(String tagText) {
         WebElement input = editorInputElement()
         input.sendKeys(tagText)
-        // suggestTags() is debounced 300ms client-side (files.js) before the XHR fires
-        WebUI.delay(1)
+        // suggestTags() is debounced 300ms client-side (files.js) before the XHR fires;
+        // 2s to leave headroom for the round trip under load
+        WebUI.delay(2)
     }
 
     @Keyword
@@ -160,10 +211,15 @@ public class TagHelper {
         editorInputElement().sendKeys(Keys.ENTER)
     }
 
+    // A native Selenium click on <body> throws ElementNotInteractableException
+    // ("zero size") whenever the page's layout gives <body> no rendered height/width
+    // of its own (all content sits in absolutely/flex-positioned wrapper divs) - this
+    // is what failed in the first real test run (TAG23). A JS-dispatched click bypasses
+    // the geometry requirement entirely and still fires outside the tag editor.
     @Keyword
     static void saveEditorViaOutsideClick() {
-        WebDriver driver = DriverFactory.getWebDriver()
-        driver.findElement(By.tagName("body")).click()
+        WebUI.executeJavaScript("document.body.click();", null)
+        WebUI.delay(1)
     }
 
     @Keyword

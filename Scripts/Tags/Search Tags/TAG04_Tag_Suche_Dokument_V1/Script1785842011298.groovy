@@ -27,14 +27,11 @@ import tags.TagHelper as TagHelper
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.STOP_ON_FAILURE)
 
 String workspaceName = TagHelper.createWorkspace()
-String subfolderName = TagHelper.createSubfolder()
+String docName = TagHelper.createDocumentInCurrentFolder()
 
-TagHelper.backToFolderList()
-TagHelper.openItem(workspaceName)
+String tagText = 'TAG04_' + RandomStringUtils.randomAlphanumeric(6)
 
-String tagText = 'TAG10_' + RandomStringUtils.randomAlphanumeric(6)
-
-TagHelper.openTagEditorViaRowMenu(subfolderName)
+TagHelper.openTagEditorViaIcon(docName)
 TagHelper.addTag(tagText)
 TagHelper.saveEditorViaEnter()
 
@@ -45,6 +42,6 @@ TagHelper.backToFolderList()
 TagHelper.searchForTag(tagText)
 
 WebDriver driver = DriverFactory.getWebDriver()
-assert !driver.findElements(By.xpath("//*[contains(@data-search-keys, '" + subfolderName + "')]")).isEmpty()
+assert TagHelper.rowExistsEventually(docName)
 
 WebUI.closeBrowser()

@@ -27,20 +27,21 @@ import tags.TagHelper as TagHelper
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.STOP_ON_FAILURE)
 
 String workspaceName = TagHelper.createWorkspace()
-TagHelper.backToFolderList()
+String docName = TagHelper.createDocumentInCurrentFolder()
 
-String tagText = 'TAG14_' + RandomStringUtils.randomAlphanumeric(6)
+String tagText = 'TAG05_' + RandomStringUtils.randomAlphanumeric(6)
 
-TagHelper.openTagEditorViaIcon(workspaceName)
+TagHelper.openTagEditorViaRowMenu(docName)
 TagHelper.addTag(tagText)
 TagHelper.saveEditorViaEnter()
 
 WebUI.refresh()
 WebUI.delay(2)
 
+TagHelper.backToFolderList()
 TagHelper.searchForTag(tagText)
 
 WebDriver driver = DriverFactory.getWebDriver()
-assert !driver.findElements(By.xpath("//*[contains(@data-search-keys, '" + workspaceName + "')]")).isEmpty()
+assert TagHelper.rowExistsEventually(docName)
 
 WebUI.closeBrowser()

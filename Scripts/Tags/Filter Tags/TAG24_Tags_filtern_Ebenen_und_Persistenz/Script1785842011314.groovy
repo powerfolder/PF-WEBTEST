@@ -27,9 +27,9 @@ import tags.TagHelper as TagHelper
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.STOP_ON_FAILURE)
 
 String workspaceName = TagHelper.createWorkspace()
-String tagText = 'TAG16_' + RandomStringUtils.randomAlphanumeric(6) + '.'
+String tagText = 'TAG24_' + RandomStringUtils.randomAlphanumeric(6)
 
-// Tag am Arbeitsbereich selbst (dazu erst zurueck zur Liste, die ihn als Zeile zeigt)
+// Tag am Arbeitsbereich selbst
 TagHelper.backToFolderList()
 TagHelper.openTagEditorViaIcon(workspaceName)
 TagHelper.addTag(tagText)
@@ -49,24 +49,44 @@ WebUI.refresh()
 WebUI.delay(2)
 
 TagHelper.openItem(subfolderName)
-String docName = TagHelper.createDocumentInCurrentFolder()
-TagHelper.openTagEditorViaIcon(docName)
-
-// Vorschlagsliste: der bereits verwendete Tag soll vorgeschlagen werden
-TagHelper.typeTagText(tagText.substring(0, Math.max(0, tagText.length() - 3)))
-List<String> suggestions = TagHelper.getSuggestionTexts()
-assert suggestions.contains(tagText)
-TagHelper.selectSuggestionByArrowDown()
+String docName1 = TagHelper.createDocumentInCurrentFolder()
+TagHelper.openTagEditorViaIcon(docName1)
+TagHelper.addTag(tagText)
 TagHelper.saveEditorViaEnter()
 WebUI.refresh()
 WebUI.delay(2)
 
-TagHelper.backToFolderList()
-TagHelper.searchForTag(tagText)
+String docName2 = TagHelper.createDocumentInCurrentFolder()
+TagHelper.openTagEditorViaIcon(docName2)
+TagHelper.addTag(tagText)
+TagHelper.saveEditorViaEnter()
+WebUI.refresh()
+WebUI.delay(2)
 
+// (a) Filter von der obersten Arbeitsbereichs-Ebene aus
+TagHelper.backToFolderList()
+TagHelper.filterByTag(tagText)
 WebDriver driver = DriverFactory.getWebDriver()
-assert !driver.findElements(By.xpath("//*[contains(@data-search-keys, '" + workspaceName + "')]")).isEmpty()
-assert !driver.findElements(By.xpath("//*[contains(@data-search-keys, '" + subfolderName + "')]")).isEmpty()
-assert !driver.findElements(By.xpath("//*[contains(@data-search-keys, '" + docName + "')]")).isEmpty()
+assert TagHelper.rowExistsEventually(workspaceName)
+
+// F5-Persistenz
+WebUI.refresh()
+WebUI.delay(2)
+assert TagHelper.isTagFilterActive(tagText)
+
+TagHelper.clearTagFilterViaX(tagText)
+assert !TagHelper.isTagFilterActive(tagText)
+
+// (b) Filter von innerhalb eines Unterordners aus - muss weiterhin arbeitsbereichsweit filtern
+TagHelper.openItem(workspaceName)
+TagHelper.openItem(subfolderName)
+TagHelper.filterByTag(tagText)
+
+WebDriver driver2 = DriverFactory.getWebDriver()
+assert TagHelper.rowExistsEventually(docName1)
+assert TagHelper.rowExistsEventually(docName2)
+
+TagHelper.clickResetFilterAndSearch()
+assert !TagHelper.isTagFilterActive(tagText)
 
 WebUI.closeBrowser()

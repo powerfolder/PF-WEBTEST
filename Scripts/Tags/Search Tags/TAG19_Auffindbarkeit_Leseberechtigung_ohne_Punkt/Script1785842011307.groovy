@@ -121,9 +121,9 @@ TagHelper.backToFolderList()
 TagHelper.searchForTag(tagText)
 
 WebDriver driver = DriverFactory.getWebDriver()
-assert !driver.findElements(By.xpath("//*[contains(@data-search-keys, '" + workspaceName + "')]")).isEmpty()
-assert !driver.findElements(By.xpath("//*[contains(@data-search-keys, '" + subfolderName + "')]")).isEmpty()
-assert !driver.findElements(By.xpath("//*[contains(@data-search-keys, '" + docName + "')]")).isEmpty()
+assert TagHelper.rowExistsEventually(workspaceName)
+assert TagHelper.rowExistsEventually(subfolderName)
+assert TagHelper.rowExistsEventually(docName)
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
