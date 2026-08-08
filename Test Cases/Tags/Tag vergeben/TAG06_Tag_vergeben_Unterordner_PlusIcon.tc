@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TAG-06 - konsolidierter Testcase Tag-Funktion (PFS-5306)</description>
+   <name>TAG06_Tag_vergeben_Unterordner_PlusIcon</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>42418592-5c59-43e7-bc13-8832bbb45732</testCaseGuid>
+</TestCaseEntity>

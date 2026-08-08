@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TAG-14 - konsolidierter Testcase Tag-Funktion (PFS-5306)</description>
+   <name>TAG14_Tag_Suche_Arbeitsbereich_V1</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>60ade50c-9c14-4e40-97d7-a2ae94ef7518</testCaseGuid>
+</TestCaseEntity>

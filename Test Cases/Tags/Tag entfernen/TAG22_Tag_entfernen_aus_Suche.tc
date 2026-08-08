@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TAG-22 - konsolidierter Testcase Tag-Funktion (PFS-5306)</description>
+   <name>TAG22_Tag_entfernen_aus_Suche</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5083b753-02bc-4478-aec7-933e5238c35c</testCaseGuid>
+</TestCaseEntity>

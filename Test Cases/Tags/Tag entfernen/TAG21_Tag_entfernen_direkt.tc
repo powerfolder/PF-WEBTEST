@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TAG-21 - konsolidierter Testcase Tag-Funktion (PFS-5306)</description>
+   <name>TAG21_Tag_entfernen_direkt</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>53c27960-67fa-4016-84a4-cfc158b10418</testCaseGuid>
+</TestCaseEntity>

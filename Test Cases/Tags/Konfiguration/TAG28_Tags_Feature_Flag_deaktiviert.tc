@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TAG-28 - konsolidierter Testcase Tag-Funktion (PFS-5306)</description>
+   <name>TAG28_Tags_Feature_Flag_deaktiviert</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b25b3b0f-d88c-47ec-b051-2d3272807c9f</testCaseGuid>
+</TestCaseEntity>

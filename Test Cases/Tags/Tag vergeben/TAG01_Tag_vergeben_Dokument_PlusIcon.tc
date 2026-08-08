@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TAG-01 - konsolidierter Testcase Tag-Funktion (PFS-5306)</description>
+   <name>TAG01_Tag_vergeben_Dokument_PlusIcon</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8cc525e2-21b7-4ca4-86a5-71a2e3f099dd</testCaseGuid>
+</TestCaseEntity>

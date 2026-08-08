@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TAG-07 - konsolidierter Testcase Tag-Funktion (PFS-5306)</description>
+   <name>TAG07_Tag_vergeben_Unterordner_Kontextmenue</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>050792b4-040c-4094-a75f-35fbec805ead</testCaseGuid>
+</TestCaseEntity>

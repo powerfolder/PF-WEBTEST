@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TAG-15 - konsolidierter Testcase Tag-Funktion (PFS-5306)</description>
+   <name>TAG15_Tag_Suche_Arbeitsbereich_V2</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b52d4059-5764-4fb4-967d-1127abb565f7</testCaseGuid>
+</TestCaseEntity>
