@@ -148,7 +148,8 @@ println('Tooltip content: ' + tooltipText_2)
 
 String expectedcontributorEmail = GlobalVariable.userEmail
 
-String actualcontributorEmail = tooltipText_2.substring(tooltipText.lastIndexOf(' ') + 1).trim()
+def contributorEmailMatcher = (tooltipText_2 =~ /[\w.+-]+@[\w-]+\.[\w.-]+/)
+String actualcontributorEmail = contributorEmailMatcher.find() ? contributorEmailMatcher.group() : null
 
 println("Email from tooltip: " + actualcontributorEmail)
 println("Expected contributor email: " + expectedcontributorEmail)
