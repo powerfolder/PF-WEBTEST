@@ -80,10 +80,16 @@ WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(2)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))
 
-WebElement invitationLink = TagHelper.findRow(subfolderName).findElement(By.xpath('./td[1]/span'))
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(invitationLink))
+// Read-only invitees may not have the write-permission-only controls that
+// openItem()'s postcondition waits for - click-only, then wait for accept_invitation
+TagHelper.clickItemNameLink(subfolderName)
 WebUI.verifyElementClickable(findTestObject('Share/Page_Folders - PowerFolder/accept_invitation'))
 WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/accept_invitation'))
+
+// Per Scripts/Subfoldersharing/SFS04.../*.groovy: accepting the invitation does NOT
+// itself navigate into the item - it stays at the list showing it as a row. A
+// separate click on the row is still required to actually open it.
+TagHelper.clickItemNameLink(subfolderName)
 
 // 1./2. Auf oberster Ebene erscheint fuer diesen Nutzer der geteilte Unterordner direkt
 // (der Arbeitsbereich selbst wurde nie geteilt und bleibt unsichtbar)

@@ -93,14 +93,22 @@ WebUI.click(findTestObject('LeftNavigationIcons/folders'))
 
 // Klick auf den Zeilenlink navigiert (wie ueberall in diesem Projekt) direkt in den
 // Arbeitsbereich hinein - danach sind wir INNERHALB des Arbeitsbereichs positioniert
-WebElement invitationLink = TagHelper.findRow(workspaceName).findElement(By.xpath('./td[1]/span'))
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(invitationLink))
+// Read-only invitees may not have the write-permission-only controls that
+// openItem()'s postcondition waits for - click-only, then wait for accept_invitation
+TagHelper.clickItemNameLink(workspaceName)
 WebUI.verifyElementClickable(findTestObject('Share/Page_Folders - PowerFolder/accept_invitation'))
 WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/accept_invitation'))
 
+// Per Scripts/Subfoldersharing/SFS04.../*.groovy: accepting the invitation does NOT
+// itself navigate into the item - it stays at the list showing it as a row. A
+// separate click on the row is still required to actually open it.
+TagHelper.clickItemNameLink(workspaceName)
+
 // Globale/uebergreifende Tag-Suche als Konto mit nur READ_WRITE (nicht ADMIN/OWNER)
 TagHelper.backToFolderList()
-TagHelper.searchForTag(tagText)
+// File tags are matched via the async Lucene index - reindexing can lag a few
+// seconds behind the save, so retry the search rather than searching once.
+assert TagHelper.searchForTagAndWaitForRow(tagText, docName)
 
 // Tag direkt aus der Suchergebnisansicht entfernen (Fix Commit 90db617027)
 TagHelper.openTagEditorViaIcon(docName)

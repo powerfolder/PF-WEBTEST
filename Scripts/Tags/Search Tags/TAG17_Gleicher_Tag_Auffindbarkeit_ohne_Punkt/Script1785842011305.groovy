@@ -62,11 +62,11 @@ WebUI.refresh()
 WebUI.delay(2)
 
 TagHelper.backToFolderList()
-TagHelper.searchForTag(tagText)
-
-WebDriver driver = DriverFactory.getWebDriver()
-assert TagHelper.rowExistsEventually(workspaceName)
-assert TagHelper.rowExistsEventually(subfolderName)
-assert TagHelper.rowExistsEventually(docName)
+// File/subfolder tags are matched via the async Lucene index, unlike a workspace's
+// own tag - reindexing can lag a few seconds behind the save, so retry the search
+// independently for each item rather than a single search + immediate check.
+assert TagHelper.searchForTagAndWaitForRow(tagText, workspaceName)
+assert TagHelper.searchForTagAndWaitForRow(tagText, subfolderName)
+assert TagHelper.searchForTagAndWaitForRow(tagText, docName)
 
 WebUI.closeBrowser()

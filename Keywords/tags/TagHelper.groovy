@@ -80,10 +80,19 @@ public class TagHelper {
     // first real test run (TAG06-10, TAG16-20, TAG22, TAG24-27).
     @Keyword
     static void openItem(String itemName) {
+        clickItemNameLink(itemName)
+        waitForFolderView()
+    }
+
+    // Just the click, without waitForFolderView()'s postcondition (which waits for a
+    // write-permission-only control) - use this for a read-only invitee accepting a
+    // pending invitation, where the caller's own next wait (e.g. for the
+    // accept_invitation button) is the correct postcondition instead.
+    @Keyword
+    static void clickItemNameLink(String itemName) {
         WebElement row = findRow(itemName)
         WebElement nameLink = row.findElement(By.xpath(".//a[contains(concat(' ',normalize-space(@class),' '),' pica-name ')]"))
         WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(nameLink))
-        waitForFolderView()
     }
 
     // Confirms navigation into a folder/workspace actually completed, by waiting for a
@@ -211,14 +220,22 @@ public class TagHelper {
         editorInputElement().sendKeys(Keys.ENTER)
     }
 
-    // A native Selenium click on <body> throws ElementNotInteractableException
-    // ("zero size") whenever the page's layout gives <body> no rendered height/width
-    // of its own (all content sits in absolutely/flex-positioned wrapper divs) - this
-    // is what failed in the first real test run (TAG23). A JS-dispatched click bypasses
-    // the geometry requirement entirely and still fires outside the tag editor.
+    // "Click outside saves" is implemented as a document-level MOUSEDOWN listener
+    // (files.js wireTagEditor: $(document).on("mousedown.tagsinline", ...)), not a
+    // click listener. document.body.click() only synthesizes a "click" event, which
+    // never fires "mousedown" - the save handler was never triggered, so the typed
+    // tag was silently dropped (root cause of the second real test run's TAG23
+    // failure). Dispatch an actual MouseEvent("mousedown") instead. A native Selenium
+    // click on <body> was tried first but throws ElementNotInteractableException
+    // ("zero size") when <body> has no rendered height/width of its own (all content
+    // sits in absolutely/flex-positioned wrapper divs) - the first real test run's
+    // TAG23 failure - so this also sidesteps that geometry requirement.
     @Keyword
     static void saveEditorViaOutsideClick() {
-        WebUI.executeJavaScript("document.body.click();", null)
+        WebUI.executeJavaScript(
+            "document.body.dispatchEvent(new MouseEvent('mousedown', {bubbles: true, cancelable: true, view: window}));",
+            null
+        )
         WebUI.delay(1)
     }
 
@@ -237,6 +254,23 @@ public class TagHelper {
         WebDriver driver = DriverFactory.getWebDriver()
         List<WebElement> items = driver.findElements(By.cssSelector(EDITOR_SUGGESTION_CSS))
         return items.collect { it.getText().trim() }
+    }
+
+    // Polls the already-open suggestion dropdown rather than re-typing (typeTagText()
+    // appends via sendKeys, so calling it again here would corrupt the query) - covers
+    // any suggestion round-trip lag beyond typeTagText()'s own debounce delay.
+    @Keyword
+    static boolean suggestionsEventuallyContain(String expectedTag, int timeoutSeconds = 8) {
+        long deadline = System.currentTimeMillis() + (timeoutSeconds * 1000L)
+        while (true) {
+            if (getSuggestionTexts().contains(expectedTag)) {
+                return true
+            }
+            if (System.currentTimeMillis() >= deadline) {
+                return false
+            }
+            WebUI.delay(1)
+        }
     }
 
     // ------------------------------------------------------------------
@@ -264,12 +298,38 @@ public class TagHelper {
     // Search (reuses the existing Folders/inputSearch object)
     // ------------------------------------------------------------------
 
+    // A bare-word query (no operator) was expected to recurse into files/subfolders and
+    // match the Lucene "tags" field too (confirmed by reading FileInfoCriteriaFactory/
+    // GetAllAction/LuceneIndexManager) - but manual verification against the live app
+    // showed it does NOT reliably surface tagged files/subfolders in practice, while the
+    // explicit "tag:" operator (query=tag:value, confirmed live via the network tab) does.
+    // Use the operator explicitly rather than relying on the bare-word path.
     @Keyword
     static void searchForTag(String tagText) {
         TestObject searchInput = findTestObject('Folders/inputSearch')
-        WebUI.setText(searchInput, tagText)
+        String query = tagText.contains(' ') ? ('tag:"' + tagText + '"') : ('tag:' + tagText)
+        WebUI.setText(searchInput, query)
         WebUI.sendKeys(searchInput, Keys.chord(Keys.ENTER))
         WebUI.delay(2)
+    }
+
+    // A file/subfolder's tag is matched via the async Lucene index (LuceneIndexManager),
+    // unlike a workspace's own tag (a direct FolderInfo field, visible to search
+    // immediately) - reindexing can lag a few seconds behind the save. Re-issues the
+    // search every ~2s until the row shows up or the timeout elapses, instead of
+    // searching once and hoping the index has already caught up.
+    @Keyword
+    static boolean searchForTagAndWaitForRow(String tagText, String itemName, int timeoutSeconds = 20) {
+        long deadline = System.currentTimeMillis() + (timeoutSeconds * 1000L)
+        while (true) {
+            searchForTag(tagText)
+            if (rowExistsEventually(itemName, 3)) {
+                return true
+            }
+            if (System.currentTimeMillis() >= deadline) {
+                return false
+            }
+        }
     }
 
     // ------------------------------------------------------------------
@@ -286,13 +346,20 @@ public class TagHelper {
         WebUI.delay(1)
     }
 
+    // Retries rather than a one-shot check: after F5, restoreFilters() needs a moment
+    // to read sessionStorage and re-render the chip bar before it's present in the DOM.
     @Keyword
-    static boolean isTagFilterActive(String tagText) {
+    static boolean isTagFilterActive(String tagText, int timeoutSeconds = 8) {
         WebDriver driver = DriverFactory.getWebDriver()
-        List<WebElement> tokens = driver.findElements(By.xpath(
-            "//*[@id='" + TAG_FILTER_CONTAINER_ID + "']//*[contains(@class,'pica-tag-chip') and contains(@class,'active') and normalize-space(text())='" + tagText + "']"
-        ))
-        return !tokens.isEmpty()
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds))
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(
+                "//*[@id='" + TAG_FILTER_CONTAINER_ID + "']//*[contains(@class,'pica-tag-chip') and contains(@class,'active') and normalize-space(text())='" + tagText + "']"
+            )))
+            return true
+        } catch (org.openqa.selenium.TimeoutException ignored) {
+            return false
+        }
     }
 
     @Keyword

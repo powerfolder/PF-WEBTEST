@@ -37,7 +37,9 @@ WebUI.refresh()
 WebUI.delay(2)
 
 TagHelper.backToFolderList()
-TagHelper.searchForTag(tagText)
+// File tags are matched via the async Lucene index - reindexing can lag a few
+// seconds behind the save, so retry the search rather than searching once.
+assert TagHelper.searchForTagAndWaitForRow(tagText, docName)
 
 TagHelper.openTagEditorViaIcon(docName)
 TagHelper.removeTag(tagText)

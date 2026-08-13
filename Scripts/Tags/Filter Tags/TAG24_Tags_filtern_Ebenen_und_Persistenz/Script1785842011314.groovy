@@ -75,7 +75,7 @@ WebUI.delay(2)
 assert TagHelper.isTagFilterActive(tagText)
 
 TagHelper.clearTagFilterViaX(tagText)
-assert !TagHelper.isTagFilterActive(tagText)
+assert !TagHelper.isTagFilterActive(tagText, 3)
 
 // (b) Filter von innerhalb eines Unterordners aus - muss weiterhin arbeitsbereichsweit filtern
 TagHelper.openItem(workspaceName)
@@ -87,6 +87,6 @@ assert TagHelper.rowExistsEventually(docName1)
 assert TagHelper.rowExistsEventually(docName2)
 
 TagHelper.clickResetFilterAndSearch()
-assert !TagHelper.isTagFilterActive(tagText)
+assert !TagHelper.isTagFilterActive(tagText, 3)
 
 WebUI.closeBrowser()

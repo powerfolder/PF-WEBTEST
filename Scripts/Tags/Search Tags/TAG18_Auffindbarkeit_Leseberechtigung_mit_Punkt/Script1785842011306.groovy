@@ -112,18 +112,24 @@ WebUI.click(findTestObject('LeftNavigationIcons/folders'))
 
 // Klick auf den Zeilenlink navigiert (wie ueberall in diesem Projekt) direkt in den
 // Arbeitsbereich hinein - danach sind wir INNERHALB des Arbeitsbereichs positioniert
-WebElement invitationLink = TagHelper.findRow(workspaceName).findElement(By.xpath('./td[1]/span'))
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(invitationLink))
+// Read-only invitees may not have the write-permission-only controls that
+// openItem()'s postcondition waits for - click-only, then wait for accept_invitation
+TagHelper.clickItemNameLink(workspaceName)
 WebUI.verifyElementClickable(findTestObject('Share/Page_Folders - PowerFolder/accept_invitation'))
 WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/accept_invitation'))
 
-TagHelper.backToFolderList()
-TagHelper.searchForTag(tagText)
+// Per Scripts/Subfoldersharing/SFS04.../*.groovy: accepting the invitation does NOT
+// itself navigate into the item - it stays at the list showing it as a row. A
+// separate click on the row is still required to actually open it.
+TagHelper.clickItemNameLink(workspaceName)
 
-WebDriver driver = DriverFactory.getWebDriver()
-assert TagHelper.rowExistsEventually(workspaceName)
-assert TagHelper.rowExistsEventually(subfolderName)
-assert TagHelper.rowExistsEventually(docName)
+TagHelper.backToFolderList()
+// File/subfolder tags are matched via the async Lucene index, unlike a workspace's
+// own tag - reindexing can lag a few seconds behind the save, so retry the search
+// independently for each item rather than a single search + immediate check.
+assert TagHelper.searchForTagAndWaitForRow(tagText, workspaceName)
+assert TagHelper.searchForTagAndWaitForRow(tagText, subfolderName)
+assert TagHelper.searchForTagAndWaitForRow(tagText, docName)
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
