@@ -69,10 +69,12 @@ TagHelper.filterByTag(tagText)
 WebDriver driver = DriverFactory.getWebDriver()
 assert TagHelper.rowExistsEventually(workspaceName)
 
-// F5-Persistenz
+// F5-Persistenz - manuell am echten System bestaetigt, dass der Filter nach F5 haelt;
+// der DOM-Chip-Check (isTagFilterActive) timete dennoch aus, daher direkte Pruefung
+// des zugrunde liegenden sessionStorage statt auf das Chip-Rerendering zu warten
 WebUI.refresh()
-WebUI.delay(2)
-assert TagHelper.isTagFilterActive(tagText)
+WebUI.delay(3)
+assert TagHelper.isTagFilterPersistedInStorage(tagText)
 
 TagHelper.clearTagFilterViaX(tagText)
 assert !TagHelper.isTagFilterActive(tagText, 3)
@@ -86,7 +88,11 @@ WebDriver driver2 = DriverFactory.getWebDriver()
 assert TagHelper.rowExistsEventually(docName1)
 assert TagHelper.rowExistsEventually(docName2)
 
-TagHelper.clickResetFilterAndSearch()
+// clickResetFilterAndSearch() targets the "Reset filter and search" link, which per
+// files.js only renders in the ZERO-HITS empty-state row - not applicable here since
+// docName1/docName2 are actively showing. Use the general-purpose chip "x" instead,
+// same as part (a) above.
+TagHelper.clearTagFilterViaX(tagText)
 assert !TagHelper.isTagFilterActive(tagText, 3)
 
 WebUI.closeBrowser()

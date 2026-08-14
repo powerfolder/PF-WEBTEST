@@ -98,10 +98,21 @@ WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/accept_invitation')
 // separate click on the row is still required to actually open it.
 TagHelper.clickItemNameLink(workspaceName)
 
-// Jetzt innerhalb des Arbeitsbereichs (expliziter Klick oben)
+// Jetzt innerhalb des Arbeitsbereichs (expliziter Klick oben) - ein Refresh stellt
+// sicher, dass die Ordnerliste nicht aus einem veralteten Zwischenstand angezeigt wird
+WebUI.refresh()
+WebUI.delay(2)
 assert !TagHelper.isTagIconPresent(subfolderName)
-assert !TagHelper.isTagIconPresent(docName)
 assert !TagHelper.isTagsMenuEntryOfferedInRowMenu(subfolderName)
+
+// docName was created INSIDE subfolderName (createSubfolder() navigates into the new
+// subfolder before createDocumentInCurrentFolder() runs) - it is not a direct child of
+// the workspace, so it must be checked from within the subfolder, not from the
+// workspace's own listing. Read-only viewer, so clickItemNameLink (no write-only wait).
+TagHelper.clickItemNameLink(subfolderName)
+WebUI.refresh()
+WebUI.delay(2)
+assert !TagHelper.isTagIconPresent(docName)
 
 TagHelper.backToFolderList()
 assert !TagHelper.isTagIconPresent(workspaceName)

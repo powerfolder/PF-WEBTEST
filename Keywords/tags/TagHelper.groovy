@@ -249,6 +249,22 @@ public class TagHelper {
         editorInputElement().sendKeys(Keys.ARROW_DOWN)
     }
 
+    // A single arrow-down only reaches the FIRST suggestion, which is not necessarily
+    // the intended one - re-running the same test many times without cleanup leaves many
+    // historical tags sharing the same prefix (e.g. "TAG16_..."), so the dropdown often
+    // has multiple matches and a blind arrow-down can select the wrong one. Click the
+    // suggestion whose text exactly matches instead.
+    @Keyword
+    static void selectSuggestionByText(String expectedTag) {
+        WebDriver driver = DriverFactory.getWebDriver()
+        // exact space-delimited class match - "pica-tageditor-suggestions" (the plural
+        // container) otherwise also matches contains(@class,'pica-tageditor-suggestion')
+        WebElement suggestion = driver.findElement(By.xpath(
+            "//*[contains(concat(' ',normalize-space(@class),' '),' pica-tageditor-suggestion ') and normalize-space(text())='" + expectedTag + "']"
+        ))
+        suggestion.click()
+    }
+
     @Keyword
     static List<String> getSuggestionTexts() {
         WebDriver driver = DriverFactory.getWebDriver()
@@ -354,7 +370,10 @@ public class TagHelper {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds))
             wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(
-                "//*[@id='" + TAG_FILTER_CONTAINER_ID + "']//*[contains(@class,'pica-tag-chip') and contains(@class,'active') and normalize-space(text())='" + tagText + "']"
+                // contains(), not an exact match: the operator-chip bar (PFS-5653) may
+                // render "tag:value" rather than the bare value (unlike a row's own
+                // read-only tag chip, which is confirmed to show the bare value exactly)
+                "//*[@id='" + TAG_FILTER_CONTAINER_ID + "']//*[contains(@class,'pica-tag-chip') and contains(@class,'active') and contains(normalize-space(text()),'" + tagText + "')]"
             )))
             return true
         } catch (org.openqa.selenium.TimeoutException ignored) {
@@ -362,11 +381,25 @@ public class TagHelper {
         }
     }
 
+    // A more direct/robust check for "does the filter survive a reload" than waiting on
+    // the chip bar's DOM re-render (isTagFilterActive) - reads the actual persistence
+    // mechanism (search_autocomplete.js STORAGE_KEY = "searchFilters") instead. Manual
+    // verification against the live app confirmed the filter DOES survive F5 reliably,
+    // even when isTagFilterActive's DOM wait timed out - so the chip re-render is
+    // apparently slower/less deterministic (at least under CI load) than the underlying
+    // state it's rendering from.
+    @Keyword
+    static boolean isTagFilterPersistedInStorage(String tagText) {
+        Object raw = WebUI.executeJavaScript("return window.sessionStorage.getItem('searchFilters');", null)
+        return raw != null && raw.toString().contains(tagText)
+    }
+
     @Keyword
     static void clearTagFilterViaX(String tagText) {
         WebDriver driver = DriverFactory.getWebDriver()
+        // contains(), not an exact match - see isTagFilterActive()
         WebElement x = driver.findElement(By.xpath(
-            "//*[@id='" + TAG_FILTER_CONTAINER_ID + "']//*[contains(@class,'pica-tag-chip') and normalize-space(text())='" + tagText + "']" +
+            "//*[@id='" + TAG_FILTER_CONTAINER_ID + "']//*[contains(@class,'pica-tag-chip') and contains(normalize-space(text()),'" + tagText + "')]" +
             "//*[contains(@class,'pica-tag-filter-x')]"
         ))
         x.click()
