@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAG16_SameTag_Findability_WithDot</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8ec84610-55fa-42d4-bd96-a7545985efa8</testCaseGuid>
+</TestCaseEntity>

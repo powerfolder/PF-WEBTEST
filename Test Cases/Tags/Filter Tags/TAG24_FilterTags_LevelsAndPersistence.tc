@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAG24_FilterTags_LevelsAndPersistence</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>22e9573d-dbe9-4f92-9c5e-448c23e300b9</testCaseGuid>
+</TestCaseEntity>
