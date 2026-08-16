@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TAG-13 - konsolidierter Testcase Tag-Funktion (PFS-5306)</description>
-   <name>TAG13_Tag_vergeben_Arbeitsbereich_Aktionsleiste</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>076d7e54-803c-4288-ae6e-3e0578af1c7f</testCaseGuid>
-</TestCaseEntity>

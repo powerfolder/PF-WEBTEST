@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TAG-26 - konsolidierter Testcase Tag-Funktion (PFS-5306)</description>
-   <name>TAG26_Tag_Icon_nicht_sichtbar_Leserecht</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>f1bcd6dd-45b1-40ca-bae5-f2ffcb175e08</testCaseGuid>
-</TestCaseEntity>

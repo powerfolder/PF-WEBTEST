@@ -17,14 +17,6 @@ import java.time.Duration
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-// Tags feature (PFS-5306). All locators below were derived from a static read of
-// files.js / picasso.css (PF-PRO, branch develop_27) - not from an executed Katalon
-// run against a live app, since no Katalon runtime was available in this session.
-// The tag name is never present as an HTML attribute (only as chip text / a "title"
-// attribute - see files.js buildTagChips/wireTagEditor), so every "does tag X exist"
-// check below matches on visible text. Everything is centralised here on purpose:
-// if a class name drifts after the first real run, fix it in ONE place instead of
-// in 31 scripts.
 public class TagHelper {
 
     private static final String ROW_XPATH = "//*[contains(@data-search-keys, '%s')]"
@@ -34,20 +26,8 @@ public class TagHelper {
     private static final String EDITOR_SUGGESTION_CSS = ".pica-tageditor-wrapper.pica-tageditor-inline .pica-tageditor-suggestions .pica-tageditor-suggestion"
     private static final String ROW_MENU_TAGS_ITEM_CSS = "#files_files_table ul.conext-dropdown-menu a.files-ui-tags"
     private static final String ACTIONBAR_TAGS_ITEM_CSS = ".pica-table-selection-context a.files-ui-tags"
-    // PFS-5653 replaced the separate tag-filter state with a generic search-operator
-    // system (Picasso.SearchFilters in search_autocomplete.js); the active-filter chip
-    // bar's id changed from "pica_tag_filter_chips" to "pica_op_filter_chips", though
-    // the chip/x classes themselves (pica-tag-chip / pica-tag-filter-x) were reused as-is.
     private static final String TAG_FILTER_CONTAINER_ID = "pica_op_filter_chips"
 
-    // ------------------------------------------------------------------
-    // Row lookup (same data-search-keys convention as Keywords/file/FileFinder.groovy)
-    // ------------------------------------------------------------------
-
-    // The file/folder table is rendered client-side via AJAX (Picasso), so a row that
-    // was just created/navigated to may not exist in the DOM yet at the instant this
-    // is called - unlike Katalon's built-in WebUI.* keywords, a raw driver.findElement
-    // does NOT retry. Poll for it instead of failing immediately.
     @Keyword
     static WebElement findRow(String itemName) {
         WebDriver driver = DriverFactory.getWebDriver()
@@ -55,10 +35,6 @@ public class TagHelper {
         return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(String.format(ROW_XPATH, itemName))))
     }
 
-    // For use in test scripts' own assertions instead of a raw, non-retrying
-    // driver.findElements(...).isEmpty() check (e.g. right after a search or filter) -
-    // fixes the same class of timing failure as findRow()'s wait, for callers that
-    // build their own xpath rather than going through findRow().
     @Keyword
     static boolean rowExistsEventually(String itemName, int timeoutSeconds = 10) {
         WebDriver driver = DriverFactory.getWebDriver()
@@ -71,23 +47,12 @@ public class TagHelper {
         }
     }
 
-    // Opens (navigates into) a folder/workspace row. IMPORTANT: the icon in td[1] is
-    // the SELECTION toggle (see selectRowCheckbox() below / Keywords/helpers/helper.groovy
-    // selectUploadedFolders(), which clicks this exact icon to select rows) - it does
-    // NOT navigate. The real "open" target is the name link with class "pica-name"
-    // (confirmed in Scripts/Subfoldersharing/SFS04.../*.groovy). Clicking the wrong one
-    // was the root cause of every "openItem() didn't actually navigate" failure in the
-    // first real test run (TAG06-10, TAG16-20, TAG22, TAG24-27).
     @Keyword
     static void openItem(String itemName) {
         clickItemNameLink(itemName)
         waitForFolderView()
     }
 
-    // Just the click, without waitForFolderView()'s postcondition (which waits for a
-    // write-permission-only control) - use this for a read-only invitee accepting a
-    // pending invitation, where the caller's own next wait (e.g. for the
-    // accept_invitation button) is the correct postcondition instead.
     @Keyword
     static void clickItemNameLink(String itemName) {
         WebElement row = findRow(itemName)
@@ -95,28 +60,16 @@ public class TagHelper {
         WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(nameLink))
     }
 
-    // Confirms navigation into a folder/workspace actually completed, by waiting for a
-    // control that only exists inside a folder view, instead of returning immediately
-    // and letting the caller race the page's AJAX update.
     private static void waitForFolderView() {
         WebUI.waitForElementPresent(
             findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'), 10)
     }
 
-    // Creating a workspace or a subfolder navigates straight INTO it (confirmed against
-    // the live app - see Scripts/Subfoldersharing/SFS04.../*.groovy comments and the
-    // TAG01 failure this was added to fix). Call this to return to the top-level
-    // Folders list before treating the just-created item as a ROW (e.g. to tag the
-    // workspace/subfolder itself rather than something created inside it).
     @Keyword
     static void backToFolderList() {
         WebUI.click(findTestObject('LeftNavigationIcons/folders'))
         WebUI.delay(1)
     }
-
-    // ------------------------------------------------------------------
-    // Add affordance / permission visibility
-    // ------------------------------------------------------------------
 
     @Keyword
     static boolean isTagIconPresent(String itemName) {
@@ -133,23 +86,15 @@ public class TagHelper {
         return present
     }
 
-    // ------------------------------------------------------------------
-    // Opening the inline tag editor - three entry points
-    // ------------------------------------------------------------------
-
     @Keyword
     static void openTagEditorViaIcon(String itemName) {
         WebElement icon = findRow(itemName).findElement(By.xpath("." + TAG_ADD_ICON))
-        // the icon is only shown via CSS ":hover" on the row; a JS click bypasses the
-        // native-hover requirement, same convention as Helper.findManageButton's caller
         WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(icon))
         waitForEditor()
     }
 
     @Keyword
     static void openRowMenu(String itemName) {
-        // 6th column holds the row's "..." menu trigger (see the existing Delete/Rename
-        // row-menu flow in Keywords/helpers/helper.groovy / TF24 for the same td[6]/div/a/a shape)
         WebElement trigger = findRow(itemName).findElement(By.xpath("./td[6]/div/a/a"))
         WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(trigger))
         WebUI.delay(1)
@@ -164,11 +109,6 @@ public class TagHelper {
         waitForEditor()
     }
 
-    // There is no native <input type="checkbox"> in this table - a row is selected by
-    // clicking its td[1] icon (confirmed in Keywords/helpers/helper.groovy
-    // selectUploadedFolders(), which uses this exact xpath to select rows via
-    // shift-click). This was previously confused with openItem()'s target, which is
-    // why row selection failed in the first real test run (TAG03, TAG13, TAG30).
     @Keyword
     static void selectRowCheckbox(String itemName) {
         WebElement icon = findRow(itemName).findElement(By.xpath("./td[1]/span"))
@@ -185,16 +125,10 @@ public class TagHelper {
         waitForEditor()
     }
 
-    // ------------------------------------------------------------------
-    // Editor interaction (keyboard semantics per files.js wireTagEditor)
-    // ------------------------------------------------------------------
-
     @Keyword
     static void typeTagText(String tagText) {
         WebElement input = editorInputElement()
         input.sendKeys(tagText)
-        // suggestTags() is debounced 300ms client-side (files.js) before the XHR fires;
-        // 2s to leave headroom for the round trip under load
         WebUI.delay(2)
     }
 
@@ -220,16 +154,6 @@ public class TagHelper {
         editorInputElement().sendKeys(Keys.ENTER)
     }
 
-    // "Click outside saves" is implemented as a document-level MOUSEDOWN listener
-    // (files.js wireTagEditor: $(document).on("mousedown.tagsinline", ...)), not a
-    // click listener. document.body.click() only synthesizes a "click" event, which
-    // never fires "mousedown" - the save handler was never triggered, so the typed
-    // tag was silently dropped (root cause of the second real test run's TAG23
-    // failure). Dispatch an actual MouseEvent("mousedown") instead. A native Selenium
-    // click on <body> was tried first but throws ElementNotInteractableException
-    // ("zero size") when <body> has no rendered height/width of its own (all content
-    // sits in absolutely/flex-positioned wrapper divs) - the first real test run's
-    // TAG23 failure - so this also sidesteps that geometry requirement.
     @Keyword
     static void saveEditorViaOutsideClick() {
         WebUI.executeJavaScript(
@@ -249,16 +173,9 @@ public class TagHelper {
         editorInputElement().sendKeys(Keys.ARROW_DOWN)
     }
 
-    // A single arrow-down only reaches the FIRST suggestion, which is not necessarily
-    // the intended one - re-running the same test many times without cleanup leaves many
-    // historical tags sharing the same prefix (e.g. "TAG16_..."), so the dropdown often
-    // has multiple matches and a blind arrow-down can select the wrong one. Click the
-    // suggestion whose text exactly matches instead.
     @Keyword
     static void selectSuggestionByText(String expectedTag) {
         WebDriver driver = DriverFactory.getWebDriver()
-        // exact space-delimited class match - "pica-tageditor-suggestions" (the plural
-        // container) otherwise also matches contains(@class,'pica-tageditor-suggestion')
         WebElement suggestion = driver.findElement(By.xpath(
             "//*[contains(concat(' ',normalize-space(@class),' '),' pica-tageditor-suggestion ') and normalize-space(text())='" + expectedTag + "']"
         ))
@@ -272,9 +189,6 @@ public class TagHelper {
         return items.collect { it.getText().trim() }
     }
 
-    // Polls the already-open suggestion dropdown rather than re-typing (typeTagText()
-    // appends via sendKeys, so calling it again here would corrupt the query) - covers
-    // any suggestion round-trip lag beyond typeTagText()'s own debounce delay.
     @Keyword
     static boolean suggestionsEventuallyContain(String expectedTag, int timeoutSeconds = 8) {
         long deadline = System.currentTimeMillis() + (timeoutSeconds * 1000L)
@@ -289,18 +203,12 @@ public class TagHelper {
         }
     }
 
-    // ------------------------------------------------------------------
-    // Read-only chip inspection (row not in edit mode)
-    // ------------------------------------------------------------------
-
     @Keyword
     static List<String> getChipTexts(String itemName) {
         List<WebElement> chips = findRow(itemName).findElements(By.xpath("." + TAG_CHIP))
         return chips.collect { it.getText().trim() }
     }
 
-    // Chips inside the currently-open inline editor (edit-mode chips), as opposed to
-    // getChipTexts() which reads a row's read-only display chips.
     @Keyword
     static List<String> getEditorChipTexts() {
         WebDriver driver = DriverFactory.getWebDriver()
@@ -310,16 +218,6 @@ public class TagHelper {
         return labels.collect { it.getText().trim() }
     }
 
-    // ------------------------------------------------------------------
-    // Search (reuses the existing Folders/inputSearch object)
-    // ------------------------------------------------------------------
-
-    // A bare-word query (no operator) was expected to recurse into files/subfolders and
-    // match the Lucene "tags" field too (confirmed by reading FileInfoCriteriaFactory/
-    // GetAllAction/LuceneIndexManager) - but manual verification against the live app
-    // showed it does NOT reliably surface tagged files/subfolders in practice, while the
-    // explicit "tag:" operator (query=tag:value, confirmed live via the network tab) does.
-    // Use the operator explicitly rather than relying on the bare-word path.
     @Keyword
     static void searchForTag(String tagText) {
         TestObject searchInput = findTestObject('Folders/inputSearch')
@@ -329,11 +227,6 @@ public class TagHelper {
         WebUI.delay(2)
     }
 
-    // A file/subfolder's tag is matched via the async Lucene index (LuceneIndexManager),
-    // unlike a workspace's own tag (a direct FolderInfo field, visible to search
-    // immediately) - reindexing can lag a few seconds behind the save. Re-issues the
-    // search every ~2s until the row shows up or the timeout elapses, instead of
-    // searching once and hoping the index has already caught up.
     @Keyword
     static boolean searchForTagAndWaitForRow(String tagText, String itemName, int timeoutSeconds = 20) {
         long deadline = System.currentTimeMillis() + (timeoutSeconds * 1000L)
@@ -348,10 +241,6 @@ public class TagHelper {
         }
     }
 
-    // ------------------------------------------------------------------
-    // Filtering by clicking a tag chip
-    // ------------------------------------------------------------------
-
     @Keyword
     static void filterByTag(String tagText) {
         WebDriver driver = DriverFactory.getWebDriver()
@@ -362,17 +251,12 @@ public class TagHelper {
         WebUI.delay(1)
     }
 
-    // Retries rather than a one-shot check: after F5, restoreFilters() needs a moment
-    // to read sessionStorage and re-render the chip bar before it's present in the DOM.
     @Keyword
     static boolean isTagFilterActive(String tagText, int timeoutSeconds = 8) {
         WebDriver driver = DriverFactory.getWebDriver()
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds))
             wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(
-                // contains(), not an exact match: the operator-chip bar (PFS-5653) may
-                // render "tag:value" rather than the bare value (unlike a row's own
-                // read-only tag chip, which is confirmed to show the bare value exactly)
                 "//*[@id='" + TAG_FILTER_CONTAINER_ID + "']//*[contains(@class,'pica-tag-chip') and contains(@class,'active') and contains(normalize-space(text()),'" + tagText + "')]"
             )))
             return true
@@ -381,13 +265,6 @@ public class TagHelper {
         }
     }
 
-    // A more direct/robust check for "does the filter survive a reload" than waiting on
-    // the chip bar's DOM re-render (isTagFilterActive) - reads the actual persistence
-    // mechanism (search_autocomplete.js STORAGE_KEY = "searchFilters") instead. Manual
-    // verification against the live app confirmed the filter DOES survive F5 reliably,
-    // even when isTagFilterActive's DOM wait timed out - so the chip re-render is
-    // apparently slower/less deterministic (at least under CI load) than the underlying
-    // state it's rendering from.
     @Keyword
     static boolean isTagFilterPersistedInStorage(String tagText) {
         Object raw = WebUI.executeJavaScript("return window.sessionStorage.getItem('searchFilters');", null)
@@ -397,7 +274,6 @@ public class TagHelper {
     @Keyword
     static void clearTagFilterViaX(String tagText) {
         WebDriver driver = DriverFactory.getWebDriver()
-        // contains(), not an exact match - see isTagFilterActive()
         WebElement x = driver.findElement(By.xpath(
             "//*[@id='" + TAG_FILTER_CONTAINER_ID + "']//*[contains(@class,'pica-tag-chip') and contains(normalize-space(text()),'" + tagText + "')]" +
             "//*[contains(@class,'pica-tag-filter-x')]"
@@ -416,10 +292,6 @@ public class TagHelper {
         WebUI.delay(1)
     }
 
-    // ------------------------------------------------------------------
-    // Fixture helpers (top folder / subfolder / document creation)
-    // ------------------------------------------------------------------
-
     @Keyword
     static String createWorkspace() {
         String name = 'TAG_' + RandomStringUtils.randomAlphanumeric(8)
@@ -431,7 +303,6 @@ public class TagHelper {
         return name
     }
 
-    // Assumes the browser is currently positioned inside the parent folder/workspace.
     @Keyword
     static String createSubfolder() {
         String name = 'Sub_' + RandomStringUtils.randomAlphanumeric(8)
@@ -443,9 +314,6 @@ public class TagHelper {
         return name
     }
 
-    // Assumes the browser is currently positioned inside the parent folder/workspace.
-    // Mirrors Scripts/File/Pre_test/Create_Doc.groovy, minus its own nested workspace
-    // creation, so the document lands inside whichever folder the caller already opened.
     @Keyword
     static String createDocumentInCurrentFolder() {
         String name = 'Doc_' + RandomStringUtils.randomAlphanumeric(8)

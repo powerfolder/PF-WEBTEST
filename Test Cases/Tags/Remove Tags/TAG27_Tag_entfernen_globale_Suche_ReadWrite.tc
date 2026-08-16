@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TAG-27 - konsolidierter Testcase Tag-Funktion (PFS-5306)</description>
-   <name>TAG27_Tag_entfernen_globale_Suche_ReadWrite</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>5d5598aa-abc2-487f-a571-7336797d07cc</testCaseGuid>
-</TestCaseEntity>

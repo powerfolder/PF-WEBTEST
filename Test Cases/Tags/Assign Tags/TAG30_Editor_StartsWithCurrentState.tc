@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAG30_Editor_StartsWithCurrentState</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5ab533d8-a315-435d-8356-dc07649f0214</testCaseGuid>
+</TestCaseEntity>

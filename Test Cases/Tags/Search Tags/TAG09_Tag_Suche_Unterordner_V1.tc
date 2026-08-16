@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TAG-09 - konsolidierter Testcase Tag-Funktion (PFS-5306)</description>
-   <name>TAG09_Tag_Suche_Unterordner_V1</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>dc02e96c-abeb-45d9-a6b2-16cdb4565369</testCaseGuid>
-</TestCaseEntity>

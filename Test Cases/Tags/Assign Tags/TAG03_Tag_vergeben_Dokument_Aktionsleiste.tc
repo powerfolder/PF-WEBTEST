@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TAG-03 - konsolidierter Testcase Tag-Funktion (PFS-5306)</description>
-   <name>TAG03_Tag_vergeben_Dokument_Aktionsleiste</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>995b9b2c-943b-4d50-b33f-ec644c4f3042</testCaseGuid>
-</TestCaseEntity>

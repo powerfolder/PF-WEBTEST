@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAG18_Findability_ReadPermission_WithDot</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b49114f5-b620-4b5c-b023-24b33461491c</testCaseGuid>
+</TestCaseEntity>

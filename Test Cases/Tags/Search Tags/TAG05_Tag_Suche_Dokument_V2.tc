@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TAG-05 - konsolidierter Testcase Tag-Funktion (PFS-5306)</description>
-   <name>TAG05_Tag_Suche_Dokument_V2</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>f38863a7-13c3-4a26-b4bc-baf3bdd5a73e</testCaseGuid>
-</TestCaseEntity>

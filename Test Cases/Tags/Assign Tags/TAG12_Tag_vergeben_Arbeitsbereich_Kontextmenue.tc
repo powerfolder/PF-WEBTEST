@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TAG-12 - konsolidierter Testcase Tag-Funktion (PFS-5306)</description>
-   <name>TAG12_Tag_vergeben_Arbeitsbereich_Kontextmenue</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>1fa8c768-3551-44c7-9cb3-c64b38eb9379</testCaseGuid>
-</TestCaseEntity>

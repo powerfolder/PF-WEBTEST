@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TAG-08 - konsolidierter Testcase Tag-Funktion (PFS-5306)</description>
-   <name>TAG08_Tag_vergeben_Unterordner_Aktionsleiste</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>55fe683f-1c23-47c4-a7a5-3f29017d50a0</testCaseGuid>
-</TestCaseEntity>

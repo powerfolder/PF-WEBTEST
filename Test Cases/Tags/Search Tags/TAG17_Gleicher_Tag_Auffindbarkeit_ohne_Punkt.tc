@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TAG-17 - konsolidierter Testcase Tag-Funktion (PFS-5306)</description>
-   <name>TAG17_Gleicher_Tag_Auffindbarkeit_ohne_Punkt</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>8322371f-b70e-49b2-a9c1-90b0998ba02b</testCaseGuid>
-</TestCaseEntity>

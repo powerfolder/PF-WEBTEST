@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAG28_Tags_FeatureFlag_Disabled</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b25b3b0f-d88c-47ec-b051-2d3272807c9f</testCaseGuid>
+</TestCaseEntity>

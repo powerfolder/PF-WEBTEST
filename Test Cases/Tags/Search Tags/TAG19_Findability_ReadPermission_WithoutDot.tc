@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAG19_Findability_ReadPermission_WithoutDot</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f1c48efc-ea3a-41d7-9f13-ba8b966085a5</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAG17_SameTag_Findability_WithoutDot</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8322371f-b70e-49b2-a9c1-90b0998ba02b</testCaseGuid>
+</TestCaseEntity>

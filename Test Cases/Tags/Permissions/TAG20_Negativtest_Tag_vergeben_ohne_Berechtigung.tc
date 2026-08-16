@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TAG-20 - konsolidierter Testcase Tag-Funktion (PFS-5306)</description>
-   <name>TAG20_Negativtest_Tag_vergeben_ohne_Berechtigung</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>29ecc43a-51ee-4029-a80c-37e0b9c2a639</testCaseGuid>
-</TestCaseEntity>

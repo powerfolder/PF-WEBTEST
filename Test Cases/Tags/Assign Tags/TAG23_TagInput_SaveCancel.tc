@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAG23_TagInput_SaveCancel</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>80e86512-9d05-4d37-bf8c-e57f77d6e79e</testCaseGuid>
+</TestCaseEntity>

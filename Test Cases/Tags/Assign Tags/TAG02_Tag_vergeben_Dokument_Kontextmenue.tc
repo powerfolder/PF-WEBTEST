@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TAG-02 - konsolidierter Testcase Tag-Funktion (PFS-5306)</description>
-   <name>TAG02_Tag_vergeben_Dokument_Kontextmenue</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>c1e9c7e9-da2d-447d-9d3d-6d0a19e6b8b7</testCaseGuid>
-</TestCaseEntity>

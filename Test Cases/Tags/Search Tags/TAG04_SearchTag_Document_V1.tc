@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAG04_SearchTag_Document_V1</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>28f9c368-47e0-4cfe-b82b-1e1c8e6625cc</testCaseGuid>
+</TestCaseEntity>

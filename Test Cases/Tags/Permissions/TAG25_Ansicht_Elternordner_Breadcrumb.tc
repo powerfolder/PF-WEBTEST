@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TAG-25 - konsolidierter Testcase Tag-Funktion (PFS-5306)</description>
-   <name>TAG25_Ansicht_Elternordner_Breadcrumb</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>ae4c7fd8-ad25-483e-a8df-21273107cc55</testCaseGuid>
-</TestCaseEntity>

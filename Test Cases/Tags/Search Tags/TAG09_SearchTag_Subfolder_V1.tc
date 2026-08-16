@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAG09_SearchTag_Subfolder_V1</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dc02e96c-abeb-45d9-a6b2-16cdb4565369</testCaseGuid>
+</TestCaseEntity>
