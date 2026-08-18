@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
-   <description>Testsuite fuer die Tag-Funktion (PFS-5306). Fuehrt zuerst den Sprach-Pre-Test aus (wie AllTest), danach alle 31 Tags-Testcases in numerischer Reihenfolge (TAG01-TAG31).</description>
+   <description>Testsuite fuer die Tag-Funktion (PFS-5306). Fuehrt zuerst den Sprach-Pre-Test aus (wie AllTest), danach alle 30 Tags-Testcases in numerischer Reihenfolge (TAG01-TAG30).</description>
    <name>Tags</name>
    <tag></tag>
    <isRerun>false</isRerun>
@@ -226,13 +226,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Assign Tags/TAG30_Editor_StartsWithCurrentState</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>1b453382-a982-408f-ba65-a8b34a6b7b05</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Tags/Assign Tags/TAG31_Suggestions_CrossWorkspace</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
