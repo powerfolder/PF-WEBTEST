@@ -190,20 +190,6 @@ public class TagHelper {
     }
 
     @Keyword
-    static boolean suggestionsEventuallyContain(String expectedTag, int timeoutSeconds = 8) {
-        long deadline = System.currentTimeMillis() + (timeoutSeconds * 1000L)
-        while (true) {
-            if (getSuggestionTexts().contains(expectedTag)) {
-                return true
-            }
-            if (System.currentTimeMillis() >= deadline) {
-                return false
-            }
-            WebUI.delay(1)
-        }
-    }
-
-    @Keyword
     static List<String> getChipTexts(String itemName) {
         List<WebElement> chips = findRow(itemName).findElements(By.xpath("." + TAG_CHIP))
         return chips.collect { it.getText().trim() }

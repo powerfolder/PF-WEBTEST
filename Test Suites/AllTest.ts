@@ -3379,13 +3379,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4ba060fd-94eb-46c0-b974-b02007c9e042</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Tags/Assign Tags/TAG31_Suggestions_CrossWorkspace</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>ee5258a1-2a6e-40a6-8526-9f86f733044a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
