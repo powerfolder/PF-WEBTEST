@@ -34,4 +34,8 @@ WebUI.verifyElementClickable(findTestObject('Login/registerNewAccountLink'))
 
 WebUI.click(findTestObject('Registration/Page_Login - PowerFolder/ClickOnRegisterNewAccount'))
 
+WebUI.delay(3)
+
 CustomKeywords.'accessibility.AccessibilityKeywords.checkAccessibility'()
+
+WebUI.closeBrowser()

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS18_VerifyCombinationSubfolderToGroupASubSubfolderToGroupB</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>994e51af-dd3e-4bf8-a4c3-6c2b1947e45c</testCaseGuid>
+</TestCaseEntity>

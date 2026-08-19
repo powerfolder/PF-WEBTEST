@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAR17_myaccount_devices</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b5049b86-31bb-4353-80f3-bf1461f997c0</testCaseGuid>
+</TestCaseEntity>

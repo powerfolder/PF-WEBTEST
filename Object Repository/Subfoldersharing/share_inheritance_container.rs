@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>PFC-3543: wrapper div around the inheritance toggle in the share dialog. Hidden unless the currently shared item is a subfolder and the feature is enabled.</description>
+   <name>share_inheritance_container</name>
+   <tag></tag>
+   <elementGuidId>ec7b5831-0ee9-4c2f-a352-df98ffb10822</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='share_inheritance']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#share_inheritance</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>share_inheritance</value>
+      <webElementGuid>ec7b5831-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -45,6 +45,13 @@ WebUI.comment('URL copié : ' + my_clipboard)
 // Vérifier que l'URL est valide
 assert (my_clipboard != null) && my_clipboard.startsWith('https')
 
+WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/button_Close'))
+
+// Log out admin before opening the link, so the guest session is not carried over via the shared browser cookies
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
+
 // Ouvrir le lien dans un nouvel onglet
 WebUI.executeJavaScript('window.open(arguments[0], \'_blank\');', Arrays.asList(my_clipboard))
 
@@ -63,7 +70,21 @@ WebUI.delay(2)
 
 WebUI.switchToWindowIndex(0)
 
-WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/button_Close'))
+// Log admin back in to verify the link settings
+WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
+
+WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
+
+WebUI.click(findTestObject('Login/loginSubmit'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
+
+// Ouvrir le dossier contenant le fichier
+WebElement folderBtn = findFolderLink(GlobalVariable.folderName)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folderBtn))
 
 WebElement btn1 = findShareButton(pdfname)
 
@@ -85,5 +106,11 @@ WebElement findShareButton(String fileName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
     return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
+}
+
+WebElement findFolderLink(String folderName) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
 }
 

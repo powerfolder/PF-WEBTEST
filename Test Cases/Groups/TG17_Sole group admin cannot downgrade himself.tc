@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG17_Sole group admin cannot downgrade himself</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9fb2f044-47ae-46ce-8651-f8f40ea27dd7</testCaseGuid>
+</TestCaseEntity>

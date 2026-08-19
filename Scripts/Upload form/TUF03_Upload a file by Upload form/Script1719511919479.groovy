@@ -73,6 +73,13 @@ WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/clipboard_bu
 
 WebUI.delay(2)
 
+WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Close'))
+
+// Log out admin before opening the upload form link, so the guest session is not carried over via the shared browser cookies
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
+
 WebUI.switchToWindowIndex(1)
 
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
@@ -117,7 +124,16 @@ WebUI.switchToWindowIndex(0)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Close'))
+// Log admin back in to verify the upload result
+WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
+
+WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
+
+WebUI.click(findTestObject('Login/loginSubmit'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 
 WebElement btn = findFolder(GlobalVariable.folderName)
 

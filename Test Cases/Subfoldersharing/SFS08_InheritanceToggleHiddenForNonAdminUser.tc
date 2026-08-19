@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS08_InheritanceToggleHiddenForNonAdminUser</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fb53d82c-2eeb-44b0-89df-32ede7f3768e</testCaseGuid>
+</TestCaseEntity>

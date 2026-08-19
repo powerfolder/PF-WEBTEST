@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_download_versions']/div/table/tbody/tr[2]/td[6]/button</value>
+         <value>(//div[@id='pica_download_versions']//tbody/tr//button[normalize-space(.)='Download' or normalize-space(.)='Herunterladen'])[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>button.btn.btn-default</value>
+         <value>#pica_download_versions tbody tr button.btn.btn-secondary</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

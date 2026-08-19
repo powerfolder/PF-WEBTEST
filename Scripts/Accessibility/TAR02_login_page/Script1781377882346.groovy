@@ -19,4 +19,8 @@ WebUI.openBrowser(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
 
+WebUI.delay(3)
+
 CustomKeywords.'accessibility.AccessibilityKeywords.checkAccessibility'()
+
+WebUI.closeBrowser()

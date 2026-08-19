@@ -39,6 +39,16 @@ WebUI.scrollToElement(findTestObject('1Logs/Page_Dashboard - PowerFolder/lang_Lo
 
 WebUI.click(findTestObject('1Logs/Page_Dashboard - PowerFolder/lang_Logs'))
 
+// Support Package is now inside the diagnostics dropdown menu (logs.vm:58-76). Open the dropdown-toggle
+// first so the #logs_create_support link becomes visible/clickable.
+WebDriver drv = DriverFactory.getWebDriver()
+WebElement diagToggle = new WebDriverWait(drv, java.time.Duration.ofSeconds(15)).until(
+    ExpectedConditions.elementToBeClickable(By.xpath("//table[@id='logs_table']//a[contains(concat(' ',normalize-space(@class),' '),' dropdown-toggle ') and .//*[@data-tooltip='tooltip_diagnostics']]")))
+WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(diagToggle))
+
+new WebDriverWait(drv, java.time.Duration.ofSeconds(10)).until(
+    ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@id='logs_create_support']")))
+
 WebUI.verifyElementClickable(findTestObject('1Logs/Page_Logs - PowerFolder/Create_support_package'))
 
 WebUI.click(findTestObject('1Logs/Page_Logs - PowerFolder/Create_support_package'))

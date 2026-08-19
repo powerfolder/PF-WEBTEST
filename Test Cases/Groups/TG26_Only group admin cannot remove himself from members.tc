@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG26_Only group admin cannot remove himself from members</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>98ff85a5-8d10-4dcd-8e03-9872e3387592</testCaseGuid>
+</TestCaseEntity>

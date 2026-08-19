@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAR33_myaccount_details_tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8cd4d52f-17eb-4b8c-bbcf-4c1a67806037</testCaseGuid>
+</TestCaseEntity>

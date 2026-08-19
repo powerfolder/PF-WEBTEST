@@ -42,6 +42,16 @@ import java.io.IOException as IOException
 
 WebUI.callTestCase(findTestCase('Upload form/Pre_Test/Creat_upload_form'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.switchToWindowIndex(0)
+
+WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Close'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
+
+WebUI.switchToWindowIndex(1)
+
 WebUI.refresh()
 
 String userEmail = ('user_2_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com'
@@ -58,7 +68,16 @@ WebUI.switchToWindowIndex('0')
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Close'))
+// Log admin back in to verify the result
+WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
+
+WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
+
+WebUI.click(findTestObject('Login/loginSubmit'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 
 WebElement btn = findFolder(GlobalVariable.folderName)
 

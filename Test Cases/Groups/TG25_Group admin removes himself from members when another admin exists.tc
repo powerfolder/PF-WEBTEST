@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG25_Group admin removes himself from members when another admin exists</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>867d4d2a-72fa-4a8e-af3d-6ba3aaa4c1bd</testCaseGuid>
+</TestCaseEntity>

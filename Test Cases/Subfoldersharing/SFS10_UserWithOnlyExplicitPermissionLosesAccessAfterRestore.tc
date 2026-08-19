@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS10_UserWithOnlyExplicitPermissionLosesAccessAfterRestore</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bca33a22-37bc-4286-a50f-251808dfe38e</testCaseGuid>
+</TestCaseEntity>

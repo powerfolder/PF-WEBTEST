@@ -71,6 +71,12 @@ WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/clipboard_bu
 
 WebUI.delay(2)
 
+WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Close'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
+
 WebUI.switchToWindowIndex(1)
 
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)

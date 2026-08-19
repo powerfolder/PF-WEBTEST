@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='logs_create_support']/span</value>
+         <value>//a[@id='logs_create_support']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>span.pica-icon.pica-glyph.glyphicons.glyphicons-stethoscope</value>
+         <value>a#logs_create_support</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

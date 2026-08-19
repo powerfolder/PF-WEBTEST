@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAG01_AssignTag_Document_PlusIcon</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8cc525e2-21b7-4ca4-86a5-71a2e3f099dd</testCaseGuid>
+</TestCaseEntity>

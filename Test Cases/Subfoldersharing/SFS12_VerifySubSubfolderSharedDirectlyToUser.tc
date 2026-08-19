@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS12_VerifySubSubfolderSharedDirectlyToUser</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e69484e4-19e7-4804-8c1a-2891138ee2e1</testCaseGuid>
+</TestCaseEntity>

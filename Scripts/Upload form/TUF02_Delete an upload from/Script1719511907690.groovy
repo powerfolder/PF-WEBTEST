@@ -101,21 +101,27 @@ WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/Page_Folders
 
 WebUI.delay(3)
 
+WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Close'))
+
+// Log out admin so the guest session below is not carried over via the shared browser cookies
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
+
 WebUI.switchToWindowIndex('1')
 
 WebUI.refresh()
 
+WebUI.waitForElementPresent(findTestObject('1Upload_Form/Page_Error - PowerFolder/h4_HTTP ERROR        404'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-
-/* WebUI.verifyElementText(findTestObject('1Upload_Form/Page_Error - PowerFolder/h4_HTTP ERROR        404'), 'HTTP FEHLER 404', 
-    FailureHandling.STOP_ON_FAILURE) */
-
+// The heading text is filled in client-side by lang.js after the initial page load, give it a moment
+WebUI.delay(2)
 
 // Localisation de l'élément
 def errorElement = findTestObject('1Upload_Form/Page_Error - PowerFolder/h4_HTTP ERROR        404')
 
 // Récupérer le texte réel
-String actualText = WebUI.getText(errorElement).trim()
+String actualText = WebUI.getText(errorElement).trim().replaceAll(/\s+/, ' ')
 
 // Vérifier si le texte correspond à l'une des deux valeurs
 if (actualText == 'HTTP ERROR 404' || actualText == 'HTTP FEHLER 404') {
@@ -123,15 +129,6 @@ if (actualText == 'HTTP ERROR 404' || actualText == 'HTTP FEHLER 404') {
 } else {
 	WebUI.markFailed("Test Failed: Texte inattendu - ${actualText}")
 }
-
-
-WebUI.delay(2)
-
-WebUI.switchToWindowIndex('0')
-
-WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Close'))
-
-WebUI.delay(2)
 
 WebUI.closeBrowser()
 

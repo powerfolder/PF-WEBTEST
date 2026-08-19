@@ -104,7 +104,7 @@ WebUI.click(findTestObject('Recycle bin/Page_Folders - PowerFolder/a_Restore'))
 
 WebUI.waitForElementVisible(findTestObject('Recycle bin/Page_Folders - PowerFolder/restore_popup'), 10)
 
-List<WebElement> restoreButtons = DriverFactory.getWebDriver().findElements(By.xpath('//div[@id=\'pica_restore_versions\']//button[normalize-space()=\'Restore\']'))
+List<WebElement> restoreButtons = DriverFactory.getWebDriver().findElements(By.xpath("//div[@id='pica_restore_versions']//tbody/tr//a[.//span[contains(concat(' ',normalize-space(@class),' '),' glyphicons-restart ')]]"))
 
 WebUI.verifyEqual(restoreButtons.size(), 3)
 

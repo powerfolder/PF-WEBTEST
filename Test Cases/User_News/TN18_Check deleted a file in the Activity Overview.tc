@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TN18_Check deleted a file in the Activity Overview</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>62de0300-167f-4f4c-97ff-917b705d02be</testCaseGuid>
+</TestCaseEntity>

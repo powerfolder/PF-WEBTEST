@@ -87,6 +87,12 @@ WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/clipboard_bu
 
 WebUI.delay(2)
 
+WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Close'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
+
 WebUI.switchToWindowIndex(1)
 
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
@@ -111,7 +117,16 @@ WebUI.switchToWindowIndex(0)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Close'))
+// Log admin back in to verify the upload result
+WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
+
+WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
+
+WebUI.click(findTestObject('Login/loginSubmit'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 
 WebElement btn = findFolder(GlobalVariable.folderName)
 
@@ -120,8 +135,6 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 WebElement btn1 = findFolder(GlobalVariable.Name)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
-
-/*
 
 WebUI.delay(2)
 
@@ -142,8 +155,15 @@ WebUI.setText(findTestObject('1Upload_Form/Page_Error - PowerFolder/Page_Folders
 WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/change_description'))
 WebUI.sendKeys(findTestObject('1Upload_Form/Page_Folders - PowerFolder/change_description'), 'Workshop number 2')
 
-// click in calender
-WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/input_Redo_pica_uploadform_valid_till'))
+// set expiration timestamp to right now, so the link is already expired once created
+TestObject dateInputPresent = findTestObject('1Upload_Form/Page_Folders - PowerFolder/input_Redo_pica_uploadform_valid_till')
+String newDateTimeNow = generateDateTimeNow()
+
+WebUI.executeJavaScript("""
+    arguments[0].value = arguments[1];
+    arguments[0].dispatchEvent(new Event('input', { bubbles: true }));
+    arguments[0].dispatchEvent(new Event('change', { bubbles: true }));
+""", [WebUI.findWebElement(dateInputPresent), newDateTimeNow])
 
 WebUI.scrollToElement(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Save'), 1)
 
@@ -160,6 +180,13 @@ WebUI.waitForElementClickable(findTestObject('1Upload_Form/Page_Folders - PowerF
 WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/clipboard_buttom'))
 
 WebUI.delay(2)
+
+WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Close'))
+
+// Log out admin before opening the upload form link, so the guest session is not carried over via the shared browser cookies
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
 // open upload form and check if its expired
 
@@ -199,15 +226,14 @@ WebUI.setText(findTestObject('1Upload_Form/Page_Error - PowerFolder/Page_Folders
 WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/change_description'))
 WebUI.sendKeys(findTestObject('1Upload_Form/Page_Folders - PowerFolder/change_description'), 'Workshop number 3')
 
-// click in calender
-WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/input_Redo_pica_uploadform_valid_till'))
+// set expiration timestamp to 2 minutes in the past
+TestObject dateInputPast = findTestObject('1Upload_Form/Page_Folders - PowerFolder/input_Redo_pica_uploadform_valid_till')
 
-// clear pre filled textfield
-WebUI.sendKeys(findTestObject('1Upload_Form/Page_Folders - PowerFolder/input_Redo_pica_uploadform_valid_till'), Keys.chord(
-		Keys.DELETE))
-
-// set new expiration date
-WebUI.setText(findTestObject('1Upload_Form/Page_Folders - PowerFolder/input_Redo_pica_uploadform_valid_till'), newDateTimePast)
+WebUI.executeJavaScript("""
+    arguments[0].value = arguments[1];
+    arguments[0].dispatchEvent(new Event('input', { bubbles: true }));
+    arguments[0].dispatchEvent(new Event('change', { bubbles: true }));
+""", [WebUI.findWebElement(dateInputPast), newDateTimePast])
 
 WebUI.scrollToElement(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Save'), 1)
 
@@ -229,6 +255,13 @@ WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/clipboard_bu
 
 WebUI.delay(2)
 
+WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Close'))
+
+// Log out admin before opening the upload form link, so the guest session is not carried over via the shared browser cookies
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
+
 // open upload form and check if its expired
 
 WebUI.switchToWindowIndex(1)
@@ -249,7 +282,7 @@ WebUI.verifyElementPresent(findTestObject('1Upload_Form/Page_Link - PowerFolder/
 WebUI.closeWindowIndex('0')
 
 WebUI.closeBrowser()
-*/
+
 @Keyword
 WebElement findFolder(String folderName) {
     WebDriver driver = DriverFactory.getWebDriver()
@@ -268,13 +301,21 @@ String generateDateTimePlusTwoMinutes() {
     return sdf.format(calendar.getTime())
 }
 
+String generateDateTimeNow() {
+    Calendar calendar = Calendar.getInstance()
+
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm")
+
+    return sdf.format(calendar.getTime())
+}
+
 String generateDateTimeMinusTwoMinutes() {
 	Calendar calendar = Calendar.getInstance()
 
 	// remove two minutes
 	calendar.add(Calendar.MINUTE, -2)
 
-	SimpleDateFormat sdf = new SimpleDateFormat('MM/dd/yyyy HH:mm:ss')
+	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm")
 
 	return sdf.format(calendar.getTime())
 }

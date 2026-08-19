@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAG27_RemoveTag_GlobalSearch_ReadWrite</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5d5598aa-abc2-487f-a571-7336797d07cc</testCaseGuid>
+</TestCaseEntity>

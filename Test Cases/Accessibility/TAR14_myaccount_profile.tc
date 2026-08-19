@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAR14_myaccount_profile</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ba1888d6-242b-4d74-97c8-906c7eb48a33</testCaseGuid>
+</TestCaseEntity>

@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//thead[@id='files_select_header']/tr/th[3]/div[2]/a[4]/span</value>
+         <value>//thead[@id='files_select_header']//div[contains(concat(' ',normalize-space(@class),' '),' pica-table-selection-context ')]//a[contains(concat(' ',normalize-space(@class),' '),' files-ui-cut ')]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

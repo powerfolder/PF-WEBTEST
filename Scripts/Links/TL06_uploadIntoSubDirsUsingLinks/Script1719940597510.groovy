@@ -69,6 +69,13 @@ WebUI.click(findTestObject('Share/buttonSave'))
 
 WebUI.doubleClick(findTestObject('Page_Folders - PowerFolder/icon-copy'))
 
+WebUI.click(findTestObject('Page_Folders - PowerFolder/button_Close'))
+
+// Log out admin before opening the link, so the guest session is not carried over via the shared browser cookies
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
+
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
 
 WebUI.navigateToUrl(my_clipboard)

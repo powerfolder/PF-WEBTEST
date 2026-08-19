@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS15_VerifyRemovingSubSubfolderShareRevokesAccess</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3820d832-65fa-44f9-9ce1-50f95faf59bc</testCaseGuid>
+</TestCaseEntity>

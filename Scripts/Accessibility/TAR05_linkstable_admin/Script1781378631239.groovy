@@ -69,7 +69,11 @@ WebUI.click(findTestObject('LinksTable/close links config button'))
 
 WebUI.click(findTestObject('Links/Page_Dashboard - PowerFolder/lang_Links'))
 
+WebUI.delay(3)
+
 CustomKeywords.'accessibility.AccessibilityKeywords.checkAccessibility'()
+
+WebUI.closeBrowser()
 
 
 String getTimestamp() {

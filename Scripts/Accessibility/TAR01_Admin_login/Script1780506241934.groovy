@@ -29,4 +29,8 @@ WebUI.delay(2)
 
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
 
+WebUI.delay(3)
+
 CustomKeywords.'accessibility.AccessibilityKeywords.checkAccessibility'()
+
+WebUI.closeBrowser()

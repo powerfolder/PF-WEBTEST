@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TN16_Check adding a file in the Activity Overview</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>70877d9a-87b0-4f15-8d1c-f613080af68c</testCaseGuid>
+</TestCaseEntity>

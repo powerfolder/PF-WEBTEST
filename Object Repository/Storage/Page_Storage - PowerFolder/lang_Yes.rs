@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div[1]/div[2]/div[4]/div/div/div[3]/button[1]</value>
+         <value>//div[@id='pica_confirmation_dialog' and contains(concat(' ',normalize-space(@class),' '),' show ')]//button[.//lang[@name='button_yes']]</value>
       </entry>
       <entry>
          <key>CSS</key>

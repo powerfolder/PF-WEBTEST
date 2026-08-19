@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[15]</value>
+         <value>//div[@id='pica_preference_dialog']//div[contains(concat(' ',normalize-space(@class),' '),' modal-footer ')]//button[.//lang[@name='button_cancel'] or normalize-space(.)='Cancel' or normalize-space(.)='Abbrechen']</value>
       </entry>
       <entry>
          <key>CSS</key>

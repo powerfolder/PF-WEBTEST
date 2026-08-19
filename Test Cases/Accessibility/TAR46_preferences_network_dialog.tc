@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAR46_preferences_network_dialog</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>73230eca-5aa9-4233-ab46-f851556ac97a</testCaseGuid>
+</TestCaseEntity>

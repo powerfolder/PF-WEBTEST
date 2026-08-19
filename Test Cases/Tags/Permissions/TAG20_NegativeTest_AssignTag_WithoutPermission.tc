@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TAG20_NegativeTest_AssignTag_WithoutPermission</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>29ecc43a-51ee-4029-a80c-37e0b9c2a639</testCaseGuid>
+</TestCaseEntity>

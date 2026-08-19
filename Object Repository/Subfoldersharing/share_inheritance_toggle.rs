@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>PFC-3543: checkbox toggle in the share dialog. Checking it interrupts permission inheritance (snapshot mode), unchecking it restores inheritance. Only shown for subfolders, only visible to users with ADMIN or higher (class share-min-admin on the parent container).</description>
+   <name>share_inheritance_toggle</name>
+   <tag></tag>
+   <elementGuidId>aea22294-6f32-4038-a333-b9ee8f399d4d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='share_inheritance_toggle']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#share_inheritance_toggle</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>share_inheritance_toggle</value>
+      <webElementGuid>aea22294-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>checkbox</value>
+      <webElementGuid>aea22294-0001-0001-0001-000000000002</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

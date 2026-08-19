@@ -43,7 +43,7 @@ String currentUrl = WebUI.getUrl()
 
 WebUI.comment('L\'URL actuelle est: ' + currentUrl)
 
-boolean isCorrectUrl = currentUrl.contains('https://shop.powerfolder.com/p/session/')
+boolean isCorrectUrl = currentUrl.contains('https://shop.powerfolder.com/p/session')
 
 WebUI.verifyEqual(isCorrectUrl, true)
 

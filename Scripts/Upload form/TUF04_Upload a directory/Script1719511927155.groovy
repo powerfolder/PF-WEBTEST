@@ -39,6 +39,17 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 WebUI.callTestCase(findTestCase('Upload form/Pre_Test/Creat_upload_form'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.switchToWindowIndex(0)
+
+WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Close'))
+
+// Log out admin before continuing as guest, so the guest session is not carried over via the shared browser cookies
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
+
+WebUI.switchToWindowIndex(1)
+
 WebUI.verifyElementClickable(findTestObject('1Upload_Form/Page_Link - PowerFolder/span_Add directory'))
 
 WebUI.click(findTestObject('1Upload_Form/Page_Link - PowerFolder/span_Add directory'))
@@ -58,7 +69,16 @@ WebUI.click(findTestObject('1Upload_Form/Page_Link - PowerFolder/lang_Close'))
 
 WebUI.switchToWindowIndex('0')
 
-WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/button_Close'))
+// Log admin back in to verify the upload result
+WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
+
+WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
+
+WebUI.click(findTestObject('Login/loginSubmit'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 
 WebElement btn = findFolder(GlobalVariable.folderName)
 

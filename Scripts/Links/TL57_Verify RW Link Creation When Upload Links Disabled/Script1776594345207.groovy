@@ -47,7 +47,7 @@ WebUI.click(findTestObject('Preferences/Security/Filelink security'))
 // Disable the upload forms toggle if it is currently enabled
 TestObject toggle = findTestObject('Preferences/Security/Allow creation of Upload forms')
 
-if (WebUI.getAttribute(toggle, 'class').contains('active')) {
+if (WebUI.getAttribute(toggle, 'checked') == 'true') {
     WebUI.click(toggle)
 }
 
@@ -179,7 +179,7 @@ WebUI.click(findTestObject('Preferences/Security/Filelink security'))
 TestObject uploadToggle = findTestObject('Preferences/Security/Allow creation of Upload forms')
 
 // Enable the upload forms toggle if it is currently disabled
-if (!WebUI.getAttribute(uploadToggle, 'class').contains('active')) {
+if (WebUI.getAttribute(uploadToggle, 'checked') != 'true') {
 	WebUI.click(uploadToggle)
 	WebUI.click(findTestObject('Preferences/Security/Save'))
 }
