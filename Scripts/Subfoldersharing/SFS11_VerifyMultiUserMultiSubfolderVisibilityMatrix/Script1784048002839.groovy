@@ -22,25 +22,7 @@ import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
 
-/*
- * End-to-end scenario modelled on the spec's "Projekt Gebaeudeerweiterung" example (section 2.0),
- * scaled down to 1 top-level folder, 2 subfolders and 3 users:
- *
- *   TopFolder                                    -> shared with User1
- *   |-- SubA (inheritance intact)                 -> + explicit User2
- *   `-- SubB (inheritance interrupted BEFORE      -> + explicit User3
- *            TopFolder is shared with User1)
- *
- * SubB is interrupted while only the admin/owner has access to it, and only afterwards is
- * TopFolder shared with User1 - this way User1's later access to TopFolder can never leak onto
- * the already-interrupted SubB (see also SFS07). Expected visibility matrix:
- *
- *   User1: TopFolder (explicit) + SubA (inherited)           , NOT SubB
- *   User2: SubA (explicit) only                               , NOT TopFolder, NOT SubB
- *   User3: SubB (explicit) only                               , NOT TopFolder, NOT SubA
- */
 
-// create the three member accounts
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
 String user1Email = GlobalVariable.userEmail
 
@@ -68,10 +50,8 @@ WebUI.setText(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/ac
 WebUI.click(findTestObject('Accounts/SaveButton'))
 WebUI.delay(2)
 
-// navigate to the Folders section
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))
 
-// create the top-level folder as admin (not shared yet) - creation navigates straight into it
 String tlfName = 'SFS11_' + RandomStringUtils.randomAlphanumeric(6)
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
@@ -80,46 +60,43 @@ WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandli
 WebUI.setText(findTestObject('Folders/inputFolderName'), tlfName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-// create SubA inside the top-level folder - creation navigates straight into SubA
 String subAName = 'SFS11_SubA_' + RandomStringUtils.randomAlphanumeric(6)
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), subAName)
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-// invite User2 explicitly on the (currently open) SubA - inheritance stays intact there
 WebUI.click(findTestObject('Links/share_icon_inside_folder'))
 WebUI.setText(findTestObject('Share/Page_Folders - PowerFolder/inputEmail_Share'), user2Email)
 WebUI.sendKeys(findTestObject('Share/Page_Folders - PowerFolder/inputEmail_Share'), Keys.chord(Keys.ENTER))
 WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 
-// go back to the top-level folder list and re-enter the top-level folder to create SubB
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Home'))
 WebElement tlfRow = findFolder(tlfName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(tlfRow))
 
-// create SubB inside the top-level folder - creation navigates straight into SubB
 String subBName = 'SFS11_SubB_' + RandomStringUtils.randomAlphanumeric(6)
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), subBName)
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-// interrupt SubB's inheritance now, while only the admin/owner has access to it
 WebUI.click(findTestObject('Links/share_icon_inside_folder'))
-// use a native JS click - a plain Selenium click on this checkbox does not
-// reliably fire the jQuery 'change' handler that drives the confirmation dialog
+WebUI.delay(2)
 WebElement inheritanceToggleEl = WebUI.findWebElement(findTestObject('Subfoldersharing/share_inheritance_toggle'), 5)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(inheritanceToggleEl))
-WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/confirme_handover'))
-WebUI.verifyElementText(findTestObject('notifications_toastmessage'), 'Own permissions have been set.')
+WebUI.waitForElementVisible(findTestObject('Subfoldersharing/inheritance_dialog_title'), 5)
+WebUI.click(findTestObject('Subfoldersharing/inheritance_dialog_ok'))
+WebUI.verifyElementText(findTestObject('notifications_toastmessage'), '"' + subBName + '" now has its own access rights.')
 
-// invite User3 explicitly on the (already interrupted) SubB
+TestObject shareTableLoading = new TestObject()
+shareTableLoading.addProperty('xpath', ConditionType.EQUALS, "//table[@id='share_table']//tr[contains(@class,'pica-table-loading')]")
+WebUI.verifyElementNotPresent(shareTableLoading, 10)
+
 WebUI.setText(findTestObject('Share/Page_Folders - PowerFolder/inputEmail_Share'), user3Email)
-WebUI.sendKeys(findTestObject('Share/Page_Folders - PowerFolder/inputEmail_Share'), Keys.chord(Keys.ENTER))
+WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/buttonAddEmail'))
 WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 
-// go back to the top-level folder list, re-enter the top-level folder to share it with User1
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/lang_Home'))
 WebElement tlfRow2 = findFolder(tlfName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(tlfRow2))
@@ -129,7 +106,6 @@ WebUI.setText(findTestObject('Share/Page_Folders - PowerFolder/inputEmail_Share'
 WebUI.sendKeys(findTestObject('Share/Page_Folders - PowerFolder/inputEmail_Share'), Keys.chord(Keys.ENTER))
 WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 
-// --- User1: sees TopFolder (explicit) and SubA (inherited), but NOT SubB (interrupted before invite) ---
 logoutAndLoginAs(user1Email)
 acceptInvitation(tlfName)
 WebElement user1TlfRow = findFolder(tlfName)
@@ -146,7 +122,6 @@ WebUI.verifyElementNotPresent(subBPresent, 10)
 TestObject tlfPresent = new TestObject()
 tlfPresent.addProperty('xpath', ConditionType.EQUALS, "//a[contains(concat(' ',normalize-space(@class),' '),' pica-name ') and normalize-space(text())='" + tlfName + "']")
 
-// --- User2: sees SubA (explicit) only, NOT TopFolder, NOT SubB ---
 logoutAndLoginAs(user2Email)
 acceptInvitation(subAName)
 WebUI.verifyElementNotPresent(tlfPresent, 10)
@@ -155,7 +130,6 @@ WebElement user2SubARow = findFolder(subAName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(user2SubARow))
 WebUI.verifyElementPresent(findTestObject('Folders/createFolderIcon'), 10)
 
-// --- User3: sees SubB (explicit) only, NOT TopFolder, NOT SubA ---
 logoutAndLoginAs(user3Email)
 acceptInvitation(subBName)
 WebUI.verifyElementNotPresent(tlfPresent, 10)
@@ -173,14 +147,12 @@ void logoutAndLoginAs(String email) {
     WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
     WebUI.click(findTestObject('Login/loginSubmit'))
     WebUI.delay(3)
-    // login lands on the Dashboard - navigate to the Folders section
     WebUI.click(findTestObject('LeftNavigationIcons/folders'))
 }
 
 void acceptInvitation(String name) {
     WebElement invitationRow = findRow(name)
     WebUI.verifyEqual(invitationRow.isDisplayed(), true)
-    // click the folder name link (not the invitation icon) to open the accept dialog
     WebElement invitationLink = findFolder(name)
     WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(invitationLink))
     WebUI.verifyElementClickable(findTestObject('Share/Page_Folders - PowerFolder/accept_invitation'))

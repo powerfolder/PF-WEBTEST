@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@role='alert']/span)[1]</value>
+         <value>(//div[@role='alert']/span)[last()]</value>
       </entry>
       <entry>
          <key>BASIC</key>

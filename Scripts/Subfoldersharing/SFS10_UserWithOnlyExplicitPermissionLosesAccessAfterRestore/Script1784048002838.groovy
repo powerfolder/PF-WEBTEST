@@ -22,27 +22,11 @@ import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
 
-/*
- * Subfolder Sharing spec, section 3.1 "Vererbung wiederherstellen", warning #6 in 4.4: a user who
- * was only granted an explicit permission on an interrupted subfolder (and never had access to the
- * parent top-level folder) must lose access entirely once inheritance is restored - the explicit
- * permission is archived and removed, and the parent's permissions do not cover this user.
- *
- * Note: a still-pending invitation is not resolved as a confirmed permission holder (renderInvitation
- * in share.js has no inherited marker and is a different list than confirmed members). So memberA
- * must accept the top-level folder invitation BEFORE the subfolder is created, otherwise neither the
- * interrupt-snapshot nor the "(inherited)" tag behave as expected.
- */
 
-// create memberA - stays on the parent folder for the whole test (the "keeps access" baseline)
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
 String memberAEmail = GlobalVariable.userEmail
-// the share dialog lists members by their display name (first + last name), not by email,
-// once the account has a name set - which Create_Account always does
 String memberADisplayName = GlobalVariable.userName + ' ' + GlobalVariable.userLastName
 
-// create memberB inline - will only ever get an explicit permission on the subfolder
-// (still on the Accounts page after Create_Account, so we can create it right away)
 String memberBEmail = ('sfs10b_' + RandomStringUtils.randomNumeric(6)) + '@qa-automated-webtest.com'
 String memberBLastName = RandomStringUtils.randomAlphabetic(6)
 String memberBDisplayName = 'SFS10B ' + memberBLastName
@@ -57,10 +41,8 @@ WebUI.setText(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/ac
 WebUI.click(findTestObject('Accounts/SaveButton'))
 WebUI.delay(2)
 
-// navigate to the Folders section
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))
 
-// create a top-level folder - creation navigates straight into it
 String tlfName = 'SFS10_' + RandomStringUtils.randomAlphanumeric(6)
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
@@ -69,13 +51,11 @@ WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandli
 WebUI.setText(findTestObject('Folders/inputFolderName'), tlfName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-// share the (currently open) top-level folder with memberA only
 WebUI.click(findTestObject('Links/share_icon_inside_folder'))
 WebUI.setText(findTestObject('Share/Page_Folders - PowerFolder/inputEmail_Share'), memberAEmail)
 WebUI.sendKeys(findTestObject('Share/Page_Folders - PowerFolder/inputEmail_Share'), Keys.chord(Keys.ENTER))
 WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 
-// log out admin, log in as memberA and accept the invitation BEFORE the subfolder exists
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 WebUI.setText(findTestObject('Login/inputEmail'), memberAEmail)
@@ -86,20 +66,16 @@ WebUI.click(findTestObject('LeftNavigationIcons/folders'))
 
 WebElement invitationRow = findRow(tlfName)
 WebUI.verifyEqual(invitationRow.isDisplayed(), true)
-// click the folder name link (not the invitation icon) to open the accept dialog
 WebElement invitationLink = findFolder(tlfName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(invitationLink))
 WebUI.verifyElementClickable(findTestObject('Share/Page_Folders - PowerFolder/accept_invitation'))
 WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/accept_invitation'))
 
-// log out memberA, log back in as admin
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))
 
-// re-enter the top-level folder and create a subfolder inside it - creation navigates
-// straight into the new subfolder
 WebElement tlfRow = findFolder(tlfName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(tlfRow))
 
@@ -110,37 +86,74 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), subFolderName)
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
-// interrupt inheritance on the (currently open) subfolder (memberA is snapshotted as explicit)
 WebUI.click(findTestObject('Links/share_icon_inside_folder'))
-// use a native JS click - a plain Selenium click on this checkbox does not
-// reliably fire the jQuery 'change' handler that drives the confirmation dialog
+WebUI.delay(2)
 WebElement inheritanceToggleEl = WebUI.findWebElement(findTestObject('Subfoldersharing/share_inheritance_toggle'), 5)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(inheritanceToggleEl))
-WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/confirme_handover'))
-WebUI.verifyElementText(findTestObject('notifications_toastmessage'), 'Own permissions have been set.')
+WebUI.waitForElementVisible(findTestObject('Subfoldersharing/inheritance_dialog_title'), 5)
+WebUI.click(findTestObject('Subfoldersharing/inheritance_dialog_ok'))
+WebUI.verifyElementText(findTestObject('notifications_toastmessage'), '"' + subFolderName + '" now has its own access rights.')
 
-// while interrupted, invite memberB directly on the subfolder (explicit-only, never on the parent)
+TestObject shareTableLoading = new TestObject()
+shareTableLoading.addProperty('xpath', ConditionType.EQUALS, "//table[@id='share_table']//tr[contains(@class,'pica-table-loading')]")
+WebUI.verifyElementNotPresent(shareTableLoading, 10)
+
 WebUI.setText(findTestObject('Share/Page_Folders - PowerFolder/inputEmail_Share'), memberBEmail)
-WebUI.sendKeys(findTestObject('Share/Page_Folders - PowerFolder/inputEmail_Share'), Keys.chord(Keys.ENTER))
+WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/buttonAddEmail'))
+
+TestObject pendingInviteRow = new TestObject()
+pendingInviteRow.addProperty('xpath', ConditionType.EQUALS, "//table[@id='share_table']//td[contains(text(),'" + memberBEmail + "')]")
+WebUI.verifyElementPresent(pendingInviteRow, 10)
+WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
+WebUI.setText(findTestObject('Login/inputEmail'), memberBEmail)
+WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+WebUI.click(findTestObject('Login/loginSubmit'))
+WebUI.delay(3)
+WebUI.click(findTestObject('LeftNavigationIcons/folders'))
+
+WebElement memberBInvitationRow = findRow(subFolderName)
+WebUI.verifyEqual(memberBInvitationRow.isDisplayed(), true)
+WebElement memberBInvitationLink = findFolder(subFolderName)
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(memberBInvitationLink))
+WebUI.verifyElementClickable(findTestObject('Share/Page_Folders - PowerFolder/accept_invitation'))
+WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/accept_invitation'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
+WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('LeftNavigationIcons/folders'))
+
+WebElement tlfRowForMemberB = findFolder(tlfName)
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(tlfRowForMemberB))
+WebElement subFolderRowForMemberB = findFolder(subFolderName)
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(subFolderRowForMemberB))
+WebUI.click(findTestObject('Links/share_icon_inside_folder'))
+
+WebUI.verifyElementNotPresent(shareTableLoading, 10)
 
 TestObject memberBRow = new TestObject()
-memberBRow.addProperty('xpath', ConditionType.EQUALS, "//table[@id='share_table']//td[contains(text(),'" + memberBDisplayName + "')]")
+memberBRow.addProperty('xpath', ConditionType.EQUALS, "//table[@id='share_table']//td[contains(.,'" + memberBDisplayName + "')]")
 WebUI.verifyElementPresent(memberBRow, 10)
 
-// restore inheritance - uncheck the toggle and confirm
-// use a native JS click - a plain Selenium click on this checkbox does not
-// reliably fire the jQuery 'change' handler that drives the confirmation dialog
+WebUI.delay(2)
 WebElement restoreToggleEl = WebUI.findWebElement(findTestObject('Subfoldersharing/share_inheritance_toggle'), 5)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(restoreToggleEl))
-WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/confirme_handover'))
-WebUI.verifyElementText(findTestObject('notifications_toastmessage'), 'Inheritance has been restored.')
+WebUI.waitForElementVisible(findTestObject('Subfoldersharing/inheritance_dialog_title'), 5)
 
-// memberB's explicit-only permission was archived/removed - memberA is inherited again
+WebUI.verifyElementVisible(findTestObject('Subfoldersharing/inheritance_affected_list'))
+String affectedText = WebUI.getText(findTestObject('Subfoldersharing/inheritance_affected_list'))
+WebUI.verifyMatch(affectedText, '.*' + memberBDisplayName + '.*', true)
+
+WebUI.click(findTestObject('Subfoldersharing/inheritance_dialog_ok'))
+WebUI.verifyElementText(findTestObject('notifications_toastmessage'), '"' + subFolderName + '" takes over the parent folder\'s access rights again.')
+
 WebUI.verifyElementNotPresent(memberBRow, 10)
 WebUI.verifyElementText(findTestObject('Share/Page_Folders - PowerFolder/td_usermailcom'), memberADisplayName + ' (inherited)')
 WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 
-// log out admin, log in as memberB and verify neither the subfolder nor the parent are reachable
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 WebUI.setText(findTestObject('Login/inputEmail'), memberBEmail)
@@ -148,7 +161,6 @@ WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 
-// login lands on the Dashboard - navigate to the Folders section
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))
 
 TestObject tlfPresent = new TestObject()

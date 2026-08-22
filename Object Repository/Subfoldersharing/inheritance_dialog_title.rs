@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Generic confirmation dialog body (#pica_confirmation_dialog). Since PFC-3613 the interrupt/restore inheritance flow uses its own dialog instead - see Subfoldersharing/inheritance_dialog_body. This object is now used by the member-removal and ownership-handover confirmations.</description>
-   <name>confirmation_dialog_body</name>
+   <description>Title of the dedicated inheritance interrupt/restore dialog (#pica_inheritance_dialog, PFC-3613). Replaces the old generic #pica_confirmation_dialog for this flow. Lang keys: dialog_title_interrupt_inheritance / dialog_title_restore_inheritance.</description>
+   <name>inheritance_dialog_title</name>
    <tag></tag>
-   <elementGuidId>cd4c99c3-c9b1-4fa7-a9b7-aa682c7783a5</elementGuidId>
+   <elementGuidId>7a1e2c40-3b5d-4e6a-9c8f-1a2b3c4d5e01</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_confirmation_dialog']//h5[contains(@class,'pica-dialog-description')]</value>
+         <value>//div[@id='pica_inheritance_dialog']//h4[contains(@class,'pica-dialog-title')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#pica_confirmation_dialog .pica-dialog-description</value>
+         <value>#pica_inheritance_dialog .pica-dialog-title</value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -26,15 +26,15 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>h5</value>
-      <webElementGuid>cd4c99c3-0001-0001-0001-000000000001</webElementGuid>
+      <value>h4</value>
+      <webElementGuid>7a1e2c40-0001-0001-0001-000000000001</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>contains</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>pica-dialog-description</value>
-      <webElementGuid>cd4c99c3-0001-0001-0001-000000000002</webElementGuid>
+      <value>pica-dialog-title</value>
+      <webElementGuid>7a1e2c40-0001-0001-0001-000000000002</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
