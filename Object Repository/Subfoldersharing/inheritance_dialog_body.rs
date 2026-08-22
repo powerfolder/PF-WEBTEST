@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Generic confirmation dialog body (#pica_confirmation_dialog). Since PFC-3613 the interrupt/restore inheritance flow uses its own dialog instead - see Subfoldersharing/inheritance_dialog_body. This object is now used by the member-removal and ownership-handover confirmations.</description>
-   <name>confirmation_dialog_body</name>
+   <description>Body/description of the dedicated inheritance interrupt/restore dialog (#pica_inheritance_dialog, PFC-3613). Lang keys: dialog_body_interrupt_inheritance / dialog_body_restore_inheritance. Scoped to the first match ([1]) because the "affected holders" section title (#pica_inheritance_affected_title) further down in the same dialog also carries the pica-dialog-description class.</description>
+   <name>inheritance_dialog_body</name>
    <tag></tag>
-   <elementGuidId>cd4c99c3-c9b1-4fa7-a9b7-aa682c7783a5</elementGuidId>
+   <elementGuidId>7a1e2c40-3b5d-4e6a-9c8f-1a2b3c4d5e02</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_confirmation_dialog']//h5[contains(@class,'pica-dialog-description')]</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>#pica_confirmation_dialog .pica-dialog-description</value>
+         <value>(//div[@id='pica_inheritance_dialog']//h5[contains(@class,'pica-dialog-description')])[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -27,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>h5</value>
-      <webElementGuid>cd4c99c3-0001-0001-0001-000000000001</webElementGuid>
+      <webElementGuid>7a1e2c40-0001-0001-0001-000000000003</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -35,6 +31,6 @@
       <name>class</name>
       <type>Main</type>
       <value>pica-dialog-description</value>
-      <webElementGuid>cd4c99c3-0001-0001-0001-000000000002</webElementGuid>
+      <webElementGuid>7a1e2c40-0001-0001-0001-000000000004</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

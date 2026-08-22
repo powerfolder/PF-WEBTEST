@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>The "snapshot" mode radio button in the interrupt-inheritance dialog (#pica_inheritance_modes, PFC-3613). Pre-checked by default; confirming with this mode copies the currently effective permissions as the subfolder's own explicit permissions (nobody loses access immediately).</description>
+   <name>inheritance_mode_snapshot</name>
+   <tag></tag>
+   <elementGuidId>7a1e2c40-3b5d-4e6a-9c8f-1a2b3c4d5e09</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='pica_inheritance_mode_snapshot']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>7a1e2c40-0001-0001-0001-00000000000a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>pica_inheritance_mode_snapshot</value>
+      <webElementGuid>7a1e2c40-0001-0001-0001-00000000000b</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
