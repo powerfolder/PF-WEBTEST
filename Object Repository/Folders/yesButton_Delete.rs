@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//lang[@name='button_yes']</value>
+         <value>//div[@id='pica_confirmation_dialog' and contains(concat(' ',normalize-space(@class),' '),' show ')]//button[.//lang[@name='button_yes']]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -6,12 +6,8 @@
    <elementGuidId>68748f37-dcfc-4c20-89eb-410f43b0f1a6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.col-xs-6 > button.btn.btn-primary</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[19]</value>
+         <value>//div[@id='pica_input_dialog']//div[contains(@class,'modal-footer')]//button[.//lang[@name='button_ok']]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
