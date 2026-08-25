@@ -90,7 +90,7 @@ try {
 } catch (Exception e) {
 }
 
-WebUI.verifyElementText(findTestObject('notifications_toastmessage'), 'Access not possible. You are not authorized to open this folder.')
+WebUI.verifyElementText(findTestObject('notifications_toastmessage'), 'Action or access to resource not allowed.')
 WebUI.verifyMatch(WebUI.getUrl(), '.*/files$', true)
 WebUI.verifyElementNotPresent(tlfPresent, 10)
 WebUI.verifyEqual(suspiciousConsoleEntries.isEmpty(), false)
