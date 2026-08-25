@@ -101,6 +101,8 @@ WebElement inputElement = driver.findElement(By.xpath("//*[@id='pica_group_accou
 
 inputElement.sendKeys(user)
 
+WebUI.delay(3)
+
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
 
 String userLocalPart = user.contains('@') ? user.substring(0, user.indexOf('@')) : user

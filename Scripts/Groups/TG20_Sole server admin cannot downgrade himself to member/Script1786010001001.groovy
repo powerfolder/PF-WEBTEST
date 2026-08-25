@@ -153,7 +153,10 @@ taginput.addProperty('xpath', ConditionType.EQUALS,
 
 WebUI.setEncryptedText(taginput, 'CKkAs2Ee0vA=')
 
+WebUI.delay(3)
+
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
+
 
 new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
     ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='pica_group_accounts']//table//tr[@data-userdata]")))
@@ -175,6 +178,7 @@ new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
     ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id='pica_group_dialog' and contains(concat(' ',normalize-space(@class),' '),' show ')]")))
 
 WebUI.delay(2)
+
 
 // Re-open the group (still logged in as admin) so the Members tab re-fetches from the server and
 // isOnlyGroupAdmin is computed against the real, persisted GroupAdminPermission.
@@ -214,6 +218,8 @@ Object hasClickHandler = WebUI.executeJavaScript(
 WebUiBuiltInKeywords.verifyEqual(hasClickHandler, false)
 
 WebUI.closeBrowser()
+
+
 
 @Keyword
 WebElement findGroup(String groupName) {
