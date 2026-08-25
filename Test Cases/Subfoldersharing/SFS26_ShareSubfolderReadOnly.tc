@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS26_ShareSubfolderReadOnly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3c7e9a1d-5f2b-4e8c-b1a6-7d2c9f4e6b02</testCaseGuid>
+</TestCaseEntity>
