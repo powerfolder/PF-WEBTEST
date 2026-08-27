@@ -186,4 +186,39 @@
       <testCaseId>Test Cases/Subfoldersharing/SFS24_VerifyOnlyOfficeEditorOpensInEditModeForSubfolderOnlyWriter</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>4e08aa2b-9c86-47f2-be3c-56b66acb8292</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS25_VerifySubfolderUserHasNoWriteAccessInTopFolderRoot</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f587254c-5895-4f4a-b434-152111f12b96</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS26_ShareSubfolderReadOnly</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a8722563-9784-4327-b270-e469c1f48022</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS27_ShareSubfolderWithAdminPermission</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>daa5d048-5f44-45fa-97b1-b154d1e999ba</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS28_UnshareSubfolderEndsAccess</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>40dc259d-3aa3-4c7a-94db-51caf41f4c86</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS29_SubfolderUserCannotGrantPermissions</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
