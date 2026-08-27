@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS25_VerifySubfolderUserHasNoWriteAccessInTopFolderRoot</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8f3c1a2e-6b4d-4c7a-9e2f-1d5a7b3c9e01</testCaseGuid>
+</TestCaseEntity>
