@@ -120,6 +120,8 @@ WebElement inputElement = driver.findElement(By.xpath("//*[@id='pica_group_accou
 
 inputElement.sendKeys(user1)
 
+WebUI.delay(3)
+
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
 
 String user1LocalPart = user1.contains('@') ? user1.substring(0, user1.indexOf('@')) : user1
@@ -183,12 +185,17 @@ taginput.addProperty('xpath', ConditionType.EQUALS,
 
 WebUI.setEncryptedText(taginput, 'CKkAs2Ee0vA=')
 
+WebUI.delay(3)
+
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
+
 
 // Wait until a second row (besides 'user1's) shows up - that is the just-added admin. Deliberately
 // left at the default role: never promoted via the dropdown.
 new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
     ExpectedConditions.numberOfElementsToBe(By.xpath("//div[@id='pica_group_accounts']//table//tr[@data-userdata]"), 2))
+
+
 
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
 
@@ -246,6 +253,7 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(leaveLink))
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Yes'))
 
 WebUI.delay(2)
+
 
 // No warning, and 'user1's row disappears from his own groups list - the leave succeeded.
 TestObject warningNotification = new TestObject('warningNotification')
