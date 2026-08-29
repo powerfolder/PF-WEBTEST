@@ -84,7 +84,8 @@ catch (Exception e) {
 	executor.executeScript('arguments[0].click()', ClickOnAccount)
 }
 
-WebUI.verifyEqual(WebUI.getText(findTestObject('Accounts/VerifyEditPage')), 'Edit Account', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementVisible(findTestObject('Accounts/verifyEditDialogTitle'), 10, FailureHandling.OPTIONAL)
+WebUI.verifyEqual(WebUI.getText(findTestObject('Accounts/verifyEditDialogTitle')), 'Edit', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Accounts/AdditonalEmails'))
 
