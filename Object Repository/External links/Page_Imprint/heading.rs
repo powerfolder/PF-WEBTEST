@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Serverstandort</name>
+   <name>heading</name>
    <tag></tag>
-   <elementGuidId>10f25af2-725d-45fb-b36c-415b69a3ccbd</elementGuidId>
+   <elementGuidId>9f4b2e7a-3d6c-4e1f-8a9b-7c0d2e5f6a81</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//h2[contains(text(),'Serverstandort')]</value>
+         <value>//h1</value>
       </entry>
       <entry>
          <key>BASIC</key>
