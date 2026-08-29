@@ -36,11 +36,9 @@ WebUI.click(findTestObject('Registration/Page_Login - PowerFolder/ClickOnRegiste
 
 WebUI.click(findTestObject('Registration/Page_Register - PowerFolder/RegisterButton'))
 
-String emailPh = WebUI.getAttribute(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Email'), 'placeholder')
-assert (emailPh == 'Required: Email' || emailPh == 'Erforderlich: Email') : 'Unerwarteter Email-Placeholder: ' + emailPh
-
-String pwPh = WebUI.getAttribute(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Password'), 'placeholder')
-assert (pwPh == 'Required: Choose a password' || pwPh == 'Erforderlich: Passwort wählen') : 'Unerwarteter Password-Placeholder: ' + pwPh
+// Submitting with mandatory fields empty must show the missing-fields warning.
+String missingFieldsMsg = WebUI.getText(findTestObject('Registration/Page_Register - PowerFolder/notification_MissingFields'))
+assert (missingFieldsMsg == 'Bitte alle fehlenden Felder ausfüllen' || missingFieldsMsg == 'Please fill in all missing fields') : 'Unerwartete Meldung: ' + missingFieldsMsg
 
 //WebUI.verifyElementAttributeValue(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Department'), 'placeholder', 'Required: Department', 5)
 
