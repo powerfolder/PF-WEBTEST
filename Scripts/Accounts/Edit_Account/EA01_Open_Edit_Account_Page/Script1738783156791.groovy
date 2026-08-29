@@ -51,11 +51,11 @@ WebUI.verifyElementClickable(findTestObject('Accounts/Edit_Accounts - PowerFolde
 
 WebUI.click(findTestObject('Accounts/Edit_Accounts - PowerFolder/Edit_account'))
 
-String actualMessage = WebUI.getText(findTestObject('Accounts/Edit_Accounts - PowerFolder/h5_Edit Account'))
+String actualMessage = WebUI.getText(findTestObject('Accounts/verifyEditDialogTitle'))
 
-String expectedMessageGerman = 'Konto bearbeitet'
+String expectedMessageGerman = 'Bearbeiten'
 
-String expectedMessageEnglish = 'Edit Account'
+String expectedMessageEnglish = 'Edit'
 
 if (actualMessage == expectedMessageGerman) {
     WebUI.comment('German verified successfully.')

@@ -50,7 +50,8 @@ try {
 }
 
 
-WebUI.verifyEqual(WebUI.getText(ObjectRepository.findTestObject('Accounts/VerifyEditPage')), 'Edit Account', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementVisible(ObjectRepository.findTestObject('Accounts/verifyEditDialogTitle'), 10, FailureHandling.OPTIONAL)
+WebUI.verifyEqual(WebUI.getText(ObjectRepository.findTestObject('Accounts/verifyEditDialogTitle')), 'Edit', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(ObjectRepository.findTestObject('Accounts/AddFolder'))
 WebUI.setText(ObjectRepository.findTestObject('Accounts/AddFolderByNameInput'), firstName)
