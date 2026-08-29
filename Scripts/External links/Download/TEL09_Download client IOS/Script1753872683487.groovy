@@ -41,9 +41,9 @@ String currentUrl = WebUI.getUrl()
 
 WebUI.comment('L\'URL actuelle est: ' + currentUrl)
 
-String expectedUrl = 'https://apps.apple.com/us/app/powerfolder/id536214931'
-
-boolean isCorrectUrl = currentUrl.equals(expectedUrl)
+// Apple redirects to a country-specific storefront based on the visitor's location
+// (e.g. /de/app/... instead of /us/app/...), so only the app-identifying part is checked
+boolean isCorrectUrl = currentUrl.contains('apps.apple.com') && currentUrl.contains('/app/powerfolder/id536214931')
 
 WebUI.verifyEqual(isCorrectUrl, true)
 

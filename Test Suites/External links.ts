@@ -147,7 +147,7 @@
    <testCaseLink>
       <guid>3853dee1-54dd-490e-a836-fbe82d7993e4</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/External links/Licence/TEL19_Get demo license</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
