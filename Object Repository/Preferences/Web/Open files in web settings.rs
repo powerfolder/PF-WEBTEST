@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div/div/main/div[2]/div/div/div[2]/ul/li[3]/a</value>
+         <value>//li[@id='open_files_in_web']/a</value>
       </entry>
       <entry>
          <key>CSS</key>
