@@ -52,13 +52,23 @@ def xpath = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and cont
 def driver = DriverFactory.getWebDriver()
 
 new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
-    ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)))
+    ExpectedConditions.elementToBeClickable(By.xpath(xpath)))
 
 def button = driver.findElement(By.xpath(xpath))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button))
+// A JS-injected click skips the pointerdown/focusin events the app relies on to configure the
+// dropdown's Popper positioning before Bootstrap opens it (see combo.js), leaving the menu clipped
+// by the scrollable member list - a real click is required for it to open visibly.
+button.click()
 
-WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Is member and admin'))
+def permissionXpath = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" +
+    userLocalPart + "')]//ul[contains(concat(' ',normalize-space(@class),' '),' show ')]" +
+    "//a[@data-dropdown-group='permission' and normalize-space(.)='Is member and admin']"
+
+new WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
+    ExpectedConditions.elementToBeClickable(By.xpath(permissionXpath)))
+
+driver.findElement(By.xpath(permissionXpath)).click()
 
 // Clic sur le bouton "Save"
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
@@ -80,11 +90,11 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
 new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
-    ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)))
+    ExpectedConditions.elementToBeClickable(By.xpath(xpath)))
 
 def button1 = driver.findElement(By.xpath(xpath))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button1))
+button1.click()
 
 WebUI.delay(2)
 

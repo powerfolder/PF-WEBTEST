@@ -166,7 +166,10 @@ def xpathAdminRow = "//div[@id='pica_group_accounts']//table//tr[@data-userdata]
 
 def adminRowButton = driver.findElement(By.xpath(xpathAdminRow))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(adminRowButton))
+// A JS-injected click skips the pointerdown/focusin events the app relies on to configure the
+// dropdown's Popper positioning before Bootstrap opens it (see combo.js), leaving the menu clipped
+// by the scrollable member list - a real click is required for it to open visibly.
+adminRowButton.click()
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
 
@@ -203,7 +206,7 @@ new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
 
 def adminRowButton2 = driver.findElement(By.xpath(xpathAdminRow))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(adminRowButton2))
+adminRowButton2.click()
 
 // PFS-5585 / group.js isOnlyGroupAdmin: since the admin is the sole GroupAdminPermission holder here
 // (AdminPermission implies GroupAdminPermission for any group, see AdminPermission#implies), his own

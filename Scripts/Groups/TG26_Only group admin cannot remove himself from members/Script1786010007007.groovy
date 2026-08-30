@@ -127,7 +127,10 @@ def xpathUser1 = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and
 
 def buttonUser1 = driver.findElement(By.xpath(xpathUser1))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonUser1))
+// A JS-injected click skips the pointerdown/focusin events the app relies on to configure the
+// dropdown's Popper positioning before Bootstrap opens it (see combo.js), leaving the menu clipped
+// by the scrollable member list - a real click is required for it to open visibly.
+buttonUser1.click()
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
 
@@ -158,11 +161,11 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
 new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
-    ExpectedConditions.presenceOfElementLocated(By.xpath(xpathUser1)))
+    ExpectedConditions.elementToBeClickable(By.xpath(xpathUser1)))
 
 WebElement buttonUser1Again = driver.findElement(By.xpath(xpathUser1))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonUser1Again))
+buttonUser1Again.click()
 
 // optionsForMembers = [Is member, Is member and admin, divider, Remove] - "Remove" is always the last <li>.
 WebElement removeOption = driver.findElement(By.xpath(
