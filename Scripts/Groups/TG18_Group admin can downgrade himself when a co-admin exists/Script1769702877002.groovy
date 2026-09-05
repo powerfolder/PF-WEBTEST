@@ -132,9 +132,6 @@ def xpath = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and cont
 
 def button = driver.findElement(By.xpath(xpath))
 
-// A JS-injected click skips the pointerdown/focusin events the app relies on to configure the
-// dropdown's Popper positioning before Bootstrap opens it (see combo.js), leaving the menu clipped
-// by the scrollable member list - a real click is required for it to open visibly.
 button.click()
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
@@ -168,7 +165,6 @@ new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
 
 WebUI.delay(2)
 
-// Log in as 'user' and try to downgrade himself - now allowed since 'coAdmin' remains a group admin (PFS-5585)
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
@@ -216,9 +212,6 @@ new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
 
 WebUI.delay(2)
 
-// 'user' just gave up his own GroupAdminPermission, so isAtLeastGroupAdmin() now rejects him
-// (AbstractGroupAPIAction#isAtLeastGroupAdmin) - he can no longer reopen the group's Edit dialog to verify the
-// result himself. Verification is therefore done by logging back in as the site admin, who is unaffected.
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
@@ -252,8 +245,6 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
     ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]")))
 
-// 'user' downgraded himself while 'coAdmin' still held group-admin rights (PFS-5585 allows this) -
-// his row must now read as a plain member.
 TestObject userIsPlainMember = new TestObject('userIsPlainMember')
 userIsPlainMember.addProperty('xpath', ConditionType.EQUALS,
     "//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "') and contains(@data-userdata,'\"isGroupAdmin\":false')]")

@@ -32,12 +32,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-/*
- * Ticket scenario 7: a plain (non-admin) group member can always leave a group - LeaveAction only
- * blocks the LAST ADMIN, never a plain member. Group is built self-service by 'user1', who invites
- * 'user2' as a plain member (default role, never promoted).
- */
-
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.userName = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
@@ -147,9 +141,6 @@ def xpathUser1 = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and
 
 def buttonUser1 = driver.findElement(By.xpath(xpathUser1))
 
-// A JS-injected click skips the pointerdown/focusin events the app relies on to configure the
-// dropdown's Popper positioning before Bootstrap opens it (see combo.js), leaving the menu clipped
-// by the scrollable member list - a real click is required for it to open visibly.
 buttonUser1.click()
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
@@ -222,7 +213,6 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/b
 
 WebUI.delay(2)
 
-// A plain member is never "the only admin", so LeaveAction must succeed: no warning, row disappears.
 TestObject warningNotification = new TestObject('warningNotification')
 warningNotification.addProperty('xpath', ConditionType.EQUALS,
     "//div[contains(@class,'pica-notification') and contains(@class,'warning')]")

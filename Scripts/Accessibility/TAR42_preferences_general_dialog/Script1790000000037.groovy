@@ -16,10 +16,6 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
-// The "General" tile on /admin/preferences opens the shared #pica_preference_dialog
-// modal (Picasso.Preferences, preferences.js) with its own set of sub-category tabs
-// (Hostname, Change Admin, Log, Maintenance folder, Accounts, Token, ...). TAR26 only
-// scans the /admin/preferences landing grid, never the dialog content itself.
 WebUI.openBrowser(GlobalVariable.URL)
 
 WebUI.maximizeWindow()

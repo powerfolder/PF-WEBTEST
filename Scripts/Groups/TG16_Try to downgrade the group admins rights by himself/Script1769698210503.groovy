@@ -56,9 +56,6 @@ new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
 
 def button = driver.findElement(By.xpath(xpath))
 
-// A JS-injected click skips the pointerdown/focusin events the app relies on to configure the
-// dropdown's Popper positioning before Bootstrap opens it (see combo.js), leaving the menu clipped
-// by the scrollable member list - a real click is required for it to open visibly.
 button.click()
 
 def permissionXpath = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" +

@@ -16,8 +16,6 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
-// The "Migration" tile opens #pica_preference_dialog with sub-tabs for the
-// PowerFolder/ServiceMigrator source, the Alfresco/CMIS source, and Federation.
 WebUI.openBrowser(GlobalVariable.URL)
 
 WebUI.maximizeWindow()

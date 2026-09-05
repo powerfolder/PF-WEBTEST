@@ -32,14 +32,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-/*
- * Ticket scenario 9: from the group's Members tab, an admin can remove himself from the member list
- * (dropdown option "Remove", the 4th/last entry of optionsForMembers) as long as another admin remains -
- * SaveAccountsToGroupAction's "remove remaining accounts" loop only skips self-removal when
- * groupAdminCount <= 1. Functionally the same guard as "Is member" (TG18), just exercised via "Remove".
- * Group is built self-service by 'user1', who invites 'user2' as a second admin.
- */
-
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.userName = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
@@ -149,9 +141,6 @@ def xpathUser1 = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and
 
 def buttonUser1 = driver.findElement(By.xpath(xpathUser1))
 
-// A JS-injected click skips the pointerdown/focusin events the app relies on to configure the
-// dropdown's Popper positioning before Bootstrap opens it (see combo.js), leaving the menu clipped
-// by the scrollable member list - a real click is required for it to open visibly.
 buttonUser1.click()
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
@@ -210,13 +199,11 @@ WebElement buttonUser1Again = driver.findElement(By.xpath(xpathUser1))
 
 buttonUser1Again.click()
 
-// optionsForMembers = [Is member, Is member and admin, divider, Remove] - "Remove" is always the last <li>.
 WebElement removeOption = driver.findElement(By.xpath(
     "//div[@id='pica_group_accounts']//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]/li[last()]/a"))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(removeOption))
 
-// handleOptionsForMembers case 3 removes the row from the LOCAL list immediately, before Save.
 new WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
     ExpectedConditions.invisibilityOfElementLocated(By.xpath(xpathUser1)))
 
@@ -229,8 +216,6 @@ new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
 
 WebUI.delay(2)
 
-// 'user1' just removed his own GroupAdminPermission along with his membership, so isAtLeastGroupAdmin()
-// now rejects him - verification is done by logging back in as the remaining admin 'user2'.
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))

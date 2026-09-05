@@ -67,7 +67,6 @@ driver.manage().window().setPosition(new org.openqa.selenium.Point(0, 0))
 WebUI.maximizeWindow()
 WebUI.delay(1)
 
-// Clear any persisted search filter (files.js restores sessionStorage.searchQuery on reload — would hide the new folder if a previous test typed something).
 WebUI.executeJavaScript("try { sessionStorage.removeItem('searchQuery'); } catch (e) {}", null)
 
 String targetFolderCss = "tr[data-search-keys*='" + topFolder + "']"

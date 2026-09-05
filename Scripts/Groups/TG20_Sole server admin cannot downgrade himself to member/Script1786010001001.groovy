@@ -32,21 +32,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-/*
- * Ticket scenario 3: a server/org admin can never be downgraded to a plain group member.
- *
- * AutoCompleteProvider#searchAccounts explicitly filters admin accounts out of the taginput's
- * suggestions for any NON-admin caller ("Skip admins for non-admins"). So a regular user can never find
- * or invite the site admin into his group - only the admin himself can add himself (the same filter does
- * not apply when the caller already holds AdminPermission.INSTANCE). AdminPermission#implies always
- * returns true for GroupAdminPermission, so the admin can open and edit ANY group - including one created
- * by a regular user - without ever being invited first.
- *
- * The group itself is still built self-service by 'user1' (not by the site admin); only the "add the
- * admin as a member" step is done by the admin himself, logged in with the same encrypted credentials
- * "Pretest - Admin Login" already uses - the script never learns his plaintext email/password.
- */
-
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.userName = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
@@ -91,9 +76,6 @@ WebUI.click(findTestObject('Login/loginSubmit'))
 
 WebUI.delay(3)
 
-// 'user1' creates the group himself (self-service) - group creation is open to any logged-in account
-// (StoreAction#checkPermissions returns true when no group id is given). He deliberately does NOT add
-// himself as a member: this test only cares about the admin's own row once he is the sole member.
 String groupName = 'Group_' + RandomStringUtils.randomNumeric(4)
 
 GlobalVariable.GroupName = groupName
@@ -127,8 +109,6 @@ WebUI.click(findTestObject('Login/loginSubmit'))
 
 WebUI.delay(3)
 
-// The admin can find ANY group (GetAllAction skips the "own groups only" restriction for
-// AdminPermission.INSTANCE callers), even though 'user1' created it and never invited him.
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 
 WebUI.delay(3)
@@ -145,8 +125,6 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups 
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
-// The admin adds HIMSELF: searching for his own admin account does not hit the
-// "Skip admins for non-admins" filter, because the caller here already holds AdminPermission.INSTANCE.
 TestObject taginput = new TestObject('taginput')
 taginput.addProperty('xpath', ConditionType.EQUALS,
     "//*[@id='pica_group_accounts']//input[contains(concat(' ',normalize-space(@class),' '),' pica-taginput-input ')]")
@@ -166,9 +144,6 @@ def xpathAdminRow = "//div[@id='pica_group_accounts']//table//tr[@data-userdata]
 
 def adminRowButton = driver.findElement(By.xpath(xpathAdminRow))
 
-// A JS-injected click skips the pointerdown/focusin events the app relies on to configure the
-// dropdown's Popper positioning before Bootstrap opens it (see combo.js), leaving the menu clipped
-// by the scrollable member list - a real click is required for it to open visibly.
 adminRowButton.click()
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
@@ -183,8 +158,6 @@ new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
 WebUI.delay(2)
 
 
-// Re-open the group (still logged in as admin) so the Members tab re-fetches from the server and
-// isOnlyGroupAdmin is computed against the real, persisted GroupAdminPermission.
 WebUI.refresh()
 
 WebUI.delay(3)
@@ -208,9 +181,6 @@ def adminRowButton2 = driver.findElement(By.xpath(xpathAdminRow))
 
 adminRowButton2.click()
 
-// PFS-5585 / group.js isOnlyGroupAdmin: since the admin is the sole GroupAdminPermission holder here
-// (AdminPermission implies GroupAdminPermission for any group, see AdminPermission#implies), his own
-// "Is member" option must carry no click handler at all.
 WebElement isMemberOption = driver.findElement(By.xpath(
     "//div[@id='pica_group_accounts']//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]/li[a[@data-dropdown-group='permission']][1]/a"))
 
