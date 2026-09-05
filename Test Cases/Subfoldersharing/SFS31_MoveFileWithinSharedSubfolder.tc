@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS31_MoveFileWithinSharedSubfolder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6a3d9e2c-4f7b-4a1d-8c6e-9b2f5d8a3e09</testCaseGuid>
+</TestCaseEntity>
