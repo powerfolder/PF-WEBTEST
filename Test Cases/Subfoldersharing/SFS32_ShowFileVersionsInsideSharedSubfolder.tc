@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS32_ShowFileVersionsInsideSharedSubfolder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8c1e4a6d-3f9b-4e2a-9d7c-5b1f8a3e6c10</testCaseGuid>
+</TestCaseEntity>
