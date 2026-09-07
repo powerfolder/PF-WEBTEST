@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_share_dialog']//div[contains(@class,'modal-footer')]/button[@data-bs-dismiss='modal']</value>
+         <value>//div[@id='pica_share_dialog']//div[contains(@class,'modal-footer')]/button[contains(@class,'btn-primary')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -26,10 +26,10 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>data-bs-dismiss</name>
+      <matchCondition>contains</matchCondition>
+      <name>class</name>
       <type>Main</type>
-      <value>modal</value>
+      <value>btn-primary</value>
       <webElementGuid>a1b2c3d4-0001-0001-0001-000000000002</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
@@ -37,7 +37,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@id='pica_share_dialog']//div[contains(@class,'modal-footer')]/button[@data-bs-dismiss='modal']</value>
+      <value>//div[@id='pica_share_dialog']//div[contains(@class,'modal-footer')]/button[contains(@class,'btn-primary')]</value>
       <webElementGuid>a1b2c3d4-0001-0001-0001-000000000003</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
