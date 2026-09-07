@@ -5,7 +5,9 @@
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
+   <maxConcurrentInstances>1</maxConcurrentInstances>
    <numberOfRerun>0</numberOfRerun>
+   <orchestration>CLASSIC</orchestration>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
@@ -220,5 +222,61 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS29_SubfolderUserCannotGrantPermissions</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bd994051-89cb-41b8-be87-704df1396a9a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS30_NestedSharesInnerSubfolderWins</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6223d78c-b260-458c-a722-fbb2c0581c16</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS31_MoveFileWithinSharedSubfolder</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>762918df-f2d2-40d8-9196-243676abe20f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS32_ShowFileVersionsInsideSharedSubfolder</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>484e9629-19f9-40f1-9214-04b8ce06393b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS33_SetTagsOnFileInsideSharedSubfolder</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c41219ee-a520-4ecd-8d10-2d9bc6a6424a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS34_ActOnFileSeveralLevelsBelowShareRoot</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7a2bc110-0721-4356-9d4e-dd0e2db136e9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS35_CreateButtonPresentAfterNavigatingIntoSubfolder</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0d8bbbf0-473a-4a76-96d0-1dad7c613bcf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS36_PermissionOnSubfolderThroughParentGroup</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2e01eae3-2cfd-470b-9702-717cec4506fe</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS37_SubfolderUserCannotTagFilesInTopFolder</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
