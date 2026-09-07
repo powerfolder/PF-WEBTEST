@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS34_ActOnFileSeveralLevelsBelowShareRoot</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5b8e2a4d-9f1c-4b7a-8e3d-2c6f9a1b5d12</testCaseGuid>
+</TestCaseEntity>
