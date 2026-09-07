@@ -19,7 +19,6 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
-// Server tab list (populated by dashboard.js addNavTab) — at least one server tab must render
 WebUI.verifyElementPresent(findTestObject('Dashboard/servertab_mimas'), 30)
 
 // Row 1: Accounts, Storage charts (Server chart only rendered when pAdmin && !isCommunityEdition)

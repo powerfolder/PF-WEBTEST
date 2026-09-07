@@ -16,14 +16,6 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
-// Opens the self-service "Close Account" dialog (#pica_close_account_confirmation_dialog,
-// templates/picasso/dialogs/closeAccount.vm) from the My Account / Profile page, triggered
-// by #profile_close_account (see profile.js handleClickCloseAccount).
-//
-// The button is only rendered for non-admin, database-authenticated accounts - see
-// profile.vm: `#if ($registerEnabled && !$pAdmin && $account.authByDatabase())` - so this
-// needs a throwaway regular user account rather than the shared admin login.
-//
 // SAFETY: this dialog's primary button (#confirm-button) actually deletes/closes the
 // logged-in account. This script only ever clicks the secondary "No" button to close
 // the dialog - #confirm-button must never be clicked.

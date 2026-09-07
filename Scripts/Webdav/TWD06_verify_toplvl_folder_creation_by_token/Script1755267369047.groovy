@@ -69,7 +69,6 @@ String folderName_webdav = getRandomFolderName()
 
 CustomKeywords.'utils.WebDav.createFolder'(base, folderName_webdav, user, pass)
 
-// Clear persisted search query (sessionStorage in files.js) so the previous filter does not exclude the new folder
 WebUI.executeJavaScript("try { sessionStorage.removeItem('searchQuery'); } catch (e) {}", null)
 
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/lang_Folders'))

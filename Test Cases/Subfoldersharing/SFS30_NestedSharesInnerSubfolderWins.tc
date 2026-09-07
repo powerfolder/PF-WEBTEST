@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TA24_Lower_quota_below_usage_must_not_delete_data</name>
+   <name>SFS30_NestedSharesInnerSubfolderWins</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>0ddabdd1-8dc6-47c5-b500-3a1cca60343b</testCaseGuid>
+   <testCaseGuid>2f6a9c4e-8b1d-4a7c-9e5f-3d8b1a6c2e08</testCaseGuid>
 </TestCaseEntity>

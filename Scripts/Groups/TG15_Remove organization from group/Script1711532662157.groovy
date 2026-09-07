@@ -48,7 +48,6 @@ WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/td_Organisation'))
 
 WebUI.delay(1)
 
-// Remove action lives in the table's "selection" thead (visible once a row is selected) — anchored on .pica-inputlist-remove from input-list.js
 WebElement element = DriverFactory.getWebDriver().findElement(By.xpath("//div[@id='pica_group_organizations']//a[contains(concat(' ',normalize-space(@class),' '),' pica-inputlist-remove ')]"))
 
 WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(element))

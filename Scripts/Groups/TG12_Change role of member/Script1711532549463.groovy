@@ -41,11 +41,6 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 // Navigation vers la section "Members"
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
-// PFS-5510: the group creator (site admin) only gets GroupAdminPermission on creation, he is never
-// added as an explicit member (no addGroup() call) - so "Pre_test/add member" leaves exactly ONE row in
-// this table (the invited user), never two. Target that row by the invited user's own data instead of
-// a fixed position, and wait for it - the Members tab now also awaits the (default-on) child-groups
-// fetch before finishing its render, so a plain findElement without a wait is timing-sensitive.
 String userLocalPart = GlobalVariable.userName.contains('@') ? GlobalVariable.userName.substring(0, GlobalVariable.userName.indexOf('@')) : GlobalVariable.userName
 
 def xpath = "//div[@id='pica_group_accounts']//table/tbody/tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]//button[contains(@class,'dropdown-toggle')]"
@@ -57,9 +52,6 @@ new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
 
 def button = driver.findElement(By.xpath(xpath))
 
-// A JS-injected click skips the pointerdown/focusin events the app relies on to configure the
-// dropdown's Popper positioning before Bootstrap opens it (see combo.js), leaving the menu clipped
-// by the scrollable member list - a real click is required for it to open visibly.
 button.click()
 
 def permissionXpath = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" +

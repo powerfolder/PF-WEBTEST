@@ -32,19 +32,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-/*
- * Ticket scenario 8: a server admin who is merely a plain member of a group still counts as "an admin"
- * of that group, because AdminPermission#implies(GroupAdminPermission) always returns true - the site
- * admin never needs an explicit per-group grant. So a normal group admin can leave/downgrade even though,
- * on paper, the only OTHER "member" in the table is tagged as a plain "Is member" row.
- *
- * AutoCompleteProvider#searchAccounts filters admin accounts out of the taginput suggestions for any
- * NON-admin caller ("Skip admins for non-admins"), so 'user1' can never find/invite the site admin
- * himself. The admin has to add HIMSELF - which he can do on any group (AdminPermission implies
- * GroupAdminPermission everywhere), without ever being invited. He is deliberately left at the default
- * "Is member" role - the whole point is that nobody explicitly promotes him.
- */
-
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.userName = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
@@ -133,9 +120,6 @@ def xpathUser1 = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and
 
 def buttonUser1 = driver.findElement(By.xpath(xpathUser1))
 
-// A JS-injected click skips the pointerdown/focusin events the app relies on to configure the
-// dropdown's Popper positioning before Bootstrap opens it (see combo.js), leaving the menu clipped
-// by the scrollable member list - a real click is required for it to open visibly.
 buttonUser1.click()
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
@@ -149,9 +133,6 @@ new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
 
 WebUI.delay(2)
 
-// Log out of 'user1', log in as the site admin to add HIMSELF - a non-admin caller like 'user1' never
-// gets admin accounts suggested by the taginput (AutoCompleteProvider "Skip admins for non-admins"),
-// but the admin can add himself to any group directly, uninvited.
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
@@ -224,9 +205,6 @@ WebUI.click(findTestObject('Login/loginSubmit'))
 
 WebUI.delay(3)
 
-// Leave the group via the "..." menu. LeaveAction's isTheOnlyGroupAdmin() re-checks GroupAdminPermission
-// via hasPermission() (implication included), so the site admin - even though his row shows the default
-// "Is member" role - counts as the remaining admin.
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 
 WebUI.delay(3)

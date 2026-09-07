@@ -32,12 +32,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-/*
- * Ticket scenario 5: a group admin can leave a group in one step (via the groups list "..." menu)
- * as long as another admin remains. The group is built self-service by 'user1' (not by the site admin),
- * matching how groups are actually created in production: users create their own groups and invite others.
- */
-
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.userName = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
@@ -147,9 +141,6 @@ def xpathUser1 = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and
 
 def buttonUser1 = driver.findElement(By.xpath(xpathUser1))
 
-// A JS-injected click skips the pointerdown/focusin events the app relies on to configure the
-// dropdown's Popper positioning before Bootstrap opens it (see combo.js), leaving the menu clipped
-// by the scrollable member list - a real click is required for it to open visibly.
 buttonUser1.click()
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
@@ -217,8 +208,6 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/b
 
 WebUI.delay(2)
 
-// LeaveAction only 403s when the caller is the group's last admin - here 'user2' remains, so it must
-// succeed silently: no permission-denied warning, and the row disappears from 'user1's own list.
 WebUiBuiltInKeywords.verifyEqual(driver.findElements(By.xpath("//div[contains(@class,'pica-notification') and contains(@class,'warning')]")).size(), 0)
 
 new WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
