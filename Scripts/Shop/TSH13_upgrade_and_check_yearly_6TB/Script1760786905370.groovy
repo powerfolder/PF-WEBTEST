@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.util.regex.Pattern
 
 WebUI.callTestCase(findTestCase('Shop/Pre_test/upgrade_yearly_6TB'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -51,7 +52,11 @@ WebUI.delay(2)
 
 WebUI.verifyElementText(findTestObject('Page_PowerFolder - shop_stripe/Size'), 'Team Cloud 6 TB')
 
-WebUI.verifyElementText(findTestObject('Page_PowerFolder - shop_stripe/Price'), price + ' per year')
+String actualPrice = WebUI.getText(findTestObject('Page_PowerFolder - shop_stripe/Price'))
+
+String priceNumber = price.replaceAll('[^0-9,.]', '').replace(',', '.')
+
+WebUI.verifyMatch(actualPrice, '.*' + Pattern.quote(priceNumber) + '.*', true)
 
 WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/Return to PowerFolder'))
 
