@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS38_WebDavAccessToSharedSubfolder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9d2f6a4c-1e8b-4a3d-9c7f-6b2e5a1d8c16</testCaseGuid>
+</TestCaseEntity>
