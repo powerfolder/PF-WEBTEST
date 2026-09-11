@@ -5,7 +5,9 @@
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
+   <maxConcurrentInstances>1</maxConcurrentInstances>
    <numberOfRerun>0</numberOfRerun>
+   <orchestration>CLASSIC</orchestration>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
@@ -437,5 +439,12 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL57_Verify RW Link Creation When Upload Links Disabled</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>90c4cafd-946e-45c3-9ad0-c5c9052c0b0d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Links/TL58_Verify link valid till does not carry over to next link</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
