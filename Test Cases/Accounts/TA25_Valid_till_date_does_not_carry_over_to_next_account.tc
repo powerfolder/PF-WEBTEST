@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TA25_Valid_till_date_does_not_carry_over_to_next_account</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3a317221-88a3-4deb-8507-a13e524ece83</testCaseGuid>
+</TestCaseEntity>

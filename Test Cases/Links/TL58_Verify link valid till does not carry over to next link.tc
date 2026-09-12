@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TL58_Verify link valid till does not carry over to next link</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a8ed58d3-2cdf-42dd-a545-b2084a78047b</testCaseGuid>
+</TestCaseEntity>
