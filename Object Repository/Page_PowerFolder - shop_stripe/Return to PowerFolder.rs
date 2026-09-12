@@ -6,12 +6,12 @@
    <elementGuidId>06ea7d86-01ff-4daf-8f04-2fb4c1e81cb0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//body[@id='customer_portal_page_body']/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/a</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>a.⚙.rs-1.rs-2.rs-2.rs-0.rs-2.as-h.as-i.as-j.as-y.as-z.as-m.as-n.as-o.as-p.as-10.as-r.as-s.as-t.as-u.as-v.as-11.as-12.as-x.as-6.⚙e42vsz</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@data-testid='return-url-link']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -38,7 +38,7 @@
       <matchCondition>equals</matchCondition>
       <name>data-testid</name>
       <type>Main</type>
-      <value>return-to-business-link</value>
+      <value>return-url-link</value>
       <webElementGuid>3f390c88-cbe9-4a32-b408-f53003a402c3</webElementGuid>
    </webElementProperties>
    <webElementProperties>

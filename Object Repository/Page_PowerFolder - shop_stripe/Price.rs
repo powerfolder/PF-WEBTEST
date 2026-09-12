@@ -6,12 +6,12 @@
    <elementGuidId>1d9c17d8-869c-44b6-a2a3-8aee3a910ab7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//body/div[1]/div/div/div[1]/div/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[1]/div/div/div[2]/div[1]/div/div/div/div/div/div[1]/div/div/div/div[1]/div/div/div[2]/div/div/div[2]/span/span</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>span.Text-color--default.Text-fontSize--24.Text-fontWeight--bold.Text-lineHeight--24.Text-numericSpacing--proportional.Text-typeface--base.Text-wrap--wrap.Text-display--inline > span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//body[@id='customer_portal_page_body']/div/div/div/div/main/div/div/div/div/div/div[2]/div/a/div/div[2]/div[1]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -30,7 +30,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>€12.50 per month</value>
+      <value>€6.90 due Oct 10, 2026</value>
       <webElementGuid>535ea8c9-6c33-4e22-8ebd-ac774e38dd3e</webElementGuid>
    </webElementProperties>
    <webElementProperties>

@@ -119,8 +119,9 @@ docAPresent.addProperty('xpath', ConditionType.EQUALS, "//*[contains(@data-searc
 WebUI.verifyElementPresent(docAPresent, 10)
 WebUI.verifyElementNotVisible(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
-WebElement docARowToggle = WebUI.findWebElement(findTestObject('file_objects/document/Page_Open - PowerFolder/file_manage'), 5)
-WebUI.executeJavaScript("arguments[0].closest('tr').querySelector('a.dropdown-toggle').click()", Arrays.asList(docARowToggle))
+WebDriver driver = DriverFactory.getWebDriver()
+WebElement docARowToggle = driver.findElement(By.xpath("//*[contains(@data-search-keys, '" + docAName + "')]//a[contains(@class,'dropdown-toggle')]"))
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(docARowToggle))
 WebUI.delay(1)
 
 TestObject docARenameOption = new TestObject()
