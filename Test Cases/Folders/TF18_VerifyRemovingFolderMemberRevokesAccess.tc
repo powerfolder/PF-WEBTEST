@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF18_VerifyRemovingFolderMemberRevokesAccess</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5e20c47c-b17d-4a53-8330-2dbe1dd4a03c</testCaseGuid>
+</TestCaseEntity>
