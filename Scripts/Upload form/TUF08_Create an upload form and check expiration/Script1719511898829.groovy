@@ -45,6 +45,7 @@ import java.util.Date as Date
 import static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.*
 import java.text.SimpleDateFormat
 import java.util.Calendar
+import credentials.CredentialsManager as CredentialsManager
 
 // create folder with uploadform where expiration is in 2min future
 WebUI.callTestCase(findTestCase('Upload form/Pre_Test/Creat_Folder'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -118,9 +119,9 @@ WebUI.switchToWindowIndex(0)
 WebUI.delay(2)
 
 // Log admin back in to verify the upload result
-WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
+WebUI.setText(findTestObject('Login/inputEmail'), CredentialsManager.getAdminUsername())
 
-WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
+WebUI.setText(findTestObject('Login/inputPassword'), CredentialsManager.getAdminPassword())
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
