@@ -20,6 +20,7 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import credentials.CredentialsManager as CredentialsManager
 
 // Ouvre un nouveau navigateur
 WebUI.openBrowser('')
@@ -34,7 +35,7 @@ WebUI.navigateToUrl(GlobalVariable.URL)
 assert WebUI.getWindowTitle().equals('Login - PowerFolder')
 
 // Remplit le champ de saisie pour le nom d'utilisateur avec la valeur de la variable globale Username
-WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
+WebUI.setText(findTestObject('Login/inputEmail'), CredentialsManager.getAdminUsername())
 
 // Attend jusqu'à 2 secondes pour que l'élément de saisie de mot de passe soit visible et stocke le résultat dans isPresent
 isPresent = WebUI.waitForElementVisible(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'), 
@@ -43,7 +44,7 @@ isPresent = WebUI.waitForElementVisible(findTestObject('Object Repository/Login/
 // Vérifie si l'élément de saisie de mot de passe est présent sur la page
 assert isPresent
 
-WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
+WebUI.setText(findTestObject('Login/inputPassword'), CredentialsManager.getAdminPassword())
 
 // Clique sur le bouton "Login"
 WebUI.click(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login'))

@@ -39,6 +39,7 @@ import java.awt.datatransfer.StringSelection as StringSelection
 import java.awt.Robot as Robot
 import java.awt.event.KeyEvent as KeyEvent
 import java.io.IOException as IOException
+import credentials.CredentialsManager as CredentialsManager
 
 WebUI.callTestCase(findTestCase('Upload form/Pre_Test/Creat_upload_form'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -69,9 +70,9 @@ WebUI.switchToWindowIndex('0')
 WebUI.delay(2)
 
 // Log admin back in to verify the result
-WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
+WebUI.setText(findTestObject('Login/inputEmail'), CredentialsManager.getAdminUsername())
 
-WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
+WebUI.setText(findTestObject('Login/inputPassword'), CredentialsManager.getAdminPassword())
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
