@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG42_Filter groups without members</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1dafa42d-a4fa-45e9-be4a-d1f4d30bdfcf</testCaseGuid>
+</TestCaseEntity>

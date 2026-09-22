@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG43_Filter groups without folders</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>91b03913-a6b2-4f57-8862-9db48372ed78</testCaseGuid>
+</TestCaseEntity>

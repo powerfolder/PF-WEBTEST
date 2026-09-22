@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG29_Add multiple subgroups to one parent group</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>658f7050-826a-47f4-9455-e3ef003536b5</testCaseGuid>
+</TestCaseEntity>

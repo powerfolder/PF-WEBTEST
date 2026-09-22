@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG32_Search for a subgroup using autocomplete</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6c4c0d29-9706-416f-b5da-9022f4c8f641</testCaseGuid>
+</TestCaseEntity>

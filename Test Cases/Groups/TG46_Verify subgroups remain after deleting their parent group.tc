@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG46_Verify subgroups remain after deleting their parent group</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b54e5334-7bbc-4dab-a9a3-a6fa129d5df8</testCaseGuid>
+</TestCaseEntity>
