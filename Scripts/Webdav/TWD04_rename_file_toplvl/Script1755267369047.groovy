@@ -39,12 +39,7 @@ CustomKeywords.'utils.WebDav.createFolder'(base, folderName_webdav, user, pass)
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/lang_Folders'))
 
 // check present of toplvl folder made via webdav in web
-WebUI.setText(findTestObject('Folders/inputSearch'), folderName_webdav)
-
-WebDriver webdav_driver = DriverFactory.getWebDriver()
-
-WebElement folder_webdav = webdav_driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + folderName_webdav) + 
-        '\')]/td[1]/span'))
+WebElement folder_webdav = waitForRow(folderName_webdav)
 
 boolean is_webdav_folderCreated = folder_webdav.isDisplayed()
 
@@ -56,13 +51,7 @@ String renamed_toplvlfolder_webdav = 'renamed_' + folderName_webdav
 CustomKeywords.'utils.WebDav.renameOrMove'(base, folderName_webdav, renamed_toplvlfolder_webdav, user, pass, true)
 
 // verify rename of toplvl folder via web
-WebUI.refresh()
-
-WebUI.setText(findTestObject('Folders/inputSearch'), renamed_toplvlfolder_webdav)
-
-WebDriver renamed_toplvlfolder_driver = DriverFactory.getWebDriver()
-
-WebElement renamed_toplvlfolder = renamed_toplvlfolder_driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + renamed_toplvlfolder_webdav) + '\')]/td[1]/span'))
+WebElement renamed_toplvlfolder = waitForRow(renamed_toplvlfolder_webdav)
 
 boolean istoplvlfolderrenamed = renamed_toplvlfolder.isDisplayed()
 
@@ -77,16 +66,11 @@ String filename_renamed = 'renamed_' + filename
 CustomKeywords.'utils.WebDav.renameOrMove'(base, renamed_toplvlfolder_webdav + '/' + filename, renamed_toplvlfolder_webdav + '/' + filename_renamed, user, pass, true)
 
 // check present renamed file in web
-WebElement btn_subfolder = findFolder(renamed_toplvlfolder_webdav)
+WebElement btn_subfolder = waitForFolderLink(renamed_toplvlfolder_webdav)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn_subfolder))
-WebUI.refresh()
 
-WebUI.setText(findTestObject('Folders/inputSearch'), filename_renamed)
-
-WebDriver file_driver = DriverFactory.getWebDriver()
-
-WebElement file = file_driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + filename_renamed) + '\')]/td[1]/span'))
+WebElement file = waitForRow(filename_renamed)
 
 boolean isfileCreated = file.isDisplayed()
 
@@ -94,10 +78,31 @@ WebUI.verifyEqual(isfileCreated, true)
 
 WebUI.closeBrowser()
 
-WebElement findFolder(String folderName) {
+WebElement waitForRow(String searchKey, int maxAttempts = 6, int waitSeconds = 5) {
+	return waitForElementPresent("//*[contains(@data-search-keys, '" + searchKey + "')]/td[1]/span", maxAttempts, waitSeconds)
+}
+
+WebElement waitForFolderLink(String folderName, int maxAttempts = 6, int waitSeconds = 5) {
+	return waitForElementPresent("//td[2]/span/a[contains(text(),'" + folderName + "')]", maxAttempts, waitSeconds)
+}
+
+WebElement waitForElementPresent(String xpath, int maxAttempts, int waitSeconds) {
 	WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//td[2]/span/a[contains(text(),\'' + folderName) + '\')]'))
+	for (int attempt = 1; attempt <= maxAttempts; attempt++) {
+		List<WebElement> found = driver.findElements(By.xpath(xpath))
+
+		if (!found.isEmpty() && found[0].isDisplayed()) {
+			return found[0]
+		}
+
+		if (attempt < maxAttempts) {
+			WebUI.delay(waitSeconds)
+			WebUI.refresh()
+		}
+	}
+
+	throw new Exception("Element not found after " + maxAttempts + " attempts (with reloads): " + xpath)
 }
 
 String getRandomFolderName() {
