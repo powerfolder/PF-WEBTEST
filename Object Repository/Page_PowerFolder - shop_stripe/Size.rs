@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body[@id='customer_portal_page_body']/div/div/div/div/main/div/div/div/div/div/div[2]/div/a/div/div/div[2]/div</value>
+         <value>//body[@id='customer_portal_page_body']/div/div/div/div/main/div/div/div/section/div/a/div/div/div/div/div/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>faa06f0a-12b5-4636-a8cf-a5838d763385</webElementGuid>
+      <webElementGuid>faa06f0a-12b5-4636-a8cf-a5838d763386</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
