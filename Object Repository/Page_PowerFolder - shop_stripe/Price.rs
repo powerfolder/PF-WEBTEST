@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body[@id='customer_portal_page_body']/div/div/div/div/main/div/div/div/div/div/div[2]/div/a/div/div[2]/div[1]/span</value>
+         <value>//body[@id='customer_portal_page_body']/div/div/div/div/main/div/div/div/section/div/a/div[1]/div[2]/div[1]/span[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
