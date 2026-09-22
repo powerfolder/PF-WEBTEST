@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG35_Verify removed subgroup is not deleted</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>def3ab2a-5693-4d0a-99b0-e94aaf8c2d4f</testCaseGuid>
+</TestCaseEntity>

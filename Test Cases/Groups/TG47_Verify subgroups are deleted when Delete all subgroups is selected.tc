@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG47_Verify subgroups are deleted when Delete all subgroups is selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2517cf32-938b-4ae8-92f7-3fc3d69e7fb4</testCaseGuid>
+</TestCaseEntity>
