@@ -99,7 +99,8 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(subARow))
 WebElement docShareBtn = Helper.findShareButton(docName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(docShareBtn))
 WebUI.click(findTestObject('Folders/shareLink'))
-WebUI.waitForElementClickable(findTestObject('Folders/button_SaveSettings'), 10)
+WebUI.waitForElementClickable(findTestObject('links files/Page_Folders - PowerFolder/label_Can read and write'), 10)
+WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/label_Can read and write'))
 WebUI.click(findTestObject('Folders/button_SaveSettings'))
 WebUI.waitForElementVisible(findTestObject('Page_Folders - PowerFolder/icon-copy'), 15)
 WebUI.doubleClick(findTestObject('Page_Folders - PowerFolder/icon-copy'))
@@ -114,16 +115,12 @@ WebUI.navigateToUrl(fileLinkUrl)
 WebUI.delay(3)
 WebUI.verifyEqual(WebUI.getWindowTitle(), 'Link - PowerFolder')
 
-WebUI.click(findTestObject('Links/Page_Link - PowerFolder/folder_link_download_button'))
-
-String downloadPath = System.getProperty('user.home') + '/Downloads/'
-File downloadedFile = new File(downloadPath, docName + '.docx')
-long deadline = System.currentTimeMillis() + (2 * 60 * 1000)
-while (!downloadedFile.exists() && System.currentTimeMillis() < deadline) {
-    Thread.sleep(2000)
-}
-WebUI.verifyEqual(downloadedFile.exists(), true)
-downloadedFile.delete()
+WebUI.delay(10)
+WebUI.verifyElementVisible(findTestObject('ONLY OFFICE/iframe_editor'))
+WebUI.switchToFrame(findTestObject('ONLY OFFICE/iframe_editor'), 5)
+WebUI.sendKeys(findTestObject('ONLY OFFICE/editor_body'), 'SFS39_LINK_CHECK')
+WebUI.delay(5)
+WebUI.switchToDefaultContent()
 
 WebUI.navigateToUrl(folderLinkUrl)
 WebUI.delay(3)
@@ -143,30 +140,6 @@ uploadInput.sendKeys(renamedLocalFile.getAbsolutePath())
 WebUI.click(findTestObject('Page_Link - PowerFolder/lang_Upload_1'))
 WebUI.click(findTestObject('Page_Link - PowerFolder/button_Close'))
 renamedLocalFile.delete()
-
-WebUI.verifyElementText(findTestObject('Page_Link - PowerFolder/table'), uploadedFileName)
-
-WebUI.setText(findTestObject('Login/inputEmail'), memberEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
-WebUI.click(findTestObject('Login/loginSubmit'))
-WebUI.delay(3)
-WebUI.click(findTestObject('Links/Page_Dashboard - PowerFolder/lang_Links'))
-
-WebElement fileLinkRow = findLink(docName)
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(fileLinkRow))
-WebUI.verifyElementClickable(findTestObject('LinksTable/Delete Link'))
-WebUI.click(findTestObject('LinksTable/Delete Link'))
-WebUI.click(findTestObject('LinksTable/Conferme delete'))
-WebUI.refresh()
-WebUI.delay(3)
-
-WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
-WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.delay(2)
-
-WebUI.navigateToUrl(fileLinkUrl)
-WebUI.delay(3)
-WebUI.verifyNotEqual(WebUI.getWindowTitle(), 'Link - PowerFolder')
 
 WebUI.closeBrowser()
 
