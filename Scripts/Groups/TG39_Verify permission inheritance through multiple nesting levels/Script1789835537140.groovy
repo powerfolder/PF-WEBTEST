@@ -131,6 +131,9 @@ enterGroupName(subGroupName)
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
 
+// wait for the save request to finish before reloading the page
+WebUI.delay(3)
+
 WebUI.refresh()
 
 WebUI.delay(2)
@@ -152,10 +155,37 @@ enterGroupName(subSubGroupName)
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
 
+// wait for the save request to finish before reloading the page
+WebUI.delay(3)
+
 WebUI.refresh()
 
 WebUI.delay(2)
 
+// check level 1: subgroup has subsubgroup as member and inherits the parent folder
+def btn_check = findGroup(subGroupName)
+
+WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn_check))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
+
+WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
+
+verifyGroupMember(subSubGroupName)
+
+WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Folders'))
+
+WebUI.delay(2)
+
+verifyFolderPermission(Folder_parent, 'Can administrate (inherited)')
+
+WebUI.refresh()
+
+WebUI.delay(2)
+
+// check level 2: subsubgroup inherits the parent folder
 def btn_3 = findGroup(subSubGroupName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn_3))
@@ -166,7 +196,9 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Folders'))
 
-verifyFolderPermission(Folder_parent,'Can administrate')
+WebUI.delay(2)
+
+verifyFolderPermission(Folder_parent, 'Can administrate (inherited)')
 
 WebUI.closeBrowser()
 
@@ -274,24 +306,39 @@ void verifyFolderPermission(String folderName, String expectedPermission) {
 
     WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(20))
 
-    String folderRowXpath = "//td[@data-bs-original-title='$folderName']/ancestor::tr[1]"
+    /*
+	 * Restrict the search to the Folders tab of the group dialog, otherwise the
+	 * groups overview table in the background can match the folder name.
+	 * Inherited folders are rendered read-only (no dropdown, no tooltip).
+	 */
+    String folderRowXpath = "//div[@id='pica_group_folders']//tr[td[@data-bs-original-title='$folderName' or @title='$folderName' or contains(normalize-space(.), '$folderName')]]"
 
-    WebElement folderRow = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(folderRowXpath)))
+    WebElement folderRow
 
-    WebElement permissionButton = wait.until({ 
-            List<WebElement> buttons = folderRow.findElements(By.tagName('button'))
+    try {
+        folderRow = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(folderRowXpath)))
+    }
+    catch (org.openqa.selenium.TimeoutException e) {
+        List<String> shownRows = driver.findElements(By.xpath("//div[@id='pica_group_folders']//tr")).collect({ WebElement row ->
+                row.getText().trim()
+            }).findAll({ String text ->
+                text
+            })
 
-            return buttons.find({ WebElement button ->
-                    button.isDisplayed()
-                })
-        })
+        WebUI.comment("Folders visible in the group dialog: $shownRows")
 
-    String actualPermission = permissionButton.getText().trim()
+        WebUI.verifyEqual("Folder '$folderName' not listed", "Folder '$folderName' listed with '$expectedPermission'", FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.comment("Permission du dossier '$folderName' : '$actualPermission'")
+        return null
+    }
 
-    WebUI.verifyEqual(actualPermission, expectedPermission, FailureHandling.STOP_ON_FAILURE)
+    String rowText = folderRow.getText().trim()
+
+    WebUI.comment("Folder row '$folderName' : '$rowText'")
+
+    WebUI.verifyMatch(rowText, '(?s).*' + java.util.regex.Pattern.quote(expectedPermission) + '.*', true, FailureHandling.STOP_ON_FAILURE)
 }
+
 void enterGroupName(String groupName) {
 	WebDriver driver = DriverFactory.getWebDriver()
 
@@ -313,9 +360,28 @@ void enterGroupName(String groupName) {
 	// Attendre le premier résultat et cliquer dessus
 	WebElement firstResult = wait.until(
 		ExpectedConditions.elementToBeClickable(
-			By.xpath("(//div[@id='pica_group_accounts']//ul[contains(@class,'pica-taginput-dropdown')]/li[not(contains(@class,'pica-taginput-dropdown-fixed'))])[1]/a")
+			By.xpath("(//div[@id='pica_group_accounts']//ul[contains(@class,'pica-taginput-dropdown')]/li[not(contains(@class,'pica-taginput-dropdown-fixed'))]/a[contains(normalize-space(.), '${groupName}')])[1]")
 		)
 	)
 
 	firstResult.click()
+
+	WebUI.delay(1)
+}
+
+void verifyGroupMember(String groupName) {
+	WebDriver driver = DriverFactory.getWebDriver()
+
+	WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(10))
+
+	String memberXpath = "//*[@id='pica_group_accounts']//div[contains(@class,'pica-inputlist-scroller')]//*[normalize-space(text())='${groupName}']"
+
+	try {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(memberXpath)))
+	}
+	catch (org.openqa.selenium.TimeoutException e) {
+		WebUI.verifyEqual("Group '$groupName' not listed as member", "Group '$groupName' listed as member", FailureHandling.STOP_ON_FAILURE)
+	}
+
+	WebUI.comment("Group '$groupName' is listed as member")
 }
