@@ -54,6 +54,9 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/b
 
 WebUI.delay(2)
 
+// precondition: the new group is listed without filter
+findGroup(groupName_1)
+
 TestObject optionWithoutMembers = new TestObject('option_without_members')
 
 optionWithoutMembers.addProperty('xpath',ConditionType.EQUALS,"//div[@id='pica_groups_filter']//a[normalize-space(.)='Without members']")
@@ -64,15 +67,21 @@ WebUI.waitForElementClickable(optionWithoutMembers, 10)
 
 WebUI.click(optionWithoutMembers)
 
-WebUI.delay(2)
+/*
+ * A new group always has its creator as member,
+ * so the "Without members" filter must hide it.
+ */
+waitForGroupsLoaded()
 
-def btn_1 = findGroup(groupName_1)
+WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn_1))
+String filterLabel = driver.findElement(By.cssSelector('#pica_groups_filter .filter-label')).getText().trim()
 
-WebUI.delay(2)
+WebUI.verifyEqual(filterLabel, 'Without members', FailureHandling.STOP_ON_FAILURE)
 
-assert groupName_1 != null
+int hits = driver.findElements(By.xpath("//*[@id='groups_table']//tr[contains(@data-search-keys, '${groupName_1}')]")).size()
+
+WebUI.verifyEqual(hits, 0, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 
@@ -80,6 +89,20 @@ WebUI.closeBrowser()
 WebElement findGroup(String Groupname) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + Groupname) + '\')]/td[1]/span'))
+    String rowXpath = "//tr[contains(@data-search-keys, '${Groupname}')]/td[1]/span"
+
+    return new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(rowXpath)))
 }
 
+/*
+ * The filter clears the table and shows a spinner row until the groups are fetched.
+ */
+void waitForGroupsLoaded() {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(20))
+
+    wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector('#groups_table tbody .pica-spinner')))
+
+    WebUI.delay(1)
+}
