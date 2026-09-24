@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG31_Display assigned subgroups in the group editor</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>70058333-2b6a-459f-b2e5-75d2fc1fdc69</testCaseGuid>
+</TestCaseEntity>

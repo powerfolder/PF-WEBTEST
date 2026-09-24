@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG45_Filter groups with subgroups</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>59fd4eb5-ab91-4424-bb86-5860a0a40aac</testCaseGuid>
+</TestCaseEntity>

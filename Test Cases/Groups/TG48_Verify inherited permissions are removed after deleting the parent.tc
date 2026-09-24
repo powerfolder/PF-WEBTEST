@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG48_Verify inherited permissions are removed after deleting the parent</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>68f631b9-6339-4080-a0a8-36e239f2a02f</testCaseGuid>
+</TestCaseEntity>

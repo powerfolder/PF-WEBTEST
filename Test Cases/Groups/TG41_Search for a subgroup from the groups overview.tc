@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG41_Search for a subgroup from the groups overview</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>59b8290e-d430-444c-a0db-9b037039edb5</testCaseGuid>
+</TestCaseEntity>

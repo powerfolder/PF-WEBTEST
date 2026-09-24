@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG33_Chcek the prevent circular group assignment</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>27b7ca24-2e50-4f94-bc0f-3ef86042c6ae</testCaseGuid>
+</TestCaseEntity>
