@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS36_PermissionOnSubfolderThroughParentGroup</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3f8a1c6e-9d4b-4a7f-8e2c-6b5d1a9f3c14</testCaseGuid>
+</TestCaseEntity>

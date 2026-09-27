@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG30_Assign one subgroup to multiple parent groups</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2401be44-8db6-4bcf-8617-b16b905a9907</testCaseGuid>
+</TestCaseEntity>

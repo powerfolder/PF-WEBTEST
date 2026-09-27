@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div/div/main/div[4]/div/div/div[3]/button[2]/lang</value>
+         <value>//div[@id='pica_upload_dialog' and contains(concat(' ',normalize-space(@class),' '),' show ')]//button[@id='upload_stop_button']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

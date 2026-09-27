@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS24_VerifyOnlyOfficeEditorOpensInEditModeForSubfolderOnlyWriter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>00499bf1-f980-471f-b3f4-b45ef65e91a8</testCaseGuid>
+</TestCaseEntity>

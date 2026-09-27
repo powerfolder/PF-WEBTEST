@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG34_Remove a subgroup from a parent group</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8af95425-b3e7-4695-92f4-cef11e1312ea</testCaseGuid>
+</TestCaseEntity>

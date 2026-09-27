@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS23_VerifyCreateDirectoryAndDocumentInsideSharedSubfolder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>03731eda-cb12-417b-8de2-d677d3030672</testCaseGuid>
+</TestCaseEntity>

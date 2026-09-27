@@ -101,6 +101,8 @@ WebElement inputElement = driver.findElement(By.xpath("//*[@id='pica_group_accou
 
 inputElement.sendKeys(user)
 
+WebUI.delay(3)
+
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
 
 String userLocalPart = user.contains('@') ? user.substring(0, user.indexOf('@')) : user
@@ -113,7 +115,7 @@ def xpath = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and cont
 
 def button = driver.findElement(By.xpath(xpath))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button))
+button.click()
 
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
@@ -164,11 +166,11 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 def xpathAdmin = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]//button[contains(@class,'dropdown-toggle')]"
 
 new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
-    ExpectedConditions.presenceOfElementLocated(By.xpath(xpathAdmin)))
+    ExpectedConditions.elementToBeClickable(By.xpath(xpathAdmin)))
 
 def button_1 = driver.findElement(By.xpath(xpathAdmin))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button_1))
+button_1.click()
 
 WebElement isMemberOption = driver.findElement(By.xpath(
     "//div[@id='pica_group_accounts']//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]/li[a[@data-dropdown-group='permission']][1]/a"))
@@ -207,11 +209,11 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
 new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
-    ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)))
+    ExpectedConditions.elementToBeClickable(By.xpath(xpath)))
 
 def button_2 = driver.findElement(By.xpath(xpath))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button_2))
+button_2.click()
 
 WebUI.delay(2)
 

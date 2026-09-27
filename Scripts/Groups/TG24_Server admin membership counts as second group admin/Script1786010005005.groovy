@@ -31,19 +31,7 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
-
-/*
- * Ticket scenario 8: a server admin who is merely a plain member of a group still counts as "an admin"
- * of that group, because AdminPermission#implies(GroupAdminPermission) always returns true - the site
- * admin never needs an explicit per-group grant. So a normal group admin can leave/downgrade even though,
- * on paper, the only OTHER "member" in the table is tagged as a plain "Is member" row.
- *
- * AutoCompleteProvider#searchAccounts filters admin accounts out of the taginput suggestions for any
- * NON-admin caller ("Skip admins for non-admins"), so 'user1' can never find/invite the site admin
- * himself. The admin has to add HIMSELF - which he can do on any group (AdminPermission implies
- * GroupAdminPermission everywhere), without ever being invited. He is deliberately left at the default
- * "Is member" role - the whole point is that nobody explicitly promotes him.
- */
+import credentials.CredentialsManager as CredentialsManager
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -120,6 +108,8 @@ WebElement inputElement = driver.findElement(By.xpath("//*[@id='pica_group_accou
 
 inputElement.sendKeys(user1)
 
+WebUI.delay(3)
+
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
 
 String user1LocalPart = user1.contains('@') ? user1.substring(0, user1.indexOf('@')) : user1
@@ -131,7 +121,7 @@ def xpathUser1 = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and
 
 def buttonUser1 = driver.findElement(By.xpath(xpathUser1))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonUser1))
+buttonUser1.click()
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
 
@@ -144,18 +134,15 @@ new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
 
 WebUI.delay(2)
 
-// Log out of 'user1', log in as the site admin to add HIMSELF - a non-admin caller like 'user1' never
-// gets admin accounts suggested by the taginput (AutoCompleteProvider "Skip admins for non-admins"),
-// but the admin can add himself to any group directly, uninvited.
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
-WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
+WebUI.setText(findTestObject('Login/inputEmail'), CredentialsManager.getAdminUsername())
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
-WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
+WebUI.setText(findTestObject('Login/inputPassword'), CredentialsManager.getAdminPassword())
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
@@ -181,14 +168,19 @@ TestObject taginput = new TestObject('taginput')
 taginput.addProperty('xpath', ConditionType.EQUALS,
     "//*[@id='pica_group_accounts']//input[contains(concat(' ',normalize-space(@class),' '),' pica-taginput-input ')]")
 
-WebUI.setEncryptedText(taginput, 'CKkAs2Ee0vA=')
+WebUI.setText(taginput, CredentialsManager.getAdminUsername())
+
+WebUI.delay(3)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
+
 
 // Wait until a second row (besides 'user1's) shows up - that is the just-added admin. Deliberately
 // left at the default role: never promoted via the dropdown.
 new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
     ExpectedConditions.numberOfElementsToBe(By.xpath("//div[@id='pica_group_accounts']//table//tr[@data-userdata]"), 2))
+
+
 
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
 
@@ -214,9 +206,6 @@ WebUI.click(findTestObject('Login/loginSubmit'))
 
 WebUI.delay(3)
 
-// Leave the group via the "..." menu. LeaveAction's isTheOnlyGroupAdmin() re-checks GroupAdminPermission
-// via hasPermission() (implication included), so the site admin - even though his row shows the default
-// "Is member" role - counts as the remaining admin.
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 
 WebUI.delay(3)
@@ -247,6 +236,7 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/b
 
 WebUI.delay(2)
 
+
 // No warning, and 'user1's row disappears from his own groups list - the leave succeeded.
 TestObject warningNotification = new TestObject('warningNotification')
 warningNotification.addProperty('xpath', ConditionType.EQUALS,
@@ -262,11 +252,11 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
-WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
+WebUI.setText(findTestObject('Login/inputEmail'), CredentialsManager.getAdminUsername())
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
-WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
+WebUI.setText(findTestObject('Login/inputPassword'), CredentialsManager.getAdminPassword())
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

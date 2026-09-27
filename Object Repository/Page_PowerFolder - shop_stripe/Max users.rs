@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[3]/div</value>
+         <value>//div[contains(@class,'pica-notification-box') and contains(@class,'alert-warning') and contains(.,'Max users')]</value>
       </entry>
       <entry>
          <key>CSS</key>

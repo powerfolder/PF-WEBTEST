@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS40_StorageOfSharedSubfolderCountsTowardsTopFolderOwner</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8e2c4a1d-6b9f-4a3e-8d7c-1f5b9a3e6c40</testCaseGuid>
+</TestCaseEntity>

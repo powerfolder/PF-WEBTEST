@@ -87,20 +87,18 @@ assert GlobalVariable.GroupName != null
 
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
-WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Organizations'))
-
 WebUI.delay(2)
 
-WebElement inputElement = driver.findElement(By.xpath('//*[@id=\'pica_group_organizations\']/div[1]/div[1]/input'))
+WebElement inputElement = driver.findElement(By.xpath('//*[@id=\'pica_group_organization_input\']'))
 
 inputElement.sendKeys(GlobalVariable.organisationName)
 
 // Wait for autocomplete entry to appear — Picasso debounces input by 800ms before fetching suggestions
-new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
+WebElement orgOption = new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
     org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable(
-        By.xpath("(//div[@id='pica_group_organizations']//ul[contains(concat(' ',normalize-space(@class),' '),' pica-taginput-dropdown ')]/li[not(contains(@class,'pica-taginput-dropdown-fixed'))])[1]/a")))
+        By.xpath("//div[@id='pica_group_organization']//ul[contains(concat(' ',normalize-space(@class),' '),' pica-taginput-dropdown ')]/li[not(contains(@class,'pica-taginput-dropdown-fixed'))][.//h5[normalize-space(.)='" + GlobalVariable.organisationName + "']]/a")))
 
-WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/Organisation click'))
+orgOption.click()
 
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
 
@@ -112,14 +110,12 @@ WebUiBuiltInKeywords.executeJavaScript('arguments[0].click()', Arrays.asList(btn
 
 WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
-WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Organizations'))
-
-// Wait until organizations inputlist has finished its AJAX load (tr[@data-userdata] row visible)
 new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
-    org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
-        By.xpath("//div[@id='pica_group_organizations']//table//tr[@data-userdata]")))
+    org.openqa.selenium.support.ui.ExpectedConditions.attributeToBe(
+        By.xpath('//*[@id=\'pica_group_organization_input\']'), 'value', GlobalVariable.organisationName))
 
-WebUI.verifyElementText(findTestObject('Groups/Page_Groups - PowerFolder/verify_organization'), GlobalVariable.organisationName)
+WebUI.verifyElementAttributeValue(findTestObject('Groups/Page_Groups - PowerFolder/input_organization'),
+    'value', GlobalVariable.organisationName, 5)
 
 WebUI.click(findTestObject('Share/Page_Groups - PowerFolder/button_Cancel'))
 

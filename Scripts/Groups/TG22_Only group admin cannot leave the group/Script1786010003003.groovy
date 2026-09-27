@@ -32,14 +32,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-/*
- * Ticket scenario 6: the only remaining admin of a group cannot leave it. LeaveAction 403s
- * (API_PERMISSION_DENIED) when isTheOnlyGroupAdmin(...) is true; the frontend menu item itself is NOT
- * disabled (groups.js never wires isSimpleAdmin/isMultiAdmin into populateGroupDropdownMenu), so the
- * block only becomes visible as a warning notification after confirming - which is what we assert here.
- * Group is built self-service by 'user1', matching real usage.
- */
-
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.userName = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
@@ -115,6 +107,8 @@ WebElement inputElement = driver.findElement(By.xpath("//*[@id='pica_group_accou
 
 inputElement.sendKeys(user1)
 
+WebUI.delay(3)
+
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
 
 String user1LocalPart = user1.contains('@') ? user1.substring(0, user1.indexOf('@')) : user1
@@ -126,7 +120,7 @@ def xpathUser1 = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and
 
 def buttonUser1 = driver.findElement(By.xpath(xpathUser1))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonUser1))
+buttonUser1.click()
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
 
@@ -170,8 +164,6 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/b
 
 WebUI.delay(2)
 
-// LeaveAction#execute: isTheOnlyGroupAdmin(...) -> 403 API_PERMISSION_DENIED -> the JS onError callback
-// shows a "warning" notification and never removes the row.
 TestObject warningNotification = new TestObject('warningNotification')
 warningNotification.addProperty('xpath', ConditionType.EQUALS,
     "//div[contains(@class,'pica-notification') and contains(@class,'warning')]")

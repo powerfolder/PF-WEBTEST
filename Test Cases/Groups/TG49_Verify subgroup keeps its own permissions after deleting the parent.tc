@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG49_Verify subgroup keeps its own permissions after deleting the parent</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c9ded0d2-f141-4507-9ded-00852ff2adee</testCaseGuid>
+</TestCaseEntity>

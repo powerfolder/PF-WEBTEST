@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG38_Apply highest permission from parent and subgroup</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a08ee483-e0c2-491c-bf00-62145d0aeafb</testCaseGuid>
+</TestCaseEntity>

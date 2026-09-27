@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS33_SetTagsOnFileInsideSharedSubfolder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1d9f4c7a-6b2e-4d8c-a3f1-9e5b7c2d4a11</testCaseGuid>
+</TestCaseEntity>

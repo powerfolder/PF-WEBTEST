@@ -32,14 +32,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-/*
- * Ticket scenario 9: from the group's Members tab, an admin can remove himself from the member list
- * (dropdown option "Remove", the 4th/last entry of optionsForMembers) as long as another admin remains -
- * SaveAccountsToGroupAction's "remove remaining accounts" loop only skips self-removal when
- * groupAdminCount <= 1. Functionally the same guard as "Is member" (TG18), just exercised via "Remove".
- * Group is built self-service by 'user1', who invites 'user2' as a second admin.
- */
-
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.userName = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
@@ -136,6 +128,8 @@ WebElement inputElement = driver.findElement(By.xpath("//*[@id='pica_group_accou
 
 inputElement.sendKeys(user1)
 
+WebUI.delay(3)
+
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
 
 String user1LocalPart = user1.contains('@') ? user1.substring(0, user1.indexOf('@')) : user1
@@ -147,13 +141,15 @@ def xpathUser1 = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and
 
 def buttonUser1 = driver.findElement(By.xpath(xpathUser1))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonUser1))
+buttonUser1.click()
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
 
 WebElement inputElement2 = driver.findElement(By.xpath("//*[@id='pica_group_accounts']//input[contains(concat(' ',normalize-space(@class),' '),' pica-taginput-input ')]"))
 
 inputElement2.sendKeys(user2)
+
+WebUI.delay(3)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
 
@@ -166,7 +162,7 @@ def xpathUser2 = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and
 
 def buttonUser2 = driver.findElement(By.xpath(xpathUser2))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonUser2))
+buttonUser2.click()
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
 
@@ -197,19 +193,17 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
 new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
-    ExpectedConditions.presenceOfElementLocated(By.xpath(xpathUser1)))
+    ExpectedConditions.elementToBeClickable(By.xpath(xpathUser1)))
 
 WebElement buttonUser1Again = driver.findElement(By.xpath(xpathUser1))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonUser1Again))
+buttonUser1Again.click()
 
-// optionsForMembers = [Is member, Is member and admin, divider, Remove] - "Remove" is always the last <li>.
 WebElement removeOption = driver.findElement(By.xpath(
     "//div[@id='pica_group_accounts']//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]/li[last()]/a"))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(removeOption))
 
-// handleOptionsForMembers case 3 removes the row from the LOCAL list immediately, before Save.
 new WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
     ExpectedConditions.invisibilityOfElementLocated(By.xpath(xpathUser1)))
 
@@ -222,8 +216,6 @@ new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
 
 WebUI.delay(2)
 
-// 'user1' just removed his own GroupAdminPermission along with his membership, so isAtLeastGroupAdmin()
-// now rejects him - verification is done by logging back in as the remaining admin 'user2'.
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))

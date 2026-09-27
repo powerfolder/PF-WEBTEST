@@ -25,10 +25,12 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/External links/Pag
 String currentUrl = WebUI.getUrl()
 WebUI.comment("L'URL actuelle est: " + currentUrl)
 
-String expectedUrl = 'https://www.powerfolder.com/7084-2/'
+String expectedUrl = 'https://www.powerfolder.com/privacy.html'
 WebUI.verifyEqual(currentUrl, expectedUrl)
 
-WebUI.verifyElementText(findTestObject('Object Repository/External links/Page_Datenschutzerklrung/Serverstandort'), 'SERVERSTANDORT:')
+String headingText = WebUI.getText(findTestObject('Object Repository/External links/Page_Datenschutzerklrung/Serverstandort'))
+boolean containsServerLocation = headingText.contains('Serverstandort')
+WebUI.verifyEqual(containsServerLocation, true)
 
 WebUI.closeWindowIndex(1)
 WebUI.switchToWindowIndex(0)

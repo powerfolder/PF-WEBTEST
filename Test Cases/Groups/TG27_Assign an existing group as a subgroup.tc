@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG27_Assign an existing group as a subgroup</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fa2a5608-6eca-473a-a2f9-ed34febcaa7d</testCaseGuid>
+</TestCaseEntity>

@@ -31,6 +31,9 @@ String groupNameModified = 'Group_modified_' + RandomStringUtils.randomNumeric(4
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
+WebUI.delay(1)
+
+
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
     groupNameModified)
 

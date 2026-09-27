@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS41_DownloadFileFromSharedSubfolder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2d7b4e9a-5c8f-4b3e-9a1d-6f2c8b5e9a41</testCaseGuid>
+</TestCaseEntity>

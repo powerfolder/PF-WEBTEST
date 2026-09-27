@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS29_SubfolderUserCannotGrantPermissions</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4e8c1a7d-6b3f-4d9a-8e2c-1a5f7b9d3c07</testCaseGuid>
+</TestCaseEntity>

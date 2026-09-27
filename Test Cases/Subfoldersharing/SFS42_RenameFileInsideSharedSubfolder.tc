@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS42_RenameFileInsideSharedSubfolder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7a3e5c9d-1b4f-4a8e-9c2d-6f5b3a8e9c42</testCaseGuid>
+</TestCaseEntity>

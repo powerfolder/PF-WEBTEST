@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Generic confirmation dialog title (#pica_confirmation_dialog), used by the interrupt/restore inheritance flow with lang keys dialog_title_interrupt_inheritance / dialog_title_restore_inheritance.</description>
+   <description>Generic confirmation dialog title (#pica_confirmation_dialog). Since PFC-3613 the interrupt/restore inheritance flow uses its own dialog instead - see Subfoldersharing/inheritance_dialog_title. This object is now used by the member-removal and ownership-handover confirmations.</description>
    <name>confirmation_dialog_title</name>
    <tag></tag>
    <elementGuidId>0c137caa-e989-4700-9d5b-2fa4976d71d0</elementGuidId>

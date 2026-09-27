@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS37_SubfolderUserCannotTagFilesInTopFolder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6c1e8a4d-3b9f-4a2c-9e7d-5f1b8c3a6e15</testCaseGuid>
+</TestCaseEntity>

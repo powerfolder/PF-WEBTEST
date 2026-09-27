@@ -51,9 +51,9 @@ WebUI.click(findTestObject('Accounts/SaveButton'))
 
 WebUI.delay(1)
 
-WebUI.verifyElementVisible(findTestObject('Page_PowerFolder - shop_stripe/Max users'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Page_PowerFolder - shop_stripe/Storage exceeded'), FailureHandling.STOP_ON_FAILURE)
 
-String actualText = WebUI.getText(findTestObject('Page_PowerFolder - shop_stripe/Max users'))
+String actualText = WebUI.getText(findTestObject('Page_PowerFolder - shop_stripe/Storage exceeded'))
 
 WebUI.verifyMatch(actualText.trim(), 'Organization storage exceeded.', true)
 

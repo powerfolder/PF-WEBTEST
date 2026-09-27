@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS35_CreateButtonPresentAfterNavigatingIntoSubfolder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7e2c9a4b-6d1f-4a8e-9c3b-5f7d2a1e6b13</testCaseGuid>
+</TestCaseEntity>

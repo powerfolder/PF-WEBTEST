@@ -58,6 +58,13 @@ if (actualText.equals('Account Updated') || actualText.equals('Bitte alle fehlen
     WebUI.verifyMatch(actualText, 'Account Updated|Bitte alle fehlenden Felder ausfüllen|Please fill in all missing fields', true, FailureHandling.STOP_ON_FAILURE)
 }
 
+boolean dialogStillOpen = (Boolean) ((JavascriptExecutor) DriverFactory.getWebDriver()).executeScript(
+	"var el = document.getElementById('pica_account_dialog'); return !!(el && el.classList.contains('show'));")
+
+if (dialogStillOpen) {
+	WebUI.click(findTestObject('Accounts/Edit_Accounts - PowerFolder/button_Cancel'))
+}
+
 new org.openqa.selenium.support.ui.WebDriverWait(DriverFactory.getWebDriver(), java.time.Duration.ofSeconds(10)).until { d ->
 	!((Boolean) ((JavascriptExecutor) d).executeScript(
 		"var el = document.getElementById('pica_account_dialog'); return !!(el && el.classList.contains('show'));"))

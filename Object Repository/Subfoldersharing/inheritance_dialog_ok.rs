@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>Primary ("Yes") button of the dedicated inheritance interrupt/restore dialog (#pica_inheritance_dialog, PFC-3613). Confirms the pending interrupt (with the selected mode) or restore action. Distinct from Share/confirme_handover, which targets the older generic #pica_confirmation_dialog still used by the member-removal and ownership-handover flows.</description>
+   <name>inheritance_dialog_ok</name>
+   <tag></tag>
+   <elementGuidId>7a1e2c40-3b5d-4e6a-9c8f-1a2b3c4d5e05</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_inheritance_dialog']//div[contains(@class,'modal-footer')]/button[contains(@class,'btn-primary')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#pica_inheritance_dialog .modal-footer button.btn-primary</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>7a1e2c40-0001-0001-0001-000000000006</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn-primary</value>
+      <webElementGuid>7a1e2c40-0001-0001-0001-000000000007</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-bs-dismiss</name>
+      <type>Main</type>
+      <value>modal</value>
+      <webElementGuid>7a1e2c40-0001-0001-0001-000000000008</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

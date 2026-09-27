@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG39_Verify permission inheritance through multiple nesting levels</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4f820551-d471-4cfd-a052-77573fdecfb1</testCaseGuid>
+</TestCaseEntity>

@@ -114,7 +114,6 @@ WebUI.refresh()
 
 WebUI.waitForElementPresent(findTestObject('1Upload_Form/Page_Error - PowerFolder/h4_HTTP ERROR        404'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-// The heading text is filled in client-side by lang.js after the initial page load, give it a moment
 WebUI.delay(2)
 
 // Localisation de l'élément

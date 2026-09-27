@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[4]</value>
+         <value>//div[@id='pica_confirmation_dialog']//div[contains(@class,'modal-footer')]/button[.//lang[@name='button_yes']]</value>
       </entry>
       <entry>
          <key>CSS</key>

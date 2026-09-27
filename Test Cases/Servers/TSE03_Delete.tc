@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Verifies that an online server cannot be deleted (PFS-5815): deletion is refused with a warning notification instead of opening a confirmation dialog, and the server remains in the list.</description>
    <name>TSE03_Delete</name>
    <tag></tag>
    <comment></comment>

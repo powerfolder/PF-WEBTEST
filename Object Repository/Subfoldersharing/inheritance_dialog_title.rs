@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>Title of the dedicated inheritance interrupt/restore dialog (#pica_inheritance_dialog, PFC-3613). Replaces the old generic #pica_confirmation_dialog for this flow. Lang keys: dialog_title_interrupt_inheritance / dialog_title_restore_inheritance.</description>
+   <name>inheritance_dialog_title</name>
+   <tag></tag>
+   <elementGuidId>7a1e2c40-3b5d-4e6a-9c8f-1a2b3c4d5e01</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pica_inheritance_dialog']//h4[contains(@class,'pica-dialog-title')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#pica_inheritance_dialog .pica-dialog-title</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h4</value>
+      <webElementGuid>7a1e2c40-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pica-dialog-title</value>
+      <webElementGuid>7a1e2c40-0001-0001-0001-000000000002</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

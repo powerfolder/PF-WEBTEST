@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS22_VerifyUploadIntoSubfolderOnlySharedFolderSucceeds</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7cb376ac-ca5a-4418-9a01-1c603ec493bb</testCaseGuid>
+</TestCaseEntity>

@@ -31,6 +31,7 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import credentials.CredentialsManager as CredentialsManager
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -119,6 +120,8 @@ WebElement inputElement = driver.findElement(By.xpath("//*[@id='pica_group_accou
 
 inputElement.sendKeys(user)
 
+WebUI.delay(3)
+
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
 
 String userLocalPart = user.contains('@') ? user.substring(0, user.indexOf('@')) : user
@@ -130,7 +133,7 @@ def xpath = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and cont
 
 def button = driver.findElement(By.xpath(xpath))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button))
+button.click()
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
 
@@ -138,6 +141,8 @@ WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - Power
 WebElement inputElement2 = driver.findElement(By.xpath("//*[@id='pica_group_accounts']//input[contains(concat(' ',normalize-space(@class),' '),' pica-taginput-input ')]"))
 
 inputElement2.sendKeys(coAdmin)
+
+WebUI.delay(3)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
 
@@ -150,7 +155,7 @@ def xpathCoAdmin = "//div[@id='pica_group_accounts']//table//tr[@data-userdata a
 
 def buttonCoAdmin = driver.findElement(By.xpath(xpathCoAdmin))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonCoAdmin))
+buttonCoAdmin.click()
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
 
@@ -161,7 +166,6 @@ new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
 
 WebUI.delay(2)
 
-// Log in as 'user' and try to downgrade himself - now allowed since 'coAdmin' remains a group admin (PFS-5585)
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
@@ -190,11 +194,11 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 
 // Localisation du bouton dropdown
 new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
-    ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)))
+    ExpectedConditions.elementToBeClickable(By.xpath(xpath)))
 
 def button_1 = driver.findElement(By.xpath(xpath))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button_1))
+button_1.click()
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member'))
 
@@ -209,18 +213,15 @@ new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
 
 WebUI.delay(2)
 
-// 'user' just gave up his own GroupAdminPermission, so isAtLeastGroupAdmin() now rejects him
-// (AbstractGroupAPIAction#isAtLeastGroupAdmin) - he can no longer reopen the group's Edit dialog to verify the
-// result himself. Verification is therefore done by logging back in as the site admin, who is unaffected.
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
-WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
+WebUI.setText(findTestObject('Login/inputEmail'), CredentialsManager.getAdminUsername())
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
-WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
+WebUI.setText(findTestObject('Login/inputPassword'), CredentialsManager.getAdminPassword())
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
@@ -245,8 +246,6 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
     ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]")))
 
-// 'user' downgraded himself while 'coAdmin' still held group-admin rights (PFS-5585 allows this) -
-// his row must now read as a plain member.
 TestObject userIsPlainMember = new TestObject('userIsPlainMember')
 userIsPlainMember.addProperty('xpath', ConditionType.EQUALS,
     "//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "') and contains(@data-userdata,'\"isGroupAdmin\":false')]")

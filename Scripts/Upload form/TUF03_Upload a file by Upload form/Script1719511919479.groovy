@@ -41,6 +41,7 @@ import java.awt.event.KeyEvent as KeyEvent
 import java.io.IOException as IOException
 import java.time.Duration
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import credentials.CredentialsManager as CredentialsManager
 
 
 
@@ -125,9 +126,9 @@ WebUI.switchToWindowIndex(0)
 WebUI.delay(2)
 
 // Log admin back in to verify the upload result
-WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
+WebUI.setText(findTestObject('Login/inputEmail'), CredentialsManager.getAdminUsername())
 
-WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
+WebUI.setText(findTestObject('Login/inputPassword'), CredentialsManager.getAdminPassword())
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

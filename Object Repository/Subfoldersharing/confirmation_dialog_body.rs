@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Generic confirmation dialog body (#pica_confirmation_dialog), used by the interrupt/restore inheritance flow with lang keys dialog_body_interrupt_inheritance / dialog_body_restore_inheritance (contains the folder name).</description>
+   <description>Generic confirmation dialog body (#pica_confirmation_dialog). Since PFC-3613 the interrupt/restore inheritance flow uses its own dialog instead - see Subfoldersharing/inheritance_dialog_body. This object is now used by the member-removal and ownership-handover confirmations.</description>
    <name>confirmation_dialog_body</name>
    <tag></tag>
    <elementGuidId>cd4c99c3-c9b1-4fa7-a9b7-aa682c7783a5</elementGuidId>

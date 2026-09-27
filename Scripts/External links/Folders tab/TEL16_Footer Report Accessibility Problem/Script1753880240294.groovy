@@ -69,13 +69,13 @@ String currentUrl = WebUI.getUrl()
 
 WebUI.comment('L\'URL actuelle est: ' + currentUrl)
 
-String expectedUrl = 'https://www.powerfolder.com/about-us-2/'
+String expectedUrl = 'https://www.powerfolder.com/about.html'
 
 boolean isCorrectUrl = currentUrl.equals(expectedUrl)
 
 WebUI.verifyEqual(isCorrectUrl, true)
 
-WebUI.verifyElementText(findTestObject('External links/Page_About us/PowerFolder'), 'ÜBER POWERFOLDER')
+WebUI.verifyElementText(findTestObject('External links/Page_About us/heading'), 'Wer wir sind')
 
 WebUI.closeWindowIndex(1)
 

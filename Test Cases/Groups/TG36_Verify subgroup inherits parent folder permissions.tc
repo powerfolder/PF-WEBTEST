@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG36_Verify subgroup inherits parent folder permissions</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d4e5d3e6-c84f-48f5-97dd-6759f2280a43</testCaseGuid>
+</TestCaseEntity>

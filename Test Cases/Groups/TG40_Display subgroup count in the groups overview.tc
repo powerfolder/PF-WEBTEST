@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG40_Display subgroup count in the groups overview</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7e2b71d5-4160-4b83-b440-9ea7d4d77882</testCaseGuid>
+</TestCaseEntity>

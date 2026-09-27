@@ -19,6 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import credentials.CredentialsManager as CredentialsManager
 
 // Call the test case Create Folder
 WebUI.callTestCase(findTestCase('User_News/Pre_test/create_user_file'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -41,9 +42,9 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
-WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
+WebUI.setText(findTestObject('Login/inputEmail'), CredentialsManager.getAdminUsername())
 
-WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
+WebUI.setText(findTestObject('Login/inputPassword'), CredentialsManager.getAdminPassword())
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

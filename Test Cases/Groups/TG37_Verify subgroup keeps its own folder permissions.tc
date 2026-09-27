@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG37_Verify subgroup keeps its own folder permissions</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c9f7b936-b549-4130-bdc6-c833861ddec2</testCaseGuid>
+</TestCaseEntity>

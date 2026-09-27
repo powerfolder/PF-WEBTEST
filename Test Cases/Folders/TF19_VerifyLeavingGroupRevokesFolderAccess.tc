@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF19_VerifyLeavingGroupRevokesFolderAccess</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fe710a24-0e6a-49b6-b503-b308471cacbd</testCaseGuid>
+</TestCaseEntity>

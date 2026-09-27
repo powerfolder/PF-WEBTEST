@@ -15,18 +15,15 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import credentials.CredentialsManager as CredentialsManager
 
-// The "General" tile on /admin/preferences opens the shared #pica_preference_dialog
-// modal (Picasso.Preferences, preferences.js) with its own set of sub-category tabs
-// (Hostname, Change Admin, Log, Maintenance folder, Accounts, Token, ...). TAR26 only
-// scans the /admin/preferences landing grid, never the dialog content itself.
 WebUI.openBrowser(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
 
-WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
+WebUI.setText(findTestObject('Login/inputEmail'), CredentialsManager.getAdminUsername())
 
-WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
+WebUI.setText(findTestObject('Login/inputPassword'), CredentialsManager.getAdminPassword())
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

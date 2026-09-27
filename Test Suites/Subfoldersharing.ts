@@ -5,7 +5,9 @@
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
+   <maxConcurrentInstances>1</maxConcurrentInstances>
    <numberOfRerun>0</numberOfRerun>
+   <orchestration>CLASSIC</orchestration>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
@@ -19,136 +21,297 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>9fc36b0d-2701-4081-a8c8-6f80bb2c5cf9</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Subfoldersharing/SFS03_VerifySubfolderInheritsParentPermission</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>7bff6fac-0487-4939-87b5-b0c802d47722</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Subfoldersharing/SFS17_VerifySubSubfolderSharedToGroup</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>957aed27-633d-4ab1-b7b7-e485b787f4eb</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Subfoldersharing/SFS11_VerifyMultiUserMultiSubfolderVisibilityMatrix</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>6ee0ab30-0b17-4a84-ab99-4ee78ba57191</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Subfoldersharing/SFS09_RestoreInheritanceReappliesParentPermissions</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>52128df9-382d-4d4b-aee5-098dc26af88f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Subfoldersharing/SFS13_VerifyCombinationSubfolderToAccountASubSubfolderToAccountB</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>0694fdc5-95a2-4384-a41c-9d32ee6a50ef</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Subfoldersharing/SFS10_UserWithOnlyExplicitPermissionLosesAccessAfterRestore</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>4083ac68-bc09-4040-95cd-1f7d0665efe5</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Subfoldersharing/SFS08_InheritanceToggleHiddenForNonAdminUser</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d912dd64-0970-493c-be41-59107670e5a2</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Subfoldersharing/SFS12_VerifySubSubfolderSharedDirectlyToUser</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d35f5d3f-fe7c-4a18-8aab-19d18cd0af27</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Subfoldersharing/SFS14_VerifyRemovingSubfolderShareRevokesAccess</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d5eb603f-cb97-416d-9b90-f4afed40ae9a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Subfoldersharing/SFS07_VerifyNewParentMemberGetsNoAccessToInterruptedSubfolder</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>66245e10-19ed-4664-92b5-560cddf2652b</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Subfoldersharing/SFS06_ConfirmInterruptInheritanceSnapshotsPermissions</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>0f5ea262-84b1-4810-9cd2-69a7c3de35e9</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Subfoldersharing/SFS19_VerifyRemovingGroupShareRevokesAccess</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>526366b0-e023-4686-aadd-b23757c2b09d</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Subfoldersharing/SFS16_VerifySubfolderSharedToGroup</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>752c9841-7156-4eba-adc9-9f911b91f009</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Subfoldersharing/SFS02_VerifyInheritanceToggleVisibleOnSubfolder</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>95c0ed35-59e3-471e-94a9-ef2d879e2393</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Subfoldersharing/SFS18_VerifyCombinationSubfolderToGroupASubSubfolderToGroupB</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5a3b270a-38a8-4dc4-9c79-335dff0fa3cd</guid>
+      <guid>2cd7c01c-1edb-4452-852d-2c93e1caf813</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS01_VerifyInheritanceToggleHiddenOnTopLevelFolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>721b21a3-b8c9-4b59-bad6-87e221b10142</guid>
+      <guid>08409be5-4c19-4e73-a84b-5b098a6565a3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS02_VerifyInheritanceToggleVisibleOnSubfolder</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>44299d76-7a9c-4173-9f37-ebeb9594f51d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS03_VerifySubfolderInheritsParentPermission</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>69dfabc0-57db-4f28-80e0-c20090c9e86c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS04_VerifyAdditionalExplicitPermissionOnSubfolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>dafb7a74-41c3-488e-858f-6fa1b381c69e</guid>
+      <guid>f3e6878e-ee21-44ab-a72d-f95c542cec37</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS05_InterruptInheritanceShowsConfirmationDialog</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f46c8b95-f574-4570-8675-bee91d6e8f7e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS06_ConfirmInterruptInheritanceSnapshotsPermissions</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>70001338-83e6-485e-b62d-aa19377b0983</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS07_VerifyNewParentMemberGetsNoAccessToInterruptedSubfolder</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>50d0b620-f7e6-451f-8ebc-7b8ebc21b191</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS08_InheritanceToggleHiddenForNonAdminUser</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ef55e550-3a10-46c6-82d2-b4a8535fc98e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS09_RestoreInheritanceReappliesParentPermissions</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f7558e3c-ca91-48f0-b3e0-a5ebb70cd175</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS10_UserWithOnlyExplicitPermissionLosesAccessAfterRestore</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>488df6c5-5f08-4556-aaac-02efefbef7aa</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS11_VerifyMultiUserMultiSubfolderVisibilityMatrix</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0a011e2c-40c9-47bd-b247-6d356cc570a7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS12_VerifySubSubfolderSharedDirectlyToUser</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f6fa31ba-cad0-42f8-9ae2-305b06dfa2e4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS13_VerifyCombinationSubfolderToAccountASubSubfolderToAccountB</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f3dceae3-17e9-4351-9489-ab17f9f3c595</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS14_VerifyRemovingSubfolderShareRevokesAccess</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>30234625-f9d5-4580-91d9-b3e3da4f6ced</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS15_VerifyRemovingSubSubfolderShareRevokesAccess</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5384eb1f-e1c6-4144-9a4c-770cbccd245e</guid>
+      <guid>f6aa6124-7bfc-4273-8902-1040b36b07d4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Subfoldersharing/SFS05_InterruptInheritanceShowsConfirmationDialog</testCaseId>
+      <testCaseId>Test Cases/Subfoldersharing/SFS16_VerifySubfolderSharedToGroup</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9ccc6f23-8d2d-4c73-86ef-065de9a4b38d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS17_VerifySubSubfolderSharedToGroup</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3924c7d7-c796-45c2-bee2-f2909e4e4673</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS18_VerifyCombinationSubfolderToGroupASubSubfolderToGroupB</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a8bd6755-387a-4524-b80f-061c8866b43d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS19_VerifyRemovingGroupShareRevokesAccess</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>049d439d-fd2c-4fcc-8b6c-be2baded6cdf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS20_VerifySubfolderRowShareGrantsIsolatedReadWriteAccess</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>daec6914-989e-4a58-8140-a87b30c7cbd0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS21_VerifySubfolderRowShareToGroupGrantsReadWriteAccess</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>917ee4a0-2fac-46d1-abd6-7de03790b6c2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS22_VerifyUploadIntoSubfolderOnlySharedFolderSucceeds</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bf991137-5397-46b5-9a01-fc867b8be2b9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS23_VerifyCreateDirectoryAndDocumentInsideSharedSubfolder</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a33d7ea0-5a68-4d99-b3bf-234e228dac17</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS24_VerifyOnlyOfficeEditorOpensInEditModeForSubfolderOnlyWriter</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4e08aa2b-9c86-47f2-be3c-56b66acb8292</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS25_VerifySubfolderUserHasNoWriteAccessInTopFolderRoot</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f587254c-5895-4f4a-b434-152111f12b96</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS26_ShareSubfolderReadOnly</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a8722563-9784-4327-b270-e469c1f48022</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS27_ShareSubfolderWithAdminPermission</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>daa5d048-5f44-45fa-97b1-b154d1e999ba</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS28_UnshareSubfolderEndsAccess</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>40dc259d-3aa3-4c7a-94db-51caf41f4c86</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS29_SubfolderUserCannotGrantPermissions</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bd994051-89cb-41b8-be87-704df1396a9a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS30_NestedSharesInnerSubfolderWins</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6223d78c-b260-458c-a722-fbb2c0581c16</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS31_MoveFileWithinSharedSubfolder</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>762918df-f2d2-40d8-9196-243676abe20f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS32_ShowFileVersionsInsideSharedSubfolder</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>484e9629-19f9-40f1-9214-04b8ce06393b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS33_SetTagsOnFileInsideSharedSubfolder</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c41219ee-a520-4ecd-8d10-2d9bc6a6424a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS34_ActOnFileSeveralLevelsBelowShareRoot</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7a2bc110-0721-4356-9d4e-dd0e2db136e9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS35_CreateButtonPresentAfterNavigatingIntoSubfolder</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0d8bbbf0-473a-4a76-96d0-1dad7c613bcf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS36_PermissionOnSubfolderThroughParentGroup</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2e01eae3-2cfd-470b-9702-717cec4506fe</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS37_SubfolderUserCannotTagFilesInTopFolder</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>782d5e29-5926-499e-b7d9-726631c48a87</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS38_WebDavAccessToSharedSubfolder</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>786764fa-85d9-46a1-99dd-7c74cf141894</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS39_PublicFileLinkOnFileInsideSharedSubfolder</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>af558ff1-666e-468f-a1fb-c077e5e024fd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS40_StorageOfSharedSubfolderCountsTowardsTopFolderOwner</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f4ba5aa1-9554-4f77-a965-c99cecdc7232</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS41_DownloadFileFromSharedSubfolder</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>44e8dbb6-46af-4609-8d93-fa86e477f606</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS42_RenameFileInsideSharedSubfolder</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

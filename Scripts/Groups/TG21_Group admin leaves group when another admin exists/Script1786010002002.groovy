@@ -32,12 +32,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-/*
- * Ticket scenario 5: a group admin can leave a group in one step (via the groups list "..." menu)
- * as long as another admin remains. The group is built self-service by 'user1' (not by the site admin),
- * matching how groups are actually created in production: users create their own groups and invite others.
- */
-
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.userName = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
@@ -134,6 +128,8 @@ WebElement inputElement = driver.findElement(By.xpath("//*[@id='pica_group_accou
 
 inputElement.sendKeys(user1)
 
+WebUI.delay(3)
+
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
 
 String user1LocalPart = user1.contains('@') ? user1.substring(0, user1.indexOf('@')) : user1
@@ -145,7 +141,7 @@ def xpathUser1 = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and
 
 def buttonUser1 = driver.findElement(By.xpath(xpathUser1))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonUser1))
+buttonUser1.click()
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
 
@@ -153,6 +149,8 @@ WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - Power
 WebElement inputElement2 = driver.findElement(By.xpath("//*[@id='pica_group_accounts']//input[contains(concat(' ',normalize-space(@class),' '),' pica-taginput-input ')]"))
 
 inputElement2.sendKeys(user2)
+
+WebUI.delay(3)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
 
@@ -165,7 +163,7 @@ def xpathUser2 = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and
 
 def buttonUser2 = driver.findElement(By.xpath(xpathUser2))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonUser2))
+buttonUser2.click()
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
 
@@ -210,8 +208,6 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/b
 
 WebUI.delay(2)
 
-// LeaveAction only 403s when the caller is the group's last admin - here 'user2' remains, so it must
-// succeed silently: no permission-denied warning, and the row disappears from 'user1's own list.
 WebUiBuiltInKeywords.verifyEqual(driver.findElements(By.xpath("//div[contains(@class,'pica-notification') and contains(@class,'warning')]")).size(), 0)
 
 new WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(

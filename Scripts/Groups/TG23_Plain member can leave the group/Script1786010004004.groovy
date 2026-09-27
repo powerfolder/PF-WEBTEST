@@ -32,12 +32,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-/*
- * Ticket scenario 7: a plain (non-admin) group member can always leave a group - LeaveAction only
- * blocks the LAST ADMIN, never a plain member. Group is built self-service by 'user1', who invites
- * 'user2' as a plain member (default role, never promoted).
- */
-
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.userName = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
@@ -134,6 +128,8 @@ WebElement inputElement = driver.findElement(By.xpath("//*[@id='pica_group_accou
 
 inputElement.sendKeys(user1)
 
+WebUI.delay(3)
+
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
 
 String user1LocalPart = user1.contains('@') ? user1.substring(0, user1.indexOf('@')) : user1
@@ -145,7 +141,7 @@ def xpathUser1 = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and
 
 def buttonUser1 = driver.findElement(By.xpath(xpathUser1))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonUser1))
+buttonUser1.click()
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
 
@@ -153,6 +149,8 @@ WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - Power
 WebElement inputElement2 = driver.findElement(By.xpath("//*[@id='pica_group_accounts']//input[contains(concat(' ',normalize-space(@class),' '),' pica-taginput-input ')]"))
 
 inputElement2.sendKeys(user2)
+
+WebUI.delay(3)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
 
@@ -215,7 +213,6 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/b
 
 WebUI.delay(2)
 
-// A plain member is never "the only admin", so LeaveAction must succeed: no warning, row disappears.
 TestObject warningNotification = new TestObject('warningNotification')
 warningNotification.addProperty('xpath', ConditionType.EQUALS,
     "//div[contains(@class,'pica-notification') and contains(@class,'warning')]")

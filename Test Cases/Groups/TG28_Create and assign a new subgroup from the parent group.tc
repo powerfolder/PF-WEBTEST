@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TG28_Create and assign a new subgroup from the parent group</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f013506f-8f86-460f-b816-ee2090810c3d</testCaseGuid>
+</TestCaseEntity>

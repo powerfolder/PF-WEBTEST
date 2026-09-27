@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Secondary ("No") button of the generic confirmation dialog (#pica_confirmation_dialog). Dismisses the dialog without applying the pending interrupt/restore inheritance action.</description>
+   <description>Secondary ("No") button of the dedicated inheritance interrupt/restore dialog (#pica_inheritance_dialog, PFC-3613). Dismisses the dialog without applying the pending interrupt/restore action.</description>
    <name>confirmation_dialog_cancel</name>
    <tag></tag>
    <elementGuidId>29b82566-b0c7-44d2-a36c-ef89d7ee5a4d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_confirmation_dialog']//div[contains(@class,'modal-footer')]/button[contains(@class,'btn-secondary')]</value>
+         <value>//div[@id='pica_inheritance_dialog']//div[contains(@class,'modal-footer')]/button[contains(@class,'btn-secondary')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#pica_confirmation_dialog .modal-footer button.btn-secondary</value>
+         <value>#pica_inheritance_dialog .modal-footer button.btn-secondary</value>
       </entry>
       <entry>
          <key>BASIC</key>

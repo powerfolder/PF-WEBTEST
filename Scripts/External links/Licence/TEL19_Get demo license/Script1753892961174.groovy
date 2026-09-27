@@ -17,6 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+// DISABLED (isRun=false in Test Suites/External links.ts, 2026-08-29): the "Get demo license" link
+// no longer exists on the Activation page (label_demo_license removed from activation.vm) — only
+// "Get server license" remains, already covered by TEL18. Re-enable only if the demo license flow returns.
+
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementClickable(findTestObject('External links/Page_Dashboard - PowerFolder/Licence_btn'))

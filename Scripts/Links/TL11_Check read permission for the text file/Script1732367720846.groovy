@@ -24,6 +24,7 @@ import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
+import credentials.CredentialsManager as CredentialsManager
 
 WebUI.callTestCase(findTestCase('Links/pre_test/create_text_file_link'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -70,9 +71,9 @@ WebUI.delay(3)
 WebUI.switchToWindowIndex(0)
 
 // Log admin back in to verify the link settings
-WebUI.setEncryptedText(findTestObject('Login/inputEmail'), 'CKkAs2Ee0vA=')
+WebUI.setText(findTestObject('Login/inputEmail'), CredentialsManager.getAdminUsername())
 
-WebUI.setEncryptedText(findTestObject('Login/inputPassword'), 'PpFy9OM6JMUrpEOD1UO9247r7Yrm9E0x')
+WebUI.setText(findTestObject('Login/inputPassword'), CredentialsManager.getAdminPassword())
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

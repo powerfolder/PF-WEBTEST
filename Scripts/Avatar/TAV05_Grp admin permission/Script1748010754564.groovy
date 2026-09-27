@@ -45,11 +45,6 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
-// PFS-5510: the group creator (site admin) only gets GroupAdminPermission on creation, he is never
-// added as an explicit member (no addGroup() call) - so "Pre_test/add member" leaves exactly ONE row in
-// this table (the invited user), never two. Target that row by the invited user's own data instead of
-// a fixed position, and wait for it - the Members tab now also awaits the (default-on) child-groups
-// fetch before finishing its render, so a plain findElement without a wait is timing-sensitive.
 String userLocalPart = GlobalVariable.userName.contains('@') ? GlobalVariable.userName.substring(0, GlobalVariable.userName.indexOf('@')) : GlobalVariable.userName
 
 def xpath = "//div[@id='pica_group_accounts']//table/tbody/tr[@data-userdata and contains(@data-userdata,'" + userLocalPart + "')]//button[contains(@class,'dropdown-toggle')]"
@@ -57,11 +52,27 @@ def xpath = "//div[@id='pica_group_accounts']//table/tbody/tr[@data-userdata and
 def driver = DriverFactory.getWebDriver()
 
 new WebDriverWait(driver, Duration.ofSeconds(15)).until(
-    ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)))
+    ExpectedConditions.elementToBeClickable(By.xpath(xpath)))
 
 def button = driver.findElement(By.xpath(xpath))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(button))
+def openedViaApi = WebUI.executeJavaScript(
+    "var btn = arguments[0];" +
+    "if (!btn.getAttribute('data-bs-popper-config')) {" +
+    "  btn.setAttribute('data-bs-popper-config', '{\"strategy\":\"fixed\"}');" +
+    "}" +
+    "var dd = bootstrap.Dropdown.getOrCreateInstance(btn);" +
+    "dd.show();" +
+    "var menu = btn.closest('.dropdown').querySelector('ul.dropdown-menu');" +
+    "return !!(menu && menu.classList.contains('show'));",
+    Arrays.asList(button))
+
+println('Dropdown opened via Bootstrap API: ' + openedViaApi)
+
+def openMenuXpath = "//div[@id='pica_group_accounts']//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]"
+
+new WebDriverWait(driver, Duration.ofSeconds(15)).until(
+    ExpectedConditions.presenceOfElementLocated(By.xpath(openMenuXpath)))
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
 

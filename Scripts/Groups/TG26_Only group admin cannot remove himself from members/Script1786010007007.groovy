@@ -32,13 +32,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-/*
- * Ticket scenario 10: the only remaining admin cannot remove himself from the member list either -
- * group.js disables BOTH "Is member" (index 0) and "Remove" (index 3, the last <li>) whenever a row is
- * the group's sole GroupAdminPermission holder (isOnlyGroupAdmin), so no click handler is ever bound to
- * either option. Mirrors TG17's "Is member" check, but for "Remove". Group is built self-service by 'user1'.
- */
-
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.userName = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
@@ -114,6 +107,8 @@ WebElement inputElement = driver.findElement(By.xpath("//*[@id='pica_group_accou
 
 inputElement.sendKeys(user1)
 
+WebUI.delay(3)
+
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/user click'))
 
 String user1LocalPart = user1.contains('@') ? user1.substring(0, user1.indexOf('@')) : user1
@@ -125,7 +120,7 @@ def xpathUser1 = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and
 
 def buttonUser1 = driver.findElement(By.xpath(xpathUser1))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonUser1))
+buttonUser1.click()
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Page_Groups - PowerFolder/Is member and admin'))
 
@@ -156,18 +151,15 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Members'))
 
 new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
-    ExpectedConditions.presenceOfElementLocated(By.xpath(xpathUser1)))
+    ExpectedConditions.elementToBeClickable(By.xpath(xpathUser1)))
 
 WebElement buttonUser1Again = driver.findElement(By.xpath(xpathUser1))
 
-WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(buttonUser1Again))
+buttonUser1Again.click()
 
-// optionsForMembers = [Is member, Is member and admin, divider, Remove] - "Remove" is always the last <li>.
 WebElement removeOption = driver.findElement(By.xpath(
     "//div[@id='pica_group_accounts']//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]/li[last()]/a"))
 
-// group.js: isOnlyGroupAdmin disables memberOptions[3] ("Remove") the same way it disables [0] ("Is
-// member") - combo.js createDropdownMenu never binds a click handler to an option flagged "disabled".
 Object hasClickHandler = WebUI.executeJavaScript(
     "var el = arguments[0]; var ev = (window.jQuery && jQuery._data) ? jQuery._data(el, 'events') : null; return !!(ev && ev.click && ev.click.length > 0);",
     Arrays.asList(removeOption))
