@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import folder.FolderFinder as FolderFinder
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -63,7 +64,7 @@ WebUI.closeBrowser()
 
 WebElement findFolder(String folderName) {
     WebDriver driver = DriverFactory.getWebDriver()
-    return driver.findElement(By.xpath("//td[2]/span/a[contains(text(),'" + folderName + "')]"))
+    return FolderFinder.findElement("//td[2]/span/a[contains(text(),'" + folderName + "')]")
 }
 
 boolean waitForFile(String path, String fileName, int timeoutSeconds) {

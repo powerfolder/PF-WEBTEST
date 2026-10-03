@@ -58,6 +58,7 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import org.openqa.selenium.By as By
 import org.apache.commons.io.FileUtils as FileUtils
+import folder.FolderFinder as FolderFinder
 
 import java.nio.file.Paths as Paths
 import java.nio.file.Files as Files
@@ -86,9 +87,7 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
 WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 
-WebUI.delay(2)
-
-WebElement btn = findFolder(folderName)
+WebElement btn = FolderFinder.findFolder(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
@@ -171,13 +170,6 @@ WebUI.delay(3)
 // Supprimer le dossier local
 deleteFolder(folderPath)
 
-
-@Keyword
-WebElement findFolder(String folderName) {
-    WebDriver driver = DriverFactory.getWebDriver()
-
-    return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
-}
 
 void deleteFolder(String folderPath) {
 	try {
