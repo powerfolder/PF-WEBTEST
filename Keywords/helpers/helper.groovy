@@ -83,7 +83,6 @@ public class Helper {
 	
 	@Keyword
 	def static WebElement findShareButton(String fileName) {
-		// The folder list loads further pages only when scrolled - see FolderFinder
 		return FolderFinder.findElement("//table[@id='files_files_table']/tbody/tr[contains(@data-search-keys,'" + fileName + "')]/td[7]/a")
 	}
 	@Keyword

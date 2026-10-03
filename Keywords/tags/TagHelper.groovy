@@ -31,7 +31,6 @@ public class TagHelper {
 
     @Keyword
     static WebElement findRow(String itemName) {
-        // The folder list loads further pages only when scrolled - see FolderFinder
         return FolderFinder.findElement(String.format(ROW_XPATH, itemName), 30)
     }
 
@@ -227,10 +226,11 @@ public class TagHelper {
 
     @Keyword
     static void filterByTag(String tagText) {
-        WebDriver driver = DriverFactory.getWebDriver()
-        WebElement chip = driver.findElement(By.xpath(
-            "//*[contains(@class,'pica-tag-chip') and not(contains(@class,'pica-tag-chip-more')) and normalize-space(text())='" + tagText + "']"
-        ))
+        WebElement chip = FolderFinder.findElement(
+            "//*[contains(@class,'pica-tag-chip') and not(contains(@class,'pica-tag-chip-more')) and normalize-space(text())='" + tagText + "']",
+            30
+        )
+        WebUI.executeJavaScript('arguments[0].scrollIntoView({block:"center"})', Arrays.asList(chip))
         chip.click()
         WebUI.delay(1)
     }

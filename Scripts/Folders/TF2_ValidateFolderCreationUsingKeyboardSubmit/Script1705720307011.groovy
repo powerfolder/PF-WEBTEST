@@ -84,8 +84,7 @@ assert tableContainsFolder(folderName)
 WebUI.closeBrowser() 
 
 
-// Function to check if table contains folder - the folder list loads further pages only when scrolled, so its
-// row count says nothing about a new folder once there are more than 500 (see FolderFinder)
+// Function to check if table contains folder
 boolean tableContainsFolder(String fileName) {
     WebElement tfolder = FolderFinder.findElement(('//td[2]/span/a[contains(text(),\'' + fileName) + '\')]')
 	

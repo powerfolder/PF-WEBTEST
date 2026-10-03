@@ -71,7 +71,6 @@ WebUI.executeJavaScript("try { sessionStorage.removeItem('searchQuery'); } catch
 String targetFolderCss = "tr[data-search-keys*='" + topFolder + "']"
 
 // Wait until the target folder row is actually present in the DOM before invoking the native drag helper.
-// The folder list loads further pages only when scrolled - see FolderFinder
 FolderFinder.findElement(By.cssSelector(targetFolderCss))
 
 Helper.dragAndDropFoldersNative(targetFolderCss, folderPaths)
