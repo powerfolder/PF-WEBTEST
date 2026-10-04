@@ -1,4 +1,5 @@
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import folder.FolderFinder as FolderFinder
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
@@ -163,12 +164,12 @@ String getTimestamp() {
 WebElement clickElement(String variable) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath("//*[contains(@data-search-keys, '$variable')]/td[2]/span/a"))
+    return FolderFinder.findElement("//*[contains(@data-search-keys, '$variable')]/td[2]/span/a")
 }
 
 WebElement findFolder(String folderName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath("//*[contains(@data-search-keys, '$folderName')]/td[1]/span"))
+    return FolderFinder.findElement("//*[contains(@data-search-keys, '$folderName')]/td[1]/span")
 }
 

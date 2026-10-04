@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='notification_94569882']/div</value>
+         <value>//div[starts-with(@id,'notification_')]/div[contains(@class,'pica-notification-box') and contains(@class,'alert-info')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

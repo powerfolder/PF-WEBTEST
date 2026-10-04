@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import folder.FolderFinder as FolderFinder
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import com.kms.katalon.core.model.FailureHandling
@@ -63,9 +64,7 @@ WebUI.executeJavaScript("try { sessionStorage.removeItem('searchQuery'); } catch
 String targetFolderCss = "tr[data-search-keys*='" + topFolder + "']"
 
 // Wait until the target folder row is actually present in the DOM before invoking the native drag helper.
-new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
-    org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
-        By.cssSelector(targetFolderCss)))
+FolderFinder.findElement(By.cssSelector(targetFolderCss))
 
 Helper.dragAndDropFolderNative(targetFolderCss, localFolderPath)
 
@@ -77,7 +76,7 @@ if (WebUI.waitForElementVisible(findTestObject('Drag and drop/Close_button'), 10
 
 // ================== OPEN TARGET FOLDER TO VERIFY UPLOADED FOLDER ==================
 
-WebElement targetFolderLink = driver.findElement(
+WebElement targetFolderLink = FolderFinder.findElement(
 	By.xpath("//tr[contains(@data-search-keys,'" + topFolder + "')]//a[contains(text(),'" + topFolder + "')]")
 )
 

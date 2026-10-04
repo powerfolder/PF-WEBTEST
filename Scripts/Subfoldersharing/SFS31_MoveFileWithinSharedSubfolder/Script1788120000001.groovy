@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import folder.FolderFinder as FolderFinder
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -150,17 +151,17 @@ WebUI.closeBrowser()
 WebElement findFolder(String name) {
     WebDriver driver = DriverFactory.getWebDriver()
     By locator = By.xpath("//td[2]/span/a[contains(text(),'" + name + "')]")
-    return new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(ExpectedConditions.presenceOfElementLocated(locator))
+    return FolderFinder.findElement(locator)
 }
 
 WebElement findRow(String name) {
     WebDriver driver = DriverFactory.getWebDriver()
     By locator = By.xpath("//*[contains(@data-search-keys, '" + name + "')]/td[1]/span")
-    return new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(ExpectedConditions.presenceOfElementLocated(locator))
+    return FolderFinder.findElement(locator)
 }
 
 WebElement findDoc(String name) {
     WebDriver driver = DriverFactory.getWebDriver()
     By locator = By.xpath("//*[contains(@data-search-keys, '" + name + "')]/td[1]/span")
-    return new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(ExpectedConditions.presenceOfElementLocated(locator))
+    return FolderFinder.findElement(locator)
 }

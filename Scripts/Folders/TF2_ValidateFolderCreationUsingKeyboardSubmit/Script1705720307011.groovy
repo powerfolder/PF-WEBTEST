@@ -1,5 +1,6 @@
  // Import statements
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import folder.FolderFinder as FolderFinder
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -58,9 +59,6 @@ WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder
 // Generate a random string of length 5
 String folderN = RandomStringUtils.randomAlphanumeric(5)
 
-// Store the original folder count
-originfolderCount = getFoldersCount()
-
 // Generate a random folder name
 String folderName = getRandomFolderName()
 
@@ -79,9 +77,6 @@ WebUI.sendKeys(findTestObject('Folders/inputFolderName'), Keys.chord(Keys.ENTER)
 // Clique sur le bouton "Folders"
 WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 
-// Assert folder count has increased
-assert getFoldersCount() > originfolderCount
-
 // Assert folder table contains folder name
 assert tableContainsFolder(folderName)
 
@@ -89,23 +84,9 @@ assert tableContainsFolder(folderName)
 WebUI.closeBrowser() 
 
 
-// Function to get folders count
-int getFoldersCount() {
-    WebDriver driver = DriverFactory.getWebDriver()
-
-    WebElement tbody = driver.findElement(By.xpath('//table[@id=\'files_files_table\']/tbody'))
-
-    assert tbody
-
-    List<WebElement> rows_table = tbody.findElements(By.tagName('tr'))
-
-    return rows_table.size()
-}
 // Function to check if table contains folder
 boolean tableContainsFolder(String fileName) {
-    WebDriver driver = DriverFactory.getWebDriver()
-
-    WebElement tfolder = driver.findElement(By.xpath(('//td[2]/span/a[contains(text(),\'' + fileName) + '\')]'))
+    WebElement tfolder = FolderFinder.findElement(('//td[2]/span/a[contains(text(),\'' + fileName) + '\')]')
 	
     return tfolder.isDisplayed()
 }

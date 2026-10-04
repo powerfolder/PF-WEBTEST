@@ -13,6 +13,7 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
 import java.time.Duration
+import folder.FolderFinder
 
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -30,19 +31,15 @@ public class TagHelper {
 
     @Keyword
     static WebElement findRow(String itemName) {
-        WebDriver driver = DriverFactory.getWebDriver()
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15))
-        return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(String.format(ROW_XPATH, itemName))))
+        return FolderFinder.findElement(String.format(ROW_XPATH, itemName), 30)
     }
 
     @Keyword
     static boolean rowExistsEventually(String itemName, int timeoutSeconds = 10) {
-        WebDriver driver = DriverFactory.getWebDriver()
         try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds))
-            wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(String.format(ROW_XPATH, itemName))))
+            FolderFinder.findElement(String.format(ROW_XPATH, itemName), timeoutSeconds)
             return true
-        } catch (org.openqa.selenium.TimeoutException ignored) {
+        } catch (org.openqa.selenium.NoSuchElementException ignored) {
             return false
         }
     }
@@ -229,10 +226,11 @@ public class TagHelper {
 
     @Keyword
     static void filterByTag(String tagText) {
-        WebDriver driver = DriverFactory.getWebDriver()
-        WebElement chip = driver.findElement(By.xpath(
-            "//*[contains(@class,'pica-tag-chip') and not(contains(@class,'pica-tag-chip-more')) and normalize-space(text())='" + tagText + "']"
-        ))
+        WebElement chip = FolderFinder.findElement(
+            "//*[contains(@class,'pica-tag-chip') and not(contains(@class,'pica-tag-chip-more')) and normalize-space(text())='" + tagText + "']",
+            30
+        )
+        WebUI.executeJavaScript('arguments[0].scrollIntoView({block:"center"})', Arrays.asList(chip))
         chip.click()
         WebUI.delay(1)
     }

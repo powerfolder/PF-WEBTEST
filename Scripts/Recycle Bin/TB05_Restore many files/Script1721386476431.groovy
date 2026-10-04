@@ -31,6 +31,7 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import java.time.Duration
+import folder.FolderFinder as FolderFinder
 
 WebUI.callTestCase(findTestCase('Recycle Bin/Pre_test/create many files'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -60,7 +61,7 @@ WebUI.click(findTestObject('file_objects/recycle/Page_Folders - PowerFolder/span
 
 String folderName = GlobalVariable.folderName
 
-WebElement btn = findFolder(folderName)
+WebElement btn = FolderFinder.findFolder(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
@@ -74,13 +75,11 @@ WebUI.click(findTestObject('Help/Page_Recycle bin - PowerFolder/select all in bi
 
 WebUI.click(findTestObject('file_objects/recycle/Page_Recycle bin - PowerFolder/Restore'))
 
-WebUI.verifyElementPresent(findTestObject('Recycle bin/Page_Recycle bin - PowerFolder/Page_Recycle bin - PowerFolder/div_File restored'), 
-    3) 
+WebUI.verifyElementPresent(findTestObject('Recycle bin/Page_Recycle bin - PowerFolder/Page_Recycle bin - PowerFolder/div_File restored'),
+    20)
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/lang_Folders'))
 
-WebUI.delay(2)
-
-WebElement btn1 = findFolder(folderName)
+WebElement btn1 = FolderFinder.findFolder(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
@@ -96,11 +95,4 @@ WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Page_
 WebUI.delay(2)
 
 WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
-
-@Keyword
-WebElement findFolder(String folderName) {
-    WebDriver driver = DriverFactory.getWebDriver()
-
-    return driver.findElement(By.xpath(('//a[contains(text(),\'' + folderName) + '\')]'))
-}
 

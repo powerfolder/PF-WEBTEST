@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import folder.FolderFinder as FolderFinder
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -88,7 +89,7 @@ String getRandomFolderName() {
 WebElement findShareButton(String fileName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
+    return FolderFinder.findElement(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span')
 }
 
 String getTimestamp() {

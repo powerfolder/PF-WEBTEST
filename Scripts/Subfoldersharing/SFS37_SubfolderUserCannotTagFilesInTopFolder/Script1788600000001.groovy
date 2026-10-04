@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import folder.FolderFinder as FolderFinder
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -141,10 +142,10 @@ WebUI.closeBrowser()
 
 WebElement findFolder(String name) {
     WebDriver driver = DriverFactory.getWebDriver()
-    return driver.findElement(By.xpath("//td[2]/span/a[contains(text(),'" + name + "')]"))
+    return FolderFinder.findElement("//td[2]/span/a[contains(text(),'" + name + "')]")
 }
 
 WebElement findRow(String name) {
     WebDriver driver = DriverFactory.getWebDriver()
-    return driver.findElement(By.xpath("//*[contains(@data-search-keys, '" + name + "')]/td[1]/span"))
+    return FolderFinder.findElement("//*[contains(@data-search-keys, '" + name + "')]/td[1]/span")
 }

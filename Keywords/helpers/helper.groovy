@@ -26,6 +26,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
+import folder.FolderFinder
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -82,8 +83,7 @@ public class Helper {
 	
 	@Keyword
 	def static WebElement findShareButton(String fileName) {
-		WebDriver driver = DriverFactory.getWebDriver()
-		return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr[contains(@data-search-keys,'" + fileName + "')]/td[7]/a"))
+		return FolderFinder.findElement("//table[@id='files_files_table']/tbody/tr[contains(@data-search-keys,'" + fileName + "')]/td[7]/a")
 	}
 	@Keyword
 	def static generateDateTimePlusTenSeconds() {
