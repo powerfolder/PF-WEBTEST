@@ -22,6 +22,7 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
+import helpers.LocalizedText as LocalizedText
 
 
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -78,9 +79,9 @@ WebUI.delay(2)
 WebElement inheritanceToggleEl = WebUI.findWebElement(findTestObject('Subfoldersharing/share_inheritance_toggle'), 5)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(inheritanceToggleEl))
 WebUI.waitForElementVisible(findTestObject('Subfoldersharing/inheritance_dialog_title'), 5)
-WebUI.verifyElementText(findTestObject('Subfoldersharing/inheritance_dialog_title'), 'Own access rights for "' + subFolderName + '"?')
+LocalizedText.verifyText(findTestObject('Subfoldersharing/inheritance_dialog_title'), 'dialog_title_interrupt_inheritance', subFolderName)
 WebUI.click(findTestObject('Subfoldersharing/inheritance_dialog_ok'))
-WebUI.verifyElementText(findTestObject('notifications_toastmessage'), '"' + subFolderName + '" now has its own access rights.')
+LocalizedText.verifyText(findTestObject('notifications_toastmessage'), 'notification_inheritance_interrupted', subFolderName)
 WebUI.verifyElementText(findTestObject('Share/Page_Folders - PowerFolder/td_usermailcom'), memberDisplayName)
 
 WebUI.delay(2)
@@ -88,15 +89,15 @@ WebElement restoreToggleEl = WebUI.findWebElement(findTestObject('Subfoldershari
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(restoreToggleEl))
 
 WebUI.waitForElementVisible(findTestObject('Subfoldersharing/inheritance_dialog_title'), 5)
-WebUI.verifyElementText(findTestObject('Subfoldersharing/inheritance_dialog_title'), 'Use the parent folder\'s rights again?')
+LocalizedText.verifyText(findTestObject('Subfoldersharing/inheritance_dialog_title'), 'dialog_title_restore_inheritance')
 String bodyText = WebUI.getText(findTestObject('Subfoldersharing/inheritance_dialog_body'))
-WebUI.verifyMatch(bodyText, '.*archived.*' + subFolderName + '.*', true)
+LocalizedText.verifyContains(bodyText, 'dialog_body_restore_inheritance', subFolderName)
 
 WebUI.click(findTestObject('Subfoldersharing/inheritance_dialog_ok'))
 
-WebUI.verifyElementText(findTestObject('notifications_toastmessage'), '"' + subFolderName + '" takes over the parent folder\'s access rights again.')
+LocalizedText.verifyText(findTestObject('notifications_toastmessage'), 'notification_inheritance_restored', subFolderName)
 WebUI.verifyElementChecked(findTestObject('Subfoldersharing/share_inheritance_toggle'), 5)
-WebUI.verifyElementText(findTestObject('Share/Page_Folders - PowerFolder/td_usermailcom'), memberDisplayName + ' (inherited)')
+LocalizedText.verifyInheritedName(findTestObject('Share/Page_Folders - PowerFolder/td_usermailcom'), memberDisplayName)
 
 WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 WebUI.closeBrowser()

@@ -54,7 +54,6 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/b
 
 WebUI.delay(2)
 
-// precondition: the new group is listed without filter
 findGroup(groupName_1)
 
 TestObject optionWithoutMembers = new TestObject('option_without_members')
@@ -67,10 +66,6 @@ WebUI.waitForElementClickable(optionWithoutMembers, 10)
 
 WebUI.click(optionWithoutMembers)
 
-/*
- * A new group always has its creator as member,
- * so the "Without members" filter must hide it.
- */
 waitForGroupsLoaded()
 
 WebDriver driver = DriverFactory.getWebDriver()
@@ -94,9 +89,6 @@ WebElement findGroup(String Groupname) {
     return new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(rowXpath)))
 }
 
-/*
- * The filter clears the table and shows a spinner row until the groups are fetched.
- */
 void waitForGroupsLoaded() {
     WebDriver driver = DriverFactory.getWebDriver()
 

@@ -3773,6 +3773,34 @@
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>228b8d62-6b04-4f67-88f2-dfb867a5fe26</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS43_TagsOnSubfolderSurviveInterruptAndRestore</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2d6573b5-a2e8-43f6-bbc9-27359fccfbfa</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS44_InterruptUsesCurrentTagsNotStaleShareCopy</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>108f8b17-b75a-42d0-bf57-6b9dbecfdd32</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS45_InterruptOfUntaggedSubfolderAfterShareStaysUntagged</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6fc5535b-e95d-4481-86c2-5ab8262e0dfa</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Subfoldersharing/SFS46_SharedInterruptedSubfolderTagsVisibleToMemberAfterTagChange</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>1c19182f-6662-4f78-b1c4-2cd480c762c9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

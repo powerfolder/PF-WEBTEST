@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS43_TagsOnSubfolderSurviveInterruptAndRestore</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9dcb3635-fd89-4960-a4c8-13429e0f8948</testCaseGuid>
+</TestCaseEntity>

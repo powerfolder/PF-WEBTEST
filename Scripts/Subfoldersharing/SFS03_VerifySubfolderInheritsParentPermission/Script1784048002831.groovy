@@ -22,6 +22,7 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
+import helpers.LocalizedText as LocalizedText
 
 /*
  * Subfolder Sharing spec, section 1.1/2.0: a subfolder created inside a shared top-level folder
@@ -100,7 +101,7 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Pag
 
 // verify the (now confirmed) member shows up on the subfolder's share dialog, tagged as inherited
 WebUI.click(findTestObject('Links/share_icon_inside_folder'))
-WebUI.verifyElementText(findTestObject('Share/Page_Folders - PowerFolder/td_usermailcom'), memberDisplayName + ' (inherited)')
+LocalizedText.verifyInheritedName(findTestObject('Share/Page_Folders - PowerFolder/td_usermailcom'), memberDisplayName)
 WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 
 // log out admin, log back in as the member

@@ -22,6 +22,7 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
+import helpers.LocalizedText as LocalizedText
 
 
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -88,7 +89,7 @@ WebElement inheritanceToggleEl = WebUI.findWebElement(findTestObject('Subfolders
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(inheritanceToggleEl))
 WebUI.waitForElementVisible(findTestObject('Subfoldersharing/inheritance_dialog_title'), 5)
 WebUI.click(findTestObject('Subfoldersharing/inheritance_dialog_ok'))
-WebUI.verifyElementText(findTestObject('notifications_toastmessage'), '"' + subBName + '" now has its own access rights.')
+LocalizedText.verifyText(findTestObject('notifications_toastmessage'), 'notification_inheritance_interrupted', subBName)
 
 TestObject shareTableLoading = new TestObject()
 shareTableLoading.addProperty('xpath', ConditionType.EQUALS, "//table[@id='share_table']//tr[contains(@class,'pica-table-loading')]")
