@@ -22,6 +22,7 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
+import helpers.LocalizedText as LocalizedText
 
 /*
  * Subfolder Sharing spec, section 4.2 ("Aendern oder Entfernen von Berechtigungen") for GROUPS:
@@ -92,7 +93,7 @@ WebUI.click(findTestObject('Links/share_icon_inside_folder'))
 WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/folder_share_permission_dropdown_for_user'))
 WebUI.click(findTestObject('Subfoldersharing/share_member_remove_action'))
 WebUI.waitForElementVisible(findTestObject('Subfoldersharing/confirmation_dialog_title'), 5)
-WebUI.verifyElementText(findTestObject('Subfoldersharing/confirmation_dialog_title'), 'Remove')
+LocalizedText.verifyText(findTestObject('Subfoldersharing/confirmation_dialog_title'), 'dialog_title_remove')
 WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/confirme_handover'))
 WebUI.verifyElementPresent(findTestObject('Share/Page_Folders - PowerFolder/share_dialog_memberslist_nothing_to_show'), 10)
 WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
@@ -163,7 +164,7 @@ WebUI.click(findTestObject('Links/share_icon_inside_folder'))
 WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/folder_share_permission_dropdown_for_user'))
 WebUI.click(findTestObject('Subfoldersharing/share_member_remove_action'))
 WebUI.waitForElementVisible(findTestObject('Subfoldersharing/confirmation_dialog_title'), 5)
-WebUI.verifyElementText(findTestObject('Subfoldersharing/confirmation_dialog_title'), 'Remove')
+LocalizedText.verifyText(findTestObject('Subfoldersharing/confirmation_dialog_title'), 'dialog_title_remove')
 WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/confirme_handover'))
 WebUI.verifyElementPresent(findTestObject('Share/Page_Folders - PowerFolder/share_dialog_memberslist_nothing_to_show'), 10)
 WebUI.click(findTestObject('Share/close_button_folder_share_mail'))

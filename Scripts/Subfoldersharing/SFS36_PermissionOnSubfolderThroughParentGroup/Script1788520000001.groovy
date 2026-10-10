@@ -23,6 +23,7 @@ import org.openqa.selenium.Keys
 import org.openqa.selenium.support.ui.WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions
 import com.kms.katalon.core.webui.driver.DriverFactory
+import helpers.LocalizedText as LocalizedText
 
 // Group C / PFS-5510: group "Child" gets nested under group "Parent" (added as a subgroup on
 // Parent's own Members tab - the dedicated "Parents" tab is present in the DOM but deliberately
@@ -128,7 +129,7 @@ WebUI.waitForElementPresent(uploadInput, 10)
 WebUI.uploadFile(uploadInput, renamedLocalFile.getAbsolutePath())
 
 TestObject successMsg = new TestObject('successMsg')
-successMsg.addProperty('xpath', ConditionType.EQUALS, "//*[contains(text(),'Successfully uploaded')]")
+successMsg.addProperty('xpath', ConditionType.EQUALS, "//*[" + LocalizedText.containsTextPredicate('notification_upload_completed') + "]")
 WebUI.waitForElementVisible(successMsg, 15)
 
 TestObject dangerNotification = new TestObject()

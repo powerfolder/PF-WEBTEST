@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS46_SharedInterruptedSubfolderTagsVisibleToMemberAfterTagChange</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>19bff8bc-4272-4810-b2b7-3756ad72f65c</testCaseGuid>
+</TestCaseEntity>

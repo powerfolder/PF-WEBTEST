@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS44_InterruptUsesCurrentTagsNotStaleShareCopy</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c9049ff1-5cdd-4212-b807-0c5b28fc75d6</testCaseGuid>
+</TestCaseEntity>

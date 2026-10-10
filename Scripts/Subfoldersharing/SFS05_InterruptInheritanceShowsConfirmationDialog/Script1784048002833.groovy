@@ -17,6 +17,7 @@ import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import org.apache.commons.lang3.RandomStringUtils
 import org.openqa.selenium.WebElement
+import helpers.LocalizedText as LocalizedText
 
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
@@ -46,8 +47,8 @@ WebElement inheritanceToggleEl = WebUI.findWebElement(findTestObject('Subfolders
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(inheritanceToggleEl))
 
 WebUI.waitForElementVisible(findTestObject('Subfoldersharing/inheritance_dialog_title'), 5)
-WebUI.verifyElementText(findTestObject('Subfoldersharing/inheritance_dialog_title'), 'Own access rights for "' + subFolderName + '"?')
-WebUI.verifyElementText(findTestObject('Subfoldersharing/inheritance_dialog_body'), 'This folder will no longer take over access rights from its parent folder. The currently effective permissions are copied as its own, so nobody loses access immediately. You can adjust them afterwards.')
+LocalizedText.verifyText(findTestObject('Subfoldersharing/inheritance_dialog_title'), 'dialog_title_interrupt_inheritance', subFolderName)
+LocalizedText.verifyText(findTestObject('Subfoldersharing/inheritance_dialog_body'), 'dialog_body_interrupt_inheritance')
 
 WebUI.click(findTestObject('Subfoldersharing/confirmation_dialog_cancel'))
 WebUI.verifyElementChecked(findTestObject('Subfoldersharing/share_inheritance_toggle'), 5)

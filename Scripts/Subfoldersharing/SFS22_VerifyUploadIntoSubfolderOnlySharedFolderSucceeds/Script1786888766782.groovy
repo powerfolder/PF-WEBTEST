@@ -21,6 +21,7 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
+import helpers.LocalizedText as LocalizedText
 
 /*
  * Scenario "Group B - access of a subfolder-only user": upload a file into the shared subfolder.
@@ -106,7 +107,7 @@ WebUI.uploadFile(uploadInput, renamedFile.getAbsolutePath())
 
 // the upload succeeds - no permission error appears in the upload dialog
 TestObject successMsg = new TestObject('successMsg')
-successMsg.addProperty('xpath', ConditionType.EQUALS, "//*[contains(text(),'Successfully uploaded')]")
+successMsg.addProperty('xpath', ConditionType.EQUALS, "//*[" + LocalizedText.containsTextPredicate('notification_upload_completed') + "]")
 WebUI.waitForElementVisible(successMsg, 15)
 
 TestObject dangerNotification = new TestObject('dangerNotification')

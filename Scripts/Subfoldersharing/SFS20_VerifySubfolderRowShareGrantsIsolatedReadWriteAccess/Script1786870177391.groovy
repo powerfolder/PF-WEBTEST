@@ -22,6 +22,7 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
+import helpers.LocalizedText as LocalizedText
 
 /*
  * Scenario "Group A - sharing and revoking" (sharing half):
@@ -78,7 +79,7 @@ WebUI.waitForElementPresent(uploadInput, 10)
 WebUI.uploadFile(uploadInput, renamedFile.getAbsolutePath())
 
 TestObject successMsg = new TestObject('successMsg')
-successMsg.addProperty('xpath', ConditionType.EQUALS, "//*[contains(text(),'Successfully uploaded')]")
+successMsg.addProperty('xpath', ConditionType.EQUALS, "//*[" + LocalizedText.containsTextPredicate('notification_upload_completed') + "]")
 WebUI.waitForElementVisible(successMsg, 15)
 
 TestObject closeUploadBtn = new TestObject('closeUploadBtn')

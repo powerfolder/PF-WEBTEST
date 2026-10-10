@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFS45_InterruptOfUntaggedSubfolderAfterShareStaysUntagged</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>df1175a6-a626-4e10-bc0c-e1d1b316df4f</testCaseGuid>
+</TestCaseEntity>

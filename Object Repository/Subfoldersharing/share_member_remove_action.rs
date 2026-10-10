@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//table[@id='share_table']//ul[contains(@class,'dropdown-menu')]//a[contains(.,'Remove')])[1]</value>
+         <value>(//table[@id='share_table']//ul[contains(@class,'dropdown-menu')]//a[.//span[contains(concat(' ',normalize-space(@class),' '),' glyphicons-bin ')] or contains(.,'Remove') or contains(.,'Entfernen')])[1]</value>
       </entry>
       <entry>
          <key>CSS</key>

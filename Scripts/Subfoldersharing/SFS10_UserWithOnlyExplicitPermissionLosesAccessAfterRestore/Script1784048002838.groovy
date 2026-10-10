@@ -22,6 +22,7 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
+import helpers.LocalizedText as LocalizedText
 
 
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -93,7 +94,7 @@ WebElement inheritanceToggleEl = WebUI.findWebElement(findTestObject('Subfolders
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(inheritanceToggleEl))
 WebUI.waitForElementVisible(findTestObject('Subfoldersharing/inheritance_dialog_title'), 5)
 WebUI.click(findTestObject('Subfoldersharing/inheritance_dialog_ok'))
-WebUI.verifyElementText(findTestObject('notifications_toastmessage'), '"' + subFolderName + '" now has its own access rights.')
+LocalizedText.verifyText(findTestObject('notifications_toastmessage'), 'notification_inheritance_interrupted', subFolderName)
 
 TestObject shareTableLoading = new TestObject()
 shareTableLoading.addProperty('xpath', ConditionType.EQUALS, "//table[@id='share_table']//tr[contains(@class,'pica-table-loading')]")
@@ -149,10 +150,10 @@ String affectedText = WebUI.getText(findTestObject('Subfoldersharing/inheritance
 WebUI.verifyMatch(affectedText, '.*' + memberBDisplayName + '.*', true)
 
 WebUI.click(findTestObject('Subfoldersharing/inheritance_dialog_ok'))
-WebUI.verifyElementText(findTestObject('notifications_toastmessage'), '"' + subFolderName + '" takes over the parent folder\'s access rights again.')
+LocalizedText.verifyText(findTestObject('notifications_toastmessage'), 'notification_inheritance_restored', subFolderName)
 
 WebUI.verifyElementNotPresent(memberBRow, 10)
-WebUI.verifyElementText(findTestObject('Share/Page_Folders - PowerFolder/td_usermailcom'), memberADisplayName + ' (inherited)')
+LocalizedText.verifyInheritedName(findTestObject('Share/Page_Folders - PowerFolder/td_usermailcom'), memberADisplayName)
 WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))

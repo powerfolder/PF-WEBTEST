@@ -22,6 +22,7 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
+import helpers.LocalizedText as LocalizedText
 
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
 String memberEmail = GlobalVariable.userEmail
@@ -107,7 +108,7 @@ WebUI.verifyElementText(findTestObject('Share/Page_Folders - PowerFolder/td_user
 WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/folder_share_permission_dropdown_for_user'))
 WebUI.click(findTestObject('Subfoldersharing/share_member_remove_action'))
 WebUI.waitForElementVisible(findTestObject('Subfoldersharing/confirmation_dialog_title'), 5)
-WebUI.verifyElementText(findTestObject('Subfoldersharing/confirmation_dialog_title'), 'Remove')
+LocalizedText.verifyText(findTestObject('Subfoldersharing/confirmation_dialog_title'), 'dialog_title_remove')
 WebUI.click(findTestObject('Share/Page_Folders - PowerFolder/confirme_handover'))
 
 WebUI.verifyElementPresent(findTestObject('Share/Page_Folders - PowerFolder/share_dialog_memberslist_nothing_to_show'), 10)
