@@ -22,6 +22,7 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
+import helpers.LocalizedText as LocalizedText
 
 
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -74,17 +75,17 @@ WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/P
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
 WebUI.click(findTestObject('Links/share_icon_inside_folder'))
-WebUI.verifyElementText(findTestObject('Share/Page_Folders - PowerFolder/td_usermailcom'), memberDisplayName + ' (inherited)')
+LocalizedText.verifyInheritedName(findTestObject('Share/Page_Folders - PowerFolder/td_usermailcom'), memberDisplayName)
 
 WebUI.delay(2)
 WebElement inheritanceToggleEl = WebUI.findWebElement(findTestObject('Subfoldersharing/share_inheritance_toggle'), 5)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(inheritanceToggleEl))
 WebUI.waitForElementVisible(findTestObject('Subfoldersharing/inheritance_dialog_title'), 5)
-WebUI.verifyElementText(findTestObject('Subfoldersharing/inheritance_dialog_title'), 'Own access rights for "' + subFolderName + '"?')
+LocalizedText.verifyText(findTestObject('Subfoldersharing/inheritance_dialog_title'), 'dialog_title_interrupt_inheritance', subFolderName)
 WebUI.verifyElementChecked(findTestObject('Subfoldersharing/inheritance_mode_snapshot'), 5)
 WebUI.click(findTestObject('Subfoldersharing/inheritance_dialog_ok'))
 
-WebUI.verifyElementText(findTestObject('notifications_toastmessage'), '"' + subFolderName + '" now has its own access rights.')
+LocalizedText.verifyText(findTestObject('notifications_toastmessage'), 'notification_inheritance_interrupted', subFolderName)
 WebUI.verifyElementNotChecked(findTestObject('Subfoldersharing/share_inheritance_toggle'), 5)
 
 WebUI.verifyElementText(findTestObject('Share/Page_Folders - PowerFolder/td_usermailcom'), memberDisplayName)

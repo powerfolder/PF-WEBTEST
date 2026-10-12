@@ -22,7 +22,7 @@ public class TagHelper {
 
     private static final String ROW_XPATH = "//*[contains(@data-search-keys, '%s')]"
     private static final String TAG_ADD_ICON = "//*[contains(@class,'pica-tag-add')]"
-    private static final String TAG_CHIP = "//*[contains(@class,'pica-tag-chip') and not(contains(@class,'pica-tag-chip-more'))]"
+    private static final String TAG_CHIP = "//*[contains(concat(' ',normalize-space(@class),' '),' pica-tag-chip ') and not(contains(@class,'pica-tag-chip-more'))]"
     private static final String EDITOR_INPUT_CSS = ".pica-tageditor-wrapper.pica-tageditor-inline .pica-tageditor-input"
     private static final String EDITOR_SUGGESTION_CSS = ".pica-tageditor-wrapper.pica-tageditor-inline .pica-tageditor-suggestions .pica-tageditor-suggestion"
     private static final String ROW_MENU_TAGS_ITEM_CSS = "#files_files_table ul.conext-dropdown-menu a.files-ui-tags"
@@ -203,11 +203,21 @@ public class TagHelper {
 
     @Keyword
     static void searchForTag(String tagText) {
+        clearSearch()
         TestObject searchInput = findTestObject('Folders/inputSearch')
         String query = tagText.contains(' ') ? ('tag:"' + tagText + '"') : ('tag:' + tagText)
         WebUI.setText(searchInput, query)
         WebUI.sendKeys(searchInput, Keys.chord(Keys.ENTER))
         WebUI.delay(2)
+    }
+
+    @Keyword
+    static void clearSearch() {
+        List<WebElement> clear = DriverFactory.getWebDriver().findElements(By.id('pica_action_search_clear'))
+        if (!clear.isEmpty() && clear[0].isDisplayed()) {
+            WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(clear[0]))
+            WebUI.delay(2)
+        }
     }
 
     @Keyword

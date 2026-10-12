@@ -131,7 +131,6 @@ enterGroupName(subGroupName)
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
 
-// wait for the save request to finish before reloading the page
 WebUI.delay(3)
 
 WebUI.refresh()
@@ -155,14 +154,12 @@ enterGroupName(subSubGroupName)
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
 
-// wait for the save request to finish before reloading the page
 WebUI.delay(3)
 
 WebUI.refresh()
 
 WebUI.delay(2)
 
-// check level 1: subgroup has subsubgroup as member and inherits the parent folder
 def btn_check = findGroup(subGroupName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn_check))
@@ -185,7 +182,6 @@ WebUI.refresh()
 
 WebUI.delay(2)
 
-// check level 2: subsubgroup inherits the parent folder
 def btn_3 = findGroup(subSubGroupName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn_3))
@@ -306,11 +302,6 @@ void verifyFolderPermission(String folderName, String expectedPermission) {
 
     WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(20))
 
-    /*
-	 * Restrict the search to the Folders tab of the group dialog, otherwise the
-	 * groups overview table in the background can match the folder name.
-	 * Inherited folders are rendered read-only (no dropdown, no tooltip).
-	 */
     String folderRowXpath = "//div[@id='pica_group_folders']//tr[td[@data-bs-original-title='$folderName' or @title='$folderName' or contains(normalize-space(.), '$folderName')]]"
 
     WebElement folderRow
@@ -319,22 +310,12 @@ void verifyFolderPermission(String folderName, String expectedPermission) {
         folderRow = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(folderRowXpath)))
     }
     catch (org.openqa.selenium.TimeoutException e) {
-        List<String> shownRows = driver.findElements(By.xpath("//div[@id='pica_group_folders']//tr")).collect({ WebElement row ->
-                row.getText().trim()
-            }).findAll({ String text ->
-                text
-            })
-
-        WebUI.comment("Folders visible in the group dialog: $shownRows")
-
         WebUI.verifyEqual("Folder '$folderName' not listed", "Folder '$folderName' listed with '$expectedPermission'", FailureHandling.STOP_ON_FAILURE)
 
         return null
     }
 
     String rowText = folderRow.getText().trim()
-
-    WebUI.comment("Folder row '$folderName' : '$rowText'")
 
     WebUI.verifyMatch(rowText, '(?s).*' + java.util.regex.Pattern.quote(expectedPermission) + '.*', true, FailureHandling.STOP_ON_FAILURE)
 }
@@ -382,6 +363,4 @@ void verifyGroupMember(String groupName) {
 	catch (org.openqa.selenium.TimeoutException e) {
 		WebUI.verifyEqual("Group '$groupName' not listed as member", "Group '$groupName' listed as member", FailureHandling.STOP_ON_FAILURE)
 	}
-
-	WebUI.comment("Group '$groupName' is listed as member")
 }

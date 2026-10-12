@@ -22,6 +22,7 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
+import helpers.LocalizedText as LocalizedText
 
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
 String memberEmail = GlobalVariable.userEmail
@@ -92,7 +93,7 @@ try {
 }
 
 // PFC-3543/PFC-3618: a stale/direct link into a top folder whose share was revoked now gets
-WebUI.verifyElementText(findTestObject('notifications_toastmessage'), 'Access not possible. You are not authorized to open this folder.')
+LocalizedText.verifyText(findTestObject('notifications_toastmessage'), 'notification_error_access_not_possible')
 WebUI.verifyMatch(WebUI.getUrl(), '.*/files$', true)
 WebUI.verifyElementNotPresent(tlfPresent, 10)
 WebUI.verifyEqual(suspiciousConsoleEntries.isEmpty(), false)
