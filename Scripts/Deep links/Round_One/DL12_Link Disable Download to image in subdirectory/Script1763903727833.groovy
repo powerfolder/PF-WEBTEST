@@ -41,6 +41,7 @@ import java.util.Date as Date
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import helpers.Helper as Helper
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import helpers.WindowTitle as WindowTitle
 
 //Top-level
 
@@ -135,7 +136,7 @@ WebUI.delay(2)
 
 WebUI.navigateToUrl(my_clipboard)
 
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.delay(5)
 

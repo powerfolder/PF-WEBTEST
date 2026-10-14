@@ -23,6 +23,8 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import credentials.CredentialsManager as CredentialsManager
+import login.LoginHelper as LoginHelper
+import helpers.WindowTitle as WindowTitle
 
 // Ouvre un nouveau navigateur
 WebUI.openBrowser('')
@@ -34,19 +36,9 @@ WebUI.maximizeWindow()
 WebUI.navigateToUrl(GlobalVariable.URL)
 
 // Vérifie si le titre de la page correspond à "Login - PowerFolder"
-assert WebUI.getWindowTitle().equals('Login - PowerFolder')
+WindowTitle.verify('Login')
 
-// Remplit le champ de saisie pour le nom d'utilisateur avec la valeur de la variable globale Username
-WebUI.setText(findTestObject('Login/inputEmail'), CredentialsManager.getAdminUsername())
-
-// Attend jusqu'à 2 secondes pour que l'élément de saisie de mot de passe soit visible et stocke le résultat dans isPresent
-isPresent = WebUI.waitForElementVisible(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_Recover password_Password'),
-	2)
-
-// Vérifie si l'élément de saisie de mot de passe est présent sur la page
-assert isPresent
-
-WebUI.setText(findTestObject('Login/inputPassword'), CredentialsManager.getAdminPassword())
+LoginHelper.enterCredentials(CredentialsManager.getAdminUsername(), CredentialsManager.getAdminPassword())
 
 // Clique sur le bouton "Login"
 WebUI.click(findTestObject('Object Repository/Login/Page_Login - PowerFolder/input_register new account_Login'))

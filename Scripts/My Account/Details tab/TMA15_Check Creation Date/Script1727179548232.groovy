@@ -27,6 +27,7 @@ import java.nio.file.Files as Files
 import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
+import login.LoginHelper as LoginHelper
 
 
 // Plan de test : Connexion en tant qu'administrateur
@@ -63,11 +64,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
 // Connexion avec le nouvel utilisateur
-WebUI.setText(findTestObject('Login/inputEmail'), Emailid)
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(Emailid, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

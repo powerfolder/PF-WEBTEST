@@ -67,6 +67,7 @@ import org.openqa.selenium.WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.junit.Assert
 import helpers.Helper
+import helpers.WindowTitle as WindowTitle
 //Top-level
 
 String topLevel = "Top-level_" + getRandomFolderName()
@@ -166,7 +167,7 @@ WebUI.setText(findTestObject('Page_Link - PowerFolder/inputPassword'), 'Easy_PAS
 
 WebUI.click(findTestObject('Page_Link - PowerFolder/buttonOK'))
 
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.delay(2)
 

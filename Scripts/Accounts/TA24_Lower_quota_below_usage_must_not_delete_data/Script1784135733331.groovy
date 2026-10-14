@@ -28,6 +28,8 @@ import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import java.time.Duration as Duration
 import java.util.Arrays as Arrays
 import credentials.CredentialsManager as CredentialsManager
+import login.LoginHelper as LoginHelper
+import helpers.WindowTitle as WindowTitle
 
 int uploadWaitSeconds = 600
 
@@ -64,11 +66,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.userEmail)
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(GlobalVariable.userEmail, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
@@ -127,15 +125,13 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang
 WebUI.delay(2)
 
 // --- Log back in as admin ---
-WebUI.setText(findTestObject('Login/inputEmail'), CredentialsManager.getAdminUsername())
-
-WebUI.setText(findTestObject('Login/inputPassword'), CredentialsManager.getAdminPassword())
+LoginHelper.enterCredentials(CredentialsManager.getAdminUsername(), CredentialsManager.getAdminPassword())
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
 WebUI.delay(2)
 
-assert WebUI.getWindowTitle().equals('Dashboard - PowerFolder')
+WindowTitle.verify('Dashboard')
 
 WebUI.click(findTestObject('LeftNavigationIcons/account'))
 
@@ -197,11 +193,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.userEmail)
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(GlobalVariable.userEmail, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

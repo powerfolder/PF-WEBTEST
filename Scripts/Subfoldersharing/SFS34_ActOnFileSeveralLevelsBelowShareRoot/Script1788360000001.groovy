@@ -23,6 +23,7 @@ import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
 import helpers.LocalizedText as LocalizedText
+import login.LoginHelper as LoginHelper
 
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
 String memberEmail = GlobalVariable.userEmail
@@ -78,8 +79,7 @@ WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.setText(findTestObject('Login/inputEmail'), memberEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(memberEmail, GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))

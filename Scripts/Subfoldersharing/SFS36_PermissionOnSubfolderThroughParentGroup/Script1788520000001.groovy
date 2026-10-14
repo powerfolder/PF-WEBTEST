@@ -24,6 +24,7 @@ import org.openqa.selenium.support.ui.WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions
 import com.kms.katalon.core.webui.driver.DriverFactory
 import helpers.LocalizedText as LocalizedText
+import login.LoginHelper as LoginHelper
 
 // Group C / PFS-5510: group "Child" gets nested under group "Parent" (added as a subgroup on
 // Parent's own Members tab - the dedicated "Parents" tab is present in the DOM but deliberately
@@ -95,8 +96,7 @@ WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.setText(findTestObject('Login/inputEmail'), memberEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(memberEmail, GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))

@@ -22,6 +22,7 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -44,7 +45,7 @@ WebUI.setText(findTestObject('Object Repository/Folders/inputFolderName'), folde
 
 WebUI.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 String textfilename = getRandomFileName()
 
@@ -85,7 +86,7 @@ WebUI.switchToWindowIndex(1)
 
 WebUI.navigateToUrl(my_clipboard)
 
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.delay(10)
 

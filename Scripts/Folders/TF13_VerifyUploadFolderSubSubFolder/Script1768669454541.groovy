@@ -35,11 +35,12 @@ import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
 import java.util.Arrays
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
 // Vérifie le titre
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 // Création dossier principal
 WebUI.click(findTestObject('Folders/createFolderIcon'))

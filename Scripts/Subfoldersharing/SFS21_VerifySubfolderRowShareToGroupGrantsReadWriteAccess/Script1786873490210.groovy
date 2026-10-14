@@ -22,6 +22,7 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
+import login.LoginHelper as LoginHelper
 
 /*
  * Scenario "Group A - sharing and revoking": share a subfolder with a GROUP (read/write).
@@ -91,8 +92,7 @@ WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 // permission of its own, only the group did
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.setText(findTestObject('Login/inputEmail'), memberEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(memberEmail, GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))

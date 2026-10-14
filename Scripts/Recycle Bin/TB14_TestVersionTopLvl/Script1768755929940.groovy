@@ -23,10 +23,11 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import java.util.Arrays as Arrays
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 

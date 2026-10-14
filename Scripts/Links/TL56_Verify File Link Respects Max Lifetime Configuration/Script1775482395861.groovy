@@ -35,6 +35,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKey
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import java.util.Random as Random
 import java.util.Locale as Locale
+import login.LoginHelper as LoginHelper
+import helpers.WindowTitle as WindowTitle
 
 GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
 
@@ -76,11 +78,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
-WebUI.setText(findTestObject('Login/inputEmail'), Emailid)
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(Emailid, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
@@ -98,7 +96,7 @@ WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebUI.delay(2)
 
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 

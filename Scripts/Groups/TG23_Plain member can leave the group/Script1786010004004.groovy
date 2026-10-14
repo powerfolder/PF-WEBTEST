@@ -31,6 +31,7 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import login.LoginHelper as LoginHelper
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -87,11 +88,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
-WebUI.setText(findTestObject('Login/inputEmail'), user1)
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(user1, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
@@ -173,11 +170,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
-WebUI.setText(findTestObject('Login/inputEmail'), user2)
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(user2, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

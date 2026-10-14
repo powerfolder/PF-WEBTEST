@@ -42,6 +42,7 @@ import java.text.SimpleDateFormat
 import java.util.Calendar
 import helpers.Helper
 import org.apache.commons.lang3.RandomStringUtils
+import helpers.WindowTitle as WindowTitle
 // Top-level
 String topLevel = 'Top-level_' + Helper.getSmartName()
 
@@ -156,7 +157,7 @@ WebUI.navigateToUrl(my_clipboard)
 
 
 // Vérification du titre de la fenêtre
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 // Attendre que la page charge
 WebUI.delay(3)

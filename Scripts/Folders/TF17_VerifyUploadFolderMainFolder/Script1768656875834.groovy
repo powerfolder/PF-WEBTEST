@@ -52,11 +52,12 @@ import javax.swing.JFrame as JFrame
 import java.nio.file.Path as Path
 import java.time.Duration as Duration
 import java.io.File as File
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
 // Vérifie si le titre de la page correspond à "Folders - PowerFolder"
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))

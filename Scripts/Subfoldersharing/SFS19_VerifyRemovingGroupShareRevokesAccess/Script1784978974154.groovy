@@ -23,6 +23,7 @@ import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
 import helpers.LocalizedText as LocalizedText
+import login.LoginHelper as LoginHelper
 
 /*
  * Subfolder Sharing spec, section 4.2 ("Aendern oder Entfernen von Berechtigungen") for GROUPS:
@@ -68,8 +69,7 @@ WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 // confirm the group's member has immediate access to the subfolder
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.setText(findTestObject('Login/inputEmail'), memberEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(memberEmail, GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))
@@ -101,8 +101,7 @@ WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 // confirm the group's member lost access to the subfolder
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.setText(findTestObject('Login/inputEmail'), memberEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(memberEmail, GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))
@@ -137,8 +136,7 @@ WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.setText(findTestObject('Login/inputEmail'), memberEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(memberEmail, GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))
@@ -172,8 +170,7 @@ WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 // confirm the group's member lost access to the sub-subfolder
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.setText(findTestObject('Login/inputEmail'), memberEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(memberEmail, GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))

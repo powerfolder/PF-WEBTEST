@@ -19,6 +19,7 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import org.openqa.selenium.Keys as Keys
+import login.LoginHelper as LoginHelper
 
 WebUI.callTestCase(findTestCase('User_News/Pre_test/Create_user'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -28,11 +29,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
-WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.userEmail)
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(GlobalVariable.userEmail, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

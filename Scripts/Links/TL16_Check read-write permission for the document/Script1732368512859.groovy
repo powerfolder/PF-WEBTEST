@@ -23,6 +23,8 @@ import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
 import credentials.CredentialsManager as CredentialsManager
+import login.LoginHelper as LoginHelper
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('Links/pre_test/Create_document_link'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -64,7 +66,7 @@ WebUI.switchToWindowIndex(1)
 WebUI.navigateToUrl(my_clipboard)
 
 // Vérifier le titre de la fenêtre
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 // Attendre le chargement de la page
 WebUI.delay(3)
@@ -73,9 +75,7 @@ WebUI.delay(3)
 WebUI.switchToWindowIndex(0)
 
 // Log admin back in to verify the link settings
-WebUI.setText(findTestObject('Login/inputEmail'), CredentialsManager.getAdminUsername())
-
-WebUI.setText(findTestObject('Login/inputPassword'), CredentialsManager.getAdminPassword())
+LoginHelper.enterCredentials(CredentialsManager.getAdminUsername(), CredentialsManager.getAdminPassword())
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

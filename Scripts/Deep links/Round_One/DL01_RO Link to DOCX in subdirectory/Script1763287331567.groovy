@@ -61,6 +61,7 @@ import java.util.Calendar as Calendar
 import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import helpers.Helper
+import helpers.WindowTitle as WindowTitle
 
 //Top-level
 
@@ -157,7 +158,7 @@ WebUI.delay(2)
 
 WebUI.navigateToUrl(my_clipboard)
 
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.delay(10)
 

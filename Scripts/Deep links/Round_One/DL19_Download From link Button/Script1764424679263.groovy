@@ -40,6 +40,7 @@ import java.util.Calendar as Calendar
 import java.util.Date as Date
 import org.junit.Assert as Assert
 import helpers.Helper as Helper
+import helpers.WindowTitle as WindowTitle
 
 //Top-level
 
@@ -140,7 +141,7 @@ WebUI.delay(3)
 
 WebUI.verifyElementPresent(findTestObject('Page_Link - PowerFolder/span_Add file'), 5)
 
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.click(findTestObject('Links/Page_Link - PowerFolder/Copy_link'))
 

@@ -39,6 +39,7 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Calendar as Calendar
 import java.util.Date as Date
 import helpers.Helper as Helper
+import helpers.WindowTitle as WindowTitle
 
 //Top-level
 String topLevel = 'Top-level_' + Helper.getSmartName()
@@ -129,7 +130,7 @@ WebUI.delay(2)
 
 WebUI.navigateToUrl(my_clipboard)
 
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.delay(10)
 

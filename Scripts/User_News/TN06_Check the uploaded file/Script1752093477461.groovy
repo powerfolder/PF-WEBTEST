@@ -27,6 +27,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import java.util.Arrays as Arrays
 import java.util.Date as Date
 import java.util.Random as Random
+import login.LoginHelper as LoginHelper
 
 // === Test Case Execution ===
 WebUI.callTestCase(findTestCase('User_News/Pre_test/Create_user'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -37,11 +38,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
-WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.userEmail)
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(GlobalVariable.userEmail, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

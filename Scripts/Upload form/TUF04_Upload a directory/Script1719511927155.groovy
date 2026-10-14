@@ -37,6 +37,7 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import credentials.CredentialsManager as CredentialsManager
+import login.LoginHelper as LoginHelper
 
 WebUI.callTestCase(findTestCase('Upload form/Pre_Test/Creat_upload_form'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -71,9 +72,7 @@ WebUI.click(findTestObject('1Upload_Form/Page_Link - PowerFolder/lang_Close'))
 WebUI.switchToWindowIndex('0')
 
 // Log admin back in to verify the upload result
-WebUI.setText(findTestObject('Login/inputEmail'), CredentialsManager.getAdminUsername())
-
-WebUI.setText(findTestObject('Login/inputPassword'), CredentialsManager.getAdminPassword())
+LoginHelper.enterCredentials(CredentialsManager.getAdminUsername(), CredentialsManager.getAdminPassword())
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

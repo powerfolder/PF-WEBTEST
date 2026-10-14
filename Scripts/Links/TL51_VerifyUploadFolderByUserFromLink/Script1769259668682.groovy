@@ -54,6 +54,7 @@ import java.awt.FileDialog as FileDialog
 import javax.swing.JFrame as JFrame
 import java.nio.file.Path as Path
 import java.time.Duration as Duration
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('My Account/Pre_test/Create Account'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -101,7 +102,7 @@ WebUI.navigateToUrl(my_clipboard)
 
 WebUI.delay(3)
 
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebDriver driver = DriverFactory.getWebDriver()
 
@@ -138,7 +139,9 @@ WebUI.delay(2)
 
 deleteFolder(folderPath) 
 
-WebUI.navigateToUrl('https://mimas.powerfolder.net/folderstable')
+def baseUrl = new URL(GlobalVariable.URL)
+
+WebUI.navigateToUrl(baseUrl.protocol + '://' + baseUrl.authority + '/folderstable')
 
 WebUI.delay(3)
 

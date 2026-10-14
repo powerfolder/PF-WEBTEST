@@ -28,6 +28,7 @@ import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import java.time.Duration as Duration
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import login.LoginHelper as LoginHelper
 
 
 // Appel du cas de test pour ajouter un membre
@@ -84,11 +85,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
-WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.userName)
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(GlobalVariable.userName, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

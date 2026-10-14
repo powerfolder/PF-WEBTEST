@@ -83,6 +83,7 @@ import java.util.Calendar as Calendar
 import java.util.Date as Date
 import org.junit.Assert as Assert
 import helpers.Helper as Helper
+import helpers.WindowTitle as WindowTitle
 
 //Top-level
 
@@ -189,7 +190,7 @@ WebUI.navigateToUrl(my_clipboard)
 
 
 // Vérification du titre de la fenêtre
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 // Attendre que la page charge
 WebUI.delay(3)

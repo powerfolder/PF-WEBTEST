@@ -24,6 +24,7 @@ import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -43,7 +44,7 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 WebUI.click(findTestObject('Links/share_icon_inside_folder'))
 
@@ -80,7 +81,7 @@ WebUI.setText(findTestObject('Page_Link - PowerFolder/inputPassword'), 'Alexa@13
 
 WebUI.click(findTestObject('Page_Link - PowerFolder/buttonOK'))
 
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.closeBrowser()
 

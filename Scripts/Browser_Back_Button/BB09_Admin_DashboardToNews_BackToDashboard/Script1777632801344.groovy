@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -25,7 +26,7 @@ WebUI.click(findTestObject('News_User/Page_News - PowerFolder/News'))
 WebUI.delay(2)
 
 // Verify Activity page (page was renamed from "News" — activity.vm:1 sets TITLE = "Activity - $skinTitle")
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Activity - PowerFolder')
+WindowTitle.verify('Activity')
 
 // Browser back button
 WebUI.back()
@@ -33,7 +34,7 @@ WebUI.back()
 WebUI.delay(2)
 
 // Verify Dashboard page
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
+WindowTitle.verify('Dashboard')
 
 WebUI.closeBrowser()
 

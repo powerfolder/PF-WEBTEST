@@ -21,6 +21,7 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import utils.FormGenerator as FormGenerator
+import helpers.WindowTitle as WindowTitle
 
 WebUI.openBrowser('')
 
@@ -28,7 +29,7 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(GlobalVariable.URL)
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Login - PowerFolder')
+WindowTitle.verify('Login')
 
 WebUI.verifyElementClickable(findTestObject('Login/registerNewAccountLink'))
 

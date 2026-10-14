@@ -14,10 +14,11 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 
 import org.apache.commons.lang3.RandomStringUtils
 import java.io.File
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.STOP_ON_FAILURE)
 
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 String folderName = "TF9_" + RandomStringUtils.randomAlphanumeric(6)
 

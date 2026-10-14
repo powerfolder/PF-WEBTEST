@@ -24,6 +24,8 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import java.awt.Toolkit
 import java.awt.datatransfer.DataFlavor
 import helpers.Helper
+import login.LoginHelper as LoginHelper
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
 String memberEmail = GlobalVariable.userEmail
@@ -69,8 +71,7 @@ WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.setText(findTestObject('Login/inputEmail'), memberEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(memberEmail, GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))
@@ -113,7 +114,7 @@ WebUI.delay(2)
 
 WebUI.navigateToUrl(fileLinkUrl)
 WebUI.delay(3)
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.delay(10)
 WebUI.verifyElementVisible(findTestObject('ONLY OFFICE/iframe_editor'))
@@ -124,7 +125,7 @@ WebUI.switchToDefaultContent()
 
 WebUI.navigateToUrl(folderLinkUrl)
 WebUI.delay(3)
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Link - PowerFolder')
+WindowTitle.verify('Link')
 
 String uploadedFileName = 'sfs39_' + RandomStringUtils.randomAlphanumeric(6) + '.txt'
 File localFile = File.createTempFile('sfs39_', '.txt')

@@ -50,6 +50,8 @@ import javax.swing.JFrame as JFrame
 import java.nio.file.Path as Path
 import java.io.OutputStream as OutputStream
 import java.time.Duration as Duration
+import login.LoginHelper as LoginHelper
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -109,11 +111,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
-WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.userEmail)
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(GlobalVariable.userEmail, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
@@ -129,7 +127,7 @@ WebUI.setText(findTestObject('Object Repository/Folders/inputFolderName'), folde
 
 WebUI.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 String textfilename = getRandomFileName()
 

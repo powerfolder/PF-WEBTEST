@@ -25,6 +25,8 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import credentials.CredentialsManager as CredentialsManager
+import login.LoginHelper as LoginHelper
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('Links/pre_test/create_text_file_link'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -55,16 +57,14 @@ WebUI.switchToWindowIndex(1)
 
 WebUI.navigateToUrl(my_clipboard)
 
-assert WebUI.getWindowTitle() == 'Link - PowerFolder'
+WindowTitle.verify('Link')
 
 WebUI.delay(2)
 
 WebUI.switchToWindowIndex(0)
 
 // Log admin back in to verify the link settings
-WebUI.setText(findTestObject('Login/inputEmail'), CredentialsManager.getAdminUsername())
-
-WebUI.setText(findTestObject('Login/inputPassword'), CredentialsManager.getAdminPassword())
+LoginHelper.enterCredentials(CredentialsManager.getAdminUsername(), CredentialsManager.getAdminPassword())
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

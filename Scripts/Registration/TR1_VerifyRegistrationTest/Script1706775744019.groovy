@@ -21,6 +21,8 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import utils.FormGenerator as FormGenerator
+import login.LoginHelper as LoginHelper
+import helpers.WindowTitle as WindowTitle
 
 WebUI.openBrowser('')
 
@@ -28,7 +30,7 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(GlobalVariable.URL)
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Login - PowerFolder')
+WindowTitle.verify('Login')
 
 WebUI.verifyElementClickable(findTestObject('Login/registerNewAccountLink'))
 
@@ -58,7 +60,7 @@ WebUI.click(findTestObject('Registration/Page_Register - PowerFolder/RegisterBut
 WebUI.delay(3)
 
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Register - PowerFolder')
+WindowTitle.verify('Register')
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
 
@@ -78,9 +80,7 @@ WebUI.click(findTestObject('Accounts/SaveButton'))
 
 WebUI.navigateToUrl(GlobalVariable.URL)
 
-WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.userEmail)
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(GlobalVariable.userEmail, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
@@ -90,7 +90,7 @@ WebUI.click(findTestObject('Login/loginSubmit'))
 
 WebUI.delay(2)
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 WebElement findAccount(String emailId) {
     WebDriver driver = DriverFactory.getWebDriver()

@@ -23,6 +23,7 @@ import org.openqa.selenium.WebElement as WebElement
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import java.util.Arrays as Arrays
 import tags.TagHelper as TagHelper
+import login.LoginHelper as LoginHelper
 
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
 String ownerEmail = GlobalVariable.userEmail
@@ -44,8 +45,7 @@ WebUI.click(findTestObject('Accounts/SaveButton'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.setText(findTestObject('Login/inputEmail'), ownerEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(ownerEmail, GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(2)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))
@@ -73,8 +73,7 @@ WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.setText(findTestObject('Login/inputEmail'), secondEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(secondEmail, GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(2)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))

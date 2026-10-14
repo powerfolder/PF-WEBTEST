@@ -67,6 +67,7 @@ import org.openqa.selenium.WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.junit.Assert
 import helpers.Helper
+import helpers.WindowTitle as WindowTitle
 
 //Top-level
 
@@ -179,7 +180,7 @@ WebUI.navigateToUrl(my_clipboard)
 
 WebUI.delay(3)
 
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.click(findTestObject('Page_Folders - PowerFolder/closeExpiredAlert'))
 

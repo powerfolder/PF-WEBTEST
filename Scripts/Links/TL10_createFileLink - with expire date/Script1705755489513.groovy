@@ -34,6 +34,7 @@ import java.util.Calendar as Calendar
 import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import java.util.Random as Random
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -51,7 +52,7 @@ WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebUI.delay(2)
 
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 
@@ -122,7 +123,7 @@ WebUI.navigateToUrl(my_clipboard)
 
 WebUI.delay(3)
 
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.click(findTestObject('Page_Folders - PowerFolder/closeExpiredAlert'))
 

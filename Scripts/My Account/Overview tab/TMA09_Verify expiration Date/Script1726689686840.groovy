@@ -29,6 +29,7 @@ import java.util.Calendar as Calendar
 import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import java.util.Random as Random
+import login.LoginHelper as LoginHelper
 
 // Plan de test
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
@@ -80,9 +81,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
-WebUI.setText(findTestObject('Login/inputEmail'), Emailid)
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(Emailid, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

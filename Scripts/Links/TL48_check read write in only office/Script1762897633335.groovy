@@ -31,6 +31,8 @@ import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import login.LoginHelper as LoginHelper
+import helpers.WindowTitle as WindowTitle
 
 
 GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
@@ -74,7 +76,7 @@ WebUI.setText(findTestObject('Object Repository/Folders/inputFolderName'), folde
 
 WebUI.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 String textfilename = getRandomFileName()
 
@@ -137,11 +139,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
-WebUI.setText(findTestObject('Login/inputEmail'), Emailid)
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(Emailid, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
@@ -150,7 +148,7 @@ WebUI.switchToWindowIndex(1)
 WebUI.navigateToUrl(my_clipboard)
 
 // Vérification du titre de la fenêtre
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.delay(10)
 

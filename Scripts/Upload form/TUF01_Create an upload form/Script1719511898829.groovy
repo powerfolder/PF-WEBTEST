@@ -40,6 +40,7 @@ import java.awt.Robot as Robot
 import java.awt.event.KeyEvent as KeyEvent
 import java.io.IOException as IOException
 import credentials.CredentialsManager as CredentialsManager
+import login.LoginHelper as LoginHelper
 
 WebUI.callTestCase(findTestCase('Upload form/Pre_Test/Creat_Folder'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -102,9 +103,7 @@ WebUI.switchToWindowIndex(0)
 WebUI.delay(2)
 
 // Log admin back in to verify the upload result
-WebUI.setText(findTestObject('Login/inputEmail'), CredentialsManager.getAdminUsername())
-
-WebUI.setText(findTestObject('Login/inputPassword'), CredentialsManager.getAdminPassword())
+LoginHelper.enterCredentials(CredentialsManager.getAdminUsername(), CredentialsManager.getAdminPassword())
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

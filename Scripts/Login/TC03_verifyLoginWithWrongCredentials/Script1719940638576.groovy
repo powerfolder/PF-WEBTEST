@@ -1,11 +1,12 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import login.LoginHelper as LoginHelper
+import helpers.WindowTitle as WindowTitle
 
 WebUI.openBrowser(GlobalVariable.URL)
 WebUI.maximizeWindow()
-WebUI.setText(findTestObject('Login/inputEmail'), 'username')
-WebUI.setText(findTestObject('Login/inputPassword'), 'password')
+LoginHelper.enterCredentials('username', 'password')
 WebUI.click(findTestObject('Login/loginSubmit'))
 
 String actualErrorMessage = WebUI.getText(findTestObject('Login/getLoginErrorMessage'))
@@ -20,5 +21,5 @@ if (actualErrorMessage == expectedMessageGerman) {
 	WebUI.verifyFail('The error message does not match any of the expected values. Actual message: ' + actualErrorMessage)
 }
 
-WebUI.verifyNotEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
+WindowTitle.verifyNot('Dashboard')
 WebUI.closeBrowser()

@@ -24,6 +24,7 @@ import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -88,7 +89,7 @@ WebUI.navigateToUrl(my_clipboard)
 
 WebUI.delay(3)
 
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.verifyElementText(findTestObject('Page_Link - PowerFolder/getPasswordBodyText'), 'This link is password protected')
 
@@ -96,7 +97,7 @@ WebUI.setText(findTestObject('Page_Link - PowerFolder/inputPassword'), 'Alexa@13
 
 WebUI.click(findTestObject('Page_Link - PowerFolder/buttonOK'))
 
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.closeBrowser()
 

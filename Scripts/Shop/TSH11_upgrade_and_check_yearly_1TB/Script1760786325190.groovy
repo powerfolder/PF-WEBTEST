@@ -17,6 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.util.regex.Pattern
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('Shop/Pre_test/upgrade_yearly_1TB'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -62,7 +63,7 @@ WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/Return to PowerFolder
 
 WebUI.delay(2)
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 WebUI.closeBrowser()
 

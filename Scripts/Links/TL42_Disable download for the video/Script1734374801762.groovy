@@ -24,6 +24,7 @@ import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('Links/pre_test/import video'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -60,7 +61,7 @@ WebUI.switchToWindowIndex(1)
 WebUI.verifyNotEqual(WebUI.getWindowTitle(), '', FailureHandling.CONTINUE_ON_FAILURE)
 
 // Vérification du titre de la fenêtre
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.delay(2)
 

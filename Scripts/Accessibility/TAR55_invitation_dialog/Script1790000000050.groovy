@@ -20,6 +20,8 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import credentials.CredentialsManager as CredentialsManager
+import login.LoginHelper as LoginHelper
+import helpers.WindowTitle as WindowTitle
 
 // Builds its own two-account scenario (via the admin account, same flow as
 // Test Cases/Accounts/Edit_Account/pre_test/Create_Account) instead of relying on the
@@ -33,15 +35,13 @@ WebUI.openBrowser(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Login/inputEmail'), CredentialsManager.getAdminUsername())
-
-WebUI.setText(findTestObject('Login/inputPassword'), CredentialsManager.getAdminPassword())
+LoginHelper.enterCredentials(CredentialsManager.getAdminUsername(), CredentialsManager.getAdminPassword())
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
 WebUI.delay(2)
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
+WindowTitle.verify('Dashboard')
 
 WebUI.click(findTestObject('LeftNavigationIcons/account'))
 
@@ -102,15 +102,13 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Login/inputEmail'), emailB)
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(emailB, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
 WebUI.delay(2)
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 // --- Account B creates a folder and shares it with Account A ---
 String folderName = 'TAR55_' + getRandomSuffix()
@@ -146,15 +144,13 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Login/inputEmail'), emailA)
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(emailA, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
 WebUI.delay(2)
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 WebElement folderRow = findFolder(folderName)
 

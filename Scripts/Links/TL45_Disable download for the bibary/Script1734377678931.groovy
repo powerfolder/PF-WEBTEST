@@ -52,6 +52,7 @@ import java.text.SimpleDateFormat
 import java.util.Calendar
 import helpers.Helper
 import org.apache.commons.lang3.RandomStringUtils
+import helpers.WindowTitle as WindowTitle
 // Top-level
 String topLevel = 'Top-level_' + getRandomFolderName()
 
@@ -170,7 +171,7 @@ WebUI.setText(findTestObject('Page_Link - PowerFolder/inputPassword'), 'Easy_PAS
 WebUI.click(findTestObject('Page_Link - PowerFolder/buttonOK'))
 
 // Vérification du titre de la fenêtre
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 // Attendre que la page charge
 WebUI.delay(3)

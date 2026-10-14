@@ -24,6 +24,7 @@ import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -45,7 +46,7 @@ WebUI.click(findTestObject('Folders/buttonOK'))
 
 WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 WebUI.setText(findTestObject('Accounts/inputAccountSearch'), folderName)
 
@@ -87,7 +88,7 @@ WebUI.navigateToUrl(my_clipboard)
 
 WebUI.delay(3)
 
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 //assert WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Download Limit Reached'),2)
 //assert isNotBlank(WebUI.getText(findTestObject('Object Repository/Page_Link - PowerFolder/lang_Download Limit Reached')))

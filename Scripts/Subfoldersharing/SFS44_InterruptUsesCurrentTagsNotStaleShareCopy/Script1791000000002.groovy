@@ -23,6 +23,7 @@ import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
 import tags.TagHelper as TagHelper
 import subfoldersharing.InheritanceHelper as InheritanceHelper
+import login.LoginHelper as LoginHelper
 
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
 String memberEmail = GlobalVariable.userEmail
@@ -57,8 +58,7 @@ verifyNotFoundByTag(tagOld, subName)
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.setText(findTestObject('Login/inputEmail'), memberEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(memberEmail, GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))

@@ -46,6 +46,8 @@ import static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.*
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import credentials.CredentialsManager as CredentialsManager
+import login.LoginHelper as LoginHelper
+import helpers.WindowTitle as WindowTitle
 
 // create folder with uploadform where expiration is in 2min future
 WebUI.callTestCase(findTestCase('Upload form/Pre_Test/Creat_Folder'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -119,9 +121,7 @@ WebUI.switchToWindowIndex(0)
 WebUI.delay(2)
 
 // Log admin back in to verify the upload result
-WebUI.setText(findTestObject('Login/inputEmail'), CredentialsManager.getAdminUsername())
-
-WebUI.setText(findTestObject('Login/inputPassword'), CredentialsManager.getAdminPassword())
+LoginHelper.enterCredentials(CredentialsManager.getAdminUsername(), CredentialsManager.getAdminPassword())
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
@@ -197,7 +197,7 @@ String my_clipboard_present_link = Toolkit.getDefaultToolkit().getSystemClipboar
 
 WebUI.navigateToUrl(my_clipboard_present_link)
 
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.verifyElementPresent(findTestObject('lang/expiredlinkText'), 30)
 
@@ -271,7 +271,7 @@ String my_clipboard_past_link = Toolkit.getDefaultToolkit().getSystemClipboard()
 
 WebUI.navigateToUrl(my_clipboard_past_link)
 
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.verifyElementPresent(findTestObject('lang/expiredlinkText'), 30)
 

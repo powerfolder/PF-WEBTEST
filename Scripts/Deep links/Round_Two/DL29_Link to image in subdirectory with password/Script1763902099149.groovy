@@ -41,6 +41,7 @@ import java.util.Date as Date
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import helpers.Helper as Helper
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import helpers.WindowTitle as WindowTitle
 
 //Top-level
 String topLevel = 'Top-level_' + Helper.getSmartName()
@@ -144,7 +145,7 @@ WebUI.setText(findTestObject('Page_Link - PowerFolder/inputPassword'), passWithE
 
 WebUI.click(findTestObject('Page_Link - PowerFolder/buttonOK'))
 
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.delay(10)
 

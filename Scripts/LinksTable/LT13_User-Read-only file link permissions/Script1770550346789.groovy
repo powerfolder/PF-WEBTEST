@@ -22,6 +22,7 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('My Account/Pre_test/Create Account'), [:], FailureHandling.OPTIONAL)
 
@@ -41,7 +42,7 @@ WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 

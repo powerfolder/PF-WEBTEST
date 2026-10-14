@@ -23,6 +23,7 @@ import org.openqa.selenium.Keys
 import org.openqa.selenium.support.ui.WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions
 import com.kms.katalon.core.webui.driver.DriverFactory
+import login.LoginHelper as LoginHelper
 
 /*
  * Subfolder Sharing spec, section 1.1/2.0 for GROUPS: Group A gets an explicit share on the
@@ -143,8 +144,7 @@ WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 // --- Group A's member: sees Subfolder (explicit) and SubSubfolder (inherited), NOT TopFolder ---
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.setText(findTestObject('Login/inputEmail'), memberAEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(memberAEmail, GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))
@@ -163,8 +163,7 @@ WebUI.verifyElementPresent(subSubFolderPresent, 10)
 // --- Group B's member: sees SubSubfolder only, NOT Subfolder, NOT TopFolder ---
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.setText(findTestObject('Login/inputEmail'), memberBEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(memberBEmail, GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))
