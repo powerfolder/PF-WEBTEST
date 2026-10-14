@@ -1,5 +1,25 @@
 # PF-WEBTEST
 
+## Setup
+
+1. **System Requirements**
+   - Windows OS
+   - 6 CPU cores
+   - 12 GB RAM
+
+2. **User Profile**
+   - Create your own profile or complete the customer profile.
+
+3. **Credentials Configuration**
+   - Create a file named `<profile_name>_pf_webtest-credentials.properties` in your user home directory.
+   - Add the following content:
+
+   ```properties
+   adminusername=example_name
+   adminpassword=example_password
+   ```
+
+
 # Katalon Best Practices Guide
 
 ## Test Organization
