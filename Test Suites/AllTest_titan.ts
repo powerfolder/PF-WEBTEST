@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>AllTest</name>
+   <name>AllTest_titan</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -12,79 +12,58 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>ea5f2274-03a5-4494-8334-0a86fa3508de</testSuiteGuid>
+   <testSuiteGuid>22925f63-ffc8-4e2a-9008-2037c0a69234</testSuiteGuid>
    <testCaseLink>
-      <guid>416b5723-ce55-45e8-998e-7eca00071077</guid>
+      <guid>6a9e4bab-c3b0-4cdc-944f-814432f8ba31</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/pre_test/check_eng</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>52b8d6bd-2ad6-4e9d-a647-a8cf41a3f551</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Servers/TSE01_Open</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>65301e19-ee0b-4471-9d2c-565a1a99b5ad</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Servers/TSE02_Restart</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e4e7889e-ef11-4523-9adb-3a76a62f4757</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Servers/TSE03_Delete</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>89d8deeb-1fe3-41a9-87a2-80b4605f849a</guid>
+      <guid>b5a952d3-aabc-4760-bb98-cd440295202a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/My Account/Overview tab/TMA08_Verify validation Date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3f291b84-786f-420c-aef9-afbc32aeb4b0</guid>
+      <guid>8adce48c-7e03-4770-b0ce-1eab3f33fad2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/My Account/Overview tab/TMA09_Verify expiration Date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>78219c13-615f-4784-9e69-37114a058645</guid>
+      <guid>7dc85fae-3114-4f40-8f3f-3569fbe2db6d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/PreTest_GoToShareable</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5b75012f-5331-48d5-8a07-14f8bd76b5f7</guid>
+      <guid>2e951025-8148-4b13-bac2-97f38c7ea245</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF1_VerifyNewFolderCreation</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>738abb7a-7c8f-4157-8525-dddbea84e9c2</guid>
+      <guid>e678f68d-331d-4384-b6d8-03c3c06a3801</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF2_ValidateFolderCreationUsingKeyboardSubmit</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>652e60de-7b7f-44d8-89ac-5b56ea30b172</guid>
+      <guid>61b1e910-db0e-4d24-ac82-40290dd1eb18</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF3_VerifyDeleteFolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>13394b78-a2d5-4ebe-aea2-957cb0d645f4</guid>
+      <guid>a1b9428d-0463-4711-bbe3-c1a5f0f99f09</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login/Pretest - Admin Login</testCaseId>
@@ -97,21 +76,21 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>b4928063-f61f-43bc-b48e-f985169c01e7</guid>
+      <guid>7dd09fe7-cb20-4a33-9feb-54b8b78bbb8f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF6_VerifyExistingFolderManage</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6ef18011-4b47-491a-a247-c6d6dde7ecb5</guid>
+      <guid>72b606ca-e697-4d9f-9b6c-a2eb9c29efc6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Help/TH1_verifyHelpPage</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c46087ec-d531-4e15-9eef-7c382317f4d8</guid>
+      <guid>5194f03c-75b9-4815-920e-847ecf3fc39c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login/TC01_VerifyAdminLoginWithValidCredentails</testCaseId>
@@ -124,35 +103,35 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>69d86557-e976-47ed-8b46-9df91eed70e2</guid>
+      <guid>3d8293ff-0fef-42c4-a14e-3d5e89031025</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login/TC02_UserShouldNotAllowToLoginWithoutPassword</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0aea3cdc-c477-4011-adc5-b2b14a7ec6df</guid>
+      <guid>74e81cfe-7b5a-429b-8c1c-9372ad91dcce</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login/TC03_verifyLoginWithWrongCredentials</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>eaa517a5-03f7-49cc-ba3c-c4ae1671e4f4</guid>
+      <guid>cb48626e-5758-49db-bbb2-40fb55aa5562</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login/TC04_verifylogout</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8add11a1-9891-4afa-aa87-60f11cb993e6</guid>
+      <guid>65142fa5-6d5d-4a2f-8766-845d0df2054d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Organization/TO01_CreateNewOrganization</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6c96e90f-f3a0-403e-96ca-e3662911b94c</guid>
+      <guid>dcb57283-5628-4dd2-8d04-0559eeb6d682</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Organization/TO02_EditOrganization</testCaseId>
@@ -165,98 +144,98 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>9c026b5b-fe04-4bd0-9431-bd4c32319b74</guid>
+      <guid>2b4731b8-1411-4d73-bd4f-8f76d3e2628c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Organization/TO03_EditOrganizationBranding</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0954c4cc-69e1-4460-b974-2ff9f945f564</guid>
+      <guid>b45a0137-4a44-4817-9bb2-0f6b0642c09f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Organization/TO04_EditOrganizationDomain</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>484506d0-72eb-48c0-bd03-f156d639478f</guid>
+      <guid>3f09241d-1a1e-4edc-a7bf-2f15b80605b6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Organization/TO05_EditOrganizationAddingMembers</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4efb2240-5dd9-42a3-9359-1a6f9357f9a7</guid>
+      <guid>05e2b475-de9f-4781-ac6f-efd51d13e52e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Organization/TO06_EditOrganizationAddingGroups</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>de30550a-3fe5-4797-8d0c-3b00e6e6f3cb</guid>
+      <guid>49ee58d6-0e94-4fdc-81b0-0eb452eb34d4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/invites/TSF01_can see invite input for a folder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4f18a6b2-615f-4c9a-92de-243acfb9de6f</guid>
+      <guid>39a8dfaa-904e-4c84-9a7f-5d6495d9088f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/invites/TSF02_should not see invite input on files</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b6c701bd-c59a-4ccd-a033-10abfa1dc2b5</guid>
+      <guid>043b4bbd-df05-40b8-934d-24de6bea8bf5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/invites/TSF03_should see invite input when going inside folder and coming back</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>bd8ca7a3-d28a-4f26-a5c3-9002392bae9b</guid>
+      <guid>02e647a6-ac3b-42cf-af16-2863727800d1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/invites/TSF04_should not see invite input on sub folder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>50f47bbd-15fa-49b4-9453-79dcdddc8567</guid>
+      <guid>33268aa8-c430-4dee-9801-2d117f8bca49</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS10_Share folder with Multiple emails multiple separators</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4b87a79e-f169-4cf5-b3eb-a348cf5aa0b7</guid>
+      <guid>1326c236-06a1-4c8f-9ad4-61d3c24fe2ba</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS11_Share folder multiple emails with white spaces in iput with multiple separators</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f10bcb53-2625-4c34-ae35-8addc70a642e</guid>
+      <guid>3090971e-8108-41fc-a634-f6317b3cb828</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS01_Share folder multiple emails with white spaces in iput</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>607c1c00-920c-48f5-8d10-4e647a39d168</guid>
+      <guid>ee605988-30aa-48f3-8e33-b5d2177fd9a3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS02_Share folder with one email outlook format</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f6c9888f-2683-4703-ba1a-0cb3f846dd13</guid>
+      <guid>da70e14c-abd8-4146-93c7-bb828c9d3e39</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/CleanUpScripts/CL1_CleanFolders</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ff2b4307-b6a8-4288-8151-a37660d6b07d</guid>
+      <guid>7e3e454a-9917-44e6-843d-185e023c8be9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS14_Share Folder With one email adress</testCaseId>
@@ -269,77 +248,77 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>bbae59de-b1bf-474a-8da5-3076bdf1666d</guid>
+      <guid>73d3a399-10a5-42e4-9c5a-0794ff7b82af</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS05_Share folder with Multiple emails tabulation separator</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5a80d4b1-1b77-4d10-875c-f1bb74c19624</guid>
+      <guid>f5956168-5b9b-4d5a-9eaf-4a02d8343c35</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS06_Share folder with Multiple emails semi colon</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b738933d-52ac-4c48-906e-46cc1eb813cd</guid>
+      <guid>80ca0beb-4d29-4e34-a9c9-fc6f8c479126</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS07_Share folder with Multiple emails comma separator</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6830de6e-0a28-459b-ab1b-10b8fa19d51d</guid>
+      <guid>080d64c9-b58a-4729-9bcd-4f3be5c15fb1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS08_Share Folder With Group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b8b77aed-c5e6-4119-b7ff-857e869f7fe5</guid>
+      <guid>782a9eed-3fe0-4ff2-bf1f-1359c27b3afe</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS09_Share folder with Multiple emails colon separator</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>63fc97bf-b81e-408f-949f-cbfe2a88a256</guid>
+      <guid>c9aced39-00fc-41cb-ac76-150499c13939</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS12_Share folder multiple emails with white space in inpit</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1da6c127-f9d5-4289-b29c-cf2d9e0b297d</guid>
+      <guid>c2e5f051-874b-4840-a66c-69e9bb2945e2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS13_Share folder with one email outlook format</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ecc7762f-37da-48f1-9b0e-d702426b25e1</guid>
+      <guid>d6351e1c-81c1-4ae9-af51-42e4306be341</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS04_Share folder with Multiple outlook emails</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>fc71319d-1da1-4610-adc6-7dbc8c4ea693</guid>
+      <guid>f205a569-33b3-4f9d-95cb-ba9c183399b8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS15_Share folder with Multiple outlook emails</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>403fe466-9d8f-489f-8567-201fa8665a29</guid>
+      <guid>9cbaa05e-5382-4cf3-bd82-6458df7b6b02</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS16_Share folder with Multiple emails semi colon</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6450f73b-be20-4a02-ba0d-46ad16348338</guid>
+      <guid>5258563d-f78a-4683-8c55-acc2120123ee</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using enter/TS03_Share Folder With one email adress</testCaseId>
@@ -352,315 +331,315 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>e469e260-39e5-40dd-aec6-46ed887c200a</guid>
+      <guid>0fecf7f4-87b1-472e-a984-e8c254b039a2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS18_Share folder with Multiple emails multiple separators</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>9a61226d-b958-476c-b155-e58faed62be1</guid>
+      <guid>9d75e03a-6ba1-4a5f-969c-d32852eeeabd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS19_Share folder with Multiple emails tabulation separator</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>25b425ae-f868-4b68-a42e-72627facc882</guid>
+      <guid>f4602cb3-1e89-4d6a-9348-7627f6dcf324</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS20_Share folder with Multiple emails comma separator</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>cdf4c0a3-c07d-4986-b778-d46312a6a0e5</guid>
+      <guid>d73356ab-ea14-4fd8-a348-d3472e86994a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS21_Share folder with Multiple emails colon separator</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e164eb3d-e064-40a5-a0e3-2be2b10123cf</guid>
+      <guid>f5bd2525-9121-4356-8d43-a508272b6b91</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS22_Share folder multiple emails with white space in inpit multiple separators</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5f6e7b72-4e6e-4fa8-a899-95ea6a0b2b78</guid>
+      <guid>e5dfa386-8355-46cf-92e5-615c1218e9b8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/Share Using plus button/TS17_Share Folder With Group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>aef606f2-923f-4f62-bb1a-7d3bdd76cee7</guid>
+      <guid>c920ea1d-309d-4716-b88f-d433e3d11075</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA01_VerifyAccountCreation</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e6ff63f1-bbde-480b-886a-2dd411db59e5</guid>
+      <guid>610e6a06-22e3-4a13-949d-964da3eb3a63</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA10_AddFolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6ef3b431-82e9-4759-9e50-58751820b015</guid>
+      <guid>81619532-0f41-4f0e-9e13-39dfb7710fdb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA11_AddFolderManageVerify</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1aef70e0-44e0-4e41-a62c-1190ef7542c2</guid>
+      <guid>c3c31c28-60db-45d4-92c3-75202ac20b8b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA12_VerifyGrantAccessNowButton</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c0806c34-0f8e-40b5-a081-8d511d2837bb</guid>
+      <guid>57606b77-11f0-4ee5-8892-4e13ee3cacf7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA13_VerifyResetNowButton</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0971cf21-8906-49e4-90f8-3a339f391f50</guid>
+      <guid>a02ef67e-eaa5-4ac3-b8fe-c571794b0f14</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/CleanUpScripts/CL2_CleanAccounts</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7fd38c72-e249-47ec-a9a2-ada1695b5ebf</guid>
+      <guid>1bab988f-e974-4413-baed-4032baf0083f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA15_SelectEnglishLanguage</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0fe81293-7d05-4d31-8e41-376789b3f891</guid>
+      <guid>9f7c3d53-fc66-4523-9acb-ed7a884a3a36</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA16_SelectGermanLanguage</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4f46e692-d050-4ef9-9be3-b2a13afc8d15</guid>
+      <guid>c3af2263-3faf-48da-9616-50a2d1586d87</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA17_VerifyDeactiveAccountButton</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4658e424-11a1-496c-8158-4bc9ded53d39</guid>
+      <guid>3da385ab-610d-43e1-aa08-a3c8eb07db42</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA01_VerifyAccountCreation</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8b4f0676-d3db-45b7-bcb7-82c70a47f369</guid>
+      <guid>309a7c7e-b34f-48b8-ab17-a5cd9b3ced84</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA02_EditAccount</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8b0eda89-78fd-4ff5-bba5-7b848e8273ce</guid>
+      <guid>01989b14-4352-4433-b11a-c0501aa4dcad</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA03_VerfiyAvtar</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>811c3836-dc82-4b75-aa7f-ddf529221a22</guid>
+      <guid>c5021fd3-cf5d-4d23-bd10-9d0cb551e65f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA04_VerifyDeleteAvatar</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e5dfb5fd-1bcd-4baa-a6f7-14f8d110fc96</guid>
+      <guid>c70245f6-ab00-41c3-8463-3e428af98e81</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA05_VerfiyPasswordPolicies</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>626d393a-8fc7-49a9-b958-f987746960b4</guid>
+      <guid>748de193-d788-4b51-9321-26888a8d43a7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA06_VerifyAccountCreationWithBlankEmail</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>29ea89b5-798d-40d8-94ac-f32fa25b8a93</guid>
+      <guid>b5f3c3a2-5aa6-47e0-8260-034432cf7fb3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA07_VerfiyExportAccount</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c24cd86e-977d-461f-b8c6-b99f5f20dba6</guid>
+      <guid>0eb1f06a-3113-40fb-8350-252cccf43a55</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA08_VerifyImportAccounts</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a52ad904-2f53-4f2d-a6c2-c7ee93c270b5</guid>
+      <guid>3665d287-7087-422e-b21a-a887cb8d32e7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA14_VerifyBlockNowButton</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>cfe6e210-76d9-4464-a429-064e00427e90</guid>
+      <guid>331d4774-3baf-438c-908b-de1abf70c060</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF7_VerifyFolderDownload</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8bf91e47-f389-47e7-a446-5fe96b052178</guid>
+      <guid>a9223e52-6882-4692-a276-2010347fbe44</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Storages/TST1_ListStorages</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>85d30f8a-fd8c-4a08-bdcf-a3cb2bb51bf1</guid>
+      <guid>32f49f62-d90d-411a-bfdd-92c0a87845e5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Storages/TST2_CreateStorage</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d0ed9099-5776-4078-a3ef-d9b386e02bc4</guid>
+      <guid>645af0f2-2f83-4dbe-b982-a2d52a168239</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Storages/TST3_DisableStorage</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>569634b0-8aea-424e-978e-f01ba12caf8f</guid>
+      <guid>7bb469c5-9c04-4be5-87ee-5442974ac623</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Storages/TST4_EnableStorage</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4e4e2f59-bbeb-469a-840d-98941abebdc3</guid>
+      <guid>fe118454-4d4d-4350-b67e-a888c898ec8b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Storages/TST5_DeleteStorage</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>bd858eca-0df7-41f6-b811-04bbf49a4bfd</guid>
+      <guid>29661718-102b-4555-bdbe-1901f8ab6064</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Storages/TST6_DeletePrimaryStorage</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7ba10b68-6707-4364-9305-dfe691c7a674</guid>
+      <guid>5e013720-eecb-4c43-84ad-100c73db2306</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Storages/TST7_DeleteAllStorages</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>24bbeec2-dfa9-4fb5-ba4e-0a9c484c3575</guid>
+      <guid>ad102c95-58c8-4460-bc29-c7cf795ed50f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/CleanUpScripts/CL3_DeleteGroups</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b4165844-2fee-4eb4-a299-5cd77b078d39</guid>
+      <guid>b426de64-7320-4644-83aa-c2fdb8332d46</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG01_List groups</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a7b4b435-62bf-41e9-a1ce-2ef5ddace09e</guid>
+      <guid>245a6217-afdd-40f8-b949-d6143830d8aa</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG02_Create group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3c13ddce-a5b3-4ba1-8529-f3019b8c4eef</guid>
+      <guid>d71cf1f4-5d3e-4b02-a5ce-dfde06d10aa8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG03_Edit group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ea2a580b-08ae-43fb-8afa-d48f14e86ee8</guid>
+      <guid>322a2855-b1d0-4c06-8d5b-d0c367400b02</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG04_Delete group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>85170904-331f-4a61-bfb9-670c58bd5e20</guid>
+      <guid>420221b6-dc9a-46d2-8fe9-c9ce120f5d82</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG05_Delete all groups</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1c2dc67b-39d9-49fe-a02d-f7183adda60e</guid>
+      <guid>0e4bf084-c658-4e88-9b58-1aa7e45161ae</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA09_AddAdditionalEmails</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>712af5a7-8f4e-4f75-9480-2ac8a35fec8f</guid>
+      <guid>45d5cd25-2de0-46f5-8aec-1e797680c762</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG07_Add folder to group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3db70275-8920-4d18-b772-ca6fe67a9273</guid>
+      <guid>ccf69cc3-9c43-4214-9ed3-63946d9c187c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG08_Delete a folder from a group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8d44338b-c815-48b8-9fdc-b6c826f07523</guid>
+      <guid>7bc61b6a-9ee2-40a8-aa2c-d0e3403f2e47</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG09_Create folder inline</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>bfb2b257-1f73-4dbb-abd2-5d99817f6a90</guid>
+      <guid>f2e81875-b2aa-49ee-a013-5f68da448501</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG10_Change permissions of the folder in the group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2f8dba2c-1ab3-4491-883a-c1147510d0be</guid>
+      <guid>33981fdc-cad6-4da2-9f05-7f5d5fd8e954</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG11_Add member to group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>cea305e1-1832-4476-b748-d8575f95f275</guid>
+      <guid>5ef596ff-5b56-4a18-b84e-ac5e8f92925c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG12_Change role of member</testCaseId>
@@ -685,35 +664,35 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>fbe94d69-9043-4484-b540-27bd789b9e94</guid>
+      <guid>2cb26249-923b-48cf-a6b0-0535987c4ca5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG13_Delete a member from a group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>68c8f7c2-3b09-42ea-984d-85807d81f6f9</guid>
+      <guid>c9694cd4-0c24-4877-8c89-cf35b67e8d81</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG14_Add an organization to group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a784d495-a149-4482-b59f-339df60009da</guid>
+      <guid>4f47a374-3528-4dd6-a771-34c7d66a2544</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG15_Remove organization from group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7aa7c99e-df63-4409-aed4-28497f6cc569</guid>
+      <guid>16dca63f-851b-4804-9854-7e2fe145fc03</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/CleanUpScripts/CL1_CleanFolders</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>cc131033-2904-4c84-bb7d-c0a9493384ce</guid>
+      <guid>547bf9c2-413a-4630-9bf2-42797d0501a2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF01_Create directories</testCaseId>
@@ -738,14 +717,14 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>9aae0f8c-42c8-4d45-ab39-ae4af4fee088</guid>
+      <guid>a01f9a6f-8641-43c5-a64b-1744a2a71ff4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF02_Navigate directories</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4128dc5b-fc8c-45c7-9a98-283840bac89f</guid>
+      <guid>d100e6ef-70c6-4b6a-9e84-3cd12f8330fd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF03_Create Document</testCaseId>
@@ -758,7 +737,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>4320fcb8-9118-4b84-8596-f991d2f5507d</guid>
+      <guid>c01b3a7c-fbb6-4a81-a508-e20a07d5bf21</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF04_Rename Document</testCaseId>
@@ -771,21 +750,21 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>97086099-190f-422a-948b-3b6fe6e1b2a7</guid>
+      <guid>992dda05-9c1d-4ca1-9791-b249d632e8b8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG06_Change avatar</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>20316f31-f750-415b-9b0f-67194f1c0f28</guid>
+      <guid>3dd74ddc-9c8a-4b11-958a-195ac4ba1d8b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF06_Cat Document</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>db839897-674d-4a76-9c70-e109360d255e</guid>
+      <guid>a4f6bd1b-918f-4c17-9d32-a074d8ffdda1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF07_Copy Document</testCaseId>
@@ -798,14 +777,14 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>2f34046a-7d15-468e-a8aa-23afbf260d86</guid>
+      <guid>6f627658-77a3-4f63-b9ff-a32890040fae</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF08_Download Document</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>013b0c27-06a7-4a08-8a79-00ff73f4f2a5</guid>
+      <guid>8be1c73c-2170-4f46-aff3-09a6319f0d57</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF09_Create Text file</testCaseId>
@@ -824,7 +803,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>39db89d8-a0ad-46c8-97b1-2180230b4638</guid>
+      <guid>599c7cc9-80ed-4aa6-b423-7c624c72d149</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF10_create spreadsheet</testCaseId>
@@ -843,7 +822,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>84bb0c39-57e4-4971-93aa-60388dfd046a</guid>
+      <guid>709537ef-c796-4f94-b669-c69160770c97</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF11_Create CSV file</testCaseId>
@@ -862,7 +841,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>9277173d-fe30-4761-921e-36a6c365f37f</guid>
+      <guid>cfe14a69-3a04-497d-bf93-4ea6e55923e7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF12_Create presentation</testCaseId>
@@ -881,7 +860,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>830aeaa9-7f4d-4923-9ca6-fadfc952c338</guid>
+      <guid>b5d66c03-d7d0-4f15-a589-6752884358d3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF13_Upload file</testCaseId>
@@ -894,49 +873,49 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>f85c9694-3b79-491c-8742-9e67a7fddfe6</guid>
+      <guid>d972340a-6a89-46d8-b433-6af4a9ca34db</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF14_Upload 10xfiles</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>cb4d72d1-a128-4d62-8351-74653f1dc16b</guid>
+      <guid>30c25714-b58b-47a7-b8cb-9b6588056a01</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF15_Delete all files</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>949e78c5-a2f3-4df0-b57c-a61c7e43ebaf</guid>
+      <guid>c60c72aa-1e62-47f5-a81d-0101ce7dcb7b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF16_Upload folder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>9bbf8afe-5c4d-4a0a-a5b7-fdcf89c82b62</guid>
+      <guid>73e54a24-ac5e-42d8-a437-3a49cbf24ee5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF17_Restore old version</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6d257634-fab2-4ea4-b3c8-117451610c29</guid>
+      <guid>b7d1eaca-1ce0-4d79-89dc-8d57d4d357ec</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF18_Create document in sub subdir</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4c7f7e06-6110-4737-897d-7db63739fa1c</guid>
+      <guid>b7a14634-4cff-45b6-af31-7950d9bafb46</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF19_Cut_Paste_between_topvlvl</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>640417e7-981b-4cbc-8098-4a9dbe153dda</guid>
+      <guid>e57c7788-3479-4bb1-a63f-1a39e7784296</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Upload form/TUF01_Create an upload form</testCaseId>
@@ -949,21 +928,21 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>571c2271-c364-4867-985a-af725ce2c6cf</guid>
+      <guid>29e7e7f8-69a8-4b53-8e10-495fd1ce51ee</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Upload form/TUF02_Delete an upload from</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7bf8d423-772e-4956-bb28-b7749758d6df</guid>
+      <guid>c2ea4ac7-ac6e-4c31-a78b-65bf315f8b93</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Upload form/TUF03_Upload a file by Upload form</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>9a16fb14-6228-48da-9c5d-c019e62f678e</guid>
+      <guid>fef48ec7-1940-4066-a923-5b2c19980a6c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF05_Delete Document</testCaseId>
@@ -976,14 +955,14 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>e178a19c-a2f1-420d-860e-bc73f8f3d625</guid>
+      <guid>b87421b2-517d-4f5c-86b6-8814aff230b2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Upload form/TUF05_Change upload form</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>cc5ef949-d2d2-41cd-8e0c-9470209ff299</guid>
+      <guid>0630fb5f-c1df-4927-b8ff-045314c462f4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Upload form/TUF06_Connect with password</testCaseId>
@@ -996,14 +975,14 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>fff6794e-b6b1-4454-bd24-680eda89e804</guid>
+      <guid>775b254a-b626-4284-bc0a-224712dbc54e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Upload form/TUF07_Connect with two sessions</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2a60ee21-4398-45ee-aa2a-e95eb46469eb</guid>
+      <guid>26a10815-7f04-4030-992f-b3ac5eef617b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Upload form/TUF08_Create an upload form and check expiration</testCaseId>
@@ -1016,63 +995,63 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>c4f3b38e-dc64-46e8-a02b-c3c9340205cb</guid>
+      <guid>bd3aecc9-8975-4798-b640-5ca247963d8b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Logs/TLG01_Logs show up</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e4ff7ba6-5fe0-480a-86a1-c26264880f2f</guid>
+      <guid>fbaf518a-d378-4479-bdf8-baff193b7dda</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Logs/TLG02_Check server</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>02424e68-f5ce-45b4-9edb-1accf480a38f</guid>
+      <guid>bdc496f3-6358-46b7-b0a0-e23c5e7e8130</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Logs/TLG03_Check log from Dashboard</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>19028493-5bc7-4c20-a5ab-0b6f91f09ccd</guid>
+      <guid>b5f8f26b-e9f1-47d4-a154-a92bff1935b5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Logs/TLG04_Create support package</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8b72d699-ac65-4de2-8631-b043a4854f92</guid>
+      <guid>eed0bb22-95b6-40f5-9489-33efcad0300f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Logs/TLG05_Pause Resume</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4c184f77-647a-42fe-8010-b801327a1bae</guid>
+      <guid>1e43dbc8-992b-4846-a986-189403d12479</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/My Account/Overview tab/TMA01_Change Avatar</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>cce361bc-7384-4106-8056-542ff0c201f8</guid>
+      <guid>ec82fbe4-2e5b-4190-a7d8-ba62612f98c8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/My Account/Overview tab/TMA02_Delete Avatar</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>494fb725-7086-453a-8dea-4e3c89e8c466</guid>
+      <guid>1cb4ba5f-75ea-4109-b34f-6859b457c65e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/My Account/Overview tab/TMA03_Upgrade Quota</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>445635be-2f3c-43ec-b11c-6519d954587e</guid>
+      <guid>7d60e85f-ce2c-40af-a8c5-ed80e6319061</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/My Account/Overview tab/TMA04_Verify Username</testCaseId>
@@ -1085,2877 +1064,2737 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>d554291e-dcd7-40ce-a86d-20a8cb7df859</guid>
+      <guid>b6aefd18-505e-441a-a31f-baedae09a7f0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/My Account/Overview tab/TMA05_Change Password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>92036d5d-25d3-4015-aa55-d641d1f14ff7</guid>
+      <guid>48309b18-74aa-4627-ba1a-e8baf4b7a38f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/My Account/Overview tab/TMA06_Change Language</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>563ca5c5-fab9-4687-aabd-6c10e4349eac</guid>
+      <guid>0f1ae5c5-6ac8-4808-b9b4-1ba0d8009900</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Upload form/TUF04_Upload a directory</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8dc163f8-19c3-40b3-9a5c-86d391ca97e5</guid>
+      <guid>8e1eed8d-1973-42fc-bc67-689b1d637fba</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/My Account/Details tab/TMA10_change title</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a89abe75-21ca-4f17-bdd2-d0db52490316</guid>
+      <guid>f936f7f9-7f74-49e2-a261-8c3de03a5cad</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/My Account/Details tab/TMA11_Change First Name</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3b1acd96-b429-4259-8872-0246f1425b5a</guid>
+      <guid>d8cbd64b-01b9-4739-92ea-00e57e7eb1fb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/My Account/Details tab/TMA12_Change Last Name</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1efd875b-0efc-4b15-9d75-cb35dd3b30ae</guid>
+      <guid>3fb8b9ce-9eef-45e0-a41c-68d7f06aa485</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/My Account/Details tab/TMA13_Change Phone Numer</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f2f26498-9afa-4b87-ac5e-0ece3d351ddd</guid>
+      <guid>aaf952a6-8aee-40d9-bd16-1fc7be36f94f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/My Account/Details tab/TMA14_Manage E-mail</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>bbf3a4f7-7645-44f8-a48a-cc4c7eeb1a31</guid>
+      <guid>97422cd0-fb9d-48fd-a940-d7d4c8aee902</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/My Account/Details tab/TMA15_Check Creation Date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>69202cde-278a-41f4-8c35-669fec8a4fb7</guid>
+      <guid>489e2738-2032-4ffd-b11d-d41b0093870c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/My Account/Organizations tab/TMA16_Check Organization Name</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2b8c2db8-8c88-46c0-a45c-9660b339d660</guid>
+      <guid>11ccf4ca-8457-4259-946c-78bdb850a4fe</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/My Account/Devices Tab/TMA17_Check Devices with keep me login</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1c474725-bd37-45cd-90eb-96a6479d1af9</guid>
+      <guid>1fbdd2ef-79ae-40d0-a8b7-a1b51b02d986</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/My Account/Devices Tab/TMA18_Check_Devices_without_keep_me_login</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b3304f60-ed80-4aba-bb0c-d9bdbad62cb5</guid>
+      <guid>42b76cdf-2372-47c6-a21c-4e52ff4fae4b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/My Account/Overview tab/TMA07_date validation Upgrade</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>601bd523-d913-4377-aa34-be878967d7d8</guid>
+      <guid>62b8219d-92f5-4517-9003-56bd75f5d15b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/Edit_Account/EA02_Edit_Email</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>238bac08-92e9-45db-8ecd-6f919096ec78</guid>
+      <guid>beec0a0a-c03f-4c00-8ab5-dda16e255c4b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/Edit_Account/EA03_Edit_User_name</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1b070c22-3e78-46e9-8e8d-e8da641ab456</guid>
+      <guid>22c6bf34-d8fa-4397-87e0-913f944888c0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/Edit_Account/EA04_Edit_Password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c093b7ae-89a2-4965-bce6-335c93fa5ca0</guid>
+      <guid>9c5649ff-8f72-4ff7-8b9d-7d61d12590e3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/Edit_Account/EA05_Edit_Phone_Number</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f705e65d-8330-4a19-b4ef-2cce3432f9e6</guid>
+      <guid>b9c982a8-ac19-4419-8ba3-cd24bfe42881</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/Edit_Account/EA06_Edit_Quata</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d4bd617c-a18a-4287-b2e2-f1bd72643464</guid>
+      <guid>ac832b59-7bf6-47af-9b28-64ac003cab39</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/Edit_Account/EA07_Edit_Valid_TillDate</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c9d103ad-7b35-4ca5-941f-58b0fe111bee</guid>
+      <guid>9ef75540-3194-4b11-bcbc-86e9e35581ea</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/Edit_Account/EA08_Enable_Disable_Account</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>84d0708f-c315-46bb-b582-c23291dd3122</guid>
+      <guid>07b047f3-6bf8-4cde-965b-a0b58e11f869</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/Edit_Account/EA09_Edit_Additional_Emails</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>775690ae-3f7f-46d9-80aa-96c5618bd37e</guid>
+      <guid>5ad2f8ee-96ed-4e0a-a56b-48ee2d64a677</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/Edit_Account/EA10_check_Note</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>48b2020b-e7d2-4a6d-9750-a9e12e06b282</guid>
+      <guid>669c6af9-6c5a-4b8c-8c55-520c3736b5fd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/Edit_Account/EA11_Check_Save_Button_Functionality</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>db2f7fa4-e8c2-411f-83c5-423de22a99aa</guid>
+      <guid>bd2fef3b-54c8-4342-a7f5-ca3638ddf9cc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/Edit_Account/EA12_Check_Cancel_Button_Functionality</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>639e318d-2d6b-4ef9-905a-31f36dd7155a</guid>
+      <guid>1d752e60-afa8-4c48-93f2-1cdf9b714b71</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/Edit_Account/EA01_Open_Edit_Account_Page</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3528e270-bdbc-47df-8818-cbe9fa5e2d66</guid>
+      <guid>5ed2f95b-3b5f-4dd1-8567-f20dc447d7bf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/Edit_Account/EA14_Check_Reseller_Toggle</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b6d6525f-fb90-4450-9a9c-e10dbd7d8516</guid>
+      <guid>7fa0e018-89dc-4f72-98f0-bdd4a8f190f7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/Edit_Account/EA15_Check_Language_Change</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>50e8f6b1-7929-42a7-ae96-5254507dd9b9</guid>
+      <guid>d050b877-0dc7-4461-bc38-e9d5c014a676</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/Edit_Account/EA16_Verify_Login_As</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>56b3f8c8-cd71-4cde-b622-c5826542ca5c</guid>
+      <guid>5b65bd9c-88c2-4018-a3ac-164dee227895</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/Edit_Account/EA17_Edit_folders</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d904e975-97d5-46c7-92e2-d74adf733b87</guid>
+      <guid>380cd0e7-e763-4c77-8780-c54b38b1127a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/Edit_Account/EA18_Edit_Groups</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>deaaad8e-0c3b-4e9b-9251-3ddf48923703</guid>
+      <guid>cc6a201d-1269-475d-87b3-23107d6d545d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/Edit_Account/EA19_Change_Organization</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e577044b-07c7-4088-a521-c4cc5fcf439d</guid>
+      <guid>b7a873ea-efb2-478f-bb1e-5e42d5b1fc75</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Recycle Bin/TB01_Restore file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>63e2b96c-ae7d-4eb4-97c1-578bfe0a22db</guid>
+      <guid>b40bc85a-01b0-4c26-b8aa-78a3cec007fe</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Recycle Bin/TB02_Restore up to 5 versions</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b3b73dcd-2c96-4364-811b-22a878ec0de7</guid>
+      <guid>e40b12d4-bc61-47e0-b29d-9f81df1486a6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Recycle Bin/TB03_Navigate between restored versions</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>85818aa8-45d7-416c-9ab2-7ad5292d5095</guid>
+      <guid>c0fcb5a8-ab99-42c5-ad72-0ce0c64fd024</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Recycle Bin/TB04_restore the first one</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>10d4fa5c-907a-4925-8c3d-734a4feb5eba</guid>
+      <guid>7e9a8794-8602-489c-ac74-c7741a35a921</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Recycle Bin/TB05_Restore many files</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>69e180f2-296e-40b9-987d-cd26ad83d734</guid>
+      <guid>e98de3f7-869d-4612-bff9-92507c1295d4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Recycle Bin/TB06_Check purge</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>75f7ecbb-4146-4f77-9211-86cf18ea0266</guid>
+      <guid>35cb4723-3b30-4c2e-a3dd-960968e277bc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Recycle Bin/TB07_Purge the bin</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>27e87c06-27d8-4964-94c5-b48974237be2</guid>
+      <guid>2666a697-397e-465c-9b72-64c40b0e97a0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Recycle Bin/TB08_Restore in sub sub directory</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a85599af-397d-4dc7-8978-989dbdaab418</guid>
+      <guid>16963407-c8ff-4adb-adab-762f258b0e86</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Recycle Bin/TB09_Download deleted file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8a69b471-c1a0-4aee-afd4-f6aa015656b0</guid>
+      <guid>e0bb3d2d-3f55-4a5b-9186-fea85e5a359d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Recycle Bin/TB10_Download deleted file from restore</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7a2ed48a-acce-4fd6-a1a3-747687aefb52</guid>
+      <guid>73e7a543-74ec-47f5-a2fb-0e4a1efd8ed2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Recycle Bin/TB11_Download the first version</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5aa9e2dd-986b-49a7-8968-f9dd64f6f42d</guid>
+      <guid>e7ed5f4a-09b1-4b3a-938f-182d6493886a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/Edit_Account/EA13_Check_Server_Admin_Toggle</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>705d70cc-08c1-42b3-8058-99e0fb4cb8d4</guid>
+      <guid>bbc0e8ad-83c1-46c3-ab6c-eec83b19e3d5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Avatar/TAV01_account avatar</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>166fdb6b-e7f0-4eef-a3fc-cc9fb0b50ded</guid>
+      <guid>762cf388-bdcb-48bd-9e2b-63d63fdc7bf7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Avatar/TAV02_group avatar</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7bdabfad-2406-470f-bf1c-b038ad550f0d</guid>
+      <guid>fe361d70-e871-47b1-a5fa-480eed30f9f3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Avatar/TAV03_Organizatipn avatar</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>82b4d562-e177-4686-a804-7496bb50ea4e</guid>
+      <guid>c9b3a394-0646-4b38-b002-31d449a1c44c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Avatar/TAV04_Org admin permission</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5278569c-71ad-4cfa-b686-58e5c2bb8670</guid>
+      <guid>cf8a01e4-3058-4515-9889-f70affbee88f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Avatar/TAV05_Grp admin permission</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b9ca2168-050e-4113-b3cd-00652ffacbd5</guid>
+      <guid>1344cdc7-4069-4516-ab4c-67c929a85957</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Avatar/TAV06_user avatar</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>378eb6e4-53e9-4191-bd66-213f5a4ff140</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Dashboard/TD01_Test_Buttons_on_admin_dashboard</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>0d48ad5e-d2f2-413f-93a5-3798989b56b5</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Dashboard/TD02_Test_Buttons_on_org_admin_dashboard</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f448e157-3204-49a2-86b6-7b55dcf2af21</guid>
+      <guid>8c7faa61-effb-4e32-a0bc-11337c5023cc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN01_check the timestamp of a newly created item</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>584ebcde-9aeb-40ba-a880-52c02d21fc5d</guid>
+      <guid>c57d292f-b8db-4c05-afed-c13a5aa8f81e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN02_Verify the name of the created folder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e7137834-3ccf-4fe0-b6bc-51738d2ce8ee</guid>
+      <guid>04a52d5f-e6b5-4f4a-9c72-f1f2775824f5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN03_Check the content present in the folder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2a559c5e-66dd-48fd-a3c2-c87c4b399120</guid>
+      <guid>fc3ea6d5-634c-49b9-8c15-c63c9b935c74</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN04_Open a file in News</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0eccfa6c-820f-49ec-aca7-11921bd36d76</guid>
+      <guid>f0ef005c-6a4a-47d8-8a86-3a1109b82d39</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN05_Open an uploaded image in news</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>dbb27dff-aa72-453c-ac9c-0800b9884cea</guid>
+      <guid>c48f17e1-83a3-43c0-8880-1db829ac823a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN06_Check the uploaded file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>dd98e663-f70a-4625-ade6-021ca0149bf4</guid>
+      <guid>8549d75a-6a3b-4dcd-8c9f-0b152d9acba3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN07_Verify contributor</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c1544982-0d64-4109-a824-62934251a1e8</guid>
+      <guid>9cbb6743-9d80-43fd-bad2-71e9305a4b8e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN08_Check a contributor in a shared folder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7f2d90bc-dc00-4200-9ce7-f5265c8ee041</guid>
+      <guid>252c27cc-5387-406a-811b-5b45b46d3a0b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN09_Check visibility of multiple top-level folders in News</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>72f689b0-82c6-4249-b0e4-45e91b1e7fdf</guid>
+      <guid>2b23e271-9e8d-439c-bc02-4f49a5706783</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN10_Scroll down to the bottom of the page</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>faeda97d-1e49-46d0-88b6-17ecb4697c70</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/External links/Login/TEL01_Documentation</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>854e61b2-55e4-4cb8-b319-fa37f2471142</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/External links/Login/TEL02_ Accessibility</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>30738323-3caa-4939-bf44-a1ec1c1657b9</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/External links/Login/TEL03_Cookies Policy</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>30756672-fe04-4fbe-b36c-658da9d9fa2f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/External links/Login/TEL04_ Imprint</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>0f031e5c-30b9-4a22-bb47-7da07b0b5882</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/External links/Login/TEL05_Plans and Pricing</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>66107bd7-b682-4d9f-85dd-0f278960d268</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/External links/Login/TEL06_Privacy Policy</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>4d62cdbf-7430-4e6c-869f-b26e9ac3a6ef</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/External links/Login/TEL07_Powered by PowerFolder</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b5432157-41e2-4ce7-8a79-47a3e6cbc972</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/External links/Login/TEL08_Report Accessibility Problem</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>fe75db2c-2dcf-40d4-b170-820d5e54419a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/External links/Download/TEL09_Download client IOS</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5db3d770-cf07-4e28-b962-e74ad04046ac</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/External links/Download/TEL10_Download client Android</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>327c1221-f749-41fa-8831-ae3c991668a8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/External links/Folders tab/TEL11_left-menu help</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e4c8ec11-a186-415b-b7d1-6a7d68bfb198</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/External links/Folders tab/TEL12_left-menu shop</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>1f93c884-4ef1-40e6-9533-037221fad956</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/External links/Folders tab/TEL13_Footer accessibility</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e1e8b1a5-6969-472a-9770-e1c2ec885daa</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/External links/Folders tab/TEL14_Footer imprant</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f75718c3-bcfd-413b-b44b-8157ac89f498</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/External links/Folders tab/TEL15_Footer Privacy Policy</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>762acdb9-0e8e-489b-975e-7ad19452e6ac</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/External links/Folders tab/TEL16_Footer Report Accessibility Problem</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>630a1087-768c-4ebf-ad1f-5b4bd0b7dc74</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/External links/Licence/TEL17_license</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>8e934df3-882f-4d21-9e00-40cd1222c5b2</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/External links/Licence/TEL18_Get server license</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>02f4d0f6-1133-4842-9813-9588c4973ab2</guid>
+      <guid>2ff754f1-17d0-47b8-b28c-04371fbfe4e2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Webdav/TWD01_verify_toplvl_folder_creation</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6f3f520b-4826-4381-9645-045e9c43a2ac</guid>
+      <guid>c5ebe330-a8d3-4c9f-a069-8861913f2660</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Webdav/TWD02_verify_subfolder_file_creation</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a73481fb-aa5f-427b-80c6-e17f00414388</guid>
+      <guid>b047665d-8a63-4005-b171-1374d7830608</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Webdav/TWD03_verify_folder_subfolder_file_deletion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4c76d19f-1121-477c-ba12-8ae250802751</guid>
+      <guid>abf3a4af-8bd1-4405-9b38-945ca44a7a45</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Webdav/TWD04_rename_file_toplvl</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1a8523b7-2d31-4821-a391-d6856ff03271</guid>
+      <guid>9bea2f75-1461-4585-af53-15a2e02e87b0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Webdav/TWD05_use_specific_toplvl_folder_as_webdav_point</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1a89621a-8385-4cc2-9cd9-aeb5ee8a4821</guid>
+      <guid>67a3d04b-1ec0-42f0-a8e7-eef769ce489b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Webdav/TWD06_verify_toplvl_folder_creation_by_token</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4b0a3ada-a455-4e3d-99c4-f17b45c3ba44</guid>
+      <guid>42a111c9-d938-48b8-84d5-78be5ffafb64</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Webdav/TWD07_verify_subfolder_file_creation _by_token</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c60a18af-c097-4605-bf27-2b3aa7eae83e</guid>
+      <guid>0c0385fc-e48e-43fa-b59c-df09e5bbc2cb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Webdav/TWD08_verify_folder_subfolder_file_deletion_by_token</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>994af850-cccb-4fbe-9abf-1a669bce8885</guid>
+      <guid>96014eb6-7cda-4baf-bba4-171052eacad7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Webdav/TWD09_rename_file_toplvl_by_token</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a23cfc7c-7bcf-41ab-86ee-473de5ca0e6b</guid>
+      <guid>a4510886-0016-4f60-96d5-92dda9b6a06f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Webdav/TWD10_use_specific_toplvl_folder_as_webdav_point_by_token</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>9433f066-685f-4ec7-8ee8-50e4172fe0ee</guid>
+      <guid>50037162-2542-4884-9290-73debef7521c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Registration/TR1_VerifyRegistrationTest</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ebd7d595-0756-46a7-8753-fdc2b29940d4</guid>
+      <guid>a513b56d-8314-434c-8dab-7e6b51d441e0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shop/TSH01_check_availability_of_shop_with_user_free_plan</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d7a637a4-68da-4f81-b0e2-5a32d3941a62</guid>
+      <guid>40780869-af6e-446d-9082-5df5b1643d5a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shop/TSH02_upgrade_free_user_monthly_1TB</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2a679818-64ae-4e92-86be-82073de8b8a3</guid>
+      <guid>0609ee7d-26d7-4619-9a61-a3b42ab098cd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shop/TSH03_upgrade_free_user_yearly_1TB</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>324d81ab-febd-4b69-a51f-19140cd1f360</guid>
+      <guid>020bbdfb-ebf9-44ba-bf96-26a7359b52e9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shop/TSH04_upgrade_free_user_monthly_6TB</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>182332e4-0673-4383-9e97-c72fd003038f</guid>
+      <guid>d78b5d32-cc33-471c-9e09-b1dc8c89e5a2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shop/TSH05_upgrade_free_user_yearly_6TB</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2e481944-4dbf-4650-bc48-36f6a571060c</guid>
+      <guid>01dc0958-4b2e-44e4-b6fa-8e8ca432711a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shop/TSH06_upgrade_free_user_monthly_1TB_from_my_account</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>87c4050c-c12c-4dc6-92d2-40932b20202e</guid>
+      <guid>a00786af-e704-4f4c-b409-0aa9b24e6830</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shop/TSH07_upgrade_free_user_yearly_1TB_from_my_account</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>cadffc3d-408f-424d-9be4-368079ef7312</guid>
+      <guid>d88accf6-e1a8-41ad-ad46-c43e6198a168</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shop/TSH08_upgrade_free_user_monthly_6TB_from_my_account</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>594b0f42-a41f-4383-83ee-c126ff3a7b45</guid>
+      <guid>2bd37c04-5d94-4a30-8e90-6c2dabb4c60d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shop/TSH09_upgrade_free_user_yearly_6TB_from_my_account</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8ace0d68-c49c-448a-b9b3-2464078761a1</guid>
+      <guid>15b5619b-abb3-40aa-86d6-53f1ab309714</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shop/TSH10_upgrade_and_check_monthly_1TB</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0dd93796-e371-4717-88c1-54d1c8ed9277</guid>
+      <guid>4749997d-6fa0-43f5-9d13-be8a6ce07aa2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shop/TSH11_upgrade_and_check_yearly_1TB</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>870f6a5c-082e-427b-b587-a3d0e42f56f1</guid>
+      <guid>494da696-b908-46fc-8a85-98cc5060b8ef</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shop/TSH12_upgrade_and_check_monthly_6TB</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d4bc118b-3bb2-4254-93d6-1a638fefceb3</guid>
+      <guid>70f3abcc-d67d-45de-898f-36a144a535a9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shop/TSH13_upgrade_and_check_yearly_6TB</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>732ade1f-c3c9-40f2-ab5a-691e02824e4f</guid>
+      <guid>de2bedbf-770f-4973-bdba-fb2f7179210f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shop/TSH14_add_5_user_to_monthly_6TB</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>dbe8faf3-404b-4e72-ac9c-84a1c21b0726</guid>
+      <guid>3710ebe5-93b1-4c95-8e67-82345b077679</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shop/TSH15_add_5_user_to_yearly_6TB</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ea290565-e308-4567-b793-04c498497f40</guid>
+      <guid>2430ba2b-91b3-4384-b80c-ecb884517666</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shop/TSH16_add_more_than_5_user_to_monthly_6TB</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>816d43cb-3fe7-4261-9344-00d275ea69eb</guid>
+      <guid>77d7d2c6-a4de-46cb-b569-a480e1db7c7a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shop/TSH17_add_more_than_5_user_to_yearly_6TB</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6d98bb3d-fcac-445a-8502-e347055c91a4</guid>
+      <guid>a2b5fc48-555c-4c3c-b3a6-a3b7676382ca</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shop/TSH18_add_more_than_6TB_to_yearly_6TB</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>233fefab-3f91-40a5-a1be-2de67e3a1a2b</guid>
+      <guid>a7ff0350-74fc-4e3e-9ec1-424e209663dc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shop/TSH19_add_more_than_6TB_to_monthly_6TB</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a1f2bc45-33e4-4acd-be3b-1105f5d6290c</guid>
+      <guid>8d96b9fd-0ffb-4bf7-96d7-33fd6e38042f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Registration/TR2_Mandatory fields registration</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d816a4de-30e2-4257-8f7c-87a87342b57d</guid>
+      <guid>ed97d9ba-53ed-43a4-a86d-a44269398865</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL47_check read only in only office</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>63c3e84c-7146-4be3-addf-22ca9c6b0eb9</guid>
+      <guid>b59e5fba-cb26-4e56-9d8c-cd3bb15a9c48</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL15_Check read permission for the document</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>db8c4aeb-bd31-4bcf-bee9-560e5bc80400</guid>
+      <guid>fed0a35f-ee8b-47ef-bc12-a3ce21a0a20c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL39_Disable download for the image</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f3dc2c77-e8fe-4e3c-8a18-29e8d293e52c</guid>
+      <guid>dc019986-c96c-4879-b94f-05f41281b9fe</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL33_Check with a guest user Disable download for the text file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5aedf36c-e212-4f85-8067-a1beb54f79b3</guid>
+      <guid>8ab42e8e-1bd1-4e94-9185-79073dec1b83</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL12_Check read-write permission for the text file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b3562d57-3a2e-4b99-acd9-25c54988568e</guid>
+      <guid>139e9327-4e7d-4b81-888b-770ba4ae10a4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL04_1_createFolderLink - with password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>aacb2a5f-8374-4511-aec2-5b90283112b4</guid>
+      <guid>6b51a963-a2bc-4816-951e-cc8e1787f6e3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL34_Check with a guest user Test viewing of links under getlink for the text file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>945357b4-439f-4980-9758-81b9fb3b6dd5</guid>
+      <guid>291e8635-03f4-4c99-835e-6d32a023167c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL07_2_createFolderLink_via_internal_share_icon</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>313be430-617a-4ceb-a3f3-851d6c6bcfc9</guid>
+      <guid>85bdb1d7-e537-4f72-9b24-952bb2dfe8d1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL18_Test viewing of links under getlink for the document</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a70e7ce0-1c15-478f-a342-39c17bcb8745</guid>
+      <guid>1a7bb0cb-9795-43c5-b3e2-3928390f9866</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL43_Test viewing of links under getlink for the video</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3e0f9957-dfc5-4cc0-be8b-9d5f68ed69d9</guid>
+      <guid>325dcd32-4328-4b67-8364-c783c84ccace</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL06_uploadIntoSubDirsUsingLinks</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>95ab6715-fc99-4cc5-9dab-0763cf4b0bb7</guid>
+      <guid>720b617d-c354-4019-a86a-7a252ea89a5b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL37_Test viewing of links under getlink for the PDF file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>34ad147a-50ba-4090-b377-51621cfb7262</guid>
+      <guid>703a8af2-ce6a-4ec8-b729-534176b79c7a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL03_1_createFolderLink_with_expiration</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>97558402-011b-47a1-ad26-18484ed0ccce</guid>
+      <guid>44d8ae36-829f-4b5d-8b29-44205719a1ac</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL22_Test viewing of links under getlink for spreadsheet</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>84af7d5a-86b5-4965-ac6f-606d50ddc3c9</guid>
+      <guid>bc3e5d55-e293-4cb1-a071-7c5fb8faf90d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL21_Disable download for the spreadsheet</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>09afa9b3-9e97-461d-b0ee-c7bc748b05a5</guid>
+      <guid>e0bcd0bb-dc2f-4d0e-b0ff-0399d37be5f8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL23_Check read permission for the CSV file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5d0ef0fe-c943-4f3f-b191-a8f0bdf0254f</guid>
+      <guid>54bb7d00-cda2-49b2-9280-9572a078a0d1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL27_Check read permission for the presentation</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>df2fbd63-3986-4d0e-a22d-36417b5cb27b</guid>
+      <guid>61cabe71-17b0-4f04-b83b-298fd67e0e7d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL24_Check read-write permission for the CSV file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>cfeb426a-65cb-4a41-bfef-29eb6c58acd5</guid>
+      <guid>f5860964-3f7a-408b-b501-73d469d0a09b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL35_Check read permission for the pdf file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8f833c20-7800-4121-a5bd-38750c2cfa8f</guid>
+      <guid>710d877f-29ec-466d-98db-f8d38062a5d6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL25_Test viewing of links under getlink for the CSV file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>eae39902-d827-4a40-9214-ef300bccf34a</guid>
+      <guid>e155803f-1fb4-446c-8f91-dfb2bd8f469f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL01_createSubfolder_Link_via_internal_share_icon</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>315babdc-e408-4d96-abfe-2e9c08977364</guid>
+      <guid>7824b871-ed0e-407d-b3ad-f09bf0e37d78</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL13_Disable download for the text file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1aa3295d-31d0-467c-931d-98685d93ebb9</guid>
+      <guid>484c732f-bc04-4651-b51c-6937b9168bc9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL46_Test viewing of links under getlink for the binary</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>bd5adb56-e37e-486d-b017-7a25d30b9b36</guid>
+      <guid>a235552d-3416-4438-aaac-8c7c7f28a6df</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL10_createFileLink - with expire date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ca9a2d6a-4235-4db6-bfb5-5cc0fcf34266</guid>
+      <guid>48467cb8-ea1a-4d29-9c97-3b445192dcc6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL19_Check read permission for the spreadsheet</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d1eb1aa1-be5c-475c-9e4b-7acbaba6dac2</guid>
+      <guid>894525c3-50da-4ee6-a703-9925b964fb97</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL17_Disable download for the document</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e0adac93-e73e-45fc-b0e7-c16a990f5a4d</guid>
+      <guid>417f0ede-ff7f-461f-922c-633a4e3a5c64</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL04_2_createFolderLink_via_internal_share_icon - with password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5957c219-99fc-4142-b353-f03841e3f799</guid>
+      <guid>0f076f74-5a18-426c-81ee-114aea380162</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL03_2_createFolderLink_via_internal_share_icon with expirary date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c07d8408-ea35-4ed4-872a-1f5919d8f858</guid>
+      <guid>af170be1-a266-4d0b-bf95-36fd1f83f328</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL44_Check read permission for the binary</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f36b3300-df29-4a88-80d3-f09fd8b03cb8</guid>
+      <guid>eab2fec8-1e99-40ad-8bed-4451695cd711</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL31_Check with a guest user Read permission for the text file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>543e9016-cfd7-4a54-944c-d2723248aba6</guid>
+      <guid>0f7364b7-0d76-4f30-919e-eb6ac1f39fbe</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL28_Check read-write permission for the presentation</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7d9be905-19f0-4bb0-b834-d93baf210523</guid>
+      <guid>972bc760-ef99-4919-8d08-34a4e486e6a5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL16_Check read-write permission for the document</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b0ab1477-fbba-4668-919e-f2ac3e9e6536</guid>
+      <guid>c944c67d-782c-461e-95e6-ea19617b215a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL26_Disable download for the CSV file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>de3a3ed5-2594-45f4-866b-d9ef1cf30612</guid>
+      <guid>e3acc76e-e86f-4d8b-8a93-cd3449e5ad75</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL29_Disable download for the presentation</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6e53f8f0-a560-4552-8f53-483d8164d825</guid>
+      <guid>787f8754-07ac-449a-8803-6528a28eb366</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL42_Disable download for the video</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1a2507e2-2d98-46dc-a74d-926d34dcee9d</guid>
+      <guid>4e6ae198-c37c-4037-91b5-a48d75219ecd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL48_check read write in only office</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>273c7551-a82f-43b1-bb41-3f3c6285703e</guid>
+      <guid>970be01d-482a-4eac-bf11-1cb4af48e1c2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL45_Disable download for the bibary</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ceeaa89c-7a93-4b3b-9dfe-8c2b4c77b1f7</guid>
+      <guid>7e5f8e8c-ccfd-4343-b68c-02a092e28c8c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL38_Check read permission for the image</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0a33bbc2-be94-4abb-9e96-c3308cd63718</guid>
+      <guid>aeff6f9a-c44d-4463-ac1b-1e6579988cb5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL09_createFileLink - with max downloads</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>201eef59-42da-41f6-92c5-5597aef8d8f2</guid>
+      <guid>e46d9126-7fa0-42bb-adca-cff6f9b9e760</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL20_Check read-write permission for the spreadsheet</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7818ab3c-5b5d-462d-ba83-4eff38dbf53b</guid>
+      <guid>5420661e-57b1-44e3-ade5-ff2341b7a143</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL11_Check read permission for the text file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e9e32fd5-82c6-40ed-b5de-5532ed1e28ee</guid>
+      <guid>aecbd589-2c68-47a9-adab-7d581338c36e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL41_Check read permission for the video</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>65db569c-4d03-4a00-9d96-63c577d214b3</guid>
+      <guid>d0b46073-f6a3-421c-962d-5fd699f0b77e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL08_createFileLink - with password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>598293d6-20c9-4907-8e41-749f7e3ca730</guid>
+      <guid>8a1b70a0-53f8-4c11-b082-9f01e7744cb8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL07_1_createFolderLink</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b1ae6c2d-7af9-4f7e-b6f5-4b2bb1ebf1a8</guid>
+      <guid>60fc0b01-0c04-4d51-86bc-8d96a452be1f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL32_Check with a guest user Read Write permission for the text file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f07dd1ea-1741-4a49-91b3-ba542b332c4e</guid>
+      <guid>aae5382a-577f-46db-950a-755ba06d12cc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL14_Test viewing of links under getlink for the text file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f8b72e8f-c511-4e34-818b-29f7e698aba4</guid>
+      <guid>1a4ccfc8-f3a6-4ec0-ac76-8f2ea333a8a6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL02_createFileLink</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c8dbb539-d837-4d9f-8273-c2d39a8986bc</guid>
+      <guid>d8feaccc-9f35-4811-bdbb-c13002ca215d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL40_Test viewing of links under getlink for the image</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2398fa9f-ab9d-4524-8182-e908e5e3fc60</guid>
+      <guid>c119cc84-f413-4c10-a4b8-9caa55bad9c4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL30_Test viewing of links under getlink for the presentation</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>cf3e5036-680a-478f-bdfb-30a54eb8db56</guid>
+      <guid>da078f19-c2e3-42bf-ac77-658f6e1acc3c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL36_Disable download for the pdf file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4cf12a0c-6bfa-4598-9b2f-29f4c5b26972</guid>
+      <guid>b70e5966-5cfc-4427-b0ea-181532f73c26</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL04_3_createFolderLink - with password - and download</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>59d7a193-5bb2-4dcd-ac62-3ba152a28a1f</guid>
+      <guid>76f7b136-14e5-420b-88f1-1726e5b9001d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL49_createBinaryLink - with password - and download</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f7c48fcc-8907-4420-8379-231e55339ef1</guid>
+      <guid>f1a00e61-68db-4d4a-9ae9-e18c093a5aa9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_One/DL01_RO Link to DOCX in subdirectory</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4f722ba2-0f20-4688-a36a-78cb628efa24</guid>
+      <guid>d3b364b5-ac16-4249-a0fc-580acbd28b70</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_One/DL02_RW Link to DOCX in subdirectory</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ede3b746-6bb3-475f-b25f-1f463875a0b9</guid>
+      <guid>e8761b87-2cdd-474b-a0fd-f4a755162236</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_One/DL03_Link to DOCX in subdirectory with password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f6e832cb-09da-4630-8094-8b139d058b23</guid>
+      <guid>bd6d3997-627b-4e9f-82f3-0079ccfe0ca1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_One/DL04_Link to DOCX in subdirectory with expiray date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>02a5393a-199b-45fe-aeb1-96bf7c257d2d</guid>
+      <guid>ec9a492d-3bb8-4bde-b8a0-3f0b206e5d2f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_One/DL05_RO Folder Link to in subdirectory</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c92db3f4-67ed-4258-8a2a-c4c68ebba687</guid>
+      <guid>a4c3884c-8a6c-48b5-bb59-81700cbea85d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_One/DL06_R_W_U Folder Link to in subdirectory</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>09949dbd-1fda-4593-adae-4870b5b10547</guid>
+      <guid>bfabd067-87b5-486d-8173-ffb80f797972</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_One/DL07_Folder Link to in subdirectory with password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3e1a9757-5cfb-43f2-beca-a01fb6adf242</guid>
+      <guid>13cec85a-11d2-487d-87c7-5b17d03dc64b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_One/DL08_Folder Link to in subdirectory with expiray date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>978e5cf9-bc2d-4046-948e-7561c09e26dc</guid>
+      <guid>e6eee5e0-3c63-4d50-8c99-bfdb58b484f3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_One/DL09_Link to image in subdirectory</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>dbe972d6-4e73-40f7-8c4b-cab917d70f30</guid>
+      <guid>c9e8d4f4-dafd-4557-ae4e-c563b0849b5a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_One/DL10_Link to image in subdirectory with password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f78b5f78-b5e4-481d-8679-0364dce35cd4</guid>
+      <guid>82af00bf-245a-4110-afe2-0a96490dbdca</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_One/DL11_Link to image in subdirectory with expiray date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e8d0a2b1-07b3-47e2-9b2d-c1194dd086d1</guid>
+      <guid>c7e0e1d0-0d87-4067-9168-8029cc82eab3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_One/DL12_Link Disable Download to image in subdirectory</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1e361686-82be-4435-a416-e9b47f0871bd</guid>
+      <guid>95f079a7-1693-443f-a9d3-bb0d00851397</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_One/DL13_Link to Binary in subdirectory</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>fa6a7f2d-c570-435e-a3e0-b8238272e999</guid>
+      <guid>8a3a5dcc-4586-4304-85ac-5298a9b0dacc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_One/DL14_Link to Binary in subdirectory with password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>77b4792f-46f5-406c-960d-6d46e0c98409</guid>
+      <guid>2221dcc0-637e-4373-b88a-4ba7d539fd42</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_One/DL15_Link to Binary in subdirectory with expiray date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>16c07972-21ad-4187-842d-69ba6e5de927</guid>
+      <guid>6de7ed6b-f756-437c-861b-89d9472437fc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_One/DL16_upload to subdir link</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>495e1b60-e696-4e99-8576-c64f386f0ee3</guid>
+      <guid>d9bc507c-101d-478d-9c95-f5acb4cc3935</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_One/DL17_Download from subdir link</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>dadef252-d9b8-484a-a6f6-5f44c20b60ab</guid>
+      <guid>c361b204-987d-4fb4-914d-c18d017af0a0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_One/DL18_QR subdir link</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d8d17301-2486-4899-b62f-77ab17221ea2</guid>
+      <guid>db2a0706-e9e0-48f4-a219-3ef13c7acb84</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_One/DL19_Download From link Button</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>66c7ef26-59eb-4611-878a-a44f4fde02e3</guid>
+      <guid>38db9033-c3c0-49d2-b4b8-843ec7e557d4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_Two/DL20_RO Link to DOCX in subdirectory</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>825206ab-eb43-431a-8ff6-f880ffae9692</guid>
+      <guid>51640aaa-5615-44da-9f32-b2658af3aeaa</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_Two/DL21_RW Link to DOCX in subdirectory</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>9cb5d47c-9b89-43de-8fb4-171c77ce37ac</guid>
+      <guid>846297bd-b56c-499d-bbc0-456b0faf57fc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_Two/DL22_Link to DOCX in subdirectory with password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ee9981c1-8832-4b3d-aa06-fe8d0a8b4154</guid>
+      <guid>b25a93c2-3fe6-471c-9941-4a4a7a3edbb2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_Two/DL23_Link to DOCX in subdirectory with expiray date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>59aa5451-0456-47af-9970-35f4726efc46</guid>
+      <guid>660ecd64-6b94-450b-871b-8c901cd1ac71</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_Two/DL24_RO Folder Link to in subdirectory</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e11b1d57-40da-47a9-993e-bfa08c3bb5ee</guid>
+      <guid>205d7434-cdeb-41d5-8cbf-a97e8a35fbac</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_Two/DL25_R_W_U Folder Link to in subdirectory</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>582b20aa-a433-419d-ad19-c36abd27ec43</guid>
+      <guid>385cf1e7-3fe3-43ff-ab86-8846f573f56d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_Two/DL26_Folder Link to in subdirectory with password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>682a57c6-9841-4035-a8d6-c5ba0e0664d2</guid>
+      <guid>bbefac5e-b5bb-4f3f-ac77-205233363ced</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_Two/DL27_Folder Link to in subdirectory with expiray date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>41813b16-025b-4c64-8c8f-c62b096027ce</guid>
+      <guid>f7d9e22f-301c-47db-aaf9-92fcdbe79716</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_Two/DL28_Link to image in subdirectory</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5ccada69-ade4-4a68-a3bf-4afaeac5eda3</guid>
+      <guid>33a7db82-0747-4ba8-9311-a39bb0d784bd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_Two/DL29_Link to image in subdirectory with password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>cc10e46d-15fc-4d00-aa87-5a1a9c0b9075</guid>
+      <guid>2d5e9930-f423-4bf9-815d-18312cac4332</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_Two/DL30_Link to image in subdirectory with expiray date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e3c0dc33-d238-4c69-859c-6d9dc8f5c9a0</guid>
+      <guid>dfa32c65-f3d3-497b-99f7-062bcd8acfac</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_Two/DL31_Link Disable Download to image in subdirectory</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4056bb78-63cd-4dd4-86a7-b3687dee4d92</guid>
+      <guid>de4cac48-6c06-4b24-a90e-784b83a86338</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_Two/DL32_Link to Binary in subdirectory</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ddcab4de-9cb7-447b-9ddd-8651db9bd021</guid>
+      <guid>bc5ab20e-94ec-44a6-b625-f88985672cab</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_Two/DL33_Link to Binary in subdirectory with expiray date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6ad63717-308e-4c33-a26d-a8ea1a667bb3</guid>
+      <guid>01da1a53-b407-417b-b08c-b183e2d940ef</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_Two/DL34_Link to Binary in subdirectory with password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f33b26d8-406f-4df4-b5d3-b89183c6293b</guid>
+      <guid>78594f0d-a7bf-4948-ab17-572979ba5ab0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_Two/DL35_Download from subdir link</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>96b4abbe-84bd-4c60-a99c-c876fe45f169</guid>
+      <guid>9ca0eb8c-df6d-4737-a004-3aac5ce71dcc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_Two/DL36_QR subdir link</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5d8af0c3-af8f-42e1-bad5-ca87c795c39c</guid>
+      <guid>c685cee5-2007-40a5-b7f3-a136cd812594</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_Two/DL37_upload to subdir link</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>93a711c8-7936-47d2-9bdf-f54e0f968cb4</guid>
+      <guid>fc296bff-7e84-4461-a5f0-ac26e6698ff6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Deep links/Round_Two/DL38_Download From link Button</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1005ad92-a72b-4c32-adbd-11f88ac917a3</guid>
+      <guid>66da04f4-d389-42c6-b531-df01ba9b887f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF10_VerifyRenameSubfolderbyUser</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>91f5eb21-5973-4b61-83ab-f673b6f0d01b</guid>
+      <guid>c93249e5-2d6d-48d7-b250-77d5163690fd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF11_VerifySubfolderDeletionbyUser</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>78f3eee2-df74-420d-a747-0ec429dda73d</guid>
+      <guid>e094f82f-e129-43af-a0cb-a23243cf7950</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF8_VerifySingleSubfolderDownload</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b3b62d41-f265-44b8-b445-86d3651d11b9</guid>
+      <guid>0b3e71ea-eb4b-487a-b511-217b75949d45</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF9_VerifyMultipleSubfolderDownload</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d59f3d40-1e3e-4095-a013-79c44cfdf2ef</guid>
+      <guid>f398ee9e-b74d-41d8-94ec-18b5097f0d44</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL50_VerifyBinaryFileLinkDownload</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>57a6e8e9-ed74-49f7-89cb-0f11209ea8ec</guid>
+      <guid>1e573b78-0481-4f2b-bda8-d6f3ecb525ca</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF20_CreateFileOnTopLvl</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8e828508-9435-46be-9127-0a9155325bb4</guid>
+      <guid>8de390d5-879e-4d34-89ed-8ad68096a272</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF21_CreateFileOnSubFolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f8e27540-487f-4798-870d-b074ad11cc4c</guid>
+      <guid>623d080c-eb31-4370-9007-106e1897695c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF22_CreateFileOnSubSubFolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5a4eabd0-b1b5-4551-9ce5-9106e9bf0161</guid>
+      <guid>10e05848-af27-4002-8445-2739e7800eb5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF12_VerifyUploadFileSubSubFolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>94d6e5ff-53fb-43c2-9aa3-0c390c36ab37</guid>
+      <guid>cd456fae-6969-44d1-820e-b7d68e87e0be</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF13_VerifyUploadFolderSubSubFolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d63979a1-5ed4-4e60-9496-6a2091bfdc3f</guid>
+      <guid>21e10129-1b28-4ad8-bbd8-8201fe1175cd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF14_VerifyUploadFileSubFolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>82d51e19-2828-41de-9b60-2a0e304a747d</guid>
+      <guid>ee594cac-a4ff-4189-b4d4-1fd910201f1e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF15_VerifyUploadFolderSubFolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6a5e65b0-2860-4547-ae7f-acb39ef2a8fd</guid>
+      <guid>3339ef9b-760d-4894-9ec1-432e4f272607</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF16_VerifyUploadFileMainFolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>bf652912-4827-4f07-b83e-4532ce08fa30</guid>
+      <guid>ff8dd3ea-8a7f-4413-8f1f-f422fab0139b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF17_VerifyUploadFolderMainFolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>67053fe1-a0fb-4fa9-82cb-ac8b82a3bea6</guid>
+      <guid>9c7d38d7-e05e-4db0-a407-36bfa1057f02</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA18_deleteSingleDBAccount</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f531140c-d1b5-4e46-96e1-d1a39051f6ea</guid>
+      <guid>e4535d51-f2cf-4ffd-9b9a-31f547ee6359</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA19_deleteAllDBAccounts</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>bb8af4bb-c627-4842-85ca-00de4243c16a</guid>
+      <guid>0e7c1256-6eec-4ea9-ad60-4f322821b615</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/invites/TSF05_share_folders_with_same_name_between_user_accounts</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c44e0edf-2561-4a1b-9163-40402f8fd653</guid>
+      <guid>ebcd8334-2a52-4d19-a7c9-125aa25841f5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/invites/TSF06_share_folder_r_w</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8f70da55-baef-4427-a504-a0e46de6d20b</guid>
+      <guid>bb560905-1118-41d2-8f7c-dc85eac8f865</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/invites/TSF07_share_folder_r_o</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>52d54e64-9da4-47b8-82cb-17afee1c872d</guid>
+      <guid>f6b6b560-07e2-4935-9c7e-f21085b93118</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/invites/TSF08_decline_folder_share_r_o</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d3ca005f-9aa0-4a82-bf9d-11deea513861</guid>
+      <guid>5dfb0a83-0926-479b-8ea9-1f5bd9a33053</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/invites/TSF09_decline_folder_share_r_w</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c41592fc-c9c9-44c1-9226-d5d413dc1206</guid>
+      <guid>4b56ff66-21a4-4464-beb7-6a70ca56fc4d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL51_VerifyUploadFolderByUserFromLink</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ceb92ef4-513a-4bc8-a69a-d734923f6a33</guid>
+      <guid>20b09668-ede8-492c-b671-d7caefe5993b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL52_VerifyUploadFileByUserFromLink</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3adcabb2-8e94-40c8-944e-93897d5035c8</guid>
+      <guid>9d63fb93-11ac-4a10-81c2-8db9bc40a83b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG19_Create two groups with the same name</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e023cee1-3712-4260-896a-85d42dfebd5b</guid>
+      <guid>80833270-c258-4bd9-bdd3-63ed85987cc1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG20_Sole server admin cannot downgrade himself to member</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7f9872d1-ec25-4a75-b7c6-8803a7778e19</guid>
+      <guid>52d379d6-2f8f-43ed-8366-f7e76e21b699</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG21_Group admin leaves group when another admin exists</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>948688ea-ac0d-4838-b97a-656b75fefce3</guid>
+      <guid>cecb7c59-1b2f-4570-8842-836a6f9fb701</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG22_Only group admin cannot leave the group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a08b0da0-40df-4c9b-b3b6-db0a4c8804b7</guid>
+      <guid>480a8380-11c7-4bf5-bb63-88dfaba68009</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG23_Plain member can leave the group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1f36a386-b917-4750-9c30-f5499810d3e6</guid>
+      <guid>85ae6f70-b67b-487d-92b6-7f730883e876</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG24_Server admin membership counts as second group admin</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3fd5b99c-b010-47a8-a998-829b4f01644f</guid>
+      <guid>2dba46a2-6c59-44fa-8b0a-fa2f8a4d4ead</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG25_Group admin removes himself from members when another admin exists</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8bd6fb9a-0179-4b5a-b908-d65fa1cf875e</guid>
+      <guid>9a534974-dab5-44af-a03f-2a7ad334862c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG26_Only group admin cannot remove himself from members</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b1a9a076-be84-4af6-be77-4a9370a84cda</guid>
+      <guid>6825957a-93ba-472f-b604-65b23ab9243e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG16_Try to downgrade the group admins rights by himself</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b6c3863e-2178-44b9-a138-d683a226f767</guid>
+      <guid>03474e39-70a5-4d64-b3d3-97dad6ff8992</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG17_Sole group admin cannot downgrade himself</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>bf717af0-4a15-4101-a2b7-f67259626aef</guid>
+      <guid>d52ea6cb-8111-49dc-9c4b-8e947553b2db</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG18_Group admin can downgrade himself when a co-admin exists</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7bddccb7-1ca1-4202-926d-9f17cf80473b</guid>
+      <guid>af194525-d709-414e-8151-c2afb06594c4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/invites/TSF13_Share folder with r-w permission and decline owner rights</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4b600555-4aa6-4a19-8678-16b591d18719</guid>
+      <guid>73528576-f039-447d-be7c-a72551802598</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/invites/TSF12_Share folder with r-w permission and handover owner rights</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>71551051-eaf7-4a8d-9e1e-b6d2b4b52ce0</guid>
+      <guid>29ea3331-c51d-429e-8862-f35996c0bb1f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/invites/TSF11_Share a folder with admin rights (decline)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ea57ae7f-7e6a-4f4b-9155-54d694a06fb7</guid>
+      <guid>0847359a-4194-4600-8662-f7f4ce0ad21e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Share/invites/TSF10_Share a folder with admin rights (accept)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>45e6ee11-a61f-410e-8d67-e18b5feba164</guid>
+      <guid>011bfa47-e668-4eeb-b091-da5d75e186f6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL53_VerifyNoLinksNewUser</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b2a382ae-37cd-406b-a65b-db39648df00b</guid>
+      <guid>735ab142-ed6d-46de-9e4e-3c1d63709e27</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/LinksTable/LT03_File link is accessible</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>19d6fa75-495d-4436-ae79-ccb3a4a9a1ad</guid>
+      <guid>02835c42-2d6f-47ce-90fa-887fff640e85</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/LinksTable/LT01_File link appears in linkstable</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f7a1e70a-0e78-4f08-9e41-8e0f39356830</guid>
+      <guid>9405a3cb-be21-4925-ba8f-f9566c630d47</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/LinksTable/LT08_User-created link visible to admin</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>352f059b-067f-4241-930c-d971d73f3c64</guid>
+      <guid>286997fd-6b07-4d6b-8e4b-9fba3dbbe866</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/LinksTable/LT18_User-File link appears in linkstable</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>63d34c6a-e562-4f89-b2a0-4e1d249fec4c</guid>
+      <guid>d35fd5ee-041e-4fab-b2c3-6cb3beb7d4c9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/LinksTable/LT05_Read-only file link permissions</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6575534f-db99-4dd7-baf0-91528d519a9e</guid>
+      <guid>3fb246a3-cefb-4d7a-8665-216d4a631ee7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/LinksTable/LT12_User-File link is accessible</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4b22dab1-4a90-4249-93d0-ffef3deb279e</guid>
+      <guid>18477fb9-52a5-40ff-a79e-83ad0f70ae55</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/LinksTable/LT16_User-Delete file link from linkstable</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3728228f-0d9e-4233-86a8-9a760fd84c87</guid>
+      <guid>213d5cea-3913-41e8-a734-42128e3c01e0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/LinksTable/LT10_Check link and visit it</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>520b6222-4d61-469c-ac2c-c5f0136a6919</guid>
+      <guid>1f1713b5-5327-48d0-98b7-9d7e1d1acca8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/LinksTable/LT06_Read-write file link permissions</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>94aae680-8ece-4403-899d-25f44b67eb22</guid>
+      <guid>69a511e1-71ed-42c0-a907-f45a10b284d4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/LinksTable/LT07_Change file link from R-O to R-W</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f77588a1-d009-467d-a037-74f9e9e14885</guid>
+      <guid>06ea05a1-1119-431b-b487-f8c11d50efde</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/LinksTable/LT02_toplvl-folder link appears in linkstable</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f62a848f-cfd6-4033-ae91-8907d513ea8c</guid>
+      <guid>6fc1e1a3-1b40-4db3-939d-b60107f1a270</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/LinksTable/LT09_Delete file link from linkstable</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ecc0eb7d-cc3d-4721-992f-784358fa5962</guid>
+      <guid>42e5b7e7-4fe3-4ce4-9b56-43e3f5d0427d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/LinksTable/LT14_User-Read-write file link permissions</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>89b155d1-7fd1-409a-877c-de721ab3b0f4</guid>
+      <guid>7930cf9b-2443-4efe-94cf-2659e5b86fe5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/LinksTable/LT04_Folder link is accessible</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>54363ae4-7f51-4d36-85ee-85ddbef69692</guid>
+      <guid>88ac5421-93e1-4690-8da3-d60e6c9dfd69</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/LinksTable/LT19_User-Check link and visit it</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>53cc2f29-5873-4fbd-ad4b-b37dc3db1b58</guid>
+      <guid>e3ebc12c-569a-4639-ad20-ca2b6031b653</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/LinksTable/LT15_User-Change file link from R-O to R-W</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>66e7ac22-45fb-4e71-84fd-a346459807fe</guid>
+      <guid>ec3f8008-7d40-4468-8c39-10fe59466279</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/LinksTable/LT17_User-Folder link is accessible</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f519f937-8c06-4599-946d-5286c3834c7b</guid>
+      <guid>2a8dcfc0-54b5-48e8-87a7-29fa9fc2c288</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/LinksTable/LT13_User-Read-only file link permissions</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>82ae4df1-f5bd-4dcb-8014-5f9d39a8979d</guid>
+      <guid>d7499928-0836-4f64-8125-2aeb57c4758e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/LinksTable/LT11_User-Top-level folder link appears in linkstable</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>25c51008-0034-4546-b602-4b1ccd3a5725</guid>
+      <guid>76792a39-d9b4-4938-aeb5-9fa579cb0d6a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA20_Check the qouta created by admin</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>79847699-e1d6-4f11-8b1c-d77d23c4941e</guid>
+      <guid>0aaa3d84-9de2-4896-82d3-7d63395dc8eb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA21_Check the qouta created by registration</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b1f2803e-c54f-4b82-b4e0-51996e55de80</guid>
+      <guid>b3d3de3f-70e4-42be-a414-3681f9dadd5c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF23_Close_FileOptions_On_Outside_Click</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>62b6e029-65ae-4c31-888f-874173f6da23</guid>
+      <guid>0ee808e1-8c3e-4798-85f9-9a4a9ae950ac</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF24_Close_FileManage_On_Outside_Click</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5cafdc9b-d660-4f85-8c8b-c8272658e52d</guid>
+      <guid>6fea68a2-929a-4010-8c1e-0d0145b4e1fa</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA22_VerifyRescanFilesystemFromFoldersManageDialog</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d2c96b13-546c-4975-b378-c17fd18de813</guid>
+      <guid>1fd07dec-3ed8-4b45-ab8a-26ee02fce542</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA23_VerifyRescanFilesystemFromAccountFoldersTab</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>32f0b4ae-e725-4be9-bf3b-d49de4b85948</guid>
+      <guid>74460aa8-b53f-45f7-868e-af162b0c2ae5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL54_Verify Link Max Lifetime Is Limited By Server Configuration</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>85d90ecc-11e3-4af0-b416-132e2fe98988</guid>
+      <guid>c44ebee6-5718-4cde-a9b7-b75ae3c7ede3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL55_Verify Folder Link Respects Max Lifetime Configuration</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>443bae62-ab06-4aa5-baaa-4d65d5580cba</guid>
+      <guid>6369cd6b-43b0-4a13-b35a-6548900371f0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL56_Verify File Link Respects Max Lifetime Configuration</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>10614a0a-db36-4f1e-b833-cd35b3686c55</guid>
+      <guid>af15033e-6b5e-4996-8fbb-2815e90da8bd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF25_Cut File from toplv to subdir</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>96574f02-5a86-4d90-9fff-6daf52f8f6c0</guid>
+      <guid>08cfd4f1-d3a5-45ff-9003-f81bc4502324</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF26_Verify NoCutPaste On TopLevelFolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>084eb0c2-540f-4180-9c64-3264ebe707e2</guid>
+      <guid>5c003367-e9b5-4608-9e28-468b2a9723a7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL57_Verify RW Link Creation When Upload Links Disabled</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>831df2d8-5d6e-4ad1-a2a8-f7b2aa3295f6</guid>
+      <guid>9354ebfb-b0f9-4312-92a7-f294ec7898ae</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Browser_Back_Button/BB01_Admin_DashboardToFolders_BackToDashboard</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2e0a30ac-e184-4177-aeed-097d5c2d8c7b</guid>
+      <guid>f808d272-0b3d-4954-b095-1a7336965e26</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Browser_Back_Button/BB02_Admin_DashboardToAccounts_BackToDashboard</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>614052b9-5056-4e5a-8d94-cd75cdf85ed6</guid>
+      <guid>d3028aa4-110c-4e4c-83e2-7d607f7bdd79</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Browser_Back_Button/BB03_Admin_DashboardToOrganizations_BackToDashboard</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>102f991f-abc8-4f98-aae2-6d5d60e1819a</guid>
+      <guid>0602828c-63e9-453c-b3a9-7dc12ce5a83c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Browser_Back_Button/BB04_Admin_DashboardToServers_BackToDashboard</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d4dfd4dc-f3e5-4767-8343-7402de64e673</guid>
+      <guid>8bab42f2-1387-47b7-a877-428d74877237</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Browser_Back_Button/BB05_Admin_DashboardToStorage_BackToDashboard</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8518568b-2c68-4e50-9e2c-82e6797b4ba8</guid>
+      <guid>06c87c26-007e-476a-a36e-a1619fe38b49</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Browser_Back_Button/BB06_Admin_DashboardToEmails_BackToDashboard</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>70bbf207-66ce-4c66-8913-7388281ac0f4</guid>
+      <guid>fedace11-8dee-4f6d-931f-0a5fe159adf0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Browser_Back_Button/BB07_Admin_DashboardToLogs_BackToDashboard</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4994cc51-36a6-4e47-87f1-6d0213d7e493</guid>
+      <guid>09447877-c9b6-4d59-8027-f09b7c92f50c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Browser_Back_Button/BB08_Admin_DashboardToPreferences_BackToDashboard</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>143818a5-c462-42c7-a546-7b0f8c60e0ae</guid>
+      <guid>58d9331b-231f-4f9b-b22c-3ecdff5fe886</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Browser_Back_Button/BB09_Admin_DashboardToNews_BackToDashboard</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>94e031ad-25d8-492b-9245-39b7fd7300f8</guid>
+      <guid>1098a518-abad-4a2b-a9d7-ab9abd79466d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Browser_Back_Button/BB10_User_CreateFolder_BackToFolderList</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4c1fe2aa-f81b-424d-a0dc-eec21c70c0bb</guid>
+      <guid>cd359324-38cf-413d-9f0b-10e88e0edfb0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Browser_Back_Button/BB11_User_CreateFolderAndSubfolder_BackToTopLevelFolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>35f43074-292c-43a9-aec4-9115196b013a</guid>
+      <guid>43f31cbd-bdfa-439d-a53c-f28c4bda4245</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF27_Verify Pdf inline view in browser</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>610d1535-8374-4467-8697-71738001141c</guid>
+      <guid>bdefd10a-89b7-450b-b4f4-da6540a8e796</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Drag and drop/TDD01_Upload file into a opend folder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d06e3c1e-dc01-44ff-83b2-dfd7f14d0644</guid>
+      <guid>46c584d6-1637-4b65-bd8d-8fec63dbdaef</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Drag and drop/TDD02_Upload multiple files into a opened folder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6f375630-b2b0-46dc-a0f9-3531bdb920af</guid>
+      <guid>b135cc3d-937b-4ad0-a512-d3cd9fafa6e3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Drag and drop/TDD03_Upload single file into a folder from folder list</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a3a73906-dada-4af8-88a1-51325444f9f0</guid>
+      <guid>1986c106-b5ff-4b56-b990-a99da08a2a9f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Drag and drop/TDD04_Upload multiple files into a folder from folder list</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c00454a3-5368-45e0-a352-b31ed0457331</guid>
+      <guid>aa8e599b-ed8d-475e-b414-2c82c17e9367</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Drag and drop/TDD05_Upload multiple folders into a opened folder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e8736807-4a64-48e1-97ee-0aa6c70a2c67</guid>
+      <guid>ac79a065-4645-4bfa-bc96-4b1c8e0d186e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Drag and drop/TDD06_Upload multiple folders into a folder from folder list</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>17a8bd64-1819-4592-ae25-f7a88e31c9b4</guid>
+      <guid>b8a880c5-76ed-43e2-8af6-eb6cebb2bf8c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Drag and drop/TDD07_Upload folder via drag and drop into a opned folder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>facec9e2-8256-4a27-be90-e38a325c19f5</guid>
+      <guid>667c007a-3335-403c-ac5e-bdf5d5afa41b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Drag and drop/TDD08_Upload folder via drag and drop into a folder from folder list</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>9054431f-f292-4274-bab4-5b9d4430256f</guid>
+      <guid>124448b7-3a2c-4310-a17c-6b7408b143db</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Drag and drop/TDD09_Move a file into a subfolder via drag and drop</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>51920b8e-af7f-4249-9c14-e77730f10d55</guid>
+      <guid>8cc6415e-900d-4e7d-86b3-64d0791f55bd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Drag and drop/TDD10_Move a folder into a subfolder via drag and drop</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c19ccccb-003d-4f1e-9946-d4f09877bc3a</guid>
+      <guid>19ce2d78-a00e-4a76-b8b8-ed29fab90c64</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Drag and drop/TDD11_Move folders into a subfolder via drag and drop</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0170d9ba-7850-40d4-af89-b1a48861cf48</guid>
+      <guid>4c69168a-85b7-4f44-9206-d3126e35eb76</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Drag and drop/TDD12_Move files into a subfolder via drag and drop</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b5991d00-72ff-4fe1-885f-926c5ee8881c</guid>
+      <guid>394d6ba0-60ea-45f3-93bb-ab53d3e5131a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF28_Verify folder view all_folders</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>11f1aa44-23f5-4987-870e-71d1f7a8295c</guid>
+      <guid>d38594ca-09ee-4e1d-8ced-97b782bf4d44</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF29_Verify folder view Shared_to_me</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ce9f903a-dc99-46af-81af-62cf8181663c</guid>
+      <guid>248db809-850c-4011-aba3-b37e9efbbb3c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF30_Verify folder view My_Shared</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>9913cea0-6115-4cdd-8022-c2bda2fcd055</guid>
+      <guid>6f6f1a0e-7e76-4400-a9ca-9850f9080f8b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/File/TF31_Verify folder view My_folders</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3c495aa6-8faf-48af-9a4e-68513a40943b</guid>
+      <guid>5c1586c9-7969-439f-b34b-2919ae3e45c6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS01_VerifyInheritanceToggleHiddenOnTopLevelFolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>cbb79ddc-5737-4f5d-9ea8-cfb7d7e6d991</guid>
+      <guid>d8c70563-59f5-4c96-a503-5966d8926a73</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS02_VerifyInheritanceToggleVisibleOnSubfolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>64410996-93e8-46c9-87c0-376daa1e2454</guid>
+      <guid>d1afdcaa-7819-42a4-bed1-3d4fe67cfffb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS03_VerifySubfolderInheritsParentPermission</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>9f13e99c-8a87-4603-a6a1-19fd14714a97</guid>
+      <guid>9f8c9823-b2b3-4981-88b6-445c67656c69</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS04_VerifyAdditionalExplicitPermissionOnSubfolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6fbd840d-0d27-4c06-97c5-dbe2c0321428</guid>
+      <guid>603680a9-c850-4c6e-aebd-2899d7d2be5b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS05_InterruptInheritanceShowsConfirmationDialog</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>9a82b86b-3d2b-4a45-94cc-4242e43b0ad7</guid>
+      <guid>52bc4193-3a63-4a1c-9bba-62eb9dd7cc34</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS06_ConfirmInterruptInheritanceSnapshotsPermissions</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ceb5c1b8-501d-4bb5-b10e-9f9847b57b86</guid>
+      <guid>dbd7e3ff-58e7-4e9f-8633-c105ad12c984</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS07_VerifyNewParentMemberGetsNoAccessToInterruptedSubfolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>30b1866b-0233-4778-a40f-5e23a6345790</guid>
+      <guid>9cdb79e1-3ef2-4172-8917-fcd51c0b408b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS08_InheritanceToggleHiddenForNonAdminUser</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0bc3bd2e-7e2c-4a70-b2a1-f43b6fe672ea</guid>
+      <guid>cb8289d0-1f9b-4404-8a56-6ab702909cdb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS09_RestoreInheritanceReappliesParentPermissions</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>36b7317e-bda0-43fb-bc19-2b7bb3524b78</guid>
+      <guid>6a410f51-8e89-4092-a497-d093f0f77bdb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS10_UserWithOnlyExplicitPermissionLosesAccessAfterRestore</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e370f6d7-dafd-4e1f-acaa-cb941dacad55</guid>
+      <guid>36ef4126-6b6f-4984-9132-09e185481e09</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS11_VerifyMultiUserMultiSubfolderVisibilityMatrix</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c4ab4dbe-e2b4-4756-ab12-33563a03874b</guid>
+      <guid>c8dfa576-7d2a-451a-84d3-25e67f4fa4ce</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS12_VerifySubSubfolderSharedDirectlyToUser</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5e8a9dad-1783-4e62-a0d7-82cef5748a71</guid>
+      <guid>f3ca0102-8033-4957-87bf-c149e98b6828</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS13_VerifyCombinationSubfolderToAccountASubSubfolderToAccountB</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c03c2062-9923-4149-b450-14e1106c1b69</guid>
+      <guid>cec4c161-f61a-430c-80b7-cf195b1446b5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS14_VerifyRemovingSubfolderShareRevokesAccess</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>95d48c7f-82fc-4a2e-ad4d-ca1b5a92706e</guid>
+      <guid>9fdac45f-e535-4013-9559-387214f206b2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS15_VerifyRemovingSubSubfolderShareRevokesAccess</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>41f2e228-b2fc-4050-bac4-ff76313a06d7</guid>
+      <guid>8884e9a8-42b2-4785-af66-1c449c145a90</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS16_VerifySubfolderSharedToGroup</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a47f28a1-4536-4865-989b-cef202b3ae76</guid>
+      <guid>fc95478e-7338-4479-8ed5-90dd1c9c12dd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS17_VerifySubSubfolderSharedToGroup</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8ca48883-d220-4108-a512-f25d4c097571</guid>
+      <guid>7afbbe98-80d1-4401-b937-b57b4d23f8fd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS18_VerifyCombinationSubfolderToGroupASubSubfolderToGroupB</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>cf06cd0b-284c-4d04-a2b2-6712008f558c</guid>
+      <guid>caeff7d7-4979-409b-8d94-38134ba9c3af</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS19_VerifyRemovingGroupShareRevokesAccess</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>82e5b3a8-f09f-46bf-a64b-73d8cea39bc8</guid>
+      <guid>2f04df71-5018-4bda-b424-3841372e3b65</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS20_VerifySubfolderRowShareGrantsIsolatedReadWriteAccess</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3b97a47e-10b9-4a54-a1a3-0f3471ae08b5</guid>
+      <guid>11bd1014-5c0b-4afa-ad52-519a32371dac</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS21_VerifySubfolderRowShareToGroupGrantsReadWriteAccess</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>699f5cf6-ccd8-42e8-be0c-f3aed286601a</guid>
+      <guid>378b9c12-60c8-40b4-a93a-8473d95fec08</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS22_VerifyUploadIntoSubfolderOnlySharedFolderSucceeds</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0c3c96d5-db2d-4f18-ab6c-192ef659e79b</guid>
+      <guid>ca7ac3ef-144a-4921-bd32-d0bb35fef5eb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS23_VerifyCreateDirectoryAndDocumentInsideSharedSubfolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>21863c64-3695-42f8-8c3c-79dc5f7eaa24</guid>
+      <guid>448189d0-3fec-4405-836b-af5591cfd498</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS24_VerifyOnlyOfficeEditorOpensInEditModeForSubfolderOnlyWriter</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1798446d-a7c3-44eb-a915-0070c419a37f</guid>
+      <guid>8665797b-3fae-4c49-b01e-9de68ff19401</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA24_Lower_quota_below_usage_must_not_delete_data</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d5abf83d-2b9f-4478-8cca-072ec7ba9539</guid>
+      <guid>ed4077bc-f350-4a7a-bfe3-1b3d94ab58f1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN11_Check all activities</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d227c9af-fac9-4688-961f-377fcb088aac</guid>
+      <guid>83ea4d00-9644-4135-bee0-44b8c91d74f6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN12_Check my activities</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8986ae72-76e0-4cd5-9df9-bc53661fc840</guid>
+      <guid>01b8a572-26a7-48c8-9ed9-31638c8d1bbd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN13_Check added activity</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0d615ae7-0ec3-46fa-b182-fca2b55f643d</guid>
+      <guid>a11dafbe-8904-4a73-844f-b717a44ac64f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN14_Check updated activity</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>efad37b1-310a-44d3-8a23-0bff4c547b5e</guid>
+      <guid>0ff9631d-426a-4ae8-88f8-c412bb856d43</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN15_Check deleted activity</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>626cc282-8076-45db-89ff-becd9e3ca555</guid>
+      <guid>215cae79-d82e-4ad7-9193-c1c939e40775</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN16_Check adding a file in the Activity Overview</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0d96c6a9-38a6-4800-bd94-7d3a471f5095</guid>
+      <guid>a6e58b8d-f77b-4375-b69f-3f907b242d40</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN17_Check updating a file in the Activity Overview</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0e5f694b-0f2c-4453-8f8f-a9349e7bb5db</guid>
+      <guid>bf5bae5e-3dcc-4ddc-90af-6625b8d3b896</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN18_Check deleted a file in the Activity Overview</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>072464f2-e41b-4fa5-9680-50f88ec73d6c</guid>
+      <guid>494648b4-f9e1-4462-9a0e-6299dfb4b848</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/User_News/TN19_Check the most active folders in the Activity Overview</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b58dc67c-455e-4f85-a3e6-ddae05d6a796</guid>
+      <guid>3cf7957b-612f-43a1-829f-9c52a6f83a7d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Remove Tags/TAG21_RemoveTag_Direct</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>673bf678-4d32-42b0-b100-2ae6e9dbdfdf</guid>
+      <guid>b6e48e41-e496-4e75-96be-a640cad0f242</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Remove Tags/TAG22_RemoveTag_FromSearch</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b68b6a10-8628-4560-a956-f1cc47e996ab</guid>
+      <guid>f3e1161b-1c6a-432e-894a-76dbd0c5ef4c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Remove Tags/TAG27_RemoveTag_GlobalSearch_ReadWrite</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>90cacfcc-87c8-49cd-9552-20b590ab8485</guid>
+      <guid>531c825e-865c-4193-a441-a52545a925a0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Assign Tags/TAG30_Editor_StartsWithCurrentState</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>55efe69a-069c-45e4-a8cf-0ba8d59cfdf3</guid>
+      <guid>9d27bfbb-7373-4a22-b420-a811c2f971be</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Assign Tags/TAG01_AssignTag_Document_PlusIcon</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6b049bef-12b4-4315-82a0-b1079dccba19</guid>
+      <guid>46788364-163f-4889-bd14-3cd242b77ebd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Assign Tags/TAG08_AssignTag_Subfolder_ActionBar</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1f7afce2-cde8-4f45-acae-a1116fa487b9</guid>
+      <guid>e1e7186d-af5d-4317-98ad-e51186c604f5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Assign Tags/TAG06_AssignTag_Subfolder_PlusIcon</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>457be8ea-2b77-4248-b024-2f3f21e278ae</guid>
+      <guid>f4362645-4ff0-4d71-bade-9425b43fadc1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Assign Tags/TAG03_AssignTag_Document_ActionBar</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>447df577-d12d-44e0-a774-c78d2030df8c</guid>
+      <guid>1c38f0f0-c244-40f6-a4e4-1d0e32832ae5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Assign Tags/TAG12_AssignTag_Workspace_ContextMenu</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>fe1192b7-e653-4bd8-a184-ea8106ced4b8</guid>
+      <guid>5a8b9248-cefd-45e0-b2d5-1065053bb2f2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Assign Tags/TAG07_AssignTag_Subfolder_ContextMenu</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0b85cebe-cc90-4e2d-8894-4bd64b3a1c49</guid>
+      <guid>5ef00cee-7a7b-41e2-9a99-fb717c5e3584</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Assign Tags/TAG29_Keyboard_AfterChipRemoval</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5cb3888c-868a-49a0-bc2c-a1d8f9f0f7b7</guid>
+      <guid>cd02c903-d3b1-4a56-9402-4bfb222bab82</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Assign Tags/TAG23_TagInput_SaveCancel</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ee5258a1-2a6e-40a6-8526-9f86f733044a</guid>
+      <guid>1d68671b-2d2a-43c7-9318-08f212e573d0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Assign Tags/TAG13_AssignTag_Workspace_ActionBar</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>01c76910-cbbf-48a0-947e-3e8b8de98e79</guid>
+      <guid>251f0d4d-e9dc-4b76-83f9-5d0b8cc81ba9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Assign Tags/TAG02_AssignTag_Document_ContextMenu</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>9a07806e-b28c-4426-881d-62cf86416764</guid>
+      <guid>f8fb042e-f460-4bd0-8ead-96da3014a0b5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Assign Tags/TAG11_AssignTag_Workspace_PlusIcon</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>dff7f1a5-d9de-4db0-8f78-f3c0e2438974</guid>
+      <guid>1cb99e92-dee4-4439-a267-68bf3124687b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Permissions/TAG26_TagIcon_NotVisible_ReadPermission</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8088f4cd-1d58-40f8-a24e-58c936146234</guid>
+      <guid>40122295-e15d-4c1d-9d35-8a1af5537da7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Permissions/TAG25_View_ParentFolder_Breadcrumb</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5e34e1e8-c57f-4ffa-be3c-fb0d4aa24458</guid>
+      <guid>f3dd0214-20df-47ff-add2-da882979e729</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Permissions/TAG20_NegativeTest_AssignTag_WithoutPermission</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>eb135425-4974-4b6c-a990-3794d78d2672</guid>
+      <guid>2aaa0694-9381-44df-abb2-88e750751706</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Search Tags/TAG18_Findability_ReadPermission_WithDot</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b4f062de-a789-431c-a709-d3f01489146a</guid>
+      <guid>25c824d5-cddc-4f95-ab51-d14005f516ac</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Search Tags/TAG04_SearchTag_Document_V1</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6560a15a-cff8-4a44-a6f4-dca16d8818f0</guid>
+      <guid>405eacd6-cce6-4f9b-b70e-5b043ad11330</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Search Tags/TAG14_SearchTag_Workspace_V1</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3b46efcb-ad59-4d67-8bb0-0f580a3dbed7</guid>
+      <guid>e2b85c1c-5cae-424e-ae30-18c545743782</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Search Tags/TAG15_SearchTag_Workspace_V2</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c237a830-3ea9-46b3-9717-2bbdd20b5000</guid>
+      <guid>a400442d-bef4-45dd-bcc6-9c4ad395ec1f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Search Tags/TAG19_Findability_ReadPermission_WithoutDot</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>396b0baf-b163-4816-bf67-f3f2811ea334</guid>
+      <guid>fe1945f2-b00a-4120-bf71-cec2add2b858</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Search Tags/TAG17_SameTag_Findability_WithoutDot</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>77e789d2-e085-4c24-962a-aa186fe2e070</guid>
+      <guid>b3b6f9af-b582-4c7f-94c5-29bdbc821bba</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Search Tags/TAG09_SearchTag_Subfolder_V1</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>140fc891-6e3a-4c3b-a39d-2a4c8c511938</guid>
+      <guid>4bed0f99-83f8-45ef-95ac-4b0199832ca9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Search Tags/TAG16_SameTag_Findability_WithDot</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>236769b4-7c62-4fc0-ad66-08ee72df63e3</guid>
+      <guid>924d3839-13f0-4b9b-894e-1808433ea065</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Search Tags/TAG05_SearchTag_Document_V2</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f0f09aa9-547c-476e-bb63-daaa1f0f4fed</guid>
+      <guid>c6f148d1-d4ae-4d58-b8d0-44e20aef353d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Search Tags/TAG10_SearchTag_Subfolder_V2</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>aba614a4-c579-484d-b0e7-ef32519e0fb0</guid>
+      <guid>5d6bd654-13d2-412a-81b5-70495fa5c2c2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Tags/Filter Tags/TAG24_FilterTags_LevelsAndPersistence</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0b3096aa-67ec-459c-afae-ac3e0710263d</guid>
+      <guid>7f00ebd9-e706-4723-9188-1699c4ec11f7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS25_VerifySubfolderUserHasNoWriteAccessInTopFolderRoot</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>abb136ea-4492-4ca7-8637-9218180077a8</guid>
+      <guid>7d83ffd0-253f-4585-9bea-51f2489f5deb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS26_ShareSubfolderReadOnly</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e48a78ed-5ced-4be5-b1be-7b24fbe49de1</guid>
+      <guid>b12e6971-36aa-4334-97b1-d9ad63aaa2b4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS27_ShareSubfolderWithAdminPermission</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2cc72bc7-5e54-48f0-9fa3-f6270af478b4</guid>
+      <guid>dda45e14-1b4a-4517-8244-53f13458b9ad</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS28_UnshareSubfolderEndsAccess</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>300888eb-debd-4aa5-962c-01ec15ecb188</guid>
+      <guid>3e71689a-54c1-4562-89ad-2152829131ae</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS29_SubfolderUserCannotGrantPermissions</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>94bc0a52-6627-4ead-a4e5-72415ad5c890</guid>
+      <guid>bd25e750-c477-4b99-bb9a-b83814af5a19</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS30_NestedSharesInnerSubfolderWins</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e3e6d96d-4065-48b4-8c96-f54dd3165bf6</guid>
+      <guid>59f82fc7-59a3-4e31-a5ce-997d4a6d9e3d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS31_MoveFileWithinSharedSubfolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>fdfdd168-bfde-4a8d-963f-a9f522340417</guid>
+      <guid>c1b86b7c-4ed4-46c2-8e65-7855137f9a10</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS32_ShowFileVersionsInsideSharedSubfolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>cc156a91-6472-43c6-9ca9-1b1880dd2715</guid>
+      <guid>1cc7ba0b-2c76-460e-92aa-057ff77d1364</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS33_SetTagsOnFileInsideSharedSubfolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>47a793da-13e4-4b2f-9b57-0706035714d1</guid>
+      <guid>3ae4bbe1-e6a1-4cb9-b229-7518be1e0ff9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS34_ActOnFileSeveralLevelsBelowShareRoot</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>70cd89c0-e2b3-4ec8-9c66-fa58c7f4d296</guid>
+      <guid>2c426031-2036-4c42-a897-00dd532b775b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS35_CreateButtonPresentAfterNavigatingIntoSubfolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a15990f1-909f-4f20-b831-2eac7ef61914</guid>
+      <guid>f2bb970e-3e74-4f2f-9c97-3af31913609b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS36_PermissionOnSubfolderThroughParentGroup</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>fdba46a7-78f8-4415-9854-09700f742a41</guid>
+      <guid>9103bc1d-3e6f-43c6-a97c-3969afd4399c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS37_SubfolderUserCannotTagFilesInTopFolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>07500604-7cb6-4153-bca2-91a0b8444489</guid>
+      <guid>9c5b7f9f-fd73-4a37-81ab-6086b1f4fcea</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Links/TL58_Verify link valid till does not carry over to next link</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e6b6605c-9467-43d8-aff8-81cdbcf56c47</guid>
+      <guid>94ac21d5-ddd5-4aa4-b01d-30012fa6b56f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Upload form/TUF09_Verify upload form valid till does not carry over to next form</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b09d5c33-d71d-45e1-a523-8fa9081bada8</guid>
+      <guid>98e6e8d1-f5fe-4a84-b8b6-4cc1e4013be9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Accounts/TA25_Valid_till_date_does_not_carry_over_to_next_account</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>67739400-10f2-490b-97ab-c619c155ec96</guid>
+      <guid>41601fdc-4af1-412f-8052-2975c09d6b6b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS38_WebDavAccessToSharedSubfolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>72b25aa8-95f4-40a6-84f4-e83de11c4ff2</guid>
+      <guid>804a314c-f7c2-43cf-875e-77b2258f5615</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS40_StorageOfSharedSubfolderCountsTowardsTopFolderOwner</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4adeda87-5eb5-472f-bcd0-005c6bbbf9dd</guid>
+      <guid>b6410c66-9081-4947-affa-768756346ffc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS41_DownloadFileFromSharedSubfolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7baea57b-fe20-46ec-93a1-f5e1dda17aab</guid>
+      <guid>0f068e56-67ea-426f-b322-200ebf9456db</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF18_VerifyRemovingFolderMemberRevokesAccess</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4ca0036c-851f-46e9-a55a-29c1df3f82d0</guid>
+      <guid>30551546-4095-43b9-9463-86763d967d09</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Folders/TF19_VerifyLeavingGroupRevokesFolderAccess</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>9a429bcf-1cfb-41ec-b77c-8de0d47b8f93</guid>
+      <guid>3d32c683-c839-453d-95f2-758d53393be4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS39_PublicFileLinkOnFileInsideSharedSubfolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e469ecbc-aa1e-4459-98b6-89a5dd6e4706</guid>
+      <guid>824cd9c8-6a7e-4b7f-8c7e-9ebc00ac899e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS42_RenameFileInsideSharedSubfolder</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>228b8d62-6b04-4f67-88f2-dfb867a5fe26</guid>
+      <guid>d0f7004d-9840-4a65-8fc9-24d4030bda4a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS43_TagsOnSubfolderSurviveInterruptAndRestore</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2d6573b5-a2e8-43f6-bbc9-27359fccfbfa</guid>
+      <guid>067b2bc1-9cb8-49cf-89dc-e57912df674b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS44_InterruptUsesCurrentTagsNotStaleShareCopy</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>108f8b17-b75a-42d0-bf57-6b9dbecfdd32</guid>
+      <guid>25097a29-7c6d-4fc7-ab0a-9d71c5fccaac</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS45_InterruptOfUntaggedSubfolderAfterShareStaysUntagged</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6fc5535b-e95d-4481-86c2-5ab8262e0dfa</guid>
+      <guid>165419f6-b59c-467c-bb15-454b81e2f5a0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Subfoldersharing/SFS46_SharedInterruptedSubfolderTagsVisibleToMemberAfterTagChange</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1c19182f-6662-4f78-b1c4-2cd480c762c9</guid>
+      <guid>7f8730fe-2ef5-415e-bdc8-fa5f92628cdd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG27_Assign an existing group as a subgroup</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7245b065-9589-4b4c-b43f-6ff536025101</guid>
+      <guid>191b03f6-b0dc-4648-8790-0d787412b7ce</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG28_Create and assign a new subgroup from the parent group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a5a4220c-68e9-4e35-ad52-2f960b6a066b</guid>
+      <guid>776b1d5f-d789-404e-a6d1-1a41ffbd454c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG29_Add multiple subgroups to one parent group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>34f87e34-88f7-41f7-a890-e425e89f9ae1</guid>
+      <guid>9d6ad0aa-e3d1-4d7a-a922-2082a1238be7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG30_Assign one subgroup to multiple parent groups</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ed2bc183-21b8-4eb5-af72-a2eff38de48e</guid>
+      <guid>bb187dbb-be53-42b8-9321-f46d7d9c28ed</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG31_Display assigned subgroups in the group editor</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>194fac78-acee-4794-af75-ecc43267383c</guid>
+      <guid>deae51de-bb53-46e5-8399-6afe2f76d52a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG32_Search for a subgroup using autocomplete</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>738eb5f6-a079-4247-9c8a-34e0ebb238ac</guid>
+      <guid>f248a50a-490e-49f8-85dd-948d53e4dc05</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG33_Chcek the prevent circular group assignment</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e0d06098-3eb2-413e-ac49-aa2cb1226b60</guid>
+      <guid>149ed132-f737-448b-8717-4c9364b005db</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG34_Remove a subgroup from a parent group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>795e922a-7218-4305-8524-f1ca9ae7d5ee</guid>
+      <guid>63e9b521-fc34-4d4e-b4c3-3e3e4b00750b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG35_Verify removed subgroup is not deleted</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>30679e33-7861-4f55-a831-3c18e3b1e082</guid>
+      <guid>5bb989b0-7507-494b-a274-16117828dc10</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG36_Verify subgroup inherits parent folder permissions</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>08fa355a-73b4-4640-9abf-0cd907f0f883</guid>
+      <guid>34737cbd-b84c-4830-a034-c44e314c2f2a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG37_Verify subgroup keeps its own folder permissions</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4c02d988-2dde-42dd-a73f-668406a1ac59</guid>
+      <guid>09701412-bf45-4c24-b3fa-4f6c87bc9dba</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG38_Apply highest permission from parent and subgroup</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>55200167-330a-4aaf-894a-691c79416ce6</guid>
+      <guid>47ac2699-dff8-4d61-a4d6-afb19fa26cf6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG39_Verify permission inheritance through multiple nesting levels</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>683b71a4-7bcd-4e12-9887-8855bb9ffe35</guid>
+      <guid>1bad6343-fcb1-4580-8e60-7d14acd29422</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG40_Display subgroup count in the groups overview</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8630e89e-5325-4a4b-83a9-6e70be43e086</guid>
+      <guid>a064883c-45f8-418a-90c6-27348cdea822</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG41_Search for a subgroup from the groups overview</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b082c146-b3f9-4404-a82d-0de217744dd6</guid>
+      <guid>e74620cb-d622-4c2d-8a6c-464071a0f9f4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG42_Filter groups without members</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>64e8d709-a628-4ec6-8691-245e979409af</guid>
+      <guid>9847e662-81d9-4bde-b402-6a5746fd35dd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG43_Filter groups without folders</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>379692b7-4f3d-49b8-b183-ee27bdd98eeb</guid>
+      <guid>a650c558-b84b-4103-a12b-16c3c5b0b3fa</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG44_Filter top-level groups</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0d452fbf-d200-4c69-8260-65445e747403</guid>
+      <guid>985dcb63-21f9-4f82-bebe-e2c18be5d9e6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG45_Filter groups with subgroups</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1010b7cb-5241-4019-8212-4f0b02e95285</guid>
+      <guid>5afb2812-20c6-4a83-bc89-6e5258cd9aa7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG46_Verify subgroups remain after deleting their parent group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c7c33bfc-9340-42b4-bd9f-49bd153957b0</guid>
+      <guid>2b83750d-69e7-43cb-a273-105d969c4e60</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG47_Verify subgroups are deleted when Delete all subgroups is selected</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>eff68229-e84a-41bc-936f-fed66f87e4b0</guid>
+      <guid>4db7c44b-dfb4-45a1-980f-45c37bae22e6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG48_Verify inherited permissions are removed after deleting the parent</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>45de8d7e-71ab-4f0b-9441-6054934caba5</guid>
+      <guid>5a3f9ea0-e6fc-4e2d-99e1-00261065c1f7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Groups/TG49_Verify subgroup keeps its own permissions after deleting the parent</testCaseId>

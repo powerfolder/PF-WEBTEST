@@ -3,20 +3,20 @@ package credentials
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.util.KeywordUtil
 
+import helpers.ServerProfile
+
 import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.attribute.PosixFilePermission
 import java.nio.file.attribute.PosixFileAttributeView
 
-// Reads credentials from "pfwebtest-credentials.properties" in the user's home directory.
-// Required entries: adminusername:<user> and adminpassword:<password>
 class CredentialsManager {
 
-	private static final String CONFIG_FILE_NAME = 'pfwebtest-credentials.properties'
+	private static final String CONFIG_FILE_SUFFIX = '_pf_webtest-credentials.properties'
 
 	private static File getConfigFile() {
 		String home = System.getProperty('user.home')
-		return new File(home, CONFIG_FILE_NAME)
+		return new File(home, ServerProfile.getName() + CONFIG_FILE_SUFFIX)
 	}
 
 	private static void warnIfPermissionsTooOpen(File configFile) {
@@ -40,8 +40,7 @@ class CredentialsManager {
 	private static Properties loadProperties() {
 		File configFile = getConfigFile()
 		if (!configFile.exists()) {
-			KeywordUtil.markFailedAndStop("Credentials file not found: ${configFile.absolutePath}. " +
-					"Please create it with entries like 'adminusername:<user>' and 'adminpassword:<password>'.")
+			KeywordUtil.markFailedAndStop("Missing Configuration file: ${configFile.absolutePath}")
 		}
 		warnIfPermissionsTooOpen(configFile)
 
