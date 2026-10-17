@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test: Presentation - Delete
+Requirement: OO IE Docker installed, encrypted connection with PowerFolder Server
+Steps: Delete the file using the context menu in the web interface
+Expected: The file is successfully deleted and no longer listed</description>
+   <name>TCOO23_Presentation_Delete</name>
+   <tag>ONLYOFFICE</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8b09c8f5-3a45-4395-ac29-4fc761e6f1c9</testCaseGuid>
+</TestCaseEntity>

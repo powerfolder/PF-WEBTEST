@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test: CSVFile - Delete
+Requirement: OO IE Docker installed, encrypted connection with PowerFolder Server
+Steps: Delete the file using the context menu in the web interface
+Expected: The file is successfully deleted and no longer listed</description>
+   <name>TCOO19_CSVFile_Delete</name>
+   <tag>ONLYOFFICE</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>97dfa005-eca4-4228-8f1e-e1a37546f919</testCaseGuid>
+</TestCaseEntity>

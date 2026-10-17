@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test: Spreadsheet - Save
+Requirement: OO IE Docker installed, encrypted connection with PowerFolder Server
+Steps: Type a line, save (Ctrl/Cmd+S) and close the editor; reopen the file, type a second line without saving, wait for the auto-save status and leave the editor
+Expected: The file is successfully saved: PowerFolder stores a new version after each step and the downloaded file contains both lines</description>
+   <name>TCOO13_Spreadsheet_Save</name>
+   <tag>ONLYOFFICE</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a22f57f2-d694-4f82-89c1-18a6995f9996</testCaseGuid>
+</TestCaseEntity>

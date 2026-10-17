@@ -200,4 +200,42 @@
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>ONLYOFFICE Docs server URL</description>
+      <initValue>'https://oo.powerfolder.net'</initValue>
+      <name>ooUrl</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>ONLYOFFICE Docs version under test (checked on the landing page and via DocsAPI)</description>
+      <initValue>'10.0.0'</initValue>
+      <name>expectedOOVersion</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Seconds to wait for the ONLYOFFICE editor to load</description>
+      <initValue>60</initValue>
+      <name>editorTimeout</name>
+      <protected>false</protected>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Extra seconds after the editor reports ready</description>
+      <initValue>3</initValue>
+      <name>editorSettleSeconds</name>
+      <protected>false</protected>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Seconds to wait for ONLYOFFICE to write a change back to PowerFolder after closing the editor</description>
+      <initValue>90</initValue>
+      <name>saveCallbackTimeout</name>
+      <protected>false</protected>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Seconds to wait for the auto-save status of the editor before leaving it</description>
+      <initValue>15</initValue>
+      <name>autosaveWaitSeconds</name>
+      <protected>false</protected>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

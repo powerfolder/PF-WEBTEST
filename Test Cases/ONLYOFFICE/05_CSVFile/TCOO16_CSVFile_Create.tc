@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test: CSVFile - Create
+Requirement: OO IE Docker installed, encrypted connection with PowerFolder Server
+Steps: Create a new csv file with the + button in the web interface
+Expected: The file is created and ready to use: the editor opens in edit mode without an error dialog and reports the expected ONLYOFFICE version</description>
+   <name>TCOO16_CSVFile_Create</name>
+   <tag>ONLYOFFICE</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0302d033-43f2-4f58-8224-6235b4edf01f</testCaseGuid>
+</TestCaseEntity>

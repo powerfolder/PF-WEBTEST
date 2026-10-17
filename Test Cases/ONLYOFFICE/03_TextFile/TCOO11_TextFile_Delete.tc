@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test: TextFile - Delete
+Requirement: OO IE Docker installed, encrypted connection with PowerFolder Server
+Steps: Delete the file using the context menu in the web interface
+Expected: The file is successfully deleted and no longer listed</description>
+   <name>TCOO11_TextFile_Delete</name>
+   <tag>ONLYOFFICE</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>04a4e9f1-6665-4323-aa71-00a11a8f0259</testCaseGuid>
+</TestCaseEntity>
