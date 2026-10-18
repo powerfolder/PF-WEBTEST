@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test: Presentation - Create
+Requirement: OO IE Docker installed, encrypted connection with PowerFolder Server
+Steps: Create a new presentation with the + button in the web interface
+Expected: The file is created and ready to use: the editor opens in edit mode without an error dialog and reports the expected ONLYOFFICE version</description>
+   <name>TCOO20_Presentation_Create</name>
+   <tag>ONLYOFFICE</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7607d18b-5cf3-46d0-a149-0c7eb3049521</testCaseGuid>
+</TestCaseEntity>

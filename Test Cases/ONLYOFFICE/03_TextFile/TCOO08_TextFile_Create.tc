@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test: TextFile - Create
+Requirement: OO IE Docker installed, encrypted connection with PowerFolder Server
+Steps: Create a new text file with the + button in the web interface
+Expected: The file is created and ready to use: the editor opens in edit mode without an error dialog and reports the expected ONLYOFFICE version</description>
+   <name>TCOO08_TextFile_Create</name>
+   <tag>ONLYOFFICE</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a95c7fa8-57ba-4a33-a615-edcf8faf73b9</testCaseGuid>
+</TestCaseEntity>

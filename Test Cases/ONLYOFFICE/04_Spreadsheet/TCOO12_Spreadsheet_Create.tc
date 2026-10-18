@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test: Spreadsheet - Create
+Requirement: OO IE Docker installed, encrypted connection with PowerFolder Server
+Steps: Create a new spreadsheet with the + button in the web interface
+Expected: The file is created and ready to use: the editor opens in edit mode without an error dialog and reports the expected ONLYOFFICE version</description>
+   <name>TCOO12_Spreadsheet_Create</name>
+   <tag>ONLYOFFICE</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4b7242cb-5f36-4154-842e-442b1b5ebf3f</testCaseGuid>
+</TestCaseEntity>

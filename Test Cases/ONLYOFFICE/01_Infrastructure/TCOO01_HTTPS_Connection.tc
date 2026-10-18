@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test: HTTPS Connection
+Requirement: OO server with SSL certificate; PowerFolder server running with a valid SSL licence
+Steps: Open the ONLYOFFICE welcome page over HTTPS; create a document, check that the editor is loaded from the ONLYOFFICE URL, type a line and close the editor
+Expected: the file exchange between PowerFolder and the OO server is successful: the document opens from PowerFolder and the typed line is saved back to PowerFolder</description>
+   <name>TCOO01_HTTPS_Connection</name>
+   <tag>ONLYOFFICE</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d503e2d5-8825-4e26-a2b0-e8b612d38bbb</testCaseGuid>
+</TestCaseEntity>
