@@ -233,7 +233,7 @@
       <protected>false</protected>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Seconds to wait for the auto-save status of the editor before leaving it</description>
+      <description>Seconds to wait until the editor reports the typed changes as saved before leaving it</description>
       <initValue>15</initValue>
       <name>autosaveWaitSeconds</name>
       <protected>false</protected>

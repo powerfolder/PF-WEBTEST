@@ -33,11 +33,14 @@ class OOEditor {
 		}
 	}
 
+	static final String VISIBLE_WINDOWS = "function vis(e){return !!(e && (e.offsetWidth || e.offsetHeight || e.getClientRects().length));}" +
+			"var w=[].slice.call(document.querySelectorAll('.asc-window')).filter(vis);"
+
 	static Map editorState() {
-		return OnlyOffice.js("var m=document.querySelector('.asc-loadmask, #loadmask, .loadmask');" +
-				"var w=[].slice.call(document.querySelectorAll('.asc-window')).filter(function(x){return x.offsetParent;});" +
+		return OnlyOffice.js(VISIBLE_WINDOWS +
+				"var m=document.querySelector('.asc-loadmask, #loadmask, .loadmask');" +
 				"var other=w.filter(function(x){return !/CSV/.test(x.innerText);})[0];" +
-				"return {loading: !!(m && m.offsetParent), csv: w.some(function(x){return /CSV/.test(x.innerText);})," +
+				"return {loading: vis(m), csv: w.some(function(x){return /CSV/.test(x.innerText);})," +
 				" dialog: other ? other.innerText.trim().replace(/\\s+/g, ' ') : null};") as Map
 	}
 
@@ -63,9 +66,36 @@ class OOEditor {
 		if (state.dialog) {
 			KeywordUtil.markFailedAndStop("ONLYOFFICE shows a dialog instead of the document: ${state.dialog}")
 		}
+		if (state.csv) {
+			KeywordUtil.markFailedAndStop('The CSV options dialog of ONLYOFFICE is still open')
+		}
 		if (state.loading) {
 			KeywordUtil.markFailedAndStop('ONLYOFFICE did not finish loading the document')
 		}
+		trackDocumentState()
+	}
+
+	static void trackDocumentState() {
+		WebUI.switchToDefaultContent()
+		OnlyOffice.js("if(!window.__ooStateListener){window.__ooStateListener=true;" +
+				"window.addEventListener('message',function(e){try{" +
+				"var m=typeof e.data==='string'?JSON.parse(e.data):e.data;" +
+				"if(m&&m.event==='onDocumentStateChange'){window.__ooStates.push(!!m.data);}" +
+				"}catch(x){}});}" +
+				"window.__ooStates=[];")
+		WebUI.switchToFrame(findTestObject('ONLY OFFICE/iframe_frameEditor'), timeout())
+	}
+
+	@Keyword
+	static boolean waitDocumentSaved(int seconds) {
+		WebUI.switchToDefaultContent()
+		boolean saved = OnlyOffice.tryWaitUntil(seconds) {
+			OnlyOffice.js("var s=window.__ooStates||[];return s.indexOf(true)>=0&&s[s.length-1]===false;") as Boolean
+		}
+		KeywordUtil.logInfo("ONLYOFFICE document states since loading: " +
+				OnlyOffice.js("return JSON.stringify(window.__ooStates||[]);"))
+		WebUI.switchToFrame(findTestObject('ONLY OFFICE/iframe_frameEditor'), timeout())
+		return saved
 	}
 
 	@Keyword
@@ -75,17 +105,13 @@ class OOEditor {
 	}
 
 	static void confirmCsvOptions() {
-		boolean shown = OnlyOffice.tryWaitUntil(8) {
-			OnlyOffice.js("return [].slice.call(document.querySelectorAll('.asc-window')).some(function(w){" +
-					"return w.offsetParent && /CSV/.test(w.innerText);});") as Boolean
-		}
+		boolean shown = OnlyOffice.tryWaitUntil(8) { editorState().csv as Boolean }
 		if (shown) {
-			OnlyOffice.js("[].slice.call(document.querySelectorAll('.asc-window')).forEach(function(w){" +
-					"if(w.offsetParent && /CSV/.test(w.innerText)){" +
-					"var b=[].slice.call(w.querySelectorAll('button')).filter(function(x){return /^OK\$/i.test((x.innerText||'').trim());})[0];" +
-					"if(b){b.click();}}});")
+			OnlyOffice.js(VISIBLE_WINDOWS +
+					"w.filter(function(x){return /CSV/.test(x.innerText);}).forEach(function(x){" +
+					"var b=x.querySelector('[result=\"ok\"]'); if(b){b.click();}});")
+			OnlyOffice.waitUntil(10, 'the CSV options dialog to close') { !(editorState().csv as Boolean) }
 			KeywordUtil.logInfo('Confirmed the CSV options dialog with its defaults')
-			WebUI.delay(2)
 		}
 	}
 
@@ -150,15 +176,8 @@ class OOEditor {
 	static void save() {
 		new Actions(OnlyOffice.driver()).keyDown(shortcutKey()).sendKeys('s').keyUp(shortcutKey()).perform()
 		WebUI.delay(1)
-		if (!waitSavedStatus(20)) {
-			KeywordUtil.markWarning('Editor did not show "All changes saved" within 20 s')
-		}
-	}
-
-	@Keyword
-	static boolean waitSavedStatus(int seconds) {
-		return OnlyOffice.tryWaitUntil(seconds) {
-			OnlyOffice.js("return /Alle \u00c4nderungen (wurden )?gespeichert|All changes saved/.test(document.body.innerText);") as Boolean
+		if (!waitDocumentSaved(20)) {
+			KeywordUtil.markWarning('ONLYOFFICE still reports unsaved changes 20 s after saving')
 		}
 	}
 }

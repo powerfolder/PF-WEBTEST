@@ -38,7 +38,7 @@ try {
 	OnlyOffice.openFile(folderId, fileName)
 	OOEditor.waitReady(fileType)
 	OOEditor.typeLine(fileType, autosavedLine, 2)
-	assert OOEditor.waitSavedStatus(GlobalVariable.autosaveWaitSeconds as int)
+	assert OOEditor.waitDocumentSaved(GlobalVariable.autosaveWaitSeconds as int)
 	OnlyOffice.openFolder(folderId)
 	OnlyOffice.waitForChange(folderId, fileName, savedOnClose, GlobalVariable.saveCallbackTimeout as int)
 	String savedText = OnlyOffice.readFileText(folderId, fileName)

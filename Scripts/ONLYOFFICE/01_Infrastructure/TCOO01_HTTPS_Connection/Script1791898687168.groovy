@@ -45,7 +45,7 @@ try {
 
 	WebUI.switchToFrame(findTestObject('ONLY OFFICE/iframe_frameEditor'), 10)
 	OOEditor.typeLine(fileType, exchangedLine, 1)
-	assert OOEditor.waitSavedStatus(GlobalVariable.autosaveWaitSeconds as int)
+	assert OOEditor.waitDocumentSaved(GlobalVariable.autosaveWaitSeconds as int)
 	WebUI.closeWindowIndex(1)
 	WebUI.switchToWindowIndex(0)
 	OnlyOffice.waitForChange(folderId, fileName, created, GlobalVariable.saveCallbackTimeout as int)
