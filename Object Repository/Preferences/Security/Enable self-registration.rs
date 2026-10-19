@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Enable self-registration</name>
+   <tag></tag>
+   <elementGuidId>4b0eea62-201b-4df1-b072-c15f354e7198</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='server.register.enabled']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input#server\.register\.enabled</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>4b0eea62-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
