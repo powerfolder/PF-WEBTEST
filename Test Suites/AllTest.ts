@@ -4122,4 +4122,11 @@
       <testCaseId>Test Cases/ONLYOFFICE/03_TextFile/TCOO11_TextFile_Delete</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>58fb7974-3562-436c-8009-d2c2b0a11768</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Registration/TR3_Invited user registers while self-registration is disabled</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
