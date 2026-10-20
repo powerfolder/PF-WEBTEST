@@ -13,7 +13,7 @@ public class LoginHelper {
     static void enterCredentials(String username, String password) {
         WebUI.setText(findTestObject('Login/inputEmail'), username)
 
-        if (ServerProfile.isNot(ServerProfile.MIMAS, ServerProfile.DEFAULT)) {
+        if (ServerProfile.isNot(ServerProfile.MIMAS)) {
             WebUI.click(findTestObject('Login/loginSubmit'))
             WebUI.waitForElementVisible(findTestObject('Login/inputPassword'), 10)
         }

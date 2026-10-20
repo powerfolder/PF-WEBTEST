@@ -6,7 +6,7 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://mimas.powerfolder.net/login'</initValue>
+      <initValue>'https://&lt;YOUR-SERVER-URL>/login'</initValue>
       <name>URL</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
@@ -174,7 +174,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://mimas.powerfolder.net/webdav'</initValue>
+      <initValue>'https://&lt;YOUR-SERVER-URL>/webdav'</initValue>
       <name>WebdavURL</name>
       <protected>false</protected>
       <valueType>STRING</valueType>

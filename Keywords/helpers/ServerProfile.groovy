@@ -5,12 +5,11 @@ import com.kms.katalon.core.configuration.RunConfiguration
 
 public class ServerProfile {
 
-    static final String DEFAULT  = 'default'
-    static final String MIMAS    = 'mimas'
-    static final String JANUS    = 'janus'
-    static final String PAN      = 'pan'
-    static final String TITAN    = 'titan'
-    static final String CUSTOMER = 'customer'
+    static final String DEFAULT = 'default'
+    static final String MIMAS   = 'mimas'
+    static final String JANUS   = 'janus'
+    static final String PAN     = 'pan'
+    static final String TITAN   = 'titan'
 
     @Keyword
     static String getName() {

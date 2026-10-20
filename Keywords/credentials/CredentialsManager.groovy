@@ -12,7 +12,7 @@ import java.nio.file.attribute.PosixFileAttributeView
 
 class CredentialsManager {
 
-	private static final String CONFIG_FILE_SUFFIX = '_pf_webtest-credentials.properties'
+	private static final String CONFIG_FILE_SUFFIX = '_pf_webtest.conf'
 
 	private static File getConfigFile() {
 		String home = System.getProperty('user.home')
