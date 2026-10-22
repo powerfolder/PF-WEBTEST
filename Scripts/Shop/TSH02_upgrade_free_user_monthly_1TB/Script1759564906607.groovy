@@ -92,10 +92,13 @@ WebUI.setText(findTestObject('Page_PowerFolder - shop_stripe/input_Rechnungsadre
 
 WebUI.delay(2)
 
-WebUI.scrollToElement(findTestObject('Page_PowerFolder - shop_stripe/div_Zahlungspflichtig abonnieren_SubmitButton-IconContainer'), 
+WebUI.scrollToElement(findTestObject('Page_PowerFolder - shop_stripe/button_Zahlungspflichtig abonnieren_SubmitButton'),
     0)
 
-WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/div_Zahlungspflichtig abonnieren_SubmitButton-IconContainer'))
+WebUI.waitForElementClickable(findTestObject('Page_PowerFolder - shop_stripe/button_Zahlungspflichtig abonnieren_SubmitButton'),
+    10)
+
+WebUI.click(findTestObject('Page_PowerFolder - shop_stripe/button_Zahlungspflichtig abonnieren_SubmitButton'))
 
 // high delay needed so stripe call back is done in background
 WebUI.delay(120)
