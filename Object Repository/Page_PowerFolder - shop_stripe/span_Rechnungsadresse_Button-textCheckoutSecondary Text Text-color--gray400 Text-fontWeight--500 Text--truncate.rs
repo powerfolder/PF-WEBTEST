@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>span.Button-textCheckoutSecondary.Text.Text-color--gray400.Text-fontWeight--500.Text--truncate</value>
+         <value>form#payment-form div.AddressAutocomplete-manual-entry > button span</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//form[@id='payment-form']/div/div/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/button/div/span</value>
+         <value>//form[@id='payment-form']//div[contains(@class,'AddressAutocomplete-manual-entry')]/button//span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

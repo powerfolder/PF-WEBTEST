@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>span.Text-color--default.Text-fontSize--24.Text-fontWeight--bold.Text-lineHeight--24.Text-numericSpacing--proportional.Text-typeface--base.Text-wrap--wrap.Text-display--inline > span</value>
+         <value>section[data-testid='overview-active-plans'] div[data-testid='payment-due-date-and-amount']</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body[@id='customer_portal_page_body']/div/div/div/div/main/div/div/div/section/div/a/div[1]/div[2]/div[1]/span[1]</value>
+         <value>//section[@data-testid='overview-active-plans']//div[@data-testid='payment-due-date-and-amount']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

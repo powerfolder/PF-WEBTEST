@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class,'pica-notification-box') and contains(@class,'alert-warning') and contains(.,'Max users')]</value>
+         <value>(//div[contains(@class,'pica-notification-box') and contains(@class,'alert-warning')])[last()]</value>
       </entry>
       <entry>
          <key>CSS</key>
