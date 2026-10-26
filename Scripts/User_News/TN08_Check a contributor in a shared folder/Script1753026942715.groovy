@@ -24,6 +24,7 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import login.LoginHelper as LoginHelper
+import credentials.CredentialsManager as CredentialsManager
 
 WebUI.callTestCase(findTestCase('User_News/Pre_test/create_admin_file'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -75,7 +76,7 @@ String tooltipText = WebUI.getAttribute(findTestObject('News_User/Page_News - Po
 
 println('Tooltip content: ' + tooltipText)
 
-String expectedAdminEmail = 'adminqa'
+String expectedAdminEmail = CredentialsManager.getAdminUsername()
 
 String actualEmail = tooltipText.substring(tooltipText.lastIndexOf(' ') + 1).trim()
 

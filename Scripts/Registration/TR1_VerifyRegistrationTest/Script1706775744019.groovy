@@ -40,16 +40,6 @@ GlobalVariable.userEmail = generateRandomEmail().toLowerCase()
 
 WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Email'), GlobalVariable.userEmail)
 
-//WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Department'), FormGenerator.generateDepartment())
-
-//WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Street'), FormGenerator.generateStreet())
-
-//WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_code_postal'), FormGenerator.generatePostalCode())
-
-//WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Location'), FormGenerator.generateLocation())
-
-//WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Raison_For'), FormGenerator.generateReason())
-
 WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Password'), GlobalVariable.Pass)
 
 WebUI.check(findTestObject('Registration/Page_Register - PowerFolder/AcceptTermsAndConditions'))
@@ -78,13 +68,13 @@ WebUI.check(findTestObject('Accounts/Edit_Accounts - PowerFolder/button_Active')
 
 WebUI.click(findTestObject('Accounts/SaveButton'))
 
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
+
 WebUI.navigateToUrl(GlobalVariable.URL)
 
 LoginHelper.enterCredentials(GlobalVariable.userEmail, GlobalVariable.Pass)
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.delay(2)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

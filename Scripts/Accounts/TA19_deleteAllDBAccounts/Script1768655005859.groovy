@@ -30,6 +30,7 @@ import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import java.util.Random as Random
 import com.kms.katalon.core.testobject.ConditionType
+import credentials.CredentialsManager as CredentialsManager
 
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -97,7 +98,7 @@ TestObject adminaccount = new TestObject()
 adminaccount.addProperty(
 	"xpath",
 	ConditionType.EQUALS,
-	"//*[contains(@data-search-keys, 'adminqa')]/td[1]/span"
+	"//*[contains(@data-search-keys, '${CredentialsManager.getAdminUsername()}')]/td[1]/span"
 )
 
 boolean Present = WebUI.waitForElementPresent(adminaccount, 10)

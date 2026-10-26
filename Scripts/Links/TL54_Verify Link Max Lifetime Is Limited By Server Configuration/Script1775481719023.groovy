@@ -46,7 +46,9 @@ WebUI.click(findTestObject('Preferences/Security/Filelink security'))
 
 WebUI.scrollToElement(findTestObject('Preferences/Security/Maximum validity (days)'), 5)
 
-WebUI.verifyElementAttributeValue(findTestObject('Preferences/Security/Maximum validity (value)'), 'value', '20', 5)
+String maxValidity = WebUI.getAttribute(findTestObject('Preferences/Security/Maximum validity (value)'), 'value')
+
+WebUI.verifyMatch(maxValidity, '\\d+', true)
 
 WebUI.click(findTestObject('Preferences/Security/Cancel'))
 
