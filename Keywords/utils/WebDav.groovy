@@ -8,6 +8,7 @@ import com.kms.katalon.core.testobject.TestObjectProperty
 import com.kms.katalon.core.testobject.impl.HttpTextBodyContent
 import com.kms.katalon.core.testobject.ConditionType
 import groovy.json.JsonSlurper
+import internal.GlobalVariable
 import java.nio.file.Files
 import java.nio.file.Paths
 import java.net.HttpURLConnection
@@ -28,7 +29,8 @@ class WebDav {
 
 	private getToken(String username, String password) {
 		// create API-URL
-		String url = "https://mimas.powerfolder.net/login?Username=${username}&Password=${password}&json=1"
+		def baseUrl = new URL(GlobalVariable.URL)
+		String url = baseUrl.protocol + '://' + baseUrl.authority + "/login?Username=${username}&Password=${password}&json=1"
 
 		// Request-Objekt erstellen
 		RequestObject request = new RequestObject("loginRequest")

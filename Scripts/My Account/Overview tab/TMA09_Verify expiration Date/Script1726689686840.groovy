@@ -88,7 +88,9 @@ WebUI.click(findTestObject('Login/loginSubmit'))
 // Vérification que la notificatio esr bien affiché 
 WebUI.verifyElementPresent(findTestObject('My_Account/Overview/Page_Login - PowerFolder/Notice_account_has_expired'), 5) 
 
-WebUI.verifyMatch(WebUI.getUrl(),'https://mimas.powerfolder.net/pricing?expired=true',false)
+def baseUrl = new URL(GlobalVariable.URL)
+
+WebUI.verifyMatch(WebUI.getUrl(), baseUrl.protocol + '://' + baseUrl.authority + '/pricing?expired=true', false)
 
 // Fermeture du navigateur
 WebUI.closeBrowser()
