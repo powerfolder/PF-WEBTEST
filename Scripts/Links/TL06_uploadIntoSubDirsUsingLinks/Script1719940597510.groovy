@@ -27,6 +27,7 @@ import java.nio.file.Files as Files
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.testobject.ConditionType
 import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -38,6 +39,8 @@ WebUI.click(findTestObject('Folders/createFolder'))
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
 
+folderName = FolderName.withSuffix(folderName)
+
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
@@ -48,7 +51,9 @@ WebUI.click(findTestObject('Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Folders/createDirectoryIcon'))
 
-WebUI.setText(findTestObject('Folders/inputFolderName'), 'dir1')
+String dir1 = FolderName.withSuffix('dir1')
+
+WebUI.setText(findTestObject('Folders/inputFolderName'), dir1)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 
@@ -56,7 +61,9 @@ WebUI.click(findTestObject('Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Folders/createDirectoryIcon'))
 
-WebUI.setText(findTestObject('Folders/inputFolderName'), 'dir2')
+String dir2 = FolderName.withSuffix('dir2')
+
+WebUI.setText(findTestObject('Folders/inputFolderName'), dir2)
 
 WebUI.sendKeys(findTestObject('Folders/inputFolderName'), Keys.chord(Keys.ENTER))
 
@@ -90,7 +97,7 @@ TestObject dynamicObject = new TestObject()
 dynamicObject.addProperty(
 	"xpath",
 	ConditionType.EQUALS,
-	"//span[text()='" + 'dir2' + "']"
+	"//span[text()='" + dir2 + "']"
 )
 
 boolean exists = WebUI.verifyElementPresent(dynamicObject, 10, FailureHandling.STOP_ON_FAILURE)

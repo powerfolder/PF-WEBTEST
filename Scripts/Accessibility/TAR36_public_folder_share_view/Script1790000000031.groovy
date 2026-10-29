@@ -20,6 +20,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import static helpers.Helper.getRandomFolderName
 import static helpers.Helper.getRandomFileName
+import folder.FolderName as FolderName
 
 // Follows the same flow as Test Cases/LinksTable/LT04_Folder link is accessible, but
 // instead of verifying the clipboard URL, it scans the actual public folder share
@@ -33,6 +34,8 @@ WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
+folderName = FolderName.withSuffix(folderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 

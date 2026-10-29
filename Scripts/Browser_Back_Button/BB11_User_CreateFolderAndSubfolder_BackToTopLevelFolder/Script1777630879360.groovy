@@ -21,6 +21,7 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import login.LoginHelper as LoginHelper
+import folder.FolderName as FolderName
 
 GlobalVariable.userEmail = generateRandomEmail().toLowerCase()
 
@@ -62,6 +63,8 @@ String topFolder = 'Top_lvl' + getTimestamp()
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
 
+topFolder = FolderName.withSuffix(topFolder)
+
 WebUI.setText(findTestObject('Folders/inputFolderName'), topFolder)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
@@ -75,6 +78,8 @@ WebUI.verifyElementPresent(findTestObject('Folders/Page_Folders - PowerFolder/Ne
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'))
 
 String subFolderName = "Sub"+ getTimestamp()
+
+subFolderName = FolderName.withSuffix(subFolderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), subFolderName)
 

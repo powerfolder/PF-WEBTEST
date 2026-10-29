@@ -31,6 +31,7 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import login.LoginHelper as LoginHelper
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('User_News/Pre_test/Create_user'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -54,6 +55,8 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolde
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
 
+folderName1 = FolderName.withSuffix(folderName1)
+
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), folderName1)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
@@ -66,6 +69,8 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolde
 
 String folderName2 = getRandomFolderName()
 
+folderName2 = FolderName.withSuffix(folderName2)
+
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), folderName2)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
@@ -75,6 +80,8 @@ String folderName3 = getRandomFolderName()
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
+
+folderName3 = FolderName.withSuffix(folderName3)
 
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), folderName3)
 

@@ -40,6 +40,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
 import com.kms.katalon.core.webui.driver.DriverFactory
 import java.time.Duration
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -76,6 +77,8 @@ WebUI.delay(2)
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Folders'))
+
+Folder_parent = FolderName.withSuffix(Folder_parent)
 
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Delete_pica-taginput-input form-control'), 
     Folder_parent)

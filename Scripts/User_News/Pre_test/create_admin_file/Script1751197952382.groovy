@@ -30,6 +30,7 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import folder.FolderName as FolderName
 
 GlobalVariable.userEmail = generateRandomEmail().toLowerCase()
 
@@ -63,6 +64,8 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
+
+GlobalVariable.folderName = FolderName.withSuffix(GlobalVariable.folderName)
 
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), GlobalVariable.folderName)
 

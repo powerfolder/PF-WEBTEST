@@ -6,6 +6,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
@@ -19,6 +20,8 @@ WebUI.click(findTestObject('Folders/createFolder'))
 
 String folderName = getRandomFolderName()
 
+
+folderName = FolderName.withSuffix(folderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 

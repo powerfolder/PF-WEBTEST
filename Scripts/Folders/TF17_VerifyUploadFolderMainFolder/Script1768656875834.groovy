@@ -53,6 +53,7 @@ import java.nio.file.Path as Path
 import java.time.Duration as Duration
 import java.io.File as File
 import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -65,6 +66,7 @@ WebUI.click(findTestObject('Folders/createFolder'))
 String mainFolder = getRandomFolderName()
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+mainFolder = FolderName.withSuffix(mainFolder)
 WebUI.setText(findTestObject('Folders/inputFolderName'), mainFolder)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
@@ -79,6 +81,7 @@ WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/Upload files'))
 
 // Création d'un dossier avec plusieurs fichiers Word sur le bureau
 String folderName = 'folder_with_files_' + RandomStringUtils.randomNumeric(4)
+folderName = FolderName.withSuffix(folderName)
 String folderPath = createFolderWithWordFilesOnDesktop(folderName, 3)
 
 // Upload direct dans l'input folder

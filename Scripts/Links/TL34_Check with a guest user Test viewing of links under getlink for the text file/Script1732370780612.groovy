@@ -30,6 +30,7 @@ import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import login.LoginHelper as LoginHelper
 import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
 
@@ -67,6 +68,8 @@ String folderName = getRandomFolderName()
 WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Object Repository/Folders/createFolder'))
+
+folderName = FolderName.withSuffix(folderName)
 
 WebUI.setText(findTestObject('Object Repository/Folders/inputFolderName'), folderName)
 

@@ -22,6 +22,7 @@ import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import credentials.CredentialsManager as CredentialsManager
 import login.LoginHelper as LoginHelper
 import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 // Builds its own two-account scenario (via the admin account, same flow as
 // Test Cases/Accounts/Edit_Account/pre_test/Create_Account) instead of relying on the
@@ -118,6 +119,8 @@ WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
+folderName = FolderName.withSuffix(folderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 

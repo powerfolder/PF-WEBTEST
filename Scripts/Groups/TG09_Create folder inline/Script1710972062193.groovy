@@ -31,6 +31,7 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import java.time.Duration
+import folder.FolderName as FolderName
 
 
 WebUI.callTestCase(findTestCase('Groups/Pre_test/create_group'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -40,6 +41,8 @@ GlobalVariable.folderName = ('folder_' + RandomStringUtils.randomNumeric(4))
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Folders'))
+
+GlobalVariable.folderName = FolderName.withSuffix(GlobalVariable.folderName)
 
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Delete_pica-taginput-input form-control'), 
     GlobalVariable.folderName)

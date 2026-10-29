@@ -24,6 +24,7 @@ import org.openqa.selenium.WebElement as WebElement
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import java.util.Arrays as Arrays
 import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -36,6 +37,8 @@ WebUI.click(findTestObject('Folders/createFolder'))
 String topLvlFolderName = 'Top_lvl' + getTimestamp()
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
+topLvlFolderName = FolderName.withSuffix(topLvlFolderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), topLvlFolderName)
 

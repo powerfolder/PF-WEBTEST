@@ -31,6 +31,7 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import login.LoginHelper as LoginHelper
+import folder.FolderName as FolderName
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -59,6 +60,8 @@ WebUI.click(findTestObject('Folders/createFolder'))
 GlobalVariable.folderName = ('TF10_' + RandomStringUtils.randomAlphanumeric(6))
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
+GlobalVariable.folderName = FolderName.withSuffix(GlobalVariable.folderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), GlobalVariable.folderName)
 

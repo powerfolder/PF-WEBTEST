@@ -34,6 +34,7 @@ import file.FileFinder as FileFinder
 import helpers.Helper as Helper
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import login.LoginHelper as LoginHelper
+import folder.FolderName as FolderName
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -53,6 +54,8 @@ WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 
 String Folder_1 = 'Folder_1' + Helper.getRandomFolderName()
+
+Folder_1 = FolderName.withSuffix(Folder_1)
 
 createFolder(Folder_1)
 

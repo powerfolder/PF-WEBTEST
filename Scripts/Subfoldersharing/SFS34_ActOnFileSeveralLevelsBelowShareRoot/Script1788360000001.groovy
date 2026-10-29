@@ -24,6 +24,7 @@ import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
 import helpers.LocalizedText as LocalizedText
 import login.LoginHelper as LoginHelper
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
 String memberEmail = GlobalVariable.userEmail
@@ -35,17 +36,22 @@ String tlfName = 'SFS34_' + RandomStringUtils.randomAlphanumeric(6)
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+tlfName = FolderName.withSuffix(tlfName)
 WebUI.setText(findTestObject('Folders/inputFolderName'), tlfName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
 String subAName = 'SFS34_SubA_' + RandomStringUtils.randomAlphanumeric(6)
+subAName = FolderName.withSuffix(subAName)
 createNestedFolder(subAName)
 
 String aName = 'a'
+aName = FolderName.withSuffix(aName)
 createNestedFolder(aName)
 String bName = 'b'
+bName = FolderName.withSuffix(bName)
 createNestedFolder(bName)
 String cName = 'c'
+cName = FolderName.withSuffix(cName)
 createNestedFolder(cName)
 
 String docName = 'SFS34_file_' + RandomStringUtils.randomAlphanumeric(6)

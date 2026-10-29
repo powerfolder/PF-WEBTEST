@@ -30,6 +30,7 @@ import java.util.Arrays as Arrays
 import credentials.CredentialsManager as CredentialsManager
 import login.LoginHelper as LoginHelper
 import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 int uploadWaitSeconds = 600
 
@@ -80,6 +81,8 @@ WebUI.delay(2)
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Folders/createFolder'))
+
+folderName = FolderName.withSuffix(folderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 

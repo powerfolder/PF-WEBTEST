@@ -33,6 +33,7 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import login.LoginHelper as LoginHelper
 import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 
 GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
@@ -71,6 +72,8 @@ String folderName = getRandomFolderName()
 WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Object Repository/Folders/createFolder'))
+
+folderName = FolderName.withSuffix(folderName)
 
 WebUI.setText(findTestObject('Object Repository/Folders/inputFolderName'), folderName)
 

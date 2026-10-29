@@ -33,6 +33,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import helpers.Helper as Helper
 import org.openqa.selenium.interactions.Actions as Actions
 import com.kms.katalon.core.llm.keyword.LlmKeywords as LLM
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -68,6 +69,8 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Folders'))
 
+Folder_parent = FolderName.withSuffix(Folder_parent)
+
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Delete_pica-taginput-input form-control'),
 	Folder_parent)
 
@@ -91,6 +94,8 @@ WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder
 	'create Subgroup')
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Folders'))
+
+Folder_sub = FolderName.withSuffix(Folder_sub)
 
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Delete_pica-taginput-input form-control'),
 	Folder_sub)

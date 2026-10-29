@@ -16,6 +16,7 @@ import java.util.Comparator
 import java.nio.file.Files
 import java.nio.file.Paths
 import java.nio.file.Path
+import folder.FolderName as FolderName
 
 String topFolder = "Top_lvl_" + Helper.getRandomFolderName()
 
@@ -26,6 +27,8 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/
 WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Object Repository/Folders/createFolder'))
+
+topFolder = FolderName.withSuffix(topFolder)
 
 WebUI.setText(findTestObject('Object Repository/Folders/inputFolderName'), topFolder)
 
@@ -71,6 +74,8 @@ List<String> localFolderPaths = []
 for (int i = 1; i <= 3; i++) {
 
 	String localFolderName = Helper.getRandomFolderName()
+
+	localFolderName = FolderName.withSuffix(localFolderName)
 
 	String localFolderPath = createLocalFolderOnDesktop(localFolderName)
 

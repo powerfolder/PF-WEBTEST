@@ -38,6 +38,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import credentials.CredentialsManager as CredentialsManager
 import login.LoginHelper as LoginHelper
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Upload form/Pre_Test/Creat_upload_form'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -58,6 +59,8 @@ WebUI.click(findTestObject('1Upload_Form/Page_Link - PowerFolder/span_Add direct
 
 // Création d'un dossier avec des fichiers Word sur le bureau
 String folderName = 'folder_with_files_' + RandomStringUtils.randomNumeric(4)
+
+folderName = FolderName.withSuffix(folderName)
 
 String folderPath = createFolderWithWordFilesOnDesktop(folderName, 3)
 

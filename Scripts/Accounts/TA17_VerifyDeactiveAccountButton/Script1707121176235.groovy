@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import folder.FolderName as FolderName
 
 String firstName = 'TA10_' + generateRandomString(8)
 String lastName = generateRandomString(8)
@@ -45,6 +46,7 @@ try {
 WebUI.waitForElementVisible(findTestObject('Accounts/verifyEditDialogTitle'), 10, FailureHandling.OPTIONAL)
 WebUI.verifyEqual(WebUI.getText(findTestObject('Accounts/verifyEditDialogTitle')), 'Edit', FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Accounts/AddFolder'))
+firstName = FolderName.withSuffix(firstName)
 WebUI.setText(findTestObject('Accounts/AddFolderByNameInput'), firstName)
 WebUI.delay(2)
 WebUI.click(findTestObject('Accounts/SelectCreateNew'))

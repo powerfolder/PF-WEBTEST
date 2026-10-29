@@ -52,6 +52,7 @@ import javax.swing.JFrame as JFrame
 import java.nio.file.Path as Path
 import java.time.Duration as Duration
 import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -65,6 +66,8 @@ WebUI.click(findTestObject('Folders/createFolder'))
 String topFolder = "Top_lvl" + getTimestamp()
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
+topFolder = FolderName.withSuffix(topFolder)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), topFolder)
 
@@ -84,6 +87,8 @@ WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'
 
 String subFolderName = "Sub"+ getTimestamp()
 
+subFolderName = FolderName.withSuffix(subFolderName)
+
 WebUI.setText(findTestObject('Folders/inputFolderName'), subFolderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
@@ -93,6 +98,8 @@ WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'))
 
 String subSubFolderName = "SubSub"+ getTimestamp()
+
+subSubFolderName = FolderName.withSuffix(subSubFolderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), subSubFolderName)
 

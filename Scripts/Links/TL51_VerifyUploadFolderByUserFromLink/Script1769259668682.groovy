@@ -55,6 +55,7 @@ import javax.swing.JFrame as JFrame
 import java.nio.file.Path as Path
 import java.time.Duration as Duration
 import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('My Account/Pre_test/Create Account'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -65,6 +66,8 @@ WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
+folderName = FolderName.withSuffix(folderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
@@ -119,6 +122,8 @@ WebUI.delay(2)
 WebUI.click(findTestObject('Links/Upload Folder'))
 
 String uploadFolderName = 'folder_with_files_' + getTimestamp()
+
+uploadFolderName = FolderName.withSuffix(uploadFolderName)
 
 String folderPath = createFolderWithWordFilesOnDesktop(uploadFolderName, 3)
 

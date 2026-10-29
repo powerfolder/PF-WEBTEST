@@ -31,6 +31,7 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import login.LoginHelper as LoginHelper
+import folder.FolderName as FolderName
 
 GlobalVariable.userEmail = generateRandomEmail().toLowerCase()
 
@@ -74,6 +75,8 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolde
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
 
+Folder_0 = FolderName.withSuffix(Folder_0)
+
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), Folder_0)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
@@ -107,6 +110,8 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolde
 
 String Folder_1 = getRandomFolderName()
 
+Folder_1 = FolderName.withSuffix(Folder_1)
+
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), Folder_1)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
@@ -137,6 +142,8 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolde
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
 
 String Folder_2 = getRandomFolderName()
+
+Folder_2 = FolderName.withSuffix(Folder_2)
 
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), Folder_2)
 
@@ -169,6 +176,8 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolde
 
 String Folder_3 = getRandomFolderName()
 
+Folder_3 = FolderName.withSuffix(Folder_3)
+
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), Folder_3)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
@@ -199,6 +208,8 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolde
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
 
 String Folder_4 = getRandomFolderName()
+
+Folder_4 = FolderName.withSuffix(Folder_4)
 
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), Folder_4)
 
@@ -252,6 +263,8 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolde
 
 
 GlobalVariable.folderName = getRandomFolderName()
+
+GlobalVariable.folderName = FolderName.withSuffix(GlobalVariable.folderName)
 
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), GlobalVariable.folderName)
 

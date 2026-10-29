@@ -21,6 +21,7 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import login.LoginHelper as LoginHelper
+import folder.FolderName as FolderName
 
 GlobalVariable.userEmail = generateRandomEmail().toLowerCase()
 
@@ -61,6 +62,8 @@ WebUI.click(findTestObject('Folders/createFolder'))
 String topFolder = 'Top_lvl' + getTimestamp()
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
+topFolder = FolderName.withSuffix(topFolder)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), topFolder)
 

@@ -43,6 +43,7 @@ import java.util.Calendar
 import helpers.Helper
 import org.apache.commons.lang3.RandomStringUtils
 import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 // Top-level
 String topLevel = 'Top-level_' + Helper.getSmartName()
 
@@ -58,6 +59,8 @@ WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Object Repository/Folders/createFolder'))
 
+topLevel = FolderName.withSuffix(topLevel)
+
 WebUI.setText(findTestObject('Object Repository/Folders/inputFolderName'), topLevel)
 
 WebUI.click(findTestObject('Object Repository/Folders/buttonOK'))
@@ -70,6 +73,8 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Cre
 String subDirectory = 'subdirectory_' + Helper.getSmartName()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
+
+subDirectory = FolderName.withSuffix(subDirectory)
 
 WebUI.setText(
 	findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'),
@@ -87,6 +92,8 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Cre
 String subSubDirectory = 'subSubDirectory_' + Helper.getSmartName()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
+
+subSubDirectory = FolderName.withSuffix(subSubDirectory)
 
 WebUI.setText(
 	findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'),

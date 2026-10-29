@@ -15,6 +15,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import org.apache.commons.lang3.RandomStringUtils
 import java.io.File
 import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -24,10 +25,13 @@ String folderName = "TF9_" + RandomStringUtils.randomAlphanumeric(6)
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
+folderName = FolderName.withSuffix(folderName)
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
 String sub1 = "TF9_subfolder_" + RandomStringUtils.randomAlphanumeric(6)
+
+sub1 = FolderName.withSuffix(sub1)
 
 createSubFolder(sub1)
 
@@ -35,6 +39,8 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/
 WebUI.executeJavaScript('arguments[0].click()', [findFolder(folderName)])
 
 String sub2 = "TF9_subfolder2_" + RandomStringUtils.randomAlphanumeric(6)
+
+sub2 = FolderName.withSuffix(sub2)
 
 createSubFolder(sub2)
 

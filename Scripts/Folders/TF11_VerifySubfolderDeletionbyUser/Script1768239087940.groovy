@@ -22,6 +22,7 @@ import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.By as By
+import folder.FolderName as FolderName
 
 // create User Account
 
@@ -33,6 +34,8 @@ WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 
 String folderName = "TF11_" + RandomStringUtils.randomAlphanumeric(6)
+
+folderName = FolderName.withSuffix(folderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
@@ -47,6 +50,8 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Cre
 String folderName1 = "TF11_subfolder_" + RandomStringUtils.randomAlphanumeric(6)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
+
+folderName1 = FolderName.withSuffix(folderName1)
 
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'),folderName1)
 

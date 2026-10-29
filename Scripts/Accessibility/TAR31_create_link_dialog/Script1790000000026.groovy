@@ -21,6 +21,7 @@ import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import static helpers.Helper.getRandomFolderName
 import static helpers.Helper.getRandomFileName
 import static helpers.Helper.findShareButton
+import folder.FolderName as FolderName
 
 // Reuses the existing Folders fixture, then follows the same create-folder ->
 // create-document -> share -> create-link flow as TAR05_linkstable_admin, but
@@ -34,6 +35,8 @@ WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
+folderName = FolderName.withSuffix(folderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 

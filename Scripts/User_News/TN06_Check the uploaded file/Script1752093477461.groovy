@@ -28,6 +28,7 @@ import java.util.Arrays as Arrays
 import java.util.Date as Date
 import java.util.Random as Random
 import login.LoginHelper as LoginHelper
+import folder.FolderName as FolderName
 
 // === Test Case Execution ===
 WebUI.callTestCase(findTestCase('User_News/Pre_test/Create_user'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -51,6 +52,8 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/
 WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Object Repository/Folders/createFolder'))
+
+GlobalVariable.folderName = FolderName.withSuffix(GlobalVariable.folderName)
 
 WebUI.setText(findTestObject('Object Repository/Folders/inputFolderName'), GlobalVariable.folderName)
 

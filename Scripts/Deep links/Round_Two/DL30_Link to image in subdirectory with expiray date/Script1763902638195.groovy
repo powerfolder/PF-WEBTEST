@@ -42,6 +42,7 @@ import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import helpers.Helper as Helper
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 //Top-level
 String topLevel = 'Top-level_' + Helper.getSmartName()
@@ -53,6 +54,8 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
+
+topLevel = FolderName.withSuffix(topLevel)
 
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), topLevel)
 
@@ -69,6 +72,8 @@ String subDirectory = 'subdirectory_' + Helper.getSmartName()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
 
+subDirectory = FolderName.withSuffix(subDirectory)
+
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'),
 	subDirectory)
 
@@ -82,6 +87,8 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Cre
 String subSubDirectory = 'subSubDirectory_' + Helper.getSmartName()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
+
+subSubDirectory = FolderName.withSuffix(subSubDirectory)
 
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'),
 	subSubDirectory)

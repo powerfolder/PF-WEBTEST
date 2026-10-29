@@ -25,6 +25,7 @@ import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import credentials.CredentialsManager as CredentialsManager
 import login.LoginHelper as LoginHelper
 import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 // Ouvre un nouveau navigateur
 WebUI.openBrowser('')
@@ -61,6 +62,7 @@ WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 
 // Set text in input folder name
+folderName = FolderName.withSuffix(folderName)
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 // Send keys ENTER to submit folder creation

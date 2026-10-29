@@ -12,6 +12,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 
 import java.io.File
 import java.text.SimpleDateFormat
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -19,6 +20,8 @@ String folderName = generateFolderName()
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
+
+folderName = FolderName.withSuffix(folderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))

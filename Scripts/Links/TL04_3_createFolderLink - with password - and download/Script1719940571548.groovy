@@ -14,6 +14,7 @@ import java.awt.datatransfer.DataFlavor
 import java.io.File
 import java.util.Date
 import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -24,6 +25,8 @@ WebUI.click(findTestObject('Folders/createFolder'))
 
 WebUI.verifyElementPresent(findTestObject('lang/getCreateText'), 30)
 WebUI.verifyElementPresent(findTestObject('lang/getFolderNameLabelText'), 30)
+
+folderName = FolderName.withSuffix(folderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))

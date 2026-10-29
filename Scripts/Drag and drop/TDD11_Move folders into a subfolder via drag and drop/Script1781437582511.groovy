@@ -16,6 +16,7 @@ import java.util.Comparator
 import java.nio.file.Files
 import java.nio.file.Paths
 import java.nio.file.Path
+import folder.FolderName as FolderName
 
 // ================== LOGIN + CREATE FOLDER ==================
 
@@ -28,6 +29,8 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/
 WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Object Repository/Folders/createFolder'))
+
+topFolder = FolderName.withSuffix(topFolder)
 
 WebUI.setText(findTestObject('Object Repository/Folders/inputFolderName'), topFolder)
 
@@ -42,6 +45,8 @@ WebUI.click(findTestObject('Drag and drop/create_icone'))
 WebUI.click(findTestObject('Drag and drop/Create_folder'))
 
 String subFolderName = 'Sub_' + Helper.getRandomFolderName()
+
+subFolderName = FolderName.withSuffix(subFolderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), subFolderName)
 
@@ -73,6 +78,7 @@ List<String> folderPaths = []
 
 for (int i = 1; i <= 5; i++) {
 	String folderName = Helper.getRandomFolderName()
+	folderName = FolderName.withSuffix(folderName)
 	String folderPath = createLocalFolderOnDesktop(folderName)
 
 	folderNames.add(folderName)

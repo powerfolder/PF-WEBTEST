@@ -32,6 +32,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
+import folder.FolderName as FolderName
 
 String folderName_1 = getRandomFolderName()
 
@@ -44,6 +45,7 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolde
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
 
 // crete toplevel dir
+folderName_1 = FolderName.withSuffix(folderName_1)
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), folderName_1)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))

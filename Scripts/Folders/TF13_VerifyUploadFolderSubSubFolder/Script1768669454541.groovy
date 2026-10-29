@@ -36,6 +36,7 @@ import java.nio.file.Path
 import java.nio.file.Paths
 import java.util.Arrays
 import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -49,6 +50,7 @@ WebUI.click(findTestObject('Folders/createFolder'))
 String mainFolderName = getRandomFolderName()
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+mainFolderName = FolderName.withSuffix(mainFolderName)
 WebUI.setText(findTestObject('Folders/inputFolderName'), mainFolderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
@@ -61,6 +63,7 @@ WebUI.verifyElementPresent(findTestObject('Folders/Page_Folders - PowerFolder/Ne
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'))
 
 String subFolderName = "Sub_" + getRandomFolderName()
+subFolderName = FolderName.withSuffix(subFolderName)
 WebUI.setText(findTestObject('Folders/inputFolderName'), subFolderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
@@ -68,6 +71,7 @@ WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'))
 
 String subSubFolderName = "Sub_Sub_" + getRandomFolderName()
+subSubFolderName = FolderName.withSuffix(subSubFolderName)
 WebUI.setText(findTestObject('Folders/inputFolderName'), subSubFolderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
@@ -77,6 +81,7 @@ WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/Upload files'))
 
 // Création d’un dossier local avec plusieurs fichiers Word
 String folderName = 'folder_with_files_' + RandomStringUtils.randomNumeric(4)
+folderName = FolderName.withSuffix(folderName)
 String folderPath = createFolderWithWordFilesOnDesktop(folderName, 3)
 
 // Upload du dossier via l’input directories

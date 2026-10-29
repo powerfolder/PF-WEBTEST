@@ -15,6 +15,7 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import static helpers.Helper.getRandomFolderName
+import folder.FolderName as FolderName
 
 // Reuses the existing Folders fixture (logs in, opens the Folders page) - same
 // precondition already used by Test Cases/Folders/TF1_VerifyNewFolderCreation.
@@ -31,7 +32,7 @@ WebUI.delay(3)
 // Scans the "New Folder" naming dialog (#pica_input_dialog) while it is open.
 CustomKeywords.'accessibility.AccessibilityKeywords.checkAccessibility'()
 
-WebUI.setText(findTestObject('Folders/inputFolderName'), 'TAR28_' + getRandomFolderName())
+WebUI.setText(findTestObject('Folders/inputFolderName'), FolderName.withSuffix('TAR28_' + getRandomFolderName()))
 
 WebUI.click(findTestObject('Folders/buttonOK'))
 

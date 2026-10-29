@@ -27,6 +27,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import java.nio.file.Path as Path
 import java.nio.file.Files as Files
 import com.kms.katalon.core.testobject.ConditionType
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -35,6 +36,8 @@ WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 
 String folderName = getRandomFolderName()
+
+folderName = FolderName.withSuffix(folderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
@@ -71,6 +74,8 @@ WebUI.click(dynamicFolder)
 WebUI.click(findTestObject('Folders/rename'))
 
 String newFolderName = folderName + '_RENAME'
+
+newFolderName = FolderName.withSuffix(newFolderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), newFolderName)
 

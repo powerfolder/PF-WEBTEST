@@ -29,6 +29,7 @@ import java.util.Calendar as Calendar
 import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import java.util.Random as Random
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -46,6 +47,8 @@ WebUI.click(findTestObject('Accounts/Edit_Accounts - PowerFolder/Edit_account'))
 WebUI.click(findTestObject('Accounts/AddFolder'))
 
 String Folder_name = 'My_Folder_' + RandomStringUtils.randomAlphabetic(4)
+
+Folder_name = FolderName.withSuffix(Folder_name)
 
 WebUI.setText(findTestObject('Accounts/AddFolderByNameInput'), Folder_name)
 

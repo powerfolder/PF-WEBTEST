@@ -24,6 +24,7 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 //WebUI.callTestCase(findTestCase('CleanUpScripts/CL1_CleanFolders'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -37,6 +38,8 @@ WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 
 String folderName = getRandomFolderName()
+
+folderName = FolderName.withSuffix(folderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
