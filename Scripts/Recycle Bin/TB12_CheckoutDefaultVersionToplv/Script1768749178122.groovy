@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import folder.FolderFinder as FolderFinder
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -75,5 +76,5 @@ String getTimestamp() {
 WebElement findFolder(String topLvlFolderName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + topLvlFolderName) + '\')]/td[1]/span'))
+    return FolderFinder.findElement(('//*[contains(@data-search-keys, \'' + topLvlFolderName) + '\')]/td[1]/span')
 }
