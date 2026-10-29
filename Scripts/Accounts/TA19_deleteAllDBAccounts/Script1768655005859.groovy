@@ -64,11 +64,33 @@ WebUI.refresh()
 
 WebUI.delay(5)
 
+List<String> protectedAccounts = ['admin', 'adminqa', 'qa@powerfolder.com', CredentialsManager.getAdminUsername()].unique()
+
+WebUI.setText(findTestObject('Accounts/inputAccountSearch'), 'qa-automated-webtest.com')
+
+WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
+
+WebUI.delay(2)
+
 WebElement btn = findFirstAccount()
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
 WebUI.click(findTestObject('Accounts/select_all_checkbox'))
+
+for (WebElement row : accountRows().findAll { isProtected(it, protectedAccounts) && isSelected(it) }) {
+    WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(row.findElement(By.xpath('./td[1]/span'))))
+}
+
+WebUI.delay(1)
+
+List<WebElement> rows = accountRows()
+
+List<WebElement> protectedRows = rows.findAll { isProtected(it, protectedAccounts) }
+
+assert protectedRows.every { !isSelected(it) } : 'Protected accounts are still selected, nothing was deleted'
+
+assert rows.count { isSelected(it) } == rows.size() - protectedRows.size() : 'Deselecting the protected accounts changed the selection of other accounts, nothing was deleted'
 
 WebUI.verifyElementPresent(findTestObject('Accounts/DeleteButton'), 2)
 
@@ -94,6 +116,12 @@ WebUI.verifyEqual(notPresent, true)
 
 WebUI.delay(10)
 
+WebUI.setText(findTestObject('Accounts/inputAccountSearch'), CredentialsManager.getAdminUsername())
+
+WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
+
+WebUI.delay(2)
+
 TestObject adminaccount = new TestObject()
 adminaccount.addProperty(
 	"xpath",
@@ -113,6 +141,29 @@ WebElement findFirstAccount() {
             By.xpath("//table[@id='accounts_table']/tbody/tr[@id]")))
 
     return driver.findElement(By.xpath("(//table[@id='accounts_table']/tbody/tr[@id])[1]/td[1]/span"))
+}
+
+List<WebElement> accountRows() {
+    return DriverFactory.getWebDriver().findElements(By.xpath("//table[@id='accounts_table']/tbody/tr[@id]"))
+}
+
+boolean isSelected(WebElement row) {
+    return (row.getAttribute('class') ?: '').split(/\s+/).contains('info')
+}
+
+boolean isProtected(WebElement row, List<String> protectedAccounts) {
+    List<String> names = (row.getAttribute('data-search-keys') ?: '').split(/[\s,;|]+/).toList()
+
+    for (WebElement link : row.findElements(By.xpath('.//a'))) {
+        names << link.getText()
+        names << (link.getAttribute('title') ?: '')
+    }
+
+    names = names*.trim()*.toLowerCase()
+
+    names += names.findAll { it.contains('@') }.collect { it.substring(0, it.indexOf('@')) }
+
+    return protectedAccounts.any { names.contains(it.toLowerCase()) }
 }
 
 String generateRandomString(int length) {
