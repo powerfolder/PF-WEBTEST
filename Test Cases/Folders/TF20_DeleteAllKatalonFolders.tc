@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TF20_DeleteAllKatalonFolders</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4f97709b-1ff3-472b-b9b9-9b88ad0e93ad</testCaseGuid>
+</TestCaseEntity>

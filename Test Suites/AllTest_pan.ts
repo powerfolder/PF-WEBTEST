@@ -3667,4 +3667,11 @@
       <testCaseId>Test Cases/Groups/TG49_Verify subgroup keeps its own permissions after deleting the parent</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>376d1fb7-4c03-4d6a-bb0b-ddd5160fd8e8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Folders/TF20_DeleteAllKatalonFolders</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
