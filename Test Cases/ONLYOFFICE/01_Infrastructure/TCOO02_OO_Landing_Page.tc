@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test: OO landing page (URL)
+Requirement: successfully installed OO EE Docker
+Expected: the landing page is reachable and shows the expected OO version (GlobalVariable.expectedOOVersion)</description>
+   <name>TCOO02_OO_Landing_Page</name>
+   <tag>ONLYOFFICE</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cda91873-75c4-41f3-9ddb-09f5df48d4f4</testCaseGuid>
+</TestCaseEntity>

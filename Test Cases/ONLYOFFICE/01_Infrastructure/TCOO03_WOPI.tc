@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test: WOPI
+Requirement: WOPI enabled in the local docker configuration
+Steps: read the WOPI discovery https://&lt;ONLYOFFICE-URL&gt;/hosting/discovery
+Expected: WOPI discovery with an edit action for docx, txt, xlsx, csv and pptx, all action URLs on the ONLYOFFICE URL
+(replaces the example page /example/wopi, which needs the demo service ds:example)</description>
+   <name>TCOO03_WOPI</name>
+   <tag>ONLYOFFICE</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>48d1a2af-1af5-4301-b5ed-21e84aecb1dc</testCaseGuid>
+</TestCaseEntity>

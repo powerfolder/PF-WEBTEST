@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>span.Text-color--default.Text-fontSize--20.Text-fontWeight--medium.Text-lineHeight--24.Text-numericSpacing--proportional.Text-typeface--base.Text-wrap--wrap.Text-display--inline</value>
+         <value>section[data-testid='overview-active-plans'] a[data-testid^='overview-active-plan-'] span.tooltip-trigger-isolate</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body[@id='customer_portal_page_body']/div/div/div/div/main/div/div/div/section/div/a/div/div/div/div/div/span</value>
+         <value>(//section[@data-testid='overview-active-plans']//a[starts-with(@data-testid,'overview-active-plan-')]//span[normalize-space(.)!=''])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

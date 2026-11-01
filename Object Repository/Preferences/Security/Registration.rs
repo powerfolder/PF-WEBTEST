@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Registration</name>
+   <tag></tag>
+   <elementGuidId>c8e65902-ced4-4c31-8eee-c3c43e38eaa1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//li[@id='account_registration']/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>li#account_registration > a</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>c8e65902-0001-0001-0001-000000000001</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

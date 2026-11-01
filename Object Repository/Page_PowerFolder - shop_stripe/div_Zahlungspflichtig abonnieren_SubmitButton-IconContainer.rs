@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//form[@id='payment-form']/div/div/div/div[3]/div/div[2]/div/button/div[3]</value>
+         <value>//form[@id='payment-form']//button[@data-testid='hosted-payment-submit-button']/div[contains(@class,'SubmitButton-IconContainer')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.SubmitButton-IconContainer</value>
+         <value>form#payment-form button[data-testid='hosted-payment-submit-button'] > div.SubmitButton-IconContainer</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

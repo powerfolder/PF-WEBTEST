@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test: Spreadsheet - Rename
+Requirement: OO IE Docker installed, encrypted connection with PowerFolder Server
+Steps: Rename the file using the context menu in the web interface
+Expected: The file is successfully renamed: only the new name is listed and the file opens in the editor</description>
+   <name>TCOO14_Spreadsheet_Rename</name>
+   <tag>ONLYOFFICE</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>273338d1-923c-4a8e-b35c-67f36e9af8f0</testCaseGuid>
+</TestCaseEntity>

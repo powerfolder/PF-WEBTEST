@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>PFS-5950: an external user invited to a folder can register via the invite link while self-registration is disabled</description>
+   <name>TR3_Invited user registers while self-registration is disabled</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>aad5f446-59c8-4740-b255-ff2e3f7a118c</testCaseGuid>
+</TestCaseEntity>

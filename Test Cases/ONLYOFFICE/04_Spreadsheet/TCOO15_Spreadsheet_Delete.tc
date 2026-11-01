@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test: Spreadsheet - Delete
+Requirement: OO IE Docker installed, encrypted connection with PowerFolder Server
+Steps: Delete the file using the context menu in the web interface
+Expected: The file is successfully deleted and no longer listed</description>
+   <name>TCOO15_Spreadsheet_Delete</name>
+   <tag>ONLYOFFICE</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dbf0746b-c550-42ce-b6d2-1b25312a9e72</testCaseGuid>
+</TestCaseEntity>

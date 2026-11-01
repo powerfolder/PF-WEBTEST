@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test: Document - Create
+Requirement: OO IE Docker installed, encrypted connection with PowerFolder Server
+Steps: Create a new document with the + button in the web interface
+Expected: The file is created and ready to use: the editor opens in edit mode without an error dialog and reports the expected ONLYOFFICE version</description>
+   <name>TCOO04_Document_Create</name>
+   <tag>ONLYOFFICE</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bdbfcef4-8ebc-4553-87e3-de0ba1dc36dc</testCaseGuid>
+</TestCaseEntity>

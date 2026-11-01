@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test: Presentation - Save
+Requirement: OO IE Docker installed, encrypted connection with PowerFolder Server
+Steps: Type a line, save (Ctrl/Cmd+S) and close the editor; reopen the file, type a second line without saving, wait for the auto-save status and leave the editor
+Expected: The file is successfully saved: PowerFolder stores a new version after each step and the downloaded file contains both lines</description>
+   <name>TCOO21_Presentation_Save</name>
+   <tag>ONLYOFFICE</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>721a4112-3d78-4a4b-8043-5ccc5f79fd60</testCaseGuid>
+</TestCaseEntity>
