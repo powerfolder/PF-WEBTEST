@@ -41,6 +41,7 @@ import org.openqa.selenium.support.ui.WebDriverWait
 import com.kms.katalon.core.webui.driver.DriverFactory
 import java.time.Duration
 import folder.FolderName as FolderName
+import group.GroupName as GroupName
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -56,6 +57,8 @@ String Folder_parent = 'parentFolder' + Helper.getRandomFolderName()
 WebUI.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
+
+parentGroupName = GroupName.withSuffix(parentGroupName)
 
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
     parentGroupName)
@@ -96,6 +99,8 @@ WebUI.delay(2)
 //create another group called subgroup
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
 
+subGroupName = GroupName.withSuffix(subGroupName)
+
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
     subGroupName)
 
@@ -108,6 +113,8 @@ WebUI.delay(2)
 
 //create another group called subsubgroup
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
+
+subSubGroupName = GroupName.withSuffix(subSubGroupName)
 
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
     subSubGroupName)

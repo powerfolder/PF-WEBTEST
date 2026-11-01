@@ -26,6 +26,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import helpers.LocalizedText as LocalizedText
 import login.LoginHelper as LoginHelper
 import folder.FolderName as FolderName
+import group.GroupName as GroupName
 
 // Group C / PFS-5510: group "Child" gets nested under group "Parent" (added as a subgroup on
 // Parent's own Members tab - the dedicated "Parents" tab is present in the DOM but deliberately
@@ -39,6 +40,7 @@ String childGroupName = GlobalVariable.GroupName
 String parentGroupName = 'Group_' + RandomStringUtils.randomNumeric(4)
 WebUI.click(findTestObject('Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Create_group_button'))
+parentGroupName = GroupName.withSuffix(parentGroupName)
 WebUI.setText(findTestObject('Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), parentGroupName)
 WebUI.setText(findTestObject('Groups/Page_Groups - PowerFolder/textarea_Organizations_pica_group_notes'), 'create group')
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))

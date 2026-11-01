@@ -32,6 +32,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import java.time.Duration
 import folder.FolderName as FolderName
+import group.GroupName as GroupName
 
 
 
@@ -66,6 +67,7 @@ WebUiBuiltInKeywords.verifyEqual(isFolderCreated, true)
 
 // Assigner le nom de groupe aléatoire à la variable globale
 GlobalVariable.GroupName = ('Group_' + RandomStringUtils.randomNumeric(4))
+GlobalVariable.GroupName = GroupName.withSuffix(GlobalVariable.GroupName)
 String Groupname = GlobalVariable.GroupName
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))

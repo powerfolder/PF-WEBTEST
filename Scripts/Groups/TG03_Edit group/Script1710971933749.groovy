@@ -23,6 +23,7 @@ import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import java.util.List as List
+import group.GroupName as GroupName
 
 
 WebUI.callTestCase(findTestCase('Groups/Pre_test/create_group'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -33,6 +34,8 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 
 WebUI.delay(1)
 
+
+groupNameModified = GroupName.withSuffix(groupNameModified)
 
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
     groupNameModified)

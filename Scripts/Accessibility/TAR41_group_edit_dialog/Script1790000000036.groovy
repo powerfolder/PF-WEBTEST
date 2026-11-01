@@ -15,6 +15,7 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
+import group.GroupName as GroupName
 
 // Reuses the existing Groups fixture (Groups/Pre_test/create_group), then follows the
 // same flow as Test Cases/Groups/TG03_Edit group, but stops to scan the group-edit
@@ -25,7 +26,7 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 
 WebUI.delay(3)
 
-WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 'TAR41_Group_modified_' + RandomStringUtils.randomNumeric(4))
+WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), GroupName.withSuffix('TAR41_Group_modified_' + RandomStringUtils.randomNumeric(4)))
 
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/textarea_Organizations_pica_group_notes'), 'Accessibility test - edited')
 

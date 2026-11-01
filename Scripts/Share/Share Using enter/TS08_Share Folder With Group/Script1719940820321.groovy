@@ -24,6 +24,7 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import helpers.WindowTitle as WindowTitle
 import folder.FolderName as FolderName
+import group.GroupName as GroupName
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -45,7 +46,7 @@ WebUI.click(findTestObject('Object Repository/Folders/Page_Dashboard - PowerFold
 
 WebUI.click(findTestObject('Object Repository/Share/Page_Groups - PowerFolder/createGroupIcon'))
 
-WebUI.setText(findTestObject('Object Repository/Share/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), "Group_${ -> folderName }")
+WebUI.setText(findTestObject('Object Repository/Share/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), GroupName.withSuffix("Group_${ -> folderName }"))
 
 WebUI.click(findTestObject('Object Repository/Share/Page_Groups - PowerFolder/lang_Save'))
 
@@ -59,7 +60,7 @@ WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-String Group = "Group_${ -> folderName }"
+String Group = GroupName.withSuffix("Group_${ -> folderName }")
 
 WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/inputEmail_Share'), Group)
 

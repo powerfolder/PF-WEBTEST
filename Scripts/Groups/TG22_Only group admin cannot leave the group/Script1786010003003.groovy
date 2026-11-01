@@ -32,6 +32,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import login.LoginHelper as LoginHelper
+import group.GroupName as GroupName
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -74,6 +75,8 @@ WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 
 String groupName = 'Group_' + RandomStringUtils.randomNumeric(4)
+
+groupName = GroupName.withSuffix(groupName)
 
 GlobalVariable.GroupName = groupName
 

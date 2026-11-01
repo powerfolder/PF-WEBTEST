@@ -32,6 +32,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import java.time.Duration
 import folder.FolderName as FolderName
+import group.GroupName as GroupName
 
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
@@ -64,6 +65,8 @@ WebUiBuiltInKeywords.verifyEqual(isFolderCreated, true)
 
 // Générer un nom de groupe aléatoire
 GlobalVariable.GroupName = ('Group_' + RandomStringUtils.randomNumeric(4))
+
+GlobalVariable.GroupName = GroupName.withSuffix(GlobalVariable.GroupName)
 
 String Groupname = GlobalVariable.GroupName
 

@@ -25,6 +25,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions
 import com.kms.katalon.core.webui.driver.DriverFactory
 import login.LoginHelper as LoginHelper
 import folder.FolderName as FolderName
+import group.GroupName as GroupName
 
 /*
  * Subfolder Sharing spec, section 1.1/2.0 for GROUPS: Group A gets an explicit share on the
@@ -68,6 +69,7 @@ WebDriver driver = DriverFactory.getWebDriver()
 
 WebUI.click(findTestObject('Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Create_group_button'))
+groupBName = GroupName.withSuffix(groupBName)
 WebUI.setText(findTestObject('Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), groupBName)
 WebUI.setText(findTestObject('Groups/Page_Groups - PowerFolder/textarea_Organizations_pica_group_notes'), 'create group')
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))

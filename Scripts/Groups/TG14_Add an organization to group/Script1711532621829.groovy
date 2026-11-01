@@ -30,6 +30,7 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import group.GroupName as GroupName
 
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
@@ -66,6 +67,8 @@ GlobalVariable.GroupName = ('Group_' + RandomStringUtils.randomNumeric(4))
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
+
+GlobalVariable.GroupName = GroupName.withSuffix(GlobalVariable.GroupName)
 
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
     GlobalVariable.GroupName)

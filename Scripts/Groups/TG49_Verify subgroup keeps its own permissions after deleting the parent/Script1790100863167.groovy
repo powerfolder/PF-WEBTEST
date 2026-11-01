@@ -34,6 +34,7 @@ import helpers.Helper as Helper
 import org.openqa.selenium.interactions.Actions as Actions
 import com.kms.katalon.core.llm.keyword.LlmKeywords as LLM
 import folder.FolderName as FolderName
+import group.GroupName as GroupName
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -48,6 +49,8 @@ String Folder_sub = 'Folder_sub_' + Helper.getRandomFolderName()
 WebUI.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
+
+groupName_parent = GroupName.withSuffix(groupName_parent)
 
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'),
 	groupName_parent)
@@ -86,6 +89,8 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/b
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
+
+groupName_sub = GroupName.withSuffix(groupName_sub)
 
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'),
 	groupName_sub)

@@ -33,6 +33,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import org.openqa.selenium.interactions.Actions as Actions
 import com.kms.katalon.core.llm.keyword.LlmKeywords as LLM
 import com.kms.katalon.core.testobject.ConditionType
+import group.GroupName as GroupName
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -43,6 +44,8 @@ String groupName_2 = 'subGroup_' + RandomStringUtils.randomNumeric(4)
 WebUI.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
+
+groupName_1 = GroupName.withSuffix(groupName_1)
 
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
     groupName_1)

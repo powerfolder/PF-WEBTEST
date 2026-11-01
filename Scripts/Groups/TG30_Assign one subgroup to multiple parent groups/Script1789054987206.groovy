@@ -26,6 +26,7 @@ import org.openqa.selenium.interactions.Actions as Actions
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import java.util.Arrays as Arrays
+import group.GroupName as GroupName
 
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
@@ -45,6 +46,8 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolde
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
 
+subgroupName = GroupName.withSuffix(subgroupName)
+
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'),
 	subgroupName)
 
@@ -59,6 +62,8 @@ WebUI.delay(2)
 // Create parent group 1
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
+
+parentGroup_1 = GroupName.withSuffix(parentGroup_1)
 
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'),
 	parentGroup_1)
@@ -75,6 +80,8 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
 
+parentGroup_2 = GroupName.withSuffix(parentGroup_2)
+
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'),
 	parentGroup_2)
 
@@ -89,6 +96,8 @@ WebUI.delay(2)
 // Create parent group 3
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
+
+parentGroup_3 = GroupName.withSuffix(parentGroup_3)
 
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'),
 	parentGroup_3)
