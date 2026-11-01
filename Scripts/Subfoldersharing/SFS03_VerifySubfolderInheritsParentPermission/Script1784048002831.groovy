@@ -23,6 +23,8 @@ import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
 import helpers.LocalizedText as LocalizedText
+import login.LoginHelper as LoginHelper
+import folder.FolderName as FolderName
 
 /*
  * Subfolder Sharing spec, section 1.1/2.0: a subfolder created inside a shared top-level folder
@@ -52,6 +54,7 @@ String tlfName = 'SFS03_' + RandomStringUtils.randomAlphanumeric(6)
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+tlfName = FolderName.withSuffix(tlfName)
 WebUI.setText(findTestObject('Folders/inputFolderName'), tlfName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
@@ -65,8 +68,7 @@ WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 // so the member is a confirmed permission holder by the time we check for the inherited tag
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.setText(findTestObject('Login/inputEmail'), memberEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(memberEmail, GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 
@@ -96,6 +98,7 @@ String subFolderName = 'SFS03_Sub_' + RandomStringUtils.randomAlphanumeric(6)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
+subFolderName = FolderName.withSuffix(subFolderName)
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), subFolderName)
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
@@ -107,8 +110,7 @@ WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 // log out admin, log back in as the member
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.setText(findTestObject('Login/inputEmail'), memberEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(memberEmail, GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))

@@ -30,6 +30,7 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import folder.FolderName as FolderName
 
 
 String folderName_1 = getRandomFolderName()
@@ -49,6 +50,7 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolde
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
 
 // crete toplevel dir
+folderName_1 = FolderName.withSuffix(folderName_1)
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), folderName_1)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
@@ -61,6 +63,7 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolde
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
 
 // crete toplevel dir
+folderName_2 = FolderName.withSuffix(folderName_2)
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), folderName_2)
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))

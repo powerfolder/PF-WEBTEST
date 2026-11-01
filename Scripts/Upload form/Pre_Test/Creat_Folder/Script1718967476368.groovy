@@ -19,6 +19,7 @@ import org.openqa.selenium.By as By
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -35,6 +36,8 @@ WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getCreateText')), 'Create',
 WebUI.verifyEqual(WebUI.getText(findTestObject('lang/getFolderNameLabelText')), 'Create a new Folder', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
+GlobalVariable.folderName = FolderName.withSuffix(GlobalVariable.folderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), GlobalVariable.folderName)
 

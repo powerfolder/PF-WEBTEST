@@ -19,11 +19,13 @@ import java.io.FileOutputStream as FileOutputStream
 import java.nio.file.Files as Files
 import java.nio.file.Paths as Paths
 import java.nio.file.Path as Path
+import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
 // Vérifie si le titre de la page correspond à "Folders - PowerFolder"
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
@@ -31,6 +33,7 @@ WebUI.click(findTestObject('Folders/createFolder'))
 String folderName = getRandomFolderName()
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+folderName = FolderName.withSuffix(folderName)
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
@@ -44,6 +47,7 @@ WebUI.verifyElementPresent(findTestObject('Folders/Page_Folders - PowerFolder/Ne
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'))
 
 String subFolderName = "Sub_" + getRandomFolderName()
+subFolderName = FolderName.withSuffix(subFolderName)
 WebUI.setText(findTestObject('Folders/inputFolderName'), subFolderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
@@ -51,6 +55,7 @@ WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/Page_Folders - PowerFolder/New subdirectory'))
 
 String subSubFolderName = "Sub_Sub_" + getRandomFolderName()
+subSubFolderName = FolderName.withSuffix(subSubFolderName)
 WebUI.setText(findTestObject('Folders/inputFolderName'), subSubFolderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 

@@ -26,6 +26,8 @@ import org.openqa.selenium.support.ui.WebDriverWait
 import java.time.Duration
 import java.util.Arrays
 import com.kms.katalon.core.webui.driver.DriverFactory
+import login.LoginHelper as LoginHelper
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Groups/Pre_test/add member'), [:], FailureHandling.STOP_ON_FAILURE)
 String memberEmail = GlobalVariable.userName
@@ -38,6 +40,7 @@ String tlfName = 'TF19_' + RandomStringUtils.randomAlphanumeric(6)
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+tlfName = FolderName.withSuffix(tlfName)
 WebUI.setText(findTestObject('Folders/inputFolderName'), tlfName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
@@ -53,8 +56,7 @@ WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.setText(findTestObject('Login/inputEmail'), memberEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(memberEmail, GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))

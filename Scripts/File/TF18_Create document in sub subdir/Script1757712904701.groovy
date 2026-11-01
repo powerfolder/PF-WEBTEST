@@ -48,6 +48,7 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('File/Pre_test/Create_folder'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -94,6 +95,8 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Cre
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
 
 String folderName = getRandomFolderName()
+
+folderName = FolderName.withSuffix(folderName)
 
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
     folderName)
@@ -146,6 +149,8 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Cre
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
 
 String folderName_1 = getRandomFolderName()
+
+folderName_1 = FolderName.withSuffix(folderName_1)
 
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
     folderName_1)

@@ -23,6 +23,9 @@ import org.openqa.selenium.Keys
 import org.openqa.selenium.support.ui.WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions
 import com.kms.katalon.core.webui.driver.DriverFactory
+import login.LoginHelper as LoginHelper
+import folder.FolderName as FolderName
+import group.GroupName as GroupName
 
 /*
  * Subfolder Sharing spec, section 1.1/2.0 for GROUPS: Group A gets an explicit share on the
@@ -66,6 +69,7 @@ WebDriver driver = DriverFactory.getWebDriver()
 
 WebUI.click(findTestObject('Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Create_group_button'))
+groupBName = GroupName.withSuffix(groupBName)
 WebUI.setText(findTestObject('Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), groupBName)
 WebUI.setText(findTestObject('Groups/Page_Groups - PowerFolder/textarea_Organizations_pica_group_notes'), 'create group')
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
@@ -105,6 +109,7 @@ String tlfName = 'SFS18_' + RandomStringUtils.randomAlphanumeric(6)
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+tlfName = FolderName.withSuffix(tlfName)
 WebUI.setText(findTestObject('Folders/inputFolderName'), tlfName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
@@ -113,6 +118,7 @@ String subFolderName = 'SFS18_Sub_' + RandomStringUtils.randomAlphanumeric(6)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
+subFolderName = FolderName.withSuffix(subFolderName)
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), subFolderName)
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
@@ -129,6 +135,7 @@ String subSubFolderName = 'SFS18_SubSub_' + RandomStringUtils.randomAlphanumeric
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
+subSubFolderName = FolderName.withSuffix(subSubFolderName)
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), subSubFolderName)
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
@@ -143,8 +150,7 @@ WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 // --- Group A's member: sees Subfolder (explicit) and SubSubfolder (inherited), NOT TopFolder ---
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.setText(findTestObject('Login/inputEmail'), memberAEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(memberAEmail, GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))
@@ -163,8 +169,7 @@ WebUI.verifyElementPresent(subSubFolderPresent, 10)
 // --- Group B's member: sees SubSubfolder only, NOT Subfolder, NOT TopFolder ---
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.setText(findTestObject('Login/inputEmail'), memberBEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(memberBEmail, GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))

@@ -40,6 +40,8 @@ import java.util.Calendar as Calendar
 import java.util.Date as Date
 import org.junit.Assert as Assert
 import helpers.Helper as Helper
+import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 //Top-level
 String topLevel = 'Top-level_' + getRandomFolderName()
@@ -51,6 +53,8 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
+
+topLevel = FolderName.withSuffix(topLevel)
 
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), topLevel)
 
@@ -64,6 +68,8 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Cre
 String subDirectory = 'subdirectory_' + getRandomFolderName()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
+
+subDirectory = FolderName.withSuffix(subDirectory)
 
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
     subDirectory)
@@ -79,6 +85,8 @@ String subSubDirectory = 'subSubDirectory_' + getRandomFolderName()
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
 
+subSubDirectory = FolderName.withSuffix(subSubDirectory)
+
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
     subSubDirectory)
 
@@ -90,6 +98,8 @@ String folderName = 'folder_' + getRandomFolderName()
 WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
+
+folderName = FolderName.withSuffix(folderName)
 
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), 
     folderName)
@@ -127,7 +137,7 @@ WebUI.navigateToUrl(my_clipboard)
 
 WebUI.delay(3)
 
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebDriver driver = DriverFactory.getWebDriver()
 

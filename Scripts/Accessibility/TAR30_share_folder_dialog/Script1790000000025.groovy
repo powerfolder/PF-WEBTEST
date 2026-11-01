@@ -21,6 +21,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import static helpers.Helper.getRandomFolderName
 import static helpers.Helper.findShareButton
+import folder.FolderName as FolderName
 
 // Reuses the existing Folders fixture, then follows the same folder-creation and
 // share flow as Test Cases/Share/Share Using enter/TS03.
@@ -33,6 +34,8 @@ WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
+folderName = FolderName.withSuffix(folderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 

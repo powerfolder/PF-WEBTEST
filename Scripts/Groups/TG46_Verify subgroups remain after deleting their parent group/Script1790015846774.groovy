@@ -32,6 +32,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import org.openqa.selenium.interactions.Actions as Actions
 import com.kms.katalon.core.llm.keyword.LlmKeywords as LLM
+import group.GroupName as GroupName
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -48,6 +49,8 @@ List<String> subgroupNames = [groupName_2, groupName_3, groupName_4]
 WebUI.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
+
+groupName_1 = GroupName.withSuffix(groupName_1)
 
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
     groupName_1)
@@ -77,6 +80,8 @@ WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(10))
 for (String subgroupName : subgroupNames) {
     WebElement inputElement = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(('//*[@id=\'pica_group_accounts\']' + 
                 '//input[contains(concat(\' \', normalize-space(@class), \' \'),') + '\' pica-taginput-input \')]')))
+
+    subgroupName = GroupName.withSuffix(subgroupName)
 
     inputElement.sendKeys(subgroupName)
 

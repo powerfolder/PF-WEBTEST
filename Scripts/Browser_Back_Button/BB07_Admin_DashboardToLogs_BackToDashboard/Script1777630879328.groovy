@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -25,7 +26,7 @@ WebUI.click(findTestObject('1Logs/Page_Dashboard - PowerFolder/lang_Logs'))
 WebUI.delay(2)
 
 // Verify Logs page
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Logs - PowerFolder')
+WindowTitle.verify('Logs')
 
 // Browser back button
 WebUI.back()
@@ -33,7 +34,7 @@ WebUI.back()
 WebUI.delay(2)
 
 // Verify Dashboard page
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Dashboard - PowerFolder')
+WindowTitle.verify('Dashboard')
 
 WebUI.closeBrowser()
 

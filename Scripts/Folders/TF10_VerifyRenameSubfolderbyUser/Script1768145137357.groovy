@@ -22,6 +22,7 @@ import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.By as By
+import folder.FolderName as FolderName
 
 // create User Account
 
@@ -36,6 +37,8 @@ String folderName = "TF10_" + RandomStringUtils.randomAlphanumeric(6)
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
 
+folderName = FolderName.withSuffix(folderName)
+
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
@@ -49,6 +52,8 @@ WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Cre
 String folderName1 = "TF10_subfolder_" + RandomStringUtils.randomAlphanumeric(6)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
+
+folderName1 = FolderName.withSuffix(folderName1)
 
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'),folderName1)
 
@@ -92,6 +97,8 @@ WebUI.click(dynamicFolder)
 WebUI.click(findTestObject('Folders/rename'))
 
 String folderName1_new = "TF10_subfolder_renamed_" + RandomStringUtils.randomAlphanumeric(6)
+
+folderName1_new = FolderName.withSuffix(folderName1_new)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName1_new)
 

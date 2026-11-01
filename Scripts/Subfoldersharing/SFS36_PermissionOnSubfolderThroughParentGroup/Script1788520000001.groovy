@@ -24,6 +24,9 @@ import org.openqa.selenium.support.ui.WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions
 import com.kms.katalon.core.webui.driver.DriverFactory
 import helpers.LocalizedText as LocalizedText
+import login.LoginHelper as LoginHelper
+import folder.FolderName as FolderName
+import group.GroupName as GroupName
 
 // Group C / PFS-5510: group "Child" gets nested under group "Parent" (added as a subgroup on
 // Parent's own Members tab - the dedicated "Parents" tab is present in the DOM but deliberately
@@ -37,6 +40,7 @@ String childGroupName = GlobalVariable.GroupName
 String parentGroupName = 'Group_' + RandomStringUtils.randomNumeric(4)
 WebUI.click(findTestObject('Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/Create_group_button'))
+parentGroupName = GroupName.withSuffix(parentGroupName)
 WebUI.setText(findTestObject('Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), parentGroupName)
 WebUI.setText(findTestObject('Groups/Page_Groups - PowerFolder/textarea_Organizations_pica_group_notes'), 'create group')
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
@@ -74,6 +78,7 @@ String tlfName = 'SFS36_' + RandomStringUtils.randomAlphanumeric(6)
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+tlfName = FolderName.withSuffix(tlfName)
 WebUI.setText(findTestObject('Folders/inputFolderName'), tlfName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
@@ -81,6 +86,7 @@ String subAName = 'SFS36_SubA_' + RandomStringUtils.randomAlphanumeric(6)
 
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/Create_folder_insid_folder'))
+subAName = FolderName.withSuffix(subAName)
 WebUI.setText(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/set_folder_name'), subAName)
 WebUI.click(findTestObject('file_objects/document/Page_Folders - PowerFolder/Page_Folders - PowerFolder/button_Ok'))
 
@@ -95,8 +101,7 @@ WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.setText(findTestObject('Login/inputEmail'), memberEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(memberEmail, GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))

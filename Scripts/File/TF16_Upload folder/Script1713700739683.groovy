@@ -40,6 +40,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import folder.FolderName as FolderName
 
 
 // Appel du cas de test pour créer un dossier
@@ -52,6 +53,7 @@ WebUI.click(findTestObject('file_objects/upload/Page_Folders - PowerFolder/Uploa
 
 // Création du fichier Word vide sur le bureau
 String folderName = 'folder_with_files_' + RandomStringUtils.randomNumeric(4)
+folderName = FolderName.withSuffix(folderName)
 String folderPath = createFolderWithWordFilesOnDesktop(folderName, 3)
 
 // Upload direct dans l'input file

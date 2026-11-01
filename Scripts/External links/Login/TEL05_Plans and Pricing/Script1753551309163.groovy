@@ -33,7 +33,9 @@ String currentUrl = WebUI.getUrl()
 
 WebUI.comment('L\'URL actuelle est: ' + currentUrl)
 
-String expectedUrl = 'https://mimas.powerfolder.net/pricing'
+def baseUrl = new URL(GlobalVariable.URL)
+
+String expectedUrl = baseUrl.protocol + '://' + baseUrl.authority + '/pricing'
 
 boolean isCorrectUrl = currentUrl.equals(expectedUrl)
 

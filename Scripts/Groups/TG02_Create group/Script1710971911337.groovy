@@ -23,10 +23,13 @@ import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import java.util.List as List
+import group.GroupName as GroupName
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.GroupName = ('Group_' + RandomStringUtils.randomNumeric(4))
+
+GlobalVariable.GroupName = GroupName.withSuffix(GlobalVariable.GroupName)
 
 String Groupname = GlobalVariable.GroupName
 

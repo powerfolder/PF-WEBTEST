@@ -32,6 +32,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
+import folder.FolderFinder as FolderFinder
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -60,6 +61,14 @@ WebUI.delay(5)
 // Nom du fichier à rechercher
 String DocName = 'Default.config'
 
+FolderFinder.findElement('//body/div[1]/div[2]/table/tbody/tr[1]')
+
+if (DriverFactory.getWebDriver().findElements(By.xpath(docXpath(DocName))).isEmpty()) {
+    WebElement serverFolder = FolderFinder.findElement('//body/div[1]/div[2]/table/tbody/tr[1]/td[2]//a')
+
+    WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(serverFolder))
+}
+
 def btn = findDoc(DocName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
@@ -74,11 +83,10 @@ WebUI.closeBrowser()
 
 @Keyword
 WebElement findDoc(String DocName) {
-    WebDriver driver = DriverFactory.getWebDriver()
+    return FolderFinder.findElement(docXpath(DocName))
+}
 
-    String xpath = String.format('//body/div[1]/div[2]/table/tbody//*[contains(@data-search-keys, \'%s\')]/td[1]/span', 
-        DocName)
-
-    return driver.findElement(By.xpath(xpath))
+String docXpath(String DocName) {
+    return String.format('//body/div[1]/div[2]/table/tbody//*[contains(@data-search-keys, \'%s\')]/td[1]/span', DocName)
 }
 

@@ -26,6 +26,7 @@ import org.openqa.selenium.interactions.Actions as Actions
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import java.util.Arrays as Arrays
+import group.GroupName as GroupName
 
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
@@ -41,6 +42,8 @@ String groupName_4 = 'Group_' + RandomStringUtils.randomNumeric(4)
 WebUI.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
+
+groupName_1 = GroupName.withSuffix(groupName_1)
 
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'),
 	groupName_1)
@@ -75,6 +78,8 @@ WebElement inputElement1 = wait.until(
 	)
 )
 
+groupName_2 = GroupName.withSuffix(groupName_2)
+
 inputElement1.sendKeys(groupName_2)
 
 WebUI.delay(1)
@@ -92,6 +97,8 @@ WebElement inputElement2 = wait.until(
 	)
 )
 
+groupName_3 = GroupName.withSuffix(groupName_3)
+
 inputElement2.sendKeys(groupName_3)
 
 WebUI.delay(1)
@@ -108,6 +115,8 @@ WebElement inputElement3 = wait.until(
 		By.xpath("//*[@id='pica_group_accounts']//input[contains(concat(' ', normalize-space(@class), ' '), ' pica-taginput-input ')]")
 	)
 )
+
+groupName_4 = GroupName.withSuffix(groupName_4)
 
 inputElement3.sendKeys(groupName_4)
 

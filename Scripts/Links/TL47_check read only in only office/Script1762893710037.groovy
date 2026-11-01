@@ -28,6 +28,9 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Calendar as Calendar
 import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
+import login.LoginHelper as LoginHelper
+import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 GlobalVariable.userEmail = (('user_' + RandomStringUtils.randomNumeric(4)) + '@qa-automated-webtest.com')
 
@@ -66,11 +69,13 @@ WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Object Repository/Folders/createFolder'))
 
+folderName = FolderName.withSuffix(folderName)
+
 WebUI.setText(findTestObject('Object Repository/Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 String textfilename = getRandomFileName()
 
@@ -126,11 +131,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
-WebUI.setText(findTestObject('Login/inputEmail'), Emailid)
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(Emailid, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
@@ -139,7 +140,7 @@ WebUI.switchToWindowIndex(1)
 WebUI.navigateToUrl(my_clipboard)
 
 // Verify window title
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.delay(10)
 

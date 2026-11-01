@@ -22,6 +22,9 @@ import org.openqa.selenium.By as By
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
+import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
+import group.GroupName as GroupName
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -33,6 +36,8 @@ WebUI.click(findTestObject('Folders/createFolder'))
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
 
+folderName = FolderName.withSuffix(folderName)
+
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Folders/buttonOK'))
@@ -41,7 +46,7 @@ WebUI.click(findTestObject('Object Repository/Folders/Page_Dashboard - PowerFold
 
 WebUI.click(findTestObject('Object Repository/Share/Page_Groups - PowerFolder/createGroupIcon'))
 
-WebUI.setText(findTestObject('Object Repository/Share/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), "Group_${ -> folderName }")
+WebUI.setText(findTestObject('Object Repository/Share/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), GroupName.withSuffix("Group_${ -> folderName }"))
 
 WebUI.click(findTestObject('Object Repository/Share/Page_Groups - PowerFolder/lang_Save'))
 
@@ -49,13 +54,13 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 WebElement btn = findShareButton(folderName)
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 
-String Group = "Group_${ -> folderName }"
+String Group = GroupName.withSuffix("Group_${ -> folderName }")
 
 WebUI.setText(findTestObject('Object Repository/Share/Page_Folders - PowerFolder/inputEmail_Share'), Group)
 

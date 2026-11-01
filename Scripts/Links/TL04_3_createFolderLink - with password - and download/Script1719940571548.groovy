@@ -13,6 +13,8 @@ import java.awt.Toolkit
 import java.awt.datatransfer.DataFlavor
 import java.io.File
 import java.util.Date
+import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -24,6 +26,8 @@ WebUI.click(findTestObject('Folders/createFolder'))
 WebUI.verifyElementPresent(findTestObject('lang/getCreateText'), 30)
 WebUI.verifyElementPresent(findTestObject('lang/getFolderNameLabelText'), 30)
 
+folderName = FolderName.withSuffix(folderName)
+
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
@@ -32,7 +36,7 @@ WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder
 WebUI.setText(findTestObject('Accounts/inputAccountSearch'), folderName)
 WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
 
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 WebElement btn = findShareButton(folderName)
 WebUI.executeJavaScript('arguments[0].click()', [btn])
@@ -70,7 +74,7 @@ WebUI.delay(2)
 WebUI.setText(findTestObject('Page_Link - PowerFolder/inputPassword'), password)
 WebUI.click(findTestObject('Page_Link - PowerFolder/buttonOK'))
 
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.click(findTestObject('Links/Page_Link - PowerFolder/folder_link_download_button'))
 

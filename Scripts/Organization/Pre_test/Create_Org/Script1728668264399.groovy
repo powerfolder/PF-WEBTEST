@@ -42,6 +42,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
+import organization.OrganizationName as OrganizationName
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -52,6 +53,8 @@ WebUI.click(findTestObject('Organization/DropDownToggle'))
 WebUI.click(findTestObject('Organization/CreateOrganization'))
 
 GlobalVariable.organisationName = ('Organisation_' + RandomStringUtils.randomNumeric(4))
+
+GlobalVariable.organisationName = OrganizationName.withSuffix(GlobalVariable.organisationName)
 
 Organization_name = GlobalVariable.organisationName
 

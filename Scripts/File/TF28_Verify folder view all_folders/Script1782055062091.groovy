@@ -33,6 +33,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import file.FileFinder as FileFinder
 import helpers.Helper as Helper
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import login.LoginHelper as LoginHelper
+import folder.FolderName as FolderName
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -44,11 +46,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
-WebUI.setText(findTestObject('Login/inputEmail'), userName_A)
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(userName_A, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
@@ -77,13 +75,19 @@ String Folder_2 = 'Folder_2' + Helper.getRandomFolderName()
 
 String Folder_3 = 'Folder_3' + Helper.getRandomFolderName()
 
+Folder_1 = FolderName.withSuffix(Folder_1)
+
 createFolder(Folder_1)
 
 WebUI.delay(2)
 
+Folder_2 = FolderName.withSuffix(Folder_2)
+
 createFolder(Folder_2)
 
 WebUI.delay(2)
+
+Folder_3 = FolderName.withSuffix(Folder_3)
 
 createFolder(Folder_3)
 

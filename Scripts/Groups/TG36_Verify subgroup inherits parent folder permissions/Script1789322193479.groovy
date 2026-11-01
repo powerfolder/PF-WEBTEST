@@ -33,6 +33,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import helpers.Helper as Helper
 import org.openqa.selenium.interactions.Actions as Actions
 import com.kms.katalon.core.llm.keyword.LlmKeywords as LLM
+import folder.FolderName as FolderName
+import group.GroupName as GroupName
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -49,6 +51,8 @@ String Folder_3 = 'Folder_3' + Helper.getRandomFolderName()
 WebUI.click(findTestObject('Object Repository/Groups/Page_Dashboard - PowerFolder/lang_Groups'))
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
+
+groupName_1 = GroupName.withSuffix(groupName_1)
 
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
     groupName_1)
@@ -70,6 +74,8 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/a_Folders'))
 
+Folder_1 = FolderName.withSuffix(Folder_1)
+
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Delete_pica-taginput-input form-control'), 
     Folder_1)
 
@@ -81,6 +87,7 @@ WebUI.delay(2)
 changeFolderPermission(Folder_1, 'Can read')
 
 // Création du deuxième dossier
+Folder_2 = FolderName.withSuffix(Folder_2)
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Delete_pica-taginput-input form-control'), 
     Folder_2)
 
@@ -92,6 +99,7 @@ WebUI.delay(2)
 changeFolderPermission(Folder_2, 'Can read and write')
 
 // Création du troisième dossier
+Folder_3 = FolderName.withSuffix(Folder_3)
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Delete_pica-taginput-input form-control'), 
     Folder_3)
 
@@ -107,6 +115,8 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/b
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/Create_group_button'))
+
+groupName_2 = GroupName.withSuffix(groupName_2)
 
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), 
     groupName_2)

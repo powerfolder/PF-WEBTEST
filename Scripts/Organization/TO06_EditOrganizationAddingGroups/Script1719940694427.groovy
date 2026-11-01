@@ -26,6 +26,7 @@ import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import group.GroupName as GroupName
 
 
 String Organization_name = GlobalVariable.organisationName
@@ -37,6 +38,8 @@ WebUI.callTestCase(findTestCase('Organization/Pre_test/Create_Org'), [:], Failur
 WebUI.click(findTestObject('Organization/AddGroups'))
 
 GlobalVariable.GroupName = ('Group_' + RandomStringUtils.randomNumeric(4))
+
+GlobalVariable.GroupName = GroupName.withSuffix(GlobalVariable.GroupName)
 
 String Groupname = GlobalVariable.GroupName
 

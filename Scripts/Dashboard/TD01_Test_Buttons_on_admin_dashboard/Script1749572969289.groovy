@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -42,31 +43,31 @@ WebUI.click(findTestObject('Dashboard/Accounts_Manage'))
 
 WebUI.delay(3)
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Accounts - PowerFolder')
+WindowTitle.verify('Accounts')
 
 WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
 
 WebUI.click(findTestObject('Dashboard/Storage_Manage'))
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Storage - PowerFolder')
+WindowTitle.verify('Storage')
 
 WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
 
 WebUI.click(findTestObject('Dashboard/Groups_Manage'))
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Groups - PowerFolder')
+WindowTitle.verify('Groups')
 
 WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
 
 WebUI.click(findTestObject('Dashboard/Log_View'))
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Logs - PowerFolder')
+WindowTitle.verify('Logs')
 
 WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
 
 WebUI.click(findTestObject('Dashboard/Org_Manage'))
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Organizations - PowerFolder')
+WindowTitle.verify('Organizations')
 
 WebUI.click(findTestObject('Dashboard/Left_Menu_Link_Dashboard'))
 
@@ -100,7 +101,7 @@ WebUI.click(findTestObject('Dashboard/Activation_Manage'))
 
 WebUI.switchToWindowIndex(1)
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Activation - PowerFolder')
+WindowTitle.verify('Activation')
 
 WebUI.closeWindowIndex(1)
 

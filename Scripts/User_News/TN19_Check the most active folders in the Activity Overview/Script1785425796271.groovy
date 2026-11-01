@@ -30,6 +30,8 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import login.LoginHelper as LoginHelper
+import folder.FolderName as FolderName
 
 GlobalVariable.userEmail = generateRandomEmail().toLowerCase()
 
@@ -59,11 +61,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
-WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.userEmail)
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(GlobalVariable.userEmail, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
@@ -77,6 +75,8 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
+
+folderName_1 = FolderName.withSuffix(folderName_1)
 
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), folderName_1)
 
@@ -111,6 +111,8 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
+
+folderName_2 = FolderName.withSuffix(folderName_2)
 
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), folderName_2)
 
@@ -166,6 +168,8 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/
 WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Object Repository/Folders/createFolder'))
+
+folderName_3 = FolderName.withSuffix(folderName_3)
 
 WebUI.setText(findTestObject('Object Repository/Folders/inputFolderName'), folderName_3)
 

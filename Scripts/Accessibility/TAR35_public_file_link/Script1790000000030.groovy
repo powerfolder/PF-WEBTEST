@@ -23,6 +23,7 @@ import java.nio.file.Files as Files
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
 import static helpers.Helper.getRandomFolderName
+import folder.FolderName as FolderName
 
 // Follows the same create-folder -> upload -> share -> create-link uploads a generic .bin file
 // navigates to the public getlink page. 
@@ -37,6 +38,8 @@ WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
+folderName = FolderName.withSuffix(folderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 

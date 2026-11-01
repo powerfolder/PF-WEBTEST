@@ -66,6 +66,7 @@ import java.time.Duration
 
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import folder.FolderName as FolderName
 
 
 
@@ -80,6 +81,8 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Folders
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/createFolder'))
+
+GlobalVariable.folderName = FolderName.withSuffix(GlobalVariable.folderName)
 
 WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Folders/inputFolderName'), GlobalVariable.folderName)
 

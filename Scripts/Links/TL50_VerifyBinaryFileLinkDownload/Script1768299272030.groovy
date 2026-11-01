@@ -13,6 +13,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import java.awt.Toolkit
 import java.awt.datatransfer.DataFlavor
 import java.io.File
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('Links/pre_test/Binary file'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -48,7 +49,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang
 WebUI.executeJavaScript('window.open(arguments[0], "_blank");', [url])
 WebUI.switchToWindowIndex(1)
 
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.click(findTestObject('Links/Page_Link - PowerFolder/folder_link_download_button'))
 

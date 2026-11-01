@@ -20,6 +20,7 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
+import group.GroupName as GroupName
 
 // =========================
 // Test steps
@@ -46,6 +47,8 @@ WebUI.setText(findTestObject('Accounts/InputPassword'), GlobalVariable.Pass)
 WebUI.setText(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/account_storage_overwiew'), '5')
 
 WebUI.click(findTestObject('Groups/Groups in account'))
+
+groupName = GroupName.withSuffix(groupName)
 
 WebUI.setText(findTestObject('Groups/text box groups'), groupName)
 

@@ -22,6 +22,8 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
+import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -40,11 +42,13 @@ WebUI.verifyEqual(WebUI.getText(findTestObject('Object Repository/lang/getFolder
 
 WebUI.verifyElementClickable(findTestObject('Object Repository/Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
 
+folderName = FolderName.withSuffix(folderName)
+
 WebUI.setText(findTestObject('Object Repository/Folders/inputFolderName'), folderName)
 
 WebUI.click(findTestObject('Object Repository/Folders/buttonOK'))
 
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 String csvfilename = getRandomFileName()
 

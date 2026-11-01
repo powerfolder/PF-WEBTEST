@@ -25,6 +25,8 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import credentials.CredentialsManager as CredentialsManager
+import login.LoginHelper as LoginHelper
+import helpers.WindowTitle as WindowTitle
 
 WebUI.callTestCase(findTestCase('Links/pre_test/import pdf'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -63,7 +65,7 @@ WebUI.switchToWindowIndex(1)
 WebUI.verifyNotEqual(WebUI.getWindowTitle(), '', FailureHandling.CONTINUE_ON_FAILURE)
 
 // Vérification du titre de la fenêtre
-assert WebUI.getWindowTitle().equals('Link - PowerFolder')
+WindowTitle.verify('Link')
 
 WebUI.verifyElementNotPresent(findTestObject('Links/Page_Link - PowerFolder/pdf_Download'), 2)
 
@@ -72,9 +74,7 @@ WebUI.delay(2)
 WebUI.switchToWindowIndex(0)
 
 // Log admin back in to verify the link settings
-WebUI.setText(findTestObject('Login/inputEmail'), CredentialsManager.getAdminUsername())
-
-WebUI.setText(findTestObject('Login/inputPassword'), CredentialsManager.getAdminPassword())
+LoginHelper.enterCredentials(CredentialsManager.getAdminUsername(), CredentialsManager.getAdminPassword())
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

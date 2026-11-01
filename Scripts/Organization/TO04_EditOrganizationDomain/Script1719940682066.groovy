@@ -22,6 +22,7 @@ import java.util.Date as Date
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
+import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 
 Organization_name = GlobalVariable.organisationName
 
@@ -30,9 +31,11 @@ println('Organization_name: ' + Organization_name)
 WebUI.callTestCase(findTestCase('Organization/Pre_test/Create_Org'), [:], FailureHandling.STOP_ON_FAILURE)
 
 
+String domainName = 'TO04' + RandomStringUtils.randomAlphanumeric(6) + '.com'
+
 WebUI.click(findTestObject('Organization/SelectDomain'))
 
-WebUI.setText(findTestObject('Organization/InputDomainName'), 'AutomationTest.com')
+WebUI.setText(findTestObject('Organization/InputDomainName'), domainName)
 
 WebUI.click(findTestObject('Organization/AddDomainButton'))
 
@@ -57,7 +60,7 @@ WebUI.click(findTestObject('Organization/SelectDomain'))
 WebUI.delay(3)
 
 String actualDomain = WebUI.getText(findTestObject('Organization/VerifyDomainName')).toLowerCase()
-String expectedDomain = 'AutomationTest.com'.toLowerCase()
+String expectedDomain = domainName.toLowerCase()
 
 WebUI.verifyEqual(actualDomain, expectedDomain, FailureHandling.CONTINUE_ON_FAILURE)
 

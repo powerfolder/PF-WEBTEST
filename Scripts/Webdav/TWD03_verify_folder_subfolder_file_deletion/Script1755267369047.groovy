@@ -22,6 +22,7 @@ import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import java.util.List as List;
+import folder.FolderName as FolderName
 
 //create Account and login
 WebUI.callTestCase(findTestCase('My Account/Pre_test/Create Account'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -34,6 +35,8 @@ WebUI.click(findTestObject('Folders/createFolder'))
 String folderName = getRandomFolderName()
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
+folderName = FolderName.withSuffix(folderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
@@ -66,6 +69,8 @@ assert web_toplvl_present
 
 // create sublvl_folder via webdav
 String folderName_webdav = getRandomFolderName()
+
+folderName_webdav = FolderName.withSuffix(folderName_webdav)
 
 CustomKeywords.'utils.WebDav.createFolder'(base, folderName + '/' + folderName_webdav, user, pass)
 

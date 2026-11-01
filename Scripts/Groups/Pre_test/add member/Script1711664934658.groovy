@@ -30,6 +30,7 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import group.GroupName as GroupName
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -63,6 +64,8 @@ boolean isUserCreated = userElement.isDisplayed()
 WebUiBuiltInKeywords.verifyEqual(isUserCreated, true)
 
 String groupName = 'Group_' + RandomStringUtils.randomNumeric(4)
+
+groupName = GroupName.withSuffix(groupName)
 
 GlobalVariable.GroupName = groupName
 

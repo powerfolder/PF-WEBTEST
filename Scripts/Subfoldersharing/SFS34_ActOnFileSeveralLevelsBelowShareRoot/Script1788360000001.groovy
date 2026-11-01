@@ -23,6 +23,8 @@ import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
 import helpers.LocalizedText as LocalizedText
+import login.LoginHelper as LoginHelper
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
 String memberEmail = GlobalVariable.userEmail
@@ -34,17 +36,22 @@ String tlfName = 'SFS34_' + RandomStringUtils.randomAlphanumeric(6)
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+tlfName = FolderName.withSuffix(tlfName)
 WebUI.setText(findTestObject('Folders/inputFolderName'), tlfName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 
 String subAName = 'SFS34_SubA_' + RandomStringUtils.randomAlphanumeric(6)
+subAName = FolderName.withSuffix(subAName)
 createNestedFolder(subAName)
 
 String aName = 'a'
+aName = FolderName.withSuffix(aName)
 createNestedFolder(aName)
 String bName = 'b'
+bName = FolderName.withSuffix(bName)
 createNestedFolder(bName)
 String cName = 'c'
+cName = FolderName.withSuffix(cName)
 createNestedFolder(cName)
 
 String docName = 'SFS34_file_' + RandomStringUtils.randomAlphanumeric(6)
@@ -78,8 +85,7 @@ WebUI.click(findTestObject('Share/close_button_folder_share_mail'))
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
-WebUI.setText(findTestObject('Login/inputEmail'), memberEmail)
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(memberEmail, GlobalVariable.Pass)
 WebUI.click(findTestObject('Login/loginSubmit'))
 WebUI.delay(3)
 WebUI.click(findTestObject('LeftNavigationIcons/folders'))

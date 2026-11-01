@@ -32,6 +32,8 @@ import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import java.util.Random as Random
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import login.LoginHelper as LoginHelper
+import folder.FolderName as FolderName
 
 // create first account
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -69,9 +71,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang
 
 // login as first user
 
-WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.userEmail)
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(GlobalVariable.userEmail, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
@@ -84,6 +84,8 @@ WebUI.click(findTestObject('Folders/createFolder'))
 String folderName = getRandomFolderName()
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
+folderName = FolderName.withSuffix(folderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 
@@ -113,9 +115,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang
 
 // login as second user
 
-WebUI.setText(findTestObject('Login/inputEmail'), secondaccount_userEmail)
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(secondaccount_userEmail, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

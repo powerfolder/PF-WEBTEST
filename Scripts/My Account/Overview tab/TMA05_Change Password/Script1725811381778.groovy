@@ -23,6 +23,7 @@ import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import java.time.Duration
+import login.LoginHelper as LoginHelper
 
 // Appel du test de création de compte
 WebUI.callTestCase(findTestCase('My Account/Pre_test/Create Account'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -85,9 +86,7 @@ String userEmail = GlobalVariable.userEmail
 println(userEmail)
 
 // Connexion avec les nouvelles informations d'identification
-WebUI.setText(findTestObject('Login/inputEmail'), userEmail)
-
-WebUI.setText(findTestObject('Login/inputPassword'), NewPasswordWithSymbols)
+LoginHelper.enterCredentials(userEmail, NewPasswordWithSymbols)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

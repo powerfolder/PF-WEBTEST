@@ -23,6 +23,7 @@ import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
 import tags.TagHelper as TagHelper
 import subfoldersharing.InheritanceHelper as InheritanceHelper
+import login.LoginHelper as LoginHelper
 
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
 String memberEmail = GlobalVariable.userEmail
@@ -119,8 +120,7 @@ void verifyNotFoundByTag(String tagText, String itemName) {
 
 void loginAsMember(String email) {
     logout()
-    WebUI.setText(findTestObject('Login/inputEmail'), email)
-    WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+    LoginHelper.enterCredentials(email, GlobalVariable.Pass)
     WebUI.click(findTestObject('Login/loginSubmit'))
     WebUI.delay(3)
     WebUI.click(findTestObject('LeftNavigationIcons/folders'))

@@ -29,6 +29,7 @@ import org.openqa.selenium.WebElement as WebElement
 import org.openqa.selenium.By as By
 import java.util.Arrays as Arrays
 import file.FileFinder as FileFinder
+import folder.FolderName as FolderName
 
 String topFolder = 'Top_lvl_' + Helper.getRandomFolderName()
 
@@ -39,6 +40,8 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Folders - PowerFolder/
 WebUI.click(findTestObject('Object Repository/Folders/createFolderIcon'))
 
 WebUI.click(findTestObject('Object Repository/Folders/createFolder'))
+
+topFolder = FolderName.withSuffix(topFolder)
 
 WebUI.setText(findTestObject('Object Repository/Folders/inputFolderName'), topFolder)
 
@@ -53,6 +56,8 @@ WebUI.click(findTestObject('Drag and drop/create_icone'))
 WebUI.click(findTestObject('Drag and drop/Create_folder'))
 
 String subFolderName = 'Sub_' + Helper.getRandomFolderName()
+
+subFolderName = FolderName.withSuffix(subFolderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), subFolderName)
 

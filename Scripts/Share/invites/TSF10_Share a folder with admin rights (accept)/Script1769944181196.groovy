@@ -23,6 +23,8 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.DataFlavor as DataFlavor
+import login.LoginHelper as LoginHelper
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Share/Pre_test/add members'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -30,11 +32,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
-WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.userName)
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(GlobalVariable.userName, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
@@ -47,6 +45,8 @@ WebUI.click(findTestObject('Folders/createFolder'))
 GlobalVariable.folderName = ('TF10_' + RandomStringUtils.randomAlphanumeric(6))
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
+GlobalVariable.folderName = FolderName.withSuffix(GlobalVariable.folderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), GlobalVariable.folderName)
 
@@ -74,11 +74,7 @@ WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon
 
 WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
 
-WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.userName2)
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(GlobalVariable.userName2, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 

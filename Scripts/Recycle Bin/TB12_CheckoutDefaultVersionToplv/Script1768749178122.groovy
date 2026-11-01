@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import folder.FolderFinder as FolderFinder
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -21,11 +22,13 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
 // Vérifie si le titre de la page correspond à "Folders - PowerFolder"
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 
@@ -34,6 +37,8 @@ WebUI.click(findTestObject('Folders/createFolder'))
 String topLvlFolderName = 'Top_lvl' + getTimestamp()
 
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+
+topLvlFolderName = FolderName.withSuffix(topLvlFolderName)
 
 WebUI.setText(findTestObject('Folders/inputFolderName'), topLvlFolderName)
 
@@ -74,5 +79,5 @@ String getTimestamp() {
 WebElement findFolder(String topLvlFolderName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + topLvlFolderName) + '\')]/td[1]/span'))
+    return FolderFinder.findElement(('//*[contains(@data-search-keys, \'' + topLvlFolderName) + '\')]/td[1]/span')
 }

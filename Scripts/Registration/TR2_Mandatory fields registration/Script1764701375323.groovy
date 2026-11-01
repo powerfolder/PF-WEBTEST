@@ -20,7 +20,8 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import utils.FormGenerator as FormGenerator
+import login.LoginHelper as LoginHelper
+import helpers.WindowTitle as WindowTitle
 
 WebUI.openBrowser('')
 
@@ -28,7 +29,7 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(GlobalVariable.URL)
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Login - PowerFolder')
+WindowTitle.verify('Login')
 
 WebUI.verifyElementClickable(findTestObject('Login/registerNewAccountLink'))
 
@@ -40,31 +41,11 @@ WebUI.click(findTestObject('Registration/Page_Register - PowerFolder/RegisterBut
 String missingFieldsMsg = WebUI.getText(findTestObject('Registration/Page_Register - PowerFolder/notification_MissingFields'))
 assert (missingFieldsMsg == 'Bitte alle fehlenden Felder ausfüllen' || missingFieldsMsg == 'Please fill in all missing fields') : 'Unerwartete Meldung: ' + missingFieldsMsg
 
-//WebUI.verifyElementAttributeValue(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Department'), 'placeholder', 'Required: Department', 5)
-
-//WebUI.verifyElementAttributeValue(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Street'), 'placeholder', 'Required: Street', 5)
-
-//WebUI.verifyElementAttributeValue(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_code_postal'), 'placeholder', 'Required: Postal code', 5)
-
-//WebUI.verifyElementAttributeValue(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Location'), 'placeholder', 'Required: Location', 5)
-
-//WebUI.verifyElementAttributeValue(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Raison_For'), 'placeholder', 'Required: Reason for registration', 5)
-
 WebUI.verifyElementPresent(findTestObject('Registration/Page_Register - PowerFolder/TOS_HasError'), 5)
 
 GlobalVariable.userEmail = generateRandomEmail().toLowerCase()
 
 WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Email'), GlobalVariable.userEmail)
-
-//WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Department'), FormGenerator.generateDepartment())
-
-//WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Street'), FormGenerator.generateStreet())
-
-//WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_code_postal'), FormGenerator.generatePostalCode())
-
-//WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Location'), FormGenerator.generateLocation())
-
-//WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Raison_For'), FormGenerator.generateReason())
 
 WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Password'), GlobalVariable.Pass)
 
@@ -74,7 +55,7 @@ WebUI.click(findTestObject('Registration/Page_Register - PowerFolder/RegisterBut
 
 WebUI.delay(3)
 
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Register - PowerFolder')
+WindowTitle.verify('Register')
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
 
@@ -92,23 +73,19 @@ WebUI.check(findTestObject('Accounts/Edit_Accounts - PowerFolder/button_Active')
 
 WebUI.click(findTestObject('Accounts/SaveButton'))
 
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/Icon_account'))
+
+WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
+
 WebUI.navigateToUrl(GlobalVariable.URL)
 
-WebUI.setText(findTestObject('Login/inputEmail'), GlobalVariable.userEmail)
-
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.setText(findTestObject('Login/inputPassword'), GlobalVariable.Pass)
+LoginHelper.enterCredentials(GlobalVariable.userEmail, GlobalVariable.Pass)
 
 WebUI.click(findTestObject('Login/loginSubmit'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Login/loginSubmit'))
-
-WebUI.delay(2)
-
-WebUI.verifyEqual(WebUI.getWindowTitle(), 'Folders - PowerFolder')
+WindowTitle.verify('Folders')
 
 WebUI.closeBrowser()
 

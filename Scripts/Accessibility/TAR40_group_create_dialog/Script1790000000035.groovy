@@ -15,6 +15,7 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
+import group.GroupName as GroupName
 
 // Follows the same flow as Test Cases/Groups/TG02_Create group, but stops to scan the
 // group-creation dialog while it is open, before saving.
@@ -27,6 +28,8 @@ WebUI.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/C
 WebUI.delay(3)
 
 String groupName = 'TAR40_Group_' + RandomStringUtils.randomNumeric(4)
+
+groupName = GroupName.withSuffix(groupName)
 
 WebUI.setText(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), groupName)
 

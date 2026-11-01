@@ -44,6 +44,8 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import java.awt.Toolkit
 import java.awt.datatransfer.DataFlavor
+import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 WebUI.callTestCase(findTestCase('Folders/PreTest_GoToShareable'), [:], FailureHandling.OPTIONAL)
 
@@ -51,13 +53,14 @@ String folderName =getRandomGroupName()
 WebUI.click(findTestObject('Folders/createFolderIcon'))
 WebUI.click(findTestObject('Folders/createFolder'))
 WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+folderName = FolderName.withSuffix(folderName)
 WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
 WebUI.click(findTestObject('Folders/buttonOK'))
 WebUI.click(findTestObject('Object Repository/Folders/Page_Folders - PowerFolder/lang_Folders'))
 WebElement btn = findShareButton(folderName)
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 WebUI.click(findTestObject('Links/closeDialog'))
-assert WebUI.getWindowTitle().equals('Folders - PowerFolder')
+WindowTitle.verify('Folders')
 WebDriver driver = DriverFactory.getWebDriver()
 WebElement folder =  driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'$folderName')]"))
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(folder))
