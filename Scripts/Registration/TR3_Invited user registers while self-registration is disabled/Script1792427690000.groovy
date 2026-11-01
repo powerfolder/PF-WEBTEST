@@ -12,6 +12,8 @@ import folder.FolderFinder as FolderFinder
 import onlyoffice.OOEditor
 import onlyoffice.OnlyOffice
 import utils.AccountApi as AccountApi
+import helpers.WindowTitle as WindowTitle
+import folder.FolderName as FolderName
 
 String inviteeEmail = 'tr3_' + RandomStringUtils.randomAlphanumeric(8).toLowerCase() + '@qa-automated-webtest.com'
 
@@ -31,6 +33,7 @@ try {
     WebUI.click(findTestObject('Folders/createFolderIcon'))
     WebUI.click(findTestObject('Folders/createFolder'))
     WebUI.verifyElementClickable(findTestObject('Folders/resetInput'), FailureHandling.CONTINUE_ON_FAILURE)
+    folderName = FolderName.withSuffix(folderName)
     WebUI.setText(findTestObject('Folders/inputFolderName'), folderName)
     WebUI.click(findTestObject('Folders/buttonOK'))
 
@@ -54,7 +57,7 @@ try {
     WebUI.click(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/lang_Log out'))
     WebUI.navigateToUrl(registerUrl)
 
-    WebUI.verifyEqual(WebUI.getWindowTitle(), 'Register - PowerFolder')
+    WindowTitle.verify('Register')
     WebUI.verifyElementAttributeValue(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Email'), 'value', inviteeEmail, 5)
 
     WebUI.setText(findTestObject('Registration/Page_Register - PowerFolder/input_Cration_Register_Password'), GlobalVariable.Pass)
@@ -64,7 +67,7 @@ try {
     WebUI.delay(3)
 
     WebUI.verifyElementNotPresent(findTestObject('Registration/Page_Register - PowerFolder/notification_ServerError'), 2)
-    WebUI.verifyEqual(WebUI.getWindowTitle(), 'Folders - PowerFolder')
+    WindowTitle.verify('Folders')
 
     WebElement invitationRow = findRow(folderName)
     WebUI.verifyEqual(invitationRow.isDisplayed(), true)
