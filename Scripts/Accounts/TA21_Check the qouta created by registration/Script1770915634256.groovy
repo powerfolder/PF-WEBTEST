@@ -16,6 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import utils.PreferencesApi as PreferencesApi
+import java.math.RoundingMode as RoundingMode
+
+int registrationQuotaMb = PreferencesApi.getConfig('server.register.os.size') as int
 
 WebUI.callTestCase(findTestCase('Registration/TR1_VerifyRegistrationTest'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -34,9 +38,19 @@ def tooltipText = WebUI.getAttribute(findTestObject('My_Account/Overview/Page_Ac
 
 println('Tooltip content: ' + tooltipText)
 
-WebUI.verifyMatch(tooltipText, '.*5 GB.*', true)
+WebUI.verifyMatch(tooltipText, '.*(?<![\\d.,])' + quotaPattern(registrationQuotaMb) + '\\b.*', true)
 
 WebUI.delay(2)
 
 WebUI.closeBrowser()
+
+String quotaPattern(int quotaMb) {
+    if (quotaMb < 1024) {
+        return quotaMb + ' MB'
+    }
+
+    BigDecimal quotaGb = new BigDecimal(quotaMb).divide(new BigDecimal(1024), 1, RoundingMode.HALF_UP).stripTrailingZeros()
+
+    return quotaGb.toPlainString().replace('.', '[.,]') + ' GB'
+}
 
