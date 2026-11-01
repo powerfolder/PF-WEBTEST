@@ -31,6 +31,7 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import group.GroupName as GroupName
+import organization.OrganizationName as OrganizationName
 
 
 WebUiBuiltInKeywords.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.STOP_ON_FAILURE)
@@ -43,6 +44,8 @@ WebUiBuiltInKeywords.click(findTestObject('Organization/SelectOrganization'))
 WebUiBuiltInKeywords.click(findTestObject('Organization/DropDownToggle'))
 
 WebUiBuiltInKeywords.click(findTestObject('Organization/CreateOrganization'))
+
+GlobalVariable.organisationName = OrganizationName.withSuffix(GlobalVariable.organisationName)
 
 WebUiBuiltInKeywords.setText(findTestObject('Organization/InputName'), GlobalVariable.organisationName)
 

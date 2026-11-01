@@ -28,8 +28,6 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Calendar as Calendar
 import java.util.Date as Date
 
-WebUI.callTestCase(findTestCase('CleanUpScripts/CL2_CleanAccounts'), [:], FailureHandling.STOP_ON_FAILURE)
-
 String firstName = generateRandomString(8)
 
 String lastName = generateRandomString(8)

@@ -29,6 +29,7 @@ import java.util.Calendar as Calendar
 import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import java.util.Random as Random
+import organization.OrganizationName as OrganizationName
 
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -46,6 +47,8 @@ WebUI.click(findTestObject('Accounts/Edit_Accounts - PowerFolder/Edit_account'))
 WebUI.click(findTestObject('Accounts/Edit_Accounts - PowerFolder/a_Organizations'))
 
 String organization_name = 'My_Organization_' + RandomStringUtils.randomAlphabetic(4)
+
+organization_name = OrganizationName.withSuffix(organization_name)
 
 WebUI.setText(findTestObject('Accounts/Edit_Accounts - PowerFolder/organizations_input'), organization_name)
 

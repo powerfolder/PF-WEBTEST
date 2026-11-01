@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement as WebElement
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import login.LoginHelper as LoginHelper
 import helpers.WindowTitle as WindowTitle
+import organization.OrganizationName as OrganizationName
 
 WebUI.callTestCase(findTestCase('Accounts/Edit_Account/pre_test/Create_Account'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -28,6 +29,8 @@ WebUI.click(findTestObject('Accounts/Edit_Accounts - PowerFolder/Edit_account'))
 WebUI.click(findTestObject('Accounts/Edit_Accounts - PowerFolder/a_Organizations'))
 
 String organization_name = 'My_Organization_' + RandomStringUtils.randomAlphabetic(4)
+
+organization_name = OrganizationName.withSuffix(organization_name)
 
 WebUI.setText(findTestObject('Accounts/Edit_Accounts - PowerFolder/organizations_input'), organization_name)
 

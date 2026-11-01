@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TO07_DeleteAllKatalonOrganizations</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4cd2b5b6-4eaf-4013-aef0-2ebb0064173f</testCaseGuid>
+</TestCaseEntity>

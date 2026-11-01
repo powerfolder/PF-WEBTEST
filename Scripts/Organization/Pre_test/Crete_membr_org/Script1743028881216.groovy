@@ -19,6 +19,7 @@ import org.apache.commons.lang3.RandomStringUtils
 import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
+import organization.OrganizationName as OrganizationName
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
 
@@ -47,6 +48,7 @@ WebUI.click(findTestObject('Organization/DropDownToggle'))
 WebUI.click(findTestObject('Organization/CreateOrganization'))
 
 GlobalVariable.organisationName = 'Organisation_' + RandomStringUtils.randomNumeric(4)
+GlobalVariable.organisationName = OrganizationName.withSuffix(GlobalVariable.organisationName)
 String organizationName = GlobalVariable.organisationName
 
 WebUI.setText(findTestObject('Organization/InputName'), organizationName)

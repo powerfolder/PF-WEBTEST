@@ -23,12 +23,15 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
+import organization.OrganizationName as OrganizationName
 
 WebUI.callTestCase(findTestCase('Organization/Pre_test/Create_Org'), [:], FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.organisationName = ('Organisation_' + RandomStringUtils.randomNumeric(4))
 
 Organization_rename = ('Rename_Org_' + RandomStringUtils.randomNumeric(4))
+
+Organization_rename = OrganizationName.withSuffix(Organization_rename)
 
 WebUI.setText(findTestObject('Organization/InputName'), Organization_rename)
 

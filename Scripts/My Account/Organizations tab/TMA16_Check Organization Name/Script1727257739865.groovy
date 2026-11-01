@@ -28,6 +28,7 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Date as Date
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
 import login.LoginHelper as LoginHelper
+import organization.OrganizationName as OrganizationName
 
 
 // Plan de test : Connexion en tant qu'administrateur
@@ -54,6 +55,8 @@ WebUI.setText(findTestObject('My_Account/Overview/Page_Accounts - PowerFolder/ac
 WebUI.click(findTestObject('My_Account/Detail/Page_Accounts - PowerFolder/a_Organizations'))
 
 GlobalVariable.organisationName = ('Organisation_' + RandomStringUtils.randomNumeric(4))
+
+GlobalVariable.organisationName = OrganizationName.withSuffix(GlobalVariable.organisationName)
 
 organization = GlobalVariable.organisationName
 
