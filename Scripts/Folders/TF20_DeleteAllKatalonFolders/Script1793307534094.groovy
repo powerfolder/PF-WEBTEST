@@ -46,7 +46,7 @@ assert rows.isEmpty() : 'Folders with ' + FolderName.SUFFIX + ' are still presen
 WebUI.closeBrowser()
 
 List<WebElement> searchKatalonFolders() {
-    WebUI.setText(findTestObject('Folders/inputSearch'), FolderName.SUFFIX)
+    WebUI.setText(findTestObject('Folders/inputSearch'), 'category:folder name:' + FolderName.SUFFIX)
 
     WebUI.delay(3)
 
