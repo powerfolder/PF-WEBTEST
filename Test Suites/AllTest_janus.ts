@@ -471,13 +471,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7470aded-eb85-46a0-94f8-7db7872de9b2</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Accounts/TA08_VerifyImportAccounts</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>50263e68-5e93-47a8-9374-3dde36d316e3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

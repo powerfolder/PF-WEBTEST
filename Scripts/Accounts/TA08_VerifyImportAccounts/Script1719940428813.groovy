@@ -1,18 +1,17 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.Keys as Keys
 
-String firstName = generateRandomString(8)
+List<String> emailIds = (1..3).collect { generateRandomEmail() }
 
-String lastName = generateRandomString(8)
+File importFile = File.createTempFile('ta08_', '.csv')
 
-String emailId = generateRandomEmail()
-
-Emailid = emailId.toLowerCase()
-
-String phone = generateRandomPhoneNumber()
+importFile.text = 'username,server,registration date,last login date,last login from,pro user,booked size,booked size,total size,total size,archive size,folders,OS valid till,OS warned expired,OS disabled expired,OS warned usage,OS disabled usage,custom1,custom2,custom3,notes\n' +
+    emailIds.collect { it + ',tspfdd05,,,,y,5 GB,5368709120,0 Bytes,0,0,0,,,,,,,,,\n' }.join('')
 
 WebUI.callTestCase(findTestCase('Login/Pretest - Admin Login'), [('variable') : ''], FailureHandling.OPTIONAL)
 
@@ -22,25 +21,27 @@ WebUI.click(findTestObject('Accounts/CreateButton'))
 
 WebUI.click(findTestObject('Accounts/ImportAccounts'))
 
-String projDir = RunConfiguration.getProjectDir()
-
-String fname = projDir + '/Data Files/ImportAccountFile.csv'
-
-WebUI.uploadFile(findTestObject('Accounts/AddFileButton'), fname)
+WebUI.uploadFile(findTestObject('Accounts/AddFileButton'), importFile.getAbsolutePath())
 
 WebUI.delay(4)
 
 WebUI.click(findTestObject('Accounts/CloseButton'))
 
-WebUI.click(findTestObject('Accounts/SelectCheckBox'))
+WebUI.refresh()
 
-WebUI.click(findTestObject('Accounts/SelectAllAccountCheckBox'))
+for (String emailId : emailIds) {
+    WebUI.setText(findTestObject('Accounts/inputAccountSearch'), emailId)
 
-WebUI.delay(4)
+    WebUI.sendKeys(findTestObject('Accounts/inputAccountSearch'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Accounts/DeleteButton'))
+    TestObject accountRow = new TestObject()
 
-WebUI.click(findTestObject('Accounts/YesButton'))
+    accountRow.addProperty('xpath', ConditionType.EQUALS, "//table[@id='accounts_table']/tbody/tr[contains(@data-search-keys, '" + emailId + "')]")
+
+    WebUI.verifyElementPresent(accountRow, 10)
+}
+
+importFile.delete()
 
 WebUI.closeBrowser()
 
@@ -54,17 +55,11 @@ String generateRandomString(int length) {
     for (int i = 0; i < length; i++) {
         randomString.append(characters.charAt(random.nextInt(characters.length())))
     }
-    
-    return randomString.toString()
+
+    return randomString.toString().toLowerCase()
 }
 
 String generateRandomEmail() {
     return generateRandomString(8) + '@qa-automated-webtest.com'
-}
-
-String generateRandomPhoneNumber() {
-    Random random = new Random()
-
-    return String.format('(%03d) %03d-%04d', random.nextInt(1000), random.nextInt(1000), random.nextInt(10000))
 }
 
