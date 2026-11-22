@@ -209,7 +209,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>ONLYOFFICE Docs version under test (checked on the landing page and via DocsAPI)</description>
-      <initValue>'10.0.0'</initValue>
+      <initValue>'10.0.2'</initValue>
       <name>expectedOOVersion</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
@@ -219,23 +219,27 @@
       <initValue>60</initValue>
       <name>editorTimeout</name>
       <protected>false</protected>
+      <valueType>NUMBER</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Extra seconds after the editor reports ready</description>
       <initValue>3</initValue>
       <name>editorSettleSeconds</name>
       <protected>false</protected>
+      <valueType>NUMBER</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Seconds to wait for ONLYOFFICE to write a change back to PowerFolder after closing the editor</description>
       <initValue>90</initValue>
       <name>saveCallbackTimeout</name>
       <protected>false</protected>
+      <valueType>NUMBER</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Seconds to wait until the editor reports the typed changes as saved before leaving it</description>
       <initValue>15</initValue>
       <name>autosaveWaitSeconds</name>
       <protected>false</protected>
+      <valueType>NUMBER</valueType>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

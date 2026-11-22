@@ -73,6 +73,7 @@ groupBName = GroupName.withSuffix(groupBName)
 WebUI.setText(findTestObject('Groups/Page_Groups - PowerFolder/input_Organizations_pica_group_name'), groupBName)
 WebUI.setText(findTestObject('Groups/Page_Groups - PowerFolder/textarea_Organizations_pica_group_notes'), 'create group')
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
+WebUI.delay(3)
 WebUI.refresh()
 WebUI.delay(3)
 

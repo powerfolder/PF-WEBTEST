@@ -81,6 +81,8 @@ WebUiBuiltInKeywords.setText(findTestObject('Object Repository/Groups/Page_Group
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/button_Save'))
 
+WebUI.delay(5)
+
 WebUI.refresh()
 
 WebUI.delay(3)

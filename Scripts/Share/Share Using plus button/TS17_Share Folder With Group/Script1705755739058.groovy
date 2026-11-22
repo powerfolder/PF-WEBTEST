@@ -48,6 +48,8 @@ WebUI.setText(findTestObject('Groups/inputGroupName'), GroupName.withSuffix("Gro
 
 WebUI.click(findTestObject('Groups/buttonSave'))
 
+WebUI.delay(3)
+
 WebUI.refresh()
 
 Thread.sleep(7000)
