@@ -118,7 +118,7 @@ def createFolderIfNotExists(String folderPath) {
 def createFilesInFolder(String folderPath, int numberOfFiles) {
 	for (int i = 1; i <= numberOfFiles; i++) {
 		File file = new File(((folderPath + '/file') + i) + '.txt')
-		file.createNewFile()
+		file.text = 'TB05 test file ' + i
 	}
 }
 
