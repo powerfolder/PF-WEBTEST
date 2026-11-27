@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_content']/table/tbody/tr/td/img</value>
+         <value>//div[@id='pica_content']//img[contains(concat(' ',normalize-space(@class),' '),' pica-avatar ') and contains(concat(' ',normalize-space(@class),' '),' pica-border ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

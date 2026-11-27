@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//a[@id='pica_account_avatar_change'])[1]</value>
+         <value>(//*[@id='pica_account_avatar_change'])[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>

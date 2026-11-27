@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_account_dialog']//ul[contains(@class,'pica-nav-tabs')]/li/a[./lang[@name='label_groups']]</value>
+         <value>//div[@id='pica_account_dialog']//ul[contains(@class,'pica-nav-tabs')]/li/*[self::a or self::button][./lang[@name='label_groups']]</value>
       </entry>
       <entry>
          <key>CSS</key>

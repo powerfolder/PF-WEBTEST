@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/nav/div/div/div[5]/div/a/span[2]</value>
+         <value>//*[@id='filelink_qr']/span[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>

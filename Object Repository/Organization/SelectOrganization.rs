@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//lang[@class='pica-hidden-on-small text-center'][@name='label_organizations'])[1]</value>
+         <value>//*[@id='pica_menu']//lang[@name='label_organizations']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

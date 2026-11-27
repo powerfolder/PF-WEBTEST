@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@id='pica_account_organizations']//ul[contains(@class,'dropdown-menu')]//a[@data-dropdown-group='permission'])[2]</value>
+         <value>(//div[@id='pica_account_organizations']//ul[contains(@class,'dropdown-menu')]//*[@data-dropdown-group='permission'])[2]</value>
       </entry>
       <entry>
          <key>CSS</key>

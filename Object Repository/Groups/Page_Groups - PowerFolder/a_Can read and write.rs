@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//td[3]/div/ul/li[2]/a</value>
+         <value>//td[3]/div/ul/li[2]/*[self::a or self::button]</value>
       </entry>
       <entry>
          <key>CSS</key>

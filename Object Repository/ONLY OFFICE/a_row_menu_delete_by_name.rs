@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//tr[contains(@data-search-keys, '${name}')]//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ')]//a[contains(concat(' ',normalize-space(@class),' '),' files-ui-delete ')]</value>
+         <value>//tr[contains(@data-search-keys, '${name}')]//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ')]//*[contains(concat(' ',normalize-space(@class),' '),' files-ui-delete ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

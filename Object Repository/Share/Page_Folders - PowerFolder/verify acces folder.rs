@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica-files-create-dropdown']/a[contains(@class,'dropdown-toggle')]</value>
+         <value>//div[@id='pica-files-create-dropdown']/*[contains(@class,'dropdown-toggle')]</value>
       </entry>
       <entry>
          <key>CSS</key>

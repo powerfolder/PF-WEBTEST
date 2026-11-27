@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//thead[@id='files_paste_header']//a[contains(@class,'files-ui-paste')]</value>
+         <value>//thead[@id='files_paste_header']//*[contains(@class,'files-ui-paste')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

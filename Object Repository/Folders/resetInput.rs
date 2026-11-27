@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_input_dialog']//span[contains(@class,'pica-input-clear')]</value>
+         <value>//div[@id='pica_input_dialog']//*[contains(concat(' ',normalize-space(@class),' '),' pica-input-clear ')]</value>
       </entry>
       <entry>
          <key>BASIC</key>

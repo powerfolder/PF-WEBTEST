@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@id='dashboard_nav']/li[1]/a</value>
+         <value>//ul[@id='dashboard_nav']/li[1]/*[self::a or self::button]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

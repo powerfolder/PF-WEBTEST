@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='accounts_edit']</value>
+         <value>//*[@id='accounts_edit']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

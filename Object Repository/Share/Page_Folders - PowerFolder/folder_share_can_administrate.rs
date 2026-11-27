@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//ul[contains(@class,'dropdown-menu')]//a[.//lang[text()='Can administrate']]&#xd;
+         <value>//ul[contains(@class,'dropdown-menu')]//*[self::a or self::button][.//lang[text()='Can administrate']]
 </value>
       </entry>
       <entry>

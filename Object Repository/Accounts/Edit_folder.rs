@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_account_folders']//a[contains(@class,'pica-inputlist-manage')]</value>
+         <value>//div[@id='pica_account_folders']//*[contains(@class,'pica-inputlist-manage')]</value>
       </entry>
       <entry>
          <key>CSS</key>

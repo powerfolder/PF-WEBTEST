@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//table[@id='share_table']//tr[.//span[contains(@class,'glyphicons-link')]])[1]//span[contains(@class,'cogwheel-icon')]</value>
+         <value>(//table[@id='share_table']//tr[.//span[contains(@class,'glyphicons-link')]])[1]//*[contains(@class,'cogwheel-icon')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

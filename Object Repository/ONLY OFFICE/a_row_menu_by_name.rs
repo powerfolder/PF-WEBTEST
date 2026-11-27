@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//tr[contains(@data-search-keys, '${name}')]//a[contains(concat(' ',normalize-space(@class),' '),' dropdown-toggle ')]</value>
+         <value>//tr[contains(@data-search-keys, '${name}')]//*[contains(concat(' ',normalize-space(@class),' '),' dropdown-toggle ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

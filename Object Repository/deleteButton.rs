@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[@class='pica-table-selection-multi pica-glyph glyphicons glyphicons-bin']</value>
+         <value>//*[@class='pica-table-selection-multi pica-glyph glyphicons glyphicons-bin']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

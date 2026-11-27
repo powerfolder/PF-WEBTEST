@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_group_organization']//span[contains(concat(' ',normalize-space(@class),' '),' pica-input-clear ')]</value>
+         <value>//div[@id='pica_group_organization']//*[contains(concat(' ',normalize-space(@class),' '),' pica-input-clear ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

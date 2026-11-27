@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/nav/div/div/div[3]/div/a/span[2]</value>
+         <value>//*[@id='filelink_upload']/span[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

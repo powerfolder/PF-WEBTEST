@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_group_accounts']//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]/li[a[@data-dropdown-group='permission']][2]/a</value>
+         <value>//div[@id='pica_group_accounts']//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]/li[*[@data-dropdown-group='permission']][2]/*[self::a or self::button]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

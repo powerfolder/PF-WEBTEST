@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica-files-create-dropdown']//a[contains(concat(' ',normalize-space(@class),' '),' dropdown-toggle ')]//span[contains(concat(' ',normalize-space(@class),' '),' glyphicons-plus-sign ')]</value>
+         <value>//div[@id='pica-files-create-dropdown']//*[contains(concat(' ',normalize-space(@class),' '),' dropdown-toggle ')]//span[contains(concat(' ',normalize-space(@class),' '),' glyphicons-plus-sign ')]</value>
       </entry>
       <entry>
          <key>CSS</key>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id='share_table']//tr[starts-with(@id,'share_')]//span[contains(@class,'pica-in-brackets')]</value>
+         <value>//table[@id='share_table']//tr[starts-with(@id,'share_')]//*[contains(@class,'pica-in-brackets')]</value>
       </entry>
       <entry>
          <key>CSS</key>

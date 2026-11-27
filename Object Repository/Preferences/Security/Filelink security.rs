@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//li[@id='filelink_security']/a</value>
+         <value>//li[@id='filelink_security' or @data-subcat='filelink_security']/*[self::a or self::button]</value>
       </entry>
       <entry>
          <key>CSS</key>

@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//a/lang[@name='label_avatar'])[1]</value>
+         <value>(//*[self::a or self::button]/lang[@name='label_avatar'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

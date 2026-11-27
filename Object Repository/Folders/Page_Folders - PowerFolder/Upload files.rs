@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica-files-create-dropdown' and not(contains(concat(' ',normalize-space(@class),' '),' limited ')) and not(contains(@style,'display: none')) and not(contains(@style,'display:none'))]//li[contains(concat(' ',normalize-space(@class),' '),' files-ui-upload ') and not(contains(@style,'display: none')) and not(contains(@style,'display:none'))]/a</value>
+         <value>//div[@id='pica-files-create-dropdown' and not(contains(concat(' ',normalize-space(@class),' '),' limited ')) and not(contains(@style,'display: none')) and not(contains(@style,'display:none'))]//li[contains(concat(' ',normalize-space(@class),' '),' files-ui-upload ') and not(contains(@style,'display: none')) and not(contains(@style,'display:none'))]/*[self::a or self::button]</value>
       </entry>
       <entry>
          <key>CSS</key>

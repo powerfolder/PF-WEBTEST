@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='pica_group_avatar_change']</value>
+         <value>//*[@id='pica_group_avatar_change']</value>
       </entry>
       <entry>
          <key>CSS</key>

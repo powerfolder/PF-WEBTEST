@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_content']/div[2]/div/div/a</value>
+         <value>//div[@id='pica_content']//a[@href='/activation']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

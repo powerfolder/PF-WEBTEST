@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//th[@id='storages_create']/a</value>
+         <value>//th[@id='storages_create']/*[self::a or self::button]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

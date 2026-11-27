@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#pica_account_organizations_nav > a</value>
+         <value>#pica_account_organizations_nav > :is(a, button)</value>
       </entry>
       <entry>
          <key>XPATH</key>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica-files-create-dropdown']/a/span</value>
+         <value>//div[@id='pica-files-create-dropdown']/*[self::a or self::button]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

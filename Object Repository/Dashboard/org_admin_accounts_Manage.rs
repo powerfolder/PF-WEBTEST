@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_content']/div/div/div/a</value>
+         <value>//div[@id='pica_content']//a[@href='/admin/account']</value>
       </entry>
       <entry>
          <key>CSS</key>

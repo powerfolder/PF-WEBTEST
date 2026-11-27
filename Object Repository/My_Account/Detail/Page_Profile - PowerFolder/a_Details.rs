@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@id='profile_nav']//a[@data-tab='details']</value>
+         <value>//ul[@id='profile_nav']//*[@data-tab='details']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

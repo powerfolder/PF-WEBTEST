@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_content']/table/tbody/tr/td/div/a[2]</value>
+         <value>//div[@id='pica_content']//*[contains(concat(' ',normalize-space(@class),' '),' profile-ui-avatar-delete ')]</value>
       </entry>
       <entry>
          <key>CSS</key>

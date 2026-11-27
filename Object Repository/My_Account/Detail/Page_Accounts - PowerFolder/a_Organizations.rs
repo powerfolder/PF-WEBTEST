@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//li[@id='pica_account_organizations_nav']/a</value>
+         <value>//li[@id='pica_account_organizations_nav']/*[self::a or self::button]</value>
       </entry>
       <entry>
          <key>CSS</key>

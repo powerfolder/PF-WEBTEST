@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//table[@id='share_table']/tbody//ul[contains(@class,'dropdown-menu')]//a[@data-dropdown-group='permissions'])[4]</value>
+         <value>(//table[@id='share_table']/tbody//ul[contains(@class,'dropdown-menu')]//*[@data-dropdown-group='permissions'])[4]</value>
       </entry>
       <entry>
          <key>CSS</key>

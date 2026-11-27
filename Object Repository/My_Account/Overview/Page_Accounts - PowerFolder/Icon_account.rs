@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;pica_action_normal&quot;]/div[2]/a/span[1]</value>
+         <value>//*[@id='pica_action_normal']//*[contains(concat(' ',normalize-space(@class),' '),' dropdown-toggle ') and .//span[contains(concat(' ',normalize-space(@class),' '),' glyphicons-user ')]]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>a.dropdown-toggle > span.pica-glyph.glyphicons.glyphicons-user</value>
+         <value>#pica_action_normal .dropdown-toggle:has(span.glyphicons-user)</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

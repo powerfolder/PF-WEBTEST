@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica_group_accounts']//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]/li[a[@data-dropdown-group='permission']][1]/a</value>
+         <value>//div[@id='pica_group_accounts']//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]/li[*[@data-dropdown-group='permission']][1]/*[self::a or self::button]</value>
       </entry>
       <entry>
          <key>BASIC</key>

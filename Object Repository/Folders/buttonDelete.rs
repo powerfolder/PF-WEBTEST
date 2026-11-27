@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@class='pica-table-selection-multi files-ui-delete']/*[text()='Delete']</value>
+         <value>//thead[@id='files_select_header']//div[contains(concat(' ',normalize-space(@class),' '),' pica-table-selection-context ')]//*[contains(concat(' ',normalize-space(@class),' '),' files-ui-delete ')]/*[text()='Delete']</value>
       </entry>
       <entry>
          <key>BASIC</key>

@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id='storages_table']/thead[2]/tr/th[7]/div/ul/li/a</value>
+         <value>//table[@id='storages_table']/thead[2]/tr/th[7]/div/ul/li/*[self::a or self::button]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

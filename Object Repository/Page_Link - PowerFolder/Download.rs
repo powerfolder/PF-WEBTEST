@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[1]/div[2]/table/thead[1]/tr/th[3]/div[2]/a</value>
+         <value>//thead[@id='files_select_header']//div[contains(concat(' ',normalize-space(@class),' '),' pica-table-selection-context ')]//*[contains(concat(' ',normalize-space(@class),' '),' files-ui-download ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

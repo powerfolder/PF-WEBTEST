@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='links_delete']</value>
+         <value>//*[@id='links_delete']</value>
       </entry>
       <entry>
          <key>CSS</key>

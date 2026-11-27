@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id='table_servers']/thead[2]/tr/th[10]/div/ul/li[3]/a</value>
+         <value>//table[@id='table_servers']/thead[2]/tr/th[10]/div/ul/li[3]/*[self::a or self::button]</value>
       </entry>
       <entry>
          <key>CSS</key>

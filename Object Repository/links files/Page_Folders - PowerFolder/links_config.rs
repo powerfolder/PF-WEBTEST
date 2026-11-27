@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//table[@id='share_table']//tr[.//span[contains(@class,'glyphicons-link')]]//span[contains(@class,'cogwheel-icon')])[1]</value>
+         <value>(//table[@id='share_table']//tr[.//span[contains(@class,'glyphicons-link')]]//*[contains(@class,'cogwheel-icon')])[1]</value>
       </entry>
       <entry>
          <key>CSS</key>

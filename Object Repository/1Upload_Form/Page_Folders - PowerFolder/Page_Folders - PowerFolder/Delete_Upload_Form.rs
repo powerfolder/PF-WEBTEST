@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//table[@id='share_table']//tr[.//span[contains(@class,'glyphicons-wallet')]])[1]//span[contains(@class,'delete-icon')]/i</value>
+         <value>(//table[@id='share_table']//tr[.//span[contains(@class,'glyphicons-wallet')]])[1]//*[contains(@class,'delete-icon')]/i</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

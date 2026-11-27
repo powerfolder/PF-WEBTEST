@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//thead[@id='files_select_header']//div[contains(concat(' ',normalize-space(@class),' '),' pica-table-selection-context ')]//a[contains(concat(' ',normalize-space(@class),' '),' files-ui-rename ')]/span</value>
+         <value>//thead[@id='files_select_header']//div[contains(concat(' ',normalize-space(@class),' '),' pica-table-selection-context ')]//*[contains(concat(' ',normalize-space(@class),' '),' files-ui-rename ')]/span</value>
       </entry>
       <entry>
          <key>CSS</key>

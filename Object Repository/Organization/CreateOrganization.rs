@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//a[@id='organizations_create'])[1]</value>
+         <value>(//*[@id='organizations_create'])[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>

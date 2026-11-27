@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//td[3]/div/ul/li[3]/a/span</value>
+         <value>//td[3]/div/ul/li[3]/*[self::a or self::button]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

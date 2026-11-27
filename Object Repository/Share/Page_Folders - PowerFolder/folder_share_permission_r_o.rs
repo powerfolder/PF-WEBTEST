@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='share_buttons']/ul/li/a</value>
+         <value>//div[@id='share_buttons']/ul/li/*[self::a or self::button]</value>
       </entry>
       <entry>
          <key>CSS</key>

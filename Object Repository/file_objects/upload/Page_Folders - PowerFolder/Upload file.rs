@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div/div/main/div[1]/table/thead[3]/tr/th[1]/div/ul/li[9]/a/lang</value>
+         <value>//div[@id='pica-files-create-dropdown']//li[contains(concat(' ',normalize-space(@class),' '),' files-ui-upload ')]/*[self::a or self::button]/lang</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

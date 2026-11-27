@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;profile_nav&quot;]/li[1]/a/lang</value>
+         <value>//*[@id=&quot;profile_nav&quot;]/li[1]/*[self::a or self::button]/lang</value>
       </entry>
       <entry>
          <key>CSS</key>

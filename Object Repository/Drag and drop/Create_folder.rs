@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[2]/div/div/main/div[1]/table/thead[3]/tr/th[1]/div/ul/li[1]/a/span</value>
+         <value>//div[@id='pica-files-create-dropdown']//li[contains(concat(' ',normalize-space(@class),' '),' files-ui-create-dir ')]/*[self::a or self::button]/span</value>
       </entry>
       <entry>
          <key>BASIC</key>

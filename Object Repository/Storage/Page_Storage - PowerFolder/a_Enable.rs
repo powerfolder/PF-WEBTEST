@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//thead[@id='storage_select_header']/tr/th[3]/div[2]/a</value>
+         <value>//thead[@id='storage_select_header']/tr/th[3]/div[2]/*[self::a or self::button]</value>
       </entry>
       <entry>
          <key>CSS</key>

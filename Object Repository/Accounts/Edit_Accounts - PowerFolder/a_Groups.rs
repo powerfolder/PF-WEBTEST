@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@id='pica_account_nav']//a[.//lang[@name='label_groups']]</value>
+         <value>//ul[@id='pica_account_nav']//*[self::a or self::button][.//lang[@name='label_groups']]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

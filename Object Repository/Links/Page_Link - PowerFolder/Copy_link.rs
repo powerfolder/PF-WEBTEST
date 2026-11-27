@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/nav/div/div/div[4]/div/a</value>
+         <value>//*[@id='filelink_copy']</value>
       </entry>
       <entry>
          <key>BASIC</key>

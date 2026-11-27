@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pica-files-create-dropdown']//li[contains(concat(' ',normalize-space(@class),' '),' files-ui-create-doc ')]/a[@data-type='${type}']</value>
+         <value>//div[@id='pica-files-create-dropdown']//li[contains(concat(' ',normalize-space(@class),' '),' files-ui-create-doc ')]/*[@data-type='${type}']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

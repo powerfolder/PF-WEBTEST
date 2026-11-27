@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@id='pica_organization_accounts']//table/tbody/tr[@data-userdata])[1]//ul[contains(@class,'dropdown-menu')]/li[2]/a</value>
+         <value>(//div[@id='pica_organization_accounts']//table/tbody/tr[@data-userdata])[1]//ul[contains(@class,'dropdown-menu')]/li[2]/*[self::a or self::button]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

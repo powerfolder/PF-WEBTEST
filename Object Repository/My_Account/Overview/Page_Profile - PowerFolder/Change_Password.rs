@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='profile_change_password']</value>
+         <value>//*[@id='profile_change_password']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

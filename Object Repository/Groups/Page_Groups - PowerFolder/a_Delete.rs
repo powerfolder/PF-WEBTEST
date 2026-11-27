@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>a.pica-table-selection-multi.groups_delete</value>
+         <value>.pica-table-selection-multi.groups_delete</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
