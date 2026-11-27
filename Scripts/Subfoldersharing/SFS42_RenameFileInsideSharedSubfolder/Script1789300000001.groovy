@@ -85,12 +85,12 @@ docPresent.addProperty('xpath', ConditionType.EQUALS, "//*[contains(@data-search
 WebUI.verifyElementPresent(docPresent, 10)
 
 WebDriver driver = DriverFactory.getWebDriver()
-WebElement docRowToggle = driver.findElement(By.xpath("//*[contains(@data-search-keys, '" + docName + "')]//a[contains(@class,'dropdown-toggle')]"))
+WebElement docRowToggle = driver.findElement(By.xpath("//*[contains(@data-search-keys, '" + docName + "')]//*[contains(@class,'dropdown-toggle')]"))
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(docRowToggle))
 WebUI.delay(1)
 
 TestObject docRenameOption = new TestObject()
-docRenameOption.addProperty('xpath', ConditionType.EQUALS, "//*[contains(@data-search-keys, '" + docName + "')]//a[contains(concat(' ',normalize-space(@class),' '),' files-ui-rename ')]")
+docRenameOption.addProperty('xpath', ConditionType.EQUALS, "//*[contains(@data-search-keys, '" + docName + "')]//*[contains(concat(' ',normalize-space(@class),' '),' files-ui-rename ')]")
 WebUI.waitForElementClickable(docRenameOption, 5)
 WebUI.click(docRenameOption)
 

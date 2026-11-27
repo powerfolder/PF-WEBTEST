@@ -58,7 +58,7 @@ WebUI.delay(2)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement organisation = driver.findElement(By.xpath(('//td/a[contains(text(), \'' + GlobalVariable.organisationName) + 
+WebElement organisation = driver.findElement(By.xpath(('//td/*[self::a or self::button][contains(text(), \'' + GlobalVariable.organisationName) + 
         '\')]'))
 
 boolean isOrganisationCreated = organisation.isDisplayed()

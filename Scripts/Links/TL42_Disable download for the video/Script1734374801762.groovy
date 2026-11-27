@@ -76,6 +76,6 @@ WebUI.closeBrowser()
 WebElement findShareButton(String pdfFileName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + pdfFileName) + '\')]/td[7]/a'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + pdfFileName) + '\')]/td[7]/*[self::a or self::button]'))
 }
 

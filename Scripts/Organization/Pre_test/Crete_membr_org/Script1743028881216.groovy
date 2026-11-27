@@ -138,5 +138,5 @@ String generateDateTimePlusOneYear() {
 @Keyword
 WebElement findORG(String organizationName) {
     WebDriver driver = DriverFactory.getWebDriver()
-    return driver.findElement(By.xpath("//a[contains(text(),'${organizationName}')]"))
+    return driver.findElement(By.xpath("//*[self::a or self::button][contains(text(),'${organizationName}')]"))
 }

@@ -137,7 +137,7 @@ File renamedLocalFile = new File(localFile.getParentFile(), uploadedFileName)
 localFile.renameTo(renamedLocalFile)
 
 WebDriver driver = DriverFactory.getWebDriver()
-WebElement uploadTrigger = driver.findElement(By.xpath("//a[@id='filelink_upload']"))
+WebElement uploadTrigger = driver.findElement(By.xpath("//*[@id='filelink_upload']"))
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(uploadTrigger))
 WebElement uploadInput = driver.findElement(By.xpath("//input[@id='upload_input_files']"))
 uploadInput.sendKeys(renamedLocalFile.getAbsolutePath())

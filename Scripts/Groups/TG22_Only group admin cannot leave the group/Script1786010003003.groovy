@@ -59,7 +59,7 @@ WebUI.delay(2)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement user1Element = driver.findElement(By.xpath(('//td/a[contains(text(),\'' + user1) + '\')]'))
+WebElement user1Element = driver.findElement(By.xpath(('//td/*[self::a or self::button][contains(text(),\'' + user1) + '\')]'))
 
 WebUiBuiltInKeywords.verifyEqual(user1Element.isDisplayed(), true)
 
@@ -142,7 +142,7 @@ WebUI.setText(findTestObject('Groups/Search group'), GlobalVariable.GroupName)
 
 WebUI.delay(2)
 
-def rowMenuXpath = "//table[@id='groups_table']/tbody/tr[contains(@data-search-keys,'" + groupName + "')]//a[@role='button' and contains(@class,'dropdown-toggle')]"
+def rowMenuXpath = "//table[@id='groups_table']/tbody/tr[contains(@data-search-keys,'" + groupName + "')]//*[contains(@class,'dropdown-toggle')]"
 
 new WebDriverWait(driver, java.time.Duration.ofSeconds(15)).until(
     ExpectedConditions.presenceOfElementLocated(By.xpath(rowMenuXpath)))
@@ -151,7 +151,7 @@ WebElement rowMenuButton = driver.findElement(By.xpath(rowMenuXpath))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(rowMenuButton))
 
-def leaveLinkXpath = "//table[@id='groups_table']/tbody/tr[contains(@data-search-keys,'" + groupName + "')]//a[contains(@class,'groups_leave')]"
+def leaveLinkXpath = "//table[@id='groups_table']/tbody/tr[contains(@data-search-keys,'" + groupName + "')]//*[contains(@class,'groups_leave')]"
 
 new WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
     ExpectedConditions.elementToBeClickable(By.xpath(leaveLinkXpath)))

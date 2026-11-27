@@ -81,7 +81,7 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(shareBtnA))
 
 new org.openqa.selenium.support.ui.WebDriverWait(DriverFactory.getWebDriver(), java.time.Duration.ofSeconds(10)).until(
     org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
-        By.xpath("(//table[@id='share_table']//tr[.//span[contains(@class,'glyphicons-wallet')]])[1]//span[contains(@class,'cogwheel-icon')]")))
+        By.xpath("(//table[@id='share_table']//tr[.//span[contains(@class,'glyphicons-wallet')]])[1]//*[contains(@class,'cogwheel-icon')]")))
 
 WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/Settings_Upload_Form'))
 
@@ -107,7 +107,7 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(shareBtnB))
 
 new org.openqa.selenium.support.ui.WebDriverWait(DriverFactory.getWebDriver(), java.time.Duration.ofSeconds(10)).until(
     org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
-        By.xpath("(//table[@id='share_table']//tr[.//span[contains(@class,'glyphicons-wallet')]])[1]//span[contains(@class,'cogwheel-icon')]")))
+        By.xpath("(//table[@id='share_table']//tr[.//span[contains(@class,'glyphicons-wallet')]])[1]//*[contains(@class,'cogwheel-icon')]")))
 
 WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/Settings_Upload_Form'))
 
@@ -133,7 +133,7 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(shareBtnB2))
 
 new org.openqa.selenium.support.ui.WebDriverWait(DriverFactory.getWebDriver(), java.time.Duration.ofSeconds(10)).until(
     org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
-        By.xpath("(//table[@id='share_table']//tr[.//span[contains(@class,'glyphicons-wallet')]])[1]//span[contains(@class,'cogwheel-icon')]")))
+        By.xpath("(//table[@id='share_table']//tr[.//span[contains(@class,'glyphicons-wallet')]])[1]//*[contains(@class,'cogwheel-icon')]")))
 
 WebUI.click(findTestObject('1Upload_Form/Page_Folders - PowerFolder/Settings_Upload_Form'))
 
@@ -152,7 +152,7 @@ WebUI.closeBrowser()
 WebElement findShareButton(String folderName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'$folderName')]/../../../td[7]/a"))
+    return driver.findElement(By.xpath("//table[@id='files_files_table']/tbody/tr/td[2]/span/a[contains(text(),'$folderName')]/../../../td[7]/*[self::a or self::button]"))
 }
 
 void setDateTimePickerValue(String value) {

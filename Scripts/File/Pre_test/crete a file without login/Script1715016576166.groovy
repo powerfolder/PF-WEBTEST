@@ -51,7 +51,7 @@ WebUiBuiltInKeywords.click(findTestObject('Object Repository/Folders/buttonOK'))
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement folder = driver.findElement(By.xpath(('//td/a[contains(text(),\'' + folderName) + '\')]'))
+WebElement folder = driver.findElement(By.xpath(('//td/*[self::a or self::button][contains(text(),\'' + folderName) + '\')]'))
 
 boolean isFolderCreated = folder.isDisplayed()
 

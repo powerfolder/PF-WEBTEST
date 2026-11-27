@@ -60,7 +60,7 @@ WebUI.delay(2)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement userElement = driver.findElement(By.xpath(('//td/a[contains(text(),\'' + user) + '\')]'))
+WebElement userElement = driver.findElement(By.xpath(('//td/*[self::a or self::button][contains(text(),\'' + user) + '\')]'))
 
 boolean isUserCreated = userElement.isDisplayed()
 
@@ -83,7 +83,7 @@ WebUiBuiltInKeywords.click(findTestObject('Accounts/SaveButton'))
 
 WebUI.delay(2)
 
-WebElement coAdminElement = driver.findElement(By.xpath(('//td/a[contains(text(),\'' + coAdmin) + '\')]'))
+WebElement coAdminElement = driver.findElement(By.xpath(('//td/*[self::a or self::button][contains(text(),\'' + coAdmin) + '\')]'))
 
 boolean isCoAdminCreated = coAdminElement.isDisplayed()
 

@@ -64,7 +64,7 @@ try {
     userElement.click()
 
     // Wait for the delete button to be clickable and perform click using JavaScript
-    WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath('//*[@id="pica_group_accounts"]/div[2]/table/thead[1]/tr/th[3]/div/a')))
+    WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath('//*[@id="pica_group_accounts"]/div[2]/table/thead[1]/tr/th[3]/div/*[self::a or self::button]')))
 
     WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(element))
 

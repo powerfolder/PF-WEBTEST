@@ -87,7 +87,7 @@ assert isFolderPresent(folderName)
 // Dynamic object for the "Updated" activity counter
 TestObject updatedActivity = new TestObject('Added activity counter')
 
-updatedActivity.addProperty('xpath', ConditionType.EQUALS, '//div[contains(@class,\'pica-chart-legend-item\')][contains(normalize-space(.),\'Updated\')]')
+updatedActivity.addProperty('xpath', ConditionType.EQUALS, '//*[contains(@class,\'pica-chart-legend-item\')][contains(normalize-space(.),\'Updated\')]')
 
 WebUI.waitForElementVisible(updatedActivity, 10)
 

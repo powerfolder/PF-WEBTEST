@@ -100,6 +100,6 @@ WebUI.closeBrowser()
 WebElement findManageButton(String fileName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[6]/div/a/a'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[6]/div/*[self::a or self::button]/*[self::a or self::span][1]'))
 }
 

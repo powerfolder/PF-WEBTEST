@@ -59,7 +59,7 @@ WebUI.delay(2)
 
 TestObject optionWithoutFolders = new TestObject('option_without_folders')
 
-optionWithoutFolders.addProperty('xpath',ConditionType.EQUALS,"//div[@id='pica_groups_filter']//a[normalize-space(.)='Without folders']")
+optionWithoutFolders.addProperty('xpath',ConditionType.EQUALS,"//div[@id='pica_groups_filter']//li/*[self::a or self::button][normalize-space(.)='Without folders']")
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/dropdown_groups'))
 

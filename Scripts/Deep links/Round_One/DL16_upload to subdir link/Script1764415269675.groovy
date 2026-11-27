@@ -185,7 +185,7 @@ String imageName = 'image_links.png'
 
 def driver = DriverFactory.getWebDriver()
 
-WebElement upload = driver.findElement(By.xpath("//a[@id='filelink_upload']"))
+WebElement upload = driver.findElement(By.xpath("//*[@id='filelink_upload']"))
 
 WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(upload))
 

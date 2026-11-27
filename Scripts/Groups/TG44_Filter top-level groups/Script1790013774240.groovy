@@ -81,7 +81,7 @@ WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
 
 TestObject optionTopLevel = new TestObject('filter_top_level')
 
-optionTopLevel.addProperty('xpath',ConditionType.EQUALS,"//div[@id='pica_groups_filter']//a[normalize-space(.)='Top-level groups']")
+optionTopLevel.addProperty('xpath',ConditionType.EQUALS,"//div[@id='pica_groups_filter']//li/*[self::a or self::button][normalize-space(.)='Top-level groups']")
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/dropdown_groups'))
 

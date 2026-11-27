@@ -59,7 +59,7 @@ WebUI.delay(2)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement user1Element = driver.findElement(By.xpath(('//td/a[contains(text(),\'' + user1) + '\')]'))
+WebElement user1Element = driver.findElement(By.xpath(('//td/*[self::a or self::button][contains(text(),\'' + user1) + '\')]'))
 
 WebUiBuiltInKeywords.verifyEqual(user1Element.isDisplayed(), true)
 
@@ -158,7 +158,7 @@ WebElement buttonUser1Again = driver.findElement(By.xpath(xpathUser1))
 buttonUser1Again.click()
 
 WebElement removeOption = driver.findElement(By.xpath(
-    "//div[@id='pica_group_accounts']//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]/li[last()]/a"))
+    "//div[@id='pica_group_accounts']//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]/li[last()]/*[self::a or self::button]"))
 
 Object hasClickHandler = WebUI.executeJavaScript(
     "var el = arguments[0]; var ev = (window.jQuery && jQuery._data) ? jQuery._data(el, 'events') : null; return !!(ev && ev.click && ev.click.length > 0);",

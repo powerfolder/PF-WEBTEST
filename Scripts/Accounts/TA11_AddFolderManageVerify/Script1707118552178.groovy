@@ -45,7 +45,7 @@ try {
 	WebUI.delay(1)
 	ClickOnAccount.click()
 } catch (Exception e) {
-	WebElement ClickOnAccount = driver.findElement(By.xpath("//a[@class='pica-name' and @data-original-title ='${emailId}']"))
+	WebElement ClickOnAccount = driver.findElement(By.xpath("//*[contains(concat(' ',normalize-space(@class),' '),' pica-name ') and (@title='${emailId}' or @data-bs-original-title='${emailId}')]"))
 	WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(ClickOnAccount))
 }
 

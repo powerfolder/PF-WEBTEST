@@ -124,24 +124,24 @@ WebUI.verifyElementPresent(docAPresent, 10)
 WebUI.verifyElementNotVisible(findTestObject('file_objects/document/Page_Folders - PowerFolder/Create_Itemes_Insid_a_folder'))
 
 WebDriver driver = DriverFactory.getWebDriver()
-WebElement docARowToggle = driver.findElement(By.xpath("//*[contains(@data-search-keys, '" + docAName + "')]//a[contains(@class,'dropdown-toggle')]"))
+WebElement docARowToggle = driver.findElement(By.xpath("//*[contains(@data-search-keys, '" + docAName + "')]//*[contains(@class,'dropdown-toggle')]"))
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(docARowToggle))
 WebUI.delay(1)
 
 TestObject docARenameOption = new TestObject()
-docARenameOption.addProperty('xpath', ConditionType.EQUALS, "//table[@id='files_files_table']//ul[contains(@class,'conext-dropdown-menu')]//a[contains(concat(' ',normalize-space(@class),' '),' files-ui-rename ')]")
+docARenameOption.addProperty('xpath', ConditionType.EQUALS, "//table[@id='files_files_table']//ul[contains(@class,'conext-dropdown-menu')]//*[contains(concat(' ',normalize-space(@class),' '),' files-ui-rename ')]")
 WebUI.verifyElementNotPresent(docARenameOption, 5)
 
 TestObject docACutOption = new TestObject()
-docACutOption.addProperty('xpath', ConditionType.EQUALS, "//table[@id='files_files_table']//ul[contains(@class,'conext-dropdown-menu')]//a[contains(concat(' ',normalize-space(@class),' '),' files-ui-cut ')]")
+docACutOption.addProperty('xpath', ConditionType.EQUALS, "//table[@id='files_files_table']//ul[contains(@class,'conext-dropdown-menu')]//*[contains(concat(' ',normalize-space(@class),' '),' files-ui-cut ')]")
 WebUI.verifyElementNotPresent(docACutOption, 5)
 
 TestObject docADeleteOption = new TestObject()
-docADeleteOption.addProperty('xpath', ConditionType.EQUALS, "//table[@id='files_files_table']//ul[contains(@class,'conext-dropdown-menu')]//a[contains(concat(' ',normalize-space(@class),' '),' files-ui-delete ')]")
+docADeleteOption.addProperty('xpath', ConditionType.EQUALS, "//table[@id='files_files_table']//ul[contains(@class,'conext-dropdown-menu')]//*[contains(concat(' ',normalize-space(@class),' '),' files-ui-delete ')]")
 WebUI.verifyElementNotPresent(docADeleteOption, 5)
 
 TestObject docADownloadOption = new TestObject()
-docADownloadOption.addProperty('xpath', ConditionType.EQUALS, "//table[@id='files_files_table']//ul[contains(@class,'conext-dropdown-menu')]//a[contains(concat(' ',normalize-space(@class),' '),' files-ui-download ')]")
+docADownloadOption.addProperty('xpath', ConditionType.EQUALS, "//table[@id='files_files_table']//ul[contains(@class,'conext-dropdown-menu')]//*[contains(concat(' ',normalize-space(@class),' '),' files-ui-download ')]")
 WebUI.verifyElementPresent(docADownloadOption, 5)
 
 String forcedUploadName = 'sfs30_denied_' + RandomStringUtils.randomAlphanumeric(6) + '.txt'

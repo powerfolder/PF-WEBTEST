@@ -167,7 +167,7 @@ WebElement findShareButton(String fileName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
     return driver.findElement(By.xpath(('//table[@id=\'files_files_table\']/tbody/tr/td[2]/span/a[contains(text(),\'' + 
-            fileName) + '\')]/../../../td[7]/a'))
+            fileName) + '\')]/../../../td[7]/*[self::a or self::button]'))
 }
 
 WebElement findDoc(String DocRename) {

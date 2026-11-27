@@ -104,7 +104,7 @@ boolean exists = WebUI.verifyElementPresent(dynamicObject, 10, FailureHandling.S
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement upload = driver.findElement(By.xpath('//a[@id=\'filelink_upload\']'))
+WebElement upload = driver.findElement(By.xpath('//*[@id=\'filelink_upload\']'))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(upload))
 
@@ -137,7 +137,7 @@ String getRandomFolderName() {
 WebElement findShareButton(String fileName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/*[self::a or self::button]/span'))
 }
 
 String getTimestamp() {

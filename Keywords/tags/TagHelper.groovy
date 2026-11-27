@@ -92,7 +92,7 @@ public class TagHelper {
 
     @Keyword
     static void openRowMenu(String itemName) {
-        WebElement trigger = findRow(itemName).findElement(By.xpath("./td[6]/div/a/a"))
+        WebElement trigger = findRow(itemName).findElement(By.xpath("./td[6]/div/*[self::a or self::button]/*[self::a or self::span][1]"))
         WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(trigger))
         WebUI.delay(1)
     }

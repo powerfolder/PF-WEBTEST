@@ -74,13 +74,13 @@ WebUI.delay(3)
 WebUI.setText(findTestObject('Groups/Search group'), groupName)
 WebUI.delay(2)
 
-String rowMenuXpath = "//table[@id='groups_table']/tbody/tr[contains(@data-search-keys,'" + groupName + "')]//a[@role='button' and contains(@class,'dropdown-toggle')]"
+String rowMenuXpath = "//table[@id='groups_table']/tbody/tr[contains(@data-search-keys,'" + groupName + "')]//*[contains(@class,'dropdown-toggle')]"
 new WebDriverWait(driver, Duration.ofSeconds(15)).until(
     ExpectedConditions.presenceOfElementLocated(By.xpath(rowMenuXpath)))
 WebElement rowMenuButton = driver.findElement(By.xpath(rowMenuXpath))
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(rowMenuButton))
 
-String leaveLinkXpath = "//table[@id='groups_table']/tbody/tr[contains(@data-search-keys,'" + groupName + "')]//a[contains(@class,'groups_leave')]"
+String leaveLinkXpath = "//table[@id='groups_table']/tbody/tr[contains(@data-search-keys,'" + groupName + "')]//*[contains(@class,'groups_leave')]"
 new WebDriverWait(driver, Duration.ofSeconds(10)).until(
     ExpectedConditions.elementToBeClickable(By.xpath(leaveLinkXpath)))
 WebElement leaveLink = driver.findElement(By.xpath(leaveLinkXpath))

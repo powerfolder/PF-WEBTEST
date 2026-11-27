@@ -81,6 +81,6 @@ WebUI.closeBrowser()
 WebElement findORG(String Organization_name) {
 	WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//a[contains(text(),\'' + Organization_name) + '\')]'))
+	return driver.findElement(By.xpath(('//*[self::a or self::button][contains(text(),\'' + Organization_name) + '\')]'))
 }
 

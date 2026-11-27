@@ -57,7 +57,7 @@ WebUI.executeJavaScript('arguments[0].scrollIntoView({block: "center"});', Array
 WebUI.delay(1)
 WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(folderElement))
 
-WebElement element = pageDriver.findElement(By.xpath("//div[@id='pica_group_folders']//a[contains(concat(' ',normalize-space(@class),' '),' pica-inputlist-remove ')]"))
+WebElement element = pageDriver.findElement(By.xpath("//div[@id='pica_group_folders']//*[contains(concat(' ',normalize-space(@class),' '),' pica-inputlist-remove ')]"))
 
 WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(element))
 
@@ -69,7 +69,7 @@ WebUiBuiltInKeywords.click(findTestObject('Groups/Page_Groups - PowerFolder/butt
 
 WebUI.delay(2)
 
-String groupIconXpath = "//table[@id='groups_table']//tr[.//a[contains(concat(' ',normalize-space(@class),' '),' pica-name ') and contains(normalize-space(text()),'" + GlobalVariable.GroupName + "')]]/td[1]//*[contains(concat(' ',normalize-space(@class),' '),' pica-glyph ')]"
+String groupIconXpath = "//table[@id='groups_table']//tr[.//*[contains(concat(' ',normalize-space(@class),' '),' pica-name ') and contains(normalize-space(text()),'" + GlobalVariable.GroupName + "')]]/td[1]//*[contains(concat(' ',normalize-space(@class),' '),' pica-glyph ')]"
 
 new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(15)).until(
     ExpectedConditions.elementToBeClickable(By.xpath(groupIconXpath)))
@@ -78,7 +78,7 @@ WebElement rowIcon = DriverFactory.getWebDriver().findElement(By.xpath(groupIcon
 WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(rowIcon))
 
 new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(10)).until(
-    ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(concat(' ',normalize-space(@class),' '),' pica-table-selection-multi ') and contains(concat(' ',normalize-space(@class),' '),' groups_edit ')]")))
+    ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(concat(' ',normalize-space(@class),' '),' pica-table-selection-multi ') and contains(concat(' ',normalize-space(@class),' '),' groups_edit ')]")))
 
 WebUiBuiltInKeywords.click(findTestObject('Object Repository/Groups/Page_Groups - PowerFolder/a_Edit_m'))
 
@@ -98,7 +98,7 @@ WebUI.closeBrowser()
 WebElement findGroup(String Groupname) {
 	WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//td/a[contains(text(), \'' + GlobalVariable.GroupName) + '\')]'))
+	return driver.findElement(By.xpath(('//td/*[self::a or self::button][contains(text(), \'' + GlobalVariable.GroupName) + '\')]'))
 }
 
 @Keyword

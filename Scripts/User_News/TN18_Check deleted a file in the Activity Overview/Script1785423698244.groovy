@@ -82,7 +82,7 @@ assert isFolderPresent(folderName)
 // Dynamic object for the "deleted" activity counter
 TestObject deletedActivity = new TestObject('deleted activity counter')
 
-deletedActivity.addProperty('xpath', ConditionType.EQUALS, '//div[contains(@class,\'pica-chart-legend-item\')][contains(normalize-space(.),\'Deleted\')]')
+deletedActivity.addProperty('xpath', ConditionType.EQUALS, '//*[contains(@class,\'pica-chart-legend-item\')][contains(normalize-space(.),\'Deleted\')]')
 
 WebUI.waitForElementVisible(deletedActivity, 10)
 

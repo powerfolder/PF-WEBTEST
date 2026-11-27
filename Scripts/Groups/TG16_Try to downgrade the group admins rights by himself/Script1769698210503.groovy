@@ -60,7 +60,7 @@ button.click()
 
 def permissionXpath = "//div[@id='pica_group_accounts']//table//tr[@data-userdata and contains(@data-userdata,'" +
     userLocalPart + "')]//ul[contains(concat(' ',normalize-space(@class),' '),' show ')]" +
-    "//a[@data-dropdown-group='permission' and normalize-space(.)='Is member and admin']"
+    "//*[@data-dropdown-group='permission' and normalize-space(.)='Is member and admin']"
 
 new WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
     ExpectedConditions.elementToBeClickable(By.xpath(permissionXpath)))

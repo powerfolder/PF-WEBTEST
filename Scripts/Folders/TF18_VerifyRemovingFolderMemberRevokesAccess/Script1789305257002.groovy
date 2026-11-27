@@ -153,6 +153,6 @@ TestObject memberDropdownToggle(String fullName) {
 
 TestObject openMemberDropdownRemoveAction() {
     TestObject obj = new TestObject()
-    obj.addProperty('xpath', ConditionType.EQUALS, "//table[@id='share_table']//ul[contains(@class,'dropdown-menu') and contains(@class,'show')]//a[contains(.,'Remove') or contains(.,'Entfernen')]")
+    obj.addProperty('xpath', ConditionType.EQUALS, "//table[@id='share_table']//ul[contains(@class,'dropdown-menu') and contains(@class,'show')]//*[self::a or self::button][contains(.,'Remove') or contains(.,'Entfernen')]")
     return obj
 }

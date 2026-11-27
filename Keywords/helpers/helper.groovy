@@ -83,7 +83,7 @@ public class Helper {
 	
 	@Keyword
 	def static WebElement findShareButton(String fileName) {
-		return FolderFinder.findElement("//table[@id='files_files_table']/tbody/tr[contains(@data-search-keys,'" + fileName + "')]/td[7]/a")
+		return FolderFinder.findElement("//table[@id='files_files_table']/tbody/tr[contains(@data-search-keys,'" + fileName + "')]/td[7]/*[self::a or self::button]")
 	}
 	@Keyword
 	def static generateDateTimePlusTenSeconds() {

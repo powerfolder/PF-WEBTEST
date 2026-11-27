@@ -83,11 +83,7 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn1))
 
 WebUI.click(findTestObject('links files/Page_Folders - PowerFolder/links_config'))
 
-String iconClass = WebUI.getAttribute(findTestObject('Links/Page_Folders - PowerFolder/disable_Download_icon'), 'class')
-
-println('Icon class after click: ' + iconClass)
-
-assert iconClass.contains('glyphicons-check') : 'The icon does not contain the \'glyphicons-check\' class.'
+WebUI.verifyElementChecked(findTestObject('Links/Page_Folders - PowerFolder/disable_Download_checkbox'), 5)
 
 WebUI.delay(2)
 
@@ -97,7 +93,7 @@ WebUI.closeBrowser( // Attente maximale de 10 secondes
 WebElement findShareButton(String pdfFileName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + pdfFileName) + '\')]/td[7]/a'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + pdfFileName) + '\')]/td[7]/*[self::a or self::button]'))
 }
 
 WebElement findFolderLink(String folderName) {

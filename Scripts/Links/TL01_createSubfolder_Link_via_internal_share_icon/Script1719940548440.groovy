@@ -109,7 +109,7 @@ String getRandomFolderName() {
 WebElement findShareButton(String fileName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/*[self::a or self::button]/span'))
 }
 
 String getTimestamp() {
@@ -123,7 +123,7 @@ String getTimestamp() {
 /*
 def WebElement findShareButton(String fileName) {
 	WebDriver driver = DriverFactory.getWebDriver()
-	return driver.findElement(By.xpath("//table[@id='files_files_table']//[contains(text(),'$fileName')]/../../td[7]/a/span"))
+	return driver.findElement(By.xpath("//table[@id='files_files_table']//[contains(text(),'$fileName')]/../../td[7]/*[self::a or self::button]/span"))
 }  
 //tr[@id='Object_559992308']/td[7]/a/span
 //body/div[2]/div[1]/div[2]/div[2]/table/tbody/tr/td[7]/a/span

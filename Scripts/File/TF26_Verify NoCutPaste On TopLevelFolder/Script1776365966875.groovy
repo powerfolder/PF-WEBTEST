@@ -61,7 +61,7 @@ WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btn))
 WebDriver driver = DriverFactory.getWebDriver()
 
 List<WebElement> cutButtons = driver.findElements(By.xpath(
-	"//table[@id='files_files_table']//a[contains(@class,'files-ui-cut') and not(contains(@style,'display: none'))]"
+	"//table[@id='files_files_table']//*[contains(@class,'files-ui-cut') and not(contains(@style,'display: none'))]"
 ))
 
 if (cutButtons.size() > 0) {

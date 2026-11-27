@@ -82,7 +82,7 @@ try {
 	
     // En cas d'exception, utiliser une autre méthode pour cliquer sur un élément
 	
-    WebElement ClickOnAccount = driver.findElement(By.xpath("//a[@class='pica-name' and @data-original-title ='$emailId']"))
+    WebElement ClickOnAccount = driver.findElement(By.xpath("//*[contains(concat(' ',normalize-space(@class),' '),' pica-name ') and (@title='$emailId' or @data-bs-original-title='$emailId')]"))
 	
     JavascriptExecutor executor = (JavascriptExecutor) driver
 	

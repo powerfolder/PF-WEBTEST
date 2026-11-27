@@ -77,7 +77,7 @@ try {
 	ClickOnAccount.click()
 }
 catch (Exception e) {
-	WebElement ClickOnAccount = driver.findElement(By.xpath("//a[@class='pica-name' and @data-original-title ='$emailId']"))
+	WebElement ClickOnAccount = driver.findElement(By.xpath("//*[contains(concat(' ',normalize-space(@class),' '),' pica-name ') and (@title='$emailId' or @data-bs-original-title='$emailId')]"))
 
 	JavascriptExecutor executor = (JavascriptExecutor) driver
 
@@ -103,7 +103,7 @@ String expectedText = 'Account Updated'
 
 WebUI.delay(10)
 
-WebElement AccountName = driver.findElement(By.xpath("(//a[normalize-space()='$firstName $lastName'])[1]/ancestor::tr/td[1]/span"))
+WebElement AccountName = driver.findElement(By.xpath("(//*[self::a or self::button][normalize-space()='$firstName $lastName'])[1]/ancestor::tr/td[1]/span"))
 
 WebUI.delay(2)
 

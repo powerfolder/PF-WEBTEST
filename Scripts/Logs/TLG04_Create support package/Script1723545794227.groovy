@@ -44,7 +44,7 @@ WebUI.click(findTestObject('1Logs/Page_Dashboard - PowerFolder/lang_Logs'))
 // first so the #logs_create_support link becomes visible/clickable.
 WebDriver drv = DriverFactory.getWebDriver()
 WebElement diagToggle = new WebDriverWait(drv, java.time.Duration.ofSeconds(15)).until(
-    ExpectedConditions.elementToBeClickable(By.xpath("//table[@id='logs_table']//a[contains(concat(' ',normalize-space(@class),' '),' dropdown-toggle ') and .//*[@data-tooltip='tooltip_diagnostics']]")))
+    ExpectedConditions.elementToBeClickable(By.xpath("//table[@id='logs_table']//*[contains(concat(' ',normalize-space(@class),' '),' dropdown-toggle ') and .//*[@data-tooltip='tooltip_diagnostics']]")))
 WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(diagToggle))
 
 new WebDriverWait(drv, java.time.Duration.ofSeconds(10)).until(

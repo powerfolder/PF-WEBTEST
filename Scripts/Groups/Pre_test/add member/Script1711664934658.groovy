@@ -57,7 +57,7 @@ WebUI.delay(2)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement userElement = driver.findElement(By.xpath(('//td/a[contains(text(),\'' + user) + '\')]'))
+WebElement userElement = driver.findElement(By.xpath(('//td/*[self::a or self::button][contains(text(),\'' + user) + '\')]'))
 
 boolean isUserCreated = userElement.isDisplayed()
 

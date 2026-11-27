@@ -61,7 +61,7 @@ findGroup(groupName_1)
 
 TestObject optionWithoutMembers = new TestObject('option_without_members')
 
-optionWithoutMembers.addProperty('xpath',ConditionType.EQUALS,"//div[@id='pica_groups_filter']//a[normalize-space(.)='Without members']")
+optionWithoutMembers.addProperty('xpath',ConditionType.EQUALS,"//div[@id='pica_groups_filter']//li/*[self::a or self::button][normalize-space(.)='Without members']")
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/dropdown_groups'))
 

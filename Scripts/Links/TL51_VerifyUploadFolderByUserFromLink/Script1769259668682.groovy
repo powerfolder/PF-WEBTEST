@@ -319,7 +319,7 @@ void deleteFolder(String folderPath) {
 WebElement findShareButton(String fileName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/*[self::a or self::button]/span'))
 }
 
 String getTimestamp() {

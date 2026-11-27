@@ -81,7 +81,7 @@ WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/button_Save'))
 
 TestObject optionWithSubGroup = new TestObject('filter_with_subgroups')
 
-optionWithSubGroup.addProperty('xpath',ConditionType.EQUALS,"//div[@id='pica_groups_filter']//a[normalize-space(.)='With subgroups']")
+optionWithSubGroup.addProperty('xpath',ConditionType.EQUALS,"//div[@id='pica_groups_filter']//li/*[self::a or self::button][normalize-space(.)='With subgroups']")
 
 WebUI.click(findTestObject('Groups/Page_Groups - PowerFolder/dropdown_groups'))
 

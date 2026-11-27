@@ -52,7 +52,7 @@ versionsDropdownToggle.addProperty('xpath', ConditionType.EQUALS, "//div[@id='pi
 WebUI.click(versionsDropdownToggle)
 
 TestObject versionsOptionFive = new TestObject()
-versionsOptionFive.addProperty('xpath', ConditionType.EQUALS, "//div[@id='pica_settings_versions_group']//ul[contains(@class,'dropdown-menu')]/li[3]/a")
+versionsOptionFive.addProperty('xpath', ConditionType.EQUALS, "//div[@id='pica_settings_versions_group']//ul[contains(@class,'dropdown-menu')]/li[3]/*[self::a or self::button]")
 WebUI.click(versionsOptionFive)
 
 WebUI.click(findTestObject('Folders/version/Save buton'))
@@ -119,7 +119,7 @@ WebUI.verifyElementVisible(findTestObject('Recycle bin/Page_Folders - PowerFolde
 WebUI.click(findTestObject('Recycle bin/Page_Folders - PowerFolder/a_Restore'))
 WebUI.waitForElementVisible(findTestObject('Recycle bin/Page_Folders - PowerFolder/restore_popup'), 10)
 
-List<WebElement> restoreLinks = DriverFactory.getWebDriver().findElements(By.xpath("//div[@id='pica_restore_versions']//tbody/tr//a[.//span[contains(concat(' ',normalize-space(@class),' '),' glyphicons-restart ')]]"))
+List<WebElement> restoreLinks = DriverFactory.getWebDriver().findElements(By.xpath("//div[@id='pica_restore_versions']//tbody/tr//*[self::a or self::button][.//span[contains(concat(' ',normalize-space(@class),' '),' glyphicons-restart ')]]"))
 WebUI.verifyEqual(restoreLinks.size() >= 2, true)
 
 restoreLinks.get(0).click()

@@ -144,5 +144,5 @@ WebElement findFolder(String name) {
 
 WebElement findShareButton(String name) {
     WebDriver driver = DriverFactory.getWebDriver()
-    return FolderFinder.findElement("//*[contains(@data-search-keys, '" + name + "')]/td[7]/a/span")
+    return FolderFinder.findElement("//*[contains(@data-search-keys, '" + name + "')]/td[7]/*[self::a or self::button]/span")
 }

@@ -149,19 +149,19 @@ WebUI.executeJavaScript("arguments[0].closest('tr').querySelector('a.dropdown-to
 WebUI.delay(1)
 
 TestObject rowRenameOption = new TestObject()
-rowRenameOption.addProperty('xpath', ConditionType.EQUALS, "//table[@id='files_files_table']//ul[contains(@class,'conext-dropdown-menu')]//a[contains(concat(' ',normalize-space(@class),' '),' files-ui-rename ')]")
+rowRenameOption.addProperty('xpath', ConditionType.EQUALS, "//table[@id='files_files_table']//ul[contains(@class,'conext-dropdown-menu')]//*[contains(concat(' ',normalize-space(@class),' '),' files-ui-rename ')]")
 WebUI.verifyElementNotPresent(rowRenameOption, 5)
 
 TestObject rowCutOption = new TestObject()
-rowCutOption.addProperty('xpath', ConditionType.EQUALS, "//table[@id='files_files_table']//ul[contains(@class,'conext-dropdown-menu')]//a[contains(concat(' ',normalize-space(@class),' '),' files-ui-cut ')]")
+rowCutOption.addProperty('xpath', ConditionType.EQUALS, "//table[@id='files_files_table']//ul[contains(@class,'conext-dropdown-menu')]//*[contains(concat(' ',normalize-space(@class),' '),' files-ui-cut ')]")
 WebUI.verifyElementNotPresent(rowCutOption, 5)
 
 TestObject rowDeleteOption = new TestObject()
-rowDeleteOption.addProperty('xpath', ConditionType.EQUALS, "//table[@id='files_files_table']//ul[contains(@class,'conext-dropdown-menu')]//a[contains(concat(' ',normalize-space(@class),' '),' files-ui-delete ')]")
+rowDeleteOption.addProperty('xpath', ConditionType.EQUALS, "//table[@id='files_files_table']//ul[contains(@class,'conext-dropdown-menu')]//*[contains(concat(' ',normalize-space(@class),' '),' files-ui-delete ')]")
 WebUI.verifyElementNotPresent(rowDeleteOption, 5)
 
 TestObject rowDownloadOption = new TestObject()
-rowDownloadOption.addProperty('xpath', ConditionType.EQUALS, "//table[@id='files_files_table']//ul[contains(@class,'conext-dropdown-menu')]//a[contains(concat(' ',normalize-space(@class),' '),' files-ui-download ')]")
+rowDownloadOption.addProperty('xpath', ConditionType.EQUALS, "//table[@id='files_files_table']//ul[contains(@class,'conext-dropdown-menu')]//*[contains(concat(' ',normalize-space(@class),' '),' files-ui-download ')]")
 WebUI.verifyElementPresent(rowDownloadOption, 5)
 
 WebUI.closeBrowser()

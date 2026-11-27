@@ -59,7 +59,7 @@ WebUI.delay(2)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement user1Element = driver.findElement(By.xpath(('//td/a[contains(text(),\'' + user1) + '\')]'))
+WebElement user1Element = driver.findElement(By.xpath(('//td/*[self::a or self::button][contains(text(),\'' + user1) + '\')]'))
 
 WebUiBuiltInKeywords.verifyEqual(user1Element.isDisplayed(), true)
 
@@ -80,7 +80,7 @@ WebUiBuiltInKeywords.click(findTestObject('Accounts/SaveButton'))
 
 WebUI.delay(2)
 
-WebElement user2Element = driver.findElement(By.xpath(('//td/a[contains(text(),\'' + user2) + '\')]'))
+WebElement user2Element = driver.findElement(By.xpath(('//td/*[self::a or self::button][contains(text(),\'' + user2) + '\')]'))
 
 WebUiBuiltInKeywords.verifyEqual(user2Element.isDisplayed(), true)
 
@@ -200,7 +200,7 @@ WebElement buttonUser1Again = driver.findElement(By.xpath(xpathUser1))
 buttonUser1Again.click()
 
 WebElement removeOption = driver.findElement(By.xpath(
-    "//div[@id='pica_group_accounts']//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]/li[last()]/a"))
+    "//div[@id='pica_group_accounts']//ul[contains(concat(' ',normalize-space(@class),' '),' dropdown-menu ') and contains(concat(' ',normalize-space(@class),' '),' show ')]/li[last()]/*[self::a or self::button]"))
 
 WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(removeOption))
 

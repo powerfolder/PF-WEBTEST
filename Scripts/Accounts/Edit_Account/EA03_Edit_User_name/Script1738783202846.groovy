@@ -61,7 +61,7 @@ WebUI.refresh()
 
 WebUI.delay(2)
 
-String dynamicXPath = ('//*[contains(@data-search-keys, \'' + emailId) + '\')]/td[2]/a'
+String dynamicXPath = ('//*[contains(@data-search-keys, \'' + emailId) + '\')]/td[2]/*[self::a or self::button]'
 
 try {
     // 🔹 Get the WebDriver instance

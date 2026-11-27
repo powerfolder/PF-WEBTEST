@@ -176,13 +176,13 @@ String getTimestamp() {
 WebElement findShareButton(String fileName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
+    return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/*[self::a or self::button]/span'))
 }
 
 WebElement findMembersButton(String folderName) {
     WebDriver driver = DriverFactory.getWebDriver()
 
-    String xpath = ('//table[@id=\'files_files_table\']/tbody/tr[.//a[contains(text(),\'' + folderName) + '\')]]/td[5]/a'
+    String xpath = ('//table[@id=\'files_files_table\']/tbody/tr[.//a[contains(text(),\'' + folderName) + '\')]]/td[5]/*[self::a or self::button]'
 
     return driver.findElement(By.xpath(xpath))
 }

@@ -53,7 +53,7 @@ WebUI.delay(10)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement AccountName = driver.findElement(By.xpath("(//a[normalize-space()='$firstName $lastName'])[1]/ancestor::tr/td[1]/span"))
+WebElement AccountName = driver.findElement(By.xpath("(//*[self::a or self::button][normalize-space()='$firstName $lastName'])[1]/ancestor::tr/td[1]/span"))
 
 WebUI.delay(2)
 

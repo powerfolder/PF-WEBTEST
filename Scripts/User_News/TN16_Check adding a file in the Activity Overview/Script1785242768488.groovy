@@ -35,7 +35,7 @@ WebUI.waitForPageLoad(10)
 // Dynamic object for the "Added" activity counter
 TestObject addedActivity = new TestObject('Added activity counter')
 
-addedActivity.addProperty('xpath', ConditionType.EQUALS, '//div[contains(@class,\'pica-chart-legend-item\')][contains(normalize-space(.),\'Added\')]')
+addedActivity.addProperty('xpath', ConditionType.EQUALS, '//*[contains(@class,\'pica-chart-legend-item\')][contains(normalize-space(.),\'Added\')]')
 
 WebUI.waitForElementVisible(addedActivity, 10)
 

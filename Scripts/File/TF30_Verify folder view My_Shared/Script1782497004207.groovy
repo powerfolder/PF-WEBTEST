@@ -70,7 +70,7 @@ WebUI.refresh()
 
 new org.openqa.selenium.support.ui.WebDriverWait(DriverFactory.getWebDriver(), java.time.Duration.ofSeconds(15)).until(
     org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated(
-        By.xpath("//*[contains(@data-search-keys, '" + GlobalVariable.folderName + "')]/td[7]/a/span")))
+        By.xpath("//*[contains(@data-search-keys, '" + GlobalVariable.folderName + "')]/td[7]/*[self::a or self::button]/span")))
 
 WebElement btn = findShareButton(GlobalVariable.folderName)
 
@@ -190,6 +190,6 @@ def createFolder(String Folder) {
 WebElement findShareButton(String fileName) {
 	WebDriver driver = DriverFactory.getWebDriver()
 
-	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/a/span'))
+	return driver.findElement(By.xpath(('//*[contains(@data-search-keys, \'' + fileName) + '\')]/td[7]/*[self::a or self::button]/span'))
 }
 
